@@ -1,0 +1,42 @@
+name: Suggest a resource
+description: Suggest a paper, project, article or documentation page.
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Original source URL
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Resource type
+      options:
+        - Paper
+        - Project
+        - Article
+        - Official
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Method and contribution
+      description: Explain what it does. Identify surveys, new benchmarks, datasets or evaluations where applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: categories
+    attributes:
+      label: Suggested categories
+      description: Choose Foundations, Trustworthiness, or Cybersecurity Applications. Multiple categories are welcome.
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Datasets and evaluation
+      description: Name the datasets and point to the relevant source section, if available.
+  - type: input
+    id: date
+    attributes:
+      label: First publication date
+      description: Use the source publication date, not today's submission date.

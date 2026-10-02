@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "2610.02076",
+    "kind": "Paper",
+    "date": "2026-10-01",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.02076"
+  },
+  {
+    "id": "2610.02048",
+    "kind": "Paper",
+    "date": "2026-10-01",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.02048"
+  },
+  {
+    "id": "2610.01834",
+    "kind": "Paper",
+    "date": "2026-10-01",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.01834"
+  },
+  {
+    "id": "2610.01079",
+    "kind": "Paper",
+    "date": "2026-10-01",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.01079"
+  },
+  {
+    "id": "2610.01006",
+    "kind": "Paper",
+    "date": "2026-10-01",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.01006"
+  },
+  {
+    "id": "r-ef8c076c37",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://github.com/sohithk10/jev-trace-evaluator"
+  },
+  {
+    "id": "r-d94438ea01",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://github.com/FrancoisChastel/skill-scanner"
+  },
+  {
+    "id": "r-96c9357ede",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://github.com/xlennart/dsh-auto-review-jev"
+  },
+  {
+    "id": "r-2d725bf095",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://github.com/entscheidung-bot/jev-security-posture"
+  },
+  {
+    "id": "r-28e859bea0",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://github.com/rajatrao/jevshield"
+  },
+  {
+    "id": "2610.00437",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.00437"
+  },
+  {
+    "id": "2610.00376",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.00376"
+  },
+  {
+    "id": "2609.39496",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.39496"
+  },
+  {
+    "id": "2609.39111",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.39111"
+  },
+  {
+    "id": "2609.38850",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.38850"
+  },
+  {
+    "id": "2609.38827",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.38827"
+  },
+  {
+    "id": "zenodo-chaos",
+    "kind": "Paper",
+    "date": "2026-09-29",
+    "basis": "first-publication",
+    "source": "https://zenodo.org/records/23032384"
+  },
+  {
+    "id": "r-a4955bee6b",
+    "kind": "Project",
+    "date": "2026-09-29",
+    "basis": "repository-created",
+    "source": "https://github.com/sapoepsilon/wazuh-security-analyst"
+  },
+  {
+    "id": "r-5757121c95",
+    "kind": "Project",
+    "date": "2026-09-29",
+    "basis": "repository-created",
+    "source": "https://github.com/Sarim-MBZUAI/awesome-jev-security"
+  },
+  {
+    "id": "r-357c756f0f",
+    "kind": "Project",
+    "date": "2026-09-29",
+    "basis": "repository-created",
+    "source": "https://github.com/takzen/kanari-decision-bench"
+  },
+  {
+    "id": "2610.00346",
+    "kind": "Paper",
+    "date": "2026-09-29",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.00346"
+  },
+  {
+    "id": "2609.37647",
+    "kind": "Paper",
+    "date": "2026-09-29",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.37647"
+  },
+  {
+    "id": "2609.36965",
+    "kind": "Paper",
+    "date": "2026-09-29",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.36965"
+  },
+  {
+    "id": "ssrn-noul-log",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7525901"
+  },
+  {
+    "id": "r-d7f5e81a98",
+    "kind": "Project",
+    "date": "2026-09-28",
+    "basis": "repository-created",
+    "source": "https://github.com/youdotcom-oss/cve-triage-agent"
+  },
+  {
+    "id": "r-37d2e6bf5b",
+    "kind": "Project",
+    "date": "2026-09-28",
+    "basis": "repository-created",
+    "source": "https://github.com/schwarzschlyle/immune"
+  },
+  {
+    "id": "r-07a39b2c22",
+    "kind": "Project",
+    "date": "2026-09-28",
+    "basis": "repository-created",
+    "source": "https://github.com/khaledhikmat/security-events-analyzer"
+  },
+  {
+    "id": "2609.36399",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.36399"
+  },
+  {
+    "id": "2609.36115",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.36115"
+  },
+  {
+    "id": "2609.36059",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.36059"
+  },
+  {
+    "id": "2609.35342",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.35342"
+  },
+  {
+    "id": "2609.35286",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.35286"
+  },
+  {
+    "id": "2609.34969",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34969"
+  },
+  {
+    "id": "2609.34963",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34963"
+  },
+  {
+    "id": "2609.34862",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34862"
+  },
+  {
+    "id": "2609.34227",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34227"
+  },
+  {
+    "id": "2609.34180",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34180"
+  },
+  {
+    "id": "r-77581d92e3",
+    "kind": "Project",
+    "date": "2026-09-27",
+    "basis": "repository-created",
+    "source": "https://github.com/BasmaAbouzied0/jev-secret-guard"
+  },
+  {
+    "id": "r-5c7700b545",
+    "kind": "Project",
+    "date": "2026-09-27",
+    "basis": "repository-created",
+    "source": "https://github.com/Mazukriez/Jev-AI-Security-Architecture-"
+  },
+  {
+    "id": "r-5bb4487ee6",
+    "kind": "Project",
+    "date": "2026-09-27",
+    "basis": "repository-created",
+    "source": "https://github.com/namazso/windows-privacy-by-jev"
+  },
+  {
+    "id": "2609.37470",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.37470"
+  },
+  {
+    "id": "2609.33971",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33971"
+  },
+  {
+    "id": "2609.33874",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33874"
+  },
+  {
+    "id": "2609.33843",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33843"
+  },
+  {
+    "id": "2609.33689",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33689"
+  },
+  {
+    "id": "2609.33609",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33609"
+  },
+  {
+    "id": "2609.33401",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33401"
+  },
+  {
+    "id": "2609.33209",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33209"
+  },
+  {
+    "id": "r-a847be7085",
+    "kind": "Project",
+    "date": "2026-09-26",
+    "basis": "repository-created",
+    "source": "https://github.com/s3m3y4z4/jevsec"
+  },
+  {
+    "id": "r-49b6e31044",
+    "kind": "Project",
+    "date": "2026-09-26",
+    "basis": "repository-created",
+    "source": "https://github.com/esterhuizen/laya-packet-analyser"
+  },
+  {
+    "id": "2609.35865",
+    "kind": "Paper",
+    "date": "2026-09-26",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.35865"
+  },
+  {
+    "id": "2609.32160",
+    "kind": "Paper",
+    "date": "2026-09-26",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.32160"
+  },
+  {
+    "id": "zenodo-auth",
+    "kind": "Paper",
+    "date": "2026-09-25",
+    "basis": "first-publication",
+    "source": "https://zenodo.org/records/22952571"
+  },
+  {
+    "id": "r-be233d58cf",
+    "kind": "Project",
+    "date": "2026-09-25",
+    "basis": "repository-created",
+    "source": "https://github.com/jeremymungai/jev-security-playground"
+  },
+  {
+    "id": "r-935076aa60",
+    "kind": "Project",
+    "date": "2026-09-25",
+    "basis": "repository-created",
+    "source": "https://github.com/turenlabs/lisa"
+  },
+  {
+    "id": "r-11a9e4aacd",
+    "kind": "Project",
+    "date": "2026-09-25",
+    "basis": "repository-created",
+    "source": "https://github.com/Tech-Byte-Frontier/jevgate-action"
+  },
+  {
+    "id": "r-00bec2b209",
+    "kind": "Project",
+    "date": "2026-09-25",
+    "basis": "repository-created",
+    "source": "https://github.com/Jalil-g/Immune-Harness"
+  },
+  {
+    "id": "2609.31142",
+    "kind": "Paper",
+    "date": "2026-09-25",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.31142"
+  },
+  {
+    "id": "2609.30922",
+    "kind": "Paper",
+    "date": "2026-09-25",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.30922"
+  },
+  {
+    "id": "2609.30706",
+    "kind": "Paper",
+    "date": "2026-09-25",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.30706"
+  },
+  {
+    "id": "r-d6bd38f18e",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "basis": "repository-created",
+    "source": "https://github.com/JevForge/jev-security-sentinel"
+  },
+  {
+    "id": "r-78d1764857",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "basis": "repository-created",
+    "source": "https://github.com/san3ncrypt3d/jev-security-prioritization"
+  },
+  {
+    "id": "r-4dadfa02ba",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "basis": "repository-created",
+    "source": "https://github.com/SupratimSircar05/jev-zig-cli"
+  },
+  {
+    "id": "r-40a4807e11",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "basis": "repository-created",
+    "source": "https://github.com/JoasASantos/Raze"
+  },
+  {
+    "id": "r-0303e6ff07",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "basis": "repository-created",
+    "source": "https://github.com/BeyondModels/requirements-deep-agent"
+  },
+  {
+    "id": "calibration-audit-Meng",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://escholarship.org/uc/item/4t4449jv"
+  },
+  {
+    "id": "2609.30243",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.30243"
+  },
+  {
+    "id": "2609.30216",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.30216"
+  },
+  {
+    "id": "2609.30186",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.30186"
+  },
+  {
+    "id": "2609.29769",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.29769"
+  },
+  {
+    "id": "2609.29429",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.29429"
+  },
+  {
+    "id": "2609.29283",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.29283"
+  },
+  {
+    "id": "2609.28940",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.28940"
+  },
+  {
+    "id": "2609.28919",
+    "kind": "Paper",
+    "date": "2026-09-24",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.28919"
+  },
+  {
+    "id": "zenodo-toolkit",
+    "kind": "Paper",
+    "date": "2026-09-23",
+    "basis": "first-publication",
+    "source": "https://zenodo.org/records/22921974"
+  },
+  {
+    "id": "r-af7dee6fd6",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/koppert/opencode-security-guard"
+  },
+  {
+    "id": "r-51aaa8108e",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/DhanushNehru/jev-sec-audit"
+  },
+  {
+    "id": "r-2cb8fb4837",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/blacksinisterx/jev-guard"
+  },
+  {
+    "id": "r-2b5998c98d",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/ashp15205/decision-guard"
+  },
+  {
+    "id": "r-258e44c9fd",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/CogFlux/opencode-jev-guard"
+  },
+  {
+    "id": "r-053f029b76",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "basis": "repository-created",
+    "source": "https://github.com/intelliDean/reflexgate"
+  },
+  {
+    "id": "2609.28613",
+    "kind": "Paper",
+    "date": "2026-09-23",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.28613"
+  },
+  {
+    "id": "2609.28587",
+    "kind": "Paper",
+    "date": "2026-09-23",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.28587"
+  },
+  {
+    "id": "2609.27678",
+    "kind": "Paper",
+    "date": "2026-09-23",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.27678"
+  },
+  {
+    "id": "ssrn-typed-edge",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500140"
+  },
+  {
+    "id": "r-e59e45af62",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/CMaintz/jev-guard"
+  },
+  {
+    "id": "r-d21ac435c6",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/treadkex1/decision-model-security"
+  },
+  {
+    "id": "r-badc96c103",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/bismawy/pi-jev-eye"
+  },
+  {
+    "id": "r-ac86b105fe",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/catpotd/agy-jevgate"
+  },
+  {
+    "id": "r-a7fb827376",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://doi.org/10.5281/zenodo.22901853"
+  },
+  {
+    "id": "r-9da7cbe005",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/fukuda-deltax/jev-security-scan"
+  },
+  {
+    "id": "r-5620840f49",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/JKasteele/jev-mail-safety-lab"
+  },
+  {
+    "id": "r-0fc92453ad",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/Sahil-coder-30/jev-langgraph-router"
+  },
+  {
+    "id": "r-03851b3bb7",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://github.com/haricharan12/jev-voice-bridge"
+  },
+  {
+    "id": "2609.26758",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.26758"
+  },
+  {
+    "id": "2609.26550",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.26550"
+  },
+  {
+    "id": "2609.26532",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.26532"
+  },
+  {
+    "id": "2609.25845",
+    "kind": "Paper",
+    "date": "2026-09-22",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.25845"
+  },
+  {
+    "id": "r-ea893c25a8",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/ringzerosec/jev-runtime-security"
+  },
+  {
+    "id": "r-cf26201f93",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/cmd-siri-bot/llm-gateway"
+  },
+  {
+    "id": "r-bf2e9d7270",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/Akashdb5/jev-router"
+  },
+  {
+    "id": "r-bece0d1347",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/olivdx/jev-mcp"
+  },
+  {
+    "id": "r-af15120442",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/fallow-rs/fallow-verdict"
+  },
+  {
+    "id": "r-a52c9325b1",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/altanapps/security-sandbox-jev"
+  },
+  {
+    "id": "r-81ffdf3267",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/binbandit/simple-review"
+  },
+  {
+    "id": "r-3c6d09b55f",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/sk123qaq/hermes-plugin-jev-approval"
+  },
+  {
+    "id": "r-3856f2113f",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/aleksvega/jev-skill-router"
+  },
+  {
+    "id": "r-153d3450d1",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/turenlabs/jast"
+  },
+  {
+    "id": "r-121ae30e39",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/Mazukriez/Jev-AI-Model-Security-protection-tool"
+  },
+  {
+    "id": "r-0d68cbbe9d",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://github.com/prestonkakukdev/Jev-Defense"
+  },
+  {
+    "id": "2609.25498",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.25498"
+  },
+  {
+    "id": "2609.24965",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.24965"
+  },
+  {
+    "id": "2609.24574",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.24574"
+  },
+  {
+    "id": "2609.24052",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.24052"
+  },
+  {
+    "id": "2609.23986",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.23986"
+  },
+  {
+    "id": "2609.23959",
+    "kind": "Paper",
+    "date": "2026-09-21",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.23959"
+  },
+  {
+    "id": "r-c459c3ffa1",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/uberto/jev-brig"
+  },
+  {
+    "id": "r-88711b7781",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/eugeniughelbur/jev-engineering"
+  },
+  {
+    "id": "r-77f5cdab70",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/lgy1027/jevshield"
+  },
+  {
+    "id": "r-47e7bd06b7",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/raniellimontagna/jev-guard-mcp"
+  },
+  {
+    "id": "r-42a323786a",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/cernst11/graphql-classifier"
+  },
+  {
+    "id": "r-401e5519c4",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/knowlet/JevGuard-NSFA"
+  },
+  {
+    "id": "r-0b3b715aba",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://github.com/v4fs/awesome-jev-security"
+  },
+  {
+    "id": "2609.23886",
+    "kind": "Paper",
+    "date": "2026-09-20",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.23886"
+  },
+  {
+    "id": "r-97e2457fcb",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://github.com/somoore/interlock"
+  },
+  {
+    "id": "r-7f7248143e",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://github.com/undeemed/Jcyber"
+  },
+  {
+    "id": "r-649b2519e4",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://github.com/riz007/yolo-shell"
+  },
+  {
+    "id": "r-5280a0a3c3",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://github.com/BhavinM/jev-policy-engine"
+  },
+  {
+    "id": "r-12ffb12a9f",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://github.com/win4r/jev-security-scan"
+  },
+  {
+    "id": "2609.23136",
+    "kind": "Paper",
+    "date": "2026-09-19",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.23136"
+  },
+  {
+    "id": "2609.22753",
+    "kind": "Paper",
+    "date": "2026-09-19",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.22753"
+  },
+  {
+    "id": "r-be01809da9",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/godspede/construct-auto-classifier"
+  },
+  {
+    "id": "r-ae599dac5c",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/Robertzu43/system-one-security-triage"
+  },
+  {
+    "id": "r-8f82bc1f60",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/agent-chaperone/agent-chaperone"
+  },
+  {
+    "id": "r-5698144e96",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/luantak/is-malicious"
+  },
+  {
+    "id": "r-3a96692c37",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/m0rphtail/triagedy"
+  },
+  {
+    "id": "r-034e9bcdca",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/AkashPriyadarshii/jev-git"
+  },
+  {
+    "id": "r-cdd7d670b7",
+    "kind": "Project",
+    "date": "2026-09-17",
+    "basis": "repository-created",
+    "source": "https://github.com/caiovicentino/jev-shield"
+  },
+  {
+    "id": "r-c993242328",
+    "kind": "Project",
+    "date": "2026-09-17",
+    "basis": "repository-created",
+    "source": "https://github.com/raulahumada/security-jev"
+  },
+  {
+    "id": "r-688df0827f",
+    "kind": "Project",
+    "date": "2026-09-17",
+    "basis": "repository-created",
+    "source": "https://github.com/devanshbatham/commit-miner"
+  },
+  {
+    "id": "r-685fbad768",
+    "kind": "Project",
+    "date": "2026-09-17",
+    "basis": "repository-created",
+    "source": "https://github.com/leepokai/jev-guard"
+  },
+  {
+    "id": "r-ce09c6018e",
+    "kind": "Project",
+    "date": "2026-09-16",
+    "basis": "repository-created",
+    "source": "https://github.com/Gaurav-Gosain/jev-sec-bench"
+  },
+  {
+    "id": "r-db4b03e57e",
+    "kind": "Project",
+    "date": "2026-08-23",
+    "basis": "repository-created",
+    "source": "https://github.com/supercorp-ai/supercov"
+  },
+  {
+    "id": "r-e9748fcf33",
+    "kind": "Project",
+    "date": "2026-08-02",
+    "basis": "repository-created",
+    "source": "https://github.com/leecaochang/Phoenix-MCP"
+  },
+  {
+    "id": "r-90c6134e22",
+    "kind": "Project",
+    "date": "2026-07-26",
+    "basis": "repository-created",
+    "source": "https://github.com/murderszn/cerberus"
+  },
+  {
+    "id": "r-e2728f5264",
+    "kind": "Project",
+    "date": "2026-06-04",
+    "basis": "repository-created",
+    "source": "https://github.com/hellozenstrategist-lab/eutrya"
+  },
+  {
+    "id": "r-c4e5d9d4ea",
+    "kind": "Project",
+    "date": "2026-09-18",
+    "basis": "repository-created",
+    "source": "https://github.com/phuthuycoding/jev-audit"
+  }
+]

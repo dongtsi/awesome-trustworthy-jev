@@ -1,0 +1,92 @@
+{
+  "Banking77": {
+    "url": "https://github.com/PolyAI-LDN/task-specific-datasets",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "CLINC150": {
+    "url": "https://github.com/clinc/oos-eval",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "R-Judge": {
+    "url": "https://github.com/Lordog/R-Judge",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "AgentHarm": {
+    "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "TextVQA": {
+    "url": "https://textvqa.org/",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "GQA": {
+    "url": "https://cs.stanford.edu/people/dorarad/gqa/about.html",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "SNLI-VE": {
+    "url": "https://github.com/necla-ml/SNLI-VE",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "Oxford-IIIT Pets": {
+    "url": "https://www.robots.ox.ac.uk/~vgg/data/pets/",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "DTD": {
+    "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "ScienceQA": {
+    "url": "https://scienceqa.github.io/",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "HellaSwag": {
+    "url": "https://rowanzellers.com/hellaswag/",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "BoolQ": {
+    "url": "https://github.com/google-research-datasets/boolean-questions",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "NSL-KDD": {
+    "url": "https://www.unb.ca/cic/datasets/nsl.html",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "ChaosNLI": {
+    "url": "https://github.com/easonnie/ChaosNLI",
+    "type": "dataset",
+    "checked": "2026-10-02"
+  },
+  "CSS annotation suite (Ziems et al.)": {
+    "url": "https://github.com/hazemibrahim97/decision-models-css",
+    "type": "artifact",
+    "checked": "2026-10-02"
+  },
+  "Texas crash narratives / human audit": {
+    "url": "https://github.com/pozapas/jev-calibrated-narrative-coding",
+    "type": "artifact",
+    "checked": "2026-10-02"
+  },
+  "Scientific semantic-choice cases": {
+    "url": "https://arxiv.org/abs/2609.24965",
+    "type": "paper",
+    "checked": "2026-10-02"
+  },
+  "Judgment-layer audit battery": {
+    "url": "https://doi.org/10.5281/zenodo.22901248",
+    "type": "artifact",
+    "checked": "2026-10-02"
+  }
+}

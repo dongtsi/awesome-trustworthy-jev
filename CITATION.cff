@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this catalog using the metadata below."
+title: "Awesome Trustworthy Jev"
+type: dataset
+authors:
+  - name: "dongtsi"
+    website: "https://github.com/dongtsi"
+version: "2026.10.02"
+license: CC-BY-NC-4.0
+abstract: "A curated catalog of Jev foundations, trustworthiness, and cybersecurity research, projects and technical resources."
+url: "https://github.com/dongtsi/awesome-trustworthy-jev"
+repository-code: "https://github.com/dongtsi/awesome-trustworthy-jev"

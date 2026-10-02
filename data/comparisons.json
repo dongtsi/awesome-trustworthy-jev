@@ -1,0 +1,357 @@
+[
+  {
+    "category": "foundations",
+    "id": "2610.02076",
+    "datasets": [
+      "Public JevBench",
+      "Banking77",
+      "CLINC150"
+    ],
+    "data_role": {
+      "en": "Uses existing decision and intent-routing benchmarks",
+      "zh": "使用已有决策与意图路由基准"
+    },
+    "design": {
+      "en": "Compares frozen candidate logits with task-targeted fine-tuning and checks transfer to other capabilities.",
+      "zh": "对比冻结模型候选读出与针对性微调，并检查其他能力的迁移。"
+    },
+    "reading": {
+      "en": "Useful for separating readout changes from training gains; adaptation is most helpful for specific weaknesses.",
+      "zh": "可区分读出变化与训练收益；针对具体短板的适配更有价值。"
+    },
+    "source_section": "Sections 3–4",
+    "source": "https://arxiv.org/pdf/2610.02076v1"
+  },
+  {
+    "category": "foundations",
+    "id": "2609.25845",
+    "datasets": [
+      "GQA",
+      "SNLI-VE",
+      "TextVQA"
+    ],
+    "data_role": {
+      "en": "Converts existing visual tasks to candidate-choice workloads",
+      "zh": "将已有视觉任务转换为候选选择任务"
+    },
+    "design": {
+      "en": "Controls task adaptation and decision-head choice separately from prefix reuse and batching.",
+      "zh": "将任务适配、决策头与前缀复用、批处理分别控制。"
+    },
+    "reading": {
+      "en": "Shared execution improves efficiency; the dedicated head has no consistent accuracy advantage.",
+      "zh": "共享执行提高效率；专用决策头没有稳定的准确率优势。"
+    },
+    "source_section": "Experimental setup; Tables 1–2",
+    "source": "https://arxiv.org/pdf/2609.25845v1"
+  },
+  {
+    "category": "foundations",
+    "id": "2609.29283",
+    "datasets": [
+      "Oxford-IIIT Pets",
+      "DTD",
+      "ScienceQA",
+      "A-OKVQA"
+    ],
+    "data_role": {
+      "en": "Uses recognition and visual-question benchmarks",
+      "zh": "使用图像识别与视觉问答基准"
+    },
+    "design": {
+      "en": "Compares frozen inference, language-side adaptation and matched prompt-only controls.",
+      "zh": "对比冻结推理、语言侧适配与匹配的纯提示对照。"
+    },
+    "reading": {
+      "en": "Accuracy gains depend on adaptation and task; valid output does not establish calibrated probabilities.",
+      "zh": "准确率收益依赖适配与任务；输出合法不代表概率已校准。"
+    },
+    "source_section": "Experimental setup and matched prompt-only follow-up",
+    "source": "https://arxiv.org/pdf/2609.29283v1"
+  },
+  {
+    "category": "trustworthiness",
+    "id": "2609.35342",
+    "datasets": [
+      "Sys1Cal-v1"
+    ],
+    "data_role": {
+      "en": "Introduces a constructed-probability dataset",
+      "zh": "提出真概率已知的构造数据集"
+    },
+    "design": {
+      "en": "Queries the same events through Choice, Noul and Score; evaluates full probability distributions.",
+      "zh": "对同一事件调用 Choice、Noul、Score，并评价完整概率分布。"
+    },
+    "reading": {
+      "en": "Tests probability meaning directly; it answers a different question from classification accuracy.",
+      "zh": "直接检验概率的数值含义，不能用分类准确率替代。"
+    },
+    "source_section": "Dataset construction and evaluation",
+    "source": "https://arxiv.org/pdf/2609.35342v1"
+  },
+  {
+    "category": "trustworthiness",
+    "id": "2609.31142",
+    "datasets": [
+      "JevAdvBench"
+    ],
+    "data_role": {
+      "en": "Introduces typed-request adversarial scenarios",
+      "zh": "提出类型化请求的对抗场景基准"
+    },
+    "design": {
+      "en": "Compares single-field edits against the clean decision and an identical-request noise baseline.",
+      "zh": "将单字段编辑与干净决策、完全相同请求的重复噪声对比。"
+    },
+    "reading": {
+      "en": "Measures decision changes under perturbation; flips are not automatically errors against independent labels.",
+      "zh": "衡量扰动下的决策变化；翻转不自动等于独立真值上的错误。"
+    },
+    "source_section": "Benchmark construction and evaluation protocol",
+    "source": "https://arxiv.org/pdf/2609.31142v1"
+  },
+  {
+    "category": "trustworthiness",
+    "id": "2609.37647",
+    "datasets": [
+      "SST-2",
+      "HellaSwag",
+      "WinoGrande",
+      "CommonsenseQA",
+      "BoolQ"
+    ],
+    "data_role": {
+      "en": "Combines existing public datasets; selected examples shown",
+      "zh": "组合已有公开数据集；此处列举部分"
+    },
+    "design": {
+      "en": "Uses fixed task templates to compare classification, calibration and selective prediction across primitives.",
+      "zh": "采用固定任务模板，比较不同原语的分类、校准与选择性预测。"
+    },
+    "reading": {
+      "en": "Broad task coverage reveals interface-dependent behavior; task distributions and split choices still differ.",
+      "zh": "广泛任务覆盖显示接口依赖行为，但任务分布与划分方式并不相同。"
+    },
+    "source_section": "Section 3.2 and Appendix A",
+    "source": "https://arxiv.org/pdf/2609.37647v1"
+  },
+  {
+    "category": "trustworthiness",
+    "id": "zenodo-chaos",
+    "datasets": [
+      "ChaosNLI"
+    ],
+    "data_role": {
+      "en": "Reuses human-disagreement annotations",
+      "zh": "使用人类意见分歧标注"
+    },
+    "design": {
+      "en": "Separates easier and harder agreement cases and corrects sampling bias in calibration estimates.",
+      "zh": "分开评估不同分歧程度，并校正校准估计的采样偏差。"
+    },
+    "reading": {
+      "en": "Assesses confidence against human agreement; disagreement is not a single objective correctness label.",
+      "zh": "检验置信度与人类一致程度的关系；分歧不等于单一客观正误标签。"
+    },
+    "source_section": "Preregistered protocol and calibration analysis",
+    "source": "https://zenodo.org/api/records/23032384/files/jevbench_paper_Khosla_2026_v1.1.pdf/content"
+  },
+  {
+    "category": "applications",
+    "id": "2609.33401",
+    "datasets": [
+      "WAInjectBench",
+      "R-Judge",
+      "AgentHarm"
+    ],
+    "data_role": {
+      "en": "Uses original labels from agent-security benchmarks",
+      "zh": "使用代理安全基准的原始标签"
+    },
+    "design": {
+      "en": "Separates calibration, threshold selection and held-out testing; compares attack groups and escalation policies.",
+      "zh": "分离校准、阈值选择与留出测试，比较攻击组与升级策略。"
+    },
+    "reading": {
+      "en": "Aggregate calibration can mask unsafe misses in particular groups; strict risk constraints limit automatic approval.",
+      "zh": "总体校准可能掩盖特定攻击组的漏检；严格风险约束限制自动放行。"
+    },
+    "source_section": "Section 3: datasets and partitions",
+    "source": "https://arxiv.org/pdf/2609.33401v2"
+  },
+  {
+    "category": "applications",
+    "id": "2609.34862",
+    "datasets": [
+      "R-Judge",
+      "ATBench500",
+      "TraceSafe subset",
+      "MCPHunt"
+    ],
+    "data_role": {
+      "en": "Uses original and study-revised behavior labels",
+      "zh": "结合原始标签与研究修订的行为标签"
+    },
+    "design": {
+      "en": "Applies a common risk rubric and reports detection quality, valid-result coverage and inference cost separately.",
+      "zh": "统一风险标准，分别报告检测质量、有效结果覆盖和推理成本。"
+    },
+    "reading": {
+      "en": "Label revisions matter when comparing studies; retrospective trace classification is not online blocking.",
+      "zh": "跨研究比较需核对标签修订；事后轨迹分类不等于在线阻断。"
+    },
+    "source_section": "Benchmark collections; Table 1",
+    "source": "https://arxiv.org/pdf/2609.34862v1"
+  },
+  {
+    "category": "applications",
+    "id": "2609.34963",
+    "datasets": [
+      "CyberSecEval Instruct"
+    ],
+    "data_role": {
+      "en": "Reuses code examples and benchmark CWE labels",
+      "zh": "使用已有代码样本与基准 CWE 标签"
+    },
+    "design": {
+      "en": "Holds the repair model fixed while changing the weakness classifier; evaluates with the Insecure Code Detector.",
+      "zh": "固定修复模型，改变弱点分类器，再用 Insecure Code Detector 评价。"
+    },
+    "reading": {
+      "en": "Detector-measured security improves; the experiment does not prove all vulnerabilities are removed or functionality preserved.",
+      "zh": "检测器测得的安全性改善，不代表所有漏洞消失或功能完全保持。"
+    },
+    "source_section": "Sections 3.1–3.2 and limitations",
+    "source": "https://arxiv.org/pdf/2609.34963v1"
+  },
+  {
+    "category": "applications",
+    "id": "2610.01079",
+    "datasets": [
+      "NSL-KDD"
+    ],
+    "data_role": {
+      "en": "Uses a small pilot from an existing intrusion dataset",
+      "zh": "从已有入侵数据集开展小规模试验"
+    },
+    "design": {
+      "en": "Compares typed intrusion decisions under limited labels; distinguish the paper snapshot from later repository runs.",
+      "zh": "比较有限标签下的类型化入侵决策；区分论文快照与仓库后续实验。"
+    },
+    "reading": {
+      "en": "Useful as an initial IDS study, with live-traffic validity and deployment false alarms still unestablished.",
+      "zh": "可作为初步 IDS 研究，真实流量有效性与部署误报仍待验证。"
+    },
+    "source_section": "Experimental protocol in arXiv v1",
+    "source": "https://arxiv.org/pdf/2610.01079v1"
+  },
+  {
+    "category": "applications",
+    "id": "2610.02048",
+    "datasets": [
+      "EPANET C-Town",
+      "EPANET Net3",
+      "EPANET Net1"
+    ],
+    "data_role": {
+      "en": "Builds simulated attack and fault scenarios",
+      "zh": "构造仿真攻击与故障场景"
+    },
+    "design": {
+      "en": "Tests sealed rounds and transfer networks; sends uncertain or rule-disagreed cases to an LLM reviewer.",
+      "zh": "使用封闭轮次与迁移网络测试，将不确定或规则不一致的案例交给 LLM 复核。"
+    },
+    "reading": {
+      "en": "Rule agreement can reduce review workload; evidence is from simulation rather than an operating water utility.",
+      "zh": "规则一致性门控可减少复核负载；证据来自仿真而非实际供水运行。"
+    },
+    "source_section": "Sections 2.1–2.10",
+    "source": "https://arxiv.org/pdf/2610.02048v1"
+  },
+  {
+    "id": "2609.24574",
+    "category": "trustworthiness",
+    "datasets": [
+      "CSS annotation suite (Ziems et al.)"
+    ],
+    "data_role": {
+      "en": "Uses released CSS task splits with adjudicated labels; compares native decision probabilities with verbalized LLM confidence.",
+      "zh": "使用公开社科任务划分与裁定标签；区分原生决策概率和大模型口述置信度。"
+    },
+    "design": {
+      "en": "18 tasks and 7,977 items; matched prompts, open-model ablations, per-task calibration and coverage–accuracy curves.",
+      "zh": "18 个任务、7,977 条样本；匹配提示，开放模型消融，逐任务校准与覆盖率—准确率曲线。"
+    },
+    "reading": {
+      "en": "An aggregate calibration advantage does not justify one automation threshold across constructs; benchmark labels do not capture all annotator disagreement.",
+      "zh": "总体校准优势不支持跨任务共用自动化阈值；基准裁定标签也不完全代表标注分歧。"
+    },
+    "source_section": "Sections 3–6",
+    "source": "https://arxiv.org/pdf/2609.24574v2"
+  },
+  {
+    "id": "2609.24052",
+    "category": "trustworthiness",
+    "datasets": [
+      "Texas crash narratives / human audit"
+    ],
+    "data_role": {
+      "en": "Uses restricted crash narratives and a weighted human-reference audit; aggregate outputs and analysis code are reported released.",
+      "zh": "使用受限事故叙事和加权人工审计；论文声明公开聚合结果与分析代码。"
+    },
+    "design": {
+      "en": "2,416 usable human judgments; recalibration fits and tests on separate narrative halves with repeated splits, avoiding judgment-level leakage.",
+      "zh": "2,416 条可用人工判断；按叙事划分拟合和测试集并重复切分，避免同一叙事的判断跨组泄漏。"
+    },
+    "reading": {
+      "en": "Internal split evaluation supports within-corpus recalibration, not transfer to a new region or time period. Raw narratives are restricted; row-level audit release remains conditional.",
+      "zh": "内部划分支持同语料后校准，不能证明跨地区或时间迁移。原始叙事受限，逐项审计数据公开仍有条件。"
+    },
+    "source_section": "Section 3, Eq. 20; Sections 4.2–4.4; Data and code availability",
+    "source": "https://arxiv.org/pdf/2609.24052v1"
+  },
+  {
+    "id": "2609.24965",
+    "category": "trustworthiness",
+    "datasets": [
+      "Scientific semantic-choice cases"
+    ],
+    "data_role": {
+      "en": "Constructs source-grounded scientific cases with separate semantic and downstream references.",
+      "zh": "构造有来源依据的科学案例，分别提供语义选择与下游结果参照。"
+    },
+    "design": {
+      "en": "Ten cases, twenty choices, twelve configurations and five repeats; reports planned-request coverage separately from successful-response accuracy.",
+      "zh": "十个案例、二十个选择、十二种配置、五次重复；区分计划请求覆盖率与成功响应准确率。"
+    },
+    "reading": {
+      "en": "Repeats estimate variability on the same cases, not a larger independent sample. Useful as an evaluation protocol, not evidence of broad scientific or security competence.",
+      "zh": "重复调用只估计同批案例的波动，不扩大独立样本。可借鉴评测协议，不能据此证明广泛科学或安全能力。"
+    },
+    "source_section": "Sections 2–3; Appendices A–C",
+    "source": "https://arxiv.org/pdf/2609.24965v2"
+  },
+  {
+    "id": "r-a7fb827376",
+    "category": "trustworthiness",
+    "datasets": [
+      "Judgment-layer audit battery",
+      "Banking77"
+    ],
+    "data_role": {
+      "en": "Constructed judgment batteries and an intent-classification subset",
+      "zh": "自建裁判测试集与意图分类子集"
+    },
+    "design": {
+      "en": "Separates client wall time, provider fields and access-layer truncation; pairs judge and LLM errors on identical items.",
+      "zh": "区分客户端计时、服务自报字段与接入层截断；在相同样本上配对比较裁判和大模型错误。"
+    },
+    "reading": {
+      "en": "Many failure analyses concern Laya, not Jev. Small samples, missing artifacts and multiplicity limit conclusions; autonomous long-horizon runs were not executed.",
+      "zh": "Laya 的失败不能直接归于 Jev；时延样本有限，部分统计缺可核验产物，多重校正后相关性未确立，未执行自主长流程。"
+    },
+    "source_section": "Sections 7–8, 10; corrections in v2",
+    "source": "https://zenodo.org/api/records/22901853/files/paper-en.pdf/content"
+  }
+]

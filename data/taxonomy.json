@@ -1,0 +1,296 @@
+{
+  "schema_version": 2,
+  "categories": [
+    {
+      "id": "foundations",
+      "parent": null,
+      "label": {
+        "en": "Foundations",
+        "zh": "模型基础"
+      }
+    },
+    {
+      "id": "foundations/architecture",
+      "parent": "foundations",
+      "label": {
+        "en": "Architecture & Training",
+        "zh": "架构与训练"
+      }
+    },
+    {
+      "id": "foundations/interfaces",
+      "parent": "foundations",
+      "label": {
+        "en": "Decision Interfaces",
+        "zh": "决策接口"
+      }
+    },
+    {
+      "id": "foundations/inference",
+      "parent": "foundations",
+      "label": {
+        "en": "Inference & Efficiency",
+        "zh": "推理与效率"
+      }
+    },
+    {
+      "id": "foundations/frameworks",
+      "parent": "foundations",
+      "label": {
+        "en": "Decision Frameworks",
+        "zh": "决策框架"
+      }
+    },
+    {
+      "id": "trustworthiness",
+      "parent": null,
+      "label": {
+        "en": "Trustworthiness",
+        "zh": "可信性"
+      }
+    },
+    {
+      "id": "trustworthiness/security",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Security",
+        "zh": "安全防护"
+      }
+    },
+    {
+      "id": "trustworthiness/safety",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Safety",
+        "zh": "危害控制"
+      }
+    },
+    {
+      "id": "trustworthiness/reliability",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Reliability",
+        "zh": "可靠性"
+      }
+    },
+    {
+      "id": "trustworthiness/privacy",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Privacy",
+        "zh": "隐私"
+      }
+    },
+    {
+      "id": "trustworthiness/fairness",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Fairness",
+        "zh": "公平性"
+      }
+    },
+    {
+      "id": "trustworthiness/interpretability",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Interpretability",
+        "zh": "可解释性"
+      }
+    },
+    {
+      "id": "trustworthiness/accountability",
+      "parent": "trustworthiness",
+      "label": {
+        "en": "Transparency & Accountability",
+        "zh": "透明性与可追责性"
+      }
+    },
+    {
+      "id": "applications",
+      "parent": null,
+      "label": {
+        "en": "Cybersecurity Applications",
+        "zh": "网络与系统安全应用"
+      }
+    },
+    {
+      "id": "applications/agents",
+      "parent": "applications",
+      "label": {
+        "en": "Agent & Tool Security",
+        "zh": "智能体与工具安全"
+      }
+    },
+    {
+      "id": "applications/code",
+      "parent": "applications",
+      "label": {
+        "en": "Code & Supply-chain Security",
+        "zh": "代码与供应链安全"
+      }
+    },
+    {
+      "id": "applications/intrusion",
+      "parent": "applications",
+      "label": {
+        "en": "Intrusion & Anomaly Detection",
+        "zh": "入侵与异常检测"
+      }
+    },
+    {
+      "id": "applications/phishing",
+      "parent": "applications",
+      "label": {
+        "en": "Phishing & Fraud Detection",
+        "zh": "钓鱼与欺诈检测"
+      }
+    },
+    {
+      "id": "applications/access",
+      "parent": "applications",
+      "label": {
+        "en": "Access Control",
+        "zh": "访问控制"
+      }
+    },
+    {
+      "id": "applications/industrial",
+      "parent": "applications",
+      "label": {
+        "en": "Industrial & Infrastructure Security",
+        "zh": "工业与基础设施安全"
+      }
+    },
+    {
+      "id": "applications/operations",
+      "parent": "applications",
+      "label": {
+        "en": "Security Operations",
+        "zh": "安全运营"
+      }
+    }
+  ],
+  "contributions": [
+    {
+      "id": "research",
+      "label": {
+        "en": "Research",
+        "zh": "原创研究"
+      }
+    },
+    {
+      "id": "survey",
+      "label": {
+        "en": "Survey",
+        "zh": "综述"
+      }
+    },
+    {
+      "id": "benchmark",
+      "label": {
+        "en": "Benchmark",
+        "zh": "基准"
+      }
+    },
+    {
+      "id": "dataset",
+      "label": {
+        "en": "Dataset",
+        "zh": "数据集"
+      }
+    },
+    {
+      "id": "evaluation",
+      "label": {
+        "en": "Evaluation",
+        "zh": "评测"
+      }
+    },
+    {
+      "id": "method",
+      "label": {
+        "en": "Method",
+        "zh": "方法"
+      }
+    },
+    {
+      "id": "attack",
+      "label": {
+        "en": "Attack",
+        "zh": "攻击"
+      }
+    },
+    {
+      "id": "defense",
+      "label": {
+        "en": "Defense",
+        "zh": "防御"
+      }
+    },
+    {
+      "id": "system",
+      "label": {
+        "en": "System",
+        "zh": "系统"
+      }
+    },
+    {
+      "id": "tool",
+      "label": {
+        "en": "Tool",
+        "zh": "工具"
+      }
+    },
+    {
+      "id": "tutorial",
+      "label": {
+        "en": "Tutorial",
+        "zh": "教程"
+      }
+    },
+    {
+      "id": "documentation",
+      "label": {
+        "en": "Documentation",
+        "zh": "文档"
+      }
+    },
+    {
+      "id": "analysis",
+      "label": {
+        "en": "Analysis",
+        "zh": "分析"
+      }
+    },
+    {
+      "id": "model",
+      "label": {
+        "en": "Model",
+        "zh": "模型"
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hosted",
+      "label": {
+        "en": "TypeSafe Jev",
+        "zh": "TypeSafe 官方 Jev"
+      }
+    },
+    {
+      "id": "open",
+      "label": {
+        "en": "Other open decision models",
+        "zh": "其他开放决策模型"
+      }
+    },
+    {
+      "id": "mixed",
+      "label": {
+        "en": "Jev + other models",
+        "zh": "Jev 与其他模型"
+      }
+    }
+  ]
+}
