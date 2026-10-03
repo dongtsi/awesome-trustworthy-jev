@@ -1027,5 +1027,96 @@
     "date": "2026-09-18",
     "basis": "repository-created",
     "source": "https://github.com/phuthuycoding/jev-audit"
+  },
+  {
+    "id": "2609.33671",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.33671"
+  },
+  {
+    "id": "2609.34024",
+    "kind": "Paper",
+    "date": "2026-09-27",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.34024"
+  },
+  {
+    "id": "2609.36116",
+    "kind": "Paper",
+    "date": "2026-09-28",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2609.36116"
+  },
+  {
+    "id": "2610.00381",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.00381"
+  },
+  {
+    "id": "2610.00831",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://arxiv.org/abs/2610.00831"
+  },
+  {
+    "id": "r-22d148d9c0",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/samfrmr/barmkin-mod"
+  },
+  {
+    "id": "r-331b65c9e4",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/RcyuH/Jev_brainrot"
+  },
+  {
+    "id": "r-343def861c",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/mustafasemi-ai/jevlike"
+  },
+  {
+    "id": "r-8b5897e2dc",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/mhaskar/JevImpact"
+  },
+  {
+    "id": "r-fa2f95654b",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/maanik-chandela/Jev-decision-control"
+  },
+  {
+    "id": "r-fa328f9cae",
+    "kind": "Project",
+    "date": "2026-10-02",
+    "basis": "repository-created",
+    "source": "https://github.com/ccjmcc/jevsec"
+  },
+  {
+    "id": "zenodo-23066522",
+    "kind": "Paper",
+    "date": "2026-09-30",
+    "basis": "first-publication",
+    "source": "https://zenodo.org/records/23066522"
+  },
+  {
+    "id": "zenodo-22801506",
+    "kind": "Paper",
+    "date": "2026-09-17",
+    "basis": "first-publication",
+    "source": "https://zenodo.org/records/22801506"
   }
 ]

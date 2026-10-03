@@ -88,5 +88,15 @@
     "url": "https://doi.org/10.5281/zenodo.22901248",
     "type": "artifact",
     "checked": "2026-10-02"
+  },
+  "DUCS-Bench": {
+    "url": "https://github.com/moyuan10086/cascaded-guardrail-npu",
+    "type": "benchmark",
+    "checked": "2026-10-03"
+  },
+  "SafetyBench-ZH": {
+    "url": "https://github.com/thu-coai/SafetyBench",
+    "type": "benchmark",
+    "checked": "2026-10-03"
   }
 }

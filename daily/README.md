@@ -12,7 +12,10 @@ Grouped by first public publication date.
 
 ## 2026-09-30
 
+- [Tron-1B: Fast, Calibrated Typed Decisions with a Set-Attention Option Head](https://zenodo.org/records/23066522) — Introduces a bidirectional encoder with a set-attention option head; benchmark-trained results are compared with a zero-shot hosted service. `Model` · [PDF](https://zenodo.org/api/records/23066522/files/tron-1b-paper.pdf/content)
+- [AnyJev Technical Report](https://arxiv.org/abs/2610.00831) — Reads option probabilities from pretrained LLMs and corrects label and position bias with prior normalization and cyclic option rotations. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.00831v1)
 - [JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces](https://arxiv.org/abs/2610.00437) — Explores compositional action spaces for fast agent inference. `System` · [PDF](https://arxiv.org/pdf/2610.00437v1)
+- [OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One](https://arxiv.org/abs/2610.00381) — Studies candidate-conditioned multimodal decisions against a matched generative baseline, reporting improved calibration with task-dependent accuracy trade-offs. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.00381v1)
 - [A First Glance at Jev for Network Traffic Classification: Accuracy, Processing Time, and Cost](https://arxiv.org/abs/2610.00376) — Jev is faster than the tested LLM but trails trained trees on traffic classification. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.00376v1)
 - [When the Right Answer Is Missing: An Arithmetic-Dependent Rejection Bottleneck in Jev](https://arxiv.org/abs/2609.39496) — Finds an arithmetic rejection bottleneck despite an explicit fallback option. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.39496v1)
 - [Bongard: Training Machine Intuition](https://arxiv.org/abs/2609.39111) — Trains an open System One model with outcome feedback. `Method` · [PDF](https://arxiv.org/pdf/2609.39111v1)
@@ -30,6 +33,7 @@ Grouped by first public publication date.
 
 - [A Noul Log Does Not Identify the Policy](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7525901) — Shows why marginal Noul probabilities do not identify a conjunction policy. `Analysis` · [PDF](https://papers.ssrn.com/sol3/Delivery.cfm/7525901.pdf?abstractid=7525901&mirid=1)
 - [Calibrated to Whom? Persona and Language Effects on Cultural Values in JEV](https://arxiv.org/abs/2609.36399) — Audits persona and language effects despite highly repeatable answers. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.36399v1)
+- [Dyad: Extending Large Language Models with Native Typed Decision-Making](https://arxiv.org/abs/2609.36116) — Adds an action-description encoder to an LLM and evaluates frozen-backbone and joint reinforcement learning for typed decisions. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.36116v1)
 - [Koa-action: Fast and Consistent Structured Decision Making with Generative LLMs](https://arxiv.org/abs/2609.36115) — Uses atomic output tokens for fast structured decisions. `Method` · [PDF](https://arxiv.org/pdf/2609.36115v1)
 - [Mnemon: Raw Records, Fast Judgments, Slow Thoughts](https://arxiv.org/abs/2609.36059) — Combines raw records with fast judgments and slower reasoning. `System` · [PDF](https://arxiv.org/pdf/2609.36059v1)
 - [Jev thinks "I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration](https://arxiv.org/abs/2609.35342) — Introduces Sys1Cal-v1 with probabilities known by construction, exposing differences between Choice, Noul and Score outputs. `Evaluation · Benchmark · Dataset` · [PDF](https://arxiv.org/pdf/2609.35342v1)
@@ -43,10 +47,12 @@ Grouped by first public publication date.
 ## 2026-09-27
 
 - [Probability Contracts: Accuracy, Coherence, and Decisions Across LLM Interfaces](https://arxiv.org/abs/2609.37470) — Links exact posteriors, equivalent requests and action-sensitive loss. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.37470v1)
+- [Jev in Medicine: A Benchmark Evaluation](https://arxiv.org/abs/2609.34024) — Audits Jev 1.13 accuracy, calibration, selective prediction and unanswerable-question handling across four medical benchmarks. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.34024v2)
 - [Do System One Decisions Add Up? A Study of Probabilistic Coherence](https://arxiv.org/abs/2609.33971) — Compares direct and hierarchical decisions on matched items. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33971v1)
 - [JET: Justification Evaluation in Transformer](https://arxiv.org/abs/2609.33874) — Tests local candidate-likelihood inference with shared computation. `Method` · [PDF](https://arxiv.org/pdf/2609.33874v2)
 - [Laya as a Typed Probabilistic Assessor: An Independent Reproduction and a Preregistered Study of Calibration and Selective Escalation](https://arxiv.org/abs/2609.33843) — Audits calibration and selective escalation in an open decision model. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33843v1)
 - [Type-Safe Decision Frameworks for Agentic 5G Control: A Theory-Driven Testbed Characterization of Where They Can Be Applied](https://arxiv.org/abs/2609.33689) — Maps when typed decision gates are applicable to network control. `System` · [PDF](https://arxiv.org/pdf/2609.33689v1)
+- [COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints](https://arxiv.org/abs/2609.33671) — Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33671v1)
 - [You Only Edit Once: Incentivizing In-Context Capability of LLMs via Local Demonstration Refinement](https://arxiv.org/abs/2609.33609) — Uses typed decisions in local demonstration refinement. `System` · [PDF](https://arxiv.org/pdf/2609.33609v1)
 - [Evaluating System One Models for Agent Security Decisions: Reliability, Calibration, and Selective Automation](https://arxiv.org/abs/2609.33401) — Compares security judgments across attack groups and tests confidence-based escalation. Aggregate calibration can hide groups with more missed attacks. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33401v2)
 - [Beyond Calibration: Do a Typed-Decision Model's Probabilities Obey the Probability Axioms?](https://arxiv.org/abs/2609.33209) — Tests logical probability coherence without needing class labels. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33209v1)
@@ -108,4 +114,8 @@ Grouped by first public publication date.
 
 - [Fast Intent-Driven Service Orchestration with Jev for 6G Edge Networks](https://arxiv.org/abs/2609.23136) — Studies how decision latency affects bounded service orchestration. `System` · [PDF](https://arxiv.org/pdf/2609.23136v1)
 - [Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration](https://arxiv.org/abs/2609.22753) — Measures typed decisions in deadline-constrained service admission. `System` · [PDF](https://arxiv.org/pdf/2609.22753v2)
+
+## 2026-09-17
+
+- [Calibration Does Not Compose, Types Destroy Vagueness: The Hidden-Markov and Fuzzy Primitives Missing from System-One Decision Models](https://zenodo.org/records/23064668) — Analyzes how latent regime shifts and repeated thresholds can invalidate composed decision pipelines, using formal assumptions and synthetic experiments. `Analysis` · [PDF](https://zenodo.org/api/records/23064668/files/paper.pdf/content)
 

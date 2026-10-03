@@ -353,5 +353,71 @@
     },
     "source_section": "Sections 7–8, 10; corrections in v2",
     "source": "https://zenodo.org/api/records/22901853/files/paper-en.pdf/content"
+  },
+  {
+    "id": "2610.00831",
+    "category": "foundations",
+    "datasets": [
+      "Banking77",
+      "Public JevBench"
+    ],
+    "data_role": {
+      "en": "Existing public datasets or released benchmark artifacts",
+      "zh": "已有公开数据或发布的基准工件"
+    },
+    "design": {
+      "en": "Prior normalization and cyclic option rotations; the public JevBench subset scores 213 of 231 items.",
+      "zh": "先验归一化与循环选项置换；公开 JevBench 子集评估 231 项中的 213 项。"
+    },
+    "reading": {
+      "en": "No weight training, but prior strength and temperature use labels. Extra rotations cost forwards; the serving stopping bound needs separate selection and certification data.",
+      "zh": "没有权重训练，但先验强度和温度使用标签；置换增加前向成本，服务停止界限需区分选择集与认证集。"
+    },
+    "source_section": "Section 6; Section 9",
+    "source": "https://arxiv.org/pdf/2610.00831v1"
+  },
+  {
+    "id": "2609.33671",
+    "category": "applications",
+    "datasets": [
+      "DUCS-Bench",
+      "SafetyBench-ZH"
+    ],
+    "data_role": {
+      "en": "Existing public datasets or released benchmark artifacts",
+      "zh": "已有公开数据或发布的基准工件"
+    },
+    "design": {
+      "en": "Validation-calibrated CPU gate and Laya cascade; tests clean held-out prompts, false positives and cross-domain transfer.",
+      "zh": "在验证集校准 CPU 门控与 Laya 级联，测试干净留出提示、误报与跨域迁移。"
+    },
+    "reading": {
+      "en": "In-domain accuracy does not establish OOD robustness; paper separates specialization loss and replay recovery. Hardware and end-to-end serial timing must remain explicit.",
+      "zh": "域内准确率不能替代域外鲁棒性；论文区分专门化损失和回放恢复，且必须保留硬件与串行端到端计时条件。"
+    },
+    "source_section": "Evaluation sections and tables",
+    "source": "https://arxiv.org/pdf/2609.33671v1"
+  },
+  {
+    "id": "zenodo-23066522",
+    "category": "foundations",
+    "datasets": [
+      "Banking77",
+      "CLINC150"
+    ],
+    "data_role": {
+      "en": "Existing public datasets or released benchmark artifacts",
+      "zh": "已有公开数据或发布的基准工件"
+    },
+    "design": {
+      "en": "Benchmark-trained encoder with option-set attention and per-type temperature scaling; includes a verbatim contamination audit.",
+      "zh": "在基准训练集训练选项集合注意力编码器并按类型温度校准，另做逐字污染审计。"
+    },
+    "reading": {
+      "en": "Hosted Jev numbers come from third parties with different prompts and samples; this is not a matched zero-shot comparison.",
+      "zh": "托管 Jev 数字来自第三方、提示与样本不同，不是匹配的零样本对照。"
+    },
+    "source_section": "Sections IX–X",
+    "source": "https://zenodo.org/api/records/23066522/files/tron-1b-paper.pdf/content"
   }
 ]

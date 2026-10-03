@@ -41,10 +41,31 @@
       <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Tron-1B: Fast, Calibrated Typed Decisions with a Set-Attention Option Head</title>
+      <link>https://zenodo.org/records/23066522</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23066522#publication</guid>
+      <description>Introduces a bidirectional encoder with a set-attention option head; benchmark-trained results are compared with a zero-shot hosted service.</description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>AnyJev Technical Report</title>
+      <link>https://arxiv.org/abs/2610.00831</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.00831#publication</guid>
+      <description>Reads option probabilities from pretrained LLMs and corrects label and position bias with prior normalization and cyclic option rotations.</description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces</title>
       <link>https://arxiv.org/abs/2610.00437</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.00437#publication</guid>
       <description>Explores compositional action spaces for fast agent inference.</description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One</title>
+      <link>https://arxiv.org/abs/2610.00381</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.00381#publication</guid>
+      <description>Studies candidate-conditioned multimodal decisions against a matched generative baseline, reporting improved calibration with task-dependent accuracy trade-offs.</description>
       <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -125,6 +146,13 @@
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Dyad: Extending Large Language Models with Native Typed Decision-Making</title>
+      <link>https://arxiv.org/abs/2609.36116</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2609.36116#publication</guid>
+      <description>Adds an action-description encoder to an LLM and evaluates frozen-backbone and joint reinforcement learning for typed decisions.</description>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Koa-action: Fast and Consistent Structured Decision Making with Generative LLMs</title>
       <link>https://arxiv.org/abs/2609.36115</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2609.36115#publication</guid>
@@ -195,6 +223,13 @@
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Jev in Medicine: A Benchmark Evaluation</title>
+      <link>https://arxiv.org/abs/2609.34024</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2609.34024#publication</guid>
+      <description>Audits Jev 1.13 accuracy, calibration, selective prediction and unanswerable-question handling across four medical benchmarks.</description>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Do System One Decisions Add Up? A Study of Probabilistic Coherence</title>
       <link>https://arxiv.org/abs/2609.33971</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2609.33971#publication</guid>
@@ -220,6 +255,13 @@
       <link>https://arxiv.org/abs/2609.33689</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2609.33689#publication</guid>
       <description>Maps when typed decision gates are applicable to network control.</description>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints</title>
+      <link>https://arxiv.org/abs/2609.33671</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2609.33671#publication</guid>
+      <description>Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer.</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -480,6 +522,13 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.22753#publication</guid>
       <description>Measures typed decisions in deadline-constrained service admission.</description>
       <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Calibration Does Not Compose, Types Destroy Vagueness: The Hidden-Markov and Fuzzy Primitives Missing from System-One Decision Models</title>
+      <link>https://zenodo.org/records/23064668</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23064668#publication</guid>
+      <description>Analyzes how latent regime shifts and repeated thresholds can invalidate composed decision pipelines, using formal assumptions and synthetic experiments.</description>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

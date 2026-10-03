@@ -12215,5 +12215,581 @@
       "weights": "https://huggingface.co/tarsur385/djev-distill-v4/tree/main",
       "checked": "2026-10-02"
     }
+  },
+  {
+    "id": "2609.33671",
+    "title": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints",
+    "short": "COGNIT-Guard",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2609.33671",
+    "date": "2026-09-27",
+    "updated": "2026-09-27",
+    "added": "2026-10-03",
+    "version": "2609.33671v1",
+    "pdf": "https://arxiv.org/pdf/2609.33671v1",
+    "authors": [
+      "Hao Chen"
+    ],
+    "categories": [
+      "applications/agents",
+      "trustworthiness/reliability"
+    ],
+    "target": "open",
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer.",
+    "brief_zh": "以校准后的 CPU 门控和 Laya CPU-NPU 级联筛查提示风险，同时评估误报、时延与域外迁移。",
+    "summary": "Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer.",
+    "summary_zh": "以校准后的 CPU 门控和 Laya CPU-NPU 级联筛查提示风险，同时评估误报、时延与域外迁移。",
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "schema_version": 2,
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model",
+    "datasets": [
+      "DUCS-Bench",
+      "SafetyBench-ZH"
+    ]
+  },
+  {
+    "id": "2609.34024",
+    "title": "Jev in Medicine: A Benchmark Evaluation",
+    "short": "Jev in Medicine",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2609.34024",
+    "date": "2026-09-27",
+    "updated": "2026-10-01",
+    "added": "2026-10-03",
+    "version": "2609.34024v2",
+    "pdf": "https://arxiv.org/pdf/2609.34024v2",
+    "authors": [
+      "Alfredo Madrid-García",
+      "Beatriz Merino-Barbancho"
+    ],
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "target": "hosted",
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits Jev 1.13 accuracy, calibration, selective prediction and unanswerable-question handling across four medical benchmarks.",
+    "brief_zh": "在四类医学基准上审计 Jev 1.13 的准确率、校准、选择性预测和无法回答问题的处理；结论依赖任务。",
+    "summary": "Audits Jev 1.13 accuracy, calibration, selective prediction and unanswerable-question handling across four medical benchmarks.",
+    "summary_zh": "在四类医学基准上审计 Jev 1.13 的准确率、校准、选择性预测和无法回答问题的处理；结论依赖任务。",
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "schema_version": 2,
+    "theme": "Reliability",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "hosted-jev"
+  },
+  {
+    "id": "2609.36116",
+    "title": "Dyad: Extending Large Language Models with Native Typed Decision-Making",
+    "short": "Dyad",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2609.36116",
+    "date": "2026-09-28",
+    "updated": "2026-09-28",
+    "added": "2026-10-03",
+    "version": "2609.36116v1",
+    "pdf": "https://arxiv.org/pdf/2609.36116v1",
+    "authors": [
+      "Yundaichuan Zhan",
+      "Weishi Wang",
+      "Wenbiao Liu",
+      "Daniel Dahlmeier",
+      "Chengwei Qin",
+      "Juncheng Li",
+      "Fredrik D. Johansson",
+      "Zhongqi Yue"
+    ],
+    "categories": [
+      "foundations/architecture",
+      "foundations/interfaces"
+    ],
+    "target": "open",
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Adds an action-description encoder to an LLM and evaluates frozen-backbone and joint reinforcement learning for typed decisions.",
+    "brief_zh": "为大语言模型加入候选动作编码器，对比冻结骨干与联合强化学习的类型化决策能力。",
+    "summary": "Adds an action-description encoder to an LLM and evaluates frozen-backbone and joint reinforcement learning for typed decisions.",
+    "summary_zh": "为大语言模型加入候选动作编码器，对比冻结骨干与联合强化学习的类型化决策能力。",
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "schema_version": 2,
+    "theme": "Foundations",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "2610.00381",
+    "title": "OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One",
+    "short": "OmniMed-Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.00381",
+    "date": "2026-09-30",
+    "updated": "2026-09-30",
+    "added": "2026-10-03",
+    "version": "2610.00381v1",
+    "pdf": "https://arxiv.org/pdf/2610.00381v1",
+    "authors": [
+      "Luyao Tang",
+      "Cheng Chen"
+    ],
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "target": "open",
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies candidate-conditioned multimodal decisions against a matched generative baseline, reporting improved calibration with task-dependent accuracy trade-offs.",
+    "brief_zh": "以匹配骨干和数据的生成式基线检验多模态候选决策接口，研究校准改善及准确率取舍；接口和训练效应未完全分离。",
+    "summary": "Studies candidate-conditioned multimodal decisions against a matched generative baseline, reporting improved calibration with task-dependent accuracy trade-offs.",
+    "summary_zh": "以匹配骨干和数据的生成式基线检验多模态候选决策接口，研究校准改善及准确率取舍；接口和训练效应未完全分离。",
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "schema_version": 2,
+    "theme": "Foundations",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "2610.00831",
+    "title": "AnyJev Technical Report",
+    "short": "AnyJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.00831",
+    "date": "2026-09-30",
+    "updated": "2026-09-30",
+    "added": "2026-10-03",
+    "version": "2610.00831v1",
+    "pdf": "https://arxiv.org/pdf/2610.00831v1",
+    "authors": [
+      "Jiamu Zhang",
+      "Tianze Yang",
+      "Yucheng Shi",
+      "Evan Chen",
+      "Zixiang Nie",
+      "Kelly Wan",
+      "Liangjie Hong",
+      "Ninghao Liu",
+      "Liang Wu"
+    ],
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "target": "open",
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Reads option probabilities from pretrained LLMs and corrects label and position bias with prior normalization and cyclic option rotations.",
+    "brief_zh": "从预训练模型读出选项概率，以先验归一化和循环置换修正标签与位置偏差；多次前向带来额外成本。",
+    "summary": "Reads option probabilities from pretrained LLMs and corrects label and position bias with prior normalization and cyclic option rotations.",
+    "summary_zh": "从预训练模型读出选项概率，以先验归一化和循环置换修正标签与位置偏差；多次前向带来额外成本。",
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "schema_version": 2,
+    "theme": "Foundations",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model",
+    "datasets": [
+      "Banking77",
+      "Public JevBench"
+    ]
+  },
+  {
+    "id": "hf-camellia86-canopy-jev-27b",
+    "title": "Camellia86/Canopy-Jev-27B",
+    "short": "Canopy-Jev-27B",
+    "kind": "Project",
+    "url": "https://huggingface.co/Camellia86/Canopy-Jev-27B",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "added": "2026-10-03",
+    "authors": [
+      "Camellia86"
+    ],
+    "version": "b262895f7822caf0cf278c1d2159cfd867348820",
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "model"
+    ],
+    "brief_en": "Publishes an adapter and probability prior for shared-prefix, isolated-branch decisions on a frozen Qwen3.8-27B backbone; benchmark scores are model-card claims.",
+    "brief_zh": "发布冻结 Qwen3.8-27B 上的共享前缀、独立分支决策适配器及概率先验；性能数值来自模型卡。",
+    "model_info": {
+      "release": "adapter",
+      "license": "apache-2.0",
+      "weights": "https://huggingface.co/Camellia86/Canopy-Jev-27B/tree/main",
+      "checked": "2026-10-03"
+    },
+    "schema_version": 2,
+    "evidence": "Model card",
+    "review": "Card and file listing verified",
+    "theme": "Foundations",
+    "summary": "Publishes an adapter and probability prior for shared-prefix, isolated-branch decisions on a frozen Qwen3.8-27B backbone; benchmark scores are model-card claims.",
+    "summary_zh": "发布冻结 Qwen3.8-27B 上的共享前缀、独立分支决策适配器及概率先验；性能数值来自模型卡。",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "hf-nickprock-archai-jev-zagreus-0.4b-ita",
+    "title": "nickprock/archai-jev-zagreus-0.4b-ita",
+    "short": "Archai JEV Italian",
+    "kind": "Project",
+    "url": "https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "added": "2026-10-03",
+    "authors": [
+      "nickprock"
+    ],
+    "version": "574c1b8caf64d6236af14d0d112786e1c458b2d5",
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "model"
+    ],
+    "brief_en": "Releases an Italian 0.4B decision adapter trained with cross-entropy and Brier loss; reported calibration and latency require independent evaluation.",
+    "brief_zh": "发布以交叉熵和 Brier 损失训练的意大利语 0.4B 决策适配器；模型卡的校准和时延主张尚需独立评估。",
+    "model_info": {
+      "release": "adapter",
+      "license": "apache-2.0",
+      "weights": "https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/tree/main",
+      "checked": "2026-10-03"
+    },
+    "schema_version": 2,
+    "evidence": "Model card",
+    "review": "Card and file listing verified",
+    "theme": "Foundations",
+    "summary": "Releases an Italian 0.4B decision adapter trained with cross-entropy and Brier loss; reported calibration and latency require independent evaluation.",
+    "summary_zh": "发布以交叉熵和 Brier 损失训练的意大利语 0.4B 决策适配器；模型卡的校准和时延主张尚需独立评估。",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "hf-shgao-rsi-jev-v5.0-vl-3b",
+    "title": "shgao/rsi-jev-v5.0-vl-3b",
+    "short": "RSI-Jev v5.0-VL 3B",
+    "kind": "Project",
+    "url": "https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "added": "2026-10-03",
+    "authors": [
+      "shgao"
+    ],
+    "version": "66eeaee47dce202c4d802e469ad9b806e0ff6df2",
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "model"
+    ],
+    "brief_en": "Releases a self-contained multimodal typed-decision checkpoint using 20 Qwen3.5-4B layers, an option head and calibration tensors.",
+    "brief_zh": "发布由 20 层 Qwen3.5-4B、选项头和校准参数组成的自包含多模态类型化决策权重。",
+    "model_info": {
+      "release": "weights",
+      "license": "apache-2.0",
+      "weights": "https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/tree/main",
+      "checked": "2026-10-03"
+    },
+    "schema_version": 2,
+    "evidence": "Model card",
+    "review": "Card and file listing verified",
+    "theme": "Foundations",
+    "summary": "Releases a self-contained multimodal typed-decision checkpoint using 20 Qwen3.5-4B layers, an option head and calibration tensors.",
+    "summary_zh": "发布由 20 层 Qwen3.5-4B、选项头和校准参数组成的自包含多模态类型化决策权重。",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "r-22d148d9c0",
+    "title": "samfrmr/barmkin-mod",
+    "short": "barmkin-mod",
+    "kind": "Project",
+    "url": "https://github.com/samfrmr/barmkin-mod",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T21:12:46Z",
+    "added": "2026-10-03",
+    "authors": [
+      "samfrmr"
+    ],
+    "target": "hosted",
+    "categories": [
+      "applications/agents",
+      "trustworthiness/privacy"
+    ],
+    "contributions": [
+      "defense",
+      "tool"
+    ],
+    "brief_en": "Combines secret redaction, taint tracking and tool-message screening with an optional Jev-compatible classifier gateway for coding agents.",
+    "brief_zh": "将秘密脱敏、污点跟踪和工具消息筛查与可选 Jev 兼容分类网关结合，用于编码智能体防护。",
+    "summary": "Combines secret redaction, taint tracking and tool-message screening with an optional Jev-compatible classifier gateway for coding agents.",
+    "summary_zh": "将秘密脱敏、污点跟踪和工具消息筛查与可选 Jev 兼容分类网关结合，用于编码智能体防护。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "hosted-jev"
+  },
+  {
+    "id": "r-331b65c9e4",
+    "title": "RcyuH/Jev_brainrot",
+    "short": "Routing calibration reproduction",
+    "kind": "Project",
+    "url": "https://github.com/RcyuH/Jev_brainrot",
+    "date": "2026-10-02",
+    "updated": "2026-10-03",
+    "version": "2026-10-03T02:45:59Z",
+    "added": "2026-10-03",
+    "authors": [
+      "RcyuH"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "evaluation",
+      "tool"
+    ],
+    "brief_en": "Provides a routing-conditional calibration audit pipeline with bootstrap, multiple-testing controls and explicit dataset-discrepancy handling.",
+    "brief_zh": "提供路由条件校准复现流程，含 bootstrap、多重检验控制与数据去重差异记录；流程实现不等于复现结果。",
+    "summary": "Provides a routing-conditional calibration audit pipeline with bootstrap, multiple-testing controls and explicit dataset-discrepancy handling.",
+    "summary_zh": "提供路由条件校准复现流程，含 bootstrap、多重检验控制与数据去重差异记录；流程实现不等于复现结果。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Reliability",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "r-343def861c",
+    "title": "mustafasemi-ai/jevlike",
+    "short": "jevlike",
+    "kind": "Project",
+    "url": "https://github.com/mustafasemi-ai/jevlike",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T17:19:34Z",
+    "added": "2026-10-03",
+    "authors": [
+      "mustafasemi-ai"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests calibration under distribution shift with a Qwen3-1.7B decision replica; reported failures concern the open replica rather than hosted Jev.",
+    "brief_zh": "用 Qwen3-1.7B 决策复现模型检验分布漂移下的校准；结果针对该开放复现，不等同于托管 Jev。",
+    "summary": "Tests calibration under distribution shift with a Qwen3-1.7B decision replica; reported failures concern the open replica rather than hosted Jev.",
+    "summary_zh": "用 Qwen3-1.7B 决策复现模型检验分布漂移下的校准；结果针对该开放复现，不等同于托管 Jev。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Reliability",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "r-8b5897e2dc",
+    "title": "mhaskar/JevImpact",
+    "short": "JevImpact",
+    "kind": "Project",
+    "url": "https://github.com/mhaskar/JevImpact",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T14:35:41Z",
+    "added": "2026-10-03",
+    "authors": [
+      "mhaskar"
+    ],
+    "target": "hosted",
+    "categories": [
+      "applications/code"
+    ],
+    "contributions": [
+      "tool",
+      "system"
+    ],
+    "brief_en": "Uses typed Jev judgments to triage documented vulnerability findings; synthetic examples and rubric scores do not establish exploitability or CVSS severity.",
+    "brief_zh": "用 Jev 类型化判断分诊漏洞报告；示例为合成材料，自定义影响评分不是 CVSS，也不验证真实可利用性。",
+    "summary": "Uses typed Jev judgments to triage documented vulnerability findings; synthetic examples and rubric scores do not establish exploitability or CVSS severity.",
+    "summary_zh": "用 Jev 类型化判断分诊漏洞报告；示例为合成材料，自定义影响评分不是 CVSS，也不验证真实可利用性。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "hosted-jev"
+  },
+  {
+    "id": "r-fa2f95654b",
+    "title": "maanik-chandela/Jev-decision-control",
+    "short": "DART pilot",
+    "kind": "Project",
+    "url": "https://github.com/maanik-chandela/Jev-decision-control",
+    "date": "2026-10-02",
+    "updated": "2026-10-03",
+    "version": "2026-10-03T12:30:51Z",
+    "added": "2026-10-03",
+    "authors": [
+      "maanik-chandela"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Explores typed probabilities for answer, defer and abstain control; the current 50-case hand-designed pilot does not validate distribution-shift robustness.",
+    "brief_zh": "研究概率驱动的回答、转交和拒答控制；当前仅有 50 例手工试验，尚未验证分布漂移鲁棒性。",
+    "summary": "Explores typed probabilities for answer, defer and abstain control; the current 50-case hand-designed pilot does not validate distribution-shift robustness.",
+    "summary_zh": "研究概率驱动的回答、转交和拒答控制；当前仅有 50 例手工试验，尚未验证分布漂移鲁棒性。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Reliability",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "hosted-jev"
+  },
+  {
+    "id": "r-fa328f9cae",
+    "title": "ccjmcc/jevsec",
+    "short": "JevSec",
+    "kind": "Project",
+    "url": "https://github.com/ccjmcc/jevsec",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T10:42:06Z",
+    "added": "2026-10-03",
+    "authors": [
+      "ccjmcc"
+    ],
+    "target": "open",
+    "categories": [
+      "applications/intrusion"
+    ],
+    "contributions": [
+      "system",
+      "evaluation"
+    ],
+    "brief_en": "Uses a local Qwen3-4B decision backend and deterministic rules for web-behavior security triage; the reported replay supports review coverage rather than strong risk ranking.",
+    "brief_zh": "以本地 Qwen3-4B 决策后端和规则做 Web 行为安全分诊；回放结果支持增加审查覆盖，风险排序能力仍弱。",
+    "summary": "Uses a local Qwen3-4B decision backend and deterministic rules for web-behavior security triage; the reported replay supports review coverage rather than strong risk ranking.",
+    "summary_zh": "以本地 Qwen3-4B 决策后端和规则做 Web 行为安全分诊；回放结果支持增加审查覆盖，风险排序能力仍弱。",
+    "evidence": "Repository",
+    "review": "README reviewed",
+    "schema_version": 2,
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
+  },
+  {
+    "id": "zenodo-23066522",
+    "title": "Tron-1B: Fast, Calibrated Typed Decisions with a Set-Attention Option Head",
+    "short": "Tron-1B",
+    "kind": "Paper",
+    "url": "https://zenodo.org/records/23066522",
+    "date": "2026-09-30",
+    "updated": "2026-09-30",
+    "added": "2026-10-03",
+    "doi": "10.5281/zenodo.23066522",
+    "version": "Mk1",
+    "pdf": "https://zenodo.org/api/records/23066522/files/tron-1b-paper.pdf/content",
+    "authors": [
+      "Sengupta, Samir"
+    ],
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "target": "open",
+    "contributions": [
+      "research",
+      "model"
+    ],
+    "brief_en": "Introduces a bidirectional encoder with a set-attention option head; benchmark-trained results are compared with a zero-shot hosted service.",
+    "brief_zh": "提出带集合注意力选项头的双向编码器；需区分使用基准训练集的结果与零样本托管服务的比较。",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Source verified",
+    "theme": "Foundations",
+    "summary": "Introduces a bidirectional encoder with a set-attention option head; benchmark-trained results are compared with a zero-shot hosted service.",
+    "summary_zh": "提出带集合注意力选项头的双向编码器；需区分使用基准训练集的结果与零样本托管服务的比较。",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model",
+    "datasets": [
+      "Banking77",
+      "CLINC150"
+    ]
+  },
+  {
+    "id": "zenodo-22801506",
+    "title": "Calibration Does Not Compose, Types Destroy Vagueness: The Hidden-Markov and Fuzzy Primitives Missing from System-One Decision Models",
+    "short": "Calibration composition",
+    "kind": "Paper",
+    "url": "https://zenodo.org/records/23064668",
+    "date": "2026-09-17",
+    "updated": "2026-10-01",
+    "added": "2026-10-03",
+    "doi": "10.5281/zenodo.23064668",
+    "version": "1.3",
+    "pdf": "https://zenodo.org/api/records/23064668/files/paper.pdf/content",
+    "authors": [
+      "Doan Ngoc, Anh Khoa"
+    ],
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "research",
+      "analysis"
+    ],
+    "brief_en": "Analyzes how latent regime shifts and repeated thresholds can invalidate composed decision pipelines, using formal assumptions and synthetic experiments.",
+    "brief_zh": "在显式假设和合成实验下分析潜在状态漂移、重复阈值化如何破坏决策管线的组合可靠性；不是 Jev API 实测。",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods and limitations reviewed",
+    "theme": "Reliability",
+    "summary": "Analyzes how latent regime shifts and repeated thresholds can invalidate composed decision pipelines, using formal assumptions and synthetic experiments.",
+    "summary_zh": "在显式假设和合成实验下分析潜在状态漂移、重复阈值化如何破坏决策管线的组合可靠性；不是 Jev API 实测。",
+    "limitation": "Source-reported evidence; no independent reproduction in this update.",
+    "scope": "related-model"
   }
 ]
