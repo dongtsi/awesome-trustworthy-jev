@@ -1118,5 +1118,54 @@
     "date": "2026-09-17",
     "basis": "first-publication",
     "source": "https://zenodo.org/records/22801506"
+  },
+  {
+    "id": "r-1d2e617f23",
+    "kind": "Project",
+    "date": "2026-09-28",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/ApexYash11/Gatewise"
+  },
+  {
+    "id": "r-61140463ba",
+    "kind": "Project",
+    "date": "2026-09-25",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/Kandarp-Joshi-007/firstlight"
+  },
+  {
+    "id": "r-1086343201",
+    "kind": "Project",
+    "date": "2026-10-01",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/mertkayacs/jevoss"
+  },
+  {
+    "id": "r-b021deba5a",
+    "kind": "Project",
+    "date": "2026-09-28",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/raxITlabs/jev-as-a-guardrails"
+  },
+  {
+    "id": "r-500c1c6834",
+    "kind": "Project",
+    "date": "2026-10-03",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/B-Deforce/jev-clef-calibration"
+  },
+  {
+    "id": "r-91825d96e3",
+    "kind": "Project",
+    "date": "2026-10-03",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/jhaveri-bhavya/jev-safety-eval"
+  },
+  {
+    "id": "r-3cec7dc207",
+    "kind": "Project",
+    "date": "2026-10-04",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/ankushchadha/system-one-security"
   }
 ]

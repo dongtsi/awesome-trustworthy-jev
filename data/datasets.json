@@ -98,5 +98,10 @@
     "url": "https://github.com/thu-coai/SafetyBench",
     "type": "benchmark",
     "checked": "2026-10-03"
+  },
+  "jev-as-a-guardrails": {
+    "url": "https://huggingface.co/datasets/raxITLabs/jev-as-a-guardrails",
+    "type": "dataset",
+    "checked": "2026-10-04"
   }
 }

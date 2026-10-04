@@ -120,7 +120,9 @@
     "2026-09-29",
     "2026-09-30",
     "2026-10-01",
-    "2026-10-02"
+    "2026-10-02",
+    "2026-10-03",
+    "2026-10-04"
   ],
   "Paper": [
     0,
@@ -243,6 +245,8 @@
     4,
     9,
     5,
+    0,
+    0,
     0
   ],
   "Project": [
@@ -359,16 +363,18 @@
     8,
     6,
     5,
-    4,
+    5,
     2,
     3,
-    3,
+    5,
     3,
     5,
-    0,
-    6
+    1,
+    6,
+    2,
+    1
   ],
-  "undated_projects": 143,
+  "undated_projects": 144,
   "basis": {
     "Paper": "first public publication",
     "Project": "verified repository creation"

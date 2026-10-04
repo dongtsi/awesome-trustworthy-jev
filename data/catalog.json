@@ -12791,5 +12791,273 @@
     "summary_zh": "在显式假设和合成实验下分析潜在状态漂移、重复阈值化如何破坏决策管线的组合可靠性；不是 Jev API 实测。",
     "limitation": "Source-reported evidence; no independent reproduction in this update.",
     "scope": "related-model"
+  },
+  {
+    "id": "r-1d2e617f23",
+    "title": "ApexYash11/Gatewise",
+    "short": "Gatewise",
+    "kind": "Project",
+    "url": "https://github.com/ApexYash11/Gatewise",
+    "date": "2026-09-28",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T11:01:09Z",
+    "added": "2026-10-04",
+    "authors": [
+      "ApexYash11"
+    ],
+    "categories": [
+      "applications/code",
+      "applications/agents"
+    ],
+    "target": "hosted",
+    "contributions": [
+      "system",
+      "tool"
+    ],
+    "brief_en": "Uses versioned Jev questions to route pull-request risk and security review, separating action planning from execution; bundled labels are a harness smoke test.",
+    "brief_zh": "用版本化 Jev 问题路由拉取请求风险和安全审查，将行动规划与执行分离；内置标签仅用于流程冒烟测试。",
+    "summary": "Uses versioned Jev questions to route pull-request risk and security review, separating action planning from execution; bundled labels are a harness smoke test.",
+    "summary_zh": "用版本化 Jev 问题路由拉取请求风险和安全审查，将行动规划与执行分离；内置标签仅用于流程冒烟测试。",
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "r-61140463ba",
+    "title": "Kandarp-Joshi-007/firstlight",
+    "short": "firstlight",
+    "kind": "Project",
+    "url": "https://github.com/Kandarp-Joshi-007/firstlight",
+    "date": "2026-09-25",
+    "updated": "2026-10-04",
+    "version": "2026-10-04T11:45:52Z",
+    "added": "2026-10-04",
+    "authors": [
+      "Kandarp-Joshi-007"
+    ],
+    "categories": [
+      "applications/phishing"
+    ],
+    "target": "hosted",
+    "contributions": [
+      "system",
+      "evaluation"
+    ],
+    "brief_en": "Screens certificate-log domains with brand rules and Jev for impersonation triage; reported operating-point gains coexist with weaker overall AUC than the rule baseline.",
+    "brief_zh": "以品牌规则和 Jev 筛查证书日志中的仿冒域名；报告的特定阈值检出收益与低于规则基线的整体 AUC 同时存在。",
+    "summary": "Screens certificate-log domains with brand rules and Jev for impersonation triage; reported operating-point gains coexist with weaker overall AUC than the rule baseline.",
+    "summary_zh": "以品牌规则和 Jev 筛查证书日志中的仿冒域名；报告的特定阈值检出收益与低于规则基线的整体 AUC 同时存在。",
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "r-1086343201",
+    "title": "mertkayacs/jevoss",
+    "short": "JevOss",
+    "kind": "Project",
+    "url": "https://github.com/mertkayacs/jevoss",
+    "date": "2026-10-01",
+    "updated": "2026-10-02",
+    "version": "2026-10-02T16:44:42Z",
+    "added": "2026-10-04",
+    "authors": [
+      "mertkayacs"
+    ],
+    "categories": [
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "benchmark",
+      "tool"
+    ],
+    "brief_en": "Probes Jev-compatible endpoints for option-order effects, injected instructions, distractors, decision-type consistency and repeated-call stability.",
+    "brief_zh": "测试 Jev 兼容接口的选项顺序、注入指令、干扰文本、决策类型一致性与重复调用稳定性。",
+    "summary": "Probes Jev-compatible endpoints for option-order effects, injected instructions, distractors, decision-type consistency and repeated-call stability.",
+    "summary_zh": "测试 Jev 兼容接口的选项顺序、注入指令、干扰文本、决策类型一致性与重复调用稳定性。",
+    "theme": "Reliability",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "r-b021deba5a",
+    "title": "raxITlabs/jev-as-a-guardrails",
+    "short": "Jev guardrail benchmark",
+    "kind": "Project",
+    "url": "https://github.com/raxITlabs/jev-as-a-guardrails",
+    "date": "2026-09-28",
+    "updated": "2026-10-04",
+    "version": "2026-10-04T10:40:05Z",
+    "added": "2026-10-04",
+    "authors": [
+      "raxITlabs"
+    ],
+    "categories": [
+      "applications/agents",
+      "trustworthiness/security"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "benchmark",
+      "dataset"
+    ],
+    "brief_en": "Provides frozen guardrail datasets and an evaluation harness; source-specific licences, mixed label provenance and documented split overlap constrain comparisons.",
+    "brief_zh": "提供冻结护栏数据和评测流程；使用时需区分逐来源许可、混合标签来源与已披露的划分重叠。",
+    "summary": "Provides frozen guardrail datasets and an evaluation harness; source-specific licences, mixed label provenance and documented split overlap constrain comparisons.",
+    "summary_zh": "提供冻结护栏数据和评测流程；使用时需区分逐来源许可、混合标签来源与已披露的划分重叠。",
+    "theme": "Cybersecurity",
+    "limitation": "Repository and dataset-card versions differ; the card reports PII document overlap across tuning and test and mixed label provenance.",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed",
+    "datasets": [
+      "jev-as-a-guardrails"
+    ]
+  },
+  {
+    "id": "r-500c1c6834",
+    "title": "B-Deforce/jev-clef-calibration",
+    "short": "Jev–Clef calibration",
+    "kind": "Project",
+    "url": "https://github.com/B-Deforce/jev-clef-calibration",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "version": "2026-10-03T14:30:28Z",
+    "added": "2026-10-04",
+    "authors": [
+      "B-Deforce"
+    ],
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "evaluation",
+      "tool"
+    ],
+    "brief_en": "Compares Jev and Clef probabilities on matched sentiment and redacted-SMS samples with paired bootstrap; the code reproduces the procedure, not immutable hosted outputs.",
+    "brief_zh": "在匹配的情感与脱敏短信样本上比较 Jev、Clef 概率并做配对 bootstrap；代码可复现流程，不能冻结托管输出。",
+    "summary": "Compares Jev and Clef probabilities on matched sentiment and redacted-SMS samples with paired bootstrap; the code reproduces the procedure, not immutable hosted outputs.",
+    "summary_zh": "在匹配的情感与脱敏短信样本上比较 Jev、Clef 概率并做配对 bootstrap；代码可复现流程，不能冻结托管输出。",
+    "theme": "Reliability",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "r-91825d96e3",
+    "title": "jhaveri-bhavya/jev-safety-eval",
+    "short": "Jev safety evaluation",
+    "kind": "Project",
+    "url": "https://github.com/jhaveri-bhavya/jev-safety-eval",
+    "date": "2026-10-03",
+    "updated": "2026-10-04",
+    "version": "2026-10-04T12:24:22Z",
+    "added": "2026-10-04",
+    "authors": [
+      "jhaveri-bhavya"
+    ],
+    "categories": [
+      "applications/agents"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "benchmark"
+    ],
+    "brief_en": "Develops an Aegis-based safety benchmark comparing Jev, a Gemma judge and supervised baselines; only setup and API smoke checks are currently reported.",
+    "brief_zh": "开发基于 Aegis 的安全评测，拟比较 Jev、Gemma 裁判及监督基线；当前仅报告环境与 API 冒烟检查，尚无评测结果。",
+    "summary": "Develops an Aegis-based safety benchmark comparing Jev, a Gemma judge and supervised baselines; only setup and API smoke checks are currently reported.",
+    "summary_zh": "开发基于 Aegis 的安全评测，拟比较 Jev、Gemma 裁判及监督基线；当前仅报告环境与 API 冒烟检查，尚无评测结果。",
+    "theme": "Cybersecurity",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "r-3cec7dc207",
+    "title": "ankushchadha/system-one-security",
+    "short": "System One security experiments",
+    "kind": "Project",
+    "url": "https://github.com/ankushchadha/system-one-security",
+    "date": "2026-10-04",
+    "updated": "2026-10-04",
+    "version": "2026-10-04T01:14:02Z",
+    "added": "2026-10-04",
+    "authors": [
+      "ankushchadha"
+    ],
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "target": "mixed",
+    "contributions": [
+      "evaluation",
+      "attack"
+    ],
+    "brief_en": "Tests state truncation, instruction injection and fact edits in a synthetic citation-checking setting for Jev and Clef; results concern served APIs and partial public evidence.",
+    "brief_zh": "在合成引文核查场景测试 Jev、Clef 的状态截断、指令注入和事实修改；结论限于托管接口与已公开材料。",
+    "summary": "Tests state truncation, instruction injection and fact edits in a synthetic citation-checking setting for Jev and Clef; results concern served APIs and partial public evidence.",
+    "summary_zh": "在合成引文核查场景测试 Jev、Clef 的状态截断、指令注入和事实修改；结论限于托管接口与已公开材料。",
+    "theme": "Reliability",
+    "limitation": "Source-reported methods and results; no independent model execution in this update.",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed"
+  },
+  {
+    "id": "hf-bricksdisplay-jevling-e2b-v1",
+    "title": "BricksDisplay/jevling-e2b-v1",
+    "short": "Jevling-E2B-v1",
+    "kind": "Project",
+    "url": "https://huggingface.co/BricksDisplay/jevling-e2b-v1",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "version": "fcec0802ccddf043746a16fdfbb73352d88a7ba4",
+    "added": "2026-10-04",
+    "authors": [
+      "BricksDisplay"
+    ],
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "target": "open",
+    "contributions": [
+      "model"
+    ],
+    "brief_en": "Publishes a Gemma-based checkpoint for parallel typed decisions with folded temperature scaling; reported Chinese kiosk evaluation uses synthetic-derived data.",
+    "brief_zh": "发布 Gemma 系列并行类型化决策权重，温度缩放折入模型；所报告中文点餐评测使用合成派生数据。",
+    "summary": "Publishes a Gemma-based checkpoint for parallel typed decisions with folded temperature scaling; reported Chinese kiosk evaluation uses synthetic-derived data.",
+    "summary_zh": "发布 Gemma 系列并行类型化决策权重，温度缩放折入模型；所报告中文点餐评测使用合成派生数据。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Model card",
+    "review": "Model card and weight listing verified",
+    "limitation": "Model-card measurements have not been independently reproduced.",
+    "model_info": {
+      "release": "weights",
+      "license": "apache-2.0",
+      "weights": "https://huggingface.co/BricksDisplay/jevling-e2b-v1/tree/main",
+      "checked": "2026-10-04"
+    }
   }
 ]
