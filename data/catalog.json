@@ -13059,5 +13059,225 @@
       "weights": "https://huggingface.co/BricksDisplay/jevling-e2b-v1/tree/main",
       "checked": "2026-10-04"
     }
+  },
+  {
+    "id": "2610.03387",
+    "title": "Benchmarking Candidate Coverage in Typed Decision Models",
+    "short": "Candidate coverage",
+    "kind": "Paper",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.03387",
+    "pdf": "https://arxiv.org/pdf/2610.03387v1",
+    "version": "2610.03387v1",
+    "authors": [
+      "Jiawen Lu",
+      "Tongtong Wu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Pairs present and omitted reference labels at matched candidate counts; Jev and Laya show task-dependent detection versus false-rejection trade-offs.",
+    "brief_zh": "固定候选数量并配对保留／移除参考标签，发现 Jev 与 Laya 的缺失检测和错误拒答权衡随任务变化。",
+    "summary": "Pairs present and omitted reference labels at matched candidate counts; Jev and Laya show task-dependent detection versus false-rejection trade-offs.",
+    "summary_zh": "固定候选数量并配对保留／移除参考标签，发现 Jev 与 Laya 的缺失检测和错误拒答权衡随任务变化。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from full text",
+    "limitation": "Reference-label omission is not natural out-of-scope detection; one candidate sample per text/count and exploratory intervals limit generalization.",
+    "datasets": [
+      "Candidate-coverage frozen cases (Lu and Wu)"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.03324",
+    "title": "To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation",
+    "short": "HATEDECIDE",
+    "kind": "Paper",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.03324",
+    "pdf": "https://arxiv.org/pdf/2610.03324v1",
+    "version": "2610.03324v1",
+    "authors": [
+      "Demetris Paschalides",
+      "George Pallis",
+      "Marios D. Dikaiakos"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/agents",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares six decision-model configurations for hate-speech moderation; supplied definitions and question decomposition do not consistently improve agreement with labels.",
+    "brief_zh": "比较六种决策模型配置的仇恨言论审核表现；补充定义与问题分解并未稳定提高与数据标签的一致性。",
+    "summary": "Compares six decision-model configurations for hate-speech moderation; supplied definitions and question decomposition do not consistently improve agreement with labels.",
+    "summary_zh": "比较六种决策模型配置的仇恨言论审核表现；补充定义与问题分解并未稳定提高与数据标签的一致性。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from full text",
+    "limitation": "English datasets and unknown prior training exposure; annotation agreement does not establish adherence to policy.",
+    "datasets": [
+      "HATEDECIDE evaluation suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.03073",
+    "title": "SecJev: Bringing Security Expertise to System One Decision Models",
+    "short": "SecJev",
+    "kind": "Paper",
+    "date": "2026-10-02",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.03073",
+    "pdf": "https://arxiv.org/pdf/2610.03073v1",
+    "version": "2610.03073v1",
+    "authors": [
+      "Zheng Chen",
+      "Fei Yu",
+      "Haohao Huang",
+      "Yang Li",
+      "Anlong Chen",
+      "Lei Chen"
+    ],
+    "target": "open",
+    "categories": [
+      "applications/intrusion",
+      "applications/agents",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Specializes a shared candidate scorer with security LoRA adapters; strong in-domain gains coexist with limited latency gains over one-token generation and transfer false alarms.",
+    "brief_zh": "用安全 LoRA 适配共享候选评分器；域内提升明显，但相对单 token 生成的延迟收益有限，跨来源仍有误报。",
+    "summary": "Specializes a shared candidate scorer with security LoRA adapters; strong in-domain gains coexist with limited latency gains over one-token generation and transfer false alarms.",
+    "summary_zh": "用安全 LoRA 适配共享候选评分器；域内提升明显，但相对单 token 生成的延迟收益有限，跨来源仍有误报。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from full text",
+    "limitation": "Source-label prediction and explicit-policy execution differ from end-to-end attack prevention; README and paper report differing 9B figures.",
+    "datasets": [
+      "SecJev-Corpus"
+    ],
+    "code": "https://github.com/UESTC1010/SecJev"
+  },
+  {
+    "id": "r-fe91b6e7a1",
+    "title": "gbesse/jev-decisionops",
+    "short": "Jev DecisionOps",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://github.com/gbesse/jev-decisionops",
+    "version": "2026-10-02T15:28:31Z",
+    "authors": [
+      "gbesse"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "applications/agents"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Provides calibration evaluation, regression gates and a validating gateway for Jev-compatible endpoints; public-alpha tooling does not establish model accuracy.",
+    "brief_zh": "为 Jev 兼容接口提供校准评测、回归检查和响应校验网关；公开 alpha 工具本身不证明模型准确率。",
+    "summary": "Provides calibration evaluation, regression gates and a validating gateway for Jev-compatible endpoints; public-alpha tooling does not establish model accuracy.",
+    "summary_zh": "为 Jev 兼容接口提供校准评测、回归检查和响应校验网关；公开 alpha 工具本身不证明模型准确率。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed",
+    "limitation": "Demonstration data do not establish live model performance; third-party code was not executed."
+  },
+  {
+    "id": "r-35080de22e",
+    "title": "gbesse/jev-banc-francais",
+    "short": "Jev Banc Français",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://github.com/gbesse/jev-banc-francais",
+    "version": "2026-10-02T14:45:32Z",
+    "authors": [
+      "gbesse"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates typed decisions on French cases with accuracy, coverage and Brier scores; included demonstrations use synthetic probabilities rather than measured Jev outputs.",
+    "brief_zh": "为法语案例计算类型化决策的准确率、覆盖率与 Brier 分数；内置演示使用合成概率，不是实测 Jev 输出。",
+    "summary": "Evaluates typed decisions on French cases with accuracy, coverage and Brier scores; included demonstrations use synthetic probabilities rather than measured Jev outputs.",
+    "summary_zh": "为法语案例计算类型化决策的准确率、覆盖率与 Brier 分数；内置演示使用合成概率，不是实测 Jev 输出。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed",
+    "limitation": "Demonstration data do not establish live model performance; third-party code was not executed."
+  },
+  {
+    "id": "r-10f27fabff",
+    "title": "rmax-ai/pr-review-routing-lab",
+    "short": "PR review routing lab",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "updated": "2026-10-02",
+    "added": "2026-10-05",
+    "url": "https://github.com/rmax-ai/pr-review-routing-lab",
+    "version": "2026-10-02T20:20:07Z",
+    "authors": [
+      "rmax-ai"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/code",
+      "applications/agents"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Studies deterministic and advisory Jev gates for pull-request review routing; the released ten-case mock protocol demonstrates mechanics, not model quality or savings.",
+    "brief_zh": "研究确定性检查与 Jev 建议门控对代码审查路由的影响；已发布十案例模拟协议仅展示流程，不证明模型质量或节省。",
+    "summary": "Studies deterministic and advisory Jev gates for pull-request review routing; the released ten-case mock protocol demonstrates mechanics, not model quality or savings.",
+    "summary_zh": "研究确定性检查与 Jev 建议门控对代码审查路由的影响；已发布十案例模拟协议仅展示流程，不证明模型质量或节省。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "README and repository metadata reviewed",
+    "limitation": "Demonstration data do not establish live model performance; third-party code was not executed."
   }
 ]

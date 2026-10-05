@@ -419,5 +419,68 @@
     },
     "source_section": "Sections IX–X",
     "source": "https://zenodo.org/api/records/23066522/files/tron-1b-paper.pdf/content"
+  },
+  {
+    "id": "2610.03387",
+    "category": "trustworthiness",
+    "datasets": [
+      "Candidate-coverage frozen cases (Lu and Wu)"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation corpus; see linked original source for constituent datasets and splits.",
+      "zh": "原文定义的评测资料；组成数据集和划分见链接原始来源。"
+    },
+    "design": {
+      "en": "300 calibration and 589 test texts across AG News, DBpedia, Emotion and TREC; 23,932 predictions per model, paired by text with calibration-only thresholds.",
+      "zh": "AG News、DBpedia、Emotion、TREC 共 300 条校准与 589 条测试文本；每模型 23,932 次预测，按文本配对，阈值只用校准集选择。"
+    },
+    "reading": {
+      "en": "On five-candidate TREC, native Laya detects 97.2% of omissions but rejects 69.7% of valid controls; Jev gives 24.8%/0.0%. Threshold selection changes the operating points without guaranteeing population risk.",
+      "zh": "TREC 五候选下 Laya 原生遗漏检测／错误拒答为 97.2%／69.7%，Jev 为 24.8%／0.0%。校准阈值改变运行点，但不构成总体风险保证。"
+    },
+    "source_section": "Sections 4–7 and 9; PDF pp. 3–9",
+    "source": "https://arxiv.org/pdf/2610.03387v1"
+  },
+  {
+    "id": "2610.03324",
+    "category": "applications",
+    "datasets": [
+      "HATEDECIDE evaluation suite"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation corpus; see linked original source for constituent datasets and splits.",
+      "zh": "原文定义的评测资料；组成数据集和划分见链接原始来源。"
+    },
+    "design": {
+      "en": "Fully paired evaluation on Dynamic (4,120), MHS (3,203), HateXplain (1,924) and HateCheck (3,728); 10,000 linked-group bootstrap draws with family-wise Bonferroni adjustment.",
+      "zh": "在 Dynamic 4,120、MHS 3,203、HateXplain 1,924、HateCheck 3,728 条文本上完全配对；按关联组做 10,000 次 bootstrap 并按比较族 Bonferroni 调整。"
+    },
+    "reading": {
+      "en": "Decomposition improves 6/30 comparisons and worsens 11/30. Jev approaches commercial quality cheaply on diagnostic HateCheck, but this does not establish the same trade-off on everyday moderation traffic.",
+      "zh": "问题分解在 30 组对照中改善 6 组、恶化 11 组。Jev 在诊断性 HateCheck 上以较低费用接近商业模型，但不能直接外推日常审核流量。"
+    },
+    "source_section": "Sections 3–5 and Table 4; PDF pp. 3–10",
+    "source": "https://arxiv.org/pdf/2610.03324v1"
+  },
+  {
+    "id": "2610.03073",
+    "category": "applications",
+    "datasets": [
+      "SecJev-Corpus"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation corpus; see linked original source for constituent datasets and splits.",
+      "zh": "原文定义的评测资料；组成数据集和划分见链接原始来源。"
+    },
+    "design": {
+      "en": "170,185 questions over 14 tasks; separate training, development, calibration and 21,634-question test splits grouped by source. Matching backbones and training budgets compare candidate scoring with one-token generation.",
+      "zh": "14 项任务共 170,185 个问题；训练、开发、校准和 21,634 题测试独立，按来源组划分。同骨干同训练预算比较候选评分与单 token 生成。"
+    },
+    "reading": {
+      "en": "Accuracy closely matches generative SFT with smaller measured peak memory. Temperature scaling improves NLL but worsens ECE and Brier on security tests; new-source traffic false positives remain high.",
+      "zh": "准确率接近生成式监督微调，实测峰值显存较小。安全测试中温度缩放改善 NLL，却恶化 ECE 与 Brier；新来源流量误报仍高。"
+    },
+    "source_section": "Sections 4–6, Tables 3–5 and 9; PDF pp. 3–9",
+    "source": "https://arxiv.org/pdf/2610.03073v1"
   }
 ]

@@ -6,6 +6,27 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Benchmarking Candidate Coverage in Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.03387</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.03387#publication</guid>
+      <description>Pairs present and omitted reference labels at matched candidate counts; Jev and Laya show task-dependent detection versus false-rejection trade-offs.</description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation</title>
+      <link>https://arxiv.org/abs/2610.03324</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.03324#publication</guid>
+      <description>Compares six decision-model configurations for hate-speech moderation; supplied definitions and question decomposition do not consistently improve agreement with labels.</description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SecJev: Bringing Security Expertise to System One Decision Models</title>
+      <link>https://arxiv.org/abs/2610.03073</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.03073#publication</guid>
+      <description>Specializes a shared candidate scorer with security LoRA adapters; strong in-domain gains coexist with limited latency gains over one-token generation and transfer false alarms.</description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>LLM2Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them</title>
       <link>https://arxiv.org/abs/2610.02076</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.02076#publication</guid>

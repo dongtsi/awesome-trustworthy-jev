@@ -103,5 +103,20 @@
     "url": "https://huggingface.co/datasets/raxITLabs/jev-as-a-guardrails",
     "type": "dataset",
     "checked": "2026-10-04"
+  },
+  "Candidate-coverage frozen cases (Lu and Wu)": {
+    "url": "https://arxiv.org/abs/2610.03387",
+    "type": "paper",
+    "checked": "2026-10-05"
+  },
+  "HATEDECIDE evaluation suite": {
+    "url": "https://arxiv.org/abs/2610.03324",
+    "type": "paper",
+    "checked": "2026-10-05"
+  },
+  "SecJev-Corpus": {
+    "url": "https://github.com/UESTC1010/SecJev#secjev-corpus",
+    "type": "dataset",
+    "checked": "2026-10-05"
   }
 }

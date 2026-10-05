@@ -1167,5 +1167,26 @@
     "date": "2026-10-04",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/ankushchadha/system-one-security"
+  },
+  {
+    "id": "r-fe91b6e7a1",
+    "kind": "Project",
+    "date": "2026-09-22",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/gbesse/jev-decisionops"
+  },
+  {
+    "id": "r-35080de22e",
+    "kind": "Project",
+    "date": "2026-09-21",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/gbesse/jev-banc-francais"
+  },
+  {
+    "id": "r-10f27fabff",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/rmax-ai/pr-review-routing-lab"
   }
 ]
