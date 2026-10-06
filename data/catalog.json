@@ -13279,5 +13279,390 @@
     "evidence": "Repository",
     "review": "README and repository metadata reviewed",
     "limitation": "Demonstration data do not establish live model performance; third-party code was not executed."
+  },
+  {
+    "id": "2610.06744",
+    "title": "ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring",
+    "short": "ufakzeka-karar",
+    "kind": "Paper",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06744",
+    "pdf": "https://arxiv.org/pdf/2610.06744v1",
+    "version": "2610.06744v1",
+    "authors": [
+      "Sait Furkan Teke"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Scores Turkish answer options independently at shared positions to remove order effects; supervised training beats the tested REINFORCE variant, while temperature calibration degrades on held-out question types.",
+    "brief_zh": "在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。",
+    "summary": "Scores Turkish answer options independently at shared positions to remove order effects; supervised training beats the tested REINFORCE variant, while temperature calibration degrades on held-out question types.",
+    "summary_zh": "在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Later runs were shaped by earlier test results in three tracks; first-run unseen support questions show smooth ECE rising from 0.027 to 0.045 after temperature scaling.",
+    "datasets": [
+      "HakemBench v1.0"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.06625",
+    "title": "JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications",
+    "short": "Seven political-science replications",
+    "kind": "Paper",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06625",
+    "pdf": "https://arxiv.org/pdf/2610.06625v1",
+    "version": "2610.06625v1",
+    "authors": [
+      "Matthew DiGiuseppe",
+      "Steven Denney"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Replicates seven annotation and scaling studies: Jev is faster, matches or approaches comparison models on several tasks, and has no price advantage over the reported batch-rate baseline.",
+    "brief_zh": "复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。",
+    "summary": "Replicates seven annotation and scaling studies: Jev is faster, matches or approaches comparison models on several tasks, and has no price advantage over the reported batch-rate baseline.",
+    "summary_zh": "复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Luna costs use posted batch/standard rates, while latency uses synchronous calls; Qwen pricing describes its served route. Jev calibration exceeds Luna token readouts but not consistently Qwen.",
+    "datasets": [
+      "Seven political-science replication suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.06425",
+    "title": "SoK: Semantic Decision Engines in Network Control Loops",
+    "short": "Semantic engines in control loops",
+    "kind": "Paper",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06425",
+    "pdf": "https://arxiv.org/pdf/2610.06425v1",
+    "version": "2610.06425v1",
+    "authors": [
+      "Delong Li",
+      "Chen Li",
+      "Xu Wang",
+      "Haochen Gong",
+      "Rui Lang",
+      "Guangsheng Yu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "survey",
+      "research"
+    ],
+    "brief_en": "Audits 139 network-control paper families and separates decision latency from verified service completion; queueing and coverage checks can reverse admission decisions.",
+    "brief_zh": "审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。",
+    "summary": "Audits 139 network-control paper families and separates decision latency from verified service completion; queueing and coverage checks can reverse admission decisions.",
+    "summary_zh": "审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Only four of fifty timing-fit claims have matched measurement. Replayed execution and one random stream limit the scope of the measured queueing results.",
+    "datasets": [
+      "SoK-JEV evidence corpus"
+    ],
+    "code": "https://github.com/OniReimu/SoK-JEV"
+  },
+  {
+    "id": "2610.06354",
+    "title": "GraphDecide: Benchmarking System One Models on Graph Tasks",
+    "short": "GraphDecide",
+    "kind": "Paper",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06354",
+    "pdf": "https://arxiv.org/pdf/2610.06354v1",
+    "version": "2610.06354v1",
+    "authors": [
+      "Xianliang Yang",
+      "Yapu Zhang",
+      "Li Zhao"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks graph structure, graph-text evidence and sequential optimization across fourteen model-interface configurations; Jev benefits from heuristic proposals but gains over fixed rules depend on the task.",
+    "brief_zh": "在十四种模型接口配置上评测图结构、图文证据与序列优化；启发式提案改善 Jev 构造质量，相对固定规则的收益随任务变化。",
+    "summary": "Benchmarks graph structure, graph-text evidence and sequential optimization across fourteen model-interface configurations; Jev benefits from heuristic proposals but gains over fixed rules depend on the task.",
+    "summary_zh": "在十四种模型接口配置上评测图结构、图文证据与序列优化；启发式提案改善 Jev 构造质量，相对固定规则的收益随任务变化。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Jev recognizes adjacency well but is weaker at exact degree and articulation. Shared graph context and single executions limit uncertainty estimates; proposal assistance changes several inputs together.",
+    "datasets": [
+      "GraphDecide"
+    ],
+    "code": "https://github.com/VictorYXL/JevGraphBench"
+  },
+  {
+    "id": "2610.04985",
+    "title": "Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use",
+    "short": "Hidden Risks of Jev",
+    "kind": "Paper",
+    "date": "2026-10-04",
+    "updated": "2026-10-04",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.04985",
+    "pdf": "https://arxiv.org/pdf/2610.04985v1",
+    "version": "2610.04985v1",
+    "authors": [
+      "Shang Wang",
+      "Tianqing Zhu",
+      "Huajie Chen",
+      "Jiayang Li",
+      "Meng Yang",
+      "Bo Liu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security",
+      "trustworthiness/privacy",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies input manipulation, constrained-output privacy and defensive detection; official Jev API experiments and controlled NanoJev training experiments expose distinct risks.",
+    "brief_zh": "研究输入操纵、受限输出中的隐私推断与防御检测；官方 Jev 接口实验和 NanoJev 可控训练实验揭示不同风险。",
+    "summary": "Studies input manipulation, constrained-output privacy and defensive detection; official Jev API experiments and controlled NanoJev training experiments expose distinct risks.",
+    "summary_zh": "研究输入操纵、受限输出中的隐私推断与防御检测；官方 Jev 接口实验和 NanoJev 可控训练实验揭示不同风险。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "High clean-task accuracy coexists with input-manipulation failures. Backdoor and membership results use controlled NanoJev data; factual knowledge probes are distinct from training membership.",
+    "datasets": [
+      "Hidden Risks task suite"
+    ],
+    "code": "https://github.com/shihe98/Security_Privacy_Jev"
+  },
+  {
+    "id": "2610.04345",
+    "title": "System One Models for Wireless Decision-Making:Applications and Performance Evaluation",
+    "short": "Wireless typed decisions",
+    "kind": "Paper",
+    "date": "2026-10-03",
+    "updated": "2026-10-03",
+    "added": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.04345",
+    "pdf": "https://arxiv.org/pdf/2610.04345v1",
+    "version": "2610.04345v1",
+    "authors": [
+      "Masoud Rahimi",
+      "S. M. Matin Alemohammad",
+      "Hamid Behroozi",
+      "Mahdi Nouri"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces",
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Measures the quality/latency trade-off in antenna selection and RAN slicing: Jev responds faster, while utility gains depend on the task and execution costs.",
+    "brief_zh": "测量天线选择与 RAN 切片的质量／时延权衡：Jev 响应更快，效用收益取决于任务与后续执行成本。",
+    "summary": "Measures the quality/latency trade-off in antenna selection and RAN slicing: Jev responds faster, while utility gains depend on the task and execution costs.",
+    "summary_zh": "测量天线选择与 RAN 切片的质量／时延权衡：Jev 响应更快，效用收益取决于任务与后续执行成本。",
+    "theme": "Foundations",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Antenna capacity loss is 20.19% for Jev versus 9.46% for the norm heuristic. Slicing utility regret is comparable to the tested LLMs at over 3.5 times lower median response latency.",
+    "datasets": [
+      "Wireless decision case studies"
+    ],
+    "code": ""
+  },
+  {
+    "id": "zenodo-23175660",
+    "title": "Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models",
+    "short": "Exact-target calibration audit",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-06",
+    "url": "https://zenodo.org/records/23179064",
+    "pdf": "https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content",
+    "version": "v2",
+    "authors": [
+      "Mohit Shankar Velu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits exact probability targets and human disagreement: normalized Noul better tracks stated base rates, while per-task calibration narrows the gap on human-vote distributions.",
+    "brief_zh": "以精确概率目标和人类分歧审计决策概率：归一化 Noul 更贴近给定基率，逐任务校准则缩小人类投票分布上的接口差距。",
+    "summary": "Audits exact probability targets and human disagreement: normalized Noul better tracks stated base rates, while per-task calibration narrows the gap on human-vote distributions.",
+    "summary_zh": "以精确概率目标和人类分歧审计决策概率：归一化 Noul 更贴近给定基率，逐任务校准则缩小人类投票分布上的接口差距。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "v2 methods and main results read from full text",
+    "limitation": "Exact-target holdout repeats the same condition families; human-vote conclusions depend on disagreement strata and fitted calibration.",
+    "datasets": [
+      "ChaosNLI",
+      "DICES-350"
+    ],
+    "code": "https://github.com/MohitSV/jev-calibration-audit"
+  },
+  {
+    "id": "r-32fd7c39ba",
+    "title": "AlanViollier/jev-vs-pii",
+    "short": "Jev PII benchmark",
+    "kind": "Project",
+    "date": "2026-09-24",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://github.com/AlanViollier/jev-vs-pii",
+    "version": "2026-10-05T10:07:28Z",
+    "authors": [
+      "AlanViollier"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/privacy"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks word-level PII masking on synthetic text and court judgments; Jev trades more masking for higher recall and faster responses than the compared Haiku setup.",
+    "brief_zh": "在合成文本与法院判决上评测逐词 PII 遮盖；相对所测 Haiku 配置，Jev 以更多遮盖换取较高召回和更快响应。",
+    "summary": "Benchmarks word-level PII masking on synthetic text and court judgments; Jev trades more masking for higher recall and faster responses than the compared Haiku setup.",
+    "summary_zh": "在合成文本与法院判决上评测逐词 PII 遮盖；相对所测 Haiku 配置，Jev 以更多遮盖换取较高召回和更快响应。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and methods reviewed",
+    "limitation": "Prompt revisions followed inspection of first-run test errors; final thresholds used 20 development documents per dataset.",
+    "datasets": [
+      "Jev PII evaluation suite"
+    ]
+  },
+  {
+    "id": "r-470bf0577e",
+    "title": "MohitSV/jev-calibration-audit",
+    "short": "Exact-target audit code",
+    "kind": "Project",
+    "date": "2026-09-23",
+    "updated": "2026-10-06",
+    "added": "2026-10-06",
+    "url": "https://github.com/MohitSV/jev-calibration-audit",
+    "version": "2026-10-06T04:50:06Z",
+    "authors": [
+      "MohitSV"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Releases exact-target probability probes, human-disagreement tests and raw responses for Jev and three open decision checkpoints.",
+    "brief_zh": "发布 Jev 与三种开放决策模型的精确概率探针、人类分歧评测及原始响应。",
+    "summary": "Releases exact-target probability probes, human-disagreement tests and raw responses for Jev and three open decision checkpoints.",
+    "summary_zh": "发布 Jev 与三种开放决策模型的精确概率探针、人类分歧评测及原始响应。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and methods reviewed",
+    "limitation": "Repository accompanies the exact-target audit paper; results depend on task and probability interface."
+  },
+  {
+    "id": "r-8bd04377ae",
+    "title": "ElyasMoshirpanahi/surety",
+    "short": "surety",
+    "kind": "Project",
+    "date": "2026-10-04",
+    "updated": "2026-10-05",
+    "added": "2026-10-06",
+    "url": "https://github.com/ElyasMoshirpanahi/surety",
+    "version": "2026-10-05T11:36:16Z",
+    "authors": [
+      "ElyasMoshirpanahi"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/accountability"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Selects automation thresholds with fixed-grid binomial tests and Bonferroni correction, then logs decisions and monitors drift for Jev-compatible models.",
+    "brief_zh": "通过固定网格二项检验与 Bonferroni 校正选择自动化阈值，并为 Jev 兼容模型记录决策、监测漂移。",
+    "summary": "Selects automation thresholds with fixed-grid binomial tests and Bonferroni correction, then logs decisions and monitors drift for Jev-compatible models.",
+    "summary_zh": "通过固定网格二项检验与 Bonferroni 校正选择自动化阈值，并为 Jev 兼容模型记录决策、监测漂移。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and methods reviewed",
+    "limitation": "Binomial certification requires independent calibration sampling; the drift detector controls average run length, not a lifetime false-alarm probability."
   }
 ]

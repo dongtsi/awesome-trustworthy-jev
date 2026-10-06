@@ -2,6 +2,25 @@
 
 Grouped by first public publication date.
 
+## 2026-10-06
+
+- [Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models](https://zenodo.org/records/23179064) — Audits exact probability targets and human disagreement: normalized Noul better tracks stated base rates, while per-task calibration narrows the gap on human-vote distributions. `Evaluation` · [PDF](https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content) · [Code](https://github.com/MohitSV/jev-calibration-audit)
+
+## 2026-10-05
+
+- [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — Scores Turkish answer options independently at shared positions to remove order effects; supervised training beats the tested REINFORCE variant, while temperature calibration degrades on held-out question types. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.06744v1)
+- [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — Replicates seven annotation and scaling studies: Jev is faster, matches or approaches comparison models on several tasks, and has no price advantage over the reported batch-rate baseline. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.06625v1)
+- [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — Audits 139 network-control paper families and separates decision latency from verified service completion; queueing and coverage checks can reverse admission decisions. `Survey` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [Code](https://github.com/OniReimu/SoK-JEV)
+- [GraphDecide: Benchmarking System One Models on Graph Tasks](https://arxiv.org/abs/2610.06354) — Benchmarks graph structure, graph-text evidence and sequential optimization across fourteen model-interface configurations; Jev benefits from heuristic proposals but gains over fixed rules depend on the task. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.06354v1) · [Code](https://github.com/VictorYXL/JevGraphBench)
+
+## 2026-10-04
+
+- [Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use](https://arxiv.org/abs/2610.04985) — Studies input manipulation, constrained-output privacy and defensive detection; official Jev API experiments and controlled NanoJev training experiments expose distinct risks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.04985v1) · [Code](https://github.com/shihe98/Security_Privacy_Jev)
+
+## 2026-10-03
+
+- [System One Models for Wireless Decision-Making:Applications and Performance Evaluation](https://arxiv.org/abs/2610.04345) — Measures the quality/latency trade-off in antenna selection and RAN slicing: Jev responds faster, while utility gains depend on the task and execution costs. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.04345v1)
+
 ## 2026-10-02
 
 - [Benchmarking Candidate Coverage in Typed Decision Models](https://arxiv.org/abs/2610.03387) — Pairs present and omitted reference labels at matched candidate counts; Jev and Laya show task-dependent detection versus false-rejection trade-offs. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.03387v1)

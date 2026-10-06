@@ -6,6 +6,55 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models</title>
+      <link>https://zenodo.org/records/23179064</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23179064#publication</guid>
+      <description>Audits exact probability targets and human disagreement: normalized Noul better tracks stated base rates, while per-task calibration narrows the gap on human-vote distributions.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring</title>
+      <link>https://arxiv.org/abs/2610.06744</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.06744#publication</guid>
+      <description>Scores Turkish answer options independently at shared positions to remove order effects; supervised training beats the tested REINFORCE variant, while temperature calibration degrades on held-out question types.</description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications</title>
+      <link>https://arxiv.org/abs/2610.06625</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.06625#publication</guid>
+      <description>Replicates seven annotation and scaling studies: Jev is faster, matches or approaches comparison models on several tasks, and has no price advantage over the reported batch-rate baseline.</description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SoK: Semantic Decision Engines in Network Control Loops</title>
+      <link>https://arxiv.org/abs/2610.06425</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.06425#publication</guid>
+      <description>Audits 139 network-control paper families and separates decision latency from verified service completion; queueing and coverage checks can reverse admission decisions.</description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>GraphDecide: Benchmarking System One Models on Graph Tasks</title>
+      <link>https://arxiv.org/abs/2610.06354</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.06354#publication</guid>
+      <description>Benchmarks graph structure, graph-text evidence and sequential optimization across fourteen model-interface configurations; Jev benefits from heuristic proposals but gains over fixed rules depend on the task.</description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use</title>
+      <link>https://arxiv.org/abs/2610.04985</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.04985#publication</guid>
+      <description>Studies input manipulation, constrained-output privacy and defensive detection; official Jev API experiments and controlled NanoJev training experiments expose distinct risks.</description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>System One Models for Wireless Decision-Making:Applications and Performance Evaluation</title>
+      <link>https://arxiv.org/abs/2610.04345</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.04345#publication</guid>
+      <description>Measures the quality/latency trade-off in antenna selection and RAN slicing: Jev responds faster, while utility gains depend on the task and execution costs.</description>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Benchmarking Candidate Coverage in Typed Decision Models</title>
       <link>https://arxiv.org/abs/2610.03387</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.03387#publication</guid>

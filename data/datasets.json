@@ -118,5 +118,45 @@
     "url": "https://github.com/UESTC1010/SecJev#secjev-corpus",
     "type": "dataset",
     "checked": "2026-10-05"
+  },
+  "HakemBench v1.0": {
+    "url": "https://arxiv.org/abs/2610.06744",
+    "type": "paper",
+    "checked": "2026-10-06"
+  },
+  "Seven political-science replication suite": {
+    "url": "https://arxiv.org/abs/2610.06625",
+    "type": "paper",
+    "checked": "2026-10-06"
+  },
+  "SoK-JEV evidence corpus": {
+    "url": "https://github.com/OniReimu/SoK-JEV",
+    "type": "artifact",
+    "checked": "2026-10-06"
+  },
+  "GraphDecide": {
+    "url": "https://github.com/VictorYXL/JevGraphBench",
+    "type": "artifact",
+    "checked": "2026-10-06"
+  },
+  "Hidden Risks task suite": {
+    "url": "https://github.com/shihe98/Security_Privacy_Jev",
+    "type": "artifact",
+    "checked": "2026-10-06"
+  },
+  "Wireless decision case studies": {
+    "url": "https://arxiv.org/abs/2610.04345",
+    "type": "paper",
+    "checked": "2026-10-06"
+  },
+  "DICES-350": {
+    "url": "https://github.com/google-research-datasets/dices-dataset",
+    "type": "dataset",
+    "checked": "2026-10-06"
+  },
+  "Jev PII evaluation suite": {
+    "url": "https://github.com/AlanViollier/jev-vs-pii#06--data",
+    "type": "benchmark",
+    "checked": "2026-10-06"
   }
 }

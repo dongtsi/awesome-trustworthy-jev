@@ -482,5 +482,174 @@
     },
     "source_section": "Sections 4–6, Tables 3–5 and 9; PDF pp. 3–9",
     "source": "https://arxiv.org/pdf/2610.03073v1"
+  },
+  {
+    "id": "2610.06744",
+    "category": "foundations",
+    "datasets": [
+      "HakemBench v1.0"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "182M-parameter model; sequential-head and REINFORCE controls, three seeds per recipe and 4,275 questions across seven tracks.",
+      "zh": "182M 参数模型；对照顺序读出头与 REINFORCE，每方案三个种子，在七主题共 4,275 题上评估。"
+    },
+    "reading": {
+      "en": "Later runs were shaped by earlier test results in three tracks; first-run unseen support questions show smooth ECE rising from 0.027 to 0.045 after temperature scaling.",
+      "zh": "后三个相关主题的训练受先前测试结果影响；首轮未见支持问题上，温度缩放使 smooth ECE 从 0.027 升至 0.045。"
+    },
+    "source_section": "Sections 2–7; PDF pp. 2–7",
+    "source": "https://arxiv.org/pdf/2610.06744v1"
+  },
+  {
+    "id": "2610.06625",
+    "category": "trustworthiness",
+    "datasets": [
+      "Seven political-science replication suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Human-coded references from seven published studies; matched GPT-6 Luna and Qwen comparisons, paired bootstrap and separate single-call versus order-averaged calibration.",
+      "zh": "以七项已发表研究的人类编码为参考；匹配 GPT-6 Luna、Qwen 对照，配对 bootstrap，并区分单次与交换顺序平均后的概率校准。"
+    },
+    "reading": {
+      "en": "Luna costs use posted batch/standard rates, while latency uses synchronous calls; Qwen pricing describes its served route. Jev calibration exceeds Luna token readouts but not consistently Qwen.",
+      "zh": "Luna 费用按公布的批处理／标准费率计算，时延来自同步请求；Qwen 费用对应托管路由。Jev 校准优于 Luna token 读出，对 Qwen 则无一致优势。"
+    },
+    "source_section": "Table 2, calibration analysis and Appendix H; PDF pp. 6–18",
+    "source": "https://arxiv.org/pdf/2610.06625v1"
+  },
+  {
+    "id": "2610.06425",
+    "category": "foundations",
+    "datasets": [
+      "SoK-JEV evidence corpus"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "139 paper families, 429 coded scopes, independent coding and bounded event-model experiments with execution-time replay.",
+      "zh": "139 个论文族、429 个编码范围，结合独立编码与执行时间回放的事件模型实验。"
+    },
+    "reading": {
+      "en": "Only four of fifty timing-fit claims have matched measurement. Replayed execution and one random stream limit the scope of the measured queueing results.",
+      "zh": "50 项时序适配主张中有 4 项提供匹配测量；排队实验使用执行回放和单一随机流，结论对应该事件模型。"
+    },
+    "source_section": "Sections 3–7 and 9; PDF pp. 3–15",
+    "source": "https://arxiv.org/pdf/2610.06425v1"
+  },
+  {
+    "id": "2610.06354",
+    "category": "trustworthiness",
+    "datasets": [
+      "GraphDecide"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "800 structural queries; matched graph/text contrasts on ogbn-arxiv and STaRK-Prime; four construction tasks with ten instances each and fixed-rule/proposal controls.",
+      "zh": "800 个结构查询；ogbn-arxiv、STaRK-Prime 图文匹配对照；四项构造任务各十实例，包含固定规则及提案池对照。"
+    },
+    "reading": {
+      "en": "Jev recognizes adjacency well but is weaker at exact degree and articulation. Shared graph context and single executions limit uncertainty estimates; proposal assistance changes several inputs together.",
+      "zh": "Jev 擅长邻接识别，精确度数与割点判断较弱。共享图上下文和单次执行影响不确定性估计；提案辅助同时改变多项输入。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–11",
+    "source": "https://arxiv.org/pdf/2610.06354v1"
+  },
+  {
+    "id": "2610.04985",
+    "category": "trustworthiness",
+    "datasets": [
+      "Hidden Risks task suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Official Jev and local NanoJev; three synthetic decision tasks with 200 states each and three repeats, plus controlled training and four defensive detection tasks.",
+      "zh": "比较官方 Jev 与本地 NanoJev；三个合成决策任务各 200 个状态、重复三次，另有可控训练和四项防御检测任务。"
+    },
+    "reading": {
+      "en": "High clean-task accuracy coexists with input-manipulation failures. Backdoor and membership results use controlled NanoJev data; factual knowledge probes are distinct from training membership.",
+      "zh": "干净任务高准确率与输入操纵失效并存。后门及成员推断结论依赖 NanoJev 可控数据；事实知识探测与训练成员身份需分别解释。"
+    },
+    "source_section": "Sections III–V, Tables I–III; PDF pp. 4–12",
+    "source": "https://arxiv.org/pdf/2610.04985v1"
+  },
+  {
+    "id": "2610.04345",
+    "category": "foundations",
+    "datasets": [
+      "Wireless decision case studies"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Receive-antenna selection and 30 RAN-slicing instances over 21 feasible actions; exhaustive numerical references and client-observed latency.",
+      "zh": "接收天线选择，以及 21 个可行动作上的 30 个 RAN 切片实例；采用穷举数值参考与客户端观测时延。"
+    },
+    "reading": {
+      "en": "Antenna capacity loss is 20.19% for Jev versus 9.46% for the norm heuristic. Slicing utility regret is comparable to the tested LLMs at over 3.5 times lower median response latency.",
+      "zh": "天线选择中 Jev 容量损失为 20.19%，范数启发式为 9.46%；切片效用遗憾接近所测 LLM，中位响应时延降低超过 3.5 倍。"
+    },
+    "source_section": "Section IV, Figures 2–6; PDF pp. 6–9",
+    "source": "https://arxiv.org/pdf/2610.04345v1"
+  },
+  {
+    "id": "zenodo-23175660",
+    "category": "trustworthiness",
+    "datasets": [
+      "ChaosNLI",
+      "DICES-350"
+    ],
+    "data_role": {
+      "en": "Exact analytic targets and human vote distributions",
+      "zh": "精确解析目标与人类投票分布"
+    },
+    "design": {
+      "en": "Mirror-paired coin witnesses, three base-rate wordings, separately collected holdout repeats and 650 ChaosNLI/DICES items; clustered bootstrap.",
+      "zh": "镜像硬币证据、三种基率措辞、另行采集的留出重复及 650 条 ChaosNLI／DICES 样本；采用聚类 bootstrap。"
+    },
+    "reading": {
+      "en": "Normalized Noul reduces exact-target Brier error from 0.067 to 0.003. On disputed human labels neither primitive beats uniform prediction in the hardest strata; temperature calibration makes their average results similar.",
+      "zh": "归一化 Noul 将精确目标 Brier 误差从 0.067 降至 0.003；在人类分歧最高的分层，两种接口均未胜过均匀预测，温度校准后总体结果接近。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–12",
+    "source": "https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content"
+  },
+  {
+    "id": "r-32fd7c39ba",
+    "category": "trustworthiness",
+    "datasets": [
+      "Jev PII evaluation suite"
+    ],
+    "data_role": {
+      "en": "500 synthetic texts, 500 business documents and 127 court judgments",
+      "zh": "500 条合成文本、500 份商业文档和 127 份法院判决"
+    },
+    "design": {
+      "en": "Word-level F2/F1, PII leakage, paired document bootstrap, and 20 development documents per dataset for thresholds.",
+      "zh": "逐词 F2／F1、PII 泄漏、按文档配对 bootstrap；各数据集 20 份开发文档用于阈值选择。"
+    },
+    "reading": {
+      "en": "On judgments Jev F2 is 0.834 versus Haiku 0.819, with paired difference interval crossing zero; Jev recall is higher but F1 is lower. Initial test errors informed later prompt changes.",
+      "zh": "判决文本上 Jev F2 为 0.834、Haiku 为 0.819，差值区间跨零；Jev 召回较高而 F1 较低。早期测试错误参与了后续提示修改。"
+    },
+    "source_section": "README Sections 01, 02, 05–07 and 10",
+    "source": "https://github.com/AlanViollier/jev-vs-pii"
   }
 ]

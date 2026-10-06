@@ -2,6 +2,25 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-06
+
+- [Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models](https://zenodo.org/records/23179064) — 以精确概率目标和人类分歧审计决策概率：归一化 Noul 更贴近给定基率，逐任务校准则缩小人类投票分布上的接口差距。 `评测` · [PDF](https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content) · [代码](https://github.com/MohitSV/jev-calibration-audit)
+
+## 2026-10-05
+
+- [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — 在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。 `评测` · [PDF](https://arxiv.org/pdf/2610.06744v1)
+- [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — 复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。 `评测` · [PDF](https://arxiv.org/pdf/2610.06625v1)
+- [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — 审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。 `综述` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [代码](https://github.com/OniReimu/SoK-JEV)
+- [GraphDecide: Benchmarking System One Models on Graph Tasks](https://arxiv.org/abs/2610.06354) — 在十四种模型接口配置上评测图结构、图文证据与序列优化；启发式提案改善 Jev 构造质量，相对固定规则的收益随任务变化。 `评测` · [PDF](https://arxiv.org/pdf/2610.06354v1) · [代码](https://github.com/VictorYXL/JevGraphBench)
+
+## 2026-10-04
+
+- [Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use](https://arxiv.org/abs/2610.04985) — 研究输入操纵、受限输出中的隐私推断与防御检测；官方 Jev 接口实验和 NanoJev 可控训练实验揭示不同风险。 `评测` · [PDF](https://arxiv.org/pdf/2610.04985v1) · [代码](https://github.com/shihe98/Security_Privacy_Jev)
+
+## 2026-10-03
+
+- [System One Models for Wireless Decision-Making:Applications and Performance Evaluation](https://arxiv.org/abs/2610.04345) — 测量天线选择与 RAN 切片的质量／时延权衡：Jev 响应更快，效用收益取决于任务与后续执行成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.04345v1)
+
 ## 2026-10-02
 
 - [Benchmarking Candidate Coverage in Typed Decision Models](https://arxiv.org/abs/2610.03387) — 固定候选数量并配对保留／移除参考标签，发现 Jev 与 Laya 的缺失检测和错误拒答权衡随任务变化。 `评测` · [PDF](https://arxiv.org/pdf/2610.03387v1)
