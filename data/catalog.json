@@ -6091,20 +6091,20 @@
     "kind": "Project",
     "scope": "Jev",
     "date": "2026-09-19",
-    "updated": "",
+    "updated": "2026-10-05",
     "added": "2026-10-02",
     "url": "https://github.com/scienthoon/jev-ood-calibration",
     "pdf": "",
     "code": "https://github.com/scienthoon/jev-ood-calibration",
-    "version": "",
-    "summary": "Calibration test of Jev on 3 public benchmarks plus a contamination-free synthetic rule task; synthetic ECE is 4.4x the noise floor and the unknowable-label question is confidently wrong",
-    "summary_zh": "",
-    "limitation": "作者报告，未独立复现实验。条目描述溯源至 CC0 的 Awesome Jev Robustness；见来源说明。",
+    "version": "2026-10-05T13:10:02Z",
+    "summary": "Audits 3,721 public-benchmark items and 900 synthetic decisions; calibration varies by question type, and fitted temperatures are sensitive to probability-zero handling.",
+    "summary_zh": "审计 3,721 条公开基准样本与 900 条合成决策；校准随问题类型变化，拟合温度对零概率处理敏感。",
+    "limitation": "Gateway model weights are unpinned. Hidden-policy labels and 5% synthetic label corruption affect interpretation; post-hoc temperature fits are diagnostics, not held-out calibration.",
     "evidence": "Author report",
-    "review": "Source archived",
+    "review": "Original README and endpoint correction reviewed",
     "discovery": "https://github.com/Yifan-Lan/awesome-jev-robustness",
     "target": "hosted",
-    "classification_basis": "Source title and description",
+    "classification_basis": "Original repository methods and correction",
     "categories": [
       "trustworthiness/reliability"
     ],
@@ -6113,9 +6113,11 @@
       "evaluation"
     ],
     "schema_version": 2,
-    "brief_en": "Calibration test of Jev on 3 public benchmarks plus a contamination-free synthetic rule task; synthetic ECE is 4.4x the noise floor and the unknowable-label question is confidently wrong.",
-    "brief_zh": "",
-    "datasets": [],
+    "brief_en": "Audits 3,721 public-benchmark items and 900 synthetic decisions; calibration varies by question type, and fitted temperatures are sensitive to probability-zero handling.",
+    "brief_zh": "审计 3,721 条公开基准样本与 900 条合成决策；校准随问题类型变化，拟合温度对零概率处理敏感。",
+    "datasets": [
+      "Jev OOD synthetic tickets"
+    ],
     "authors": [
       "scienthoon"
     ],
@@ -13324,11 +13326,11 @@
     "short": "Seven political-science replications",
     "kind": "Paper",
     "date": "2026-10-05",
-    "updated": "2026-10-05",
+    "updated": "2026-10-06",
     "added": "2026-10-06",
     "url": "https://arxiv.org/abs/2610.06625",
-    "pdf": "https://arxiv.org/pdf/2610.06625v1",
-    "version": "2610.06625v1",
+    "pdf": "https://arxiv.org/pdf/2610.06625v2",
+    "version": "2610.06625v2",
     "authors": [
       "Matthew DiGiuseppe",
       "Steven Denney"
@@ -13664,5 +13666,321 @@
     "evidence": "Repository",
     "review": "Original README and methods reviewed",
     "limitation": "Binomial certification requires independent calibration sampling; the drift detector controls average run length, not a lifetime false-alarm probability."
+  },
+  {
+    "id": "2610.08775",
+    "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+    "short": "BOTTLED",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08775",
+    "pdf": "https://arxiv.org/pdf/2610.08775v1",
+    "version": "2610.08775v1",
+    "authors": [
+      "Ankit Sonthalia",
+      "Haritz Puerto",
+      "Alexander Rubinstein",
+      "Martin Gubri",
+      "Seong Joon Oh"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks agents that build reusable artifacts for large workloads; most runs lose quality relative to zero-shot calls, while selected artifacts approach Jev at lower projected API cost.",
+    "brief_zh": "评测 Agent 为大规模任务构建可复用产物的能力；多数运行损失零样本质量，部分产物以较低预估 API 费用接近 Jev。",
+    "summary": "Benchmarks agents that build reusable artifacts for large workloads; most runs lose quality relative to zero-shot calls, while selected artifacts approach Jev at lower projected API cost.",
+    "summary_zh": "评测 Agent 为大规模任务构建可复用产物的能力；多数运行损失零样本质量，部分产物以较低预估 API 费用接近 Jev。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "48 of 60 artifact runs fall below the zero-shot confidence interval. Full-workload Jev costs are extrapolated; reported token/API cost excludes local compute, and two artifact runs provide limited variability evidence.",
+    "datasets": [
+      "BOTTLED"
+    ],
+    "code": "https://github.com/aktsonthalia/bottled"
+  },
+  {
+    "id": "2610.08675",
+    "title": "Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge",
+    "short": "Same-number citation swaps",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08675",
+    "pdf": "https://arxiv.org/pdf/2610.08675v1",
+    "version": "2610.08675v1",
+    "authors": [
+      "Chuhong Xu",
+      "Bo Su",
+      "Ziyao Chen",
+      "Ruiyang Xu",
+      "Shimeng Dai",
+      "Xinyu Qiu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Holds arithmetic and operand values fixed while swapping financial citations; Jev misses some wrong-role evidence and rejects some equivalent evidence, with column rendering changing the trade-off.",
+    "brief_zh": "固定算术与操作数后交换财务引文；Jev 既会漏检错误角色证据，也会拒绝等价证据，显式列标题改变两者权衡。",
+    "summary": "Holds arithmetic and operand values fixed while swapping financial citations; Jev misses some wrong-role evidence and rejects some equivalent evidence, with column rendering changing the trade-off.",
+    "summary_zh": "固定算术与操作数后交换财务引文；Jev 既会漏检错误角色证据，也会拒绝等价证据，显式列标题改变两者权衡。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Signed-number matching explains most recovery. Natural labels are assistant judgments; the fresh follow-up has one reviewer, and excluding one disputed case removes the net separation gain.",
+    "datasets": [
+      "FinQA citation-swap audit"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.08155",
+    "title": "Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor",
+    "short": "S1-MAS",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08155",
+    "pdf": "https://arxiv.org/pdf/2610.08155v1",
+    "version": "2610.08155v1",
+    "authors": [
+      "Zihan Zhou",
+      "Xinzhe Hu",
+      "Hanxu Yang",
+      "Liangjian Wen",
+      "Zhao Kang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/frameworks",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses a Laya controller, compact evidence reader and bounded task menus to coordinate LLM workers; reports lower GPT token use and end-to-end latency across seven benchmarks.",
+    "brief_zh": "以 Laya 控制器、小型证据阅读器和有限任务菜单协调 LLM 工作单元；七个基准上报告更少 GPT token 与较低端到端时延。",
+    "summary": "Uses a Laya controller, compact evidence reader and bounded task menus to coordinate LLM workers; reports lower GPT token use and end-to-end latency across seven benchmarks.",
+    "summary_zh": "以 Laya 控制器、小型证据阅读器和有限任务菜单协调 LLM 工作单元；七个基准上报告更少 GPT token 与较低端到端时延。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "The six-task mean is 93.97% versus DyLAN 93.12%. Token savings count GPT calls, not all local-model compute; latency includes controller and reader. This is Laya-based coordination, not a Jev API experiment.",
+    "datasets": [
+      "S1-MAS evaluation suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.08089",
+    "title": "When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries",
+    "short": "Cost–accuracy semantic query plans",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08089",
+    "pdf": "https://arxiv.org/pdf/2610.08089v1",
+    "version": "2610.08089v1",
+    "authors": [
+      "Kyoungmin Kim"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.",
+    "brief_zh": "以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。",
+    "summary": "Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.",
+    "summary_zh": "以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Simulation assumes calibrated Bernoulli labels and a perfect escalation judge in its main setting. Ratio-of-expectations quality is approximate; no real-engine Jev evaluation is reported.",
+    "datasets": [
+      "CASQO synthetic workloads"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.07953",
+    "title": "Benchmarking System One Models in Online Moderation",
+    "short": "System One online moderation",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.07953",
+    "pdf": "https://arxiv.org/pdf/2610.07953v1",
+    "version": "2610.07953v1",
+    "authors": [
+      "Federico Mazzoni",
+      "Andrea Failla"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/safety"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates moderation rules, retrieved precedents and answer inventories across five benchmarks; Jev benefits from precedents in matched settings, while Laya often changes its operating point without better discrimination.",
+    "brief_zh": "在五个基准上分离审核规则、检索先例和答案集合；匹配条件下 Jev 从先例获益，Laya 则常仅改变判定比例而未提升区分能力。",
+    "summary": "Separates moderation rules, retrieved precedents and answer inventories across five benchmarks; Jev benefits from precedents in matched settings, while Laya often changes its operating point without better discrimination.",
+    "summary_zh": "在五个基准上分离审核规则、检索先例和答案集合；匹配条件下 Jev 从先例获益，Laya 则常仅改变判定比例而未提升区分能力。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "PluRule held-out EMA improves by 5.20 points with precedents. External reference systems are not input-matched; leave-one-out retrieval is distinct from held-out deployment and intervals are not multiplicity-adjusted.",
+    "datasets": [
+      "SOM moderation benchmark suite"
+    ],
+    "code": "https://github.com/FedericoMz/som-moderation-benchmark"
+  },
+  {
+    "id": "2610.07730",
+    "title": "SanSi: A Looped Typed Decision Model for System 1.5 Thinking",
+    "short": "SanSi",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.07730",
+    "pdf": "https://arxiv.org/pdf/2610.07730v1",
+    "version": "2610.07730v1",
+    "authors": [
+      "Shuyu Gan",
+      "Young-Jun Lee",
+      "Dongyeop Kang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Trains typed readouts after repeated backbone loops; eight loops improve accuracy at fixed model shape, but cost more compute and calibrate worse than three loops.",
+    "brief_zh": "在重复骨干循环后训练类型化读出；八次循环提升同结构模型准确率，但计算更贵，校准不如三次循环。",
+    "summary": "Trains typed readouts after repeated backbone loops; eight loops improve accuracy at fixed model shape, but cost more compute and calibrate worse than three loops.",
+    "summary_zh": "在重复骨干循环后训练类型化读出；八次循环提升同结构模型准确率，但计算更贵，校准不如三次循环。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Accuracy reaches 72.0% at 7.7 times one-loop GPU time. A larger single-pass reference is stronger per compute; confidence rises on wrong answers and ECE increases from loop 3 to 8.",
+    "datasets": [
+      "SanSi decision suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.07716",
+    "title": "Readout Stability in Prefill-Only Decision Models:Zero-Label Prediction and Inference-Time Compute Allocation",
+    "short": "Readout stability and compute allocation",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.07716",
+    "pdf": "https://arxiv.org/pdf/2610.07716v1",
+    "version": "2610.07716v1",
+    "authors": [
+      "Ran Li",
+      "Lei Chen"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests cached first-pass rankings under candidate-menu changes and compares re-asking with model cascades; ranking stability supports computation reuse but does not itself identify unlabeled accuracy.",
+    "brief_zh": "测试候选菜单变化后的首轮缓存排序，并比较重复询问与模型级联；排序稳定支持计算复用，本身不能识别无标签准确率。",
+    "summary": "Tests cached first-pass rankings under candidate-menu changes and compares re-asking with model cascades; ranking stability supports computation reuse but does not itself identify unlabeled accuracy.",
+    "summary_zh": "测试候选菜单变化后的首轮缓存排序，并比较重复询问与模型级联；排序稳定支持计算复用，本身不能识别无标签准确率。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Section 3.2 computes accuracy by comparison with y(x), despite the zero-label claim. Gold-retaining menu curation and ranking stability do not establish deployable label-free accuracy; prose and abstract differ on dataset counts.",
+    "datasets": [
+      "Readout-stability intervention suite"
+    ],
+    "code": "https://github.com/rlisml/jev-cascade"
+  },
+  {
+    "id": "r-142d11a9f5",
+    "title": "rlisml/jev-cascade",
+    "short": "Jev confidence cascades",
+    "kind": "Project",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-07",
+    "url": "https://github.com/rlisml/jev-cascade",
+    "version": "2026-10-06T08:38:19Z",
+    "authors": [
+      "rlisml"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Provides candidate-menu interventions, cached-ranking analysis and confidence cascades for open prefill-only decision models; costs are modeled in forward-pass units.",
+    "brief_zh": "提供开放预填充决策模型的候选菜单干预、缓存排序分析和置信度级联；成本按前向计算单位建模。",
+    "summary": "Provides candidate-menu interventions, cached-ranking analysis and confidence cascades for open prefill-only decision models; costs are modeled in forward-pass units.",
+    "summary_zh": "提供开放预填充决策模型的候选菜单干预、缓存排序分析和置信度级联；成本按前向计算单位建模。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and associated paper reviewed",
+    "limitation": "Gold-retaining menus are diagnostic controls; parameter-ratio costs are not measured deployment bills. Accuracy scoring still requires reference labels."
   }
 ]

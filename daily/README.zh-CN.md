@@ -5,11 +5,18 @@
 ## 2026-10-06
 
 - [Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models](https://zenodo.org/records/23179064) — 以精确概率目标和人类分歧审计决策概率：归一化 Noul 更贴近给定基率，逐任务校准则缩小人类投票分布上的接口差距。 `评测` · [PDF](https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content) · [代码](https://github.com/MohitSV/jev-calibration-audit)
+- [Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?](https://arxiv.org/abs/2610.08775) — 评测 Agent 为大规模任务构建可复用产物的能力；多数运行损失零样本质量，部分产物以较低预估 API 费用接近 Jev。 `评测` · [PDF](https://arxiv.org/pdf/2610.08775v1) · [代码](https://github.com/aktsonthalia/bottled)
+- [Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge](https://arxiv.org/abs/2610.08675) — 固定算术与操作数后交换财务引文；Jev 既会漏检错误角色证据，也会拒绝等价证据，显式列标题改变两者权衡。 `评测` · [PDF](https://arxiv.org/pdf/2610.08675v1)
+- [Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155) — 以 Laya 控制器、小型证据阅读器和有限任务菜单协调 LLM 工作单元；七个基准上报告更少 GPT token 与较低端到端时延。 `评测` · [PDF](https://arxiv.org/pdf/2610.08155v1)
+- [When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries](https://arxiv.org/abs/2610.08089) — 以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。 `评测` · [PDF](https://arxiv.org/pdf/2610.08089v1)
+- [Benchmarking System One Models in Online Moderation](https://arxiv.org/abs/2610.07953) — 在五个基准上分离审核规则、检索先例和答案集合；匹配条件下 Jev 从先例获益，Laya 则常仅改变判定比例而未提升区分能力。 `评测` · [PDF](https://arxiv.org/pdf/2610.07953v1) · [代码](https://github.com/FedericoMz/som-moderation-benchmark)
+- [SanSi: A Looped Typed Decision Model for System 1.5 Thinking](https://arxiv.org/abs/2610.07730) — 在重复骨干循环后训练类型化读出；八次循环提升同结构模型准确率，但计算更贵，校准不如三次循环。 `评测` · [PDF](https://arxiv.org/pdf/2610.07730v1)
+- [Readout Stability in Prefill-Only Decision Models:Zero-Label Prediction and Inference-Time Compute Allocation](https://arxiv.org/abs/2610.07716) — 测试候选菜单变化后的首轮缓存排序，并比较重复询问与模型级联；排序稳定支持计算复用，本身不能识别无标签准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.07716v1) · [代码](https://github.com/rlisml/jev-cascade)
 
 ## 2026-10-05
 
 - [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — 在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。 `评测` · [PDF](https://arxiv.org/pdf/2610.06744v1)
-- [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — 复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。 `评测` · [PDF](https://arxiv.org/pdf/2610.06625v1)
+- [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — 复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。 `评测` · [PDF](https://arxiv.org/pdf/2610.06625v2)
 - [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — 审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。 `综述` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [代码](https://github.com/OniReimu/SoK-JEV)
 - [GraphDecide: Benchmarking System One Models on Graph Tasks](https://arxiv.org/abs/2610.06354) — 在十四种模型接口配置上评测图结构、图文证据与序列优化；启发式提案改善 Jev 构造质量，相对固定规则的收益随任务变化。 `评测` · [PDF](https://arxiv.org/pdf/2610.06354v1) · [代码](https://github.com/VictorYXL/JevGraphBench)
 

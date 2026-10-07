@@ -13,6 +13,55 @@
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?</title>
+      <link>https://arxiv.org/abs/2610.08775</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.08775#publication</guid>
+      <description>Benchmarks agents that build reusable artifacts for large workloads; most runs lose quality relative to zero-shot calls, while selected artifacts approach Jev at lower projected API cost.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge</title>
+      <link>https://arxiv.org/abs/2610.08675</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.08675#publication</guid>
+      <description>Holds arithmetic and operand values fixed while swapping financial citations; Jev misses some wrong-role evidence and rejects some equivalent evidence, with column rendering changing the trade-off.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor</title>
+      <link>https://arxiv.org/abs/2610.08155</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.08155#publication</guid>
+      <description>Uses a Laya controller, compact evidence reader and bounded task menus to coordinate LLM workers; reports lower GPT token use and end-to-end latency across seven benchmarks.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries</title>
+      <link>https://arxiv.org/abs/2610.08089</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.08089#publication</guid>
+      <description>Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Benchmarking System One Models in Online Moderation</title>
+      <link>https://arxiv.org/abs/2610.07953</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.07953#publication</guid>
+      <description>Separates moderation rules, retrieved precedents and answer inventories across five benchmarks; Jev benefits from precedents in matched settings, while Laya often changes its operating point without better discrimination.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SanSi: A Looped Typed Decision Model for System 1.5 Thinking</title>
+      <link>https://arxiv.org/abs/2610.07730</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.07730#publication</guid>
+      <description>Trains typed readouts after repeated backbone loops; eight loops improve accuracy at fixed model shape, but cost more compute and calibrate worse than three loops.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Readout Stability in Prefill-Only Decision Models:Zero-Label Prediction and Inference-Time Compute Allocation</title>
+      <link>https://arxiv.org/abs/2610.07716</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.07716#publication</guid>
+      <description>Tests cached first-pass rankings under candidate-menu changes and compares re-asking with model cascades; ranking stability supports computation reuse but does not itself identify unlabeled accuracy.</description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring</title>
       <link>https://arxiv.org/abs/2610.06744</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.06744#publication</guid>

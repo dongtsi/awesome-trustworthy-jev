@@ -523,7 +523,7 @@
       "zh": "Luna 费用按公布的批处理／标准费率计算，时延来自同步请求；Qwen 费用对应托管路由。Jev 校准优于 Luna token 读出，对 Qwen 则无一致优势。"
     },
     "source_section": "Table 2, calibration analysis and Appendix H; PDF pp. 6–18",
-    "source": "https://arxiv.org/pdf/2610.06625v1"
+    "source": "https://arxiv.org/pdf/2610.06625v2"
   },
   {
     "id": "2610.06425",
@@ -651,5 +651,152 @@
     },
     "source_section": "README Sections 01, 02, 05–07 and 10",
     "source": "https://github.com/AlanViollier/jev-vs-pii"
+  },
+  {
+    "id": "2610.08775",
+    "category": "foundations",
+    "datasets": [
+      "BOTTLED"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Ten models, three workloads and two runs per task; 10 hours and five million weighted tokens per run. Jev is evaluated on 1,000 ESCI and RAID items each.",
+      "zh": "十模型、三任务，每组合两次；每轮十小时、五百万加权 token。Jev 在 ESCI 与 RAID 各 1,000 条样本上评估。"
+    },
+    "reading": {
+      "en": "48 of 60 artifact runs fall below the zero-shot confidence interval. Full-workload Jev costs are extrapolated; reported token/API cost excludes local compute, and two artifact runs provide limited variability evidence.",
+      "zh": "60 次产物运行中 48 次低于零样本区间下界。Jev 全量费用来自外推；所报 token／API 费用不含本地计算，两次产物运行对变异的估计有限。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 4–8",
+    "source": "https://arxiv.org/pdf/2610.08775v1"
+  },
+  {
+    "id": "2610.08675",
+    "category": "trustworthiness",
+    "datasets": [
+      "FinQA citation-swap audit"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "192 traces from 96 selected FinQA questions; 15 initial contrasts and a fresh 36-page follow-up labeled by one non-author reviewer; question-level bootstrap.",
+      "zh": "96 个筛选 FinQA 问题产生 192 条轨迹；15 组初始对照及 36 个新页面的后续对照，由一名非作者审核；按问题 bootstrap。"
+    },
+    "reading": {
+      "en": "Signed-number matching explains most recovery. Natural labels are assistant judgments; the fresh follow-up has one reviewer, and excluding one disputed case removes the net separation gain.",
+      "zh": "带符号数字匹配解释了大部分恢复收益。自然轨迹标签来自助手判断；新样本仅一名审核者，排除一个争议案例即消除净分离收益。"
+    },
+    "source_section": "Sections II–IV, Tables I–III; PDF pp. 2–8",
+    "source": "https://arxiv.org/pdf/2610.08675v1"
+  },
+  {
+    "id": "2610.08155",
+    "category": "foundations",
+    "datasets": [
+      "S1-MAS evaluation suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Six reasoning/code benchmarks plus WebSRC, three seeds, matched GPT workers; random-controller, GPT-controller and reader-removal ablations.",
+      "zh": "六个推理／代码基准加 WebSRC，三个种子、匹配 GPT 工作模型；含随机控制、GPT 控制和移除阅读器消融。"
+    },
+    "reading": {
+      "en": "The six-task mean is 93.97% versus DyLAN 93.12%. Token savings count GPT calls, not all local-model compute; latency includes controller and reader. This is Laya-based coordination, not a Jev API experiment.",
+      "zh": "六任务均值为 93.97%，DyLAN 为 93.12%。节省量统计 GPT 调用 token，不含全部本地模型计算；时延包含控制器和阅读器。这是 Laya 协调实验，并非 Jev API 实验。"
+    },
+    "source_section": "Sections 4–5, Tables 1–4; PDF pp. 4–8",
+    "source": "https://arxiv.org/pdf/2610.08155v1"
+  },
+  {
+    "id": "2610.08089",
+    "category": "foundations",
+    "datasets": [
+      "CASQO synthetic workloads"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Formal relational semantics and synthetic 2,000-review workloads, 200 instances for main experiments and 50 for tuple-pricing comparisons.",
+      "zh": "关系代数形式化及每实例 2,000 条评论的合成工作负载；主要实验 200 实例，逐元组定价比较 50 实例。"
+    },
+    "reading": {
+      "en": "Simulation assumes calibrated Bernoulli labels and a perfect escalation judge in its main setting. Ratio-of-expectations quality is approximate; no real-engine Jev evaluation is reported.",
+      "zh": "主要模拟假定校准 Bernoulli 标签与完美升级裁判。期望比值仅近似质量，未报告真实引擎上的 Jev 实测。"
+    },
+    "source_section": "Sections 4, 8–9; PDF pp. 6–8, 17–21",
+    "source": "https://arxiv.org/pdf/2610.08089v1"
+  },
+  {
+    "id": "2610.07953",
+    "category": "trustworthiness",
+    "datasets": [
+      "SOM moderation benchmark suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Jev/Laya shared compact inputs; fixed-rule-inventory contrasts, paired bootstrap, training-only PluRule test retrieval and leave-one-out OLID/HateXplain retrieval.",
+      "zh": "Jev／Laya 共享紧凑输入，固定规则集合对照与配对 bootstrap；PluRule 测试仅从训练集检索，OLID／HateXplain 采用留一检索。"
+    },
+    "reading": {
+      "en": "PluRule held-out EMA improves by 5.20 points with precedents. External reference systems are not input-matched; leave-one-out retrieval is distinct from held-out deployment and intervals are not multiplicity-adjusted.",
+      "zh": "PluRule 留出测试中，先例使 EMA 提升 5.20 点。外部参照系统并非输入匹配对照；留一检索不同于独立部署，多重比较区间未经校正。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 4–9, 12–13",
+    "source": "https://arxiv.org/pdf/2610.07953v1"
+  },
+  {
+    "id": "2610.07730",
+    "category": "foundations",
+    "datasets": [
+      "SanSi decision suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "12,800 training items, 10,027 test decisions from 59 sources, three seeds and matched-recipe single-pass controls; independent transfer and evidence-removal groups.",
+      "zh": "12,800 条训练、59 来源共 10,027 条测试决策，三个种子及匹配训练方案的单轮对照；区分迁移与证据移除组。"
+    },
+    "reading": {
+      "en": "Accuracy reaches 72.0% at 7.7 times one-loop GPU time. A larger single-pass reference is stronger per compute; confidence rises on wrong answers and ECE increases from loop 3 to 8.",
+      "zh": "准确率达 72.0%，GPU 时间为单轮的 7.7 倍。较大单轮参照按计算预算更强；错误答案置信度也上升，ECE 从第三至第八轮变差。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–7",
+    "source": "https://arxiv.org/pdf/2610.07730v1"
+  },
+  {
+    "id": "2610.07716",
+    "category": "foundations",
+    "datasets": [
+      "Readout-stability intervention suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "91 menu interventions across open decision-model families, with matched-cost cascades and a held-out 250-item CLINC150 test.",
+      "zh": "在开放决策模型族上开展 91 次菜单干预，比较匹配成本级联，并使用 250 条 CLINC150 留出测试。"
+    },
+    "reading": {
+      "en": "Section 3.2 computes accuracy by comparison with y(x), despite the zero-label claim. Gold-retaining menu curation and ranking stability do not establish deployable label-free accuracy; prose and abstract differ on dataset counts.",
+      "zh": "第 3.2 节准确率计算仍与 y(x) 比较，与零标签主张不一致。保留正确标签的菜单构造及排序稳定不能证明可部署的无标签准确率；摘要与正文数据集计数也不一致。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–7",
+    "source": "https://arxiv.org/pdf/2610.07716v1"
   }
 ]

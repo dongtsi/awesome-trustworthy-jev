@@ -158,5 +158,45 @@
     "url": "https://github.com/AlanViollier/jev-vs-pii#06--data",
     "type": "benchmark",
     "checked": "2026-10-06"
+  },
+  "BOTTLED": {
+    "url": "https://github.com/aktsonthalia/bottled",
+    "type": "artifact",
+    "checked": "2026-10-07"
+  },
+  "FinQA citation-swap audit": {
+    "url": "https://arxiv.org/abs/2610.08675",
+    "type": "paper",
+    "checked": "2026-10-07"
+  },
+  "S1-MAS evaluation suite": {
+    "url": "https://arxiv.org/abs/2610.08155",
+    "type": "paper",
+    "checked": "2026-10-07"
+  },
+  "CASQO synthetic workloads": {
+    "url": "https://arxiv.org/abs/2610.08089",
+    "type": "paper",
+    "checked": "2026-10-07"
+  },
+  "SOM moderation benchmark suite": {
+    "url": "https://github.com/FedericoMz/som-moderation-benchmark",
+    "type": "artifact",
+    "checked": "2026-10-07"
+  },
+  "SanSi decision suite": {
+    "url": "https://arxiv.org/abs/2610.07730",
+    "type": "paper",
+    "checked": "2026-10-07"
+  },
+  "Readout-stability intervention suite": {
+    "url": "https://github.com/rlisml/jev-cascade",
+    "type": "artifact",
+    "checked": "2026-10-07"
+  },
+  "Jev OOD synthetic tickets": {
+    "url": "https://github.com/scienthoon/jev-ood-calibration/tree/main/data",
+    "type": "dataset",
+    "checked": "2026-10-07"
   }
 }
