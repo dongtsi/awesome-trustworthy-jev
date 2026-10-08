@@ -13982,5 +13982,162 @@
     "evidence": "Repository",
     "review": "Original README and associated paper reviewed",
     "limitation": "Gold-retaining menus are diagnostic controls; parameter-ratio costs are not measured deployment bills. Accuracy scoring still requires reference labels."
+  },
+  {
+    "id": "2610.09683",
+    "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+    "short": "System Switch",
+    "kind": "Paper",
+    "date": "2026-10-07",
+    "updated": "2026-10-07",
+    "added": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09683",
+    "pdf": "https://arxiv.org/pdf/2610.09683v1",
+    "version": "2610.09683v1",
+    "authors": [
+      "Gian Luca Bailo"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests confidence-based deferral from fast decision models to a slow visual reasoner; offline gains do not translate into Doom level completion.",
+    "brief_zh": "测试快速决策模型按置信度转交慢速视觉推理器；离线收益未转化为 Doom 关卡通关。",
+    "summary": "Tests confidence-based deferral from fast decision models to a slow visual reasoner; offline gains do not translate into Doom level completion.",
+    "summary_zh": "测试快速决策模型按置信度转交慢速视觉推理器；离线收益未转化为 Doom 关卡通关。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "At 30% deferral, Laya gains 0.13 over random routing, but the gain over the best component is uncertain. No closed-loop run exits the level; oracle agreement, class composition and stale observations limit interpretation.",
+    "datasets": [
+      "System Switch Doom decisions"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.09328",
+    "title": "Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation",
+    "short": "Visual Jev Rewards",
+    "kind": "Paper",
+    "date": "2026-10-07",
+    "updated": "2026-10-07",
+    "added": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09328",
+    "pdf": "https://arxiv.org/pdf/2610.09328v1",
+    "version": "2610.09328v1",
+    "authors": [
+      "Baoteng Li",
+      "Wenzhuo Wu",
+      "Kongming Liang",
+      "Zhanyu Ma"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Trains a local Qwen verifier for joint reference identity and image conditions, then averages binary probabilities as an image-generation reward.",
+    "brief_zh": "训练本地 Qwen 验证器联合判断参考身份与图像条件，将二元概率平均值用作图像生成奖励。",
+    "summary": "Trains a local Qwen verifier for joint reference identity and image conditions, then averages binary probabilities as an image-generation reward.",
+    "summary_zh": "训练本地 Qwen 验证器联合判断参考身份与图像条件，将二元概率平均值用作图像生成奖励。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Custom score improves from 41.78 to 52.50 versus 51.84 for the 27B reward control. One training run per condition and the small human sample do not establish significant superiority. Mean rewards allow compensation for identity failures; this is not official Jev.",
+    "datasets": [
+      "Reference-bound Visual Jev evaluation suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.09188",
+    "title": "From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev",
+    "short": "Probabilities to Decisions",
+    "kind": "Paper",
+    "date": "2026-10-06",
+    "updated": "2026-10-06",
+    "added": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09188",
+    "pdf": "https://arxiv.org/pdf/2610.09188v1",
+    "version": "2610.09188v1",
+    "authors": [
+      "Mohamad Yazan Sadoun",
+      "Sarah Sharif",
+      "Yaser Mike Banad"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Distills Jev and Qwen pairwise probabilities into small evaluators; matched-budget chess gains replicate, while retrieval gains remain uncertain.",
+    "brief_zh": "将 Jev 与 Qwen 成对概率蒸馏到小型评估器；匹配预算的国际象棋收益可重复，检索收益仍不确定。",
+    "summary": "Distills Jev and Qwen pairwise probabilities into small evaluators; matched-budget chess gains replicate, while retrieval gains remain uncertain.",
+    "summary_zh": "将 Jev 与 Qwen 成对概率蒸馏到小型评估器；匹配预算的国际象棋收益可重复，检索收益仍不确定。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Combining teachers gains 9.6 Elo [4.3,14.9] over Qwen with twice the pairs; replication gains 8.4 [2.9,14.1]. Stricter shuffle and refit controls weaken the advantage. Retrieval intervals include zero; search and hardware differences preclude attributing total strength or speed to Jev alone.",
+    "datasets": [
+      "Jev multi-teacher distillation suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.09937",
+    "title": "Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift",
+    "short": "HVAC reasoning and shift",
+    "kind": "Paper",
+    "date": "2026-10-07",
+    "updated": "2026-10-07",
+    "added": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09937",
+    "pdf": "https://arxiv.org/pdf/2610.09937v1",
+    "version": "2610.09937v1",
+    "authors": [
+      "Wooyoung Jung"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates physical representation from reasoning in fault diagnosis; engineered features improve consistency, but stable shift performance does not imply superior absolute accuracy or useful detection.",
+    "brief_zh": "在故障诊断中区分物理表征与推理需求；工程特征改善一致性，但迁移稳定不意味着绝对准确率更高或检测有效。",
+    "summary": "Separates physical representation from reasoning in fault diagnosis; engineered features improve consistency, but stable shift performance does not imply superior absolute accuracy or useful detection.",
+    "summary_zh": "在故障诊断中区分物理表征与推理需求；工程特征改善一致性，但迁移稳定不意味着绝对准确率更高或检测有效。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Jev shift ECE falls from 0.28 to 0.17 after temperature scaling, with a summer exception. Fault-detection F1 0.73 lies inside the always-flag baseline interval. Same-day reference splits favor the supervised model; harmonization artifacts are available on request, not a verified public release.",
+    "datasets": [
+      "HVAC reasoning-demand study suite"
+    ],
+    "code": ""
   }
 ]

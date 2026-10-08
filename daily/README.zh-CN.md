@@ -2,9 +2,16 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-07
+
+- [Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift](https://arxiv.org/abs/2610.09937) — 在故障诊断中区分物理表征与推理需求；工程特征改善一致性，但迁移稳定不意味着绝对准确率更高或检测有效。 `评测` · [PDF](https://arxiv.org/pdf/2610.09937v1)
+- [System Switch: When Should a Fast Decision Model Stop and Think?](https://arxiv.org/abs/2610.09683) — 测试快速决策模型按置信度转交慢速视觉推理器；离线收益未转化为 Doom 关卡通关。 `评测` · [PDF](https://arxiv.org/pdf/2610.09683v1)
+- [Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation](https://arxiv.org/abs/2610.09328) — 训练本地 Qwen 验证器联合判断参考身份与图像条件，将二元概率平均值用作图像生成奖励。 `评测` · [PDF](https://arxiv.org/pdf/2610.09328v1)
+
 ## 2026-10-06
 
 - [Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models](https://zenodo.org/records/23179064) — 以精确概率目标和人类分歧审计决策概率：归一化 Noul 更贴近给定基率，逐任务校准则缩小人类投票分布上的接口差距。 `评测` · [PDF](https://zenodo.org/api/records/23179064/files/velu-jev-calibration-audit.pdf/content) · [代码](https://github.com/MohitSV/jev-calibration-audit)
+- [From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev](https://arxiv.org/abs/2610.09188) — 将 Jev 与 Qwen 成对概率蒸馏到小型评估器；匹配预算的国际象棋收益可重复，检索收益仍不确定。 `评测` · [PDF](https://arxiv.org/pdf/2610.09188v1)
 - [Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?](https://arxiv.org/abs/2610.08775) — 评测 Agent 为大规模任务构建可复用产物的能力；多数运行损失零样本质量，部分产物以较低预估 API 费用接近 Jev。 `评测` · [PDF](https://arxiv.org/pdf/2610.08775v1) · [代码](https://github.com/aktsonthalia/bottled)
 - [Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge](https://arxiv.org/abs/2610.08675) — 固定算术与操作数后交换财务引文；Jev 既会漏检错误角色证据，也会拒绝等价证据，显式列标题改变两者权衡。 `评测` · [PDF](https://arxiv.org/pdf/2610.08675v1)
 - [Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155) — 以 Laya 控制器、小型证据阅读器和有限任务菜单协调 LLM 工作单元；七个基准上报告更少 GPT token 与较低端到端时延。 `评测` · [PDF](https://arxiv.org/pdf/2610.08155v1)

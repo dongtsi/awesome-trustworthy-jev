@@ -198,5 +198,25 @@
     "url": "https://github.com/scienthoon/jev-ood-calibration/tree/main/data",
     "type": "dataset",
     "checked": "2026-10-07"
+  },
+  "System Switch Doom decisions": {
+    "url": "https://arxiv.org/abs/2610.09683",
+    "type": "paper",
+    "checked": "2026-10-08"
+  },
+  "Reference-bound Visual Jev evaluation suite": {
+    "url": "https://arxiv.org/abs/2610.09328",
+    "type": "paper",
+    "checked": "2026-10-08"
+  },
+  "Jev multi-teacher distillation suite": {
+    "url": "https://arxiv.org/abs/2610.09188",
+    "type": "paper",
+    "checked": "2026-10-08"
+  },
+  "HVAC reasoning-demand study suite": {
+    "url": "https://arxiv.org/abs/2610.09937",
+    "type": "paper",
+    "checked": "2026-10-08"
   }
 }

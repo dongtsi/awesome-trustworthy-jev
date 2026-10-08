@@ -798,5 +798,89 @@
     },
     "source_section": "Sections 3–5; PDF pp. 3–7",
     "source": "https://arxiv.org/pdf/2610.07716v1"
+  },
+  {
+    "id": "2610.09683",
+    "category": "foundations",
+    "datasets": [
+      "System Switch Doom decisions"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "900 held-out decisions from 42 games; 500 game-level splits and 33 closed-loop games across 11 variants, three seeds each.",
+      "zh": "42 局游戏的 900 条留出决策，500 次按游戏划分；11 个变体各三个种子，共 33 局闭环评测。"
+    },
+    "reading": {
+      "en": "At 30% deferral, Laya gains 0.13 over random routing, but the gain over the best component is uncertain. No closed-loop run exits the level; oracle agreement, class composition and stale observations limit interpretation.",
+      "zh": "30% 转交率下，Laya 相对随机路由提升 0.13，但相对最佳单组件的优势不确定。闭环运行均未通关；规则标签一致性、类别构成和过时画面限制结论。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–10",
+    "source": "https://arxiv.org/pdf/2610.09683v1"
+  },
+  {
+    "id": "2610.09328",
+    "category": "foundations",
+    "datasets": [
+      "Reference-bound Visual Jev evaluation suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "3,972 binary examples; 200 GRPO training tasks and a custom 897-item MICoBench subset; human comparison on 21 valid tasks.",
+      "zh": "3,972 条二元样本；200 个 GRPO 训练任务，897 条 MICoBench 自定义子集；人工比较涉及 21 个有效任务。"
+    },
+    "reading": {
+      "en": "Custom score improves from 41.78 to 52.50 versus 51.84 for the 27B reward control. One training run per condition and the small human sample do not establish significant superiority. Mean rewards allow compensation for identity failures; this is not official Jev.",
+      "zh": "自定义分数由 41.78 提至 52.50，27B 奖励对照为 51.84。每条件一次训练及小规模人工样本未证明显著优势；平均奖励允许其他条件抵消身份错误，该模型并非官方 Jev。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 2–6",
+    "source": "https://arxiv.org/pdf/2610.09328v1"
+  },
+  {
+    "id": "2610.09188",
+    "category": "foundations",
+    "datasets": [
+      "Jev multi-teacher distillation suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "63,135 move pairs from 2,042 games with source-game holdout; paired 4,000-game evaluations and replication. Retrieval uses 80,000 pairs, five seeds and 97 TREC queries.",
+      "zh": "2,042 局棋产生 63,135 个着法对，按来源棋局留出；成对 4,000 局评测并重复验证。检索使用 80,000 个样本对、五个种子和 97 条 TREC 查询。"
+    },
+    "reading": {
+      "en": "Combining teachers gains 9.6 Elo [4.3,14.9] over Qwen with twice the pairs; replication gains 8.4 [2.9,14.1]. Stricter shuffle and refit controls weaken the advantage. Retrieval intervals include zero; search and hardware differences preclude attributing total strength or speed to Jev alone.",
+      "zh": "双教师相对双倍样本 Qwen 提升 9.6 Elo [4.3,14.9]，重复实验为 8.4 [2.9,14.1]；更严格打乱及重拟合对照削弱优势。检索区间跨零；搜索器和硬件差异不支持将整体棋力或速度归因于 Jev。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 2–6",
+    "source": "https://arxiv.org/pdf/2610.09188v1"
+  },
+  {
+    "id": "2610.09937",
+    "category": "trustworthiness",
+    "datasets": [
+      "HVAC reasoning-demand study suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "128 fault days from four public building datasets, 53 physical features and nine shift tests; matched-input Jev, Qwen and LightGBM comparisons with day-level bootstrap.",
+      "zh": "四个公开建筑数据集的 128 个故障日、53 个物理特征及九项分布迁移测试；匹配输入比较 Jev、Qwen 与 LightGBM，按日 bootstrap。"
+    },
+    "reading": {
+      "en": "Jev shift ECE falls from 0.28 to 0.17 after temperature scaling, with a summer exception. Fault-detection F1 0.73 lies inside the always-flag baseline interval. Same-day reference splits favor the supervised model; harmonization artifacts are available on request, not a verified public release.",
+      "zh": "温度缩放使 Jev 迁移 ECE 从 0.28 降至 0.17，但夏季子集例外。故障检测 F1 0.73 落在始终报警基线区间内。同日参考划分有利于监督模型；协调后的数据产物需向作者索取，未核验公开发布。"
+    },
+    "source_section": "PDF pp. 3–6, 12, 14, 17–20, 25, 29–30, 35",
+    "source": "https://arxiv.org/pdf/2610.09937v1"
   }
 ]
