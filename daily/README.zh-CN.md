@@ -2,8 +2,21 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-08
+
+- [One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails](https://arxiv.org/abs/2610.12292) — 区分开放决策护栏的错误放行与错误拦截；选项名称进入模型输入时，误导名称可反转判断。 `评测` · [PDF](https://arxiv.org/pdf/2610.12292v1) · [代码](https://github.com/ArminAzizi98/option-channel-attack)
+- [Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks](https://arxiv.org/abs/2610.11978) — 在 13 项基准上比较 Jev 与 19 个 LLM；知识任务表现较强，数学文字题明显较弱。 `评测` · [PDF](https://arxiv.org/pdf/2610.11978v1)
+- [Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs](https://arxiv.org/abs/2610.11901) — Jev 在英文 VAST 立场判断上接近 GPT-5.6，在中文对话立场上落后于更强模型，尤其难区分支持与反对。 `评测` · [PDF](https://arxiv.org/pdf/2610.11901v1)
+- [Can Jev be Your Q or Policy in Reinforcement Learning?](https://arxiv.org/abs/2610.11692) — 将冻结 Jev 用作策略参照、探索判断及回放评分器；收益取决于学习角色与提供的信息。 `评测` · [PDF](https://arxiv.org/pdf/2610.11692v1)
+- [Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation](https://arxiv.org/abs/2610.11436) — 添加冒号使排序字段请求中的明确错误终值更易被接受，保留插入顺序时两种候选均被拒绝。 `评测` · [PDF](https://arxiv.org/pdf/2610.11436v1)
+- [TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models](https://arxiv.org/abs/2610.11392) — 以策略驱动生成器测试校准、措辞、拒答和成本；错误排序较好不保证概率校准或对证据缺失敏感。 `评测` · [PDF](https://arxiv.org/pdf/2610.11392v1)
+- [FastJEV: Understanding Redundancy for Compact JEV Inference](https://arxiv.org/abs/2610.11379) — 为 OmniJev 结合上下文状态复用、候选前缀共享及层剪枝；计算结构更紧凑不保证实测时延下降。 `评测` · [PDF](https://arxiv.org/pdf/2610.11379v1)
+- [MetaEncoder: Exploring the Limit of Bi-Encoders for Multimodal System One Decision Making with Natural Language Interface](https://arxiv.org/abs/2610.11316) — 以请求到候选的对比学习训练多模态双编码器；将选项加入请求改善闭集判断，同时保留候选嵌入缓存。 `评测` · [PDF](https://arxiv.org/pdf/2610.11316v1)
+- [Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?](https://arxiv.org/abs/2610.11135) — 通过阅读器替换及匹配类型化输入测试冷启动知识追踪；Jev 主要受益于模型先验，学习者增加后监督方法追上。 `评测` · [PDF](https://arxiv.org/pdf/2610.11135v1)
+
 ## 2026-10-07
 
+- [JevForest: Path Voting for Budgeted Feature Acquisition](https://arxiv.org/abs/2610.10615) — 通过树路径投票在特征预算内选择语义问题；试验中较少的顺序问题比批量提问更贵。 `评测` · [PDF](https://arxiv.org/pdf/2610.10615v1)
 - [Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift](https://arxiv.org/abs/2610.09937) — 在故障诊断中区分物理表征与推理需求；工程特征改善一致性，但迁移稳定不意味着绝对准确率更高或检测有效。 `评测` · [PDF](https://arxiv.org/pdf/2610.09937v1)
 - [System Switch: When Should a Fast Decision Model Stop and Think?](https://arxiv.org/abs/2610.09683) — 测试快速决策模型按置信度转交慢速视觉推理器；离线收益未转化为 Doom 关卡通关。 `评测` · [PDF](https://arxiv.org/pdf/2610.09683v1)
 - [Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation](https://arxiv.org/abs/2610.09328) — 训练本地 Qwen 验证器联合判断参考身份与图像条件，将二元概率平均值用作图像生成奖励。 `评测` · [PDF](https://arxiv.org/pdf/2610.09328v1)
@@ -15,7 +28,7 @@
 - [Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?](https://arxiv.org/abs/2610.08775) — 评测 Agent 为大规模任务构建可复用产物的能力；多数运行损失零样本质量，部分产物以较低预估 API 费用接近 Jev。 `评测` · [PDF](https://arxiv.org/pdf/2610.08775v1) · [代码](https://github.com/aktsonthalia/bottled)
 - [Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge](https://arxiv.org/abs/2610.08675) — 固定算术与操作数后交换财务引文；Jev 既会漏检错误角色证据，也会拒绝等价证据，显式列标题改变两者权衡。 `评测` · [PDF](https://arxiv.org/pdf/2610.08675v1)
 - [Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155) — 以 Laya 控制器、小型证据阅读器和有限任务菜单协调 LLM 工作单元；七个基准上报告更少 GPT token 与较低端到端时延。 `评测` · [PDF](https://arxiv.org/pdf/2610.08155v1)
-- [When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries](https://arxiv.org/abs/2610.08089) — 以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。 `评测` · [PDF](https://arxiv.org/pdf/2610.08089v1)
+- [When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries](https://arxiv.org/abs/2610.08089) — 形式化按贡献加权的语义查询质量；v2 新增基于置信度的跳过规则，在保证预测输出目标后不再为剩余元组评分。 `评测` · [PDF](https://arxiv.org/pdf/2610.08089v2)
 - [Benchmarking System One Models in Online Moderation](https://arxiv.org/abs/2610.07953) — 在五个基准上分离审核规则、检索先例和答案集合；匹配条件下 Jev 从先例获益，Laya 则常仅改变判定比例而未提升区分能力。 `评测` · [PDF](https://arxiv.org/pdf/2610.07953v1) · [代码](https://github.com/FedericoMz/som-moderation-benchmark)
 - [SanSi: A Looped Typed Decision Model for System 1.5 Thinking](https://arxiv.org/abs/2610.07730) — 在重复骨干循环后训练类型化读出；八次循环提升同结构模型准确率，但计算更贵，校准不如三次循环。 `评测` · [PDF](https://arxiv.org/pdf/2610.07730v1)
 - [Readout Stability in Prefill-Only Decision Models:Zero-Label Prediction and Inference-Time Compute Allocation](https://arxiv.org/abs/2610.07716) — 测试候选菜单变化后的首轮缓存排序，并比较重复询问与模型级联；排序稳定支持计算复用，本身不能识别无标签准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.07716v1) · [代码](https://github.com/rlisml/jev-cascade)

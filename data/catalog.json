@@ -13799,11 +13799,11 @@
     "short": "Cost–accuracy semantic query plans",
     "kind": "Paper",
     "date": "2026-10-06",
-    "updated": "2026-10-06",
+    "updated": "2026-10-08",
     "added": "2026-10-07",
     "url": "https://arxiv.org/abs/2610.08089",
-    "pdf": "https://arxiv.org/pdf/2610.08089v1",
-    "version": "2610.08089v1",
+    "pdf": "https://arxiv.org/pdf/2610.08089v2",
+    "version": "2610.08089v2",
     "authors": [
       "Kyoungmin Kim"
     ],
@@ -13816,10 +13816,10 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.",
-    "brief_zh": "以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。",
-    "summary": "Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.",
-    "summary_zh": "以决策错误对输出的贡献权重形式化语义查询成本与质量；模拟显示，随计划变化的校准会破坏查询重写的质量等价性。",
+    "brief_en": "Formalizes contribution-weighted semantic-query quality; v2 adds confidence-centric skipping of unscored tuples once predicted output targets are guaranteed.",
+    "brief_zh": "形式化按贡献加权的语义查询质量；v2 新增基于置信度的跳过规则，在保证预测输出目标后不再为剩余元组评分。",
+    "summary": "Formalizes contribution-weighted semantic-query quality; v2 adds confidence-centric skipping of unscored tuples once predicted output targets are guaranteed.",
+    "summary_zh": "形式化按贡献加权的语义查询质量；v2 新增基于置信度的跳过规则，在保证预测输出目标后不再为剩余元组评分。",
     "theme": "Foundations",
     "scope": "related-model",
     "schema_version": 2,
@@ -14137,6 +14137,423 @@
     "limitation": "Jev shift ECE falls from 0.28 to 0.17 after temperature scaling, with a summer exception. Fault-detection F1 0.73 lies inside the always-flag baseline interval. Same-day reference splits favor the supervised model; harmonization artifacts are available on request, not a verified public release.",
     "datasets": [
       "HVAC reasoning-demand study suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.12292",
+    "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+    "short": "Option-channel guardrail attack",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12292",
+    "pdf": "https://arxiv.org/pdf/2610.12292v1",
+    "version": "2610.12292v1",
+    "authors": [
+      "Seyedarmin Azizi",
+      "Erfan Baghaei Potraghloo",
+      "Massoud Pedram"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates fail-open and fail-closed errors in open decision-model guardrails; misleading option names can reverse decisions when labels enter the model input.",
+    "brief_zh": "区分开放决策护栏的错误放行与错误拦截；选项名称进入模型输入时，误导名称可反转判断。",
+    "summary": "Separates fail-open and fail-closed errors in open decision-model guardrails; misleading option names can reverse decisions when labels enter the model input.",
+    "summary_zh": "区分开放决策护栏的错误放行与错误拦截；选项名称进入模型输入时，误导名称可反转判断。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Option-label access is distinct from state-only injection. Models excluding labels from their input are invariant to renaming but remain vulnerable to text changes; synthetic policies do not establish production incident rates.",
+    "datasets": [
+      "GuardBench"
+    ],
+    "code": "https://github.com/ArminAzizi98/option-channel-attack"
+  },
+  {
+    "id": "2610.11978",
+    "title": "Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks",
+    "short": "Knowledge versus calculation",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11978",
+    "pdf": "https://arxiv.org/pdf/2610.11978v1",
+    "version": "2610.11978v1",
+    "authors": [
+      "Xing Li",
+      "Qingcheng Chang",
+      "Jinzhong Ning",
+      "Changfeng Xu",
+      "Shenlong Zhang",
+      "Yijia Zhang",
+      "Ling Luo",
+      "Hongfei Lin"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares Jev with 19 LLMs on 13 benchmarks; strong knowledge scores coexist with a marked weakness on mathematical word problems.",
+    "brief_zh": "在 13 项基准上比较 Jev 与 19 个 LLM；知识任务表现较强，数学文字题明显较弱。",
+    "summary": "Compares Jev with 19 LLMs on 13 benchmarks; strong knowledge scores coexist with a marked weakness on mathematical word problems.",
+    "summary_zh": "在 13 项基准上比较 Jev 与 19 个 LLM；知识任务表现较强，数学文字题明显较弱。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "104 of 169 representative/small-model pairs use published scores with different prompts and reasoning settings. Rankings are rough comparisons, not a common-protocol causal test of architecture.",
+    "datasets": [
+      "Jev 13-benchmark evaluation"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11901",
+    "title": "Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs",
+    "short": "Stance and conversational context",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11901",
+    "pdf": "https://arxiv.org/pdf/2610.11901v1",
+    "version": "2610.11901v1",
+    "authors": [
+      "Xing Li",
+      "Jinzhong Ning",
+      "Yijia Zhang",
+      "Liang Yang",
+      "Hongfei Lin"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Jev matches GPT-5.6 on English VAST stance labels but trails stronger models on Chinese conversational stance, especially favor-versus-against distinctions.",
+    "brief_zh": "Jev 在英文 VAST 立场判断上接近 GPT-5.6，在中文对话立场上落后于更强模型，尤其难区分支持与反对。",
+    "summary": "Jev matches GPT-5.6 on English VAST stance labels but trails stronger models on Chinese conversational stance, especially favor-versus-against distinctions.",
+    "summary_zh": "Jev 在英文 VAST 立场判断上接近 GPT-5.6，在中文对话立场上落后于更强模型，尤其难区分支持与反对。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Jev macro-F1 is 77.92 and 58.43. Stronger LLMs use batching while Jev uses single records; SFT references have one run and no paired predictions, and intervals lack multiplicity correction.",
+    "datasets": [
+      "VAST and ZS-CSD"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11692",
+    "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+    "short": "Frozen Jev in RL training",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11692",
+    "pdf": "https://arxiv.org/pdf/2610.11692v1",
+    "version": "2610.11692v1",
+    "authors": [
+      "Yi Ma",
+      "Tianpei Yang",
+      "Yaodong Yang",
+      "Weixun Wang",
+      "Hongyao Tang"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses frozen Jev as a policy reference, exploration judge and replay rater; gains depend on the learning role and supplied information.",
+    "brief_zh": "将冻结 Jev 用作策略参照、探索判断及回放评分器；收益取决于学习角色与提供的信息。",
+    "summary": "Uses frozen Jev as a policy reference, exploration judge and replay rater; gains depend on the learning role and supplied information.",
+    "summary_zh": "将冻结 Jev 用作策略参照、探索判断及回放评分器；收益取决于学习角色与提供的信息。",
+    "theme": "Foundations",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Jev receives task rules and engineered navigation features that students may lack. Removing navigation lowers FourRooms success from 96% to 40%; ordinal scores are not cardinal Q-values, and reward shaping has no policy-invariance guarantee.",
+    "datasets": [
+      "MiniGrid and Atari Jev RL evaluation"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11436",
+    "title": "Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation",
+    "short": "Candidate cues and request order",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11436",
+    "pdf": "https://arxiv.org/pdf/2610.11436v1",
+    "version": "2610.11436v1",
+    "authors": [
+      "Hongliang Liu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "A colon edit increases false acceptance of explicitly wrong final answers under sorted request keys, while insertion-order requests reject both variants.",
+    "brief_zh": "添加冒号使排序字段请求中的明确错误终值更易被接受，保留插入顺序时两种候选均被拒绝。",
+    "summary": "A colon edit increases false acceptance of explicitly wrong final answers under sorted request keys, while insertion-order requests reject both variants.",
+    "summary_zh": "添加冒号使排序字段请求中的明确错误终值更易被接受，保留插入顺序时两种候选均被拒绝。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Sorted-key false acceptance rises from 1% to 26% and 3% to 26.5%. The constructor knows the reference; sorting changes several objects jointly. Six comparator responses remain unknown, and internal causes are not identified.",
+    "datasets": [
+      "DROP and GSM8K presentation audit"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11392",
+    "title": "TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models",
+    "short": "TypedBench",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11392",
+    "pdf": "https://arxiv.org/pdf/2610.11392v1",
+    "version": "2610.11392v1",
+    "authors": [
+      "Rahul Sharma",
+      "Andrew B. Ducan",
+      "Gaétan Marceau Caron",
+      "Sebastian J. Vollmer"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses policy-driven generators to test calibration, framing, abstention and cost; good error ranking does not ensure calibrated or evidence-sensitive confidence.",
+    "brief_zh": "以策略驱动生成器测试校准、措辞、拒答和成本；错误排序较好不保证概率校准或对证据缺失敏感。",
+    "summary": "Uses policy-driven generators to test calibration, framing, abstention and cost; good error ranking does not ensure calibrated or evidence-sensitive confidence.",
+    "summary_zh": "以策略驱动生成器测试校准、措辞、拒答和成本；错误排序较好不保证概率校准或对证据缺失敏感。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Jev priority accuracy spans 24 points across friendly wordings; after tier evidence removal it assigns mean 0.89 mass to its top level. Synthetic policies and serving differences limit generalization and latency attribution.",
+    "datasets": [
+      "TypedBench"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11379",
+    "title": "FastJEV: Understanding Redundancy for Compact JEV Inference",
+    "short": "FastJEV",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11379",
+    "pdf": "https://arxiv.org/pdf/2610.11379v1",
+    "version": "2610.11379v1",
+    "authors": [
+      "Jie Ma",
+      "Jie Gao",
+      "Yihang Liu",
+      "Zhike Qiu",
+      "Junle Li",
+      "Chongyi Zhuang",
+      "Jiayi Ji",
+      "Xiaoshuai Sun"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines context-state reuse, candidate-prefix sharing and layer pruning for OmniJev; compact execution does not consistently reduce measured latency.",
+    "brief_zh": "为 OmniJev 结合上下文状态复用、候选前缀共享及层剪枝；计算结构更紧凑不保证实测时延下降。",
+    "summary": "Combines context-state reuse, candidate-prefix sharing and layer pruning for OmniJev; compact execution does not consistently reduce measured latency.",
+    "summary_zh": "为 OmniJev 结合上下文状态复用、候选前缀共享及层剪枝；计算结构更紧凑不保证实测时延下降。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Selected 43.75–45.83% candidate pruning retains 93.66–97.52% mean task scores, yet full-method geometric speedups are below one. The state-plus-pruning ablation is faster; LIBERO is offline QA, not robot success.",
+    "datasets": [
+      "FastJEV six-set evaluation"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11316",
+    "title": "MetaEncoder: Exploring the Limit of Bi-Encoders for Multimodal System One Decision Making with Natural Language Interface",
+    "short": "MetaEncoder",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11316",
+    "pdf": "https://arxiv.org/pdf/2610.11316v1",
+    "version": "2610.11316v1",
+    "authors": [
+      "Jianpeng Cheng",
+      "Guangyu Sun",
+      "Aashu Singh",
+      "Benyu Zhang",
+      "Haixing Dai",
+      "Hossein Mansour",
+      "Jiangfan Zhang",
+      "Shlok Kumar Mishra",
+      "Wei Sun",
+      "Xuanming Cui",
+      "Yanli Liu",
+      "Qi Guo",
+      "Max Xiangjun Fan",
+      "Jun Xiao"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Trains a multimodal bi-encoder with request-to-candidate contrastive learning; including options in requests improves closed-set decisions while retaining cached candidate embeddings.",
+    "brief_zh": "以请求到候选的对比学习训练多模态双编码器；将选项加入请求改善闭集判断，同时保留候选嵌入缓存。",
+    "summary": "Trains a multimodal bi-encoder with request-to-candidate contrastive learning; including options in requests improves closed-set decisions while retaining cached candidate embeddings.",
+    "summary_zh": "以请求到候选的对比学习训练多模态双编码器；将选项加入请求改善闭集判断，同时保留候选嵌入缓存。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "MetaEncoder trails OpenJev-27B on text decisions and WeMM on MMEB partitions. Format gains and low MMLU order variance do not establish general calibration; no independent weight-file verification was performed.",
+    "datasets": [
+      "MetaEncoder 190-task evaluation"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.11135",
+    "title": "Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?",
+    "short": "JevKT cold-start evaluation",
+    "kind": "Paper",
+    "date": "2026-10-08",
+    "updated": "2026-10-08",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.11135",
+    "pdf": "https://arxiv.org/pdf/2610.11135v1",
+    "version": "2610.11135v1",
+    "authors": [
+      "Unggi Lee",
+      "Haeun Park"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests cold-start knowledge tracing with reader swaps and matched typed inputs; Jev benefits mainly from its model prior, while supervised methods catch up with more learners.",
+    "brief_zh": "通过阅读器替换及匹配类型化输入测试冷启动知识追踪；Jev 主要受益于模型先验，学习者增加后监督方法追上。",
+    "summary": "Tests cold-start knowledge tracing with reader swaps and matched typed inputs; Jev benefits mainly from its model prior, while supervised methods catch up with more learners.",
+    "summary_zh": "通过阅读器替换及匹配类型化输入测试冷启动知识追踪；Jev 主要受益于模型先验，学习者增加后监督方法追上。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Zero-shot mean AUC is .706 and eight-learner JevKT .722; the average crossover occurs between 64 and 128 learners. Adapter models emit probabilities as text; one closed model and limited reasoning backbones constrain attribution.",
+    "datasets": [
+      "JevKT seven-dataset suite"
+    ],
+    "code": ""
+  },
+  {
+    "id": "2610.10615",
+    "title": "JevForest: Path Voting for Budgeted Feature Acquisition",
+    "short": "JevForest",
+    "kind": "Paper",
+    "date": "2026-10-07",
+    "updated": "2026-10-07",
+    "added": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.10615",
+    "pdf": "https://arxiv.org/pdf/2610.10615v1",
+    "version": "2610.10615v1",
+    "authors": [
+      "Yu Yan"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses tree-path voting to select semantic questions under a feature budget; fewer sequential questions cost more than batching in the tested pilots.",
+    "brief_zh": "通过树路径投票在特征预算内选择语义问题；试验中较少的顺序问题比批量提问更贵。",
+    "summary": "Uses tree-path voting to select semantic questions under a feature budget; fewer sequential questions cost more than batching in the tested pilots.",
+    "summary_zh": "通过树路径投票在特征预算内选择语义问题；试验中较少的顺序问题比批量提问更贵。",
+    "theme": "Foundations",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, principal results and limitations read from full text",
+    "limitation": "Four-question accuracy is .729 on AG News and .667 on TREC, with reversed baseline rankings. Eight-question batches are faster, cheaper and more accurate; small selected samples and exploratory configurations preclude general dominance.",
+    "datasets": [
+      "JevForest acquisition evaluation"
     ],
     "code": ""
   }

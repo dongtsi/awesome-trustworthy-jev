@@ -6,6 +6,76 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails</title>
+      <link>https://arxiv.org/abs/2610.12292</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.12292#publication</guid>
+      <description>Separates fail-open and fail-closed errors in open decision-model guardrails; misleading option names can reverse decisions when labels enter the model input.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks</title>
+      <link>https://arxiv.org/abs/2610.11978</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11978#publication</guid>
+      <description>Compares Jev with 19 LLMs on 13 benchmarks; strong knowledge scores coexist with a marked weakness on mathematical word problems.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs</title>
+      <link>https://arxiv.org/abs/2610.11901</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11901#publication</guid>
+      <description>Jev matches GPT-5.6 on English VAST stance labels but trails stronger models on Chinese conversational stance, especially favor-versus-against distinctions.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can Jev be Your Q or Policy in Reinforcement Learning?</title>
+      <link>https://arxiv.org/abs/2610.11692</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11692#publication</guid>
+      <description>Uses frozen Jev as a policy reference, exploration judge and replay rater; gains depend on the learning role and supplied information.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation</title>
+      <link>https://arxiv.org/abs/2610.11436</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11436#publication</guid>
+      <description>A colon edit increases false acceptance of explicitly wrong final answers under sorted request keys, while insertion-order requests reject both variants.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models</title>
+      <link>https://arxiv.org/abs/2610.11392</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11392#publication</guid>
+      <description>Uses policy-driven generators to test calibration, framing, abstention and cost; good error ranking does not ensure calibrated or evidence-sensitive confidence.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>FastJEV: Understanding Redundancy for Compact JEV Inference</title>
+      <link>https://arxiv.org/abs/2610.11379</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11379#publication</guid>
+      <description>Combines context-state reuse, candidate-prefix sharing and layer pruning for OmniJev; compact execution does not consistently reduce measured latency.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>MetaEncoder: Exploring the Limit of Bi-Encoders for Multimodal System One Decision Making with Natural Language Interface</title>
+      <link>https://arxiv.org/abs/2610.11316</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11316#publication</guid>
+      <description>Trains a multimodal bi-encoder with request-to-candidate contrastive learning; including options in requests improves closed-set decisions while retaining cached candidate embeddings.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?</title>
+      <link>https://arxiv.org/abs/2610.11135</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.11135#publication</guid>
+      <description>Tests cold-start knowledge tracing with reader swaps and matched typed inputs; Jev benefits mainly from its model prior, while supervised methods catch up with more learners.</description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JevForest: Path Voting for Budgeted Feature Acquisition</title>
+      <link>https://arxiv.org/abs/2610.10615</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.10615#publication</guid>
+      <description>Uses tree-path voting to select semantic questions under a feature budget; fewer sequential questions cost more than batching in the tested pilots.</description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift</title>
       <link>https://arxiv.org/abs/2610.09937</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.09937#publication</guid>
@@ -65,7 +135,7 @@
       <title>When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries</title>
       <link>https://arxiv.org/abs/2610.08089</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.08089#publication</guid>
-      <description>Formalizes semantic-query cost and output quality using contribution-weighted decision errors; simulated plan-dependent calibration can break otherwise equivalent query rewrites.</description>
+      <description>Formalizes contribution-weighted semantic-query quality; v2 adds confidence-centric skipping of unscored tuples once predicted output targets are guaranteed.</description>
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

@@ -218,5 +218,55 @@
     "url": "https://arxiv.org/abs/2610.09937",
     "type": "paper",
     "checked": "2026-10-08"
+  },
+  "GuardBench": {
+    "url": "https://github.com/ArminAzizi98/option-channel-attack",
+    "type": "artifact",
+    "checked": "2026-10-09"
+  },
+  "Jev 13-benchmark evaluation": {
+    "url": "https://arxiv.org/abs/2610.11978",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "VAST and ZS-CSD": {
+    "url": "https://arxiv.org/abs/2610.11901",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "MiniGrid and Atari Jev RL evaluation": {
+    "url": "https://arxiv.org/abs/2610.11692",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "DROP and GSM8K presentation audit": {
+    "url": "https://arxiv.org/abs/2610.11436",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "TypedBench": {
+    "url": "https://arxiv.org/abs/2610.11392",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "FastJEV six-set evaluation": {
+    "url": "https://arxiv.org/abs/2610.11379",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "MetaEncoder 190-task evaluation": {
+    "url": "https://arxiv.org/abs/2610.11316",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "JevKT seven-dataset suite": {
+    "url": "https://arxiv.org/abs/2610.11135",
+    "type": "paper",
+    "checked": "2026-10-09"
+  },
+  "JevForest acquisition evaluation": {
+    "url": "https://arxiv.org/abs/2610.10615",
+    "type": "paper",
+    "checked": "2026-10-09"
   }
 }

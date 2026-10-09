@@ -733,8 +733,8 @@
       "en": "Simulation assumes calibrated Bernoulli labels and a perfect escalation judge in its main setting. Ratio-of-expectations quality is approximate; no real-engine Jev evaluation is reported.",
       "zh": "主要模拟假定校准 Bernoulli 标签与完美升级裁判。期望比值仅近似质量，未报告真实引擎上的 Jev 实测。"
     },
-    "source_section": "Sections 4, 8–9; PDF pp. 6–8, 17–21",
-    "source": "https://arxiv.org/pdf/2610.08089v1"
+    "source_section": "Sections 4–9, including v2 Section 8.2; PDF pp. 18–19 for skipping",
+    "source": "https://arxiv.org/pdf/2610.08089v2"
   },
   {
     "id": "2610.07953",
@@ -882,5 +882,215 @@
     },
     "source_section": "PDF pp. 3–6, 12, 14, 17–20, 25, 29–30, 35",
     "source": "https://arxiv.org/pdf/2610.09937v1"
+  },
+  {
+    "id": "2610.12292",
+    "category": "trustworthiness",
+    "datasets": [
+      "GuardBench"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Seven open models across synthetic policies and three public screening tasks; a 198-label sweep and item bootstrap.",
+      "zh": "七个开放模型，覆盖合成策略与三项公开筛查任务；扫描 198 个名称并按样本 bootstrap。"
+    },
+    "reading": {
+      "en": "Option-label access is distinct from state-only injection. Models excluding labels from their input are invariant to renaming but remain vulnerable to text changes; synthetic policies do not establish production incident rates.",
+      "zh": "修改选项名称的权限不同于仅修改待评文本。输入不含名称的模型对重命名不变，但仍受文本扰动影响；合成策略不能估计生产事故率。"
+    },
+    "source_section": "Sections 4–6; PDF pp. 4–10",
+    "source": "https://arxiv.org/pdf/2610.12292v1"
+  },
+  {
+    "id": "2610.11978",
+    "category": "trustworthiness",
+    "datasets": [
+      "Jev 13-benchmark evaluation"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Thirteen multiple-choice benchmarks covering knowledge, reasoning and multilingual tasks; measured scores are combined with published scores.",
+      "zh": "十三项知识、推理和多语言选择题基准；实测分数与已发表分数并列。"
+    },
+    "reading": {
+      "en": "104 of 169 representative/small-model pairs use published scores with different prompts and reasoning settings. Rankings are rough comparisons, not a common-protocol causal test of architecture.",
+      "zh": "代表性和小模型的 169 组组合中 104 组采用已发表分数，提示词和推理设置不同；排名是粗略比较，不能据此归因于架构。"
+    },
+    "source_section": "Section 3; PDF pp. 3–6",
+    "source": "https://arxiv.org/pdf/2610.11978v1"
+  },
+  {
+    "id": "2610.11901",
+    "category": "trustworthiness",
+    "datasets": [
+      "VAST and ZS-CSD"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Full tests of 3,006 VAST and 2,584 ZS-CSD records, four prompted LLM controls, two fine-tuned references and target-cluster bootstrap.",
+      "zh": "完整测试包含 3,006 条 VAST 和 2,584 条 ZS-CSD；四个提示式 LLM、两个微调参照及按目标聚类 bootstrap。"
+    },
+    "reading": {
+      "en": "Jev macro-F1 is 77.92 and 58.43. Stronger LLMs use batching while Jev uses single records; SFT references have one run and no paired predictions, and intervals lack multiplicity correction.",
+      "zh": "Jev 宏 F1 为 77.92 和 58.43。更强 LLM 批量输入，Jev 逐条输入；微调参照仅一次运行且无配对预测，区间未作多重比较校正。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–5",
+    "source": "https://arxiv.org/pdf/2610.11901v1"
+  },
+  {
+    "id": "2610.11692",
+    "category": "foundations",
+    "datasets": [
+      "MiniGrid and Atari Jev RL evaluation"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Nine MiniGrid tasks and three Atari games; three training seeds, 10k/50k-step budgets and evaluation without Jev or auxiliary rewards.",
+      "zh": "九项 MiniGrid 和三项 Atari，三个训练种子，10k/50k 步预算；评估时移除 Jev 和辅助奖励。"
+    },
+    "reading": {
+      "en": "Jev receives task rules and engineered navigation features that students may lack. Removing navigation lowers FourRooms success from 96% to 40%; ordinal scores are not cardinal Q-values, and reward shaping has no policy-invariance guarantee.",
+      "zh": "Jev 获得学生未必具备的任务规则和导航特征。移除导航后 FourRooms 成功率从 96% 降至 40%；序数评分不等于基数 Q 值，奖励塑形无策略不变保证。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 4–8",
+    "source": "https://arxiv.org/pdf/2610.11692v1"
+  },
+  {
+    "id": "2610.11436",
+    "category": "trustworthiness",
+    "datasets": [
+      "DROP and GSM8K presentation audit"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "200 unused source clusters, two grading configurations, paired cue/order interventions, predefined controls and Holm-adjusted inference.",
+      "zh": "200 个未用来源簇、两种判分配置、配对提示与顺序干预、预设控制及 Holm 校正。"
+    },
+    "reading": {
+      "en": "Sorted-key false acceptance rises from 1% to 26% and 3% to 26.5%. The constructor knows the reference; sorting changes several objects jointly. Six comparator responses remain unknown, and internal causes are not identified.",
+      "zh": "排序字段下错误接受率从 1% 升至 26%、3% 升至 26.5%。构造者知道参照答案，排序联合改变多个对象；对照模型六次响应未知，内部机制未定位。"
+    },
+    "source_section": "Sections 3–5; PDF pp. 3–6",
+    "source": "https://arxiv.org/pdf/2610.11436v1"
+  },
+  {
+    "id": "2610.11392",
+    "category": "trustworthiness",
+    "datasets": [
+      "TypedBench"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Seven task generators, nine suites, hosted Jev plus Laya and Kev checkpoints; paired controls and split-fit temperature scaling.",
+      "zh": "七个任务生成器、九套测试，比较托管 Jev、Laya 与 Kev；配对控制及划分拟合的温度缩放。"
+    },
+    "reading": {
+      "en": "Jev priority accuracy spans 24 points across friendly wordings; after tier evidence removal it assigns mean 0.89 mass to its top level. Synthetic policies and serving differences limit generalization and latency attribution.",
+      "zh": "友好措辞使 Jev 优先级准确率变化 24 点；移除等级证据后，最高等级仍获平均 0.89 概率。合成策略和服务差异限制泛化与时延归因。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 3–8",
+    "source": "https://arxiv.org/pdf/2610.11392v1"
+  },
+  {
+    "id": "2610.11379",
+    "category": "foundations",
+    "datasets": [
+      "FastJEV six-set evaluation"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Three OmniJev sizes, five public benchmarks and 1,504 reconstructed LIBERO questions; 32 unlabeled calibration inputs and matched L20 timings.",
+      "zh": "三个 OmniJev 规模、五项公开基准和 1,504 条重建 LIBERO 问题；32 条无标签校准输入及匹配 L20 计时。"
+    },
+    "reading": {
+      "en": "Selected 43.75–45.83% candidate pruning retains 93.66–97.52% mean task scores, yet full-method geometric speedups are below one. The state-plus-pruning ablation is faster; LIBERO is offline QA, not robot success.",
+      "zh": "候选层剪去 43.75–45.83% 后保留平均任务分数的 93.66–97.52%，但完整方法几何平均加速比低于一。状态复用加剪枝消融更快；LIBERO 是离线问答，不是机器人任务成功率。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 3–9",
+    "source": "https://arxiv.org/pdf/2610.11379v1"
+  },
+  {
+    "id": "2610.11316",
+    "category": "foundations",
+    "datasets": [
+      "MetaEncoder 190-task evaluation"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Eleven suites and 190 tasks spanning decisions, multimodal understanding and retrieval; option-format ablations and ten MMLU order permutations.",
+      "zh": "十一套基准、190 个任务，涵盖决策、多模态理解和检索；选项格式消融及十次 MMLU 顺序置换。"
+    },
+    "reading": {
+      "en": "MetaEncoder trails OpenJev-27B on text decisions and WeMM on MMEB partitions. Format gains and low MMLU order variance do not establish general calibration; no independent weight-file verification was performed.",
+      "zh": "MetaEncoder 在文本决策上落后 OpenJev-27B，在 MMEB 分项上落后 WeMM。格式收益及 MMLU 低顺序方差不能证明普遍校准；本轮未独立核验权重文件。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 3–8",
+    "source": "https://arxiv.org/pdf/2610.11316v1"
+  },
+  {
+    "id": "2610.11135",
+    "category": "trustworthiness",
+    "datasets": [
+      "JevKT seven-dataset suite"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "Seven datasets, learner-level splits, nested samples over five seeds, 28 deep KT references and learner-cluster bootstrap.",
+      "zh": "七个数据集、按学习者划分、五种子嵌套样本、28 个深度 KT 参照及学习者聚类 bootstrap。"
+    },
+    "reading": {
+      "en": "Zero-shot mean AUC is .706 and eight-learner JevKT .722; the average crossover occurs between 64 and 128 learners. Adapter models emit probabilities as text; one closed model and limited reasoning backbones constrain attribution.",
+      "zh": "零样本平均 AUC 为 .706，八学习者 JevKT 为 .722；平均交叉点在 64 至 128 人之间。适配器模型以文本给出概率；单一闭源模型及有限推理骨干限制归因。"
+    },
+    "source_section": "Sections 4–5; PDF pp. 4–8",
+    "source": "https://arxiv.org/pdf/2610.11135v1"
+  },
+  {
+    "id": "2610.10615",
+    "category": "foundations",
+    "datasets": [
+      "JevForest acquisition evaluation"
+    ],
+    "data_role": {
+      "en": "Original evaluation corpus or source-defined study suite",
+      "zh": "原始评测语料或论文定义的研究集合"
+    },
+    "design": {
+      "en": "MiniBooNE across three joint data/forest seeds and balanced AG News/TREC pilots of 48/24 test items with a shared masked predictor.",
+      "zh": "MiniBooNE 使用三个联合数据/森林种子；AG News/TREC 平衡试验含 48/24 条测试，固定掩码预测器。"
+    },
+    "reading": {
+      "en": "Four-question accuracy is .729 on AG News and .667 on TREC, with reversed baseline rankings. Eight-question batches are faster, cheaper and more accurate; small selected samples and exploratory configurations preclude general dominance.",
+      "zh": "四问题准确率在 AG News 为 .729、TREC 为 .667，对照排名反转。八问题批量更快、更便宜且更准；小规模选取样本和探索性配置不能证明普遍优势。"
+    },
+    "source_section": "Sections 3–4; PDF pp. 3–9",
+    "source": "https://arxiv.org/pdf/2610.10615v1"
   }
 ]
