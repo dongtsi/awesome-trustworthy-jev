@@ -1216,5 +1216,19 @@
     "date": "2026-10-06",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/rlisml/jev-cascade"
+  },
+  {
+    "id": "r-b462883ae2",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/fstandhartinger/jevbench"
+  },
+  {
+    "id": "r-987dd2acf6",
+    "kind": "Project",
+    "date": "2026-10-08",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/hshicalu/jev-selective-prediction"
   }
 ]

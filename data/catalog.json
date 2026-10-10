@@ -14556,5 +14556,76 @@
       "JevForest acquisition evaluation"
     ],
     "code": ""
+  },
+  {
+    "id": "r-b462883ae2",
+    "title": "fstandhartinger/jevbench",
+    "short": "JevBench by Benchmark Heaven",
+    "kind": "Project",
+    "date": "2026-09-19",
+    "updated": "2026-10-10",
+    "added": "2026-10-10",
+    "url": "https://github.com/fstandhartinger/jevbench",
+    "version": "2026-10-10T12:50:16Z",
+    "authors": [
+      "fstandhartinger"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks typed decision accuracy, calibration, latency and modeled cost with versioned scoring and public/sealed splits.",
+    "brief_zh": "通过版本化评分及公开／封闭划分，评测类型化决策准确率、校准、时延和建模成本。",
+    "summary": "Benchmarks typed decision accuracy, calibration, latency and modeled cost with versioned scoring and public/sealed splits.",
+    "summary_zh": "通过版本化评分及公开／封闭划分，评测类型化决策准确率、校准、时延和建模成本。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and source methods/results reviewed",
+    "limitation": "Sealed inputs prevent complete independent reruns. Capability and Composite scores have different definitions; prices are modeled, and method versions must not be compared as the same experiment.",
+    "datasets": [
+      "JevBench by Benchmark Heaven"
+    ]
+  },
+  {
+    "id": "r-987dd2acf6",
+    "title": "hshicalu/jev-selective-prediction",
+    "short": "Jev selective prediction on JNLI",
+    "kind": "Project",
+    "date": "2026-10-08",
+    "updated": "2026-10-10",
+    "added": "2026-10-10",
+    "url": "https://github.com/hshicalu/jev-selective-prediction",
+    "version": "2026-10-10T08:14:27Z",
+    "authors": [
+      "hshicalu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests dev-frozen confidence thresholds on Japanese JNLI; accepted accuracies of 88.64% and 93.84% miss the intended 90% and 95% targets.",
+    "brief_zh": "在日语 JNLI 测试开发集冻结的置信度阈值；接受集准确率为 88.64% 和 93.84%，未达到预定 90% 和 95% 目标。",
+    "summary": "Tests dev-frozen confidence thresholds on Japanese JNLI; accepted accuracies of 88.64% and 93.84% miss the intended 90% and 95% targets.",
+    "summary_zh": "在日语 JNLI 测试开发集冻结的置信度阈值；接受集准确率为 88.64% 和 93.84%，未达到预定 90% 和 95% 目标。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README and source methods/results reviewed",
+    "limitation": "Exploratory non-blind single run: test content was accessed before measurement. Metrics exclude one invalid probability vector from 2,508 responses; per-example outputs are not public and costs are token-derived estimates.",
+    "datasets": [
+      "JGLUE JNLI"
+    ]
   }
 ]

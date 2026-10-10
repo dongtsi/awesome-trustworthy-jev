@@ -268,5 +268,15 @@
     "url": "https://arxiv.org/abs/2610.10615",
     "type": "paper",
     "checked": "2026-10-09"
+  },
+  "JevBench by Benchmark Heaven": {
+    "url": "https://benchmarkheaven.com/jev-models/data",
+    "type": "benchmark",
+    "checked": "2026-10-10"
+  },
+  "JGLUE JNLI": {
+    "url": "https://github.com/yahoojapan/JGLUE",
+    "type": "benchmark",
+    "checked": "2026-10-10"
   }
 }
