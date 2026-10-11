@@ -1230,5 +1230,12 @@
     "date": "2026-10-08",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/hshicalu/jev-selective-prediction"
+  },
+  {
+    "id": "r-e9fb95b8ba",
+    "kind": "Project",
+    "date": "2026-10-09",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/gshrutha/jev-hybrid-calibration"
   }
 ]

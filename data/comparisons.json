@@ -1092,5 +1092,26 @@
     },
     "source_section": "Sections 3–4; PDF pp. 3–9",
     "source": "https://arxiv.org/pdf/2610.10615v1"
+  },
+  {
+    "id": "r-e9fb95b8ba",
+    "category": "reliability",
+    "datasets": [
+      "Jev OOD synthetic tickets"
+    ],
+    "data_role": {
+      "en": "300 synthetic tickets with three question types each and rule-based labels.",
+      "zh": "300 张合成工单，每张对应三类问题，使用规则标签。"
+    },
+    "design": {
+      "en": "Five folds split by ticket, seed 0. Temperatures and logistic regression fit on 240 tickets per fold; feature normalization uses training folds. Hybrid features combine log Jev probabilities, customer tier and channel.",
+      "zh": "按工单划分五折，种子为 0；每折用 240 张工单拟合温度与逻辑回归，特征标准化使用训练折。混合特征包含 Jev 对数概率、客户等级和渠道。"
+    },
+    "reading": {
+      "en": "Priority accuracy rises from 43.0% to 74.3%; combined all-type accuracy is 85.1% with ECE .032. This adds supervised labels and structured information to the zero-shot baseline. One synthetic task, one split seed, no confidence intervals or template-held-out evaluation.",
+      "zh": "优先级准确率从 43.0% 升至 74.3%；分类型校准与混合分类器组合的总体准确率为 85.1%、ECE 为 .032。相对零样本对照增加了监督标签和结构化信息；仅一个合成任务、一个划分种子，没有置信区间或模板外推评测。"
+    },
+    "source_section": "RESULTS_HYBRID.md sections 1–2; scripts/hybrid_calib.py; results/hybrid_results.txt",
+    "source": "https://github.com/gshrutha/jev-hybrid-calibration/blob/main/RESULTS_HYBRID.md"
   }
 ]

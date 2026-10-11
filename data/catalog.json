@@ -14627,5 +14627,41 @@
     "datasets": [
       "JGLUE JNLI"
     ]
+  },
+  {
+    "id": "r-e9fb95b8ba",
+    "title": "gshrutha/jev-hybrid-calibration",
+    "short": "Jev hybrid calibration",
+    "kind": "Project",
+    "date": "2026-10-09",
+    "updated": "2026-10-09",
+    "added": "2026-10-11",
+    "url": "https://github.com/gshrutha/jev-hybrid-calibration",
+    "code": "https://github.com/gshrutha/jev-hybrid-calibration",
+    "version": "2026-10-09T15:51:18Z",
+    "authors": [
+      "G Shrutha Keerthi Reddy"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Adds per-type temperature scaling and a supervised hybrid of Jev probabilities and ticket metadata; five-fold evaluation raises priority accuracy from 43.0% to 74.3% on 300 synthetic tickets.",
+    "brief_zh": "结合分类型温度缩放、Jev 概率与工单字段训练混合分类器；300 张合成工单的五折评测中，优先级准确率从 43.0% 升至 74.3%。",
+    "summary": "Adds per-type temperature scaling and a supervised hybrid of Jev probabilities and ticket metadata; five-fold evaluation raises priority accuracy from 43.0% to 74.3% on 300 synthetic tickets.",
+    "summary_zh": "结合分类型温度缩放、Jev 概率与工单字段训练混合分类器；300 张合成工单的五折评测中，优先级准确率从 43.0% 升至 74.3%。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Repository",
+    "review": "Original README, hybrid results, implementation and metrics reviewed; not independently rerun",
+    "limitation": "Extension of scienthoon/jev-ood-calibration. Single cross-validation seed; 240 labelled tickets per fold versus zero-shot Jev; no confidence intervals, template-held-out test or pinned Gateway model version. Exact probabilities are clipped at 1e-4.",
+    "datasets": [
+      "Jev OOD synthetic tickets"
+    ]
   }
 ]
