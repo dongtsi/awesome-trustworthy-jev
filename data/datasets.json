@@ -278,5 +278,20 @@
     "url": "https://github.com/yahoojapan/JGLUE",
     "type": "benchmark",
     "checked": "2026-10-10"
+  },
+  "ALFWorld": {
+    "url": "https://github.com/alfworld/alfworld",
+    "type": "benchmark",
+    "checked": "2026-10-12"
+  },
+  "AndroidWorld": {
+    "url": "https://github.com/google-research/android_world",
+    "type": "benchmark",
+    "checked": "2026-10-12"
+  },
+  "SILT coding-agent and destructive-command decisions": {
+    "url": "https://sentientindexlabs.com/publications/silt-rp-009",
+    "type": "paper",
+    "checked": "2026-10-12"
   }
 }

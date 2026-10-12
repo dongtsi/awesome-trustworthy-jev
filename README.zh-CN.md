@@ -10,7 +10,7 @@
 
 Jev 模型基础、自身可信性，以及网络与系统安全应用的论文、模型、项目和技术文档。
 
-共 `385` 条资源 · `106` 篇论文 · `246` 个项目 · `23` 份官方文档 · `10` 篇文章
+共 `388` 条资源 · `109` 篇论文 · `246` 个项目 · `23` 份官方文档 · `10` 篇文章
 
 **[打开在线资料库 →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=zh)** · [每日论文](daily/README.zh-CN.md) · [RSS](feed.xml) · [提交资料](CONTRIBUTING.md)
 
@@ -292,6 +292,9 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs](https://arxiv.org/abs/2610.11901) — Jev 在英文 VAST 立场判断上接近 GPT-5.6，在中文对话立场上落后于更强模型，尤其难区分支持与反对。 `评测` · [PDF](https://arxiv.org/pdf/2610.11901v1)
 - [TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models](https://arxiv.org/abs/2610.11392) — 以策略驱动生成器测试校准、措辞、拒答和成本；错误排序较好不保证概率校准或对证据缺失敏感。 `评测` · [PDF](https://arxiv.org/pdf/2610.11392v1)
 - [Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?](https://arxiv.org/abs/2610.11135) — 通过阅读器替换及匹配类型化输入测试冷启动知识追踪；Jev 主要受益于模型先验，学习者增加后监督方法追上。 `评测` · [PDF](https://arxiv.org/pdf/2610.11135v1)
+- [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — 4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [代码](https://anonymous.4open.science/r/jev-emp-5BF4/)
+- [Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models](https://zenodo.org/records/23287930) — 在 799 道编程 Agent 与命令安全题上，Jev 配对准确率低于两个通用模型；其校准误差区间跨越研究设定的 ECE 阈值。 `评测` · [PDF](https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content)
+- [Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions](https://zenodo.org/records/23293732) — 复用同一套 799 题并重新调用 Jev，比较七个决策模型；仅报告中的 Perplexity 检查点 ECE 区间整体低于研究阈值。 `评测` · [PDF](https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content)
 
 **项目与技术资料**
 
@@ -650,8 +653,10 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | 数据集／基准 | 入口类型 | 使用它的研究 |
 |---|---|---|
 | [A-OKVQA](https://arxiv.org/abs/2609.29283) | 论文说明 | [PixelJev](https://arxiv.org/abs/2609.29283) |
+| [ALFWorld](https://github.com/alfworld/alfworld) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 数据集 | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
+| [AndroidWorld](https://github.com/google-research/android_world) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BOTTLED](https://github.com/aktsonthalia/bottled) | 研究材料 | [BOTTLED](https://arxiv.org/abs/2610.08775) |
 | [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | 数据集 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) |
 | [BoolQ](https://github.com/google-research-datasets/boolean-questions) | 数据集 | [Jev-37](https://arxiv.org/abs/2609.37647) |
@@ -699,6 +704,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [Readout-stability intervention suite](https://github.com/rlisml/jev-cascade) | 研究材料 | [Readout stability and compute allocation](https://arxiv.org/abs/2610.07716) |
 | [Reference-bound Visual Jev evaluation suite](https://arxiv.org/abs/2610.09328) | 论文说明 | [Visual Jev Rewards](https://arxiv.org/abs/2610.09328) |
 | [S1-MAS evaluation suite](https://arxiv.org/abs/2610.08155) | 论文说明 | [S1-MAS](https://arxiv.org/abs/2610.08155) |
+| [SILT coding-agent and destructive-command decisions](https://sentientindexlabs.com/publications/silt-rp-009) | 论文说明 | [SILT-RP-009](https://zenodo.org/records/23287930) · [SILT-RP-010](https://zenodo.org/records/23293732) |
 | [SNLI-VE](https://github.com/necla-ml/SNLI-VE) | 数据集 | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [SOM moderation benchmark suite](https://github.com/FedericoMz/som-moderation-benchmark) | 研究材料 | [System One online moderation](https://arxiv.org/abs/2610.07953) |
 | [SST-2](https://arxiv.org/abs/2609.37647) | 论文说明 | [Jev-37](https://arxiv.org/abs/2609.37647) |

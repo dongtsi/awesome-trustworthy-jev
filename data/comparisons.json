@@ -1113,5 +1113,69 @@
     },
     "source_section": "RESULTS_HYBRID.md sections 1–2; scripts/hybrid_calib.py; results/hybrid_results.txt",
     "source": "https://github.com/gshrutha/jev-hybrid-calibration/blob/main/RESULTS_HYBRID.md"
+  },
+  {
+    "id": "2610.13092",
+    "category": "trustworthiness",
+    "datasets": [
+      "ALFWorld",
+      "AndroidWorld"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks",
+      "zh": "原文定义的评测任务"
+    },
+    "design": {
+      "en": "Five agent families, 134 fixed ALFWorld tasks and 116 fixed AndroidWorld instances; three repetitions, text observations, Jev 1.13.0 and gpt-5.6-luna. ALFWorld includes an LLM-Choice interface control; task-cluster bootstrap retains repetitions.",
+      "zh": "五类 Agent，134 个固定 ALFWorld 任务与 116 个固定 AndroidWorld 实例，各三次运行；纯文本观察，Jev 1.13.0 与 gpt-5.6-luna。ALFWorld 设置共享候选接口的 LLM-Choice 对照；按任务聚类自助法保留重复运行。"
+    },
+    "reading": {
+      "en": "T3A/FastAgent success falls 13.22/18.10 points. T3A mean cost per delivered success rises 7.7%, but its difference interval spans zero. Fixed instances and workflow-interface changes limit causal attribution to Jev alone.",
+      "zh": "T3A/FastAgent 成功率下降 13.22/18.10 个百分点。T3A 每次成功交付的平均成本上升 7.7%，但差异区间跨零。固定实例与工作流接口变化限制了对 Jev 本身的因果归因。"
+    },
+    "source_section": "Sections 4–5, Table 2, Table 10 and Limitations; PDF pp. 3–9 and appendix",
+    "source": "https://arxiv.org/pdf/2610.13092v1"
+  },
+  {
+    "id": "zenodo-23287930",
+    "category": "trustworthiness",
+    "datasets": [
+      "SILT coding-agent and destructive-command decisions"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks",
+      "zh": "原文定义的评测任务"
+    },
+    "design": {
+      "en": "799 headline items plus 60 ambiguous and 240 stress items, three calls each for Jev and two LLMs. Five ECE bins, a study-set .05 threshold and cluster bootstrap; ties and missing decisions excluded from scored accuracy.",
+      "zh": "799 道主评测题、60 道歧义题与 240 道压力题；Jev 和两个 LLM 各重复三次。ECE 使用五个箱、研究设定的 .05 阈值及聚类自助法；平局和无决策不计入准确率。"
+    },
+    "reading": {
+      "en": "Jev ECE .045 [ .031, .068 ] is inconclusive against .05; paired accuracy deficits are 6.6 and 8.2 points. Item banks, code and responses are private. Timing is exploratory and uses different API routes; not an independently rerun benchmark.",
+      "zh": "Jev ECE 为 .045，区间 [.031,.068]，对 .05 阈值的结论不确定；配对准确率分别低 6.6 和 8.2 个百分点。题库、代码与响应私有，时延为探索性结果且 API 路径不同，未独立复现。"
+    },
+    "source_section": "Author HTML full text, Methods, registered results, limitations and data availability",
+    "source": "https://sentientindexlabs.com/publications/silt-rp-009"
+  },
+  {
+    "id": "zenodo-23293732",
+    "category": "trustworthiness",
+    "datasets": [
+      "SILT coding-agent and destructive-command decisions"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks",
+      "zh": "原文定义的评测任务"
+    },
+    "design": {
+      "en": "Seven as-shipped decision models on the SILT-RP-009 item banks, three repetitions, with fresh Jev responses; no local recalibration. Paired comparisons and five-bin ECE use a study-set .05 threshold; seven verdicts are unadjusted for multiplicity.",
+      "zh": "七个原始发布配置的决策模型复用 SILT-RP-009 题库，各重复三次，Jev 重新调用，无本地再校准。配对比较与五箱 ECE 使用研究设定的 .05 阈值，七个判定未校正多重比较。"
+    },
+    "reading": {
+      "en": "Reported pplx-decider accuracy is 94.7%, ECE .026 [.014,.044]; Jev ECE .052 [.034,.072] is inconclusive. Shared private items are not independent replication. Uneven model admission, heterogeneous hardware/interfaces and unadjusted multiple verdicts limit ranking interpretation.",
+      "zh": "报告中 pplx-decider 准确率为 94.7%、ECE 为 .026 [.014,.044]；Jev ECE .052 [.034,.072]，结论不确定。共享私有题库不构成独立重复证据；模型准入规则不一致、硬件和接口异质性以及未校正多重判定限制排名解释。"
+    },
+    "source_section": "Author HTML full text, Methods, registered results, limitations and data availability",
+    "source": "https://sentientindexlabs.com/publications/silt-rp-010"
   }
 ]

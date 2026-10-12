@@ -14663,5 +14663,122 @@
     "datasets": [
       "Jev OOD synthetic tickets"
     ]
+  },
+  {
+    "id": "2610.13092",
+    "title": "When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows",
+    "short": "Jev in agent workflows",
+    "date": "2026-10-09",
+    "version": "2610.13092v1",
+    "url": "https://arxiv.org/abs/2610.13092",
+    "pdf": "https://arxiv.org/pdf/2610.13092v1",
+    "authors": [
+      "Yuchen Ling",
+      "Shengcheng Yu",
+      "Zhenyu Chen",
+      "Chunrong Fang"
+    ],
+    "target": "hosted",
+    "datasets": [
+      "ALFWorld",
+      "AndroidWorld"
+    ],
+    "code": "https://anonymous.4open.science/r/jev-emp-5BF4/",
+    "kind": "Paper",
+    "updated": "2026-10-09",
+    "added": "2026-10-12",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome.",
+    "summary": "Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome.",
+    "brief_zh": "4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。",
+    "summary_zh": "4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from PDF",
+    "limitation": "T3A/FastAgent success falls 13.22/18.10 points. T3A mean cost per delivered success rises 7.7%, but its difference interval spans zero. Fixed instances and workflow-interface changes limit causal attribution to Jev alone."
+  },
+  {
+    "id": "zenodo-23287930",
+    "title": "Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models",
+    "short": "SILT-RP-009",
+    "date": "2026-10-10",
+    "version": "1.0",
+    "url": "https://zenodo.org/records/23287930",
+    "pdf": "https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content",
+    "authors": [
+      "Shawn Scanlon",
+      "Sentient Index Labs & Technology"
+    ],
+    "target": "hosted",
+    "datasets": [
+      "SILT coding-agent and destructive-command decisions"
+    ],
+    "code": "",
+    "kind": "Paper",
+    "updated": "2026-10-10",
+    "added": "2026-10-12",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "On 799 coding-agent and command-safety items, Jev trails two general-purpose models in paired accuracy; its calibration interval crosses the study-defined ECE threshold.",
+    "summary": "On 799 coding-agent and command-safety items, Jev trails two general-purpose models in paired accuracy; its calibration interval crosses the study-defined ECE threshold.",
+    "brief_zh": "在 799 道编程 Agent 与命令安全题上，Jev 配对准确率低于两个通用模型；其校准误差区间跨越研究设定的 ECE 阈值。",
+    "summary_zh": "在 799 道编程 Agent 与命令安全题上，Jev 配对准确率低于两个通用模型；其校准误差区间跨越研究设定的 ECE 阈值。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from author HTML full text; PDF download pending",
+    "limitation": "Jev ECE .045 [ .031, .068 ] is inconclusive against .05; paired accuracy deficits are 6.6 and 8.2 points. Item banks, code and responses are private. Timing is exploratory and uses different API routes; not an independently rerun benchmark."
+  },
+  {
+    "id": "zenodo-23293732",
+    "title": "Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions",
+    "short": "SILT-RP-010",
+    "date": "2026-10-11",
+    "version": "1.0",
+    "url": "https://zenodo.org/records/23293732",
+    "pdf": "https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content",
+    "authors": [
+      "Shawn Scanlon",
+      "Sentient Index Labs & Technology"
+    ],
+    "target": "mixed",
+    "datasets": [
+      "SILT coding-agent and destructive-command decisions"
+    ],
+    "code": "",
+    "kind": "Paper",
+    "updated": "2026-10-11",
+    "added": "2026-10-12",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold.",
+    "summary": "Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold.",
+    "brief_zh": "复用同一套 799 题并重新调用 Jev，比较七个决策模型；仅报告中的 Perplexity 检查点 ECE 区间整体低于研究阈值。",
+    "summary_zh": "复用同一套 799 题并重新调用 Jev，比较七个决策模型；仅报告中的 Perplexity 检查点 ECE 区间整体低于研究阈值。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Methods, results and limitations read from author HTML full text; PDF download pending",
+    "limitation": "Reported pplx-decider accuracy is 94.7%, ECE .026 [.014,.044]; Jev ECE .052 [.034,.072] is inconclusive. Shared private items are not independent replication. Uneven model admission, heterogeneous hardware/interfaces and unadjusted multiple verdicts limit ranking interpretation."
   }
 ]

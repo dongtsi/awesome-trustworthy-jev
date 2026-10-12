@@ -10,7 +10,7 @@
 
 Papers, models, projects and documentation on Jev foundations, trustworthiness, and cybersecurity applications.
 
-`385` resources · `106` papers · `246` projects · `23` official documents · `10` articles
+`388` resources · `109` papers · `246` projects · `23` official documents · `10` articles
 
 **[Explore the Web Library →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=en)** · [Daily papers](daily/README.md) · [RSS](feed.xml) · [Contributing](CONTRIBUTING.md)
 
@@ -292,6 +292,9 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs](https://arxiv.org/abs/2610.11901) — Jev matches GPT-5.6 on English VAST stance labels but trails stronger models on Chinese conversational stance, especially favor-versus-against distinctions. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.11901v1)
 - [TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models](https://arxiv.org/abs/2610.11392) — Uses policy-driven generators to test calibration, framing, abstention and cost; good error ranking does not ensure calibrated or evidence-sensitive confidence. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.11392v1)
 - [Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?](https://arxiv.org/abs/2610.11135) — Tests cold-start knowledge tracing with reader swaps and matched typed inputs; Jev benefits mainly from its model prior, while supervised methods catch up with more learners. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.11135v1)
+- [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [Code](https://anonymous.4open.science/r/jev-emp-5BF4/)
+- [Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models](https://zenodo.org/records/23287930) — On 799 coding-agent and command-safety items, Jev trails two general-purpose models in paired accuracy; its calibration interval crosses the study-defined ECE threshold. `Evaluation` · [PDF](https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content)
+- [Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions](https://zenodo.org/records/23293732) — Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold. `Evaluation` · [PDF](https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content)
 
 **Projects and resources**
 
@@ -650,8 +653,10 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | Dataset / benchmark | Link type | Studies using it |
 |---|---|---|
 | [A-OKVQA](https://arxiv.org/abs/2609.29283) | Paper description | [PixelJev](https://arxiv.org/abs/2609.29283) |
+| [ALFWorld](https://github.com/alfworld/alfworld) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2609.34862) | Paper description | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | Dataset | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
+| [AndroidWorld](https://github.com/google-research/android_world) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BOTTLED](https://github.com/aktsonthalia/bottled) | Research artifact | [BOTTLED](https://arxiv.org/abs/2610.08775) |
 | [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) |
 | [BoolQ](https://github.com/google-research-datasets/boolean-questions) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) |
@@ -699,6 +704,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [Readout-stability intervention suite](https://github.com/rlisml/jev-cascade) | Research artifact | [Readout stability and compute allocation](https://arxiv.org/abs/2610.07716) |
 | [Reference-bound Visual Jev evaluation suite](https://arxiv.org/abs/2610.09328) | Paper description | [Visual Jev Rewards](https://arxiv.org/abs/2610.09328) |
 | [S1-MAS evaluation suite](https://arxiv.org/abs/2610.08155) | Paper description | [S1-MAS](https://arxiv.org/abs/2610.08155) |
+| [SILT coding-agent and destructive-command decisions](https://sentientindexlabs.com/publications/silt-rp-009) | Paper description | [SILT-RP-009](https://zenodo.org/records/23287930) · [SILT-RP-010](https://zenodo.org/records/23293732) |
 | [SNLI-VE](https://github.com/necla-ml/SNLI-VE) | Dataset | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [SOM moderation benchmark suite](https://github.com/FedericoMz/som-moderation-benchmark) | Research artifact | [System One online moderation](https://arxiv.org/abs/2610.07953) |
 | [SST-2](https://arxiv.org/abs/2609.37647) | Paper description | [Jev-37](https://arxiv.org/abs/2609.37647) |

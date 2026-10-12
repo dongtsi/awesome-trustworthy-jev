@@ -2,6 +2,18 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-11
+
+- [Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions](https://zenodo.org/records/23293732) — 复用同一套 799 题并重新调用 Jev，比较七个决策模型；仅报告中的 Perplexity 检查点 ECE 区间整体低于研究阈值。 `评测` · [PDF](https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content)
+
+## 2026-10-10
+
+- [Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models](https://zenodo.org/records/23287930) — 在 799 道编程 Agent 与命令安全题上，Jev 配对准确率低于两个通用模型；其校准误差区间跨越研究设定的 ECE 阈值。 `评测` · [PDF](https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content)
+
+## 2026-10-09
+
+- [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — 4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [代码](https://anonymous.4open.science/r/jev-emp-5BF4/)
+
 ## 2026-10-08
 
 - [One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails](https://arxiv.org/abs/2610.12292) — 区分开放决策护栏的错误放行与错误拦截；选项名称进入模型输入时，误导名称可反转判断。 `评测` · [PDF](https://arxiv.org/pdf/2610.12292v1) · [代码](https://github.com/ArminAzizi98/option-channel-attack)

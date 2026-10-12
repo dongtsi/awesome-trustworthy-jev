@@ -6,6 +6,27 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions</title>
+      <link>https://zenodo.org/records/23293732</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23293732#publication</guid>
+      <description>Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold.</description>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models</title>
+      <link>https://zenodo.org/records/23287930</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23287930#publication</guid>
+      <description>On 799 coding-agent and command-safety items, Jev trails two general-purpose models in paired accuracy; its calibration interval crosses the study-defined ECE threshold.</description>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows</title>
+      <link>https://arxiv.org/abs/2610.13092</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.13092#publication</guid>
+      <description>Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome.</description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails</title>
       <link>https://arxiv.org/abs/2610.12292</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.12292#publication</guid>
