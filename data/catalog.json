@@ -14780,5 +14780,41 @@
     "evidence": "Preprint",
     "review": "Methods, results and limitations read from author HTML full text; PDF download pending",
     "limitation": "Reported pplx-decider accuracy is 94.7%, ECE .026 [.014,.044]; Jev ECE .052 [.034,.072] is inconclusive. Shared private items are not independent replication. Uneven model admission, heterogeneous hardware/interfaces and unadjusted multiple verdicts limit ranking interpretation."
+  },
+  {
+    "id": "r-544eca86a5",
+    "title": "sbayer2/crowd-calibration",
+    "short": "crowd-calibration",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "updated": "2026-10-07",
+    "added": "2026-10-13",
+    "url": "https://github.com/sbayer2/crowd-calibration",
+    "code": "https://github.com/sbayer2/crowd-calibration",
+    "version": "2026-10-07T21:59:43Z",
+    "authors": [
+      "sbayer2"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests Jev probabilities against market prices and resolved outcomes; in a 1,125-market audit, the reported uncertainty-error association nearly disappears after controlling forecast extremity.",
+    "brief_zh": "对照市场价格与已结算结果检验 Jev 概率；在 1,125 个市场的审计中，控制预测极端程度后，作者报告的不确定性与错误关联基本消失。",
+    "summary": "Tests Jev probabilities against market prices and resolved outcomes; in a 1,125-market audit, the reported uncertainty-error association nearly disappears after controlling forecast extremity.",
+    "summary_zh": "对照市场价格与已结算结果检验 Jev 概率；在 1,125 个市场的审计中，控制预测极端程度后，作者报告的不确定性与错误关联基本消失。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Author report",
+    "review": "README and original FINDINGS historical-outcome study reviewed; raw data unavailable",
+    "limitation": "Author-reported results; raw runs are gitignored and unavailable for independent checking. Jev uses an unpinned alias. Topic mix, market dependence and historical selection limit knowledge-cutoff claims; ongoing sports studies are not completed results.",
+    "datasets": [
+      "Polymarket historical sample (crowd-calibration)"
+    ]
   }
 ]

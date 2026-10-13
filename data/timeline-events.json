@@ -1237,5 +1237,12 @@
     "date": "2026-10-09",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/gshrutha/jev-hybrid-calibration"
+  },
+  {
+    "id": "r-544eca86a5",
+    "kind": "Project",
+    "date": "2026-09-30",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/sbayer2/crowd-calibration"
   }
 ]

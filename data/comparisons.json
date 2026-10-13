@@ -1177,5 +1177,26 @@
     },
     "source_section": "Author HTML full text, Methods, registered results, limitations and data availability",
     "source": "https://sentientindexlabs.com/publications/silt-rp-010"
+  },
+  {
+    "id": "r-544eca86a5",
+    "category": "trustworthiness",
+    "datasets": [
+      "Polymarket historical sample (crowd-calibration)"
+    ],
+    "data_role": {
+      "en": "Author-described historical sample; raw snapshots and runs are not public.",
+      "zh": "作者定义的历史市场样本，原始快照与运行记录未公开。"
+    },
+    "design": {
+      "en": "1,125 resolved binary markets from 2023 Q1 to 2026-10-01; Jev asked three times without prices or outcomes. Comparator price is seven days before close; openjev covers only a 359-market subsample.",
+      "zh": "1,125 个于 2023 年一季度至 2026-10-01 结算的二元市场；Jev 不见价格或结果，重复三次。市场对照采用结算前七天价格，openjev 仅覆盖其中 359 个市场。"
+    },
+    "reading": {
+      "en": "Reported pre-release Brier is .164 for Jev versus .090 for market prices. The spread-error partial correlation is .04 overall and .01 on 265 contested markets. The earlier 60-market price-agreement result is not outcome calibration. Unpinned model, nonpublic raw data and varying topic mixes limit inference.",
+      "zh": "作者报告发布前样本 Brier 为 Jev .164、市场 .090；控制预测极端程度后，spread 与错误的偏相关总体为 .04，在 265 个争议市场上为 .01。早期 60 个市场的价格一致性不是结果校准；模型未固定、原始数据不公开且主题混合变化限制推断。"
+    },
+    "source_section": "tests/FINDINGS.md: C-001, C-002, H-001 and historical confidence correction",
+    "source": "https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md"
   }
 ]

@@ -293,5 +293,10 @@
     "url": "https://sentientindexlabs.com/publications/silt-rp-009",
     "type": "paper",
     "checked": "2026-10-12"
+  },
+  "Polymarket historical sample (crowd-calibration)": {
+    "url": "https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md",
+    "type": "benchmark",
+    "checked": "2026-10-13"
   }
 }
