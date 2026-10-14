@@ -14816,5 +14816,971 @@
     "datasets": [
       "Polymarket historical sample (crowd-calibration)"
     ]
+  },
+  {
+    "id": "2610.18615",
+    "title": "VideoJev: System One Model for Video Understanding and Interaction",
+    "short": "VideoJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18615",
+    "pdf": "https://arxiv.org/pdf/2610.18615v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18615v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Yuhan Zhu",
+      "Xiangyu Zeng",
+      "Qingyi Si",
+      "Chenxu Yang",
+      "Yifei Li",
+      "Luozheng Qin",
+      "Junhao Zhou",
+      "Dingyu Yao",
+      "Jun Zhang",
+      "Chuanyu Qin",
+      "Zhiqiu Zhang",
+      "Yuandong Yang",
+      "Yuqi Xu",
+      "Tianyu Zhang",
+      "Hongcheng Guo",
+      "Jiaqi Wang",
+      "Nan Duan",
+      "Limin Wang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses shared decision heads and reusable visual computation for temporal grounding and video QA; the authors report faster inference with comparable or improved task scores.",
+    "brief_zh": "通过共享决策头和视觉计算复用完成时序定位与视频问答；作者报告推理提速，任务得分相当或提高。",
+    "summary": "Uses shared decision heads and reusable visual computation for temporal grounding and video QA; the authors report faster inference with comparable or improved task scores.",
+    "summary_zh": "通过共享决策头和视觉计算复用完成时序定位与视频问答；作者报告推理提速，任务得分相当或提高。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18610",
+    "title": "Jev-ToM: Evaluating Theory of Mind in Typed Decision Models",
+    "short": "Jev-ToM",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18610",
+    "pdf": "https://arxiv.org/pdf/2610.18610v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18610v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Kawai Chung",
+      "Chunkit Chan",
+      "Yuxuan Liu",
+      "Yauwai Yim",
+      "Xi Yang",
+      "Wenbin Hu",
+      "Huihao Jing",
+      "Chiu Yeung Tang",
+      "Changxuan Fan",
+      "Ki Sen Hung",
+      "Tsun On Kwok",
+      "Haoran Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates typed models on 11,117 theory-of-mind questions; Jev leads several capabilities, while confidence filtering, supplied reasons and candidate expansion remain task-dependent.",
+    "brief_zh": "在 11,117 道心智理论题上评测类型化模型；Jev 在多个能力组领先，但置信筛选、附加理由与候选扩展效果依赖任务。",
+    "summary": "Evaluates typed models on 11,117 theory-of-mind questions; Jev leads several capabilities, while confidence filtering, supplied reasons and candidate expansion remain task-dependent.",
+    "summary_zh": "在 11,117 道心智理论题上评测类型化模型；Jev 在多个能力组领先，但置信筛选、附加理由与候选扩展效果依赖任务。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18780",
+    "title": "BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems",
+    "short": "BLADE",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18780",
+    "pdf": "https://arxiv.org/pdf/2610.18780v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18780v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Xiaoguang Guo",
+      "Yaohao Long",
+      "Chuxu Zhang"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/interpretability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits source-to-decision handoffs with Jev to distinguish error introduction, propagation and repair; improves failure-step localization on five multi-agent benchmark subsets.",
+    "brief_zh": "用 Jev 审计信息来源到决策的交接，区分错误引入、传播和修复；在五组多智能体基准子集上改善故障步骤定位。",
+    "summary": "Audits source-to-decision handoffs with Jev to distinguish error introduction, propagation and repair; improves failure-step localization on five multi-agent benchmark subsets.",
+    "summary_zh": "用 Jev 审计信息来源到决策的交接，区分错误引入、传播和修复；在五组多智能体基准子集上改善故障步骤定位。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.16967",
+    "title": "Proactive Physical AI through Continuous Observation and Timely Intervention",
+    "short": "StreamingJev / ProAgent",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.16967",
+    "pdf": "https://arxiv.org/pdf/2610.16967v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.16967v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Zhenhua Yang",
+      "Jiafeng Liang",
+      "Xingyu Zhou",
+      "Yi Jiang",
+      "Xiayu Cao",
+      "Zui Chen",
+      "Luqi Wang",
+      "Haiyang Sun",
+      "Yufei Xiang",
+      "Chang Li",
+      "Rongchuan Mu",
+      "Bowen Chi",
+      "Zihe Tong",
+      "Mingyu Li",
+      "Huijie Ma",
+      "Yiqiao Yang",
+      "Baoqi Ren",
+      "Zhiming Ma",
+      "Zhihao Zhu",
+      "Jiahao Ji",
+      "Zhuoyao Wang",
+      "Qianyu Wang",
+      "Xiangyu Liu",
+      "Wang Zixiang",
+      "Shunliang Zhang",
+      "Ming Liu",
+      "Xiaocheng Feng",
+      "Duyu Tang",
+      "Bing Qin"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces a Jev-style timing model that separates intervention decisions from response generation, with video-derived supervision for continuous physical-world observation.",
+    "brief_zh": "提出 Jev 风格时机模型，将干预决策与响应生成分离，并用视频生成监督支持连续物理环境观察。",
+    "summary": "Introduces a Jev-style timing model that separates intervention decisions from response generation, with video-derived supervision for continuous physical-world observation.",
+    "summary_zh": "提出 Jev 风格时机模型，将干预决策与响应生成分离，并用视频生成监督支持连续物理环境观察。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.17820",
+    "title": "Same Attack, Different Judge: A First Controlled Adversarial Comparison of Jev, LLM Judges, and Purpose-Built Safety Classifiers",
+    "short": "Same Attack, Different Judge",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.17820",
+    "pdf": "https://arxiv.org/pdf/2610.17820v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.17820v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Xiang Li",
+      "Aichun Huang",
+      "Mingming Zhang",
+      "Zheli Liu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares matched adversarial payloads across Jev, LLM judges and safety classifiers; Jev resists rule-based moderation attacks better than phishing attacks and has substantial benign false positives.",
+    "brief_zh": "以相同对抗载荷比较 Jev、LLM 裁判与安全分类器；Jev 对规则式审核攻击的抵抗优于钓鱼任务，同时存在明显良性误报。",
+    "summary": "Compares matched adversarial payloads across Jev, LLM judges and safety classifiers; Jev resists rule-based moderation attacks better than phishing attacks and has substantial benign false positives.",
+    "summary_zh": "以相同对抗载荷比较 Jev、LLM 裁判与安全分类器；Jev 对规则式审核攻击的抵抗优于钓鱼任务，同时存在明显良性误报。",
+    "theme": "Robustness",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Phishing forgeries bypass 19–29% of the 62 emails Jev flags, while benign moderation false positives reach 27%. Pass decisions do not establish downstream harm; one English phishing corpus, self-reported LLM probabilities and an attack pool derived from LLM attacks limit generalization.",
+    "datasets": [
+      "JailbreakBench",
+      "InjecAgent",
+      "Same Attack phishing sample"
+    ]
+  },
+  {
+    "id": "2610.18488",
+    "title": "Recalibrating Many Questions with Few Labels: Minimax Rates and Identification Limits",
+    "short": "Few-label recalibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18488",
+    "pdf": "https://arxiv.org/pdf/2610.18488v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18488v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Xiaoyu Li",
+      "Chiwun Yang"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "method"
+    ],
+    "brief_en": "Derives minimax rates and identification limits for recalibrating related questions, with pooled isotonic fitting and held-out corrections under monotone calibration-map assumptions.",
+    "brief_zh": "在单调校准映射假设下，推导相关问题少标签再校准的极小极大速率与识别限制，并给出合并保序拟合及留出修正方法。",
+    "summary": "Derives minimax rates and identification limits for recalibrating related questions, with pooled isotonic fitting and held-out corrections under monotone calibration-map assumptions.",
+    "summary_zh": "在单调校准映射假设下，推导相关问题少标签再校准的极小极大速率与识别限制，并给出合并保序拟合及留出修正方法。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18389",
+    "title": "PRISM: Calibrating Black-Box Judges with Counterfactual Probes",
+    "short": "PRISM",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18389",
+    "pdf": "https://arxiv.org/pdf/2610.18389v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18389v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Kakei Yamamoto",
+      "So Kuroki"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses counterfactual scoring probes and human-label regression to correct black-box judges; improves reported human-ranking agreement on summarization and story evaluation.",
+    "brief_zh": "以反事实评分探针和人类标签回归修正黑箱裁判；在摘要与故事评测中提高报告的人类排序一致性。",
+    "summary": "Uses counterfactual scoring probes and human-label regression to correct black-box judges; improves reported human-ranking agreement on summarization and story evaluation.",
+    "summary_zh": "以反事实评分探针和人类标签回归修正黑箱裁判；在摘要与故事评测中提高报告的人类排序一致性。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18233",
+    "title": "Consider, Then Choose: Order-Invariant Decisions in System One Models",
+    "short": "Runoff",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18233",
+    "pdf": "https://arxiv.org/pdf/2610.18233v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18233v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Jianguo Huang",
+      "Yao Long Teng",
+      "Yanchen Deng",
+      "Bo An"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines independent option scoring with position-balanced runoff comparisons to remove option-order dependence; compares accuracy and inference cost against cyclic averaging.",
+    "brief_zh": "结合独立选项打分与位置均衡的决选比较消除选项顺序依赖，并与循环平均比较准确率及推理成本。",
+    "summary": "Combines independent option scoring with position-balanced runoff comparisons to remove option-order dependence; compares accuracy and inference cost against cyclic averaging.",
+    "summary_zh": "结合独立选项打分与位置均衡的决选比较消除选项顺序依赖，并与循环平均比较准确率及推理成本。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.16655",
+    "title": "Does a Hosted Decision Model Respect Irrelevant Alternatives? A Pre-Registered Test of Option-Set Dependence in Jev",
+    "short": "Option-set dependence",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.16655",
+    "pdf": "https://arxiv.org/pdf/2610.16655v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.16655v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Dushyant Rajput",
+      "Nirdesh Chauhan",
+      "Siddharth Kosaraju"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Across 299,463 calls, adding low-probability alternatives shifts Jev's relative odds; independent binary scoring removes set dependence at an accuracy cost.",
+    "brief_zh": "299,463 次调用显示，即使加入低概率备选项也会改变 Jev 的相对赔率；独立二元打分消除集合依赖，但牺牲准确率。",
+    "summary": "Across 299,463 calls, adding low-probability alternatives shifts Jev's relative odds; independent binary scoring removes set dependence at an accuracy cost.",
+    "summary_zh": "299,463 次调用显示，即使加入低概率备选项也会改变 Jev 的相对赔率；独立二元打分消除集合依赖，但牺牲准确率。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Added options shift pairwise odds beyond repeat noise, even at low mass; independent Noul loses 8.7 accuracy points. One version and text classification, LLM-reviewed decoys, restricted contested subset and exploratory baselines limit interpretation; internal joint encoding is a hypothesis.",
+    "datasets": [
+      "Banking77",
+      "CLINC150",
+      "AG News"
+    ]
+  },
+  {
+    "id": "2610.18773",
+    "title": "Jeva: System One Models from First Principles",
+    "short": "Jeva",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18773",
+    "pdf": "https://arxiv.org/pdf/2610.18773v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18773v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces a decision architecture with independent option encoding, symmetric aggregation and separate coverage estimation to support permutation invariance, null outcomes and cached reuse.",
+    "brief_zh": "通过独立选项编码、对称聚合和单独覆盖估计，构建支持排列不变性、空答案与缓存复用的决策架构。",
+    "summary": "Introduces a decision architecture with independent option encoding, symmetric aggregation and separate coverage estimation to support permutation invariance, null outcomes and cached reuse.",
+    "summary_zh": "通过独立选项编码、对称聚合和单独覆盖估计，构建支持排列不变性、空答案与缓存复用的决策架构。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18579",
+    "title": "Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",
+    "short": "Reading Right, Acting Wrong",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18579",
+    "pdf": "https://arxiv.org/pdf/2610.18579v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18579v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Yubo Li",
+      "Ramayya Krishnan",
+      "Rema Padman"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Pairs action choices with factual probes across agent states; most wrong actions follow correct reading, exposing failures of composition and sub-goal selection.",
+    "brief_zh": "在 Agent 状态上配对动作选择与事实探针；多数错误动作发生在正确读取信息之后，暴露组合推理与子目标选择缺陷。",
+    "summary": "Pairs action choices with factual probes across agent states; most wrong actions follow correct reading, exposing failures of composition and sub-goal selection.",
+    "summary_zh": "在 Agent 状态上配对动作选择与事实探针；多数错误动作发生在正确读取信息之后，暴露组合推理与子目标选择缺陷。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18529",
+    "title": "How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs",
+    "short": "Medical decision reliability",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18529",
+    "pdf": "https://arxiv.org/pdf/2610.18529v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18529v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Yanrui Du",
+      "Danyang Zhao",
+      "Sendong Zhao",
+      "Wenhao Li",
+      "Yibo Gao",
+      "Haochun Wang",
+      "Zhuoer Xu",
+      "Shiwen Cui",
+      "Bing Qin"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests accuracy, prompt stability and abstention across 15 medical datasets; Jev is stronger on text than numerical tasks, while recognizing missing answers remains difficult.",
+    "brief_zh": "在 15 个医学数据集上测试准确率、提示稳定性与弃答；Jev 的文本任务表现优于数值任务，但识别答案缺失仍困难。",
+    "summary": "Tests accuracy, prompt stability and abstention across 15 medical datasets; Jev is stronger on text than numerical tasks, while recognizing missing answers remains difficult.",
+    "summary_zh": "在 15 个医学数据集上测试准确率、提示稳定性与弃答；Jev 的文本任务表现优于数值任务，但识别答案缺失仍困难。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.15537",
+    "title": "Poisoned into Action: Context Attacks on Typed Decision Workflows",
+    "short": "Poisoned into Action",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.15537",
+    "pdf": "https://arxiv.org/pdf/2610.15537v1",
+    "date": "2026-10-11",
+    "updated": "2026-10-11",
+    "version": "2610.15537v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Chenkai Wu",
+      "Xing Chang",
+      "Jun Yan"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Traces poisoned context through retrieval, typed decisions and persisted state; defenses trade prevented violations against withheld correct automation in two synthetic workflows.",
+    "brief_zh": "追踪投毒上下文经检索、类型化决策进入持久状态的过程；两个合成工作流显示，防御阻止违规的同时也会扣留正确自动化操作。",
+    "summary": "Traces poisoned context through retrieval, typed decisions and persisted state; defenses trade prevented violations against withheld correct automation in two synthetic workflows.",
+    "summary_zh": "追踪投毒上下文经检索、类型化决策进入持久状态的过程；两个合成工作流显示，防御阻止违规的同时也会扣留正确自动化操作。",
+    "theme": "Robustness",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18497",
+    "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+    "short": "DeRef",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18497",
+    "pdf": "https://arxiv.org/pdf/2610.18497v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18497v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Linhai Ma",
+      "Yan Wang",
+      "Lingfei Qian",
+      "Yupeng Cao",
+      "Victor Gutierrez Basulto"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.",
+    "brief_zh": "发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。",
+    "summary": "Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.",
+    "summary_zh": "发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18122",
+    "title": "Cheap, Consistent, Calibrated, but Biased? Typed Decision Models as Judges",
+    "short": "Typed judge biases",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18122",
+    "pdf": "https://arxiv.org/pdf/2610.18122v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18122v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Fabian Lukassen",
+      "Christoph Weisser",
+      "Alexander Silbersdorff"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/fairness"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests eight typed models on twelve CALM biases; calibration and consistency coexist with emotional-tone, position and attribution biases in pairwise judging.",
+    "brief_zh": "对八个类型化模型开展十二类 CALM 偏差测试；校准与一致性并不消除成对评审中的情绪语气、位置和来源归因偏差。",
+    "summary": "Tests eight typed models on twelve CALM biases; calibration and consistency coexist with emotional-tone, position and attribution biases in pairwise judging.",
+    "summary_zh": "对八个类型化模型开展十二类 CALM 偏差测试；校准与一致性并不消除成对评审中的情绪语气、位置和来源归因偏差。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.16191",
+    "title": "Correct Choices, Failed Sequences: Choice2Seq Benchmarks Correctness Retention Across Output Interfaces",
+    "short": "Choice2Seq",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.16191",
+    "pdf": "https://arxiv.org/pdf/2610.16191v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.16191v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Tianyou Lai",
+      "Wentao Yue",
+      "Zhiying Deng",
+      "Qilei Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Measures how often correct complete-answer selections survive sequential construction; Jev's high arithmetic and lexical selection accuracy can collapse under serial output interfaces.",
+    "brief_zh": "衡量正确整答选择在逐步构造中保留的比例；Jev 在算术与词汇任务上的高选择准确率可能在串行输出接口下大幅下降。",
+    "summary": "Measures how often correct complete-answer selections survive sequential construction; Jev's high arithmetic and lexical selection accuracy can collapse under serial output interfaces.",
+    "summary_zh": "衡量正确整答选择在逐步构造中保留的比例；Jev 在算术与词汇任务上的高选择准确率可能在串行输出接口下大幅下降。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.15742",
+    "title": "RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification",
+    "short": "RSAJEV",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.15742",
+    "pdf": "https://arxiv.org/pdf/2610.15742v1",
+    "date": "2026-10-11",
+    "updated": "2026-10-11",
+    "version": "2610.15742v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Man Chen",
+      "Antai Chen",
+      "Shuai Xu",
+      "Chengjie Gu",
+      "Huaping Zhou",
+      "Kelei Sun",
+      "Tao Wu",
+      "Yongjie Huang"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Replaces letter-token readout with cached prototype retrieval to improve cross-dataset classification and open-set abstention in Jev-style remote-sensing models.",
+    "brief_zh": "以缓存原型检索替换字母令牌读出，改善 Jev 风格遥感模型的跨数据集分类与开放集弃答。",
+    "summary": "Replaces letter-token readout with cached prototype retrieval to improve cross-dataset classification and open-set abstention in Jev-style remote-sensing models.",
+    "summary_zh": "以缓存原型检索替换字母令牌读出，改善 Jev 风格遥感模型的跨数据集分类与开放集弃答。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18612",
+    "title": "Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications",
+    "short": "JevProbe",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18612",
+    "pdf": "https://arxiv.org/pdf/2610.18612v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18612v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Yang Luo",
+      "Tiantian Ji",
+      "Zifeng Kang",
+      "Yucheng Wang",
+      "Yong Liu",
+      "Zhiyi Yin",
+      "Xinran Liu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.",
+    "brief_zh": "在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。",
+    "summary": "Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.",
+    "summary_zh": "在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。",
+    "theme": "Robustness",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.17309",
+    "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+    "short": "StartLux-Decision",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.17309",
+    "pdf": "https://arxiv.org/pdf/2610.17309v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.17309v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Xialie Zhuang",
+      "Zunhai Su",
+      "Jia Pan",
+      "Ngai Wong",
+      "Guanhua Chen",
+      "Chuan-Wei Kuo"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines single-pass Instant models with confidence-guided AutoThink reasoning; calibrated deliberative reinforcement learning reduces reasoning length while preserving reported accuracy.",
+    "brief_zh": "结合单次前向 Instant 模型与置信引导的 AutoThink 推理；校准式审慎决策强化学习缩短推理，同时保持报告的准确率。",
+    "summary": "Combines single-pass Instant models with confidence-guided AutoThink reasoning; calibrated deliberative reinforcement learning reduces reasoning length while preserving reported accuracy.",
+    "summary_zh": "结合单次前向 Instant 模型与置信引导的 AutoThink 推理；校准式审慎决策强化学习缩短推理，同时保持报告的准确率。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.17205",
+    "title": "Releasing the Inner Jev: A Simple Recipe for Open Decision Models",
+    "short": "Releasing the Inner Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.17205",
+    "pdf": "https://arxiv.org/pdf/2610.17205v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.17205v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Jonathan Geuter",
+      "Andrew Cheng",
+      "David Alvarez-Melis"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Reads option-letter logits from instruction-tuned LMs and improves them with LoRA decision-head tuning; evaluates accuracy and calibration on OpenDecisions and JevBench.",
+    "brief_zh": "从指令模型读取选项字母 logits，并用 LoRA 决策头微调改善表现；在 OpenDecisions 与 JevBench 上评估准确率和校准。",
+    "summary": "Reads option-letter logits from instruction-tuned LMs and improves them with LoRA decision-head tuning; evaluates accuracy and calibration on OpenDecisions and JevBench.",
+    "summary_zh": "从指令模型读取选项字母 logits，并用 LoRA 决策头微调改善表现；在 OpenDecisions 与 JevBench 上评估准确率和校准。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.17175",
+    "title": "FunDM: Cheap & Label-Free Decision Models from Frozen Language Models",
+    "short": "FunDM",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.17175",
+    "pdf": "https://arxiv.org/pdf/2610.17175v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.17175v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Ujjawal K. Panchal"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Distills frozen language-model probabilities into small decision heads without correctness labels, retaining most multiple-choice accuracy with fewer transformer layers.",
+    "brief_zh": "无需正确答案标签，将冻结语言模型的概率蒸馏到小型决策头，以更少 Transformer 层保留大部分多选准确率。",
+    "summary": "Distills frozen language-model probabilities into small decision heads without correctness labels, retaining most multiple-choice accuracy with fewer transformer layers.",
+    "summary_zh": "无需正确答案标签，将冻结语言模型的概率蒸馏到小型决策头，以更少 Transformer 层保留大部分多选准确率。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.18326",
+    "title": "Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees",
+    "short": "Jev-Guard",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.18326",
+    "pdf": "https://arxiv.org/pdf/2610.18326v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.18326v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Wenbin Hu",
+      "Huihao Jing",
+      "Haochen Shi",
+      "Yuxuan Liu",
+      "Changxuan Fan",
+      "Sirui Zhang",
+      "Kawai Chung",
+      "Hanyu Yang",
+      "Zhenhuan Wang",
+      "Ziyi Chen",
+      "Haoran Li",
+      "Yangqiu Song"
+    ],
+    "target": "open",
+    "categories": [
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Routes audit contexts through editable policy trees and performs policy-conditioned safety classification; evaluates both standalone routing and agent permission gating.",
+    "brief_zh": "在可编辑策略树中路由审计上下文，再按策略进行安全分类；同时评测独立路由与 Agent 权限门控。",
+    "summary": "Routes audit contexts through editable policy trees and performs policy-conditioned safety classification; evaluates both standalone routing and agent permission gating.",
+    "summary_zh": "在可编辑策略树中路由审计上下文，再按策略进行安全分类；同时评测独立路由与 Agent 权限门控。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.15710",
+    "title": "Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate",
+    "short": "Memory-retirement gate",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.15710",
+    "pdf": "https://arxiv.org/pdf/2610.15710v1",
+    "date": "2026-10-11",
+    "updated": "2026-10-11",
+    "version": "2610.15710v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Xupeng Chen",
+      "Chenqian Le"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates established memory changes from suggestions; a three-way Jev gate reduces premature retirement but exceeds its preregistered detection-loss budget.",
+    "brief_zh": "区分已确立的记忆变更与暗示性变更；三分类 Jev 门控减少过早删除，但检出率损失超过预注册预算。",
+    "summary": "Separates established memory changes from suggestions; a three-way Jev gate reduces premature retirement but exceeds its preregistered detection-loss budget.",
+    "summary_zh": "区分已确立的记忆变更与暗示性变更；三分类 Jev 门控减少过早删除，但检出率损失超过预注册预算。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.17016",
+    "title": "ProbabilityBench: Model Evaluation and Calibration with Exact Ground-Truth Uncertainty",
+    "short": "ProbabilityBench",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.17016",
+    "pdf": "https://arxiv.org/pdf/2610.17016v1",
+    "date": "2026-10-12",
+    "updated": "2026-10-12",
+    "version": "2610.17016v1",
+    "added": "2026-10-14",
+    "authors": [
+      "Yuyang Dai",
+      "Yuting Tang",
+      "Futoshi Futami",
+      "Takashi Ishida"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Defines simulated text tasks with exact conditional probabilities and Bayes error, enabling direct probability-quality evaluation and meta-evaluation of calibration metrics.",
+    "brief_zh": "构造具备精确条件概率与贝叶斯误差的模拟文本任务，直接评测概率质量，并对校准指标本身进行元评估。",
+    "summary": "Defines simulated text tasks with exact conditional probabilities and Bayes error, enabling direct probability-quality evaluation and meta-evaluation of calibration metrics.",
+    "summary_zh": "构造具备精确条件概率与贝叶斯误差的模拟文本任务，直接评测概率质量，并对校准指标本身进行元评估。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "zenodo-22980293",
+    "title": "Knows Its Slips, Reads the Page: A Pre-registered Study of Confidence and Abstention in Jev, a Calibrated Decision Model",
+    "short": "Confidence and abstention",
+    "kind": "Paper",
+    "url": "https://zenodo.org/records/23288651",
+    "pdf": "https://zenodo.org/api/records/23288651/files/Jev_J1J2.pdf/content",
+    "doi": "10.5281/zenodo.23288651",
+    "concept_doi": "10.5281/zenodo.22980292",
+    "date": "2026-09-26",
+    "updated": "2026-10-10",
+    "version": "2",
+    "added": "2026-10-14",
+    "authors": [
+      "Joseph Vanhorn"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Confidence predicts errors beyond input difficulty but shifts with presentation; explicit abstention works directionally, while payoff sensitivity and label invariance fail in generated tasks.",
+    "brief_zh": "置信度在输入难度之外仍能预测错误，但随呈现方式漂移；合成任务中显式弃答方向合理，收益敏感度与标签不变性不足。",
+    "summary": "Confidence predicts errors beyond input difficulty but shifts with presentation; explicit abstention works directionally, while payoff sensitivity and label invariance fail in generated tasks.",
+    "summary_zh": "置信度在输入难度之外仍能预测错误，但随呈现方式漂移；合成任务中显式弃答方向合理，收益敏感度与标签不变性不足。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "code": "https://github.com/QAv2/agi-semantic-core",
+    "limitation": "Matched-accuracy overconfidence shifts by -0.136; no-evidence confidence remains .817. Acting thresholds vary .39–.44 versus ideal .50–.90. One build, compound layout changes, combined label/preface framing and a fitted non-primary threshold estimate limit causal claims.",
+    "datasets": [
+      "Jev J1/J2 generated stimuli"
+    ]
   }
 ]

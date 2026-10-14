@@ -1198,5 +1198,72 @@
     },
     "source_section": "tests/FINDINGS.md: C-001, C-002, H-001 and historical confidence correction",
     "source": "https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md"
+  },
+  {
+    "id": "2610.17820",
+    "category": "trustworthiness",
+    "datasets": [
+      "JailbreakBench",
+      "InjecAgent",
+      "Same Attack phishing sample"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks; author-reported results",
+      "zh": "原文定义的评测任务；结果由作者报告"
+    },
+    "design": {
+      "en": "Matched payloads and policy across Jev, five LLM judges and local safety classifiers; four tasks, 13 attack families and 50 variants, typically 100 cases per condition. ASR is conditional on clean-flagged cases.",
+      "zh": "同载荷与策略比较 Jev、五个 LLM 裁判及本地安全分类器；四个任务、13 类攻击和 50 个变体，通常每条件 100 例。ASR 以干净输入已被拦截的样本为分母。"
+    },
+    "reading": {
+      "en": "Phishing forgeries bypass 19–29% of the 62 emails Jev flags, while benign moderation false positives reach 27%. Pass decisions do not establish downstream harm; one English phishing corpus, self-reported LLM probabilities and an attack pool derived from LLM attacks limit generalization.",
+      "zh": "钓鱼伪造使 Jev 原本标记的 62 封邮件中的 19–29% 绕过检测，良性审核误报达 27%。通过裁判不等于下游危害；单一英文钓鱼语料、LLM 自报概率及源自 LLM 攻击的载荷池限制外推。"
+    },
+    "source_section": "Sections 3–5, 7.2 and 9",
+    "source": "https://arxiv.org/pdf/2610.17820v1"
+  },
+  {
+    "id": "2610.16655",
+    "category": "trustworthiness",
+    "datasets": [
+      "Banking77",
+      "CLINC150",
+      "AG News"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks; author-reported results",
+      "zh": "原文定义的评测任务；结果由作者报告"
+    },
+    "design": {
+      "en": "2,500 text items; 647 contested items for shift analysis; 299,463 calls including drift checks. Full option permutations, repeated baselines, stratified bootstrap, Holm tests and independent per-option Noul mitigation.",
+      "zh": "2,500 道文本题，其中 647 道竞争题用于偏移分析；含漂移检查共 299,463 次调用。采用完整选项排列、重复基线、分层自助法、Holm 检验与逐选项 Noul 缓解。"
+    },
+    "reading": {
+      "en": "Added options shift pairwise odds beyond repeat noise, even at low mass; independent Noul loses 8.7 accuracy points. One version and text classification, LLM-reviewed decoys, restricted contested subset and exploratory baselines limit interpretation; internal joint encoding is a hypothesis.",
+      "zh": "新增选项即使概率很低，也使配对赔率偏移超过重复噪声；独立 Noul 准确率下降 8.7 点。单版本文本分类、LLM 审核诱饵、竞争子集及探索性基线限制解释；内部联合编码仅为假说。"
+    },
+    "source_section": "Sections 3–6",
+    "source": "https://arxiv.org/pdf/2610.16655v1"
+  },
+  {
+    "id": "zenodo-22980293",
+    "category": "trustworthiness",
+    "datasets": [
+      "Jev J1/J2 generated stimuli"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation tasks; author-reported results",
+      "zh": "原文定义的评测任务；结果由作者报告"
+    },
+    "design": {
+      "en": "48,300 calls including 44,640 confirmatory calls; generated evidence and sensor tasks with exact ideal observers. Matched-accuracy layout arms, explicit abstention/payoff arms and stimulus/ladder-cluster bootstrap; one task family dropped by a registered rule.",
+      "zh": "48,300 次调用中 44,640 次为确认性调用；合成证据与传感器任务有精确理想观察者。设置准确率匹配布局、显式弃答与收益条件，按刺激/阶梯聚类自助法；一个任务族按预定规则剔除。"
+    },
+    "reading": {
+      "en": "Matched-accuracy overconfidence shifts by -0.136; no-evidence confidence remains .817. Acting thresholds vary .39–.44 versus ideal .50–.90. One build, compound layout changes, combined label/preface framing and a fitted non-primary threshold estimate limit causal claims.",
+      "zh": "准确率匹配后过度自信变化为 -0.136，无证据时置信仍为 .817。行动阈值仅在 .39–.44 变化，理想值为 .50–.90。单一版本、复合布局变化、标签与前言同时改变及非主检验的拟合阈值限制因果解释。"
+    },
+    "source_section": "Version 2, Sections 2–4.6",
+    "source": "https://zenodo.org/api/records/23288651/files/Jev_J1J2.pdf/content"
   }
 ]

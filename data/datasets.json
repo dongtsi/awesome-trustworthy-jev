@@ -298,5 +298,30 @@
     "url": "https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md",
     "type": "benchmark",
     "checked": "2026-10-13"
+  },
+  "Jev J1/J2 generated stimuli": {
+    "url": "https://github.com/QAv2/agi-semantic-core",
+    "type": "benchmark",
+    "checked": "2026-10-14"
+  },
+  "Same Attack phishing sample": {
+    "url": "https://arxiv.org/abs/2610.17820",
+    "type": "paper",
+    "checked": "2026-10-14"
+  },
+  "JailbreakBench": {
+    "url": "https://github.com/JailbreakBench/jailbreakbench",
+    "type": "benchmark",
+    "checked": "2026-10-14"
+  },
+  "InjecAgent": {
+    "url": "https://github.com/uiuc-kang-lab/InjecAgent",
+    "type": "benchmark",
+    "checked": "2026-10-14"
+  },
+  "AG News": {
+    "url": "https://arxiv.org/abs/2610.16655",
+    "type": "paper",
+    "checked": "2026-10-14"
   }
 }

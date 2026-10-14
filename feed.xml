@@ -6,10 +6,178 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems</title>
+      <link>https://arxiv.org/abs/2610.18780</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18780#publication</guid>
+      <description>Audits source-to-decision handoffs with Jev to distinguish error introduction, propagation and repair; improves failure-step localization on five multi-agent benchmark subsets.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jeva: System One Models from First Principles</title>
+      <link>https://arxiv.org/abs/2610.18773</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18773#publication</guid>
+      <description>Introduces a decision architecture with independent option encoding, symmetric aggregation and separate coverage estimation to support permutation invariance, null outcomes and cached reuse.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>VideoJev: System One Model for Video Understanding and Interaction</title>
+      <link>https://arxiv.org/abs/2610.18615</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18615#publication</guid>
+      <description>Uses shared decision heads and reusable visual computation for temporal grounding and video QA; the authors report faster inference with comparable or improved task scores.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications</title>
+      <link>https://arxiv.org/abs/2610.18612</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18612#publication</guid>
+      <description>Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev-ToM: Evaluating Theory of Mind in Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.18610</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18610#publication</guid>
+      <description>Evaluates typed models on 11,117 theory-of-mind questions; Jev leads several capabilities, while confidence filtering, supplied reasons and candidate expansion remain task-dependent.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops</title>
+      <link>https://arxiv.org/abs/2610.18579</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18579#publication</guid>
+      <description>Pairs action choices with factual probes across agent states; most wrong actions follow correct reading, exposing failures of composition and sub-goal selection.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs</title>
+      <link>https://arxiv.org/abs/2610.18529</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18529#publication</guid>
+      <description>Tests accuracy, prompt stability and abstention across 15 medical datasets; Jev is stronger on text than numerical tasks, while recognizing missing answers remains difficult.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments</title>
+      <link>https://arxiv.org/abs/2610.18497</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18497#publication</guid>
+      <description>Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Recalibrating Many Questions with Few Labels: Minimax Rates and Identification Limits</title>
+      <link>https://arxiv.org/abs/2610.18488</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18488#publication</guid>
+      <description>Derives minimax rates and identification limits for recalibrating related questions, with pooled isotonic fitting and held-out corrections under monotone calibration-map assumptions.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PRISM: Calibrating Black-Box Judges with Counterfactual Probes</title>
+      <link>https://arxiv.org/abs/2610.18389</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18389#publication</guid>
+      <description>Uses counterfactual scoring probes and human-label regression to correct black-box judges; improves reported human-ranking agreement on summarization and story evaluation.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees</title>
+      <link>https://arxiv.org/abs/2610.18326</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18326#publication</guid>
+      <description>Routes audit contexts through editable policy trees and performs policy-conditioned safety classification; evaluates both standalone routing and agent permission gating.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Consider, Then Choose: Order-Invariant Decisions in System One Models</title>
+      <link>https://arxiv.org/abs/2610.18233</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18233#publication</guid>
+      <description>Combines independent option scoring with position-balanced runoff comparisons to remove option-order dependence; compares accuracy and inference cost against cyclic averaging.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cheap, Consistent, Calibrated, but Biased? Typed Decision Models as Judges</title>
+      <link>https://arxiv.org/abs/2610.18122</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18122#publication</guid>
+      <description>Tests eight typed models on twelve CALM biases; calibration and consistency coexist with emotional-tone, position and attribution biases in pairwise judging.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Same Attack, Different Judge: A First Controlled Adversarial Comparison of Jev, LLM Judges, and Purpose-Built Safety Classifiers</title>
+      <link>https://arxiv.org/abs/2610.17820</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.17820#publication</guid>
+      <description>Compares matched adversarial payloads across Jev, LLM judges and safety classifiers; Jev resists rule-based moderation attacks better than phishing attacks and has substantial benign false positives.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions</title>
+      <link>https://arxiv.org/abs/2610.17309</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.17309#publication</guid>
+      <description>Combines single-pass Instant models with confidence-guided AutoThink reasoning; calibrated deliberative reinforcement learning reduces reasoning length while preserving reported accuracy.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Releasing the Inner Jev: A Simple Recipe for Open Decision Models</title>
+      <link>https://arxiv.org/abs/2610.17205</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.17205#publication</guid>
+      <description>Reads option-letter logits from instruction-tuned LMs and improves them with LoRA decision-head tuning; evaluates accuracy and calibration on OpenDecisions and JevBench.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>FunDM: Cheap &amp; Label-Free Decision Models from Frozen Language Models</title>
+      <link>https://arxiv.org/abs/2610.17175</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.17175#publication</guid>
+      <description>Distills frozen language-model probabilities into small decision heads without correctness labels, retaining most multiple-choice accuracy with fewer transformer layers.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ProbabilityBench: Model Evaluation and Calibration with Exact Ground-Truth Uncertainty</title>
+      <link>https://arxiv.org/abs/2610.17016</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.17016#publication</guid>
+      <description>Defines simulated text tasks with exact conditional probabilities and Bayes error, enabling direct probability-quality evaluation and meta-evaluation of calibration metrics.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Proactive Physical AI through Continuous Observation and Timely Intervention</title>
+      <link>https://arxiv.org/abs/2610.16967</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.16967#publication</guid>
+      <description>Introduces a Jev-style timing model that separates intervention decisions from response generation, with video-derived supervision for continuous physical-world observation.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Does a Hosted Decision Model Respect Irrelevant Alternatives? A Pre-Registered Test of Option-Set Dependence in Jev</title>
+      <link>https://arxiv.org/abs/2610.16655</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.16655#publication</guid>
+      <description>Across 299,463 calls, adding low-probability alternatives shifts Jev's relative odds; independent binary scoring removes set dependence at an accuracy cost.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Correct Choices, Failed Sequences: Choice2Seq Benchmarks Correctness Retention Across Output Interfaces</title>
+      <link>https://arxiv.org/abs/2610.16191</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.16191#publication</guid>
+      <description>Measures how often correct complete-answer selections survive sequential construction; Jev's high arithmetic and lexical selection accuracy can collapse under serial output interfaces.</description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions</title>
       <link>https://zenodo.org/records/23293732</link>
       <guid isPermaLink="false">https://zenodo.org/records/23293732#publication</guid>
       <description>Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold.</description>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification</title>
+      <link>https://arxiv.org/abs/2610.15742</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.15742#publication</guid>
+      <description>Replaces letter-token readout with cached prototype retrieval to improve cross-dataset classification and open-set abstention in Jev-style remote-sensing models.</description>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate</title>
+      <link>https://arxiv.org/abs/2610.15710</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.15710#publication</guid>
+      <description>Separates established memory changes from suggestions; a three-way Jev gate reduces premature retirement but exceeds its preregistered detection-loss budget.</description>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Poisoned into Action: Context Attacks on Typed Decision Workflows</title>
+      <link>https://arxiv.org/abs/2610.15537</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.15537#publication</guid>
+      <description>Traces poisoned context through retrieval, typed decisions and persisted state; defenses trade prevented violations against withheld correct automation in two synthetic workflows.</description>
       <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -522,6 +690,13 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.33209#publication</guid>
       <description>Tests logical probability coherence without needing class labels.</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Knows Its Slips, Reads the Page: A Pre-registered Study of Confidence and Abstention in Jev, a Calibrated Decision Model</title>
+      <link>https://zenodo.org/records/23288651</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23288651#publication</guid>
+      <description>Confidence predicts errors beyond input difficulty but shifts with presentation; explicit abstention works directionally, while payoff sensitivity and label invariance fail in generated tasks.</description>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>PACT: Pairwise-Anchored Calibrated Tuning for Single-Token Typed Decisions</title>

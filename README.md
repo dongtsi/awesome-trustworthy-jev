@@ -10,7 +10,7 @@
 
 Papers, models, projects and documentation on Jev foundations, trustworthiness, and cybersecurity applications.
 
-`389` resources · `109` papers · `247` projects · `23` official documents · `10` articles
+`414` resources · `134` papers · `247` projects · `23` official documents · `10` articles
 
 **[Explore the Web Library →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=en)** · [Daily papers](daily/README.md) · [RSS](feed.xml) · [Contributing](CONTRIBUTING.md)
 
@@ -30,6 +30,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
     - [Reliability](#reliability)
     - [Privacy](#privacy)
     - [Fairness](#fairness)
+    - [Interpretability](#interpretability)
     - [Transparency & Accountability](#transparency--accountability)
   - [Cybersecurity Applications](#applications)
     - [Agent & Tool Security](#agent--tool-security)
@@ -73,6 +74,12 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [SanSi: A Looped Typed Decision Model for System 1.5 Thinking](https://arxiv.org/abs/2610.07730) — Trains typed readouts after repeated backbone loops; eight loops improve accuracy at fixed model shape, but cost more compute and calibrate worse than three loops. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.07730v1)
 - [Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation](https://arxiv.org/abs/2610.09328) — Trains a local Qwen verifier for joint reference identity and image conditions, then averages binary probabilities as an image-generation reward. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.09328v1)
 - [MetaEncoder: Exploring the Limit of Bi-Encoders for Multimodal System One Decision Making with Natural Language Interface](https://arxiv.org/abs/2610.11316) — Trains a multimodal bi-encoder with request-to-candidate contrastive learning; including options in requests improves closed-set decisions while retaining cached candidate embeddings. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.11316v1)
+- [VideoJev: System One Model for Video Understanding and Interaction](https://arxiv.org/abs/2610.18615) — Uses shared decision heads and reusable visual computation for temporal grounding and video QA; the authors report faster inference with comparable or improved task scores. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18615v1)
+- [Proactive Physical AI through Continuous Observation and Timely Intervention](https://arxiv.org/abs/2610.16967) — Introduces a Jev-style timing model that separates intervention decisions from response generation, with video-derived supervision for continuous physical-world observation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.16967v1)
+- [Jeva: System One Models from First Principles](https://arxiv.org/abs/2610.18773) — Introduces a decision architecture with independent option encoding, symmetric aggregation and separate coverage estimation to support permutation invariance, null outcomes and cached reuse. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18773v1)
+- [StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://arxiv.org/abs/2610.17309) — Combines single-pass Instant models with confidence-guided AutoThink reasoning; calibrated deliberative reinforcement learning reduces reasoning length while preserving reported accuracy. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.17309v1)
+- [Releasing the Inner Jev: A Simple Recipe for Open Decision Models](https://arxiv.org/abs/2610.17205) — Reads option-letter logits from instruction-tuned LMs and improves them with LoRA decision-head tuning; evaluates accuracy and calibration on OpenDecisions and JevBench. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.17205v1)
+- [FunDM: Cheap & Label-Free Decision Models from Frozen Language Models](https://arxiv.org/abs/2610.17175) — Distills frozen language-model probabilities into small decision heads without correctness labels, retaining most multiple-choice accuracy with fewer transformer layers. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.17175v1)
 
 **Projects and resources**
 
@@ -220,6 +227,9 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use](https://arxiv.org/abs/2610.04985) — Studies input manipulation, constrained-output privacy and defensive detection; official Jev API experiments and controlled NanoJev training experiments expose distinct risks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.04985v1) · [Code](https://github.com/shihe98/Security_Privacy_Jev)
 - [One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails](https://arxiv.org/abs/2610.12292) — Separates fail-open and fail-closed errors in open decision-model guardrails; misleading option names can reverse decisions when labels enter the model input. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.12292v1) · [Code](https://github.com/ArminAzizi98/option-channel-attack)
 - [Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation](https://arxiv.org/abs/2610.11436) — A colon edit increases false acceptance of explicitly wrong final answers under sorted request keys, while insertion-order requests reject both variants. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.11436v1)
+- [Same Attack, Different Judge: A First Controlled Adversarial Comparison of Jev, LLM Judges, and Purpose-Built Safety Classifiers](https://arxiv.org/abs/2610.17820) — Compares matched adversarial payloads across Jev, LLM judges and safety classifiers; Jev resists rule-based moderation attacks better than phishing attacks and has substantial benign false positives. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.17820v1)
+- [Poisoned into Action: Context Attacks on Typed Decision Workflows](https://arxiv.org/abs/2610.15537) — Traces poisoned context through retrieval, typed decisions and persisted state; defenses trade prevented violations against withheld correct automation in two synthetic workflows. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.15537v1)
+- [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18612v1)
 
 **Projects and resources**
 
@@ -295,6 +305,19 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [Code](https://anonymous.4open.science/r/jev-emp-5BF4/)
 - [Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models](https://zenodo.org/records/23287930) — On 799 coding-agent and command-safety items, Jev trails two general-purpose models in paired accuracy; its calibration interval crosses the study-defined ECE threshold. `Evaluation` · [PDF](https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content)
 - [Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions](https://zenodo.org/records/23293732) — Reuses the same 799-item bank with fresh Jev calls to compare seven decision models; only the reported Perplexity checkpoint has its full ECE interval below the study threshold. `Evaluation` · [PDF](https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content)
+- [Jev-ToM: Evaluating Theory of Mind in Typed Decision Models](https://arxiv.org/abs/2610.18610) — Evaluates typed models on 11,117 theory-of-mind questions; Jev leads several capabilities, while confidence filtering, supplied reasons and candidate expansion remain task-dependent. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18610v1)
+- [Recalibrating Many Questions with Few Labels: Minimax Rates and Identification Limits](https://arxiv.org/abs/2610.18488) — Derives minimax rates and identification limits for recalibrating related questions, with pooled isotonic fitting and held-out corrections under monotone calibration-map assumptions. `Method` · [PDF](https://arxiv.org/pdf/2610.18488v1)
+- [PRISM: Calibrating Black-Box Judges with Counterfactual Probes](https://arxiv.org/abs/2610.18389) — Uses counterfactual scoring probes and human-label regression to correct black-box judges; improves reported human-ranking agreement on summarization and story evaluation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18389v1)
+- [Consider, Then Choose: Order-Invariant Decisions in System One Models](https://arxiv.org/abs/2610.18233) — Combines independent option scoring with position-balanced runoff comparisons to remove option-order dependence; compares accuracy and inference cost against cyclic averaging. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18233v1)
+- [Does a Hosted Decision Model Respect Irrelevant Alternatives? A Pre-Registered Test of Option-Set Dependence in Jev](https://arxiv.org/abs/2610.16655) — Across 299,463 calls, adding low-probability alternatives shifts Jev's relative odds; independent binary scoring removes set dependence at an accuracy cost. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.16655v1)
+- [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579) — Pairs action choices with factual probes across agent states; most wrong actions follow correct reading, exposing failures of composition and sub-goal selection. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18579v1)
+- [How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs](https://arxiv.org/abs/2610.18529) — Tests accuracy, prompt stability and abstention across 15 medical datasets; Jev is stronger on text than numerical tasks, while recognizing missing answers remains difficult. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18529v1)
+- [Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments](https://arxiv.org/abs/2610.18497) — Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18497v1)
+- [Correct Choices, Failed Sequences: Choice2Seq Benchmarks Correctness Retention Across Output Interfaces](https://arxiv.org/abs/2610.16191) — Measures how often correct complete-answer selections survive sequential construction; Jev's high arithmetic and lexical selection accuracy can collapse under serial output interfaces. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.16191v1)
+- [RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification](https://arxiv.org/abs/2610.15742) — Replaces letter-token readout with cached prototype retrieval to improve cross-dataset classification and open-set abstention in Jev-style remote-sensing models. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.15742v1)
+- [Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate](https://arxiv.org/abs/2610.15710) — Separates established memory changes from suggestions; a three-way Jev gate reduces premature retirement but exceeds its preregistered detection-loss budget. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.15710v1)
+- [ProbabilityBench: Model Evaluation and Calibration with Exact Ground-Truth Uncertainty](https://arxiv.org/abs/2610.17016) — Defines simulated text tasks with exact conditional probabilities and Bayes error, enabling direct probability-quality evaluation and meta-evaluation of calibration metrics. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.17016v1)
+- [Knows Its Slips, Reads the Page: A Pre-registered Study of Confidence and Abstention in Jev, a Calibrated Decision Model](https://zenodo.org/records/23288651) — Confidence predicts errors beyond input difficulty but shifts with presentation; explicit abstention works directionally, while payoff sensitivity and label invariance fail in generated tasks. `Evaluation` · [PDF](https://zenodo.org/api/records/23288651/files/Jev_J1J2.pdf/content) · [Code](https://github.com/QAv2/agi-semantic-core)
 
 **Projects and resources**
 
@@ -446,10 +469,17 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 
 - [Calibrated to Whom? Persona and Language Effects on Cultural Values in JEV](https://arxiv.org/abs/2609.36399) — Audits persona and language effects despite highly repeatable answers. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.36399v1)
 - [The Argument and the Letterhead: Source-Position Coherence in AI Evaluation](https://arxiv.org/abs/2609.35286) — Separates source attribution from the quality of a fixed argument. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.35286v1)
+- [Cheap, Consistent, Calibrated, but Biased? Typed Decision Models as Judges](https://arxiv.org/abs/2610.18122) — Tests eight typed models on twelve CALM biases; calibration and consistency coexist with emotional-tone, position and attribution biases in pairwise judging. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18122v1)
 
 **Projects and resources**
 
 - [Fox-Islam/jev-bias-bench](https://github.com/Fox-Islam/jev-bias-bench) — Counterfactual fairness benchmark: swaps 29 demographic attributes (140 levels) one at a time across 10 high-stakes decision scenarios (hiring, lending, bail, clinical triage, etc.) on Jev (11,984 calls) and Claude Opus 5 (2,984 calls), measuring which swaps move the decision beyond the model's own noise. `Tool · Evaluation`
+
+<a id="trustworthiness-interpretability"></a>
+
+### Interpretability
+
+- [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780) — Audits source-to-decision handoffs with Jev to distinguish error introduction, propagation and repair; improves failure-step localization on five multi-agent benchmark subsets. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18780v1)
 
 <a id="trustworthiness-accountability"></a>
 
@@ -473,6 +503,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures](https://arxiv.org/abs/2609.29429) — Evaluates zero-shot detection of ten alignment-failure families. `Evaluation · Benchmark` · [PDF](https://arxiv.org/pdf/2609.29429v1) · [Code](https://github.com/sumleo/RLCDAlignBench.)
 - [COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints](https://arxiv.org/abs/2609.33671) — Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.33671v1)
 - [To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation](https://arxiv.org/abs/2610.03324) — Compares six decision-model configurations for hate-speech moderation; supplied definitions and question decomposition do not consistently improve agreement with labels. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.03324v1)
+- [Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees](https://arxiv.org/abs/2610.18326) — Routes audit contexts through editable policy trees and performs policy-conditioned safety classification; evaluates both standalone routing and agent permission gating. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.18326v1)
 
 **Projects and resources**
 
@@ -654,15 +685,16 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | Dataset / benchmark | Link type | Studies using it |
 |---|---|---|
 | [A-OKVQA](https://arxiv.org/abs/2609.29283) | Paper description | [PixelJev](https://arxiv.org/abs/2609.29283) |
+| [AG News](https://arxiv.org/abs/2610.16655) | Paper description | [Option-set dependence](https://arxiv.org/abs/2610.16655) |
 | [ALFWorld](https://github.com/alfworld/alfworld) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2609.34862) | Paper description | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | Dataset | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
 | [AndroidWorld](https://github.com/google-research/android_world) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BOTTLED](https://github.com/aktsonthalia/bottled) | Research artifact | [BOTTLED](https://arxiv.org/abs/2610.08775) |
-| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) |
+| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) |
 | [BoolQ](https://github.com/google-research-datasets/boolean-questions) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) |
 | [CASQO synthetic workloads](https://arxiv.org/abs/2610.08089) | Paper description | [Cost–accuracy semantic query plans](https://arxiv.org/abs/2610.08089) |
-| [CLINC150](https://github.com/clinc/oos-eval) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) |
+| [CLINC150](https://github.com/clinc/oos-eval) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) |
 | [CSS annotation suite (Ziems et al.)](https://github.com/hazemibrahim97/decision-models-css) | Research artifact | [Decision Models for CSS](https://arxiv.org/abs/2609.24574) |
 | [Candidate-coverage frozen cases (Lu and Wu)](https://arxiv.org/abs/2610.03387) | Paper description | [Candidate coverage](https://arxiv.org/abs/2610.03387) |
 | [ChaosNLI](https://github.com/easonnie/ChaosNLI) | Dataset | [ChaosNLI Audit](https://zenodo.org/records/23032384) · [Exact-target calibration audit](https://zenodo.org/records/23179064) |
@@ -685,8 +717,11 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [HakemBench v1.0](https://arxiv.org/abs/2610.06744) | Paper description | [ufakzeka-karar](https://arxiv.org/abs/2610.06744) |
 | [HellaSwag](https://rowanzellers.com/hellaswag/) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) |
 | [Hidden Risks task suite](https://github.com/shihe98/Security_Privacy_Jev) | Research artifact | [Hidden Risks of Jev](https://arxiv.org/abs/2610.04985) |
+| [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | Benchmark | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [JGLUE JNLI](https://github.com/yahoojapan/JGLUE) | Benchmark | [Jev selective prediction on JNLI](https://github.com/hshicalu/jev-selective-prediction) |
+| [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | Benchmark | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [Jev 13-benchmark evaluation](https://arxiv.org/abs/2610.11978) | Paper description | [Knowledge versus calculation](https://arxiv.org/abs/2610.11978) |
+| [Jev J1/J2 generated stimuli](https://github.com/QAv2/agi-semantic-core) | Benchmark | [Confidence and abstention](https://zenodo.org/records/23288651) |
 | [Jev OOD synthetic tickets](https://github.com/scienthoon/jev-ood-calibration/tree/main/data) | Dataset | [jev-ood-calibration](https://github.com/scienthoon/jev-ood-calibration) · [Jev hybrid calibration](https://github.com/gshrutha/jev-hybrid-calibration) |
 | [Jev PII evaluation suite](https://github.com/AlanViollier/jev-vs-pii#06--data) | Benchmark | [Jev PII benchmark](https://github.com/AlanViollier/jev-vs-pii) |
 | [Jev multi-teacher distillation suite](https://arxiv.org/abs/2610.09188) | Paper description | [Probabilities to Decisions](https://arxiv.org/abs/2610.09188) |
@@ -711,6 +746,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [SOM moderation benchmark suite](https://github.com/FedericoMz/som-moderation-benchmark) | Research artifact | [System One online moderation](https://arxiv.org/abs/2610.07953) |
 | [SST-2](https://arxiv.org/abs/2609.37647) | Paper description | [Jev-37](https://arxiv.org/abs/2609.37647) |
 | [SafetyBench-ZH](https://github.com/thu-coai/SafetyBench) | Benchmark | [COGNIT-Guard](https://arxiv.org/abs/2609.33671) |
+| [Same Attack phishing sample](https://arxiv.org/abs/2610.17820) | Paper description | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [SanSi decision suite](https://arxiv.org/abs/2610.07730) | Paper description | [SanSi](https://arxiv.org/abs/2610.07730) |
 | [ScienceQA](https://scienceqa.github.io/) | Dataset | [PixelJev](https://arxiv.org/abs/2609.29283) |
 | [Scientific semantic-choice cases](https://arxiv.org/abs/2609.24965) | Paper description | [Scientific Decisions](https://arxiv.org/abs/2609.24965) |
