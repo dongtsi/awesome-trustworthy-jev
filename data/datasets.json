@@ -323,5 +323,15 @@
     "url": "https://arxiv.org/abs/2610.16655",
     "type": "paper",
     "checked": "2026-10-14"
+  },
+  "Risk-budgeted six-dataset suite": {
+    "url": "https://arxiv.org/abs/2610.19811",
+    "type": "paper",
+    "checked": "2026-10-15"
+  },
+  "Typed-workflow context poisoning tasks": {
+    "url": "https://github.com/WuXixiong/jev-poisoning-bench",
+    "type": "paper",
+    "checked": "2026-10-15"
   }
 }

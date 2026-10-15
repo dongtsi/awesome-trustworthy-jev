@@ -6,6 +6,62 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks</title>
+      <link>https://arxiv.org/abs/2610.19971</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19971#publication</guid>
+      <description>Uses multidimensional probabilistic judge feedback to guide query-budgeted jailbreak optimization and evaluates target-query efficiency and output filtering.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?</title>
+      <link>https://arxiv.org/abs/2610.19856</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19856#publication</guid>
+      <description>Tests regular-to-fallback switching and equivalent fallback definitions; correct category recognition does not reliably yield correct fallback execution.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Calibration and Risk-Budgeted Decisions with System One Models</title>
+      <link>https://arxiv.org/abs/2610.19811</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19811#publication</guid>
+      <description>Uses Learn Then Test to select utility actions under a risk budget and conservative fallback; reports fewer target-risk violations than naive threshold selection across six datasets.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop</title>
+      <link>https://arxiv.org/abs/2610.19644</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19644#publication</guid>
+      <description>Combines a candidate reader with reasoning-start, read and stop policies; measures accuracy, generated work and pipeline time under matched-prefix controls.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Are AI Decision Models Biased? A Case Study of Jev</title>
+      <link>https://arxiv.org/abs/2610.19619</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19619#publication</guid>
+      <description>Tests cognitive and demographic biases and extends conjunction tasks; stable selected answers can conceal probability shifts, numerical anchoring and option-order sensitivity.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JevCoder: When Does Decision Delegation Pay Off in Code Repair?</title>
+      <link>https://arxiv.org/abs/2610.19596</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19596#publication</guid>
+      <description>Studies which code-repair decisions benefit from delegation; on 400 shared tasks, the reported Jev workflow reduces repair-model token use while improving observed repair rates.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Typed Decision Models on Tabular Data</title>
+      <link>https://arxiv.org/abs/2610.19536</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19536#publication</guid>
+      <description>Compares decision models and LLMs under 21 content-preserving table and question rewrites; lower-cost typed decisions remain sensitive to table organization.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision</title>
+      <link>https://arxiv.org/abs/2610.19118</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.19118#publication</guid>
+      <description>Benchmarks text and visual attacks with held-out target models; robustness varies by task and attack, and label-consistency checks reduce apparent attack success.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems</title>
       <link>https://arxiv.org/abs/2610.18780</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.18780#publication</guid>

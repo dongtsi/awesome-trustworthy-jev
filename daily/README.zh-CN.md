@@ -2,8 +2,19 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-14
+
+- [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) — 用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。 `评测` · [PDF](https://arxiv.org/pdf/2610.19971v1)
+- [Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?](https://arxiv.org/abs/2610.19856) — 测试常规选项与回退选项切换及等价回退定义；正确识别类别并不可靠地转化为正确执行回退规则。 `评测` · [PDF](https://arxiv.org/pdf/2610.19856v1)
+- [Calibration and Risk-Budgeted Decisions with System One Models](https://arxiv.org/abs/2610.19811) — 通过 Learn Then Test 在风险预算和保守回退条件下选择效用动作；六个数据集上违反目标风险的比例低于朴素阈值选择。 `评测` · [PDF](https://arxiv.org/pdf/2610.19811v1)
+- [Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop](https://arxiv.org/abs/2610.19644) — 结合候选读出器与推理启动、读取及停止策略；用匹配前缀对照测量准确率、生成工作量和流水线时间。 `评测` · [PDF](https://arxiv.org/pdf/2610.19644v1)
+- [Are AI Decision Models Biased? A Case Study of Jev](https://arxiv.org/abs/2610.19619) — 测试认知与人口属性偏差并扩展合取任务；所选答案稳定仍可能掩盖概率漂移、数值锚定及选项顺序敏感性。 `评测` · [PDF](https://arxiv.org/pdf/2610.19619v1)
+- [JevCoder: When Does Decision Delegation Pay Off in Code Repair?](https://arxiv.org/abs/2610.19596) — 研究哪些代码修复决策适合委托；在 400 道共同任务上，报告的 Jev 工作流减少修复模型令牌用量，并提高观察到的修复率。 `评测` · [PDF](https://arxiv.org/pdf/2610.19596v1)
+- [Typed Decision Models on Tabular Data](https://arxiv.org/abs/2610.19536) — 通过 21 类保留内容的表格和问题改写比较决策模型与 LLM；成本较低的类型化决策仍对表格组织方式敏感。 `评测` · [PDF](https://arxiv.org/pdf/2610.19536v1)
+
 ## 2026-10-13
 
+- [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118) — 以留出目标模型评测文本与视觉攻击；鲁棒性随任务和攻击类型变化，标签一致性复核会降低表观攻击成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.19118v1)
 - [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780) — 用 Jev 审计信息来源到决策的交接，区分错误引入、传播和修复；在五组多智能体基准子集上改善故障步骤定位。 `评测` · [PDF](https://arxiv.org/pdf/2610.18780v1)
 - [Jeva: System One Models from First Principles](https://arxiv.org/abs/2610.18773) — 通过独立选项编码、对称聚合和单独覆盖估计，构建支持排列不变性、空答案与缓存复用的决策架构。 `评测` · [PDF](https://arxiv.org/pdf/2610.18773v1)
 - [VideoJev: System One Model for Video Understanding and Interaction](https://arxiv.org/abs/2610.18615) — 通过共享决策头和视觉计算复用完成时序定位与视频问答；作者报告推理提速，任务得分相当或提高。 `评测` · [PDF](https://arxiv.org/pdf/2610.18615v1)
@@ -34,7 +45,7 @@
 - [Jev, OpenAI, AWS, Perplexity: Do Decision Models Know When They're Wrong?: A pre-registered test of the calibration and accuracy of seven decision models on the same 799 unpublished yes/no decisions](https://zenodo.org/records/23293732) — 复用同一套 799 题并重新调用 Jev，比较七个决策模型；仅报告中的 Perplexity 检查点 ECE 区间整体低于研究阈值。 `评测` · [PDF](https://zenodo.org/api/records/23293732/files/SILT-RP-010-v1.0.pdf/content)
 - [RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification](https://arxiv.org/abs/2610.15742) — 以缓存原型检索替换字母令牌读出，改善 Jev 风格遥感模型的跨数据集分类与开放集弃答。 `评测` · [PDF](https://arxiv.org/pdf/2610.15742v1)
 - [Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate](https://arxiv.org/abs/2610.15710) — 区分已确立的记忆变更与暗示性变更；三分类 Jev 门控减少过早删除，但检出率损失超过预注册预算。 `评测` · [PDF](https://arxiv.org/pdf/2610.15710v1)
-- [Poisoned into Action: Context Attacks on Typed Decision Workflows](https://arxiv.org/abs/2610.15537) — 追踪投毒上下文经检索、类型化决策进入持久状态的过程；两个合成工作流显示，防御阻止违规的同时也会扣留正确自动化操作。 `评测` · [PDF](https://arxiv.org/pdf/2610.15537v1)
+- [Poisoned into Action: Context Attacks on Typed Decision Workflows](https://arxiv.org/abs/2610.15537) — 追踪投毒上下文经检索、类型化决策进入持久状态的过程；两个合成工作流显示，防御阻止违规的同时也会扣留正确自动化操作。 `评测` · [PDF](https://arxiv.org/pdf/2610.15537v1) · [代码](https://github.com/WuXixiong/jev-poisoning-bench)
 
 ## 2026-10-10
 

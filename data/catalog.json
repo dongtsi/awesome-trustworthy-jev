@@ -10380,17 +10380,17 @@
     "kind": "Official",
     "scope": "Jev",
     "date": "",
-    "updated": "",
+    "updated": "2026-10-14",
     "added": "2026-10-02",
     "url": "https://docs.typesafe.ai/models.md",
     "pdf": "",
     "code": "",
-    "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
-    "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
+    "version": "checked-2026-10-15",
+    "summary": "Lists Jev 1.14 preview and Jev 1.13 stable, version-pinned IDs and opt-in extended context; current aliases must be distinguished from versioned models.",
+    "summary_zh": "列出 Jev 1.14 预览、Jev 1.13 稳定版、固定版本 ID 与可选扩展上下文；应区分动态别名和具体版本。",
+    "limitation": "At the check date, jev-preview points to 1.14.0 and jev-latest to 1.13.0. Experimental images require an opt-in flag despite the default model table listing text input.",
     "evidence": "Vendor",
-    "review": "Source archived",
+    "review": "Models page and linked release, images and Box documentation read",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -10400,8 +10400,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Lists Jev 1.14 preview and Jev 1.13 stable, version-pinned IDs and opt-in extended context; current aliases must be distinguished from versioned models.",
+    "brief_zh": "列出 Jev 1.14 预览、Jev 1.13 稳定版、固定版本 ID 与可选扩展上下文；应区分动态别名和具体版本。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -15334,8 +15334,12 @@
     "scope": "hosted-jev",
     "schema_version": 2,
     "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Natural retrieval yields 5/60 standalone-payload violations and 1/60 paired violations. Source gating blocks the paired violation but withholds correct actions; an empty-scope repair restores 12 clean executions. All three prespecified contrasts are nonsignificant after Holm correction; repeated development tasks are not independent workflow replication.",
+    "code": "https://github.com/WuXixiong/jev-poisoning-bench",
+    "datasets": [
+      "Typed-workflow context poisoning tasks"
+    ]
   },
   {
     "id": "2610.18497",
@@ -15782,5 +15786,389 @@
     "datasets": [
       "Jev J1/J2 generated stimuli"
     ]
+  },
+  {
+    "id": "2610.19596",
+    "title": "JevCoder: When Does Decision Delegation Pay Off in Code Repair?",
+    "short": "JevCoder",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19596",
+    "pdf": "https://arxiv.org/pdf/2610.19596v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19596v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Jiahao Zhang",
+      "Yifan Zhang",
+      "Yu Huang"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies which code-repair decisions benefit from delegation; on 400 shared tasks, the reported Jev workflow reduces repair-model token use while improving observed repair rates.",
+    "brief_zh": "研究哪些代码修复决策适合委托；在 400 道共同任务上，报告的 Jev 工作流减少修复模型令牌用量，并提高观察到的修复率。",
+    "summary": "Studies which code-repair decisions benefit from delegation; on 400 shared tasks, the reported Jev workflow reduces repair-model token use while improving observed repair rates.",
+    "summary_zh": "研究哪些代码修复决策适合委托；在 400 道共同任务上，报告的 Jev 工作流减少修复模型令牌用量，并提高观察到的修复率。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19536",
+    "title": "Typed Decision Models on Tabular Data",
+    "short": "Tabular decision robustness",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19536",
+    "pdf": "https://arxiv.org/pdf/2610.19536v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19536v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Baowen Zhang",
+      "Hangting Ye",
+      "Hongyuan Zha"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares decision models and LLMs under 21 content-preserving table and question rewrites; lower-cost typed decisions remain sensitive to table organization.",
+    "brief_zh": "通过 21 类保留内容的表格和问题改写比较决策模型与 LLM；成本较低的类型化决策仍对表格组织方式敏感。",
+    "summary": "Compares decision models and LLMs under 21 content-preserving table and question rewrites; lower-cost typed decisions remain sensitive to table organization.",
+    "summary_zh": "通过 21 类保留内容的表格和问题改写比较决策模型与 LLM；成本较低的类型化决策仍对表格组织方式敏感。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19619",
+    "title": "Are AI Decision Models Biased? A Case Study of Jev",
+    "short": "Jev cognitive and social biases",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19619",
+    "pdf": "https://arxiv.org/pdf/2610.19619v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19619v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Ilaria Imperatrice",
+      "Taisia Kameneva",
+      "Adam Eric Greenberg",
+      "Alessandro Romano"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/fairness"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests cognitive and demographic biases and extends conjunction tasks; stable selected answers can conceal probability shifts, numerical anchoring and option-order sensitivity.",
+    "brief_zh": "测试认知与人口属性偏差并扩展合取任务；所选答案稳定仍可能掩盖概率漂移、数值锚定及选项顺序敏感性。",
+    "summary": "Tests cognitive and demographic biases and extends conjunction tasks; stable selected answers can conceal probability shifts, numerical anchoring and option-order sensitivity.",
+    "summary_zh": "测试认知与人口属性偏差并扩展合取任务；所选答案稳定仍可能掩盖概率漂移、数值锚定及选项顺序敏感性。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19118",
+    "title": "DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision",
+    "short": "DecisionRobust",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19118",
+    "pdf": "https://arxiv.org/pdf/2610.19118v1",
+    "date": "2026-10-13",
+    "updated": "2026-10-13",
+    "version": "2610.19118v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Yifan Lan",
+      "Zhongye Liu",
+      "Yurui Chang",
+      "Hanyu Wang",
+      "Yongkang Du",
+      "Lu Lin",
+      "Jinghui Chen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks text and visual attacks with held-out target models; robustness varies by task and attack, and label-consistency checks reduce apparent attack success.",
+    "brief_zh": "以留出目标模型评测文本与视觉攻击；鲁棒性随任务和攻击类型变化，标签一致性复核会降低表观攻击成功率。",
+    "summary": "Benchmarks text and visual attacks with held-out target models; robustness varies by task and attack, and label-consistency checks reduce apparent attack success.",
+    "summary_zh": "以留出目标模型评测文本与视觉攻击；鲁棒性随任务和攻击类型变化，标签一致性复核会降低表观攻击成功率。",
+    "theme": "Robustness",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19856",
+    "title": "Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?",
+    "short": "Paired Fallback Robustness",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19856",
+    "pdf": "https://arxiv.org/pdf/2610.19856v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19856v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Yuanbo Xie",
+      "Mingli Zhu",
+      "Tianyun Liu",
+      "Yingjie Zhang",
+      "Haixiao Xiong",
+      "Tingwen Liu"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests regular-to-fallback switching and equivalent fallback definitions; correct category recognition does not reliably yield correct fallback execution.",
+    "brief_zh": "测试常规选项与回退选项切换及等价回退定义；正确识别类别并不可靠地转化为正确执行回退规则。",
+    "summary": "Tests regular-to-fallback switching and equivalent fallback definitions; correct category recognition does not reliably yield correct fallback execution.",
+    "summary_zh": "测试常规选项与回退选项切换及等价回退定义；正确识别类别并不可靠地转化为正确执行回退规则。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19811",
+    "title": "Calibration and Risk-Budgeted Decisions with System One Models",
+    "short": "Risk-budgeted decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19811",
+    "pdf": "https://arxiv.org/pdf/2610.19811v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19811v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Soundouss Messoudi",
+      "Youness Mansar"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses Learn Then Test to select utility actions under a risk budget and conservative fallback; reports fewer target-risk violations than naive threshold selection across six datasets.",
+    "brief_zh": "通过 Learn Then Test 在风险预算和保守回退条件下选择效用动作；六个数据集上违反目标风险的比例低于朴素阈值选择。",
+    "summary": "Uses Learn Then Test to select utility actions under a risk budget and conservative fallback; reports fewer target-risk violations than naive threshold selection across six datasets.",
+    "summary_zh": "通过 Learn Then Test 在风险预算和保守回退条件下选择效用动作；六个数据集上违反目标风险的比例低于朴素阈值选择。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Reported LTT test-risk exceedance is 7.8% among settings with defined risk, trading policy availability for utility. The theorem assumes independent same-distribution calibration and deployment; finite-test exceedance is not a per-input safety guarantee. One split seed, truncated trajectories and constructed reranking mixtures limit transfer.",
+    "datasets": [
+      "Risk-budgeted six-dataset suite"
+    ]
+  },
+  {
+    "id": "2610.19644",
+    "title": "Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop",
+    "short": "Selective typed reasoning",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19644",
+    "pdf": "https://arxiv.org/pdf/2610.19644v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19644v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Bin Zheng",
+      "Zheng Chen"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines a candidate reader with reasoning-start, read and stop policies; measures accuracy, generated work and pipeline time under matched-prefix controls.",
+    "brief_zh": "结合候选读出器与推理启动、读取及停止策略；用匹配前缀对照测量准确率、生成工作量和流水线时间。",
+    "summary": "Combines a candidate reader with reasoning-start, read and stop policies; measures accuracy, generated work and pipeline time under matched-prefix controls.",
+    "summary_zh": "结合候选读出器与推理启动、读取及停止策略；用匹配前缀对照测量准确率、生成工作量和流水线时间。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.19971",
+    "title": "Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks",
+    "short": "Jev-Guided Strategy Bandit",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.19971",
+    "pdf": "https://arxiv.org/pdf/2610.19971v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.19971v1",
+    "added": "2026-10-15",
+    "authors": [
+      "Yixin Tan",
+      "Chia-Yi Hsu",
+      "Jiayang Liu",
+      "Chia-Mu Yu",
+      "Rui Wen"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses multidimensional probabilistic judge feedback to guide query-budgeted jailbreak optimization and evaluates target-query efficiency and output filtering.",
+    "brief_zh": "用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。",
+    "summary": "Uses multidimensional probabilistic judge feedback to guide query-budgeted jailbreak optimization and evaluates target-query efficiency and output filtering.",
+    "summary_zh": "用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。",
+    "theme": "Robustness",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "r-616037433c",
+    "title": "Jev: For the builders AND dreamers",
+    "short": "Jev 1.14 release",
+    "kind": "Official",
+    "url": "https://typesafe.ai/blog/jev-1-14",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "added": "2026-10-15",
+    "version": "checked-2026-10-15",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Announces Jev 1.14 preview and experimental image input, Box localization and extended context; vendor measurements are not independent reliability evidence.",
+    "brief_zh": "发布 Jev 1.14 预览及实验性图像输入、Box 定位和扩展上下文；厂商测量不构成独立可靠性证据。",
+    "summary": "Announces Jev 1.14 preview and experimental image input, Box localization and extended context; vendor measurements are not independent reliability evidence.",
+    "summary_zh": "发布 Jev 1.14 预览及实验性图像输入、Box 定位和扩展上下文；厂商测量不构成独立可靠性证据。",
+    "theme": "Official",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Official documentation",
+    "review": "Original page read",
+    "limitation": "Experimental opt-in features; no independent performance validation."
+  },
+  {
+    "id": "r-c5e35ba4da",
+    "title": "Images in System One requests",
+    "short": "Image input",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/images.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-10-15",
+    "version": "checked-2026-10-15",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Documents opt-in image assets in state, instructions and criteria for Jev 1.13 and 1.14; the feature is explicitly experimental.",
+    "brief_zh": "说明 Jev 1.13 与 1.14 在状态、指令和判据中使用需显式启用的图像资产；该能力明确为实验性质。",
+    "summary": "Documents opt-in image assets in state, instructions and criteria for Jev 1.13 and 1.14; the feature is explicitly experimental.",
+    "summary_zh": "说明 Jev 1.13 与 1.14 在状态、指令和判据中使用需显式启用的图像资产；该能力明确为实验性质。",
+    "theme": "Official",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Official documentation",
+    "review": "Original page read",
+    "limitation": "Experimental opt-in features; no independent performance validation."
+  },
+  {
+    "id": "r-c445191a5f",
+    "title": "Box questions",
+    "short": "Box localization",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/primitives/box.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-10-15",
+    "version": "checked-2026-10-15",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Documents single-box localization in Jev 1.14; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
+    "brief_zh": "说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
+    "summary": "Documents single-box localization in Jev 1.14; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
+    "summary_zh": "说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
+    "theme": "Official",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Official documentation",
+    "review": "Original page read",
+    "limitation": "Experimental opt-in features; no independent performance validation."
   }
 ]

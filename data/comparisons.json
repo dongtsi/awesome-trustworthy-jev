@@ -1265,5 +1265,47 @@
     },
     "source_section": "Version 2, Sections 2–4.6",
     "source": "https://zenodo.org/api/records/23288651/files/Jev_J1J2.pdf/content"
+  },
+  {
+    "id": "2610.19811",
+    "category": "trustworthiness",
+    "datasets": [
+      "Risk-budgeted six-dataset suite"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation suite",
+      "zh": "原文定义的评测集合"
+    },
+    "design": {
+      "en": "Six English datasets with fit/calibration/test partitions; fixed fit-score threshold grid, LTT at delta .10 across six risk budgets, and 1,000 test-row bootstrap resamples. Reranking uses one candidate per query.",
+      "zh": "六个英文数据集分为拟合/校准/测试集；以拟合分数构造阈值网格，LTT 使用 delta .10 与六档风险预算，测试行自助采样 1,000 次；重排每个查询取一个候选。"
+    },
+    "reading": {
+      "en": "Reported LTT test-risk exceedance is 7.8% among settings with defined risk, trading policy availability for utility. The theorem assumes independent same-distribution calibration and deployment; finite-test exceedance is not a per-input safety guarantee. One split seed, truncated trajectories and constructed reranking mixtures limit transfer.",
+      "zh": "在测试风险有定义的配置中，LTT 超预算比例为 7.8%，并以策略可用性换取风险控制。定理依赖校准与部署独立同分布；有限测试的超预算比例不是逐输入安全保证。单次划分种子、截断轨迹与构造重排混合限制外推。"
+    },
+    "source_section": "Sections 3–6, Limitations, Appendices B.2–B.5",
+    "source": "https://arxiv.org/pdf/2610.19811v1"
+  },
+  {
+    "id": "2610.15537",
+    "category": "trustworthiness",
+    "datasets": [
+      "Typed-workflow context poisoning tasks"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation suite",
+      "zh": "原文定义的评测集合"
+    },
+    "design": {
+      "en": "1,659 fresh calls on 20 previously used development tasks from two synthetic workflows; three calls per condition, an answer-key-blind executor, persisted-state checks and task-level bootstrap/sign tests with Holm correction.",
+      "zh": "两个合成工作流中 20 道曾使用的开发题，1,659 次新调用，每条件三次；执行器不看答案键，检查持久状态，以任务为单位自助法/符号检验并做 Holm 校正。"
+    },
+    "reading": {
+      "en": "Natural retrieval yields 5/60 standalone-payload violations and 1/60 paired violations. Source gating blocks the paired violation but withholds correct actions; an empty-scope repair restores 12 clean executions. All three prespecified contrasts are nonsignificant after Holm correction; repeated development tasks are not independent workflow replication.",
+      "zh": "自然检索下独立载荷违规 5/60、组合载荷违规 1/60。来源门控阻止后者却扣留正确动作，空范围修复恢复 12 次干净执行。三项预定对比经 Holm 校正均不显著，重复开发题不构成独立工作流复现。"
+    },
+    "source_section": "Sections 3–5.6 and Appendix A",
+    "source": "https://arxiv.org/pdf/2610.15537v1"
   }
 ]
