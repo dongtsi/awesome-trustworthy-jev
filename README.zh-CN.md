@@ -10,7 +10,7 @@
 
 Jev 模型基础、自身可信性，以及网络与系统安全应用的论文、模型、项目和技术文档。
 
-共 `425` 条资源 · `142` 篇论文 · `247` 个项目 · `26` 份官方文档 · `10` 篇文章
+共 `435` 条资源 · `152` 篇论文 · `247` 个项目 · `26` 份官方文档 · `10` 篇文章
 
 **[打开在线资料库 →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=zh)** · [每日论文](daily/README.zh-CN.md) · [RSS](feed.xml) · [提交资料](CONTRIBUTING.md)
 
@@ -80,6 +80,9 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://arxiv.org/abs/2610.17309) — 结合单次前向 Instant 模型与置信引导的 AutoThink 推理；校准式审慎决策强化学习缩短推理，同时保持报告的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.17309v1)
 - [Releasing the Inner Jev: A Simple Recipe for Open Decision Models](https://arxiv.org/abs/2610.17205) — 从指令模型读取选项字母 logits，并用 LoRA 决策头微调改善表现；在 OpenDecisions 与 JevBench 上评估准确率和校准。 `评测` · [PDF](https://arxiv.org/pdf/2610.17205v1)
 - [FunDM: Cheap & Label-Free Decision Models from Frozen Language Models](https://arxiv.org/abs/2610.17175) — 无需正确答案标签，将冻结语言模型的概率蒸馏到小型决策头，以更少 Transformer 层保留大部分多选准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.17175v1)
+- [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)
+- [Qwen-Audio-Jev: A Unified Interface for Audio Decisions](https://arxiv.org/abs/2610.21614) — 为音频骨干加入 CHOICE、NOUL 和 SCORE 类型化读出；报告 18 个标注配置的结果及相对生成式骨干约 20 倍的推理加速。 `评测` · [PDF](https://arxiv.org/pdf/2610.21614v1)
+- [Verdict: Encode Once, Decide Many](https://arxiv.org/abs/2610.20778) — 以问题无关的共享状态编码回答多个类型化问题并保持选项不变性；提高与软标签的一致性，同时揭示取消问题感知状态编码的准确率—时延代价。 `评测` · [PDF](https://arxiv.org/pdf/2610.20778v1)
 
 **项目与技术资料**
 
@@ -154,7 +157,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [TypeSafe · how-to-build-with-system-one](https://docs.typesafe.ai/concepts/how-to-build-with-system-one.md) — Official interface documentation and deployment guidance. `文档`
 - [TypeSafe · introduction](https://docs.typesafe.ai/introduction.md) — Official interface documentation and deployment guidance. `文档`
 - [Jev: For the builders AND dreamers](https://typesafe.ai/blog/jev-1-14) — 发布 Jev 1.14 预览及实验性图像输入、Box 定位和扩展上下文；厂商测量不构成独立可靠性证据。 `文档`
-- [Images in System One requests](https://docs.typesafe.ai/images.md) — 说明 Jev 1.13 与 1.14 在状态、指令和判据中使用需显式启用的图像资产；该能力明确为实验性质。 `文档`
+- [Images in System One requests](https://docs.typesafe.ai/images.md) — 说明 Jev 1.13 和 1.14 的实验性图像输入；每边须为280–1568像素，并受PNG/JPEG格式及请求大小限制。 `文档`
 - [Box questions](https://docs.typesafe.ai/primitives/box.md) — 说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。 `文档`
 
 （另见：[calfram-bench](https://github.com/lorenzofamiglini/calfram-bench) · [Traffic Classification](https://arxiv.org/abs/2610.00376) · [Ordinal Bias](https://arxiv.org/abs/2609.38827) · [jev-dice](https://github.com/pobooo/jev-dice) · [JET](https://arxiv.org/abs/2609.33874) · [zh-decision-bench](https://github.com/CodyQin/zh-decision-bench) · [jevbench](https://github.com/GautamTalksDev/jevbench) · [Early Evidence Audit](https://arxiv.org/abs/2609.32160) · [JevOut](https://github.com/xzx34/JevOut) · [jev-field-report](https://github.com/manankumarthakkar/jev-field-report) · [jev-escalation-gate](https://github.com/manankumarthakkar/jev-escalation-gate) · [Jev in the Wild](https://arxiv.org/abs/2609.30216) · [Private Edge](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500140) · [Jev-Persian-Benchmark](https://github.com/ArmanJR/Jev-Persian-Benchmark) · [Visual Jev](https://arxiv.org/abs/2609.25845) · [typesafe-ai-jev-example](https://github.com/ItBayMax/typesafe-ai-jev-example) · [jevshield](https://github.com/lgy1027/jevshield) · [this-that-model](https://arxiv.org/abs/2609.23886) · [jev-as-a-judge](https://github.com/danielgshea/jev-as-a-judge) · [jev-guard](https://github.com/leepokai/jev-guard) · [can-you-trust-jev-confidence](https://anth.us/blog/can-you-trust-jev-confidence) · [typesafe-jev-pre-registered-test](https://primeline.cc/blog/typesafe-jev-pre-registered-test) · [jev-arena](https://github.com/meetr1912/jev-arena) · [jev-noul-vs-choice](https://github.com/TakumiNoguchi2004/jev-noul-vs-choice) · [jev-deterministic-benchmark](https://github.com/etsabary/jev-deterministic-benchmark) · [jev-playground](https://github.com/kobashi/jev-playground) · [jev-audit](https://github.com/phuthuycoding/jev-audit) · [browser-jev](https://github.com/DowLucas/browser-jev) · [jev-synthetic-survey](https://github.com/jjd-lab/jev-synthetic-survey) · [jev-heart-risk-bench](https://github.com/rubinagentagi-tech/jev-heart-risk-bench) · [jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study) · [jev-calibrate](https://github.com/smkrv/jev-calibrate) · [structured-decision-bench](https://github.com/zhengbangbo/structured-decision-bench) · [opencode-jev-compaction](https://github.com/JLegends/opencode-jev-compaction) · [jevfuzz](https://github.com/yottayoshida/jevfuzz) · [Jev-Calibration](https://github.com/AnthusAI/Jev-Calibration) · [jev-skills](https://github.com/WanLanglin/jev-skills) · [jev-probability-experiment](https://github.com/simonmesmith/jev-probability-experiment) · [jev-biomedical-evidence-screening](https://github.com/cx295410-dot/jev-biomedical-evidence-screening) · [Dyad](https://arxiv.org/abs/2609.36116) · [Calibration composition](https://zenodo.org/records/23064668) · [GraphDecide](https://arxiv.org/abs/2610.06354) · [HVAC reasoning and shift](https://arxiv.org/abs/2610.09937) · [MetaEncoder](https://arxiv.org/abs/2610.11316) · [JevKT cold-start evaluation](https://arxiv.org/abs/2610.11135)）
@@ -173,6 +176,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [FastJEV: Understanding Redundancy for Compact JEV Inference](https://arxiv.org/abs/2610.11379) — 为 OmniJev 结合上下文状态复用、候选前缀共享及层剪枝；计算结构更紧凑不保证实测时延下降。 `评测` · [PDF](https://arxiv.org/pdf/2610.11379v1)
 - [JevForest: Path Voting for Budgeted Feature Acquisition](https://arxiv.org/abs/2610.10615) — 通过树路径投票在特征预算内选择语义问题；试验中较少的顺序问题比批量提问更贵。 `评测` · [PDF](https://arxiv.org/pdf/2610.10615v1)
 - [Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop](https://arxiv.org/abs/2610.19644) — 结合候选读出器与推理启动、读取及停止策略；用匹配前缀对照测量准确率、生成工作量和流水线时间。 `评测` · [PDF](https://arxiv.org/pdf/2610.19644v1)
+- [Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows](https://arxiv.org/abs/2610.21411) — 将专家路由和产物筛查与生成式执行、反馈分开；报告相对 LAS 减少 12.7–54.6% 生成令牌，准确率差距控制在 1.34 个百分点内。 `评测` · [PDF](https://arxiv.org/pdf/2610.21411v1)
 
 **项目与技术资料**
 
@@ -236,6 +240,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — 在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.18612v1)
 - [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118) — 以留出目标模型评测文本与视觉攻击；鲁棒性随任务和攻击类型变化，标签一致性复核会降低表观攻击成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.19118v1)
 - [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) — 用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。 `评测` · [PDF](https://arxiv.org/pdf/2610.19971v1)
+- [From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection](https://arxiv.org/abs/2610.20907) — 在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。 `评测` · [PDF](https://arxiv.org/pdf/2610.20907v1) · [代码](https://github.com/lanqianlong/calibrated-decision-models)
 
 **项目与技术资料**
 
@@ -328,6 +333,11 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Typed Decision Models on Tabular Data](https://arxiv.org/abs/2610.19536) — 通过 21 类保留内容的表格和问题改写比较决策模型与 LLM；成本较低的类型化决策仍对表格组织方式敏感。 `评测` · [PDF](https://arxiv.org/pdf/2610.19536v1)
 - [Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?](https://arxiv.org/abs/2610.19856) — 测试常规选项与回退选项切换及等价回退定义；正确识别类别并不可靠地转化为正确执行回退规则。 `评测` · [PDF](https://arxiv.org/pdf/2610.19856v1)
 - [Calibration and Risk-Budgeted Decisions with System One Models](https://arxiv.org/abs/2610.19811) — 通过 Learn Then Test 在风险预算和保守回退条件下选择效用动作；六个数据集上违反目标风险的比例低于朴素阈值选择。 `评测` · [PDF](https://arxiv.org/pdf/2610.19811v1)
+- [System1-Arena: Which Decisions Can Be Left to System 1?](https://arxiv.org/abs/2610.21244) — 在 9.2 万问题和 138 个闭环环境中评测决策概率；较强的静态决策准确率并不一致转化为 Agent 成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.21244v1)
+- [Prism-1: Position- and Rival-Independent Scoring for System One Models](https://arxiv.org/abs/2610.22066) — 以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.22066v1)
+- [Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents](https://arxiv.org/abs/2610.20927) — 用 Jev 删除缺少环境输出或前序摘要支持的压缩条目；报告在 AppWorld 和 OfficeBench 上提高跨运行可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2610.20927v1)
+- [JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs](https://arxiv.org/abs/2610.21412) — 在 Agent 轨迹上拟合委托阈值，并用实际到达状态训练 4B 决策模型；发现孤立问题准确率不能代表闭环任务成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.21412v1)
+- [The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock](https://arxiv.org/abs/2610.20665) — 在 180 个实时任务中评测，并由慢教师在尝试间教导快学生；报告两轮后 Jev 测试分数从 13.51 提高至 24.19。 `评测` · [PDF](https://arxiv.org/pdf/2610.20665v1)
 
 **项目与技术资料**
 
@@ -720,6 +730,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [EPANET Net3](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [FastJEV six-set evaluation](https://arxiv.org/abs/2610.11379) | 论文说明 | [FastJEV](https://arxiv.org/abs/2610.11379) |
 | [FinQA citation-swap audit](https://arxiv.org/abs/2610.08675) | 论文说明 | [Same-number citation swaps](https://arxiv.org/abs/2610.08675) |
+| [Frozen prompt-injection deferral cohort](https://github.com/lanqianlong/calibrated-decision-models) | 论文说明 | [Calibration and Deferral](https://arxiv.org/abs/2610.20907) |
 | [GQA](https://cs.stanford.edu/people/dorarad/gqa/about.html) | 数据集 | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [GraphDecide](https://github.com/VictorYXL/JevGraphBench) | 研究材料 | [GraphDecide](https://arxiv.org/abs/2610.06354) |
 | [GuardBench](https://github.com/ArminAzizi98/option-channel-attack) | 研究材料 | [Option-channel guardrail attack](https://arxiv.org/abs/2610.12292) |
@@ -767,6 +778,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [SoK-JEV evidence corpus](https://github.com/OniReimu/SoK-JEV) | 研究材料 | [Semantic engines in control loops](https://arxiv.org/abs/2610.06425) |
 | [Sys1Cal-v1](https://arxiv.org/abs/2609.35342) | 论文说明 | [Sys1Cal-v1](https://arxiv.org/abs/2609.35342) |
 | [System Switch Doom decisions](https://arxiv.org/abs/2610.09683) | 论文说明 | [System Switch](https://arxiv.org/abs/2610.09683) |
+| [Tabular decision rewrite suite](https://arxiv.org/abs/2610.19536) | 论文说明 | [Tabular decision robustness](https://arxiv.org/abs/2610.19536) |
 | [Texas crash narratives / human audit](https://github.com/pozapas/jev-calibrated-narrative-coding) | 研究材料 | [Calibrated Decisions at Scale](https://arxiv.org/abs/2609.24052) |
 | [TextVQA](https://textvqa.org/) | 数据集 | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [TraceSafe subset](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |

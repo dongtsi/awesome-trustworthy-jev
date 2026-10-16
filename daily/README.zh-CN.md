@@ -2,8 +2,21 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-15
+
+- [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)
+- [Prism-1: Position- and Rival-Independent Scoring for System One Models](https://arxiv.org/abs/2610.22066) — 以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.22066v1)
+- [Qwen-Audio-Jev: A Unified Interface for Audio Decisions](https://arxiv.org/abs/2610.21614) — 为音频骨干加入 CHOICE、NOUL 和 SCORE 类型化读出；报告 18 个标注配置的结果及相对生成式骨干约 20 倍的推理加速。 `评测` · [PDF](https://arxiv.org/pdf/2610.21614v1)
+- [JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs](https://arxiv.org/abs/2610.21412) — 在 Agent 轨迹上拟合委托阈值，并用实际到达状态训练 4B 决策模型；发现孤立问题准确率不能代表闭环任务成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.21412v1)
+- [Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows](https://arxiv.org/abs/2610.21411) — 将专家路由和产物筛查与生成式执行、反馈分开；报告相对 LAS 减少 12.7–54.6% 生成令牌，准确率差距控制在 1.34 个百分点内。 `评测` · [PDF](https://arxiv.org/pdf/2610.21411v1)
+- [System1-Arena: Which Decisions Can Be Left to System 1?](https://arxiv.org/abs/2610.21244) — 在 9.2 万问题和 138 个闭环环境中评测决策概率；较强的静态决策准确率并不一致转化为 Agent 成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.21244v1)
+
 ## 2026-10-14
 
+- [Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents](https://arxiv.org/abs/2610.20927) — 用 Jev 删除缺少环境输出或前序摘要支持的压缩条目；报告在 AppWorld 和 OfficeBench 上提高跨运行可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2610.20927v1)
+- [From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection](https://arxiv.org/abs/2610.20907) — 在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。 `评测` · [PDF](https://arxiv.org/pdf/2610.20907v1) · [代码](https://github.com/lanqianlong/calibrated-decision-models)
+- [Verdict: Encode Once, Decide Many](https://arxiv.org/abs/2610.20778) — 以问题无关的共享状态编码回答多个类型化问题并保持选项不变性；提高与软标签的一致性，同时揭示取消问题感知状态编码的准确率—时延代价。 `评测` · [PDF](https://arxiv.org/pdf/2610.20778v1)
+- [The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock](https://arxiv.org/abs/2610.20665) — 在 180 个实时任务中评测，并由慢教师在尝试间教导快学生；报告两轮后 Jev 测试分数从 13.51 提高至 24.19。 `评测` · [PDF](https://arxiv.org/pdf/2610.20665v1)
 - [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) — 用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。 `评测` · [PDF](https://arxiv.org/pdf/2610.19971v1)
 - [Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?](https://arxiv.org/abs/2610.19856) — 测试常规选项与回退选项切换及等价回退定义；正确识别类别并不可靠地转化为正确执行回退规则。 `评测` · [PDF](https://arxiv.org/pdf/2610.19856v1)
 - [Calibration and Risk-Budgeted Decisions with System One Models](https://arxiv.org/abs/2610.19811) — 通过 Learn Then Test 在风险预算和保守回退条件下选择效用动作；六个数据集上违反目标风险的比例低于朴素阈值选择。 `评测` · [PDF](https://arxiv.org/pdf/2610.19811v1)

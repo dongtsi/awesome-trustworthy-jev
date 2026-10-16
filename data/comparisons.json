@@ -1307,5 +1307,47 @@
     },
     "source_section": "Sections 3–5.6 and Appendix A",
     "source": "https://arxiv.org/pdf/2610.15537v1"
+  },
+  {
+    "id": "2610.20907",
+    "category": "trustworthiness",
+    "datasets": [
+      "Frozen prompt-injection deferral cohort"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation suite",
+      "zh": "原文定义的评测集合"
+    },
+    "design": {
+      "en": "47,611 confirmatory cases across TensorTrust, BIPIA, NotInject and PIDS-Bench; separate 2,000 gate-calibration, 1,000 reviewer-calibration and 1,000 feasibility cases, with frozen prompts and policies. Jev-native versus two raw/scaled PG2 classifiers and a GPT-5.5 judge.",
+      "zh": "TensorTrust、BIPIA、NotInject、PIDS-Bench 共47,611条确认样本；独立使用2,000条门控校准、1,000条复核器校准和1,000条可行性样本，提示与策略冻结。比较Jev原生概率、两个原始/校准PG2分类器及GPT-5.5裁判。"
+    },
+    "reading": {
+      "en": "Jev AUROC is .871; at the descriptive test-curve FNR crossing, escalation is 92.55% and FPR 45.84%. This is not a deployable threshold. Attacks comprise 88.2% of the cohort, the reviewer is tuned for low FNR, and no confidence intervals establish small gate differences. Native Jev is not post-hoc calibrated; detection is not end-to-end harm prevention.",
+      "zh": "Jev AUROC为.871；测试曲线描述性的低漏报交点需转交92.55%，误报45.84%，该交点不是可部署阈值。攻击占88.2%，复核器按低漏报调优，且未用置信区间确认门控间小差异。Jev未做事后校准，检测结果不代表端到端危害防止。"
+    },
+    "source_section": "Sections 3–6, Tables 1–5, Appendices A–C",
+    "source": "https://arxiv.org/pdf/2610.20907v1"
+  },
+  {
+    "id": "2610.19536",
+    "category": "trustworthiness",
+    "datasets": [
+      "Tabular decision rewrite suite"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation suite",
+      "zh": "原文定义的评测集合"
+    },
+    "design": {
+      "en": "Seven model versions on 3,481 classification rows, 2,000 TabFact claims and 5,059 anomaly samples; 21 applicable rewrite types, identical-request resends, and 500 Poisson cluster-bootstrap replicates by row/sample/table. Position-sensitive TabFact claims are excluded from table-rewrite analysis.",
+      "zh": "七个模型版本，3,481条分类行、2,000条TabFact断言及5,059个异常样本；按任务使用21类改写，加入相同请求重发基线，以行/样本/表为簇做500次Poisson自助采样。表格改写分析排除含位置语义的TabFact断言。"
+    },
+    "reading": {
+      "en": "For Jev, at least one table rewrite changes 33.8% of classification decisions; high confidence tracks stability more strongly than correctness. Low-confidence re-querying mainly repairs a weak original format and is not universally beneficial. Batched decision-model requests and per-row LLM requests differ; only three tasks and single model versions are tested.",
+      "zh": "Jev有33.8%的分类决策在至少一种表格改写下改变；高置信更能表征稳定性而非正确性。低置信重问主要修复较弱的原始格式，并非普遍有益。决策模型批量请求与LLM逐行请求不同，仅测试三类任务和单个模型版本。"
+    },
+    "source_section": "Sections 2–6, Limitations, Appendix C/Table 18",
+    "source": "https://arxiv.org/pdf/2610.19536v1"
   }
 ]

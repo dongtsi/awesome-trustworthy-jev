@@ -15854,8 +15854,11 @@
     "scope": "related-model",
     "schema_version": 2,
     "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "For Jev, at least one table rewrite changes 33.8% of classification decisions; high confidence tracks stability more strongly than correctness. Low-confidence re-querying mainly repairs a weak original format and is not universally beneficial. Batched decision-model requests and per-row LLM requests differ; only three tasks and single model versions are tested.",
+    "datasets": [
+      "Tabular decision rewrite suite"
+    ]
   },
   {
     "id": "2610.19619",
@@ -16118,7 +16121,7 @@
     "date": "",
     "updated": "",
     "added": "2026-10-15",
-    "version": "checked-2026-10-15",
+    "version": "checked-2026-10-16",
     "authors": [
       "TypeSafe"
     ],
@@ -16129,15 +16132,15 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Documents opt-in image assets in state, instructions and criteria for Jev 1.13 and 1.14; the feature is explicitly experimental.",
-    "brief_zh": "说明 Jev 1.13 与 1.14 在状态、指令和判据中使用需显式启用的图像资产；该能力明确为实验性质。",
-    "summary": "Documents opt-in image assets in state, instructions and criteria for Jev 1.13 and 1.14; the feature is explicitly experimental.",
-    "summary_zh": "说明 Jev 1.13 与 1.14 在状态、指令和判据中使用需显式启用的图像资产；该能力明确为实验性质。",
+    "brief_en": "Documents experimental opt-in images for Jev 1.13 and 1.14; each image side must be 280–1568 pixels, with PNG/JPEG and request-size constraints.",
+    "brief_zh": "说明 Jev 1.13 和 1.14 的实验性图像输入；每边须为280–1568像素，并受PNG/JPEG格式及请求大小限制。",
+    "summary": "Documents experimental opt-in images for Jev 1.13 and 1.14; each image side must be 280–1568 pixels, with PNG/JPEG and request-size constraints.",
+    "summary_zh": "说明 Jev 1.13 和 1.14 的实验性图像输入；每边须为280–1568像素，并受PNG/JPEG格式及请求大小限制。",
     "theme": "Official",
     "scope": "hosted-jev",
     "schema_version": 2,
     "evidence": "Official documentation",
-    "review": "Original page read",
+    "review": "Original images documentation read; minimum-side correction verified on 2026-10-16",
     "limitation": "Experimental opt-in features; no independent performance validation."
   },
   {
@@ -16170,5 +16173,383 @@
     "evidence": "Official documentation",
     "review": "Original page read",
     "limitation": "Experimental opt-in features; no independent performance validation."
+  },
+  {
+    "id": "2610.20907",
+    "title": "From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection",
+    "short": "Calibration and Deferral",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.20907",
+    "pdf": "https://arxiv.org/pdf/2610.20907v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.20907v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Qianlong Lan",
+      "Anuj Kaul",
+      "Vinothini Pandurangan",
+      "Indranil Sanyal"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates detection, calibration and allow-block-defer policies on 47,611 held-out examples; native Jev probabilities do not consistently outperform calibrated classifiers and low-FNR operation requires extensive escalation.",
+    "brief_zh": "在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。",
+    "summary": "Evaluates detection, calibration and allow-block-defer policies on 47,611 held-out examples; native Jev probabilities do not consistently outperform calibrated classifiers and low-FNR operation requires extensive escalation.",
+    "summary_zh": "在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。",
+    "theme": "Robustness",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Jev AUROC is .871; at the descriptive test-curve FNR crossing, escalation is 92.55% and FPR 45.84%. This is not a deployable threshold. Attacks comprise 88.2% of the cohort, the reviewer is tuned for low FNR, and no confidence intervals establish small gate differences. Native Jev is not post-hoc calibrated; detection is not end-to-end harm prevention.",
+    "code": "https://github.com/lanqianlong/calibrated-decision-models",
+    "datasets": [
+      "Frozen prompt-injection deferral cohort"
+    ]
+  },
+  {
+    "id": "2610.21411",
+    "title": "Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows",
+    "short": "Jev-LiteMAS",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.21411",
+    "pdf": "https://arxiv.org/pdf/2610.21411v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.21411v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Kaixiang Wang",
+      "Zhaijiacheng Zhou",
+      "Jiong Lou",
+      "Jie Li"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates expert routing and artifact screening from generative execution and feedback; reports 12.7–54.6% fewer generative tokens with accuracy within 1.34 points of LAS.",
+    "brief_zh": "将专家路由和产物筛查与生成式执行、反馈分开；报告相对 LAS 减少 12.7–54.6% 生成令牌，准确率差距控制在 1.34 个百分点内。",
+    "summary": "Separates expert routing and artifact screening from generative execution and feedback; reports 12.7–54.6% fewer generative tokens with accuracy within 1.34 points of LAS.",
+    "summary_zh": "将专家路由和产物筛查与生成式执行、反馈分开；报告相对 LAS 减少 12.7–54.6% 生成令牌，准确率差距控制在 1.34 个百分点内。",
+    "theme": "Foundations",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.21244",
+    "title": "System1-Arena: Which Decisions Can Be Left to System 1?",
+    "short": "System1-Arena",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.21244",
+    "pdf": "https://arxiv.org/pdf/2610.21244v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.21244v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Tianyu Chen",
+      "Xinyang Liu",
+      "Ruyi An",
+      "Zhendong Wang",
+      "Mingyuan Zhou"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Benchmarks probabilities on 92k questions and 138 closed-loop environments; strong static decision accuracy does not translate uniformly into agent success.",
+    "brief_zh": "在 9.2 万问题和 138 个闭环环境中评测决策概率；较强的静态决策准确率并不一致转化为 Agent 成功率。",
+    "summary": "Benchmarks probabilities on 92k questions and 138 closed-loop environments; strong static decision accuracy does not translate uniformly into agent success.",
+    "summary_zh": "在 9.2 万问题和 138 个闭环环境中评测决策概率；较强的静态决策准确率并不一致转化为 Agent 成功率。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.22066",
+    "title": "Prism-1: Position- and Rival-Independent Scoring for System One Models",
+    "short": "Prism-1",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.22066",
+    "pdf": "https://arxiv.org/pdf/2610.22066v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.22066v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Yao Long Teng",
+      "Jianguo Huang",
+      "Yanchen Deng",
+      "Jiayi Cai",
+      "Bo An"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Isolates option scoring in shared-position attention blocks to enforce order and rival independence; reports near-baseline accuracy with stable choices under tested option changes.",
+    "brief_zh": "以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。",
+    "summary": "Isolates option scoring in shared-position attention blocks to enforce order and rival independence; reports near-baseline accuracy with stable choices under tested option changes.",
+    "summary_zh": "以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.20927",
+    "title": "Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents",
+    "short": "Source-Judged Compaction",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.20927",
+    "pdf": "https://arxiv.org/pdf/2610.20927v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.20927v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Guanghui Min",
+      "Chen Chen"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses Jev to remove summary entries lacking support in environment outputs or prior summaries; reports improved cross-run reliability on AppWorld and OfficeBench.",
+    "brief_zh": "用 Jev 删除缺少环境输出或前序摘要支持的压缩条目；报告在 AppWorld 和 OfficeBench 上提高跨运行可靠性。",
+    "summary": "Uses Jev to remove summary entries lacking support in environment outputs or prior summaries; reports improved cross-run reliability on AppWorld and OfficeBench.",
+    "summary_zh": "用 Jev 删除缺少环境输出或前序摘要支持的压缩条目；报告在 AppWorld 和 OfficeBench 上提高跨运行可靠性。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.22131",
+    "title": "Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling",
+    "short": "Intern-Decision",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.22131",
+    "pdf": "https://arxiv.org/pdf/2610.22131v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.22131v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Tong Zhu",
+      "Zhe Xu",
+      "Zefeng He",
+      "Yunkai Chai",
+      "Xuyang Hu",
+      "Dehong Zheng",
+      "Yun Luo",
+      "Yafu Li",
+      "Qi Zhang",
+      "Yu Cheng"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses masked decision placeholders in a JSON skeleton for one-pass multimodal choices; reports compact-model accuracy, latency and small calibration and handoff pilots.",
+    "brief_zh": "在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。",
+    "summary": "Uses masked decision placeholders in a JSON skeleton for one-pass multimodal choices; reports compact-model accuracy, latency and small calibration and handoff pilots.",
+    "summary_zh": "在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.21412",
+    "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+    "short": "JevAgentHarness",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.21412",
+    "pdf": "https://arxiv.org/pdf/2610.21412v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.21412v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Kunlun Zhu",
+      "Tao Feng",
+      "Xu Han",
+      "Heng Wang",
+      "Ling Yang",
+      "Xiangru Tang",
+      "Jiaxuan You",
+      "Heng Ji"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Fits delegation thresholds on agent trajectories and trains a 4B decision model on reached states; shows that isolated-question accuracy does not predict closed-loop agent success.",
+    "brief_zh": "在 Agent 轨迹上拟合委托阈值，并用实际到达状态训练 4B 决策模型；发现孤立问题准确率不能代表闭环任务成功率。",
+    "summary": "Fits delegation thresholds on agent trajectories and trains a 4B decision model on reached states; shows that isolated-question accuracy does not predict closed-loop agent success.",
+    "summary_zh": "在 Agent 轨迹上拟合委托阈值，并用实际到达状态训练 4B 决策模型；发现孤立问题准确率不能代表闭环任务成功率。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.21614",
+    "title": "Qwen-Audio-Jev: A Unified Interface for Audio Decisions",
+    "short": "Qwen-Audio-Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.21614",
+    "pdf": "https://arxiv.org/pdf/2610.21614v1",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.21614v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Ying Fang",
+      "Zhifu Gao",
+      "Qing Gu",
+      "Jiajun He",
+      "Kangqi Jing",
+      "Xiangang Li",
+      "Yu Pu",
+      "Wupeng Wang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Adds typed CHOICE, NOUL and SCORE readouts to an audio backbone; reports results across 18 labeled configurations and about 20-fold inference speedup over its generative backbone.",
+    "brief_zh": "为音频骨干加入 CHOICE、NOUL 和 SCORE 类型化读出；报告 18 个标注配置的结果及相对生成式骨干约 20 倍的推理加速。",
+    "summary": "Adds typed CHOICE, NOUL and SCORE readouts to an audio backbone; reports results across 18 labeled configurations and about 20-fold inference speedup over its generative backbone.",
+    "summary_zh": "为音频骨干加入 CHOICE、NOUL 和 SCORE 类型化读出；报告 18 个标注配置的结果及相对生成式骨干约 20 倍的推理加速。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.20665",
+    "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+    "short": "RealtimeBench / TORSI",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.20665",
+    "pdf": "https://arxiv.org/pdf/2610.20665v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.20665v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Ningxin Pan",
+      "Hanyu Li",
+      "Yeqing Shen",
+      "Ning Ding",
+      "Yehui Tang",
+      "Wentao Zhang"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates 180 live-clock tasks and teaches a fast student between attempts with a slow teacher; reports Jev test-score improvement from 13.51 to 24.19 after two rounds.",
+    "brief_zh": "在 180 个实时任务中评测，并由慢教师在尝试间教导快学生；报告两轮后 Jev 测试分数从 13.51 提高至 24.19。",
+    "summary": "Evaluates 180 live-clock tasks and teaches a fast student between attempts with a slow teacher; reports Jev test-score improvement from 13.51 to 24.19 after two rounds.",
+    "summary_zh": "在 180 个实时任务中评测，并由慢教师在尝试间教导快学生；报告两轮后 Jev 测试分数从 13.51 提高至 24.19。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "2610.20778",
+    "title": "Verdict: Encode Once, Decide Many",
+    "short": "Verdict-MQ",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.20778",
+    "pdf": "https://arxiv.org/pdf/2610.20778v1",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.20778v1",
+    "added": "2026-10-16",
+    "authors": [
+      "Avdhesh Singh Chouhan",
+      "Jack Perry"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Shares a question-independent state encoding across typed questions with option invariance; improves agreement with soft labels but exposes accuracy–latency costs of removing question-aware state encoding.",
+    "brief_zh": "以问题无关的共享状态编码回答多个类型化问题并保持选项不变性；提高与软标签的一致性，同时揭示取消问题感知状态编码的准确率—时延代价。",
+    "summary": "Shares a question-independent state encoding across typed questions with option invariance; improves agreement with soft labels but exposes accuracy–latency costs of removing question-aware state encoding.",
+    "summary_zh": "以问题无关的共享状态编码回答多个类型化问题并保持选项不变性；提高与软标签的一致性，同时揭示取消问题感知状态编码的准确率—时延代价。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Preprint",
+    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
   }
 ]

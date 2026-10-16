@@ -6,6 +6,76 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling</title>
+      <link>https://arxiv.org/abs/2610.22131</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.22131#publication</guid>
+      <description>Uses masked decision placeholders in a JSON skeleton for one-pass multimodal choices; reports compact-model accuracy, latency and small calibration and handoff pilots.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Prism-1: Position- and Rival-Independent Scoring for System One Models</title>
+      <link>https://arxiv.org/abs/2610.22066</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.22066#publication</guid>
+      <description>Isolates option scoring in shared-position attention blocks to enforce order and rival independence; reports near-baseline accuracy with stable choices under tested option changes.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Qwen-Audio-Jev: A Unified Interface for Audio Decisions</title>
+      <link>https://arxiv.org/abs/2610.21614</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.21614#publication</guid>
+      <description>Adds typed CHOICE, NOUL and SCORE readouts to an audio backbone; reports results across 18 labeled configurations and about 20-fold inference speedup over its generative backbone.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</title>
+      <link>https://arxiv.org/abs/2610.21412</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.21412#publication</guid>
+      <description>Fits delegation thresholds on agent trajectories and trains a 4B decision model on reached states; shows that isolated-question accuracy does not predict closed-loop agent success.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows</title>
+      <link>https://arxiv.org/abs/2610.21411</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.21411#publication</guid>
+      <description>Separates expert routing and artifact screening from generative execution and feedback; reports 12.7–54.6% fewer generative tokens with accuracy within 1.34 points of LAS.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>System1-Arena: Which Decisions Can Be Left to System 1?</title>
+      <link>https://arxiv.org/abs/2610.21244</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.21244#publication</guid>
+      <description>Benchmarks probabilities on 92k questions and 138 closed-loop environments; strong static decision accuracy does not translate uniformly into agent success.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents</title>
+      <link>https://arxiv.org/abs/2610.20927</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.20927#publication</guid>
+      <description>Uses Jev to remove summary entries lacking support in environment outputs or prior summaries; reports improved cross-run reliability on AppWorld and OfficeBench.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection</title>
+      <link>https://arxiv.org/abs/2610.20907</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.20907#publication</guid>
+      <description>Evaluates detection, calibration and allow-block-defer policies on 47,611 held-out examples; native Jev probabilities do not consistently outperform calibrated classifiers and low-FNR operation requires extensive escalation.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Verdict: Encode Once, Decide Many</title>
+      <link>https://arxiv.org/abs/2610.20778</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.20778#publication</guid>
+      <description>Shares a question-independent state encoding across typed questions with option invariance; improves agreement with soft labels but exposes accuracy–latency costs of removing question-aware state encoding.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock</title>
+      <link>https://arxiv.org/abs/2610.20665</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.20665#publication</guid>
+      <description>Evaluates 180 live-clock tasks and teaches a fast student between attempts with a slow teacher; reports Jev test-score improvement from 13.51 to 24.19 after two rounds.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks</title>
       <link>https://arxiv.org/abs/2610.19971</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.19971#publication</guid>

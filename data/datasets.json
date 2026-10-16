@@ -333,5 +333,15 @@
     "url": "https://github.com/WuXixiong/jev-poisoning-bench",
     "type": "paper",
     "checked": "2026-10-15"
+  },
+  "Frozen prompt-injection deferral cohort": {
+    "url": "https://github.com/lanqianlong/calibrated-decision-models",
+    "type": "paper",
+    "checked": "2026-10-16"
+  },
+  "Tabular decision rewrite suite": {
+    "url": "https://arxiv.org/abs/2610.19536",
+    "type": "paper",
+    "checked": "2026-10-16"
   }
 }
