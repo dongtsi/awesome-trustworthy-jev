@@ -1349,5 +1349,68 @@
     },
     "source_section": "Sections 2–6, Limitations, Appendix C/Table 18",
     "source": "https://arxiv.org/pdf/2610.19536v1"
+  },
+  {
+    "id": "2610.22066",
+    "category": "trustworthiness",
+    "datasets": [
+      "Prism-1 five-set decision suite"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation data",
+      "zh": "原文定义的评测数据"
+    },
+    "design": {
+      "en": "2,521 test questions across Banking20, Newsgroups, BEV, Typed Decisions and JevBench; 9,100 training questions, two backbones, 3 seeds for SCQ/Prism and 2 for Set-LLM. Tests use one seeded shuffle, added distractors and injected options; matched repeat queries estimate API noise.",
+      "zh": "Banking20、Newsgroups、BEV、Typed Decisions和JevBench共2,521题；9,100训练题、两个骨干，SCQ/Prism各3个种子、Set-LLM 2个。测试固定种子重排、添加干扰项和注入选项，以重复查询估计API噪声。"
+    },
+    "reading": {
+      "en": "Isolated option scores preserve order and relative odds; observed order-robust accuracy exceeds trained SCQ by 1.6/3.7 points. This does not protect shared state or prevent an injected option itself from winning. Near-duplicate options change confidence, rounding can tip near-ties, and held-out JevBench accuracy trails SCQ by 3.6/4.1 points.",
+      "zh": "独立选项分数保持顺序与相对赔率；观察到的顺序稳健准确率比训练后SCQ高1.6/3.7点。该结构不保护共享状态，也不阻止注入选项自身获选。近重复选项改变置信，舍入可能影响近平局，留出JevBench准确率仍落后SCQ 3.6/4.1点。"
+    },
+    "source_section": "Sections 2–5, Limitations, Appendix B and C.1",
+    "source": "https://arxiv.org/pdf/2610.22066v1"
+  },
+  {
+    "id": "r-2d487270f0",
+    "category": "trustworthiness",
+    "datasets": [
+      "TRIVIA+"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation data",
+      "zh": "原文定义的评测数据"
+    },
+    "design": {
+      "en": "Original article-disjoint splits; cleaned training/validation sets of 2,195/308 answers, all 645 test answers from 358 articles retained. Fit calibration on training, select thresholds on validation, and assess paired saved judge scores with article-level bootstrap and fixed fitted calibration.",
+      "zh": "沿用文章互斥划分；清理后训练/验证2,195/308条，保留358篇文章中的全部645条测试回答。训练拟合校准、验证选阈值，以相同已保存裁判分数比较，并在固定校准器下按文章自助采样。"
+    },
+    "reading": {
+      "en": "ECE falls .0982 to .0313, Brier .2037 to .1948; validation-selected F1 is .5833 versus .5877, without a demonstrated ranking gain. A default .5 cutoff worsens F1. Confidence intervals omit calibration-training uncertainty; one dataset and judge do not establish general guard effectiveness.",
+      "zh": "ECE从.0982降至.0313，Brier从.2037降至.1948；验证选阈值后的F1为.5833与.5877，未显示排序提升，默认.5阈值反而降低F1。区间未覆盖校准训练不确定性；单个数据集和裁判不能证明通用防护有效。"
+    },
+    "source_section": "Benchmark sections 1–4",
+    "source": "https://github.com/TrustifAI/typed_evals/blob/main/docs/BENCHMARK.md"
+  },
+  {
+    "id": "r-b51017e4c8",
+    "category": "trustworthiness",
+    "datasets": [
+      "Systemone testbed injection evaluation"
+    ],
+    "data_role": {
+      "en": "Source-defined evaluation data",
+      "zh": "原文定义的评测数据"
+    },
+    "design": {
+      "en": "Laya zero-shot, deepset prompt-injections with 546 training and 116 test messages, two wordings and both option orders. Zone thresholds use a 200-message training sample; rules are written after inspecting its errors. Embedding baselines add NotInject and no_robots negatives.",
+      "zh": "Laya零样本，在deepset注入数据546条训练、116条测试消息上比较两种问法和两种顺序。分区阈值取自200条训练样本，规则在查看错误后编写；嵌入基线加入NotInject与no_robots负例。"
+    },
+    "reading": {
+      "en": "Guard plus rules allows 23% of test attacks and escalates 56% of inputs, with no implemented second look. Strong in-domain embedding AUC hides high external false positives. Small hand-written probes are adaptive, and near-duplicate leakage may affect NotInject. No hosted Jev measurements; source code has no granted license.",
+      "zh": "门控加规则仍放行23%的测试攻击，转交56%的输入，但没有实现二次复核。较高域内嵌入AUC掩盖外部高误报。手写探针规模小且按此前结果设计，NotInject可能有近重复泄漏。未测托管Jev，代码未授予许可。"
+    },
+    "source_section": "RESULTS sections 1–5 and Caveats; README scope and license",
+    "source": "https://github.com/Shristi1611/systemone-testbed/blob/main/RESULTS.md"
   }
 ]

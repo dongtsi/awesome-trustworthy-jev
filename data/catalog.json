@@ -16321,8 +16321,11 @@
     "scope": "related-model",
     "schema_version": 2,
     "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Isolated option scores preserve order and relative odds; observed order-robust accuracy exceeds trained SCQ by 1.6/3.7 points. This does not protect shared state or prevent an injected option itself from winning. Near-duplicate options change confidence, rounding can tip near-ties, and held-out JevBench accuracy trails SCQ by 3.6/4.1 points.",
+    "datasets": [
+      "Prism-1 five-set decision suite"
+    ]
   },
   {
     "id": "2610.20927",
@@ -16551,5 +16554,78 @@
     "evidence": "Preprint",
     "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
     "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+  },
+  {
+    "id": "r-2d487270f0",
+    "title": "TrustifAI/typed_evals",
+    "short": "Typed Evals",
+    "kind": "Project",
+    "url": "https://github.com/TrustifAI/typed_evals",
+    "date": "2026-09-20",
+    "updated": "2026-10-15",
+    "version": "2026-10-15T05:13:56Z",
+    "added": "2026-10-17",
+    "authors": [
+      "TrustifAI"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "applications/agents"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Provides typed evaluation, optional human-label calibration and pre-execution tool guards; its TRIVIA+ study improves probability calibration without a demonstrated detection-ranking gain.",
+    "brief_zh": "提供类型化评测、可选的人类标签校准和执行前工具检查；TRIVIA+实验改善概率校准，未显示检测排序能力提升。",
+    "summary": "Provides typed evaluation, optional human-label calibration and pre-execution tool guards; its TRIVIA+ study improves probability calibration without a demonstrated detection-ranking gain.",
+    "summary_zh": "提供类型化评测、可选的人类标签校准和执行前工具检查；TRIVIA+实验改善概率校准，未显示检测排序能力提升。",
+    "theme": "Reliability",
+    "scope": "hosted-jev",
+    "schema_version": 2,
+    "evidence": "Original repository documentation",
+    "review": "README and evaluation report reviewed; repository code not executed",
+    "limitation": "ECE falls .0982 to .0313, Brier .2037 to .1948; validation-selected F1 is .5833 versus .5877, without a demonstrated ranking gain. A default .5 cutoff worsens F1. Confidence intervals omit calibration-training uncertainty; one dataset and judge do not establish general guard effectiveness.",
+    "license": "MIT",
+    "datasets": [
+      "TRIVIA+"
+    ]
+  },
+  {
+    "id": "r-b51017e4c8",
+    "title": "Shristi1611/systemone-testbed",
+    "short": "System One testbed",
+    "kind": "Project",
+    "url": "https://github.com/Shristi1611/systemone-testbed",
+    "date": "2026-10-17",
+    "updated": "2026-10-17",
+    "version": "2026-10-17T11:30:16Z",
+    "added": "2026-10-17",
+    "authors": [
+      "Shristi1611"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "tool",
+      "evaluation"
+    ],
+    "brief_en": "Tests prompt-injection screening, option order and allow-escalate-block policies on Laya; results expose dataset shortcuts and unresolved escalation rather than validated Jev protection.",
+    "brief_zh": "在Laya上测试注入筛查、选项顺序及放行—转交—阻断策略；结果揭示数据集捷径与未解决的转交，不能视为已验证的Jev防护。",
+    "summary": "Tests prompt-injection screening, option order and allow-escalate-block policies on Laya; results expose dataset shortcuts and unresolved escalation rather than validated Jev protection.",
+    "summary_zh": "在Laya上测试注入筛查、选项顺序及放行—转交—阻断策略；结果揭示数据集捷径与未解决的转交，不能视为已验证的Jev防护。",
+    "theme": "Robustness",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original repository documentation",
+    "review": "README and evaluation report reviewed; repository code not executed",
+    "limitation": "Guard plus rules allows 23% of test attacks and escalates 56% of inputs, with no implemented second look. Strong in-domain embedding AUC hides high external false positives. Small hand-written probes are adaptive, and near-duplicate leakage may affect NotInject. No hosted Jev measurements; source code has no granted license.",
+    "license": "No license granted; all rights reserved",
+    "datasets": [
+      "Systemone testbed injection evaluation"
+    ]
   }
 ]

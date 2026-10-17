@@ -343,5 +343,20 @@
     "url": "https://arxiv.org/abs/2610.19536",
     "type": "paper",
     "checked": "2026-10-16"
+  },
+  "Prism-1 five-set decision suite": {
+    "url": "https://arxiv.org/abs/2610.22066",
+    "type": "paper",
+    "checked": "2026-10-17"
+  },
+  "TRIVIA+": {
+    "url": "https://github.com/amazon-science/hallucination-benchmark-trivialplus",
+    "type": "dataset",
+    "checked": "2026-10-17"
+  },
+  "Systemone testbed injection evaluation": {
+    "url": "https://github.com/Shristi1611/systemone-testbed",
+    "type": "benchmark",
+    "checked": "2026-10-17"
   }
 }

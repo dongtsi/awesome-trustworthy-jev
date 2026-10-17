@@ -1244,5 +1244,19 @@
     "date": "2026-09-30",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/sbayer2/crowd-calibration"
+  },
+  {
+    "id": "r-2d487270f0",
+    "kind": "Project",
+    "date": "2026-09-20",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/TrustifAI/typed_evals"
+  },
+  {
+    "id": "r-b51017e4c8",
+    "kind": "Project",
+    "date": "2026-10-17",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/Shristi1611/systemone-testbed"
   }
 ]
