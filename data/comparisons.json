@@ -1412,5 +1412,47 @@
     },
     "source_section": "RESULTS sections 1–5 and Caveats; README scope and license",
     "source": "https://github.com/Shristi1611/systemone-testbed/blob/main/RESULTS.md"
+  },
+  {
+    "id": "r-9b51470755",
+    "category": "trustworthiness",
+    "datasets": [
+      "Text decision benchmark (1,136 questions)"
+    ],
+    "data_role": {
+      "en": "Author-defined evaluation bank",
+      "zh": "作者构建的评测题库"
+    },
+    "design": {
+      "en": "640 core questions and 496 dependent variants across 25 families; 22 services tested, 19 ranked after a post-hoc 5% output-format failure cutoff. Same facts and five options; native decisions versus 16-token numeric-ID chat, reasoning disabled. First-attempt failures remain in each 1,136-item denominator.",
+      "zh": "25类题型含640道核心题与496道相关变体；测试22项服务，按事后5%格式失败阈值排名19项。事实和五个选项相同；原生决策接口对比限制16 token、关闭推理的数字ID聊天输出。首次失败保留在各1,136题分母中。"
+    },
+    "reading": {
+      "en": "Nimble v4 Max scores 997/1,136, Jev 1.14 929 and Jev 1.13 919. Private keys prevent independent accuracy reproduction; related items are not independent. Dates, routes and defaults differ. Same-bank confidence thresholds and answer changes do not establish future error rates or changes in model weights.",
+      "zh": "Nimble v4 Max为997/1,136，Jev 1.14为929，1.13为919。答案键私有，无法独立重算准确率；相关题目并非独立观测。日期、路由与默认采样不同；同一题库上的置信筛选及答案变化不能证明未来错误率或权重变化。"
+    },
+    "source_section": "README: Results, Matched diagnostics, Output format, Confidence, Measurement conditions, Evidence reproduction",
+    "source": "https://github.com/etsabary/jev-1.14-comparison-benchmark/blob/main/README.md"
+  },
+  {
+    "id": "r-f677a40647",
+    "category": "trustworthiness",
+    "datasets": [
+      "Visual decision benchmark (200 questions)"
+    ],
+    "data_role": {
+      "en": "Author-defined evaluation bank",
+      "zh": "作者构建的评测题库"
+    },
+    "design": {
+      "en": "200 questions in 20 families with 227 images and five service configurations; bank and key frozen before runs, identical compressed images and option order. First attempts include failures; chat uses a 32-token numeric output contract with reasoning disabled.",
+      "zh": "20类共200题、227张图像、五项服务配置；运行前冻结题库与答案键，使用相同压缩图像和选项顺序。首次计分包含失败；聊天接口关闭推理并限制32 token数字输出。"
+    },
+    "reading": {
+      "en": "Jev 1.14 scores 141/200 versus Luna Decisions 121 and regular Luna 117. Confidence >=.95 retains 59/59 correct, but this is exploratory without a holdout. Keys are private, six images withheld, families correlated and interfaces/checkpoints differ; five Jev input rejections were not retested with resized images.",
+      "zh": "Jev 1.14为141/200，Luna Decisions为121，普通Luna为117。置信≥.95保留59题且全部正确，但没有留出集，属于探索分析。答案键私有、六张图像未公开、题型相关，接口和检查点不同；五次Jev输入拒绝未用调整尺寸后的图像复测。"
+    },
+    "source_section": "README and METHODOLOGY: dataset, protocol, scoring, confidence, limitations",
+    "source": "https://github.com/etsabary/visual-decision-benchmark/blob/main/METHODOLOGY.md"
   }
 ]

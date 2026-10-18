@@ -358,5 +358,15 @@
     "url": "https://github.com/Shristi1611/systemone-testbed",
     "type": "benchmark",
     "checked": "2026-10-17"
+  },
+  "Text decision benchmark (1,136 questions)": {
+    "url": "https://github.com/etsabary/jev-1.14-comparison-benchmark",
+    "type": "benchmark",
+    "checked": "2026-10-18"
+  },
+  "Visual decision benchmark (200 questions)": {
+    "url": "https://github.com/etsabary/visual-decision-benchmark",
+    "type": "benchmark",
+    "checked": "2026-10-18"
   }
 }

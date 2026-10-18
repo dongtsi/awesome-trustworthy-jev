@@ -16627,5 +16627,114 @@
     "datasets": [
       "Systemone testbed injection evaluation"
     ]
+  },
+  {
+    "id": "r-9b51470755",
+    "title": "etsabary/jev-1.14-comparison-benchmark",
+    "short": "Text decision service comparison",
+    "kind": "Project",
+    "url": "https://github.com/etsabary/jev-1.14-comparison-benchmark",
+    "date": "2026-10-15",
+    "updated": "2026-10-17",
+    "version": "2026-10-17T00:28:43Z",
+    "added": "2026-10-18",
+    "authors": [
+      "etsabary"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "Compares 22 services on 1,136 text decisions, ranking 19 after a post-hoc format cutoff; Jev 1.14 scores 81.8%, with dependent questions, private answer keys and service-route differences limiting interpretation.",
+    "brief_zh": "在1,136道文本决策题上比较22项服务，按事后格式规则排名19项；Jev 1.14得分81.8%，题目相关性、私有答案键与服务路由差异限制结论。",
+    "summary": "Compares 22 services on 1,136 text decisions, ranking 19 after a post-hoc format cutoff; Jev 1.14 scores 81.8%, with dependent questions, private answer keys and service-route differences limiting interpretation.",
+    "summary_zh": "在1,136道文本决策题上比较22项服务，按事后格式规则排名19项；Jev 1.14得分81.8%，题目相关性、私有答案键与服务路由差异限制结论。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original repository documentation",
+    "review": "README methods, results and limitations reviewed; repository code not executed",
+    "limitation": "Private answer keys; author-reported results without independent replication.",
+    "license": "MIT",
+    "datasets": [
+      "Text decision benchmark (1,136 questions)"
+    ]
+  },
+  {
+    "id": "r-f677a40647",
+    "title": "etsabary/visual-decision-benchmark",
+    "short": "Visual decision benchmark",
+    "kind": "Project",
+    "url": "https://github.com/etsabary/visual-decision-benchmark",
+    "date": "2026-10-15",
+    "updated": "2026-10-16",
+    "version": "2026-10-16T18:06:31Z",
+    "added": "2026-10-18",
+    "authors": [
+      "etsabary"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "Tests five services on 200 image decisions with fixed inputs and first-attempt scoring; Jev 1.14 scores 70.5%, while private answer keys and exploratory confidence thresholds limit reproducibility and generalization.",
+    "brief_zh": "以固定输入和首次尝试计分测试五项服务的200道图像决策题；Jev 1.14得分70.5%，私有答案键和探索性置信阈值限制复现与推广。",
+    "summary": "Tests five services on 200 image decisions with fixed inputs and first-attempt scoring; Jev 1.14 scores 70.5%, while private answer keys and exploratory confidence thresholds limit reproducibility and generalization.",
+    "summary_zh": "以固定输入和首次尝试计分测试五项服务的200道图像决策题；Jev 1.14得分70.5%，私有答案键和探索性置信阈值限制复现与推广。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original repository documentation",
+    "review": "README methods, results and limitations reviewed; repository code not executed",
+    "limitation": "Private answer keys; author-reported results without independent replication.",
+    "license": "MIT",
+    "datasets": [
+      "Visual decision benchmark (200 questions)"
+    ]
+  },
+  {
+    "id": "ssrn-7589261",
+    "title": "A Thermometer, Not an Analyst: Lawful Uses of a Text Judge in a Live Trading Lab",
+    "short": "A Thermometer, Not an Analyst",
+    "kind": "Paper",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589261",
+    "pdf": "https://papers.ssrn.com/sol3/Delivery.cfm/7589261.pdf?abstractid=7589261&mirid=1",
+    "doi": "10.2139/ssrn.7589261",
+    "date": "2026-10-09",
+    "updated": "2026-10-09",
+    "version": "2026-10-09",
+    "added": "2026-10-18",
+    "authors": [
+      "Alex Vidovich",
+      "Zivana Zerjal"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Studies six checks for a version-pinned Jev headline judge, including repeatability, time context and simple baselines; reports weak or disappearing signals and post-failure infrastructure corrections, without testing trading-return improvement.",
+    "brief_zh": "研究固定版本Jev新闻标题裁判的六项检查，包括重复性、时间上下文与简单基线；报告微弱或消失的信号及失败后的基础设施修正，未检验交易收益提升。",
+    "summary": "Studies six checks for a version-pinned Jev headline judge, including repeatability, time context and simple baselines; reports weak or disappearing signals and post-failure infrastructure corrections, without testing trading-return improvement.",
+    "summary_zh": "研究固定版本Jev新闻标题裁判的六项检查，包括重复性、时间上下文与简单基线；报告微弱或消失的信号及失败后的基础设施修正，未检验交易收益提升。",
+    "evidence": "Original SSRN metadata and abstract",
+    "review": "Original abstract verified; full-text review pending",
+    "limitation": "Abstract-level review; checks were assembled mainly after failures, not all prospectively preregistered. No trading-return claim.",
+    "license": "CC BY-NC-ND 4.0",
+    "datasets": []
   }
 ]

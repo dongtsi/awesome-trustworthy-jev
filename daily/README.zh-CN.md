@@ -66,6 +66,7 @@
 
 ## 2026-10-09
 
+- [A Thermometer, Not an Analyst: Lawful Uses of a Text Judge in a Live Trading Lab](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589261) — 研究固定版本Jev新闻标题裁判的六项检查，包括重复性、时间上下文与简单基线；报告微弱或消失的信号及失败后的基础设施修正，未检验交易收益提升。 `评测` · [PDF](https://papers.ssrn.com/sol3/Delivery.cfm/7589261.pdf?abstractid=7589261&mirid=1)
 - [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — 4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [代码](https://anonymous.4open.science/r/jev-emp-5BF4/)
 
 ## 2026-10-08

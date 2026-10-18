@@ -66,6 +66,7 @@ Grouped by first public publication date.
 
 ## 2026-10-09
 
+- [A Thermometer, Not an Analyst: Lawful Uses of a Text Judge in a Live Trading Lab](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589261) — Studies six checks for a version-pinned Jev headline judge, including repeatability, time context and simple baselines; reports weak or disappearing signals and post-failure infrastructure corrections, without testing trading-return improvement. `Evaluation` · [PDF](https://papers.ssrn.com/sol3/Delivery.cfm/7589261.pdf?abstractid=7589261&mirid=1)
 - [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — Across 4,500 agent executions, Jev lowers decision costs and latency, but mobile-agent success losses and recovery overhead can offset savings per delivered outcome. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [Code](https://anonymous.4open.science/r/jev-emp-5BF4/)
 
 ## 2026-10-08
