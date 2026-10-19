@@ -2,6 +2,13 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-16
+
+- [Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models](https://arxiv.org/abs/2610.23804) — 以类型化决策和版本检查协调运行中任务，随请求变化复核计划与播报结果；固定前后端模型时，语音任务成功数从278项中的29增至192。 `评测` · [PDF](https://arxiv.org/pdf/2610.23804v1)
+- [TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models](https://arxiv.org/abs/2610.23668) — 在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.23668v1)
+- [Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking](https://arxiv.org/abs/2610.23346) — 在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。 `评测` · [PDF](https://arxiv.org/pdf/2610.23346v1)
+- [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170) — 通过候选字母logit与分布目标训练中文单次前向决策模型；完整训练的0.8B模型报告1.07%校准误差，未完成训练的2B结果无法隔离规模效应。 `评测` · [PDF](https://arxiv.org/pdf/2610.23170v1) · [代码](https://github.com/yanqiangmiffy/chinese-decision)
+
 ## 2026-10-15
 
 - [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)

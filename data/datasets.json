@@ -368,5 +368,10 @@
     "url": "https://github.com/etsabary/visual-decision-benchmark",
     "type": "benchmark",
     "checked": "2026-10-18"
+  },
+  "Paired Fallback Robustness suite": {
+    "url": "https://arxiv.org/abs/2610.19856",
+    "type": "paper",
+    "checked": "2026-10-19"
   }
 }

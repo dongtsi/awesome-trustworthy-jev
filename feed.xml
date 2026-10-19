@@ -6,6 +6,34 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models</title>
+      <link>https://arxiv.org/abs/2610.23804</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.23804#publication</guid>
+      <description>Coordinates live tasks with typed decisions and version checks, revalidating plans and spoken results when requests change; matched front/back models improve voice-task success from 29 to 192 of 278 tasks.</description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.23668</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.23668#publication</guid>
+      <description>Audits leakage through selected categories, option scores and confidence across nine decision models; workflow-constrained quantization reduces secret recovery while preserving specified downstream actions and costs.</description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking</title>
+      <link>https://arxiv.org/abs/2610.23346</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.23346#publication</guid>
+      <description>Compares Jev relevance judgments with official labels in four Portuguese retrieval collections; moderate item-level agreement can coexist with similar system rankings, and BM25 reranking improves in the tested setting.</description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making</title>
+      <link>https://arxiv.org/abs/2610.23170</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.23170#publication</guid>
+      <description>Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect.</description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling</title>
       <link>https://arxiv.org/abs/2610.22131</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.22131#publication</guid>

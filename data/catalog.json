@@ -15970,8 +15970,11 @@
     "scope": "related-model",
     "schema_version": 2,
     "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "review": "PDF methods, results, limitations and Appendix A reviewed; no independent replication",
+    "limitation": "Open decision models on controlled category-routing tasks; not a hosted Jev evaluation or end-to-end deployment study.",
+    "datasets": [
+      "Paired Fallback Robustness suite"
+    ]
   },
   {
     "id": "2610.19811",
@@ -16735,6 +16738,159 @@
     "review": "Original abstract verified; full-text review pending",
     "limitation": "Abstract-level review; checks were assembled mainly after failures, not all prospectively preregistered. No trading-return claim.",
     "license": "CC BY-NC-ND 4.0",
+    "datasets": []
+  },
+  {
+    "id": "2610.23804",
+    "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+    "short": "Jarvis",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.23804",
+    "pdf": "https://arxiv.org/pdf/2610.23804v1",
+    "date": "2026-10-16",
+    "updated": "2026-10-16",
+    "version": "2610.23804v1",
+    "added": "2026-10-19",
+    "authors": [
+      "Yuxiang Wang",
+      "Shengbo Cai",
+      "Zhixian Zhao",
+      "Yingda Shen",
+      "Yuancheng Wang",
+      "Xueyao Zhang",
+      "Liqiang Zhang",
+      "Teddy Sun",
+      "Steve Yves",
+      "Zhizheng Wu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Coordinates live tasks with typed decisions and version checks, revalidating plans and spoken results when requests change; matched front/back models improve voice-task success from 29 to 192 of 278 tasks.",
+    "brief_zh": "以类型化决策和版本检查协调运行中任务，随请求变化复核计划与播报结果；固定前后端模型时，语音任务成功数从278项中的29增至192。",
+    "summary": "Coordinates live tasks with typed decisions and version checks, revalidating plans and spoken results when requests change; matched front/back models improve voice-task success from 29 to 192 of 278 tasks.",
+    "summary_zh": "以类型化决策和版本检查协调运行中任务，随请求变化复核计划与播报结果；固定前后端模型时，语音任务成功数从278项中的29增至192。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.23668",
+    "title": "TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models",
+    "short": "TUPLE-Bench",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.23668",
+    "pdf": "https://arxiv.org/pdf/2610.23668v1",
+    "date": "2026-10-16",
+    "updated": "2026-10-16",
+    "version": "2610.23668v1",
+    "added": "2026-10-19",
+    "authors": [
+      "Yiqu Yang",
+      "Qiaoyuan Zheng",
+      "Yang Tian",
+      "Yu Fan",
+      "Elliott Ash"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/privacy"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Audits leakage through selected categories, option scores and confidence across nine decision models; workflow-constrained quantization reduces secret recovery while preserving specified downstream actions and costs.",
+    "brief_zh": "在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。",
+    "summary": "Audits leakage through selected categories, option scores and confidence across nine decision models; workflow-constrained quantization reduces secret recovery while preserving specified downstream actions and costs.",
+    "summary_zh": "在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.23170",
+    "title": "Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making",
+    "short": "Chinese Decision",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.23170",
+    "pdf": "https://arxiv.org/pdf/2610.23170v1",
+    "date": "2026-10-16",
+    "updated": "2026-10-16",
+    "version": "2610.23170v1",
+    "added": "2026-10-19",
+    "authors": [
+      "Qiang Yan"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect.",
+    "brief_zh": "通过候选字母logit与分布目标训练中文单次前向决策模型；完整训练的0.8B模型报告1.07%校准误差，未完成训练的2B结果无法隔离规模效应。",
+    "summary": "Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect.",
+    "summary_zh": "通过候选字母logit与分布目标训练中文单次前向决策模型；完整训练的0.8B模型报告1.07%校准误差，未完成训练的2B结果无法隔离规模效应。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": [],
+    "code": "https://github.com/yanqiangmiffy/chinese-decision"
+  },
+  {
+    "id": "2610.23346",
+    "title": "Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking",
+    "short": "Portuguese IR judgments",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.23346",
+    "pdf": "https://arxiv.org/pdf/2610.23346v1",
+    "date": "2026-10-16",
+    "updated": "2026-10-16",
+    "version": "2610.23346v1",
+    "added": "2026-10-19",
+    "authors": [
+      "Leandro Carísio Fernandes",
+      "Jayr Pereira"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Compares Jev relevance judgments with official labels in four Portuguese retrieval collections; moderate item-level agreement can coexist with similar system rankings, and BM25 reranking improves in the tested setting.",
+    "brief_zh": "在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。",
+    "summary": "Compares Jev relevance judgments with official labels in four Portuguese retrieval collections; moderate item-level agreement can coexist with similar system rankings, and BM25 reranking improves in the tested setting.",
+    "summary_zh": "在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
     "datasets": []
   }
 ]

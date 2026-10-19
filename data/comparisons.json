@@ -1454,5 +1454,26 @@
     },
     "source_section": "README and METHODOLOGY: dataset, protocol, scoring, confidence, limitations",
     "source": "https://github.com/etsabary/visual-decision-benchmark/blob/main/METHODOLOGY.md"
+  },
+  {
+    "id": "2610.19856",
+    "category": "trustworthiness",
+    "datasets": [
+      "Paired Fallback Robustness suite"
+    ],
+    "data_role": {
+      "en": "Controlled paired category-routing evaluation",
+      "zh": "受控配对类别路由评测"
+    },
+    "design": {
+      "en": "Four 4B models, CLINC150 (450), BANKING77 (385) and TREC50 (500). Each text crosses regular/fallback reassignment with union/complement definitions. Separate development panels select thresholds; paired text bootstrap and Holm-corrected McNemar tests compare conditions.",
+      "zh": "四个4B模型，CLINC150 450条、BANKING77 385条、TREC50 500条；每条文本交叉常规/兜底分配与并集/补集定义。独立开发集选阈值，按文本配对自助采样并使用Holm校正McNemar检验。"
+    },
+    "reading": {
+      "en": "Four-request correctness ranges from 18.2% to 81.0%. Correct category recognition does not ensure fallback execution, and similar aggregate scores hide changed choices. Thresholding trades missed fallback against unnecessary deferral; explicit mapping can still inherit classification errors. Controlled open-model tests do not establish hosted Jev or real-agent safety.",
+      "zh": "四请求全部正确率为18.2%–81.0%；类别识别正确不保证执行兜底规则，相近总体得分会掩盖个体选择变化。阈值在漏转交与多余转交之间取舍，显式映射仍继承分类错误。受控开放模型测试不能证明托管Jev或真实Agent安全。"
+    },
+    "source_section": "Sections 3–5, Tables 1–2, Limitations and Appendix A",
+    "source": "https://arxiv.org/pdf/2610.19856v1"
   }
 ]

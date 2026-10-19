@@ -2,6 +2,13 @@
 
 Grouped by first public publication date.
 
+## 2026-10-16
+
+- [Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models](https://arxiv.org/abs/2610.23804) — Coordinates live tasks with typed decisions and version checks, revalidating plans and spoken results when requests change; matched front/back models improve voice-task success from 29 to 192 of 278 tasks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.23804v1)
+- [TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models](https://arxiv.org/abs/2610.23668) — Audits leakage through selected categories, option scores and confidence across nine decision models; workflow-constrained quantization reduces secret recovery while preserving specified downstream actions and costs. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.23668v1)
+- [Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking](https://arxiv.org/abs/2610.23346) — Compares Jev relevance judgments with official labels in four Portuguese retrieval collections; moderate item-level agreement can coexist with similar system rankings, and BM25 reranking improves in the tested setting. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.23346v1)
+- [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170) — Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.23170v1) · [Code](https://github.com/yanqiangmiffy/chinese-decision)
+
 ## 2026-10-15
 
 - [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — Uses masked decision placeholders in a JSON skeleton for one-pass multimodal choices; reports compact-model accuracy, latency and small calibration and handoff pilots. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.22131v1)
