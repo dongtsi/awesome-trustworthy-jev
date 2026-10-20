@@ -373,5 +373,11 @@
     "url": "https://arxiv.org/abs/2610.19856",
     "type": "paper",
     "checked": "2026-10-19"
+  },
+  "TUPLE-Bench": {
+    "url": "https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench",
+    "type": "dataset",
+    "checked": "2026-10-20",
+    "verification": "Official author project website links this dataset; direct Hugging Face access unavailable."
   }
 }

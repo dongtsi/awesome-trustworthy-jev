@@ -10786,23 +10786,23 @@
   },
   {
     "id": "r-199f6b071e",
-    "title": "TypeSafe · api",
-    "short": "TypeSafe · api",
+    "title": "TypeSafe · System One API",
+    "short": "System One API",
     "theme": "Official",
     "kind": "Official",
     "scope": "Jev",
     "date": "",
-    "updated": "",
+    "updated": "2026-10-20",
     "added": "2026-10-02",
-    "url": "https://docs.typesafe.ai/api.md",
+    "url": "https://docs.typesafe.ai/api/system-one.md",
     "pdf": "",
     "code": "",
-    "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
+    "version": "5e6261f6f6212c6cf75fd55cc2856184b355a6400673b18314e85505e6219820",
+    "summary": "Documents mixed typed questions, response matching and model metadata; request limits and error handling now have a separate reference page.",
+    "summary_zh": "说明混合类型问题、响应匹配与模型元数据；请求限制和错误处理已拆分为独立参考页。",
     "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
     "evidence": "Vendor",
-    "review": "Source archived",
+    "review": "Official System One and request-rules documentation reviewed",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -10812,13 +10812,17 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Documents mixed typed questions, response matching and model metadata; request limits and error handling now have a separate reference page.",
+    "brief_zh": "说明混合类型问题、响应匹配与模型元数据；请求限制和错误处理已拆分为独立参考页。",
     "datasets": [],
     "authors": [
       "TypeSafe"
     ],
-    "author_kind": "organization"
+    "author_kind": "organization",
+    "related_urls": [
+      "https://docs.typesafe.ai/api/list-models.md",
+      "https://docs.typesafe.ai/api/errors.md"
+    ]
   },
   {
     "id": "r-1956acefc7",
@@ -16818,9 +16822,12 @@
     "summary": "Audits leakage through selected categories, option scores and confidence across nine decision models; workflow-constrained quantization reduces secret recovery while preserving specified downstream actions and costs.",
     "summary_zh": "在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。",
     "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract verified; detailed full-text review pending",
-    "limitation": "Abstract-level review; no independent replication.",
-    "datasets": []
+    "review": "PDF methods, results and limitations reviewed; no independent replication",
+    "limitation": "Synthetic paired cases, strong binary attacker prior, fixed decoders and saved responses; workflow preservation is not a confidentiality guarantee.",
+    "datasets": [
+      "TUPLE-Bench"
+    ],
+    "code": "https://github.com/qiaoyuan667/tuple-bench"
   },
   {
     "id": "2610.23170",
@@ -16888,6 +16895,509 @@
     "brief_zh": "在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。",
     "summary": "Compares Jev relevance judgments with official labels in four Portuguese retrieval collections; moderate item-level agreement can coexist with similar system rankings, and BM25 reranking improves in the tested setting.",
     "summary_zh": "在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25474",
+    "title": "P(Yes): 15$\\times$ Improvements via Test-Time Scaling of Decision Models",
+    "short": "P(Yes)",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25474",
+    "pdf": "https://arxiv.org/pdf/2610.25474v1",
+    "date": "2026-10-18",
+    "updated": "2026-10-18",
+    "version": "2610.25474v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Lev Stambler"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Searches candidate answers using frozen models' Yes probabilities, improving logic-puzzle accuracy without training; the headline 15-fold gain is exact correctness from 2 to 30 of 128 puzzles.",
+    "brief_zh": "利用冻结模型的Yes概率搜索候选答案，无需训练即可提高逻辑谜题准确率；标题中的15倍指128题中完全正确数从2增至30。",
+    "summary": "Searches candidate answers using frozen models' Yes probabilities, improving logic-puzzle accuracy without training; the headline 15-fold gain is exact correctness from 2 to 30 of 128 puzzles.",
+    "summary_zh": "利用冻结模型的Yes概率搜索候选答案，无需训练即可提高逻辑谜题准确率；标题中的15倍指128题中完全正确数从2增至30。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.24929",
+    "title": "What Can't Jev Decide? Probing the Limits of One-Pass Decision Models",
+    "short": "One-pass decision limits",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.24929",
+    "pdf": "https://arxiv.org/pdf/2610.24929v1",
+    "date": "2026-10-18",
+    "updated": "2026-10-18",
+    "version": "2610.24929v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Wang Yang",
+      "Xinpeng Li",
+      "Yanyan Zhang",
+      "Chuang Ma",
+      "Shouren Wang",
+      "Jianzhe Wei",
+      "Liqin Ye",
+      "Xiaoran Cai",
+      "Mohsen Hariri",
+      "Vipin Chaudhary",
+      "Xiaotian Han"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Probes state updates and stale summaries in one-pass decision models; strong record retrieval does not ensure multi-update reasoning, and confidence or handoff options fail to detect inherited state errors.",
+    "brief_zh": "探测单次前向决策模型的状态更新与过期摘要；强记录检索不保证多步更新推理，置信或转交选项无法识别继承的状态错误。",
+    "summary": "Probes state updates and stale summaries in one-pass decision models; strong record retrieval does not ensure multi-update reasoning, and confidence or handoff options fail to detect inherited state errors.",
+    "summary_zh": "探测单次前向决策模型的状态更新与过期摘要；强记录检索不保证多步更新推理，置信或转交选项无法识别继承的状态错误。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.26002",
+    "title": "TimesJev: Thinking Fast on Time Series with System 1 Sufficiency",
+    "short": "TimesJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.26002",
+    "pdf": "https://arxiv.org/pdf/2610.26002v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.26002v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Chenghao Liu",
+      "Wei Fan",
+      "Jindong Han",
+      "Dongjie Wang",
+      "Aniket Mahanti",
+      "Pengyang Wang",
+      "Hao Liu"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Learns gated time-series compression and embedding alignment from sufficiency and realizability objectives, enabling single-pass decisions; reports improved performance and lower latency across 13 datasets.",
+    "brief_zh": "依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。",
+    "summary": "Learns gated time-series compression and embedding alignment from sufficiency and realizability objectives, enabling single-pass decisions; reports improved performance and lower latency across 13 datasets.",
+    "summary_zh": "依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25553",
+    "title": "Narrow Decision Models: A System-1 Architecture for Calibrated, Typed Decisions",
+    "short": "Narrow Decision Models",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25553",
+    "pdf": "https://arxiv.org/pdf/2610.25553v1",
+    "date": "2026-10-18",
+    "updated": "2026-10-18",
+    "version": "2610.25553v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Carlos André Antunes",
+      "Aldry Albuquerque",
+      "Gabriel de Melo Schmith",
+      "Natã Batista",
+      "Pedro Oziel Escobar da Silva",
+      "Stefano Benko Rossi",
+      "Lingrid Dietrich Lorenz da Silva",
+      "Flávia Cristina da Costa",
+      "Thiago Bertotto",
+      "Luis Fernando Fausto"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Uses prefix-tree block attention and logical positions to make organization-specific decisions invariant to option order and independent across questions; small-scale validation tests these properties and routing behavior.",
+    "brief_zh": "利用前缀树块注意力及逻辑位置，使组织专用决策对选项顺序不变、问题之间独立；小规模验证测试这些性质与路由表现。",
+    "summary": "Uses prefix-tree block attention and logical positions to make organization-specific decisions invariant to option order and independent across questions; small-scale validation tests these properties and routing behavior.",
+    "summary_zh": "利用前缀树块注意力及逻辑位置，使组织专用决策对选项顺序不变、问题之间独立；小规模验证测试这些性质与路由表现。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.24692",
+    "title": "Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy",
+    "short": "Clinical triage calibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.24692",
+    "pdf": "https://arxiv.org/pdf/2610.24692v1",
+    "date": "2026-10-17",
+    "updated": "2026-10-17",
+    "version": "2610.24692v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Liang You",
+      "Zhiyin Zhou",
+      "Dawei Tang",
+      "Chuchu Wu",
+      "Jingzhuo Hu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Compares native probabilities and action accuracy on public triage cases; Jev has lower observed Brier scores but weaker action F1 and misses clarification needs, separating calibration from decision quality.",
+    "brief_zh": "在公开分诊案例上比较原生概率与动作准确率；Jev的实测Brier较低，但动作F1较弱且漏掉澄清需求，体现校准与决策质量的区别。",
+    "summary": "Compares native probabilities and action accuracy on public triage cases; Jev has lower observed Brier scores but weaker action F1 and misses clarification needs, separating calibration from decision quality.",
+    "summary_zh": "在公开分诊案例上比较原生概率与动作准确率；Jev的实测Brier较低，但动作F1较弱且漏掉澄清需求，体现校准与决策质量的区别。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.26797",
+    "title": "Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models",
+    "short": "Teacher bias and calibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.26797",
+    "pdf": "https://arxiv.org/pdf/2610.26797v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.26797v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Agus Sudjianto",
+      "Denis Burakov"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Derives exact risks for teacher targets, frozen representations and calibration in Gaussian surrogates; experiments show that better calibration and more student data do not remove inherited teacher bias.",
+    "brief_zh": "在高斯替代模型中推导教师目标、冻结表征与校准的精确风险；实验表明更好的校准和更多学生数据不能消除继承的教师偏差。",
+    "summary": "Derives exact risks for teacher targets, frozen representations and calibration in Gaussian surrogates; experiments show that better calibration and more student data do not remove inherited teacher bias.",
+    "summary_zh": "在高斯替代模型中推导教师目标、冻结表征与校准的精确风险；实验表明更好的校准和更多学生数据不能消除继承的教师偏差。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.24649",
+    "title": "Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success",
+    "short": "Good Judgment, Bad Advice",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.24649",
+    "pdf": "https://arxiv.org/pdf/2610.24649v1",
+    "date": "2026-10-17",
+    "updated": "2026-10-17",
+    "version": "2610.24649v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Naman Vats"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Holds a terminal-agent loop fixed while comparing five controllers; Jev increases cost by 19% at the same observed pass rate, showing that informative completion signals need not yield useful interventions.",
+    "brief_zh": "固定终端Agent流程比较五种控制器；Jev在相同实测通过率下增加19%成本，表明有信息量的完成信号未必转化为有效干预。",
+    "summary": "Holds a terminal-agent loop fixed while comparing five controllers; Jev increases cost by 19% at the same observed pass rate, showing that informative completion signals need not yield useful interventions.",
+    "summary_zh": "固定终端Agent流程比较五种控制器；Jev在相同实测通过率下增加19%成本，表明有信息量的完成信号未必转化为有效干预。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25843",
+    "title": "A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers",
+    "short": "Price-equivalent auditing",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25843",
+    "pdf": "https://arxiv.org/pdf/2610.25843v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.25843v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Felix Buecheler",
+      "Gerardo Berbeglia",
+      "Mingyu Guo"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Measures seller-cue influence as the price premium that equalizes choice probability; 113,472 controlled trials show that Jev resists many cues but remains sensitive to strong social-proof claims.",
+    "brief_zh": "以使选择概率持平的价格溢价衡量卖家线索影响；113,472次受控试验显示Jev抵抗多种线索，但仍受强社会认同声明影响。",
+    "summary": "Measures seller-cue influence as the price premium that equalizes choice probability; 113,472 controlled trials show that Jev resists many cues but remains sensitive to strong social-proof claims.",
+    "summary_zh": "以使选择概率持平的价格溢价衡量卖家线索影响；113,472次受控试验显示Jev抵抗多种线索，但仍受强社会认同声明影响。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25768",
+    "title": "Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-makers",
+    "short": "Truncated reasoning reader",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25768",
+    "pdf": "https://arxiv.org/pdf/2610.25768v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.25768v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Zhongyin Wang",
+      "Zhaoqian Xue",
+      "Junting Mu",
+      "Haozheng Liu",
+      "Ye Yuan",
+      "Haolun Wu",
+      "Lingyao Li"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Evaluates Jev as a reader of truncated reasoning across 35 reasoner-benchmark pairs; a training-fold-selected policy reduces estimated cost with a small held-out accuracy loss in offline replay.",
+    "brief_zh": "在35组推理器与基准组合上评估Jev读取截断推理；训练折选择的策略在离线重放中降低估算成本，留出折准确率小幅下降。",
+    "summary": "Evaluates Jev as a reader of truncated reasoning across 35 reasoner-benchmark pairs; a training-fold-selected policy reduces estimated cost with a small held-out accuracy loss in offline replay.",
+    "summary_zh": "在35组推理器与基准组合上评估Jev读取截断推理；训练折选择的策略在离线重放中降低估算成本，留出折准确率小幅下降。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.26325",
+    "title": "Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors",
+    "short": "Prevalence shift",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.26325",
+    "pdf": "https://arxiv.org/pdf/2610.26325v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.26325v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Abdul Rahman Iqbal",
+      "Muhammad Fawad Nasim",
+      "Amir Saleem"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Separates decision training from backbone readouts and tests five datasets under label shift; gains are task dependent, and existing miscalibration matters more than unique fragility to shift.",
+    "brief_zh": "区分决策训练与骨干读出，在五个数据集上测试标签分布偏移；收益依任务而变，已有失准比特有的分布偏移脆弱性更突出。",
+    "summary": "Separates decision training from backbone readouts and tests five datasets under label shift; gains are task dependent, and existing miscalibration matters more than unique fragility to shift.",
+    "summary_zh": "区分决策训练与骨干读出，在五个数据集上测试标签分布偏移；收益依任务而变，已有失准比特有的分布偏移脆弱性更突出。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25456",
+    "title": "System X: An LLM Decision Model That Replies from Its Own KV Cache",
+    "short": "System X",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25456",
+    "pdf": "https://arxiv.org/pdf/2610.25456v1",
+    "date": "2026-10-18",
+    "updated": "2026-10-18",
+    "version": "2610.25456v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Syed Usama Khalid Bukhari",
+      "Syed Safwan Khalid",
+      "Muhammad Aamir"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Adds a text-reply choice and reuses the decision KV cache for generation; measured latency falls, but support-task gains trade off against instruction following and reply preferences depend on the judge.",
+    "brief_zh": "增加文本回复选项，并复用决策KV缓存进行生成；实测延迟下降，但客服任务收益与指令遵循存在取舍，回复偏好也依裁判而变。",
+    "summary": "Adds a text-reply choice and reuses the decision KV cache for generation; measured latency falls, but support-task gains trade off against instruction following and reply preferences depend on the judge.",
+    "summary_zh": "增加文本回复选项，并复用决策KV缓存进行生成；实测延迟下降，但客服任务收益与指令遵循存在取舍，回复偏好也依裁判而变。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.25784",
+    "title": "UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models",
+    "short": "UniJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25784",
+    "pdf": "https://arxiv.org/pdf/2610.25784v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.25784v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Jianing Wang",
+      "Youwen Jian",
+      "Derong Wang",
+      "Jinyang Yu",
+      "Qingyi Si",
+      "Chuanyu Qin",
+      "Yanghua Xiao",
+      "Hongcheng Guo"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Separates supervised accuracy gains from calibration in text, image and video decision models; confidence-outcome alignment lowers visual ECE at 2B and 9B while preserving accuracy without reinforcement learning.",
+    "brief_zh": "在文本、图像和视频决策模型中区分监督学习的准确率收益与校准；置信—结果对齐无需强化学习，在2B和9B上降低视觉ECE并保持准确率。",
+    "summary": "Separates supervised accuracy gains from calibration in text, image and video decision models; confidence-outcome alignment lowers visual ECE at 2B and 9B while preserving accuracy without reinforcement learning.",
+    "summary_zh": "在文本、图像和视频决策模型中区分监督学习的准确率收益与校准；置信—结果对齐无需强化学习，在2B和9B上降低视觉ECE并保持准确率。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.26793",
+    "title": "SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models",
+    "short": "SOMA",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.26793",
+    "pdf": "https://arxiv.org/pdf/2610.26793v1",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.26793v1",
+    "added": "2026-10-20",
+    "authors": [
+      "Ruizhi Qian",
+      "Lei Shi",
+      "Tianyu Hu",
+      "Bo Yan",
+      "Song Wang",
+      "Yu Tian"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Continuously monitors reasoning with a shared decision model and escalating interventions; reports up to 36% fewer reasoning tokens and higher abstention on unanswerable questions without training.",
+    "brief_zh": "以共享决策模型持续监测推理并逐步干预；无需训练，报告推理token最多减少36%，且不可回答问题上的弃答率提高。",
+    "summary": "Continuously monitors reasoning with a shared decision model and escalating interventions; reports up to 36% fewer reasoning tokens and higher abstention on unanswerable questions without training.",
+    "summary_zh": "以共享决策模型持续监测推理并逐步干预；无需训练，报告推理token最多减少36%，且不可回答问题上的弃答率提高。",
     "evidence": "Original arXiv metadata and abstract",
     "review": "Original abstract verified; detailed full-text review pending",
     "limitation": "Abstract-level review; no independent replication.",

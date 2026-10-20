@@ -1475,5 +1475,26 @@
     },
     "source_section": "Sections 3–5, Tables 1–2, Limitations and Appendix A",
     "source": "https://arxiv.org/pdf/2610.19856v1"
+  },
+  {
+    "id": "2610.23668",
+    "category": "trustworthiness",
+    "datasets": [
+      "TUPLE-Bench"
+    ],
+    "data_role": {
+      "en": "Synthetic paired privacy and utility benchmark",
+      "zh": "合成配对隐私与效用基准"
+    },
+    "design": {
+      "en": "720 pairs in three domains, split 432/144/144 by pair; nine models and five release views from the same saved responses. Decoders and task policies are selected on validation data. Evaluation uses 288 test worlds and 2,000 pair-clustered bootstrap resamples.",
+      "zh": "三个领域720对案例，按对划分432/144/144；九个模型，同一保存响应派生五种发布视图。验证集选择攻击解码器和任务策略；测试288个世界，用2,000次按对聚类自助采样。"
+    },
+    "reading": {
+      "en": "Scores expose protected causes beyond the selected label. On three models, workflow-constrained quantization lowers recovery by 10.07–24.65 points while preserving 18 frozen workflow/cost combinations. Synthetic costs, binary attacker hypotheses and intervals conditional on fixed fitting limit generalization; actions and native fallbacks can still leak.",
+      "zh": "分数会泄露所选标签之外的受保护原因。三个模型上的工作流约束量化降低恢复率10.07–24.65点，并保留18种冻结工作流/成本组合。合成成本、二元攻击假设及固定拟合条件下的区间限制推广；动作和原始响应回退仍可泄漏。"
+    },
+    "source_section": "Sections 4–8, Table 3 and Limitations",
+    "source": "https://arxiv.org/pdf/2610.23668v1"
   }
 ]

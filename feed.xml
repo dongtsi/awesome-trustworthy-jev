@@ -6,6 +6,97 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models</title>
+      <link>https://arxiv.org/abs/2610.26797</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.26797#publication</guid>
+      <description>Derives exact risks for teacher targets, frozen representations and calibration in Gaussian surrogates; experiments show that better calibration and more student data do not remove inherited teacher bias.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models</title>
+      <link>https://arxiv.org/abs/2610.26793</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.26793#publication</guid>
+      <description>Continuously monitors reasoning with a shared decision model and escalating interventions; reports up to 36% fewer reasoning tokens and higher abstention on unanswerable questions without training.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors</title>
+      <link>https://arxiv.org/abs/2610.26325</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.26325#publication</guid>
+      <description>Separates decision training from backbone readouts and tests five datasets under label shift; gains are task dependent, and existing miscalibration matters more than unique fragility to shift.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>TimesJev: Thinking Fast on Time Series with System 1 Sufficiency</title>
+      <link>https://arxiv.org/abs/2610.26002</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.26002#publication</guid>
+      <description>Learns gated time-series compression and embedding alignment from sufficiency and realizability objectives, enabling single-pass decisions; reports improved performance and lower latency across 13 datasets.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers</title>
+      <link>https://arxiv.org/abs/2610.25843</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25843#publication</guid>
+      <description>Measures seller-cue influence as the price premium that equalizes choice probability; 113,472 controlled trials show that Jev resists many cues but remains sensitive to strong social-proof claims.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models</title>
+      <link>https://arxiv.org/abs/2610.25784</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25784#publication</guid>
+      <description>Separates supervised accuracy gains from calibration in text, image and video decision models; confidence-outcome alignment lowers visual ECE at 2B and 9B while preserving accuracy without reinforcement learning.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-makers</title>
+      <link>https://arxiv.org/abs/2610.25768</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25768#publication</guid>
+      <description>Evaluates Jev as a reader of truncated reasoning across 35 reasoner-benchmark pairs; a training-fold-selected policy reduces estimated cost with a small held-out accuracy loss in offline replay.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Narrow Decision Models: A System-1 Architecture for Calibrated, Typed Decisions</title>
+      <link>https://arxiv.org/abs/2610.25553</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25553#publication</guid>
+      <description>Uses prefix-tree block attention and logical positions to make organization-specific decisions invariant to option order and independent across questions; small-scale validation tests these properties and routing behavior.</description>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>P(Yes): 15$\times$ Improvements via Test-Time Scaling of Decision Models</title>
+      <link>https://arxiv.org/abs/2610.25474</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25474#publication</guid>
+      <description>Searches candidate answers using frozen models' Yes probabilities, improving logic-puzzle accuracy without training; the headline 15-fold gain is exact correctness from 2 to 30 of 128 puzzles.</description>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>System X: An LLM Decision Model That Replies from Its Own KV Cache</title>
+      <link>https://arxiv.org/abs/2610.25456</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25456#publication</guid>
+      <description>Adds a text-reply choice and reuses the decision KV cache for generation; measured latency falls, but support-task gains trade off against instruction following and reply preferences depend on the judge.</description>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What Can't Jev Decide? Probing the Limits of One-Pass Decision Models</title>
+      <link>https://arxiv.org/abs/2610.24929</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.24929#publication</guid>
+      <description>Probes state updates and stale summaries in one-pass decision models; strong record retrieval does not ensure multi-update reasoning, and confidence or handoff options fail to detect inherited state errors.</description>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy</title>
+      <link>https://arxiv.org/abs/2610.24692</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.24692#publication</guid>
+      <description>Compares native probabilities and action accuracy on public triage cases; Jev has lower observed Brier scores but weaker action F1 and misses clarification needs, separating calibration from decision quality.</description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success</title>
+      <link>https://arxiv.org/abs/2610.24649</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.24649#publication</guid>
+      <description>Holds a terminal-agent loop fixed while comparing five controllers; Jev increases cost by 19% at the same observed pass rate, showing that informative completion signals need not yield useful interventions.</description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models</title>
       <link>https://arxiv.org/abs/2610.23804</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.23804#publication</guid>

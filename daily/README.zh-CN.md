@@ -2,10 +2,32 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-19
+
+- [Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models](https://arxiv.org/abs/2610.26797) — 在高斯替代模型中推导教师目标、冻结表征与校准的精确风险；实验表明更好的校准和更多学生数据不能消除继承的教师偏差。 `评测` · [PDF](https://arxiv.org/pdf/2610.26797v1)
+- [SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models](https://arxiv.org/abs/2610.26793) — 以共享决策模型持续监测推理并逐步干预；无需训练，报告推理token最多减少36%，且不可回答问题上的弃答率提高。 `评测` · [PDF](https://arxiv.org/pdf/2610.26793v1)
+- [Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors](https://arxiv.org/abs/2610.26325) — 区分决策训练与骨干读出，在五个数据集上测试标签分布偏移；收益依任务而变，已有失准比特有的分布偏移脆弱性更突出。 `评测` · [PDF](https://arxiv.org/pdf/2610.26325v1)
+- [TimesJev: Thinking Fast on Time Series with System 1 Sufficiency](https://arxiv.org/abs/2610.26002) — 依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。 `评测` · [PDF](https://arxiv.org/pdf/2610.26002v1)
+- [A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers](https://arxiv.org/abs/2610.25843) — 以使选择概率持平的价格溢价衡量卖家线索影响；113,472次受控试验显示Jev抵抗多种线索，但仍受强社会认同声明影响。 `评测` · [PDF](https://arxiv.org/pdf/2610.25843v1)
+- [UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models](https://arxiv.org/abs/2610.25784) — 在文本、图像和视频决策模型中区分监督学习的准确率收益与校准；置信—结果对齐无需强化学习，在2B和9B上降低视觉ECE并保持准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.25784v1)
+- [Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-makers](https://arxiv.org/abs/2610.25768) — 在35组推理器与基准组合上评估Jev读取截断推理；训练折选择的策略在离线重放中降低估算成本，留出折准确率小幅下降。 `评测` · [PDF](https://arxiv.org/pdf/2610.25768v1)
+
+## 2026-10-18
+
+- [Narrow Decision Models: A System-1 Architecture for Calibrated, Typed Decisions](https://arxiv.org/abs/2610.25553) — 利用前缀树块注意力及逻辑位置，使组织专用决策对选项顺序不变、问题之间独立；小规模验证测试这些性质与路由表现。 `评测` · [PDF](https://arxiv.org/pdf/2610.25553v1)
+- [P(Yes): 15$\times$ Improvements via Test-Time Scaling of Decision Models](https://arxiv.org/abs/2610.25474) — 利用冻结模型的Yes概率搜索候选答案，无需训练即可提高逻辑谜题准确率；标题中的15倍指128题中完全正确数从2增至30。 `评测` · [PDF](https://arxiv.org/pdf/2610.25474v1)
+- [System X: An LLM Decision Model That Replies from Its Own KV Cache](https://arxiv.org/abs/2610.25456) — 增加文本回复选项，并复用决策KV缓存进行生成；实测延迟下降，但客服任务收益与指令遵循存在取舍，回复偏好也依裁判而变。 `评测` · [PDF](https://arxiv.org/pdf/2610.25456v1)
+- [What Can't Jev Decide? Probing the Limits of One-Pass Decision Models](https://arxiv.org/abs/2610.24929) — 探测单次前向决策模型的状态更新与过期摘要；强记录检索不保证多步更新推理，置信或转交选项无法识别继承的状态错误。 `评测` · [PDF](https://arxiv.org/pdf/2610.24929v1)
+
+## 2026-10-17
+
+- [Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy](https://arxiv.org/abs/2610.24692) — 在公开分诊案例上比较原生概率与动作准确率；Jev的实测Brier较低，但动作F1较弱且漏掉澄清需求，体现校准与决策质量的区别。 `评测` · [PDF](https://arxiv.org/pdf/2610.24692v1)
+- [Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success](https://arxiv.org/abs/2610.24649) — 固定终端Agent流程比较五种控制器；Jev在相同实测通过率下增加19%成本，表明有信息量的完成信号未必转化为有效干预。 `评测` · [PDF](https://arxiv.org/pdf/2610.24649v1)
+
 ## 2026-10-16
 
 - [Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models](https://arxiv.org/abs/2610.23804) — 以类型化决策和版本检查协调运行中任务，随请求变化复核计划与播报结果；固定前后端模型时，语音任务成功数从278项中的29增至192。 `评测` · [PDF](https://arxiv.org/pdf/2610.23804v1)
-- [TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models](https://arxiv.org/abs/2610.23668) — 在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.23668v1)
+- [TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models](https://arxiv.org/abs/2610.23668) — 在九个决策模型中审核类别、选项分数与置信字段的隐私泄漏；工作流约束量化降低秘密恢复率，同时保留指定下游动作及成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.23668v1) · [代码](https://github.com/qiaoyuan667/tuple-bench)
 - [Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking](https://arxiv.org/abs/2610.23346) — 在四个葡萄牙语检索集合上比较Jev判断与官方标签；条目层面中等一致性可与相近系统排名并存，所测BM25重排效果提升。 `评测` · [PDF](https://arxiv.org/pdf/2610.23346v1)
 - [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170) — 通过候选字母logit与分布目标训练中文单次前向决策模型；完整训练的0.8B模型报告1.07%校准误差，未完成训练的2B结果无法隔离规模效应。 `评测` · [PDF](https://arxiv.org/pdf/2610.23170v1) · [代码](https://github.com/yanqiangmiffy/chinese-decision)
 
