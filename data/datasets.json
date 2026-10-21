@@ -379,5 +379,11 @@
     "type": "dataset",
     "checked": "2026-10-20",
     "verification": "Official author project website links this dataset; direct Hugging Face access unavailable."
+  },
+  "Terminal-Bench 2.1": {
+    "url": "https://github.com/harbor-framework/terminal-bench-2-1",
+    "type": "benchmark",
+    "checked": "2026-10-21",
+    "verification": "Official benchmark repository cited by the original paper and author project; 21-task held-out subset, not the complete benchmark."
   }
 }

@@ -2,6 +2,10 @@
 
 Grouped by first public publication date.
 
+## 2026-10-20
+
+- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — Treats multimodal reranking as a single choice over retrieved candidates; choice readouts outperform per-candidate yes/no scoring, while text-only decision tuning improves document reranking. Cross-model comparisons are confounded by size and generation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.28435v1)
+
 ## 2026-10-19
 
 - [Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models](https://arxiv.org/abs/2610.26797) — Derives exact risks for teacher targets, frozen representations and calibration in Gaussian surrogates; experiments show that better calibration and more student data do not remove inherited teacher bias. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.26797v1)
@@ -22,7 +26,7 @@ Grouped by first public publication date.
 ## 2026-10-17
 
 - [Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy](https://arxiv.org/abs/2610.24692) — Compares native probabilities and action accuracy on public triage cases; Jev has lower observed Brier scores but weaker action F1 and misses clarification needs, separating calibration from decision quality. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.24692v1)
-- [Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success](https://arxiv.org/abs/2610.24649) — Holds a terminal-agent loop fixed while comparing five controllers; Jev increases cost by 19% at the same observed pass rate, showing that informative completion signals need not yield useful interventions. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.24649v1)
+- [Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success](https://arxiv.org/abs/2610.24649) — Holds a terminal-agent loop fixed while comparing five controllers; Jev increases cost by 19% at the same observed pass rate, showing that informative completion signals need not yield useful interventions. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.24649v1) · [Code](https://github.com/namanvats/decision-model-controllers)
 
 ## 2026-10-16
 

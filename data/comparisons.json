@@ -1496,5 +1496,26 @@
     },
     "source_section": "Sections 4–8, Table 3 and Limitations",
     "source": "https://arxiv.org/pdf/2610.23668v1"
+  },
+  {
+    "id": "2610.24649",
+    "category": "applications",
+    "datasets": [
+      "Terminal-Bench 2.1"
+    ],
+    "data_role": {
+      "en": "Held-out terminal-agent tasks",
+      "zh": "留出终端Agent任务"
+    },
+    "design": {
+      "en": "21 held-out tasks × five controller arms × three attempts, with arm order randomized within task-attempt blocks. The Sonnet 5.5 agent, triggers, guards and 60-step/$1 caps are fixed. Task-paired means use 10,000 task bootstrap resamples. Costs include controller calls but exclude sandbox costs.",
+      "zh": "21个留出任务×五种控制器×三次尝试，在任务—尝试区组内随机安排顺序。固定Sonnet 5.5 Agent、触发器、保护规则及60步/1美元上限。按任务配对均值，进行10,000次任务级自助采样。费用包含控制器调用，不含沙箱。"
+    },
+    "reading": {
+      "en": "Jev/native geometric cost ratio is 1.19 [1.02, 1.36]; both pass rates are 73%, with a difference interval of −11.1 to +12.7 points. No detectable pass gain is not equivalence. Offline finish AUROC .78 does not establish causal intervention value. Mostly easy tasks, one agent/version and development-frequency placebo limit generalization.",
+      "zh": "Jev相对原生Agent的成本几何比为1.19 [1.02, 1.36]；两者成功率均73%，差值区间为−11.1至+12.7个百分点。未检测到增益不等于等效。离线结束判断AUROC为.78，不能证明干预的因果价值。任务多数简单、单一Agent/版本及开发集频率安慰剂限制推广。"
+    },
+    "source_section": "Sections 3–6 and Appendices A–C",
+    "source": "https://arxiv.org/pdf/2610.24649v1"
   }
 ]

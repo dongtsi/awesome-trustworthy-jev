@@ -2,6 +2,10 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-20
+
+- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — 将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。 `评测` · [PDF](https://arxiv.org/pdf/2610.28435v1)
+
 ## 2026-10-19
 
 - [Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models](https://arxiv.org/abs/2610.26797) — 在高斯替代模型中推导教师目标、冻结表征与校准的精确风险；实验表明更好的校准和更多学生数据不能消除继承的教师偏差。 `评测` · [PDF](https://arxiv.org/pdf/2610.26797v1)
@@ -22,7 +26,7 @@
 ## 2026-10-17
 
 - [Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy](https://arxiv.org/abs/2610.24692) — 在公开分诊案例上比较原生概率与动作准确率；Jev的实测Brier较低，但动作F1较弱且漏掉澄清需求，体现校准与决策质量的区别。 `评测` · [PDF](https://arxiv.org/pdf/2610.24692v1)
-- [Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success](https://arxiv.org/abs/2610.24649) — 固定终端Agent流程比较五种控制器；Jev在相同实测通过率下增加19%成本，表明有信息量的完成信号未必转化为有效干预。 `评测` · [PDF](https://arxiv.org/pdf/2610.24649v1)
+- [Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success](https://arxiv.org/abs/2610.24649) — 固定终端Agent流程比较五种控制器；Jev在相同实测通过率下增加19%成本，表明有信息量的完成信号未必转化为有效干预。 `评测` · [PDF](https://arxiv.org/pdf/2610.24649v1) · [代码](https://github.com/namanvats/decision-model-controllers)
 
 ## 2026-10-16
 

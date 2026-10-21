@@ -6,6 +6,13 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Multimodal Reranking Is a System One Decision</title>
+      <link>https://arxiv.org/abs/2610.28435</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.28435#publication</guid>
+      <description>Treats multimodal reranking as a single choice over retrieved candidates; choice readouts outperform per-candidate yes/no scoring, while text-only decision tuning improves document reranking. Cross-model comparisons are confounded by size and generation.</description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models</title>
       <link>https://arxiv.org/abs/2610.26797</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.26797#publication</guid>
