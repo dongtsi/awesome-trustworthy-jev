@@ -844,7 +844,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 
 ```bibtex
 @misc{dongtsi_awesome_trustworthy_jev,
-  author = {dongtsi},
+  author = {Dongqi Han},
   title = {Awesome Trustworthy Jev},
   year = {2026},
   url = {https://github.com/dongtsi/awesome-trustworthy-jev}

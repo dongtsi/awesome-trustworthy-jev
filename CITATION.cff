@@ -3,7 +3,8 @@ message: "Please cite this catalog using the metadata below."
 title: "Awesome Trustworthy Jev"
 type: dataset
 authors:
-  - name: "dongtsi"
+  - family-names: "Han"
+    given-names: "Dongqi"
     website: "https://github.com/dongtsi"
 version: "2026.10.02"
 license: CC-BY-NC-4.0

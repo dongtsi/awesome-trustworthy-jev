@@ -844,7 +844,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 
 ```bibtex
 @misc{dongtsi_awesome_trustworthy_jev,
-  author = {dongtsi},
+  author = {Dongqi Han},
   title = {Awesome Trustworthy Jev},
   year = {2026},
   url = {https://github.com/dongtsi/awesome-trustworthy-jev}
