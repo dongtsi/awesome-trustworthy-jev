@@ -385,5 +385,17 @@
     "type": "benchmark",
     "checked": "2026-10-21",
     "verification": "Official benchmark repository cited by the original paper and author project; 21-task held-out subset, not the complete benchmark."
+  },
+  "MMEB-V2": {
+    "url": "https://github.com/TIGER-AI-Lab/VLM2Vec",
+    "type": "benchmark",
+    "checked": "2026-10-23",
+    "verification": "Benchmark identified in original paper; official project repository."
+  },
+  "ViDoRe V3": {
+    "url": "https://arxiv.org/abs/2601.08620",
+    "type": "benchmark",
+    "checked": "2026-10-23",
+    "verification": "Benchmark identified in original paper; original benchmark paper used as reference; dataset landing page not verified."
   }
 }

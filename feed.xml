@@ -6,6 +6,62 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Jev-DLC: Decision-Level Continual Learning from Typed Feedback</title>
+      <link>https://arxiv.org/abs/2610.31521</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.31521#publication</guid>
+      <description>Stores typed corrections in bounded action and preference-relation channels above a frozen scorer, without extra scorer calls or runtime backpropagation. A chronological benchmark measures effects on later decisions; reported gains depend on prior feedback depth.</description>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification</title>
+      <link>https://arxiv.org/abs/2610.31422</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.31422#publication</guid>
+      <description>Evaluates four decision models across 13 Vietnamese classification settings and label-language variants. Removing diacritics causes larger degradation than teencode or typographical errors; bilingual descriptions offer no consistent gain.</description>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection</title>
+      <link>https://arxiv.org/abs/2610.30777</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.30777#publication</guid>
+      <description>Maps structural, attribute and neighborhood anomaly evidence into semantic graph states for a frozen decision readout, fused with statistical scores. Seven graph benchmarks test a training-free approach; reported averages do not establish robustness to adaptive attacks.</description>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift</title>
+      <link>https://arxiv.org/abs/2610.30090</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.30090#publication</guid>
+      <description>Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.</description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models</title>
+      <link>https://arxiv.org/abs/2610.29217</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.29217#publication</guid>
+      <description>Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set.</description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models</title>
+      <link>https://arxiv.org/abs/2610.29052</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.29052#publication</guid>
+      <description>Reports an internal typed judge and open LoRA decision models. Public hard-tier results are single-seed and developed with the evaluation items in view; corpus revisions shift small-benchmark accuracy substantially.</description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG</title>
+      <link>https://arxiv.org/abs/2610.28957</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.28957#publication</guid>
+      <description>Compares 11 long-document retrieval configurations with fixed passages, output budget and answer generator. Full scans can lose evidence during reduction; evidence coverage, answer quality and reuse cost favor different configurations.</description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI</title>
+      <link>https://arxiv.org/abs/2610.28826</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.28826#publication</guid>
+      <description>Compares Jev with LLM judges using physician ratings and model-based references across four clinical-output evaluation settings. Agreement and lower measured cost/latency concern the tested judging configurations, not clinical deployment safety.</description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Multimodal Reranking Is a System One Decision</title>
       <link>https://arxiv.org/abs/2610.28435</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.28435#publication</guid>

@@ -17438,6 +17438,323 @@
     "brief_zh": "将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。",
     "summary": "Treats multimodal reranking as a single choice over retrieved candidates; choice readouts outperform per-candidate yes/no scoring, while text-only decision tuning improves document reranking. Cross-model comparisons are confounded by size and generation.",
     "summary_zh": "将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。",
+    "evidence": "Original arXiv full text and author repository",
+    "review": "PDF methods, results, implementation and alternative views reviewed; no independent replication",
+    "limitation": "Top-16 candidates in first-stage order only; no order or calibration audit. Dedicated reranker comparisons confound size and generation; latency uses 100 English queries on one H200, and Gemma uses a smaller image budget.",
+    "datasets": [
+      "MMEB-V2",
+      "ViDoRe V3"
+    ],
+    "code": "https://github.com/Ryenhails/rerank-as-decision"
+  },
+  {
+    "id": "2610.29217",
+    "title": "When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models",
+    "short": "Multiple Correct Choices",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.29217",
+    "pdf": "https://arxiv.org/pdf/2610.29217v1",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "version": "2610.29217v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Rushab Munot"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set.",
+    "brief_zh": "检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。",
+    "summary": "Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set.",
+    "summary_zh": "检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.29052",
+    "title": "Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models",
+    "short": "Our Own Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.29052",
+    "pdf": "https://arxiv.org/pdf/2610.29052v1",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "version": "2610.29052v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Yuchuan Weng",
+      "Chi Liu",
+      "Xin Chen",
+      "Srinivasan Manoharan"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Reports an internal typed judge and open LoRA decision models. Public hard-tier results are single-seed and developed with the evaluation items in view; corpus revisions shift small-benchmark accuracy substantially.",
+    "brief_zh": "报告内部类型化裁判与开放LoRA决策模型。公开难题结果来自单次种子，开发时已查看评测题；语料版本改变会显著影响小型基准准确率。",
+    "summary": "Reports an internal typed judge and open LoRA decision models. Public hard-tier results are single-seed and developed with the evaluation items in view; corpus revisions shift small-benchmark accuracy substantially.",
+    "summary_zh": "报告内部类型化裁判与开放LoRA决策模型。公开难题结果来自单次种子，开发时已查看评测题；语料版本改变会显著影响小型基准准确率。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.31422",
+    "title": "How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification",
+    "short": "Vietnamese Transfer",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.31422",
+    "pdf": "https://arxiv.org/pdf/2610.31422v1",
+    "date": "2026-10-22",
+    "updated": "2026-10-22",
+    "version": "2610.31422v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Phat Huu Ha",
+      "Nguyen Xuan Phuc",
+      "Nong Nhut Quy",
+      "Trinh Tran Tran",
+      "Nguyen Minh Triet",
+      "Dang Van Thin"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Evaluates four decision models across 13 Vietnamese classification settings and label-language variants. Removing diacritics causes larger degradation than teencode or typographical errors; bilingual descriptions offer no consistent gain.",
+    "brief_zh": "在13种越南语分类设置及不同标签语言下评测四种决策模型。去除声调符号比网络缩写或拼写错误造成更大退化；双语标签没有一致收益。",
+    "summary": "Evaluates four decision models across 13 Vietnamese classification settings and label-language variants. Removing diacritics causes larger degradation than teencode or typographical errors; bilingual descriptions offer no consistent gain.",
+    "summary_zh": "在13种越南语分类设置及不同标签语言下评测四种决策模型。去除声调符号比网络缩写或拼写错误造成更大退化；双语标签没有一致收益。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.28957",
+    "title": "Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG",
+    "short": "Scan or Index?",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.28957",
+    "pdf": "https://arxiv.org/pdf/2610.28957v1",
+    "date": "2026-10-20",
+    "updated": "2026-10-20",
+    "version": "2610.28957v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Juan Terven",
+      "Diana-Margarita Córdova-Esparza",
+      "Julio-Alejandro Romero-González",
+      "Edgar Chavez-Urbiola",
+      "Juan Irving Vasquez",
+      "Julian Andres Ramirez-Bautista",
+      "Silvia L. Chaparro-Cárdenas",
+      "Gendry Alfonso-Francia"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Compares 11 long-document retrieval configurations with fixed passages, output budget and answer generator. Full scans can lose evidence during reduction; evidence coverage, answer quality and reuse cost favor different configurations.",
+    "brief_zh": "固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。",
+    "summary": "Compares 11 long-document retrieval configurations with fixed passages, output budget and answer generator. Full scans can lose evidence during reduction; evidence coverage, answer quality and reuse cost favor different configurations.",
+    "summary_zh": "固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.31521",
+    "title": "Jev-DLC: Decision-Level Continual Learning from Typed Feedback",
+    "short": "Jev-DLC",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.31521",
+    "pdf": "https://arxiv.org/pdf/2610.31521v1",
+    "date": "2026-10-22",
+    "updated": "2026-10-22",
+    "version": "2610.31521v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Yangyang Feng",
+      "Jianle Gan",
+      "Zhuoyan Feng",
+      "Chengwei Qin"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Stores typed corrections in bounded action and preference-relation channels above a frozen scorer, without extra scorer calls or runtime backpropagation. A chronological benchmark measures effects on later decisions; reported gains depend on prior feedback depth.",
+    "brief_zh": "在冻结评分器之上，以有界动作与偏好关系通道保存类型化纠正，不增加评分调用或运行时反向传播。时序基准只计入对后续决策的影响；报告收益取决于已有反馈深度。",
+    "summary": "Stores typed corrections in bounded action and preference-relation channels above a frozen scorer, without extra scorer calls or runtime backpropagation. A chronological benchmark measures effects on later decisions; reported gains depend on prior feedback depth.",
+    "summary_zh": "在冻结评分器之上，以有界动作与偏好关系通道保存类型化纠正，不增加评分调用或运行时反向传播。时序基准只计入对后续决策的影响；报告收益取决于已有反馈深度。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and Appendix B.1/G.3 model identity verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.28826",
+    "title": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
+    "short": "Clinical AI Judges",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.28826",
+    "pdf": "https://arxiv.org/pdf/2610.28826v1",
+    "date": "2026-10-20",
+    "updated": "2026-10-20",
+    "version": "2610.28826v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Rotem Gershon",
+      "Seffi Cohen",
+      "Dean Ariel",
+      "Havatzelet Bilavsky-Yarden",
+      "Amiel Sberro",
+      "Shai Yitzhaki",
+      "Osnat Tausky",
+      "Naama Golan",
+      "Maayan Rabinovitch",
+      "Ariel Avraham Hasidim",
+      "Itay Arianu",
+      "Maya Dagan",
+      "Ran Balicer",
+      "Noa Dagan"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Compares Jev with LLM judges using physician ratings and model-based references across four clinical-output evaluation settings. Agreement and lower measured cost/latency concern the tested judging configurations, not clinical deployment safety.",
+    "brief_zh": "在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。",
+    "summary": "Compares Jev with LLM judges using physician ratings and model-based references across four clinical-output evaluation settings. Agreement and lower measured cost/latency concern the tested judging configurations, not clinical deployment safety.",
+    "summary_zh": "在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.30777",
+    "title": "One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection",
+    "short": "Jev-GAD",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.30777",
+    "pdf": "https://arxiv.org/pdf/2610.30777v1",
+    "date": "2026-10-22",
+    "updated": "2026-10-22",
+    "version": "2610.30777v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Xinyu Zhao",
+      "Qingyun Sun",
+      "Ziwei Zhang",
+      "Tianchen Zhu",
+      "Daqing Li",
+      "Jianxin Li"
+    ],
+    "target": "open",
+    "categories": [
+      "applications/intrusion",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Maps structural, attribute and neighborhood anomaly evidence into semantic graph states for a frozen decision readout, fused with statistical scores. Seven graph benchmarks test a training-free approach; reported averages do not establish robustness to adaptive attacks.",
+    "brief_zh": "将结构、属性及邻域异常证据转成语义图状态，交给冻结决策读出并与统计分数融合。在七个图基准测试无任务训练方案；报告均值不证明对适应性攻击的鲁棒性。",
+    "summary": "Maps structural, attribute and neighborhood anomaly evidence into semantic graph states for a frozen decision readout, fused with statistical scores. Seven graph benchmarks test a training-free approach; reported averages do not establish robustness to adaptive attacks.",
+    "summary_zh": "将结构、属性及邻域异常证据转成语义图状态，交给冻结决策读出并与统计分数融合。在七个图基准测试无任务训练方案；报告均值不证明对适应性攻击的鲁棒性。",
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract verified; detailed full-text review pending",
+    "limitation": "Abstract-level review; no independent replication.",
+    "datasets": []
+  },
+  {
+    "id": "2610.30090",
+    "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
+    "short": "VX-One",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.30090",
+    "pdf": "https://arxiv.org/pdf/2610.30090v1",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "version": "2610.30090v1",
+    "added": "2026-10-23",
+    "authors": [
+      "Juan S. Santillana"
+    ],
+    "target": "open",
+    "categories": [
+      "applications/intrusion",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "brief_en": "Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.",
+    "brief_zh": "研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。",
+    "summary": "Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.",
+    "summary_zh": "研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。",
     "evidence": "Original arXiv metadata and abstract",
     "review": "Original abstract verified; detailed full-text review pending",
     "limitation": "Abstract-level review; no independent replication.",

@@ -2,9 +2,23 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-22
+
+- [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521) — 在冻结评分器之上，以有界动作与偏好关系通道保存类型化纠正，不增加评分调用或运行时反向传播。时序基准只计入对后续决策的影响；报告收益取决于已有反馈深度。 `评测` · [PDF](https://arxiv.org/pdf/2610.31521v1)
+- [How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification](https://arxiv.org/abs/2610.31422) — 在13种越南语分类设置及不同标签语言下评测四种决策模型。去除声调符号比网络缩写或拼写错误造成更大退化；双语标签没有一致收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.31422v1)
+- [One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection](https://arxiv.org/abs/2610.30777) — 将结构、属性及邻域异常证据转成语义图状态，交给冻结决策读出并与统计分数融合。在七个图基准测试无任务训练方案；报告均值不证明对适应性攻击的鲁棒性。 `评测` · [PDF](https://arxiv.org/pdf/2610.30777v1)
+
+## 2026-10-21
+
+- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift](https://arxiv.org/abs/2610.30090) — 研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。 `评测` · [PDF](https://arxiv.org/pdf/2610.30090v1)
+- [When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models](https://arxiv.org/abs/2610.29217) — 检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。 `评测` · [PDF](https://arxiv.org/pdf/2610.29217v1)
+- [Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models](https://arxiv.org/abs/2610.29052) — 报告内部类型化裁判与开放LoRA决策模型。公开难题结果来自单次种子，开发时已查看评测题；语料版本改变会显著影响小型基准准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.29052v1)
+
 ## 2026-10-20
 
-- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — 将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。 `评测` · [PDF](https://arxiv.org/pdf/2610.28435v1)
+- [Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG](https://arxiv.org/abs/2610.28957) — 固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。 `评测` · [PDF](https://arxiv.org/pdf/2610.28957v1)
+- [Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI](https://arxiv.org/abs/2610.28826) — 在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。 `评测` · [PDF](https://arxiv.org/pdf/2610.28826v1)
+- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — 将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。 `评测` · [PDF](https://arxiv.org/pdf/2610.28435v1) · [代码](https://github.com/Ryenhails/rerank-as-decision)
 
 ## 2026-10-19
 

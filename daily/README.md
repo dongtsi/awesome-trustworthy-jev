@@ -2,9 +2,23 @@
 
 Grouped by first public publication date.
 
+## 2026-10-22
+
+- [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521) — Stores typed corrections in bounded action and preference-relation channels above a frozen scorer, without extra scorer calls or runtime backpropagation. A chronological benchmark measures effects on later decisions; reported gains depend on prior feedback depth. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.31521v1)
+- [How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification](https://arxiv.org/abs/2610.31422) — Evaluates four decision models across 13 Vietnamese classification settings and label-language variants. Removing diacritics causes larger degradation than teencode or typographical errors; bilingual descriptions offer no consistent gain. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.31422v1)
+- [One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection](https://arxiv.org/abs/2610.30777) — Maps structural, attribute and neighborhood anomaly evidence into semantic graph states for a frozen decision readout, fused with statistical scores. Seven graph benchmarks test a training-free approach; reported averages do not establish robustness to adaptive attacks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.30777v1)
+
+## 2026-10-21
+
+- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift](https://arxiv.org/abs/2610.30090) — Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.30090v1)
+- [When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models](https://arxiv.org/abs/2610.29217) — Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.29217v1)
+- [Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models](https://arxiv.org/abs/2610.29052) — Reports an internal typed judge and open LoRA decision models. Public hard-tier results are single-seed and developed with the evaluation items in view; corpus revisions shift small-benchmark accuracy substantially. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.29052v1)
+
 ## 2026-10-20
 
-- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — Treats multimodal reranking as a single choice over retrieved candidates; choice readouts outperform per-candidate yes/no scoring, while text-only decision tuning improves document reranking. Cross-model comparisons are confounded by size and generation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.28435v1)
+- [Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG](https://arxiv.org/abs/2610.28957) — Compares 11 long-document retrieval configurations with fixed passages, output budget and answer generator. Full scans can lose evidence during reduction; evidence coverage, answer quality and reuse cost favor different configurations. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.28957v1)
+- [Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI](https://arxiv.org/abs/2610.28826) — Compares Jev with LLM judges using physician ratings and model-based references across four clinical-output evaluation settings. Agreement and lower measured cost/latency concern the tested judging configurations, not clinical deployment safety. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.28826v1)
+- [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — Treats multimodal reranking as a single choice over retrieved candidates; choice readouts outperform per-candidate yes/no scoring, while text-only decision tuning improves document reranking. Cross-model comparisons are confounded by size and generation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.28435v1) · [Code](https://github.com/Ryenhails/rerank-as-decision)
 
 ## 2026-10-19
 

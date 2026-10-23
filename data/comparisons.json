@@ -1517,5 +1517,27 @@
     },
     "source_section": "Sections 3–6 and Appendices A–C",
     "source": "https://arxiv.org/pdf/2610.24649v1"
+  },
+  {
+    "id": "2610.28435",
+    "category": "foundations",
+    "datasets": [
+      "MMEB-V2",
+      "ViDoRe V3"
+    ],
+    "data_role": {
+      "en": "Image and visual-document retrieval benchmarks",
+      "zh": "图像与视觉文档检索基准"
+    },
+    "design": {
+      "en": "Reranks identical top-16 candidates on MMEB-V2 (12 image and 24 document tasks) and ViDoRe V3 (eight datasets, six languages pooled). Compares a frozen 27B backbone with its text decision adapter/head, plus 2B/8B dedicated rerankers. Choice versus yes/no is tested on images only; latency uses 100 English queries on one H200.",
+      "zh": "在MMEB-V2的12项图像、24项文档任务及ViDoRe V3的八个数据集（合并六种语言）上重排相同前16候选。比较冻结27B骨干及其文本决策适配器/头，另设2B/8B专用重排器。选择与是非读出仅在图像任务对照；延迟测100条英文查询、单张H200。"
+    },
+    "reading": {
+      "en": "Choice beats zero-shot yes/no by 5.38–7.26 hit@1 points. Text decision tuning adds 0.63/1.09 document nDCG points; task sign tests give p=.017/.008. One pass is not necessarily faster: 3.97 s versus 2.61 s for batched 8B reranking. Model scale/generation, fixed candidate order and unequal cross-family image budgets constrain interpretation.",
+      "zh": "选择读出比零样本是非读出高5.38–7.26点hit@1。文本决策微调使文档nDCG提高0.63/1.09点，任务级符号检验p=.017/.008。单次前向未必更快：3.97秒，对比批处理8B重排器2.61秒。规模/代际差异、固定候选顺序及跨家族图像预算不同限制解释。"
+    },
+    "source_section": "Sections 3–10, Tables 2–4 and Appendix B",
+    "source": "https://arxiv.org/pdf/2610.28435v1"
   }
 ]
