@@ -397,5 +397,23 @@
     "type": "benchmark",
     "checked": "2026-10-23",
     "verification": "Benchmark identified in original paper; original benchmark paper used as reference; dataset landing page not verified."
+  },
+  "MetaTool": {
+    "url": "https://github.com/HowieHwong/MetaTool",
+    "type": "benchmark",
+    "checked": "2026-10-24",
+    "verification": "Original benchmark/project entry; evaluation split and sample counts checked in the reviewed paper."
+  },
+  "HotpotQA": {
+    "url": "https://hotpotqa.github.io/",
+    "type": "benchmark",
+    "checked": "2026-10-24",
+    "verification": "Original benchmark/project entry; evaluation split and sample counts checked in the reviewed paper."
+  },
+  "ECtHR (LexGLUE Task A)": {
+    "url": "https://github.com/coastalcph/lex-glue",
+    "type": "benchmark",
+    "checked": "2026-10-24",
+    "verification": "Original benchmark/project entry; evaluation split and sample counts checked in the reviewed paper."
   }
 }

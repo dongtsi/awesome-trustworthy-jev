@@ -10385,12 +10385,12 @@
     "url": "https://docs.typesafe.ai/models.md",
     "pdf": "",
     "code": "",
-    "version": "checked-2026-10-15",
-    "summary": "Lists Jev 1.14 preview and Jev 1.13 stable, version-pinned IDs and opt-in extended context; current aliases must be distinguished from versioned models.",
-    "summary_zh": "列出 Jev 1.14 预览、Jev 1.13 稳定版、固定版本 ID 与可选扩展上下文；应区分动态别名和具体版本。",
-    "limitation": "At the check date, jev-preview points to 1.14.0 and jev-latest to 1.13.0. Experimental images require an opt-in flag despite the default model table listing text input.",
+    "version": "checked-2026-10-24",
+    "summary": "Lists jev-latest and jev-preview both pointing to Jev 1.14.0 at this check, alongside version-pinned IDs and opt-in extended context. Aliases can change independently of pinned versions.",
+    "summary_zh": "本次核验时，jev-latest与jev-preview均指向Jev 1.14.0；另列固定版本ID及可选扩展上下文。动态别名可能变化，应与固定版本区分。",
+    "limitation": "Aliases checked on 2026-10-24; transition date not established. Experimental images require opt-in; no account-level model call or independent performance validation.",
     "evidence": "Vendor",
-    "review": "Models page and linked release, images and Box documentation read",
+    "review": "Official page compared with prior saved version; alias/example change verified, actual transition date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -10400,8 +10400,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Lists Jev 1.14 preview and Jev 1.13 stable, version-pinned IDs and opt-in extended context; current aliases must be distinguished from versioned models.",
-    "brief_zh": "列出 Jev 1.14 预览、Jev 1.13 稳定版、固定版本 ID 与可选扩展上下文；应区分动态别名和具体版本。",
+    "brief_en": "Lists jev-latest and jev-preview both pointing to Jev 1.14.0 at this check, alongside version-pinned IDs and opt-in extended context. Aliases can change independently of pinned versions.",
+    "brief_zh": "本次核验时，jev-latest与jev-preview均指向Jev 1.14.0；另列固定版本ID及可选扩展上下文。动态别名可能变化，应与固定版本区分。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -16159,7 +16159,7 @@
     "date": "",
     "updated": "",
     "added": "2026-10-15",
-    "version": "checked-2026-10-15",
+    "version": "checked-2026-10-24",
     "authors": [
       "TypeSafe"
     ],
@@ -16170,16 +16170,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Documents single-box localization in Jev 1.14; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
-    "brief_zh": "说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
-    "summary": "Documents single-box localization in Jev 1.14; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
-    "summary_zh": "说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
+    "brief_en": "Documents experimental single-box localization using jev-latest; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
+    "brief_zh": "说明使用jev-latest的实验性单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
+    "summary": "Documents experimental single-box localization using jev-latest; absent targets still return coordinates, so presence checks and task-specific confidence validation are needed.",
+    "summary_zh": "说明使用jev-latest的实验性单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。",
     "theme": "Official",
     "scope": "hosted-jev",
     "schema_version": 2,
     "evidence": "Official documentation",
-    "review": "Original page read",
-    "limitation": "Experimental opt-in features; no independent performance validation."
+    "review": "Official page compared with prior saved version; alias/example change verified, actual transition date unknown",
+    "limitation": "Experimental opt-in feature; example now uses jev-latest, documented as 1.14.0 at this check. No independent performance validation."
   },
   {
     "id": "2610.20907",
@@ -17476,10 +17476,14 @@
     "brief_zh": "检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。",
     "summary": "Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set.",
     "summary_zh": "检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。",
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract verified; detailed full-text review pending",
-    "limitation": "Abstract-level review; no independent replication.",
-    "datasets": []
+    "evidence": "Original arXiv full text",
+    "review": "PDF methods, results and appendices reviewed; no independent replication",
+    "limitation": "Thresholds selected on evaluation data; two comparator endpoints lack immutable versions. Luna refused 19,724/168,322 lists across all experiments. Author code URL returned 404; saved model responses are not included according to the paper.",
+    "datasets": [
+      "MetaTool",
+      "HotpotQA",
+      "ECtHR (LexGLUE Task A)"
+    ]
   },
   {
     "id": "2610.29052",

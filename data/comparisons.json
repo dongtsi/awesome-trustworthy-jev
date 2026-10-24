@@ -1539,5 +1539,28 @@
     },
     "source_section": "Sections 3–10, Tables 2–4 and Appendix B",
     "source": "https://arxiv.org/pdf/2610.28435v1"
+  },
+  {
+    "id": "2610.29217",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "MetaTool",
+      "HotpotQA",
+      "ECtHR (LexGLUE Task A)"
+    ],
+    "data_role": {
+      "en": "Tool selection, supporting-passage selection and legal-label benchmarks",
+      "zh": "工具选择、支持段落选择及法律标签基准"
+    },
+    "design": {
+      "en": "Compares Jev 1.13.0, d1 and Luna Decisions on MetaTool (4,287 examples), HotpotQA validation (7,405) and ECtHR test (1,000). Uses native multi-correct lists, five identical answer copies with randomized IDs and cyclic order, and yes/no questions. Global thresholds are selected on evaluation data; 2,000 bootstrap resamples keep answers from each example together.",
+      "zh": "比较Jev 1.13.0、d1及Luna Decisions：MetaTool 4,287例、HotpotQA验证集7,405例、ECtHR测试集1,000例。测试原生多正确项列表、五份相同答案（随机ID与循环顺序）及是非问答。全局阈值在评估数据上选择；2,000次自助重采样保持同一例的答案成组。"
+    },
+    "reading": {
+      "en": "Among perfectly ranked lists, 28–50% place a correct choice below uniform probability; this is conditional, not an overall error rate. Best evaluation-set exact accuracy is .34–.64. Identical-copy gaps are 17–79 percentage points across models. Below-uniform mass alone does not establish miscalibration; threshold selection, endpoint drift and refusals constrain comparison.",
+      "zh": "在排序完全正确的列表中，28–50%仍有正确项低于均匀概率；这是条件比例，并非总体错误率。评估集最优阈值的集合完全正确率为.34–.64；跨模型相同答案概率极差17–79个百分点。低于均匀值本身不证明失校准；阈值选择、端点漂移及拒答限制模型比较。"
+    },
+    "source_section": "Main text methods/results and Appendices I–K",
+    "source": "https://arxiv.org/pdf/2610.29217v1"
   }
 ]

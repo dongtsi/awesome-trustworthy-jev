@@ -162,13 +162,13 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [TypeSafe · primitives](https://docs.typesafe.ai/primitives.md) — Official interface documentation and deployment guidance. `文档`
 - [TypeSafe · state](https://docs.typesafe.ai/concepts/state.md) — Official interface documentation and deployment guidance. `文档`
 - [TypeSafe · sde_cascade](https://docs.typesafe.ai/cookbooks/sde_cascade.md) — Official interface documentation and deployment guidance. `文档`
-- [TypeSafe · models](https://docs.typesafe.ai/models.md) — 列出 Jev 1.14 预览、Jev 1.13 稳定版、固定版本 ID 与可选扩展上下文；应区分动态别名和具体版本。 `文档`
+- [TypeSafe · models](https://docs.typesafe.ai/models.md) — 本次核验时，jev-latest与jev-preview均指向Jev 1.14.0；另列固定版本ID及可选扩展上下文。动态别名可能变化，应与固定版本区分。 `文档`
 - [TypeSafe · System One API](https://docs.typesafe.ai/api/system-one.md) — 说明混合类型问题、响应匹配与模型元数据；请求限制和错误处理已拆分为独立参考页。 `文档`
 - [TypeSafe · how-to-build-with-system-one](https://docs.typesafe.ai/concepts/how-to-build-with-system-one.md) — Official interface documentation and deployment guidance. `文档`
 - [TypeSafe · introduction](https://docs.typesafe.ai/introduction.md) — Official interface documentation and deployment guidance. `文档`
 - [Jev: For the builders AND dreamers](https://typesafe.ai/blog/jev-1-14) — 发布 Jev 1.14 预览及实验性图像输入、Box 定位和扩展上下文；厂商测量不构成独立可靠性证据。 `文档`
 - [Images in System One requests](https://docs.typesafe.ai/images.md) — 说明 Jev 1.13 和 1.14 的实验性图像输入；每边须为280–1568像素，并受PNG/JPEG格式及请求大小限制。 `文档`
-- [Box questions](https://docs.typesafe.ai/primitives/box.md) — 说明 Jev 1.14 的单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。 `文档`
+- [Box questions](https://docs.typesafe.ai/primitives/box.md) — 说明使用jev-latest的实验性单框定位；目标缺失仍返回坐标，因此需额外存在性判断与任务内置信验证。 `文档`
 
 （另见：[calfram-bench](https://github.com/lorenzofamiglini/calfram-bench) · [Traffic Classification](https://arxiv.org/abs/2610.00376) · [Ordinal Bias](https://arxiv.org/abs/2609.38827) · [jev-dice](https://github.com/pobooo/jev-dice) · [JET](https://arxiv.org/abs/2609.33874) · [zh-decision-bench](https://github.com/CodyQin/zh-decision-bench) · [jevbench](https://github.com/GautamTalksDev/jevbench) · [Early Evidence Audit](https://arxiv.org/abs/2609.32160) · [JevOut](https://github.com/xzx34/JevOut) · [jev-field-report](https://github.com/manankumarthakkar/jev-field-report) · [jev-escalation-gate](https://github.com/manankumarthakkar/jev-escalation-gate) · [Jev in the Wild](https://arxiv.org/abs/2609.30216) · [Private Edge](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7500140) · [Jev-Persian-Benchmark](https://github.com/ArmanJR/Jev-Persian-Benchmark) · [Visual Jev](https://arxiv.org/abs/2609.25845) · [typesafe-ai-jev-example](https://github.com/ItBayMax/typesafe-ai-jev-example) · [jevshield](https://github.com/lgy1027/jevshield) · [this-that-model](https://arxiv.org/abs/2609.23886) · [jev-as-a-judge](https://github.com/danielgshea/jev-as-a-judge) · [jev-guard](https://github.com/leepokai/jev-guard) · [can-you-trust-jev-confidence](https://anth.us/blog/can-you-trust-jev-confidence) · [typesafe-jev-pre-registered-test](https://primeline.cc/blog/typesafe-jev-pre-registered-test) · [jev-arena](https://github.com/meetr1912/jev-arena) · [jev-noul-vs-choice](https://github.com/TakumiNoguchi2004/jev-noul-vs-choice) · [jev-deterministic-benchmark](https://github.com/etsabary/jev-deterministic-benchmark) · [jev-playground](https://github.com/kobashi/jev-playground) · [jev-audit](https://github.com/phuthuycoding/jev-audit) · [browser-jev](https://github.com/DowLucas/browser-jev) · [jev-synthetic-survey](https://github.com/jjd-lab/jev-synthetic-survey) · [jev-heart-risk-bench](https://github.com/rubinagentagi-tech/jev-heart-risk-bench) · [jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study) · [jev-calibrate](https://github.com/smkrv/jev-calibrate) · [structured-decision-bench](https://github.com/zhengbangbo/structured-decision-bench) · [opencode-jev-compaction](https://github.com/JLegends/opencode-jev-compaction) · [jevfuzz](https://github.com/yottayoshida/jevfuzz) · [Jev-Calibration](https://github.com/AnthusAI/Jev-Calibration) · [jev-skills](https://github.com/WanLanglin/jev-skills) · [jev-probability-experiment](https://github.com/simonmesmith/jev-probability-experiment) · [jev-biomedical-evidence-screening](https://github.com/cx295410-dot/jev-biomedical-evidence-screening) · [Dyad](https://arxiv.org/abs/2609.36116) · [Calibration composition](https://zenodo.org/records/23064668) · [GraphDecide](https://arxiv.org/abs/2610.06354) · [HVAC reasoning and shift](https://arxiv.org/abs/2610.09937) · [MetaEncoder](https://arxiv.org/abs/2610.11316) · [JevKT cold-start evaluation](https://arxiv.org/abs/2610.11135) · [Good Judgment, Bad Advice](https://arxiv.org/abs/2610.24649) · [Truncated reasoning reader](https://arxiv.org/abs/2610.25768) · [Jev-GAD](https://arxiv.org/abs/2610.30777)）
 
@@ -756,6 +756,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [DROP and GSM8K presentation audit](https://arxiv.org/abs/2610.11436) | 论文说明 | [Candidate cues and request order](https://arxiv.org/abs/2610.11436) |
 | [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/) | 数据集 | [PixelJev](https://arxiv.org/abs/2609.29283) |
 | [DUCS-Bench](https://github.com/moyuan10086/cascaded-guardrail-npu) | 基准 | [COGNIT-Guard](https://arxiv.org/abs/2609.33671) |
+| [ECtHR (LexGLUE Task A)](https://github.com/coastalcph/lex-glue) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [EPANET C-Town](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net1](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net3](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
@@ -770,6 +771,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [HakemBench v1.0](https://arxiv.org/abs/2610.06744) | 论文说明 | [ufakzeka-karar](https://arxiv.org/abs/2610.06744) |
 | [HellaSwag](https://rowanzellers.com/hellaswag/) | 数据集 | [Jev-37](https://arxiv.org/abs/2609.37647) |
 | [Hidden Risks task suite](https://github.com/shihe98/Security_Privacy_Jev) | 研究材料 | [Hidden Risks of Jev](https://arxiv.org/abs/2610.04985) |
+| [HotpotQA](https://hotpotqa.github.io/) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 基准 | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [JGLUE JNLI](https://github.com/yahoojapan/JGLUE) | 基准 | [Jev selective prediction on JNLI](https://github.com/hshicalu/jev-selective-prediction) |
 | [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | 基准 | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
@@ -786,6 +788,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [MCPHunt](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [MMEB-V2](https://github.com/TIGER-AI-Lab/VLM2Vec) | 基准 | [Multimodal Reranking](https://arxiv.org/abs/2610.28435) |
 | [MetaEncoder 190-task evaluation](https://arxiv.org/abs/2610.11316) | 论文说明 | [MetaEncoder](https://arxiv.org/abs/2610.11316) |
+| [MetaTool](https://github.com/HowieHwong/MetaTool) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [MiniGrid and Atari Jev RL evaluation](https://arxiv.org/abs/2610.11692) | 论文说明 | [Frozen Jev in RL training](https://arxiv.org/abs/2610.11692) |
 | [NSL-KDD](https://www.unb.ca/cic/datasets/nsl.html) | 数据集 | [Jev-IDS](https://arxiv.org/abs/2610.01079) |
 | [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) | 数据集 | [PixelJev](https://arxiv.org/abs/2609.29283) |
