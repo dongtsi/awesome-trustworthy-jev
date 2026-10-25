@@ -2,6 +2,10 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-24
+
+- [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
+
 ## 2026-10-22
 
 - [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521) — 在冻结评分器之上，以有界动作与偏好关系通道保存类型化纠正，不增加评分调用或运行时反向传播。时序基准只计入对后续决策的影响；报告收益取决于已有反馈深度。 `评测` · [PDF](https://arxiv.org/pdf/2610.31521v1)
@@ -78,7 +82,7 @@
 - [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780) — 用 Jev 审计信息来源到决策的交接，区分错误引入、传播和修复；在五组多智能体基准子集上改善故障步骤定位。 `评测` · [PDF](https://arxiv.org/pdf/2610.18780v1)
 - [Jeva: System One Models from First Principles](https://arxiv.org/abs/2610.18773) — 通过独立选项编码、对称聚合和单独覆盖估计，构建支持排列不变性、空答案与缓存复用的决策架构。 `评测` · [PDF](https://arxiv.org/pdf/2610.18773v1)
 - [VideoJev: System One Model for Video Understanding and Interaction](https://arxiv.org/abs/2610.18615) — 通过共享决策头和视觉计算复用完成时序定位与视频问答；作者报告推理提速，任务得分相当或提高。 `评测` · [PDF](https://arxiv.org/pdf/2610.18615v1)
-- [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — 在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.18612v1)
+- [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — 追踪攻击者上下文如何改变Jev应用实际消费的决策。发布基准在优先选取翻转记录的整理子集中有81.5%翻转；影响标签表示潜在后果，不代表已观察到的现实损害。 `评测` · [PDF](https://arxiv.org/pdf/2610.18612v1) · [代码](https://github.com/xiaoxiaohg8d/JevProbe-)
 - [Jev-ToM: Evaluating Theory of Mind in Typed Decision Models](https://arxiv.org/abs/2610.18610) — 在 11,117 道心智理论题上评测类型化模型；Jev 在多个能力组领先，但置信筛选、附加理由与候选扩展效果依赖任务。 `评测` · [PDF](https://arxiv.org/pdf/2610.18610v1)
 - [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579) — 在 Agent 状态上配对动作选择与事实探针；多数错误动作发生在正确读取信息之后，暴露组合推理与子目标选择缺陷。 `评测` · [PDF](https://arxiv.org/pdf/2610.18579v1)
 - [How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs](https://arxiv.org/abs/2610.18529) — 在 15 个医学数据集上测试准确率、提示稳定性与弃答；Jev 的文本任务表现优于数值任务，但识别答案缺失仍困难。 `评测` · [PDF](https://arxiv.org/pdf/2610.18529v1)

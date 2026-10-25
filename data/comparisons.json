@@ -1562,5 +1562,26 @@
     },
     "source_section": "Main text methods/results and Appendices I–K",
     "source": "https://arxiv.org/pdf/2610.29217v1"
+  },
+  {
+    "id": "2610.18612",
+    "category": "trustworthiness/security",
+    "datasets": [
+      "JevProbeBench"
+    ],
+    "data_role": {
+      "en": "Curated application-level context-to-decision security cases",
+      "zh": "整理后的应用级上下文到决策安全案例"
+    },
+    "design": {
+      "en": "Screens 356 of 1,711 candidate repositories, evaluates 228 reachable applications with Jev 1.13.0, and releases 2,273 records capped at ten per project, selected flips-first. Framework/model comparisons use 183 cases across ten applications; framework attacks have matched budgets and a 96-character payload limit. Model comparisons replay Jev-targeted contexts.",
+      "zh": "从1,711个候选仓库筛查356个，在228个可达应用上评测Jev 1.13.0。发布2,273条记录，每项目最多十条并优先选翻转案例。框架/模型比较使用十个应用的183例；框架攻击预算匹配、载荷限96字符。模型比较重放面向Jev生成的上下文。"
+    },
+    "reading": {
+      "en": "Curated records contain 1,853 flips (81.5%) and 1,827 hard-gated unsafe labels (98.6% of flips), not unbiased all-attempt rates. Framework macro DFR is 79.8% versus ASB 29.4%; the defense table has a separate 78.7% baseline, reduced to 68.9% by delimiting. Selection, label definitions and differing paper/repository protocols limit interpretation.",
+      "zh": "整理记录中有1,853次翻转（81.5%）、1,827条硬门控不安全标签（翻转中的98.6%），不是无偏的全尝试比例。框架宏平均DFR为79.8%，ASB为29.4%；防御表另用78.7%基线，分隔标记降至68.9%。选择方式、标签定义及论文/仓库协议差异限制解释。"
+    },
+    "source_section": "Sections 3–5; Tables 2–5; Appendices B–F; author benchmark README/manifest and docs/PROTOCOL.md",
+    "source": "https://arxiv.org/pdf/2610.18612v1"
   }
 ]

@@ -415,5 +415,11 @@
     "type": "benchmark",
     "checked": "2026-10-24",
     "verification": "Original benchmark/project entry; evaluation split and sample counts checked in the reviewed paper."
+  },
+  "JevProbeBench": {
+    "url": "https://github.com/xiaoxiaohg8d/JevProbe-/tree/main/benchmarks/JevProbeBench",
+    "type": "benchmark",
+    "checked": "2026-10-25",
+    "verification": "Author repository tree, benchmark README and manifest read: 2,273 records, cap ten per project, flips-first selection; full attempt ledgers not released. One redacted input retains historical labels and was not rerun."
   }
 }

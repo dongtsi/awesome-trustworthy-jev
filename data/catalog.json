@@ -15521,16 +15521,20 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.",
-    "brief_zh": "在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。",
-    "summary": "Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.",
-    "summary_zh": "在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。",
+    "brief_en": "Traces attacker-controlled context to program-consumed decisions in Jev applications. The released benchmark has 81.5% flips in a flips-first curated subset; its impact labels describe potential consequences, not observed real-world harm.",
+    "brief_zh": "追踪攻击者上下文如何改变Jev应用实际消费的决策。发布基准在优先选取翻转记录的整理子集中有81.5%翻转；影响标签表示潜在后果，不代表已观察到的现实损害。",
+    "summary": "Traces attacker-controlled context to program-consumed decisions in Jev applications. The released benchmark has 81.5% flips in a flips-first curated subset; its impact labels describe potential consequences, not observed real-world harm.",
+    "summary_zh": "追踪攻击者上下文如何改变Jev应用实际消费的决策。发布基准在优先选取翻转记录的整理子集中有81.5%翻转；影响标签表示潜在后果，不代表已观察到的现实损害。",
     "theme": "Robustness",
     "scope": "hosted-jev",
     "schema_version": 2,
-    "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "evidence": "Original full text and author benchmark/protocol",
+    "review": "PDF methods/results/appendices and author README, benchmark manifest and protocol reviewed; no independent execution",
+    "limitation": "Released records use a cap of 10 per project with flips-first selection; rates are not population estimates. Full attempt ledgers are absent. Repository single-pass protocol differs from paper iterative refinement; hard-gated risk labels differ from consequence labels. Sandbox potential impacts are not observed harm.",
+    "datasets": [
+      "JevProbeBench"
+    ],
+    "code": "https://github.com/xiaoxiaohg8d/JevProbe-"
   },
   {
     "id": "2610.17309",
@@ -17763,5 +17767,41 @@
     "review": "Original abstract verified; detailed full-text review pending",
     "limitation": "Abstract-level review; no independent replication.",
     "datasets": []
+  },
+  {
+    "id": "zenodo-23601427",
+    "title": "Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models",
+    "short": "Calibration, Ranking and Execution",
+    "kind": "Paper",
+    "date": "2026-10-24",
+    "updated": "2026-10-24",
+    "added": "2026-10-25",
+    "version": "v11",
+    "authors": [
+      "Haomin Luo",
+      "Ersha Li"
+    ],
+    "url": "https://zenodo.org/records/23601427",
+    "doi": "10.5281/zenodo.23601427",
+    "pdf": "https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content",
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Separates probability calibration, directional discrimination and portfolio ranking in financial-news evaluations of Jev and three language models. Low ECE can accompany weak discrimination; different samples and execution windows limit comparisons of predictive and economic usefulness.",
+    "brief_zh": "在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。",
+    "summary": "Separates probability calibration, directional discrimination and portfolio ranking in financial-news evaluations of Jev and three language models. Low ECE can accompany weak discrimination; different samples and execution windows limit comparisons of predictive and economic usefulness.",
+    "summary_zh": "在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original Zenodo metadata and PDF abstract",
+    "review": "Original metadata, PDF abstract and introductory design read; detailed full-text audit pending",
+    "limitation": "Title and body panels differ in samples and units; retrospective execution assumptions matter. Earliest verified public record is Zenodo 2026-10-24; the PDF submission watermark of 2026-10-13 is not evidence of public availability. No independent replication."
   }
 ]

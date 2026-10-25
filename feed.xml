@@ -6,6 +6,13 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models</title>
+      <link>https://zenodo.org/records/23601427</link>
+      <guid isPermaLink="false">https://zenodo.org/records/23601427#publication</guid>
+      <description>Separates probability calibration, directional discrimination and portfolio ranking in financial-news evaluations of Jev and three language models. Low ECE can accompany weak discrimination; different samples and execution windows limit comparisons of predictive and economic usefulness.</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Jev-DLC: Decision-Level Continual Learning from Typed Feedback</title>
       <link>https://arxiv.org/abs/2610.31521</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.31521#publication</guid>
@@ -338,7 +345,7 @@
       <title>Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications</title>
       <link>https://arxiv.org/abs/2610.18612</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.18612#publication</guid>
-      <description>Traces reachable attacker-controlled context to schema-valid decision flips and potential downstream impacts across 228 Jev applications; releases an application-level attack benchmark.</description>
+      <description>Traces attacker-controlled context to program-consumed decisions in Jev applications. The released benchmark has 81.5% flips in a flips-first curated subset; its impact labels describe potential consequences, not observed real-world harm.</description>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

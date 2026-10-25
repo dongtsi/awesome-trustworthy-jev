@@ -10,7 +10,7 @@
 
 Jev 模型基础、自身可信性，以及网络与系统安全应用的论文、模型、项目和技术文档。
 
-共 `466` 条资源 · `179` 篇论文 · `251` 个项目 · `26` 份官方文档 · `10` 篇文章
+共 `467` 条资源 · `180` 篇论文 · `251` 个项目 · `26` 份官方文档 · `10` 篇文章
 
 **[打开在线资料库 →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=zh)** · [每日论文](daily/README.zh-CN.md) · [RSS](feed.xml) · [提交资料](CONTRIBUTING.md)
 
@@ -248,7 +248,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation](https://arxiv.org/abs/2610.11436) — 添加冒号使排序字段请求中的明确错误终值更易被接受，保留插入顺序时两种候选均被拒绝。 `评测` · [PDF](https://arxiv.org/pdf/2610.11436v1)
 - [Same Attack, Different Judge: A First Controlled Adversarial Comparison of Jev, LLM Judges, and Purpose-Built Safety Classifiers](https://arxiv.org/abs/2610.17820) — 以相同对抗载荷比较 Jev、LLM 裁判与安全分类器；Jev 对规则式审核攻击的抵抗优于钓鱼任务，同时存在明显良性误报。 `评测` · [PDF](https://arxiv.org/pdf/2610.17820v1)
 - [Poisoned into Action: Context Attacks on Typed Decision Workflows](https://arxiv.org/abs/2610.15537) — 追踪投毒上下文经检索、类型化决策进入持久状态的过程；两个合成工作流显示，防御阻止违规的同时也会扣留正确自动化操作。 `评测` · [PDF](https://arxiv.org/pdf/2610.15537v1) · [代码](https://github.com/WuXixiong/jev-poisoning-bench)
-- [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — 在 228 个 Jev 应用中追踪可达的攻击者上下文、格式合法的决策翻转及潜在下游影响，并发布应用级攻击基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.18612v1)
+- [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) — 追踪攻击者上下文如何改变Jev应用实际消费的决策。发布基准在优先选取翻转记录的整理子集中有81.5%翻转；影响标签表示潜在后果，不代表已观察到的现实损害。 `评测` · [PDF](https://arxiv.org/pdf/2610.18612v1) · [代码](https://github.com/xiaoxiaohg8d/JevProbe-)
 - [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118) — 以留出目标模型评测文本与视觉攻击；鲁棒性随任务和攻击类型变化，标签一致性复核会降低表观攻击成功率。 `评测` · [PDF](https://arxiv.org/pdf/2610.19118v1)
 - [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) — 用多维概率裁判反馈引导查询预算受限的越狱优化，并评测目标查询效率与输出过滤。 `评测` · [PDF](https://arxiv.org/pdf/2610.19971v1)
 - [From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection](https://arxiv.org/abs/2610.20907) — 在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。 `评测` · [PDF](https://arxiv.org/pdf/2610.20907v1) · [代码](https://github.com/lanqianlong/calibrated-decision-models)
@@ -363,6 +363,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification](https://arxiv.org/abs/2610.31422) — 在13种越南语分类设置及不同标签语言下评测四种决策模型。去除声调符号比网络缩写或拼写错误造成更大退化；双语标签没有一致收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.31422v1)
 - [Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG](https://arxiv.org/abs/2610.28957) — 固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。 `评测` · [PDF](https://arxiv.org/pdf/2610.28957v1)
 - [Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI](https://arxiv.org/abs/2610.28826) — 在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。 `评测` · [PDF](https://arxiv.org/pdf/2610.28826v1)
+- [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
 
 **项目与技术资料**
 
@@ -784,6 +785,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [JevBench by Benchmark Heaven](https://benchmarkheaven.com/jev-models/data) | 基准 | [JevBench by Benchmark Heaven](https://github.com/fstandhartinger/jevbench) |
 | [JevForest acquisition evaluation](https://arxiv.org/abs/2610.10615) | 论文说明 | [JevForest](https://arxiv.org/abs/2610.10615) |
 | [JevKT seven-dataset suite](https://arxiv.org/abs/2610.11135) | 论文说明 | [JevKT cold-start evaluation](https://arxiv.org/abs/2610.11135) |
+| [JevProbeBench](https://github.com/xiaoxiaohg8d/JevProbe-/tree/main/benchmarks/JevProbeBench) | 基准 | [JevProbe](https://arxiv.org/abs/2610.18612) |
 | [Judgment-layer audit battery](https://doi.org/10.5281/zenodo.22901248) | 研究材料 | [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) |
 | [MCPHunt](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [MMEB-V2](https://github.com/TIGER-AI-Lab/VLM2Vec) | 基准 | [Multimodal Reranking](https://arxiv.org/abs/2610.28435) |
