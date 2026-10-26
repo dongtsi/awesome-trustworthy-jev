@@ -421,5 +421,11 @@
     "type": "benchmark",
     "checked": "2026-10-25",
     "verification": "Author repository tree, benchmark README and manifest read: 2,273 records, cap ten per project, flips-first selection; full attempt ledgers not released. One redacted input retains historical labels and was not rerun."
+  },
+  "DeRef evaluation suite": {
+    "url": "https://github.com/SarielMa/DeRef_release",
+    "type": "benchmark",
+    "checked": "2026-10-26",
+    "verification": "Author README and tree verified: pipeline for FC-RewardBench, ComplexFuncBench and FinTrace; README links https://huggingface.co/datasets/lm2445/DeRef, whose card could not be retrieved. No per-model result outputs found in release tree."
   }
 }

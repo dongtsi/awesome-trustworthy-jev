@@ -10,11 +10,14 @@
 
 - [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521) — 在冻结评分器之上，以有界动作与偏好关系通道保存类型化纠正，不增加评分调用或运行时反向传播。时序基准只计入对后续决策的影响；报告收益取决于已有反馈深度。 `评测` · [PDF](https://arxiv.org/pdf/2610.31521v1)
 - [How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification](https://arxiv.org/abs/2610.31422) — 在13种越南语分类设置及不同标签语言下评测四种决策模型。去除声调符号比网络缩写或拼写错误造成更大退化；双语标签没有一致收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.31422v1)
+- [The Value of System 1 Models in Medicine](https://arxiv.org/abs/2610.31315) — 在86项医学任务、14个领域和20种语言上评测四个System 1模型。性能与效率随任务和语言显著变化，翻译后可大幅退化；基准分数不等于临床决策可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2610.31315v2)
 - [One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection](https://arxiv.org/abs/2610.30777) — 将结构、属性及邻域异常证据转成语义图状态，交给冻结决策读出并与统计分数融合。在七个图基准测试无任务训练方案；报告均值不证明对适应性攻击的鲁棒性。 `评测` · [PDF](https://arxiv.org/pdf/2610.30777v1)
 
 ## 2026-10-21
 
 - [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift](https://arxiv.org/abs/2610.30090) — 研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。 `评测` · [PDF](https://arxiv.org/pdf/2610.30090v1)
+- [Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models](https://arxiv.org/abs/2610.30045) — 以可执行规则、交叉状态与受控改写研究迁移和联合正确性。Jev在等价措辞间的答案变化多于相同文本重测；联合可靠性的解释依赖校准参照保留哪些关联。 `评测` · [PDF](https://arxiv.org/pdf/2610.30045v1)
+- [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961) — 移除正确法律依据，在标准CaseHOLD准确率之外检验弃答。决策模型以较低报告推理成本达到接近强LLM的准确率，但无有效依据时仍常作选择；一致性门控减少错误。 `评测` · [PDF](https://arxiv.org/pdf/2610.29961v1)
 - [When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models](https://arxiv.org/abs/2610.29217) — 检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。 `评测` · [PDF](https://arxiv.org/pdf/2610.29217v1)
 - [Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models](https://arxiv.org/abs/2610.29052) — 报告内部类型化裁判与开放LoRA决策模型。公开难题结果来自单次种子，开发时已查看评测题；语料版本改变会显著影响小型基准准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.29052v1)
 
@@ -22,6 +25,7 @@
 
 - [Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG](https://arxiv.org/abs/2610.28957) — 固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。 `评测` · [PDF](https://arxiv.org/pdf/2610.28957v1)
 - [Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI](https://arxiv.org/abs/2610.28826) — 在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。 `评测` · [PDF](https://arxiv.org/pdf/2610.28826v1)
+- [DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems](https://arxiv.org/abs/2610.28522) — 将求解器核验的对比组与公开参考任务组合，覆盖七类决策角色。对40个决策模型和14个通用模型的评测区分联合正确性、概率排序与选择性覆盖，揭示公开汇总分数掩盖的差异。 `基准 · 评测` · [PDF](https://arxiv.org/pdf/2610.28522v1)
 - [Multimodal Reranking Is a System One Decision](https://arxiv.org/abs/2610.28435) — 将多模态重排视为检索候选上的一次选择；选择读出优于逐候选是非评分，文本决策微调改善文档重排。跨模型比较受规模与代际差异混杂。 `评测` · [PDF](https://arxiv.org/pdf/2610.28435v1) · [代码](https://github.com/Ryenhails/rerank-as-decision)
 
 ## 2026-10-19
@@ -30,6 +34,7 @@
 - [SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models](https://arxiv.org/abs/2610.26793) — 以共享决策模型持续监测推理并逐步干预；无需训练，报告推理token最多减少36%，且不可回答问题上的弃答率提高。 `评测` · [PDF](https://arxiv.org/pdf/2610.26793v1)
 - [Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors](https://arxiv.org/abs/2610.26325) — 区分决策训练与骨干读出，在五个数据集上测试标签分布偏移；收益依任务而变，已有失准比特有的分布偏移脆弱性更突出。 `评测` · [PDF](https://arxiv.org/pdf/2610.26325v1)
 - [TimesJev: Thinking Fast on Time Series with System 1 Sufficiency](https://arxiv.org/abs/2610.26002) — 依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。 `评测` · [PDF](https://arxiv.org/pdf/2610.26002v1)
+- [Claim Laundering: When Agent Decision Models Trust Records Over Reality](https://arxiv.org/abs/2610.25947) — 发现托管Jev与开放决策模型在Agent决策中常优先相信成功记录，而非矛盾观察。中间状态证据门控改善开放模型的在线任务成功率，但离线门控校准迁移不佳。 `评测 · 方法` · [PDF](https://arxiv.org/pdf/2610.25947v1)
 - [A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers](https://arxiv.org/abs/2610.25843) — 以使选择概率持平的价格溢价衡量卖家线索影响；113,472次受控试验显示Jev抵抗多种线索，但仍受强社会认同声明影响。 `评测` · [PDF](https://arxiv.org/pdf/2610.25843v1)
 - [UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models](https://arxiv.org/abs/2610.25784) — 在文本、图像和视频决策模型中区分监督学习的准确率收益与校准；置信—结果对齐无需强化学习，在2B和9B上降低视觉ECE并保持准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.25784v1)
 - [Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-makers](https://arxiv.org/abs/2610.25768) — 在35组推理器与基准组合上评估Jev读取截断推理；训练折选择的策略在离线重放中降低估算成本，留出折准确率小幅下降。 `评测` · [PDF](https://arxiv.org/pdf/2610.25768v1)
@@ -55,6 +60,7 @@
 
 ## 2026-10-15
 
+- [Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms](https://arxiv.org/abs/2610.22526) — 用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。 `评测` · [PDF](https://arxiv.org/pdf/2610.22526v1)
 - [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)
 - [Prism-1: Position- and Rival-Independent Scoring for System One Models](https://arxiv.org/abs/2610.22066) — 以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.22066v1)
 - [Qwen-Audio-Jev: A Unified Interface for Audio Decisions](https://arxiv.org/abs/2610.21614) — 为音频骨干加入 CHOICE、NOUL 和 SCORE 类型化读出；报告 18 个标注配置的结果及相对生成式骨干约 20 倍的推理加速。 `评测` · [PDF](https://arxiv.org/pdf/2610.21614v1)
@@ -86,7 +92,7 @@
 - [Jev-ToM: Evaluating Theory of Mind in Typed Decision Models](https://arxiv.org/abs/2610.18610) — 在 11,117 道心智理论题上评测类型化模型；Jev 在多个能力组领先，但置信筛选、附加理由与候选扩展效果依赖任务。 `评测` · [PDF](https://arxiv.org/pdf/2610.18610v1)
 - [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579) — 在 Agent 状态上配对动作选择与事实探针；多数错误动作发生在正确读取信息之后，暴露组合推理与子目标选择缺陷。 `评测` · [PDF](https://arxiv.org/pdf/2610.18579v1)
 - [How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs](https://arxiv.org/abs/2610.18529) — 在 15 个医学数据集上测试准确率、提示稳定性与弃答；Jev 的文本任务表现优于数值任务，但识别答案缺失仍困难。 `评测` · [PDF](https://arxiv.org/pdf/2610.18529v1)
-- [Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments](https://arxiv.org/abs/2610.18497) — 发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。 `评测` · [PDF](https://arxiv.org/pdf/2610.18497v1)
+- [Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments](https://arxiv.org/abs/2610.18497) — 不看候选值的参考生成改善包括托管Jev在内的工具参数验证，覆盖三个基准。裁判也会跟随错误参考，因此收益依赖参考质量，并需要额外的推导模型。 `评测` · [PDF](https://arxiv.org/pdf/2610.18497v1) · [代码](https://github.com/SarielMa/DeRef_release)
 - [Recalibrating Many Questions with Few Labels: Minimax Rates and Identification Limits](https://arxiv.org/abs/2610.18488) — 在单调校准映射假设下，推导相关问题少标签再校准的极小极大速率与识别限制，并给出合并保序拟合及留出修正方法。 `方法` · [PDF](https://arxiv.org/pdf/2610.18488v1)
 - [PRISM: Calibrating Black-Box Judges with Counterfactual Probes](https://arxiv.org/abs/2610.18389) — 以反事实评分探针和人类标签回归修正黑箱裁判；在摘要与故事评测中提高报告的人类排序一致性。 `评测` · [PDF](https://arxiv.org/pdf/2610.18389v1)
 - [Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees](https://arxiv.org/abs/2610.18326) — 在可编辑策略树中路由审计上下文，再按策略进行安全分类；同时评测独立路由与 Agent 权限门控。 `评测` · [PDF](https://arxiv.org/pdf/2610.18326v1)
@@ -153,6 +159,7 @@
 
 ## 2026-10-05
 
+- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — 在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。 `评测` · [PDF](https://arxiv.org/pdf/2610.07177v1)
 - [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — 在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。 `评测` · [PDF](https://arxiv.org/pdf/2610.06744v1)
 - [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — 复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。 `评测` · [PDF](https://arxiv.org/pdf/2610.06625v2)
 - [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — 审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。 `综述` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [代码](https://github.com/OniReimu/SoK-JEV)

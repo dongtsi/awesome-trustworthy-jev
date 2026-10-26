@@ -27,6 +27,13 @@
       <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>The Value of System 1 Models in Medicine</title>
+      <link>https://arxiv.org/abs/2610.31315</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.31315#publication</guid>
+      <description>Evaluates four System 1 models across 86 medical tasks, 14 domains and 20 languages. Performance and efficiency vary strongly by task and language, including large translation-related losses; benchmark scores do not establish clinical decision reliability.</description>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection</title>
       <link>https://arxiv.org/abs/2610.30777</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.30777#publication</guid>
@@ -38,6 +45,20 @@
       <link>https://arxiv.org/abs/2610.30090</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.30090#publication</guid>
       <description>Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.</description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models</title>
+      <link>https://arxiv.org/abs/2610.30045</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.30045#publication</guid>
+      <description>Uses executable rules, crossed states and controlled rewrites to study transfer and joint correctness. Jev changes answers more across equivalent wordings than identical repeats; conclusions about joint reliability depend on what the calibration reference preserves.</description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority</title>
+      <link>https://arxiv.org/abs/2610.29961</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.29961#publication</guid>
+      <description>Removes correct legal authorities to test abstention alongside standard CaseHOLD accuracy. Decision models can match strong LLM accuracy at lower reported inference cost, yet often still select an authority when none is valid; an agreement gate reduces errors.</description>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -66,6 +87,13 @@
       <link>https://arxiv.org/abs/2610.28826</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.28826#publication</guid>
       <description>Compares Jev with LLM judges using physician ratings and model-based references across four clinical-output evaluation settings. Agreement and lower measured cost/latency concern the tested judging configurations, not clinical deployment safety.</description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems</title>
+      <link>https://arxiv.org/abs/2610.28522</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.28522#publication</guid>
+      <description>Combines solver-checked contrast groups and public reference tasks across seven decision roles. Evaluating 40 decision models and 14 general models separates joint correctness, probability ordering and selective coverage that aggregate public scores can obscure.</description>
       <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -101,6 +129,13 @@
       <link>https://arxiv.org/abs/2610.26002</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.26002#publication</guid>
       <description>Learns gated time-series compression and embedding alignment from sufficiency and realizability objectives, enabling single-pass decisions; reports improved performance and lower latency across 13 datasets.</description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Claim Laundering: When Agent Decision Models Trust Records Over Reality</title>
+      <link>https://arxiv.org/abs/2610.25947</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.25947#publication</guid>
+      <description>Finds that hosted Jev and open decision models often favor claimed success over contradictory observations in agent decisions. An intermediate-state evidence gate improves open-model live task success, but offline gate calibration transfers poorly.</description>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -193,6 +228,13 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2610.23170#publication</guid>
       <description>Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect.</description>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms</title>
+      <link>https://arxiv.org/abs/2610.22526</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.22526#publication</guid>
+      <description>Compares Laya, Lod-lille and Jev on paired Bengali idiom questions and English glosses. Literal distractors dominate Bengali errors, calibration worsens, and confidence reverses its usefulness for the two open models.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling</title>
@@ -373,7 +415,7 @@
       <title>Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments</title>
       <link>https://arxiv.org/abs/2610.18497</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.18497#publication</guid>
-      <description>Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.</description>
+      <description>Candidate-blind reference generation improves tool-argument verification, including hosted Jev, across three benchmarks. Judges also follow incorrect references, so gains rely on reference quality and require an extra derivation model.</description>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -669,6 +711,13 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2610.07716#publication</guid>
       <description>Tests cached first-pass rankings under candidate-menu changes and compares re-asking with model cascades; ranking stability supports computation reuse but does not itself identify unlabeled accuracy.</description>
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks</title>
+      <link>https://arxiv.org/abs/2610.07177</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.07177#publication</guid>
+      <description>Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.</description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring</title>

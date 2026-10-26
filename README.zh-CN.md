@@ -10,7 +10,7 @@
 
 Jev 模型基础、自身可信性，以及网络与系统安全应用的论文、模型、项目和技术文档。
 
-共 `467` 条资源 · `180` 篇论文 · `251` 个项目 · `26` 份官方文档 · `10` 篇文章
+共 `474` 条资源 · `187` 篇论文 · `251` 个项目 · `26` 份官方文档 · `10` 篇文章
 
 **[打开在线资料库 →](https://dongtsi.github.io/awesome-trustworthy-jev/?lang=zh)** · [每日论文](daily/README.zh-CN.md) · [RSS](feed.xml) · [提交资料](CONTRIBUTING.md)
 
@@ -336,7 +336,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Does a Hosted Decision Model Respect Irrelevant Alternatives? A Pre-Registered Test of Option-Set Dependence in Jev](https://arxiv.org/abs/2610.16655) — 299,463 次调用显示，即使加入低概率备选项也会改变 Jev 的相对赔率；独立二元打分消除集合依赖，但牺牲准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.16655v1)
 - [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579) — 在 Agent 状态上配对动作选择与事实探针；多数错误动作发生在正确读取信息之后，暴露组合推理与子目标选择缺陷。 `评测` · [PDF](https://arxiv.org/pdf/2610.18579v1)
 - [How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs](https://arxiv.org/abs/2610.18529) — 在 15 个医学数据集上测试准确率、提示稳定性与弃答；Jev 的文本任务表现优于数值任务，但识别答案缺失仍困难。 `评测` · [PDF](https://arxiv.org/pdf/2610.18529v1)
-- [Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments](https://arxiv.org/abs/2610.18497) — 发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。 `评测` · [PDF](https://arxiv.org/pdf/2610.18497v1)
+- [Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments](https://arxiv.org/abs/2610.18497) — 不看候选值的参考生成改善包括托管Jev在内的工具参数验证，覆盖三个基准。裁判也会跟随错误参考，因此收益依赖参考质量，并需要额外的推导模型。 `评测` · [PDF](https://arxiv.org/pdf/2610.18497v1) · [代码](https://github.com/SarielMa/DeRef_release)
 - [Correct Choices, Failed Sequences: Choice2Seq Benchmarks Correctness Retention Across Output Interfaces](https://arxiv.org/abs/2610.16191) — 衡量正确整答选择在逐步构造中保留的比例；Jev 在算术与词汇任务上的高选择准确率可能在串行输出接口下大幅下降。 `评测` · [PDF](https://arxiv.org/pdf/2610.16191v1)
 - [RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification](https://arxiv.org/abs/2610.15742) — 以缓存原型检索替换字母令牌读出，改善 Jev 风格遥感模型的跨数据集分类与开放集弃答。 `评测` · [PDF](https://arxiv.org/pdf/2610.15742v1)
 - [Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate](https://arxiv.org/abs/2610.15710) — 区分已确立的记忆变更与暗示性变更；三分类 Jev 门控减少过早删除，但检出率损失超过预注册预算。 `评测` · [PDF](https://arxiv.org/pdf/2610.15710v1)
@@ -364,6 +364,13 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG](https://arxiv.org/abs/2610.28957) — 固定段落、输出预算及回答生成器，比较11种长文档检索配置。全量扫描仍可能在压缩阶段丢失证据；证据覆盖、答案质量与复用成本偏好的配置不同。 `评测` · [PDF](https://arxiv.org/pdf/2610.28957v1)
 - [Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI](https://arxiv.org/abs/2610.28826) — 在四种临床输出评估设置中，使用医师评分及模型参考比较Jev与LLM裁判。一致性及较低实测成本/延迟针对所测裁判配置，不代表临床部署安全。 `评测` · [PDF](https://arxiv.org/pdf/2610.28826v1)
 - [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
+- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — 在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。 `评测` · [PDF](https://arxiv.org/pdf/2610.07177v1)
+- [Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms](https://arxiv.org/abs/2610.22526) — 用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。 `评测` · [PDF](https://arxiv.org/pdf/2610.22526v1)
+- [Claim Laundering: When Agent Decision Models Trust Records Over Reality](https://arxiv.org/abs/2610.25947) — 发现托管Jev与开放决策模型在Agent决策中常优先相信成功记录，而非矛盾观察。中间状态证据门控改善开放模型的在线任务成功率，但离线门控校准迁移不佳。 `评测 · 方法` · [PDF](https://arxiv.org/pdf/2610.25947v1)
+- [DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems](https://arxiv.org/abs/2610.28522) — 将求解器核验的对比组与公开参考任务组合，覆盖七类决策角色。对40个决策模型和14个通用模型的评测区分联合正确性、概率排序与选择性覆盖，揭示公开汇总分数掩盖的差异。 `基准 · 评测` · [PDF](https://arxiv.org/pdf/2610.28522v1)
+- [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961) — 移除正确法律依据，在标准CaseHOLD准确率之外检验弃答。决策模型以较低报告推理成本达到接近强LLM的准确率，但无有效依据时仍常作选择；一致性门控减少错误。 `评测` · [PDF](https://arxiv.org/pdf/2610.29961v1)
+- [Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models](https://arxiv.org/abs/2610.30045) — 以可执行规则、交叉状态与受控改写研究迁移和联合正确性。Jev在等价措辞间的答案变化多于相同文本重测；联合可靠性的解释依赖校准参照保留哪些关联。 `评测` · [PDF](https://arxiv.org/pdf/2610.30045v1)
+- [The Value of System 1 Models in Medicine](https://arxiv.org/abs/2610.31315) — 在86项医学任务、14个领域和20种语言上评测四个System 1模型。性能与效率随任务和语言显著变化，翻译后可大幅退化；基准分数不等于临床决策可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2610.31315v2)
 
 **项目与技术资料**
 
@@ -757,6 +764,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [DROP and GSM8K presentation audit](https://arxiv.org/abs/2610.11436) | 论文说明 | [Candidate cues and request order](https://arxiv.org/abs/2610.11436) |
 | [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/) | 数据集 | [PixelJev](https://arxiv.org/abs/2609.29283) |
 | [DUCS-Bench](https://github.com/moyuan10086/cascaded-guardrail-npu) | 基准 | [COGNIT-Guard](https://arxiv.org/abs/2609.33671) |
+| [DeRef evaluation suite](https://github.com/SarielMa/DeRef_release) | 基准 | [DeRef](https://arxiv.org/abs/2610.18497) |
 | [ECtHR (LexGLUE Task A)](https://github.com/coastalcph/lex-glue) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [EPANET C-Town](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net1](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |

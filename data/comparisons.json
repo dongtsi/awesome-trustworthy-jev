@@ -1583,5 +1583,26 @@
     },
     "source_section": "Sections 3–5; Tables 2–5; Appendices B–F; author benchmark README/manifest and docs/PROTOCOL.md",
     "source": "https://arxiv.org/pdf/2610.18612v1"
+  },
+  {
+    "id": "2610.18497",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "DeRef evaluation suite"
+    ],
+    "data_role": {
+      "en": "Tool-call argument correctness and controlled evidence-visibility interventions",
+      "zh": "工具调用参数正确性及证据可见性的受控干预"
+    },
+    "design": {
+      "en": "FC-RewardBench has 630 paired requests; ComplexFuncBench has 347 correct and 644 incorrect calls; FinTrace has 2,334 gold calls and matched single-argument mutations. Four main judges include Jev-1.13-20260917. A candidate-blind Qwen3.8-27B thinking deriver sees full history and supplies expected values to unchanged truncated-history judges. Query-cluster bootstrap uses 1,000 resamples.",
+      "zh": "FC-RewardBench含630个配对请求，ComplexFuncBench含347个正确及644个错误调用，FinTrace含2,334个正确调用及配对的单参数变异。四个主比较裁判包含Jev-1.13-20260917。不看候选值的Qwen3.8-27B思考模型读取完整历史、提供预期值；裁判仍使用原有截断历史。按查询聚类做1,000次bootstrap。"
+    },
+    "reading": {
+      "en": "All 12 judge–benchmark AUROC gains over Plain are significant (1.44–22.14 points); Jev improves 90.83→93.30, 75.01→88.73 and 89.11→93.10. Replacing correct reference values with wrong ones sharply degrades selected reference-correct cases. Gains do not remove missing-source failures or the cost and reliability burden of derivation; reported 12/138/1,684 GPU seconds are aggregate deriver time, not per-request latency.",
+      "zh": "相对Plain的12个裁判×基准AUROC增益均显著（1.44–22.14点）；Jev依次从90.83升至93.30、75.01升至88.73、89.11升至93.10。把正确参考值换成错误值会显著损害筛选出的参考正确案例。收益未消除无来源失败及推导成本与可靠性负担；12/138/1,684 GPU秒是推导总耗时，不是单请求延迟。"
+    },
+    "source_section": "Sections 3–5; controlled relocation/reference-swap studies; Appendices C and F; author README and repository tree",
+    "source": "https://arxiv.org/pdf/2610.18497v1"
   }
 ]

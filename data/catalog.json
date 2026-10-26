@@ -15371,16 +15371,20 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.",
-    "brief_zh": "发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。",
-    "summary": "Shows that tool-call judges favor visible references over correctly derived values; candidate-blind reference generation improves argument verification across three benchmarks.",
-    "summary_zh": "发现工具调用裁判偏向可见参考而非正确推导值；由不看候选值的模型生成参考，在三个基准上改善参数验证。",
+    "brief_en": "Candidate-blind reference generation improves tool-argument verification, including hosted Jev, across three benchmarks. Judges also follow incorrect references, so gains rely on reference quality and require an extra derivation model.",
+    "brief_zh": "不看候选值的参考生成改善包括托管Jev在内的工具参数验证，覆盖三个基准。裁判也会跟随错误参考，因此收益依赖参考质量，并需要额外的推导模型。",
+    "summary": "Candidate-blind reference generation improves tool-argument verification, including hosted Jev, across three benchmarks. Judges also follow incorrect references, so gains rely on reference quality and require an extra derivation model.",
+    "summary_zh": "不看候选值的参考生成改善包括托管Jev在内的工具参数验证，覆盖三个基准。裁判也会跟随错误参考，因此收益依赖参考质量，并需要额外的推导模型。",
     "theme": "Reliability",
     "scope": "related-model",
     "schema_version": 2,
-    "evidence": "Preprint",
-    "review": "Original arXiv metadata and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint results; scope and summary verified from the original abstract, not an independent replication."
+    "evidence": "Original full text and author evaluation-pipeline repository",
+    "review": "PDF methods, results, statistical and implementation appendices plus author repository README/tree reviewed; no independent execution",
+    "limitation": "80% correct-call acceptance thresholds are descriptive within-sample calibration, not held-out deployment thresholds. Candidate-blind derivation uses an extra thinking model and longer history; wrong references can reverse judgments. FinTrace uses synthetic errors; single gold arguments can exclude valid alternatives. Author repository releases a pipeline, not per-model result outputs; linked dataset card was unreachable during this check.",
+    "datasets": [
+      "DeRef evaluation suite"
+    ],
+    "code": "https://github.com/SarielMa/DeRef_release"
   },
   {
     "id": "2610.18122",
@@ -17803,5 +17807,281 @@
     "evidence": "Original Zenodo metadata and PDF abstract",
     "review": "Original metadata, PDF abstract and introductory design read; detailed full-text audit pending",
     "limitation": "Title and body panels differ in samples and units; retrospective execution assumptions matter. Earliest verified public record is Zenodo 2026-10-24; the PDF submission watermark of 2026-10-13 is not evidence of public availability. No independent replication."
+  },
+  {
+    "id": "2610.07177",
+    "title": "CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks",
+    "short": "CLM-as-a-Judge",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.07177",
+    "pdf": "https://arxiv.org/pdf/2610.07177v1",
+    "doi": "10.48550/arXiv.2610.07177",
+    "date": "2026-10-05",
+    "updated": "2026-10-05",
+    "version": "2610.07177v1",
+    "added": "2026-10-26",
+    "authors": [
+      "Gowthamkumar Nandakishore"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.",
+    "brief_zh": "在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。",
+    "summary": "Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.",
+    "summary_zh": "在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.22526",
+    "title": "Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms",
+    "short": "Literal Lock-In",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.22526",
+    "pdf": "https://arxiv.org/pdf/2610.22526v1",
+    "doi": "10.48550/arXiv.2610.22526",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.22526v1",
+    "added": "2026-10-26",
+    "authors": [
+      "Adib Sakhawat",
+      "Syed Rifat Raiyan"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares Laya, Lod-lille and Jev on paired Bengali idiom questions and English glosses. Literal distractors dominate Bengali errors, calibration worsens, and confidence reverses its usefulness for the two open models.",
+    "brief_zh": "用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。",
+    "summary": "Compares Laya, Lod-lille and Jev on paired Bengali idiom questions and English glosses. Literal distractors dominate Bengali errors, calibration worsens, and confidence reverses its usefulness for the two open models.",
+    "summary_zh": "用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.25947",
+    "title": "Claim Laundering: When Agent Decision Models Trust Records Over Reality",
+    "short": "Claim Laundering",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.25947",
+    "pdf": "https://arxiv.org/pdf/2610.25947v1",
+    "doi": "10.48550/arXiv.2610.25947",
+    "date": "2026-10-19",
+    "updated": "2026-10-19",
+    "version": "2610.25947v1",
+    "added": "2026-10-26",
+    "authors": [
+      "Tina Khezresmaeilzadeh",
+      "Seyedarmin Azizi",
+      "Erfan Baghaei Potraghloo",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation",
+      "method"
+    ],
+    "brief_en": "Finds that hosted Jev and open decision models often favor claimed success over contradictory observations in agent decisions. An intermediate-state evidence gate improves open-model live task success, but offline gate calibration transfers poorly.",
+    "brief_zh": "发现托管Jev与开放决策模型在Agent决策中常优先相信成功记录，而非矛盾观察。中间状态证据门控改善开放模型的在线任务成功率，但离线门控校准迁移不佳。",
+    "summary": "Finds that hosted Jev and open decision models often favor claimed success over contradictory observations in agent decisions. An intermediate-state evidence gate improves open-model live task success, but offline gate calibration transfers poorly.",
+    "summary_zh": "发现托管Jev与开放决策模型在Agent决策中常优先相信成功记录，而非矛盾观察。中间状态证据门控改善开放模型的在线任务成功率，但离线门控校准迁移不佳。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.28522",
+    "title": "DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems",
+    "short": "DecisionPivot",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.28522",
+    "pdf": "https://arxiv.org/pdf/2610.28522v1",
+    "doi": "10.48550/arXiv.2610.28522",
+    "date": "2026-10-20",
+    "updated": "2026-10-20",
+    "version": "2610.28522v1",
+    "added": "2026-10-26",
+    "authors": [
+      "Xialie Zhuang",
+      "Mingcong Lei",
+      "Zunhai Su",
+      "Ri Liu",
+      "Jianjin Li",
+      "Peixian Ma",
+      "Jia Pan",
+      "Ngai Wong",
+      "Guanhua Chen",
+      "Chuan-Wei Kuo"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "Combines solver-checked contrast groups and public reference tasks across seven decision roles. Evaluating 40 decision models and 14 general models separates joint correctness, probability ordering and selective coverage that aggregate public scores can obscure.",
+    "brief_zh": "将求解器核验的对比组与公开参考任务组合，覆盖七类决策角色。对40个决策模型和14个通用模型的评测区分联合正确性、概率排序与选择性覆盖，揭示公开汇总分数掩盖的差异。",
+    "summary": "Combines solver-checked contrast groups and public reference tasks across seven decision roles. Evaluating 40 decision models and 14 general models separates joint correctness, probability ordering and selective coverage that aggregate public scores can obscure.",
+    "summary_zh": "将求解器核验的对比组与公开参考任务组合，覆盖七类决策角色。对40个决策模型和14个通用模型的评测区分联合正确性、概率排序与选择性覆盖，揭示公开汇总分数掩盖的差异。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.29961",
+    "title": "Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority",
+    "short": "Commit or Abstain?",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.29961",
+    "pdf": "https://arxiv.org/pdf/2610.29961v1",
+    "doi": "10.48550/arXiv.2610.29961",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "version": "2610.29961v1",
+    "added": "2026-10-26",
+    "authors": [
+      "M. Mikail Demir"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Removes correct legal authorities to test abstention alongside standard CaseHOLD accuracy. Decision models can match strong LLM accuracy at lower reported inference cost, yet often still select an authority when none is valid; an agreement gate reduces errors.",
+    "brief_zh": "移除正确法律依据，在标准CaseHOLD准确率之外检验弃答。决策模型以较低报告推理成本达到接近强LLM的准确率，但无有效依据时仍常作选择；一致性门控减少错误。",
+    "summary": "Removes correct legal authorities to test abstention alongside standard CaseHOLD accuracy. Decision models can match strong LLM accuracy at lower reported inference cost, yet often still select an authority when none is valid; an agreement gate reduces errors.",
+    "summary_zh": "移除正确法律依据，在标准CaseHOLD准确率之外检验弃答。决策模型以较低报告推理成本达到接近强LLM的准确率，但无有效依据时仍常作选择；一致性门控减少错误。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.30045",
+    "title": "Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models",
+    "short": "Which Differences Matter?",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.30045",
+    "pdf": "https://arxiv.org/pdf/2610.30045v1",
+    "doi": "10.48550/arXiv.2610.30045",
+    "date": "2026-10-21",
+    "updated": "2026-10-21",
+    "version": "2610.30045v1",
+    "added": "2026-10-26",
+    "authors": [
+      "Tianyou Lai",
+      "Wentao Yue",
+      "Zhiwei Zuo",
+      "Qilei Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses executable rules, crossed states and controlled rewrites to study transfer and joint correctness. Jev changes answers more across equivalent wordings than identical repeats; conclusions about joint reliability depend on what the calibration reference preserves.",
+    "brief_zh": "以可执行规则、交叉状态与受控改写研究迁移和联合正确性。Jev在等价措辞间的答案变化多于相同文本重测；联合可靠性的解释依赖校准参照保留哪些关联。",
+    "summary": "Uses executable rules, crossed states and controlled rewrites to study transfer and joint correctness. Jev changes answers more across equivalent wordings than identical repeats; conclusions about joint reliability depend on what the calibration reference preserves.",
+    "summary_zh": "以可执行规则、交叉状态与受控改写研究迁移和联合正确性。Jev在等价措辞间的答案变化多于相同文本重测；联合可靠性的解释依赖校准参照保留哪些关联。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.31315",
+    "title": "The Value of System 1 Models in Medicine",
+    "short": "System 1 Models in Medicine",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.31315",
+    "pdf": "https://arxiv.org/pdf/2610.31315v2",
+    "doi": "10.48550/arXiv.2610.31315",
+    "date": "2026-10-22",
+    "updated": "2026-10-23",
+    "version": "2610.31315v2",
+    "added": "2026-10-26",
+    "authors": [
+      "Xiufeng Yang",
+      "Konstantinos Vrettos",
+      "Zeineb Ben Chaaben",
+      "Fabian Drexel",
+      "Jannik Lübberstedt",
+      "Johannes Moll",
+      "Anirudh Narayanan",
+      "Frederike Stumpf",
+      "Cosmin I. Bercea",
+      "Jiawen Wang",
+      "Evangelia E. Vassalou",
+      "Krischan Braitsch",
+      "Aymen Meddeb",
+      "Sebastian Ziegelmayer",
+      "Markus Graf",
+      "Marcus R. Makowski",
+      "Lisa Adams",
+      "Nassir Navab",
+      "Michail E. Klontzas",
+      "Keno Bressem"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates four System 1 models across 86 medical tasks, 14 domains and 20 languages. Performance and efficiency vary strongly by task and language, including large translation-related losses; benchmark scores do not establish clinical decision reliability.",
+    "brief_zh": "在86项医学任务、14个领域和20种语言上评测四个System 1模型。性能与效率随任务和语言显著变化，翻译后可大幅退化；基准分数不等于临床决策可靠性。",
+    "summary": "Evaluates four System 1 models across 86 medical tasks, 14 domains and 20 languages. Performance and efficiency vary strongly by task and language, including large translation-related losses; benchmark scores do not establish clinical decision reliability.",
+    "summary_zh": "在86项医学任务、14个领域和20种语言上评测四个System 1模型。性能与效率随任务和语言显著变化，翻译后可大幅退化；基准分数不等于临床决策可靠性。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv abstract and model-identification sections",
+    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
   }
 ]
