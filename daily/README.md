@@ -2,9 +2,28 @@
 
 Grouped by first public publication date.
 
+## 2026-10-26
+
+- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.35826v1)
+- [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.35654v1)
+- [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875) — Uses separate encoder representations and cached rubric-level embeddings for non-generative judging. It improves held-out rubric accuracy and keeps latency nearly constant with long level descriptions; human-labelled benchmarks and ranking show mixed advantages over Jev. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.34875v1)
+
+## 2026-10-25
+
+- [SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift](https://arxiv.org/abs/2610.34329) — Combines calibrated abstention, shift monitoring and gain-gated adaptation for open LLM decision models. Calibration improves under shift, but certified thresholds still exceed target risk in some shifted tests and conservative update gates can lose accuracy. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.34329v1)
+- [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124) — Uses tree-structured attention to share user-history computation across isolated candidate branches. The decision interface tests order-consistent choices, calibrated confidence and selective computation in sequential recommendation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.34124v1)
+
 ## 2026-10-24
 
 - [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — Separates probability calibration, directional discrimination and portfolio ranking in financial-news evaluations of Jev and three language models. Low ECE can accompany weak discrimination; different samples and execution windows limit comparisons of predictive and economic usefulness. `Evaluation` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
+- [The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS](https://arxiv.org/abs/2610.33775) — Surveys five System 1 model families, their training and deployment trade-offs, calibration and fast–slow cascades. Its taxonomy and ecosystem overview organize existing evidence rather than establish a new controlled comparison. `Survey` · [PDF](https://arxiv.org/pdf/2610.33775v1)
+- [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) — Extends typed decisions to visual candidates with reusable option encodings. Request-conditioned independent branches retain candidate-order invariance and improve accuracy over independent encoding, while caching reduces repeated-candidate inference cost. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.33702v1)
+- [Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev](https://arxiv.org/abs/2610.33410) — Tests Jev 1.13.0 on temporal classification and discretized forecasting. Selected explicit temporal patterns are handled better than many numerical sequences, with near-chance discrimination and gaps between score ranking and final decisions on some datasets. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.33410v1)
+
+## 2026-10-23
+
+- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.32955v1)
+- [System One models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — Matches six Qwen backbones to compare decision and reranker fine-tuning across ten retrieval collections. Reranker tuning wins through 9B and ties at 27B; decision-model calibration advantages depend on question wording and do not compensate for weaker ranking. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.32318v1)
 
 ## 2026-10-22
 
@@ -159,7 +178,7 @@ Grouped by first public publication date.
 
 ## 2026-10-05
 
-- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.07177v1)
+- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — Held-out temperature scaling lowers CLM judge ECE without improving accuracy. Retaining at least 97% of a stronger judge’s accuracy still escalates 92.3–100% of requests; low order-flip rates do not establish useful judging or measured end-to-end savings. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.07177v1)
 - [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — Scores Turkish answer options independently at shared positions to remove order effects; supervised training beats the tested REINFORCE variant, while temperature calibration degrades on held-out question types. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.06744v1)
 - [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — Replicates seven annotation and scaling studies: Jev is faster, matches or approaches comparison models on several tasks, and has no price advantage over the reported batch-rate baseline. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.06625v2)
 - [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — Audits 139 network-control paper families and separates decision latency from verified service completion; queueing and coverage checks can reverse admission decisions. `Survey` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [Code](https://github.com/OniReimu/SoK-JEV)

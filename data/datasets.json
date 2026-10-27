@@ -427,5 +427,35 @@
     "type": "benchmark",
     "checked": "2026-10-26",
     "verification": "Author README and tree verified: pipeline for FC-RewardBench, ComplexFuncBench and FinTrace; README links https://huggingface.co/datasets/lm2445/DeRef, whose card could not be retrieved. No per-model result outputs found in release tree."
+  },
+  "RewardBench": {
+    "url": "https://github.com/allenai/reward-bench",
+    "type": "benchmark",
+    "checked": "2026-10-27",
+    "verification": "Official author repository verified; CLM-as-a-Judge protocol uses pinned datasets and prompt-grouped calibration/evaluation splits. RewardBench 2 pairs are a derived form, not a separate independent source."
+  },
+  "RewardBench 2": {
+    "url": "https://github.com/allenai/reward-bench",
+    "type": "benchmark",
+    "checked": "2026-10-27",
+    "verification": "Official author repository verified; CLM-as-a-Judge protocol uses pinned datasets and prompt-grouped calibration/evaluation splits. RewardBench 2 pairs are a derived form, not a separate independent source."
+  },
+  "RM-Bench": {
+    "url": "https://github.com/THU-KEG/RM-Bench",
+    "type": "benchmark",
+    "checked": "2026-10-27",
+    "verification": "Official author repository verified; CLM-as-a-Judge protocol uses pinned datasets and prompt-grouped calibration/evaluation splits. RewardBench 2 pairs are a derived form, not a separate independent source."
+  },
+  "JudgeBench": {
+    "url": "https://github.com/ScalerLab/JudgeBench",
+    "type": "benchmark",
+    "checked": "2026-10-27",
+    "verification": "Official author repository verified; CLM-as-a-Judge protocol uses pinned datasets and prompt-grouped calibration/evaluation splits. RewardBench 2 pairs are a derived form, not a separate independent source."
+  },
+  "HaluEval": {
+    "url": "https://github.com/RUCAIBox/HaluEval",
+    "type": "benchmark",
+    "checked": "2026-10-27",
+    "verification": "Official author repository verified; CLM-as-a-Judge protocol uses pinned datasets and prompt-grouped calibration/evaluation splits. RewardBench 2 pairs are a derived form, not a separate independent source."
   }
 }

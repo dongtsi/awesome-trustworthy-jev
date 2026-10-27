@@ -6,11 +6,81 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?</title>
+      <link>https://arxiv.org/abs/2610.35826</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.35826#publication</guid>
+      <description>Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.</description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation</title>
+      <link>https://arxiv.org/abs/2610.35654</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.35654#publication</guid>
+      <description>Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.</description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge</title>
+      <link>https://arxiv.org/abs/2610.34875</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.34875#publication</guid>
+      <description>Uses separate encoder representations and cached rubric-level embeddings for non-generative judging. It improves held-out rubric accuracy and keeps latency nearly constant with long level descriptions; human-labelled benchmarks and ranking show mixed advantages over Jev.</description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift</title>
+      <link>https://arxiv.org/abs/2610.34329</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.34329#publication</guid>
+      <description>Combines calibrated abstention, shift monitoring and gain-gated adaptation for open LLM decision models. Calibration improves under shift, but certified thresholds still exceed target risk in some shifted tests and conservative update gates can lose accuracy.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Decision-Native Recommendation with Large Language Models</title>
+      <link>https://arxiv.org/abs/2610.34124</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.34124#publication</guid>
+      <description>Uses tree-structured attention to share user-history computation across isolated candidate branches. The decision interface tests order-consistent choices, calibrated confidence and selective computation in sequential recommendation.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models</title>
       <link>https://zenodo.org/records/23601427</link>
       <guid isPermaLink="false">https://zenodo.org/records/23601427#publication</guid>
       <description>Separates probability calibration, directional discrimination and portfolio ranking in financial-news evaluations of Jev and three language models. Low ECE can accompany weak discrimination; different samples and execution windows limit comparisons of predictive and economic usefulness.</description>
       <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS</title>
+      <link>https://arxiv.org/abs/2610.33775</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.33775#publication</guid>
+      <description>Surveys five System 1 model families, their training and deployment trade-offs, calibration and fast–slow cascades. Its taxonomy and ecosystem overview organize existing evidence rather than establish a new controlled comparison.</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory</title>
+      <link>https://arxiv.org/abs/2610.33702</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.33702#publication</guid>
+      <description>Extends typed decisions to visual candidates with reusable option encodings. Request-conditioned independent branches retain candidate-order invariance and improve accuracy over independent encoding, while caching reduces repeated-candidate inference cost.</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev</title>
+      <link>https://arxiv.org/abs/2610.33410</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.33410#publication</guid>
+      <description>Tests Jev 1.13.0 on temporal classification and discretized forecasting. Selected explicit temporal patterns are handled better than many numerical sequences, with near-chance discrimination and gaps between score ranking and final decisions on some datasets.</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox</title>
+      <link>https://arxiv.org/abs/2610.32955</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.32955#publication</guid>
+      <description>Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.</description>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>System One models Are Not Better Rerankers</title>
+      <link>https://arxiv.org/abs/2610.32318</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.32318#publication</guid>
+      <description>Matches six Qwen backbones to compare decision and reranker fine-tuning across ten retrieval collections. Reranker tuning wins through 9B and ties at 27B; decision-model calibration advantages depend on question wording and do not compensate for weaker ranking.</description>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Jev-DLC: Decision-Level Continual Learning from Typed Feedback</title>
@@ -716,7 +786,7 @@
       <title>CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks</title>
       <link>https://arxiv.org/abs/2610.07177</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.07177#publication</guid>
-      <description>Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.</description>
+      <description>Held-out temperature scaling lowers CLM judge ECE without improving accuracy. Retaining at least 97% of a stronger judge’s accuracy still escalates 92.3–100% of requests; low order-flip rates do not establish useful judging or measured end-to-end savings.</description>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

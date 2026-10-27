@@ -10792,17 +10792,17 @@
     "kind": "Official",
     "scope": "Jev",
     "date": "",
-    "updated": "2026-10-20",
+    "updated": "2026-10-27",
     "added": "2026-10-02",
     "url": "https://docs.typesafe.ai/api/system-one.md",
     "pdf": "",
     "code": "",
-    "version": "5e6261f6f6212c6cf75fd55cc2856184b355a6400673b18314e85505e6219820",
-    "summary": "Documents mixed typed questions, response matching and model metadata; request limits and error handling now have a separate reference page.",
-    "summary_zh": "说明混合类型问题、响应匹配与模型元数据；请求限制和错误处理已拆分为独立参考页。",
+    "version": "a5c68bb00afd2c75504b5a9a07a497253f2b03380953b56934ddd80767f63c3d",
+    "summary": "Documents typed requests and responses, including HTTP 400 application-validation errors. Error locations may be empty; rejected inputs are string previews, and messages or context can be shortened.",
+    "summary_zh": "说明类型化请求与响应，新增HTTP 400应用校验错误结构。错误位置可为空，被拒输入以字符串预览返回，消息和上下文可被截短。",
     "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
     "evidence": "Vendor",
-    "review": "Official System One and request-rules documentation reviewed",
+    "review": "Official System One and list-models OpenAPI schema changes compared with prior snapshot; no service invocation",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -10812,8 +10812,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Documents mixed typed questions, response matching and model metadata; request limits and error handling now have a separate reference page.",
-    "brief_zh": "说明混合类型问题、响应匹配与模型元数据；请求限制和错误处理已拆分为独立参考页。",
+    "brief_en": "Documents typed requests and responses, including HTTP 400 application-validation errors. Error locations may be empty; rejected inputs are string previews, and messages or context can be shortened.",
+    "brief_zh": "说明类型化请求与响应，新增HTTP 400应用校验错误结构。错误位置可为空，被拒输入以字符串预览返回，消息和上下文可被截短。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -17831,16 +17831,23 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.",
-    "brief_zh": "在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。",
-    "summary": "Evaluates CLM-v0.1-8B as a judge on public preference and hallucination benchmarks. Low presentation bias and improved calibration do not imply strong discrimination; confidence cascades escalate most requests to retain the stronger judge’s accuracy.",
-    "summary_zh": "在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。",
+    "brief_en": "Held-out temperature scaling lowers CLM judge ECE without improving accuracy. Retaining at least 97% of a stronger judge’s accuracy still escalates 92.3–100% of requests; low order-flip rates do not establish useful judging or measured end-to-end savings.",
+    "brief_zh": "留出集温度缩放降低CLM裁判ECE，但不改善准确率。为保留强裁判至少97%的准确率仍需升级92.3–100%请求；低顺序翻转率不等于有效裁判或已证实的端到端节省。",
+    "summary": "Held-out temperature scaling lowers CLM judge ECE without improving accuracy. Retaining at least 97% of a stronger judge’s accuracy still escalates 92.3–100% of requests; low order-flip rates do not establish useful judging or measured end-to-end savings.",
+    "summary_zh": "留出集温度缩放降低CLM裁判ECE，但不改善准确率。为保留强裁判至少97%的准确率仍需升级92.3–100%请求；低顺序翻转率不等于有效裁判或已证实的端到端节省。",
     "theme": "Reliability",
     "scope": "related-model",
     "schema_version": 2,
-    "evidence": "Original arXiv abstract and model-identification sections",
-    "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
-    "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+    "evidence": "Original full text and arXiv ancillary archive",
+    "review": "Full PDF setup, results and limitations plus original arXiv ancillary calibration/cascade metrics, pins and preregistration hash reviewed; model scoring not reproduced",
+    "limitation": "One open contrastive model and serving stack; unequal context windows affect comparisons. The pooled temperature reaches its search bound. Hosted strong-judge latency invalidates the preregistered same-hardware cost criterion. Length comparisons condition on gold labels rather than intervene on length; low bias does not imply correct ranking.",
+    "datasets": [
+      "RewardBench",
+      "RewardBench 2",
+      "RM-Bench",
+      "JudgeBench",
+      "HaluEval"
+    ]
   },
   {
     "id": "2610.22526",
@@ -18083,5 +18090,387 @@
     "evidence": "Original arXiv abstract and model-identification sections",
     "review": "Original arXiv metadata and abstract verified; model identity checked in PDF; detailed full-text audit pending",
     "limitation": "Author-reported preprint findings; complete methods/results audit and independent replication not completed."
+  },
+  {
+    "id": "2610.32318",
+    "title": "System One models Are Not Better Rerankers",
+    "short": "Decision Models as Rerankers",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.32318",
+    "pdf": "https://arxiv.org/pdf/2610.32318v1",
+    "doi": "10.48550/arXiv.2610.32318",
+    "date": "2026-10-23",
+    "updated": "2026-10-23",
+    "version": "2610.32318v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Michael Dinzinger",
+      "Kanishka Ghosh Dastidar",
+      "Michael Granitzer"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Matches six Qwen backbones to compare decision and reranker fine-tuning across ten retrieval collections. Reranker tuning wins through 9B and ties at 27B; decision-model calibration advantages depend on question wording and do not compensate for weaker ranking.",
+    "brief_zh": "匹配六个Qwen骨干，在十个检索集合比较决策微调与重排微调。9B及以下重排微调更优，27B持平；决策模型校准优势依赖提问措辞，不能抵消较弱排序。",
+    "summary": "Matches six Qwen backbones to compare decision and reranker fine-tuning across ten retrieval collections. Reranker tuning wins through 9B and ties at 27B; decision-model calibration advantages depend on question wording and do not compensate for weaker ranking.",
+    "summary_zh": "匹配六个Qwen骨干，在十个检索集合比较决策微调与重排微调。9B及以下重排微调更优，27B持平；决策模型校准优势依赖提问措辞，不能抵消较弱排序。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.32955",
+    "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+    "short": "Measure Before You Train",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.32955",
+    "pdf": "https://arxiv.org/pdf/2610.32955v1",
+    "doi": "10.48550/arXiv.2610.32955",
+    "date": "2026-10-23",
+    "updated": "2026-10-23",
+    "version": "2610.32955v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Federico Lucca"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.",
+    "brief_zh": "以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。",
+    "summary": "Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.",
+    "summary_zh": "以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.35826",
+    "title": "Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?",
+    "short": "Selection Bias in System One",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.35826",
+    "pdf": "https://arxiv.org/pdf/2610.35826v1",
+    "doi": "10.48550/arXiv.2610.35826",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "version": "2610.35826v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Mingyang Song",
+      "Mao Zheng",
+      "Zhiyuan Ma",
+      "Xinpeng Zhou"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.",
+    "brief_zh": "追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。",
+    "summary": "Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.",
+    "summary_zh": "追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.33410",
+    "title": "Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev",
+    "short": "Jev Time-Series Decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.33410",
+    "pdf": "https://arxiv.org/pdf/2610.33410v1",
+    "doi": "10.48550/arXiv.2610.33410",
+    "date": "2026-10-24",
+    "updated": "2026-10-24",
+    "version": "2610.33410v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Jianye Wang",
+      "Kexin Zhang",
+      "Jiayin Xiong",
+      "Hao Xue"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests Jev 1.13.0 on temporal classification and discretized forecasting. Selected explicit temporal patterns are handled better than many numerical sequences, with near-chance discrimination and gaps between score ranking and final decisions on some datasets.",
+    "brief_zh": "在时序分类及离散化预测中评测Jev 1.13.0。对部分显式时间模式的表现优于多种数值序列；一些数据集判别接近随机，评分排序与最终决策存在差距。",
+    "summary": "Tests Jev 1.13.0 on temporal classification and discretized forecasting. Selected explicit temporal patterns are handled better than many numerical sequences, with near-chance discrimination and gaps between score ranking and final decisions on some datasets.",
+    "summary_zh": "在时序分类及离散化预测中评测Jev 1.13.0。对部分显式时间模式的表现优于多种数值序列；一些数据集判别接近随机，评分排序与最终决策存在差距。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.34875",
+    "title": "RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge",
+    "short": "RubriX",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.34875",
+    "pdf": "https://arxiv.org/pdf/2610.34875v1",
+    "doi": "10.48550/arXiv.2610.34875",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "version": "2610.34875v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Balamurugan Paramasivam",
+      "Sudalai Rajkumar"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses separate encoder representations and cached rubric-level embeddings for non-generative judging. It improves held-out rubric accuracy and keeps latency nearly constant with long level descriptions; human-labelled benchmarks and ranking show mixed advantages over Jev.",
+    "brief_zh": "用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。",
+    "summary": "Uses separate encoder representations and cached rubric-level embeddings for non-generative judging. It improves held-out rubric accuracy and keeps latency nearly constant with long level descriptions; human-labelled benchmarks and ranking show mixed advantages over Jev.",
+    "summary_zh": "用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.33702",
+    "title": "Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory",
+    "short": "Iris",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.33702",
+    "pdf": "https://arxiv.org/pdf/2610.33702v1",
+    "doi": "10.48550/arXiv.2610.33702",
+    "date": "2026-10-24",
+    "updated": "2026-10-24",
+    "version": "2610.33702v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Fengxin Li"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Extends typed decisions to visual candidates with reusable option encodings. Request-conditioned independent branches retain candidate-order invariance and improve accuracy over independent encoding, while caching reduces repeated-candidate inference cost.",
+    "brief_zh": "通过可复用选项编码将类型化决策扩展到视觉候选。请求条件化的独立分支保留候选顺序不变性并改善独立编码准确率，缓存降低重复候选推理成本。",
+    "summary": "Extends typed decisions to visual candidates with reusable option encodings. Request-conditioned independent branches retain candidate-order invariance and improve accuracy over independent encoding, while caching reduces repeated-candidate inference cost.",
+    "summary_zh": "通过可复用选项编码将类型化决策扩展到视觉候选。请求条件化的独立分支保留候选顺序不变性并改善独立编码准确率，缓存降低重复候选推理成本。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.34329",
+    "title": "SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift",
+    "short": "SHIFT-JEV",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.34329",
+    "pdf": "https://arxiv.org/pdf/2610.34329v1",
+    "doi": "10.48550/arXiv.2610.34329",
+    "date": "2026-10-25",
+    "updated": "2026-10-25",
+    "version": "2610.34329v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Muhammad Atif Saeed",
+      "Azka Atiq",
+      "Adarsh Kumar",
+      "Akhtar Jamil",
+      "Uzair Iqbal",
+      "Roland Aydin"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines calibrated abstention, shift monitoring and gain-gated adaptation for open LLM decision models. Calibration improves under shift, but certified thresholds still exceed target risk in some shifted tests and conservative update gates can lose accuracy.",
+    "brief_zh": "为开放LLM决策模型组合校准弃答、漂移监控与收益门控适配。分布偏移下校准改善，但认证阈值在部分偏移测试中仍超过目标风险，保守更新门控也可能损失准确率。",
+    "summary": "Combines calibrated abstention, shift monitoring and gain-gated adaptation for open LLM decision models. Calibration improves under shift, but certified thresholds still exceed target risk in some shifted tests and conservative update gates can lose accuracy.",
+    "summary_zh": "为开放LLM决策模型组合校准弃答、漂移监控与收益门控适配。分布偏移下校准改善，但认证阈值在部分偏移测试中仍超过目标风险，保守更新门控也可能损失准确率。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.34124",
+    "title": "Decision-Native Recommendation with Large Language Models",
+    "short": "DICE",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.34124",
+    "pdf": "https://arxiv.org/pdf/2610.34124v1",
+    "doi": "10.48550/arXiv.2610.34124",
+    "date": "2026-10-25",
+    "updated": "2026-10-25",
+    "version": "2610.34124v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Daoxuan Liu",
+      "Jiayi Liao",
+      "Jiancan Wu",
+      "An Zhang",
+      "Xiang Wang",
+      "Xiangnan He"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses tree-structured attention to share user-history computation across isolated candidate branches. The decision interface tests order-consistent choices, calibrated confidence and selective computation in sequential recommendation.",
+    "brief_zh": "以树形注意力在隔离候选分支间共享用户历史计算，构造直接选择接口，并在序列推荐中检验顺序一致性、置信校准与选择性计算。",
+    "summary": "Uses tree-structured attention to share user-history computation across isolated candidate branches. The decision interface tests order-consistent choices, calibrated confidence and selective computation in sequential recommendation.",
+    "summary_zh": "以树形注意力在隔离候选分支间共享用户历史计算，构造直接选择接口，并在序列推荐中检验顺序一致性、置信校准与选择性计算。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.33775",
+    "title": "The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS",
+    "short": "System 1 Models Guide",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.33775",
+    "pdf": "https://arxiv.org/pdf/2610.33775v1",
+    "doi": "10.48550/arXiv.2610.33775",
+    "date": "2026-10-24",
+    "updated": "2026-10-24",
+    "version": "2610.33775v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Haggai Roitman"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "survey"
+    ],
+    "brief_en": "Surveys five System 1 model families, their training and deployment trade-offs, calibration and fast–slow cascades. Its taxonomy and ecosystem overview organize existing evidence rather than establish a new controlled comparison.",
+    "brief_zh": "综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。",
+    "summary": "Surveys five System 1 model families, their training and deployment trade-offs, calibration and fast–slow cascades. Its taxonomy and ecosystem overview organize existing evidence rather than establish a new controlled comparison.",
+    "summary_zh": "综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.35654",
+    "title": "Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation",
+    "short": "Span Readouts for Reranking",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.35654",
+    "pdf": "https://arxiv.org/pdf/2610.35654v1",
+    "doi": "10.48550/arXiv.2610.35654",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "version": "2610.35654v1",
+    "added": "2026-10-27",
+    "authors": [
+      "Haocheng Mei",
+      "Yuchuan Tian",
+      "Ye Yuan",
+      "Enhua Wu",
+      "Chao Xu",
+      "Allen Chen",
+      "Kai Han",
+      "Yunhe Wang"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.",
+    "brief_zh": "结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。",
+    "summary": "Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.",
+    "summary_zh": "结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
   }
 ]

@@ -1604,5 +1604,30 @@
     },
     "source_section": "Sections 3–5; controlled relocation/reference-swap studies; Appendices C and F; author README and repository tree",
     "source": "https://arxiv.org/pdf/2610.18497v1"
+  },
+  {
+    "id": "2610.07177",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "RewardBench",
+      "RewardBench 2",
+      "RM-Bench",
+      "JudgeBench",
+      "HaluEval"
+    ],
+    "data_role": {
+      "en": "Preference and hallucination judge evaluation; RewardBench 2 is also converted to pairs",
+      "zh": "偏好与幻觉裁判评测；RewardBench 2另转换为配对任务"
+    },
+    "design": {
+      "en": "Prompt-grouped 30% calibration and 70% evaluation splits; calibration maps and cascade thresholds fit only on the calibration portion. CLM uses a 2,048-token window, Laya 512 and generative/reward baselines 4,096. Uses 10,000 prompt-cluster bootstrap resamples and BH correction. Cascade thresholds target 97% retained strong-judge accuracy with matched random escalation controls.",
+      "zh": "按提示分组划分30%校准与70%评测集，校准映射和级联阈值仅拟合校准部分。CLM窗口2,048 token、Laya 512、生成及奖励模型4,096。使用10,000次提示聚类bootstrap与BH校正。级联阈值以保留强裁判97%准确率为目标，并比较相同升级比例的随机对照。"
+    },
+    "reading": {
+      "en": "CLM is near chance on RM-Bench/JudgeBench and emits a constant HaluEval label. Pooled temperature about 20.1 lowers ECE to 0.032–0.062 but leaves accuracy unchanged; the cascade escalates 92.3–100% and retains 97.6–100% accuracy. The hosted strong judge prevents evaluation of the original latency-cost criterion; RM-Bench domain-averaged accuracy differs from item-averaged cascade accuracy.",
+      "zh": "CLM在RM-Bench/JudgeBench接近随机，HaluEval恒定输出同一标签。约20.1的统一温度将ECE降至0.032–0.062但准确率不变；级联升级92.3–100%请求，保留97.6–100%准确率。强裁判改用托管服务后无法检验原延迟成本目标；RM-Bench按领域平均的准确率与级联按条目平均的口径不同。"
+    },
+    "source_section": "Sections 3–7 and 10; Tables 1–5; anc/metrics/calibration_table.json, h4_cascade.json, cascade_agreement.json; anc/prereg_freeze.json",
+    "source": "https://arxiv.org/pdf/2610.07177v1"
   }
 ]

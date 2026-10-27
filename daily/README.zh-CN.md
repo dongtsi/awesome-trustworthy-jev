@@ -2,9 +2,28 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-26
+
+- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v1)
+- [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — 结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.35654v1)
+- [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875) — 用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。 `评测` · [PDF](https://arxiv.org/pdf/2610.34875v1)
+
+## 2026-10-25
+
+- [SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift](https://arxiv.org/abs/2610.34329) — 为开放LLM决策模型组合校准弃答、漂移监控与收益门控适配。分布偏移下校准改善，但认证阈值在部分偏移测试中仍超过目标风险，保守更新门控也可能损失准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.34329v1)
+- [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124) — 以树形注意力在隔离候选分支间共享用户历史计算，构造直接选择接口，并在序列推荐中检验顺序一致性、置信校准与选择性计算。 `评测` · [PDF](https://arxiv.org/pdf/2610.34124v1)
+
 ## 2026-10-24
 
 - [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
+- [The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS](https://arxiv.org/abs/2610.33775) — 综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。 `综述` · [PDF](https://arxiv.org/pdf/2610.33775v1)
+- [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) — 通过可复用选项编码将类型化决策扩展到视觉候选。请求条件化的独立分支保留候选顺序不变性并改善独立编码准确率，缓存降低重复候选推理成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.33702v1)
+- [Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev](https://arxiv.org/abs/2610.33410) — 在时序分类及离散化预测中评测Jev 1.13.0。对部分显式时间模式的表现优于多种数值序列；一些数据集判别接近随机，评分排序与最终决策存在差距。 `评测` · [PDF](https://arxiv.org/pdf/2610.33410v1)
+
+## 2026-10-23
+
+- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — 以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.32955v1)
+- [System One models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — 匹配六个Qwen骨干，在十个检索集合比较决策微调与重排微调。9B及以下重排微调更优，27B持平；决策模型校准优势依赖提问措辞，不能抵消较弱排序。 `评测` · [PDF](https://arxiv.org/pdf/2610.32318v1)
 
 ## 2026-10-22
 
@@ -159,7 +178,7 @@
 
 ## 2026-10-05
 
-- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — 在公开偏好与幻觉基准上评测CLM-v0.1-8B裁判。呈现偏差较低、校准改善不等于判别能力强；置信级联为保持强裁判准确率仍需升级大多数请求。 `评测` · [PDF](https://arxiv.org/pdf/2610.07177v1)
+- [CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks](https://arxiv.org/abs/2610.07177) — 留出集温度缩放降低CLM裁判ECE，但不改善准确率。为保留强裁判至少97%的准确率仍需升级92.3–100%请求；低顺序翻转率不等于有效裁判或已证实的端到端节省。 `评测` · [PDF](https://arxiv.org/pdf/2610.07177v1)
 - [ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring](https://arxiv.org/abs/2610.06744) — 在共享位置独立评分土耳其语选项以消除顺序影响；监督训练优于所测 REINFORCE，温度校准在留出问题类型上反而变差。 `评测` · [PDF](https://arxiv.org/pdf/2610.06744v1)
 - [JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications](https://arxiv.org/abs/2610.06625) — 复现七项标注与量表研究：Jev 响应更快，多项任务表现接近对照模型，按所报告批处理价格比较时没有费用优势。 `评测` · [PDF](https://arxiv.org/pdf/2610.06625v2)
 - [SoK: Semantic Decision Engines in Network Control Loops](https://arxiv.org/abs/2610.06425) — 审计 139 个网络控制论文族，区分决策时延与服务完成验证；排队和候选覆盖检查会改变系统准入结论。 `综述` · [PDF](https://arxiv.org/pdf/2610.06425v1) · [代码](https://github.com/OniReimu/SoK-JEV)
