@@ -18170,11 +18170,11 @@
     "short": "Selection Bias in System One",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.35826",
-    "pdf": "https://arxiv.org/pdf/2610.35826v1",
+    "pdf": "https://arxiv.org/pdf/2610.35826v2",
     "doi": "10.48550/arXiv.2610.35826",
     "date": "2026-10-26",
-    "updated": "2026-10-26",
-    "version": "2610.35826v1",
+    "updated": "2026-10-27",
+    "version": "2610.35826v2",
     "added": "2026-10-27",
     "authors": [
       "Mingyang Song",
@@ -18198,7 +18198,7 @@
     "scope": "Jev",
     "schema_version": 2,
     "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "review": "Original arXiv v2 metadata and abstract verified; detailed full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
   },
@@ -18472,5 +18472,241 @@
     "review": "Original abstract and scope verified; detailed full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
+  },
+  {
+    "id": "2610.36915",
+    "title": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+    "short": "Decision Models for Conflict Typing",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36915",
+    "pdf": "https://arxiv.org/pdf/2610.36915v1",
+    "doi": "10.48550/arXiv.2610.36915",
+    "date": "2026-10-27",
+    "updated": "2026-10-27",
+    "version": "2610.36915v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Parv Khatri",
+      "Harshul Jain",
+      "Mehak Kapoor",
+      "Tanya Sah"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares eleven hosted decision models on RAG knowledge-conflict typing. Confidence-based escalation can approach a stronger LLM at lower billed cost, while yes/no decomposition hurts accuracy and source-order sensitivity varies across models.",
+    "brief_zh": "在RAG知识冲突分类中比较11个托管决策模型。按置信度升级可用较低账单成本接近更强LLM；是非分解降低准确率，不同模型对来源顺序的敏感度差异明显。",
+    "summary": "Compares eleven hosted decision models on RAG knowledge-conflict typing. Confidence-based escalation can approach a stronger LLM at lower billed cost, while yes/no decomposition hurts accuracy and source-order sensitivity varies across models.",
+    "summary_zh": "在RAG知识冲突分类中比较11个托管决策模型。按置信度升级可用较低账单成本接近更强LLM；是非分解降低准确率，不同模型对来源顺序的敏感度差异明显。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": [],
+    "code": "https://github.com/Parv17k/decision-models-conflict-typing"
+  },
+  {
+    "id": "2610.36689",
+    "title": "PsyJev: Psychological Analysis via System-1 Judgment",
+    "short": "PsyJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36689",
+    "pdf": "https://arxiv.org/pdf/2610.36689v1",
+    "doi": "10.48550/arXiv.2610.36689",
+    "date": "2026-10-27",
+    "updated": "2026-10-27",
+    "version": "2610.36689v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Fangyuan Liu",
+      "Sirui Zhao",
+      "Xiaohao Wang",
+      "Guo Cheng",
+      "Peng Zhang",
+      "Enhong Chen"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Adapts RLCD to heterogeneous question-conditioned judgments through balanced supervision, retention of correct supervised predictions and question-group rewards. Controlled small-model comparisons examine training stages and probability quality on psychological-analysis tasks.",
+    "brief_zh": "以平衡监督、保留监督阶段正确预测及问题组奖励，将RLCD适配到异质的问题条件化判断；通过小模型受控比较检验训练阶段与心理分析任务中的概率质量。",
+    "summary": "Adapts RLCD to heterogeneous question-conditioned judgments through balanced supervision, retention of correct supervised predictions and question-group rewards. Controlled small-model comparisons examine training stages and probability quality on psychological-analysis tasks.",
+    "summary_zh": "以平衡监督、保留监督阶段正确预测及问题组奖励，将RLCD适配到异质的问题条件化判断；通过小模型受控比较检验训练阶段与心理分析任务中的概率质量。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.36311",
+    "title": "Confidence Is Not a Promise: A Reference Audit of Typed Decision Models",
+    "short": "Confidence Is Not a Promise",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36311",
+    "pdf": "https://arxiv.org/pdf/2610.36311v1",
+    "doi": "10.48550/arXiv.2610.36311",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "version": "2610.36311v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Pedro Carvalho Brom"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/interpretability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits selective decisions, calibration transfer, noise, drift and explanations for Laya and Jev 1.13. Point-estimate thresholds often miss promised accuracy; lower-bound qualification helps in exchangeable tests, while language and input shifts break transfer.",
+    "brief_zh": "审计Laya与Jev 1.13的选择性决策、校准迁移、噪声、漂移和解释。点估计阈值常无法达到承诺准确率；下界资格检验在可交换测试中有效，但语言与输入偏移破坏迁移。",
+    "summary": "Audits selective decisions, calibration transfer, noise, drift and explanations for Laya and Jev 1.13. Point-estimate thresholds often miss promised accuracy; lower-bound qualification helps in exchangeable tests, while language and input shifts break transfer.",
+    "summary_zh": "审计Laya与Jev 1.13的选择性决策、校准迁移、噪声、漂移和解释。点估计阈值常无法达到承诺准确率；下界资格检验在可交换测试中有效，但语言与输入偏移破坏迁移。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.36006",
+    "title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
+    "short": "MedJev Calibration Audit",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36006",
+    "pdf": "https://arxiv.org/pdf/2610.36006v1",
+    "doi": "10.48550/arXiv.2610.36006",
+    "date": "2026-10-26",
+    "updated": "2026-10-26",
+    "version": "2610.36006v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Simon A. Lee",
+      "Jiahang Sha",
+      "Moonseong Jeong",
+      "Yunbei Pan",
+      "Jeffrey N. Chiang"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates an open System One model across medical knowledge and patient-level tasks. Good benchmark calibration does not transfer to all patient predictions; a two-parameter local recalibration with 50–200 labels reduces reported calibration error.",
+    "brief_zh": "在医学知识及患者级任务评测开放System One模型。知识基准上的良好校准未迁移到所有患者预测；用50–200个标签拟合双参数局部再校准可降低报告的校准误差。",
+    "summary": "Evaluates an open System One model across medical knowledge and patient-level tasks. Good benchmark calibration does not transfer to all patient predictions; a two-parameter local recalibration with 50–200 labels reduces reported calibration error.",
+    "summary_zh": "在医学知识及患者级任务评测开放System One模型。知识基准上的良好校准未迁移到所有患者预测；用50–200个标签拟合双参数局部再校准可降低报告的校准误差。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.36595",
+    "title": "Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models",
+    "short": "Learning to Formalize",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36595",
+    "pdf": "https://arxiv.org/pdf/2610.36595v1",
+    "doi": "10.48550/arXiv.2610.36595",
+    "date": "2026-10-27",
+    "updated": "2026-10-27",
+    "version": "2610.36595v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Chengxuan Pei",
+      "Ziyao Wang",
+      "Teng Mei",
+      "Zhe Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Trains a candidate formalizer from offline teacher-generated lists and lets a frozen decision model select a validated action. Separate official-Jev and privileged-state local-model CALVIN studies show strong dependence on candidate construction; their success rates are not a shared head-to-head comparison.",
+    "brief_zh": "用离线教师候选训练形式化器，再由冻结决策模型选择有效动作。官方Jev与特权状态本地模型的两组CALVIN研究显示候选构造影响显著，两组成功率不能作为同场直接比较。",
+    "summary": "Trains a candidate formalizer from offline teacher-generated lists and lets a frozen decision model select a validated action. Separate official-Jev and privileged-state local-model CALVIN studies show strong dependence on candidate construction; their success rates are not a shared head-to-head comparison.",
+    "summary_zh": "用离线教师候选训练形式化器，再由冻结决策模型选择有效动作。官方Jev与特权状态本地模型的两组CALVIN研究显示候选构造影响显著，两组成功率不能作为同场直接比较。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.36804",
+    "title": "DFIP: Decision-Focused Inference Path for System One Models",
+    "short": "DFIP",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.36804",
+    "pdf": "https://arxiv.org/pdf/2610.36804v1",
+    "doi": "10.48550/arXiv.2610.36804",
+    "date": "2026-10-27",
+    "updated": "2026-10-27",
+    "version": "2610.36804v1",
+    "added": "2026-10-28",
+    "authors": [
+      "Ismail Pelaseyed",
+      "Alan Zabihi"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits CUDA replay, candidate projection and length-aware batching in four open decision models. Fixed-workload speedups can disappear or reverse under changing arrivals; preserved labels do not ensure preserved confidence-based routing.",
+    "brief_zh": "审计四个开放决策模型的CUDA重放、候选投影和长度感知批处理。固定负载加速可能在动态到达下消失或反转；标签保持不变不等于置信门控保持不变。",
+    "summary": "Audits CUDA replay, candidate projection and length-aware batching in four open decision models. Fixed-workload speedups can disappear or reverse under changing arrivals; preserved labels do not ensure preserved confidence-based routing.",
+    "summary_zh": "审计四个开放决策模型的CUDA重放、候选投影和长度感知批处理。固定负载加速可能在动态到达下消失或反转；标签保持不变不等于置信门控保持不变。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "evidence": "Original full text and author repository",
+    "review": "Full PDF methods, results, tables and appendices reviewed; official author repository and pinned evidence index inspected without executing collected code",
+    "limitation": "Four development-selected checkpoints; different workloads cannot be pooled. Container rounds are the statistical unit and need not be independent physical hosts. Clef attrition, one-worker GLiNER follow-up, short fixed-rate serving tests and finite output audits limit transfer. No billed saving or downstream quality preservation was measured.",
+    "datasets": [
+      "Banking77",
+      "LocalLLaMA typed-decisions",
+      "DFIP synthetic resident and arrival traces"
+    ],
+    "code": "https://github.com/superagent-ai/dfip"
   }
 ]

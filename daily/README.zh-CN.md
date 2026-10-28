@@ -2,9 +2,18 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-27
+
+- [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915) — 在RAG知识冲突分类中比较11个托管决策模型。按置信度升级可用较低账单成本接近更强LLM；是非分解降低准确率，不同模型对来源顺序的敏感度差异明显。 `评测` · [PDF](https://arxiv.org/pdf/2610.36915v1) · [代码](https://github.com/Parv17k/decision-models-conflict-typing)
+- [DFIP: Decision-Focused Inference Path for System One Models](https://arxiv.org/abs/2610.36804) — 审计四个开放决策模型的CUDA重放、候选投影和长度感知批处理。固定负载加速可能在动态到达下消失或反转；标签保持不变不等于置信门控保持不变。 `评测` · [PDF](https://arxiv.org/pdf/2610.36804v1) · [代码](https://github.com/superagent-ai/dfip)
+- [PsyJev: Psychological Analysis via System-1 Judgment](https://arxiv.org/abs/2610.36689) — 以平衡监督、保留监督阶段正确预测及问题组奖励，将RLCD适配到异质的问题条件化判断；通过小模型受控比较检验训练阶段与心理分析任务中的概率质量。 `评测` · [PDF](https://arxiv.org/pdf/2610.36689v1)
+- [Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models](https://arxiv.org/abs/2610.36595) — 用离线教师候选训练形式化器，再由冻结决策模型选择有效动作。官方Jev与特权状态本地模型的两组CALVIN研究显示候选构造影响显著，两组成功率不能作为同场直接比较。 `评测` · [PDF](https://arxiv.org/pdf/2610.36595v1)
+
 ## 2026-10-26
 
-- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v1)
+- [Confidence Is Not a Promise: A Reference Audit of Typed Decision Models](https://arxiv.org/abs/2610.36311) — 审计Laya与Jev 1.13的选择性决策、校准迁移、噪声、漂移和解释。点估计阈值常无法达到承诺准确率；下界资格检验在可交换测试中有效，但语言与输入偏移破坏迁移。 `评测` · [PDF](https://arxiv.org/pdf/2610.36311v1)
+- [MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine](https://arxiv.org/abs/2610.36006) — 在医学知识及患者级任务评测开放System One模型。知识基准上的良好校准未迁移到所有患者预测；用50–200个标签拟合双参数局部再校准可降低报告的校准误差。 `评测` · [PDF](https://arxiv.org/pdf/2610.36006v1)
+- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v2)
 - [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — 结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.35654v1)
 - [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875) — 用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。 `评测` · [PDF](https://arxiv.org/pdf/2610.34875v1)
 

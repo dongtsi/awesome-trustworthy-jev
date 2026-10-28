@@ -1629,5 +1629,28 @@
     },
     "source_section": "Sections 3–7 and 10; Tables 1–5; anc/metrics/calibration_table.json, h4_cascade.json, cascade_agreement.json; anc/prereg_freeze.json",
     "source": "https://arxiv.org/pdf/2610.07177v1"
+  },
+  {
+    "id": "2610.36804",
+    "category": "foundations/inference",
+    "datasets": [
+      "Banking77",
+      "LocalLLaMA typed-decisions",
+      "DFIP synthetic resident and arrival traces"
+    ],
+    "data_role": {
+      "en": "Native-answer fidelity and request-path timing, not a task-quality leaderboard",
+      "zh": "原生输出一致性与请求路径计时，非任务质量排行榜"
+    },
+    "design": {
+      "en": "Pinned PPLX-Decider on B200 and Liquid, Clef, GLiNER on L40S. Decider/Clef plan five paired container rounds with randomized mode/workload order, 50 warm calls per mode, and 10,000 bootstrap resamples of container log ratios. Liquid uses three compiler-comparison rounds. GLiNER uses one worker per substrate and five warm trace timings. Separate audits cover 3,024 decisions per Decider/Clef; external 60-second phases offer 5/15/30 requests per second, while GLiNER uses short resident arrival replays.",
+      "zh": "固定版本PPLX-Decider使用B200，Liquid、Clef、GLiNER使用L40S。Decider/Clef计划5轮配对容器实验，随机化模式和负载顺序，每模式50次热调用，并对容器对数比值进行10,000次bootstrap。Liquid编译比较3轮；GLiNER每种执行环境仅1个worker、每轨迹5次热计时。Decider/Clef另各审计3,024次决策；外部到达实验每阶段60秒、每秒5/15/30请求，GLiNER另用短时驻留到达重放。"
+    },
+    "reading": {
+      "en": "Short-Boolean resident gains are 2.47× for Decider (5/5 rounds) and 1.45× for Clef (4/5; native preflight failure); Liquid ties released compilation at 1.01×. GLiNER gains 1.40× over compiled FIFO batching on a diverse resident trace, but arrival p95 rises from 43.17 to 72.10 ms. Clef preserves 1,112 choices yet changes probabilities and 21 confidence-0.9 decisions in serving. Diverse external arrivals reverse original replay gains; dropped/error requests and failed rounds remain in the report.",
+      "zh": "短Boolean驻留请求中，Decider加速2.47倍（5/5轮），Clef为1.45倍（4/5轮，1轮原生预检失败）；Liquid对发布版编译仅1.01倍。GLiNER多样驻留轨迹比编译FIFO批处理快1.40倍，但到达p95由43.17增至72.10毫秒。Clef保持1,112个标签，却改变概率，服务审计中21对输出跨越0.9置信阈值。多样外部到达反转原始重放收益，丢弃、错误请求及失败轮次均保留。"
+    },
+    "source_section": "Sections 2–7 and 9; Tables 1–9; Appendices A–B",
+    "source": "https://arxiv.org/pdf/2610.36804v1"
   }
 ]

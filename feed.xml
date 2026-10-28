@@ -6,6 +6,48 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG</title>
+      <link>https://arxiv.org/abs/2610.36915</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36915#publication</guid>
+      <description>Compares eleven hosted decision models on RAG knowledge-conflict typing. Confidence-based escalation can approach a stronger LLM at lower billed cost, while yes/no decomposition hurts accuracy and source-order sensitivity varies across models.</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DFIP: Decision-Focused Inference Path for System One Models</title>
+      <link>https://arxiv.org/abs/2610.36804</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36804#publication</guid>
+      <description>Audits CUDA replay, candidate projection and length-aware batching in four open decision models. Fixed-workload speedups can disappear or reverse under changing arrivals; preserved labels do not ensure preserved confidence-based routing.</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PsyJev: Psychological Analysis via System-1 Judgment</title>
+      <link>https://arxiv.org/abs/2610.36689</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36689#publication</guid>
+      <description>Adapts RLCD to heterogeneous question-conditioned judgments through balanced supervision, retention of correct supervised predictions and question-group rewards. Controlled small-model comparisons examine training stages and probability quality on psychological-analysis tasks.</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models</title>
+      <link>https://arxiv.org/abs/2610.36595</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36595#publication</guid>
+      <description>Trains a candidate formalizer from offline teacher-generated lists and lets a frozen decision model select a validated action. Separate official-Jev and privileged-state local-model CALVIN studies show strong dependence on candidate construction; their success rates are not a shared head-to-head comparison.</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Confidence Is Not a Promise: A Reference Audit of Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.36311</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36311#publication</guid>
+      <description>Audits selective decisions, calibration transfer, noise, drift and explanations for Laya and Jev 1.13. Point-estimate thresholds often miss promised accuracy; lower-bound qualification helps in exchangeable tests, while language and input shifts break transfer.</description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine</title>
+      <link>https://arxiv.org/abs/2610.36006</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36006#publication</guid>
+      <description>Evaluates an open System One model across medical knowledge and patient-level tasks. Good benchmark calibration does not transfer to all patient predictions; a two-parameter local recalibration with 50–200 labels reduces reported calibration error.</description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?</title>
       <link>https://arxiv.org/abs/2610.35826</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.35826#publication</guid>
@@ -1362,27 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.23886#publication</guid>
       <description>Provides an open model with a native typed decision interface.</description>
       <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Fast Intent-Driven Service Orchestration with Jev for 6G Edge Networks</title>
-      <link>https://arxiv.org/abs/2609.23136</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.23136#publication</guid>
-      <description>Studies how decision latency affects bounded service orchestration.</description>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration</title>
-      <link>https://arxiv.org/abs/2609.22753</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.22753#publication</guid>
-      <description>Measures typed decisions in deadline-constrained service admission.</description>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Calibration Does Not Compose, Types Destroy Vagueness: The Hidden-Markov and Fuzzy Primitives Missing from System-One Decision Models</title>
-      <link>https://zenodo.org/records/23064668</link>
-      <guid isPermaLink="false">https://zenodo.org/records/23064668#publication</guid>
-      <description>Analyzes how latent regime shifts and repeated thresholds can invalidate composed decision pipelines, using formal assumptions and synthetic experiments.</description>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
