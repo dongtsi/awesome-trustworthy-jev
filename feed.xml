@@ -97,6 +97,13 @@
       <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>RoboJev: An Open Vision-Language Judge for Robot Success Detection</title>
+      <link>https://arxiv.org/abs/2610.33718</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.33718#publication</guid>
+      <description>Studies robot-specialized adaptation and calibration transfer of JEV-27B-VL with source-specific KL anchoring. Matched-input tests improve same-robot accuracy but do not establish unseen-domain gains; frontier API comparisons use fewer frames.</description>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory</title>
       <link>https://arxiv.org/abs/2610.33702</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.33702#publication</guid>
@@ -1397,13 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.23959#publication</guid>
       <description>Evaluates an open typed readout for scam-call screening.</description>
       <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>this-that-model-1.0: A typed decision model that decides in 30 ms, for a millionth of a cent</title>
-      <link>https://arxiv.org/abs/2609.23886</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.23886#publication</guid>
-      <description>Provides an open model with a native typed decision interface.</description>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

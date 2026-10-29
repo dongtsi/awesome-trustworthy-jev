@@ -1652,5 +1652,26 @@
     },
     "source_section": "Sections 2–7 and 9; Tables 1–9; Appendices A–B",
     "source": "https://arxiv.org/pdf/2610.36804v1"
+  },
+  {
+    "id": "2610.33718",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "RoboJev evaluation episodes"
+    ],
+    "data_role": {
+      "en": "Episode success labels for adaptation and calibration-transfer evaluation",
+      "zh": "用于适配与校准迁移评测的episode成功标签"
+    },
+    "design": {
+      "en": "Rank-32 language-only LoRA on 52,598 fit records with source-specific KL anchoring; temperature and adapter scale selected on validation. Evaluation contains 268 SO-101 episodes (80 from withheld tasks), 459 unseen-domain episodes, and 200 community clips with 135 definite labels. Matched base model uses the same ten-frame inputs; API baselines use four frames. Paired label-stratified episode bootstrap uses 4,000 resamples.",
+      "zh": "以52,598条训练记录进行rank-32语言部分LoRA及按来源KL锚定；在验证集选适配强度和温度。评测含268段SO-101轨迹（80段来自保留任务）、459段未见域轨迹及200段社区视频（135段有确定标签）。基座采用相同10帧输入，API基线仅4帧；配对、标签分层episode bootstrap重采样4,000次。"
+    },
+    "reading": {
+      "en": "Same-robot balanced accuracy rises from 88.1% to 95.2% (paired gain 7.08 points, 95% CI 3.04–11.45). Unseen-domain AUROC is .890 versus .900 for the matched base (difference −.0092, CI −.0218 to .0026); calibration ECE rises from .032 on SO-101 to .148 out of domain. Community accuracy is 126/135, excluding 65 unclear clips. Single-run ablations, development-visible tests and different API frame budgets preclude broad superiority claims.",
+      "zh": "同机器人平衡准确率由88.1%升至95.2%（配对提升7.08点，95%区间3.04–11.45）。未见域AUROC为.890，匹配基座为.900（差−.0092，区间−.0218至.0026）；ECE由SO-101的.032升至未见域.148。社区准确率126/135，排除65段模糊视频。单次训练消融、开发可见测试集和不同API帧预算不支持普遍优越性结论。"
+    },
+    "source_section": "Sections 2–8; Tables 1–6; Appendices A–D",
+    "source": "https://arxiv.org/html/2610.33718v1"
   }
 ]

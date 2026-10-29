@@ -469,5 +469,11 @@
     "type": "benchmark",
     "checked": "2026-10-28",
     "verification": "Author repository and paper methods verified; distinct resident, external-serving and GLiNER traces are not pooled; no collected code executed."
+  },
+  "RoboJev evaluation episodes": {
+    "url": "https://arxiv.org/abs/2610.33718",
+    "type": "paper",
+    "checked": "2026-10-29",
+    "verification": "Original full text verifies 927 episodes, 862 binary labels and 65 unclear community clips. Author dataset is josefchen/RoboJev-evals; direct model-host card access failed, so the verified paper is retained as fallback."
   }
 }

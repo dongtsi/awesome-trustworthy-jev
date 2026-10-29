@@ -1272,5 +1272,19 @@
     "date": "2026-10-15",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/etsabary/visual-decision-benchmark"
+  },
+  {
+    "id": "r-8077553d0e",
+    "kind": "Project",
+    "date": "2026-10-28",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/bomliu/decision-drift"
+  },
+  {
+    "id": "r-f65fe83f60",
+    "kind": "Project",
+    "date": "2026-10-28",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/n9omi/jev-calibration-audit"
   }
 ]

@@ -26,6 +26,7 @@
 
 - [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
 - [The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS](https://arxiv.org/abs/2610.33775) — 综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。 `综述` · [PDF](https://arxiv.org/pdf/2610.33775v1)
+- [RoboJev: An Open Vision-Language Judge for Robot Success Detection](https://arxiv.org/abs/2610.33718) — 研究JEV-27B-VL的机器人专用适配与校准迁移，采用按来源施加的KL锚定。同输入比较改善同机器人准确率，但未证实未见域提升；前沿API比较使用更少帧。 `评测` · [PDF](https://arxiv.org/pdf/2610.33718v1)
 - [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) — 通过可复用选项编码将类型化决策扩展到视觉候选。请求条件化的独立分支保留候选顺序不变性并改善独立编码准确率，缓存降低重复候选推理成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.33702v1)
 - [Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev](https://arxiv.org/abs/2610.33410) — 在时序分类及离散化预测中评测Jev 1.13.0。对部分显式时间模式的表现优于多种数值序列；一些数据集判别接近随机，评分排序与最终决策存在差距。 `评测` · [PDF](https://arxiv.org/pdf/2610.33410v1)
 
