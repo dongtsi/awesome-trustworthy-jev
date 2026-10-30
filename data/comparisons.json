@@ -1673,5 +1673,29 @@
     },
     "source_section": "Sections 2–8; Tables 1–6; Appendices A–D",
     "source": "https://arxiv.org/html/2610.33718v1"
+  },
+  {
+    "id": "2610.38895",
+    "category": "trustworthiness/security",
+    "datasets": [
+      "FlipJev nine-dataset classification suite",
+      "FlipJev email comprehension",
+      "R-Judge",
+      "ATBench500"
+    ],
+    "data_role": {
+      "en": "Conditional adversarial evaluation of clean-correct, confident decisions",
+      "zh": "针对干净输入判断正确且高置信决策的条件化对抗评测"
+    },
+    "design": {
+      "en": "Fixed typesafe/jev-1.13-20260917 via OpenRouter. Nine classification tasks split eligible positives into 20 per-document targets, 10 universal-search training items and 30 held-out items (24 for 20 Newsgroups). Universal flips require a majority of ten fresh queries; transfer tests use the first 20 held-out items per task with three queries. Two agent-trajectory benchmarks use disjoint 20/10/30 splits of confidently unsafe cases and permit edits only inside one verified tool-output text field.",
+      "zh": "经OpenRouter访问固定typesafe/jev-1.13-20260917。九项分类任务把合格正例分为20个逐样本目标、10个通用搜索训练样本和30个留出样本（20 Newsgroups为24个）；通用翻转按10次新查询的多数判定，迁移用各任务前20个留出样本、各3次查询。两项Agent轨迹基准从高置信不安全样本中分离20/10/30划分，仅允许修改一个经校验的工具输出文本字段。"
+    },
+    "reading": {
+      "en": "Adaptive search confirms flips on 58/180 classification targets; 50/58 also flip in at least six of ten fresh calls. Dataset-specific universal suffixes flip 114/264 held-out documents (43%, exact 95% CI 37–49%) versus zero for neutral controls. Across 72 ordered task pairs transfer averages 18%; the 90–100% headline is one suffix on five target tasks. ATBench universal attacks flip 9/30 held-out unsafe trajectories (CI 15–49%), versus 1/30 for R-Judge. These rates do not estimate prevalence in unselected production traffic.",
+      "zh": "自适应搜索在58/180个分类目标上确认翻转，其中50/58在10次新查询中至少翻转6次。各数据集通用后缀翻转114/264个留出文档（43%，精确95%区间37–49%），中性对照为0。72个有向任务对迁移均值18%；90–100%来自一个后缀作用于五项目标任务。ATBench通用后缀翻转9/30个留出不安全轨迹（区间15–49%），R-Judge为1/30。这些比例不估计未筛选生产流量中的风险发生率。"
+    },
+    "source_section": "Sections 3–5; Tables 1 and 13; Appendices A–I (especially B, H and I)",
+    "source": "https://arxiv.org/pdf/2610.38895v1"
   }
 ]

@@ -6,6 +6,48 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support</title>
+      <link>https://arxiv.org/abs/2610.40327</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.40327#publication</guid>
+      <description>Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases.</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>When the Top Answer Decides: Gender Bias in Decision Models</title>
+      <link>https://arxiv.org/abs/2610.39747</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.39747#publication</guid>
+      <description>Audits gender-swapped decisions, stereotypes and confidence gating in Jev and five open decision models. Probability preferences and top-answer changes differ; confidence filtering can increase the stereotyped share of retained ambiguous answers.</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes</title>
+      <link>https://arxiv.org/abs/2610.40318</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.40318#publication</guid>
+      <description>Compares decision models on examination questions and diagnostic vignettes. Jev’s high-confidence accuracy falls from 98.5% on examinations to 84.6% on selected vignettes, showing that confidence reliability does not transfer automatically across tasks.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.38895</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.38895#publication</guid>
+      <description>Evaluates adaptive suffix attacks against a fixed Jev 1.13 snapshot. Dataset-specific universal suffixes flip 114/264 held-out confident positive decisions; cross-task transfer averages 18%, while a selected suffix reaches 90–100% on five tasks.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Predict the Reward, Not the World: World Reward Models for ML Agents</title>
+      <link>https://arxiv.org/abs/2610.38439</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.38439#publication</guid>
+      <description>Learns direct program-pair selection from execution outcomes instead of predicting execution traces. ForeCritic adapts an open 9B typed decision model; held-out pair and agent studies report better selection and reduced runtime, conditional on their task and search protocols.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval</title>
+      <link>https://arxiv.org/abs/2610.38090</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.38090#publication</guid>
+      <description>Compares hosted and open decision models, rerankers and distilled students under controlled retrieval. Joint versus single-passage scoring explains much of the student–Jev gap; an insignificant difference does not establish equivalence.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG</title>
       <link>https://arxiv.org/abs/2610.36915</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.36915#publication</guid>
@@ -1362,48 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.25845#publication</guid>
       <description>Compares visual decision heads with matched generation baselines. Shared computation improves efficiency, while dedicated heads do not consistently improve accuracy.</description>
       <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains</title>
-      <link>https://arxiv.org/abs/2609.25498</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.25498#publication</guid>
-      <description>Reports an alternative edge decision implementation and benchmark comparison.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences</title>
-      <link>https://arxiv.org/abs/2609.24965</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.24965#publication</guid>
-      <description>Separates semantic choices, intermediate calculations and final labels to reveal errors that a final-answer score can hide.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Evaluating Decision Models for Text Annotation in Computational Social Science</title>
-      <link>https://arxiv.org/abs/2609.24574</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.24574#publication</guid>
-      <description>Compares decision models with LLMs on text annotation; confidence-based routing helps on some tasks but high confidence can conceal task-specific errors.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables with a System One Model (Jev)</title>
-      <link>https://arxiv.org/abs/2609.24052</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.24052#publication</guid>
-      <description>Audits Jev probabilities against blinded human labels and tests recalibration, probability-grid resolution and review-budget allocation.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents</title>
-      <link>https://arxiv.org/abs/2609.23986</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.23986#publication</guid>
-      <description>Places a typed decision controller inside agent memory.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Open-Jev Judgments on CallScreenBench: Calibrated One-Pass Scam Screening with a Small Language Model</title>
-      <link>https://arxiv.org/abs/2609.23959</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.23959#publication</guid>
-      <description>Evaluates an open typed readout for scam-call screening.</description>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -475,5 +475,23 @@
     "type": "paper",
     "checked": "2026-10-29",
     "verification": "Original full text verifies 927 episodes, 862 binary labels and 65 unclear community clips. Author dataset is josefchen/RoboJev-evals; direct model-host card access failed, so the verified paper is retained as fallback."
+  },
+  "FlipJev nine-dataset classification suite": {
+    "url": "https://github.com/SaFo-Lab/FlipJev",
+    "type": "benchmark",
+    "checked": "2026-10-30",
+    "verification": "Author repository README and original paper inspected; classification subset construction and author-written email data distinguished. No benchmark or attack code executed."
+  },
+  "FlipJev email comprehension": {
+    "url": "https://github.com/SaFo-Lab/FlipJev",
+    "type": "benchmark",
+    "checked": "2026-10-30",
+    "verification": "Author repository README and original paper inspected; classification subset construction and author-written email data distinguished. No benchmark or attack code executed."
+  },
+  "ATBench500": {
+    "url": "https://arxiv.org/abs/2610.38895",
+    "type": "paper",
+    "checked": "2026-10-30",
+    "verification": "Appendix H verifies 500 total trajectories and conditional unsafe/insertable evaluation. Author identifies AI45Research/ATBench as the upstream dataset; its model-host card was not independently fetched, so a verified paper fallback is used."
   }
 }

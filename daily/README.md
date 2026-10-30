@@ -2,6 +2,18 @@
 
 Grouped by first public publication date.
 
+## 2026-10-29
+
+- [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327) — Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.40327v1)
+- [When the Top Answer Decides: Gender Bias in Decision Models](https://arxiv.org/abs/2610.39747) — Audits gender-swapped decisions, stereotypes and confidence gating in Jev and five open decision models. Probability preferences and top-answer changes differ; confidence filtering can increase the stereotyped share of retained ambiguous answers. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.39747v1)
+
+## 2026-10-28
+
+- [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318) — Compares decision models on examination questions and diagnostic vignettes. Jev’s high-confidence accuracy falls from 98.5% on examinations to 84.6% on selected vignettes, showing that confidence reliability does not transfer automatically across tasks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.40318v1)
+- [FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models](https://arxiv.org/abs/2610.38895) — Evaluates adaptive suffix attacks against a fixed Jev 1.13 snapshot. Dataset-specific universal suffixes flip 114/264 held-out confident positive decisions; cross-task transfer averages 18%, while a selected suffix reaches 90–100% on five tasks. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.38895v1) · [Code](https://github.com/SaFo-Lab/FlipJev)
+- [Predict the Reward, Not the World: World Reward Models for ML Agents](https://arxiv.org/abs/2610.38439) — Learns direct program-pair selection from execution outcomes instead of predicting execution traces. ForeCritic adapts an open 9B typed decision model; held-out pair and agent studies report better selection and reduced runtime, conditional on their task and search protocols. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.38439v1)
+- [Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval](https://arxiv.org/abs/2610.38090) — Compares hosted and open decision models, rerankers and distilled students under controlled retrieval. Joint versus single-passage scoring explains much of the student–Jev gap; an insignificant difference does not establish equivalence. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.38090v1)
+
 ## 2026-10-27
 
 - [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915) — Compares eleven hosted decision models on RAG knowledge-conflict typing. Confidence-based escalation can approach a stronger LLM at lower billed cost, while yes/no decomposition hurts accuracy and source-order sensitivity varies across models. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.36915v1) · [Code](https://github.com/Parv17k/decision-models-conflict-typing)

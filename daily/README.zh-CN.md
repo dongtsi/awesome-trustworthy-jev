@@ -2,6 +2,18 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-29
+
+- [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327) — 将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.40327v1)
+- [When the Top Answer Decides: Gender Bias in Decision Models](https://arxiv.org/abs/2610.39747) — 审计Jev与五个开放决策模型的性别交换决策、刻板印象及置信门控。概率偏好与最高概率答案变化并不等价；置信筛选可能提高保留的模糊答案中刻板印象的占比。 `评测` · [PDF](https://arxiv.org/pdf/2610.39747v1)
+
+## 2026-10-28
+
+- [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318) — 比较决策模型在考试题与诊断病例中的表现。Jev高置信答案准确率由考试题的98.5%降至所选病例的84.6%，说明置信可靠性不会自动跨任务迁移。 `评测` · [PDF](https://arxiv.org/pdf/2610.40318v1)
+- [FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models](https://arxiv.org/abs/2610.38895) — 评测针对固定Jev 1.13快照的自适应后缀攻击。各数据集通用后缀翻转114/264个留出高置信正例；跨任务迁移平均18%，其中一个后缀在五项任务达到90–100%。 `评测` · [PDF](https://arxiv.org/pdf/2610.38895v1) · [代码](https://github.com/SaFo-Lab/FlipJev)
+- [Predict the Reward, Not the World: World Reward Models for ML Agents](https://arxiv.org/abs/2610.38439) — 从执行结果学习直接选择程序对，无需预测执行轨迹。ForeCritic适配开放9B类型化决策模型；留出程序对及Agent实验报告更好的选择与更短运行时间，结论依赖所测任务和搜索协议。 `评测` · [PDF](https://arxiv.org/pdf/2610.38439v1)
+- [Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval](https://arxiv.org/abs/2610.38090) — 在受控检索下比较托管与开放决策模型、重排器及蒸馏学生。联合与逐段评分解释了学生和Jev的大部分差距；差异不显著并不证明等效。 `评测` · [PDF](https://arxiv.org/pdf/2610.38090v1)
+
 ## 2026-10-27
 
 - [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915) — 在RAG知识冲突分类中比较11个托管决策模型。按置信度升级可用较低账单成本接近更强LLM；是非分解降低准确率，不同模型对来源顺序的敏感度差异明显。 `评测` · [PDF](https://arxiv.org/pdf/2610.36915v1) · [代码](https://github.com/Parv17k/decision-models-conflict-typing)

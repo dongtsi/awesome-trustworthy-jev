@@ -18811,5 +18811,237 @@
     "summary_zh": "研究JEV-27B-VL的机器人专用适配与校准迁移，采用按来源施加的KL锚定。同输入比较改善同机器人准确率，但未证实未见域提升；前沿API比较使用更少帧。",
     "schema_version": 2,
     "added": "2026-10-29"
+  },
+  {
+    "id": "2610.38090",
+    "title": "Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval",
+    "short": "GEO Citation Ranker",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.38090",
+    "pdf": "https://arxiv.org/pdf/2610.38090v1",
+    "doi": "10.48550/arXiv.2610.38090",
+    "date": "2026-10-28",
+    "updated": "2026-10-28",
+    "version": "2610.38090v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Elisha Bajemon",
+      "Andre-Louis Rochet"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares hosted and open decision models, rerankers and distilled students under controlled retrieval. Joint versus single-passage scoring explains much of the student–Jev gap; an insignificant difference does not establish equivalence.",
+    "brief_zh": "在受控检索下比较托管与开放决策模型、重排器及蒸馏学生。联合与逐段评分解释了学生和Jev的大部分差距；差异不显著并不证明等效。",
+    "summary": "Compares hosted and open decision models, rerankers and distilled students under controlled retrieval. Joint versus single-passage scoring explains much of the student–Jev gap; an insignificant difference does not establish equivalence.",
+    "summary_zh": "在受控检索下比较托管与开放决策模型、重排器及蒸馏学生。联合与逐段评分解释了学生和Jev的大部分差距；差异不显著并不证明等效。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.38439",
+    "title": "Predict the Reward, Not the World: World Reward Models for ML Agents",
+    "short": "World Reward Models / ForeCritic",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.38439",
+    "pdf": "https://arxiv.org/pdf/2610.38439v1",
+    "doi": "10.48550/arXiv.2610.38439",
+    "date": "2026-10-28",
+    "updated": "2026-10-28",
+    "version": "2610.38439v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Yuxiao Lee",
+      "Zherui Yang",
+      "Fan Liu",
+      "Hao Liu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Learns direct program-pair selection from execution outcomes instead of predicting execution traces. ForeCritic adapts an open 9B typed decision model; held-out pair and agent studies report better selection and reduced runtime, conditional on their task and search protocols.",
+    "brief_zh": "从执行结果学习直接选择程序对，无需预测执行轨迹。ForeCritic适配开放9B类型化决策模型；留出程序对及Agent实验报告更好的选择与更短运行时间，结论依赖所测任务和搜索协议。",
+    "summary": "Learns direct program-pair selection from execution outcomes instead of predicting execution traces. ForeCritic adapts an open 9B typed decision model; held-out pair and agent studies report better selection and reduced runtime, conditional on their task and search protocols.",
+    "summary_zh": "从执行结果学习直接选择程序对，无需预测执行轨迹。ForeCritic适配开放9B类型化决策模型；留出程序对及Agent实验报告更好的选择与更短运行时间，结论依赖所测任务和搜索协议。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.38895",
+    "title": "FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models",
+    "short": "FlipJev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.38895",
+    "pdf": "https://arxiv.org/pdf/2610.38895v1",
+    "doi": "10.48550/arXiv.2610.38895",
+    "date": "2026-10-28",
+    "updated": "2026-10-28",
+    "version": "2610.38895v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Xiaogeng Liu",
+      "Xinyan Wang",
+      "Chaowei Xiao"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates adaptive suffix attacks against a fixed Jev 1.13 snapshot. Dataset-specific universal suffixes flip 114/264 held-out confident positive decisions; cross-task transfer averages 18%, while a selected suffix reaches 90–100% on five tasks.",
+    "brief_zh": "评测针对固定Jev 1.13快照的自适应后缀攻击。各数据集通用后缀翻转114/264个留出高置信正例；跨任务迁移平均18%，其中一个后缀在五项任务达到90–100%。",
+    "summary": "Evaluates adaptive suffix attacks against a fixed Jev 1.13 snapshot. Dataset-specific universal suffixes flip 114/264 held-out confident positive decisions; cross-task transfer averages 18%, while a selected suffix reaches 90–100% on five tasks.",
+    "summary_zh": "评测针对固定Jev 1.13快照的自适应后缀攻击。各数据集通用后缀翻转114/264个留出高置信正例；跨任务迁移平均18%，其中一个后缀在五项任务达到90–100%。",
+    "theme": "Robustness",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original full text and author repository",
+    "review": "Full PDF methods, results, limitations and relevant appendices A–I reviewed; author README and benchmark provenance read without executing attack code",
+    "limitation": "Single Jev 1.13 snapshot through OpenRouter, probabilities rounded to .01; attack rates condition on clean-correct confident positives/unsafe cases. One learned universal suffix per dataset, small held-out sets and shared targets limit transfer inference. Repeated requests are not independent documents; frozen-trajectory verdict changes do not establish downstream harm or robustness of other versions.",
+    "datasets": [
+      "FlipJev nine-dataset classification suite",
+      "FlipJev email comprehension",
+      "R-Judge",
+      "ATBench500"
+    ],
+    "code": "https://github.com/SaFo-Lab/FlipJev"
+  },
+  {
+    "id": "2610.39747",
+    "title": "When the Top Answer Decides: Gender Bias in Decision Models",
+    "short": "Gender bias in decision models",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.39747",
+    "pdf": "https://arxiv.org/pdf/2610.39747v1",
+    "doi": "10.48550/arXiv.2610.39747",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "version": "2610.39747v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Yeb Havinga"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/fairness",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits gender-swapped decisions, stereotypes and confidence gating in Jev and five open decision models. Probability preferences and top-answer changes differ; confidence filtering can increase the stereotyped share of retained ambiguous answers.",
+    "brief_zh": "审计Jev与五个开放决策模型的性别交换决策、刻板印象及置信门控。概率偏好与最高概率答案变化并不等价；置信筛选可能提高保留的模糊答案中刻板印象的占比。",
+    "summary": "Audits gender-swapped decisions, stereotypes and confidence gating in Jev and five open decision models. Probability preferences and top-answer changes differ; confidence filtering can increase the stereotyped share of retained ambiguous answers.",
+    "summary_zh": "审计Jev与五个开放决策模型的性别交换决策、刻板印象及置信门控。概率偏好与最高概率答案变化并不等价；置信筛选可能提高保留的模糊答案中刻板印象的占比。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.40327",
+    "title": "Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support",
+    "short": "GDGraph",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.40327",
+    "pdf": "https://arxiv.org/pdf/2610.40327v1",
+    "doi": "10.48550/arXiv.2610.40327",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "version": "2610.40327v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Xuewen Zhou",
+      "Zhen Chen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases.",
+    "brief_zh": "将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。",
+    "summary": "Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases.",
+    "summary_zh": "将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
+  },
+  {
+    "id": "2610.40318",
+    "title": "Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes",
+    "short": "Rheumatology calibration transfer",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.40318",
+    "pdf": "https://arxiv.org/pdf/2610.40318v1",
+    "doi": "10.48550/arXiv.2610.40318",
+    "date": "2026-10-28",
+    "updated": "2026-10-29",
+    "version": "2610.40318v1",
+    "added": "2026-10-30",
+    "authors": [
+      "Alfredo Madrid-García",
+      "Diego Benavent",
+      "Fabian Lechner",
+      "Phillip Kremer",
+      "Johannes Knitza",
+      "Beatriz Merino-Barbancho"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares decision models on examination questions and diagnostic vignettes. Jev’s high-confidence accuracy falls from 98.5% on examinations to 84.6% on selected vignettes, showing that confidence reliability does not transfer automatically across tasks.",
+    "brief_zh": "比较决策模型在考试题与诊断病例中的表现。Jev高置信答案准确率由考试题的98.5%降至所选病例的84.6%，说明置信可靠性不会自动跨任务迁移。",
+    "summary": "Compares decision models on examination questions and diagnostic vignettes. Jev’s high-confidence accuracy falls from 98.5% on examinations to 84.6% on selected vignettes, showing that confidence reliability does not transfer automatically across tasks.",
+    "summary_zh": "比较决策模型在考试题与诊断病例中的表现。Jev高置信答案准确率由考试题的98.5%降至所选病例的84.6%，说明置信可靠性不会自动跨任务迁移。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original arXiv abstract verified and matched to the six-author Zenodo preprint; first-publication date retained from original Zenodo metadata retrieved on 2026-10-29. Detailed full-text audit pending.",
+    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
+    "datasets": []
   }
 ]
