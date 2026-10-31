@@ -1697,5 +1697,26 @@
     },
     "source_section": "Sections 3–5; Tables 1 and 13; Appendices A–I (especially B, H and I)",
     "source": "https://arxiv.org/pdf/2610.38895v1"
+  },
+  {
+    "id": "2610.38090",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "GEO citation benchmark"
+    ],
+    "data_role": {
+      "en": "Controlled-retrieval citation-share ranking, with query-disjoint teacher distillation and query-held-out observed-label evaluation",
+      "zh": "固定检索候选的引用份额排序；教师蒸馏按查询隔离，真实引用标签按查询留出评估"
+    },
+    "design": {
+      "en": "Ten engines receive the same five sources for 229 queries (1,220 non-degenerate engine-query groups). Decision models see 250 words per passage; engines and rerankers see 320. A 4B rank-16 LoRA student uses 757 other GEO-Bench queries and pairwise ranking loss; observed-citation variants use five-fold query cross-validation. Comparisons use paired differences and 1,000 query-clustered bootstrap resamples; equivalence uses a .05 margin and 90% intervals.",
+      "zh": "十个引擎对229个查询接收相同五篇来源，得到1,220个非退化引擎—查询组。决策模型每段250词，引擎与重排器320词。4B学生采用rank-16 LoRA和成对排序损失，教师标签训练使用另外757个GEO-Bench查询；真实引用标签版本按查询做五折交叉验证。比较采用配对差与1,000次按查询聚类的bootstrap；等效性检验使用.05界值及90%区间。"
+    },
+    "reading": {
+      "en": "The 4B student scores .542–.549 across three seeds versus .575 for listwise Jev 1.13. Its seed-42 difference is −.033 (95% CI −.072 to +.006), but the 90% interval for Jev minus the three-seed mean reaches +.060, so .05 equivalence is not established. Jev falls to .529 pointwise. Cross-engine agreement .704 uses other engines’ answers and is a reference, not an upper bound. Removing 57 groups containing overlapping passages changes student scores by at most .006. These are citation-share correlations, not citation correctness or live-search performance.",
+      "zh": "4B学生三个种子的相关系数为.542–.549，联合评分Jev 1.13为.575；seed-42差为−.033（95%区间−.072至+.006），但Jev相对三种子均值的90%区间上端达+.060，故未建立.05界值内等效。Jev逐段评分降至.529。跨引擎一致性.704使用其他引擎的答案，是参考值而非上限。去掉包含重叠段落的57组后，学生得分变化至多.006。指标衡量引用份额排序，不代表引用正确性或实时搜索表现。"
+    },
+    "source_section": "Sections 3–8, Tables 1–4 and Appendices A–B",
+    "source": "https://arxiv.org/pdf/2610.38090v1"
   }
 ]

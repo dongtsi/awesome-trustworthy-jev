@@ -493,5 +493,17 @@
     "type": "paper",
     "checked": "2026-10-30",
     "verification": "Appendix H verifies 500 total trajectories and conditional unsafe/insertable evaluation. Author identifies AI45Research/ATBench as the upstream dataset; its model-host card was not independently fetched, so a verified paper fallback is used."
+  },
+  "GEO citation benchmark": {
+    "url": "https://arxiv.org/abs/2610.38090",
+    "type": "paper",
+    "checked": "2026-10-31",
+    "verification": "Section 8 identifies https://huggingface.co/datasets/citead/geo-citation-benchmark as the official release. Direct requests and browser fetch failed; verified paper fallback retained, dataset files and teacher-label availability not independently inspected. Paper states that teacher labels are not released."
+  },
+  "HarnessJevBench V0.5": {
+    "url": "https://github.com/agentscope-ai/HarnessJevBench",
+    "type": "benchmark",
+    "checked": "2026-10-31",
+    "verification": "Original repository: 325 records, 303 hard questions across 295 tasks and 30 soft tasks, 29 scenarios; task SHA-256 matches release 0.5.17 manifest. Two soft views per task are documented by author, not independently replayed. Data license MIT; code/docs have separate terms."
   }
 }

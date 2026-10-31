@@ -18844,10 +18844,12 @@
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
-    "datasets": []
+    "evidence": "Original full text and arXiv metadata",
+    "review": "Full PDF sections 1–9 and appendices A–B reviewed; original arXiv metadata rechecked. Artifact-host requests failed, so model weights and dataset files are not independently verified.",
+    "limitation": "English controlled retrieval with five fixed passages, 229 queries and unequal engine coverage; query-clustered intervals, unreleased teacher labels and single prompt constrain generalization. A confidence interval covering zero does not establish equivalence within .05. Live web retrieval and citation correctness are not measured.",
+    "datasets": [
+      "GEO citation benchmark"
+    ]
   },
   {
     "id": "2610.38439",
@@ -19043,5 +19045,41 @@
     "review": "Original arXiv abstract verified and matched to the six-author Zenodo preprint; first-publication date retained from original Zenodo metadata retrieved on 2026-10-29. Detailed full-text audit pending.",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
+  },
+  {
+    "id": "r-915b9b1cf5",
+    "title": "agentscope-ai/HarnessJevBench",
+    "short": "HarnessJevBench",
+    "kind": "Project",
+    "url": "https://github.com/agentscope-ai/HarnessJevBench",
+    "date": "2026-10-26",
+    "updated": "2026-10-29",
+    "version": "2026-10-29T07:59:05Z",
+    "authors": [
+      "AgentScope"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "applications/agents"
+    ],
+    "contributions": [
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates Jev-style models at agent control points using 325 public tasks across 29 scenarios. Separates task-averaged decision accuracy from reference-distribution distance; construction feedback, related task families and no hidden test set limit generalization.",
+    "brief_zh": "用29类场景的325个公开任务评估Jev类模型在Agent控制点的决策，分别报告按任务平均的准确率与参考分布距离；构建中的模型反馈、同源题族及缺少隐藏测试集限制泛化解释。",
+    "summary": "Evaluates Jev-style models at agent control points using 325 public tasks across 29 scenarios. Separates task-averaged decision accuracy from reference-distribution distance; construction feedback, related task families and no hidden test set limit generalization.",
+    "summary_zh": "用29类场景的325个公开任务评估Jev类模型在Agent控制点的决策，分别报告按任务平均的准确率与参考分布距离；构建中的模型反馈、同源题族及缺少隐藏测试集限制泛化解释。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "added": "2026-10-31",
+    "datasets": [
+      "HarnessJevBench V0.5"
+    ],
+    "evidence": "Author README, reproduction notes, manifest, task data, scoring source and published leaderboard",
+    "review": "Static original-source review; task SHA-256 and counts independently checked. Candidate code was not executed and historical predictions were not replayed.",
+    "limitation": "Public authored task families with model-informed development and no independent hidden test set. Finite-world reference distributions are not production calibration. Published model scores were measured at different times; no end-to-end agent execution or independent reproduction performed."
   }
 ]

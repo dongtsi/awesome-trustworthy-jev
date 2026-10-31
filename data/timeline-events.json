@@ -1286,5 +1286,12 @@
     "date": "2026-10-28",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/n9omi/jev-calibration-audit"
+  },
+  {
+    "id": "r-915b9b1cf5",
+    "kind": "Project",
+    "date": "2026-10-26",
+    "basis": "repository-created",
+    "source": "https://api.github.com/repos/agentscope-ai/HarnessJevBench"
   }
 ]
