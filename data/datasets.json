@@ -505,5 +505,11 @@
     "type": "benchmark",
     "checked": "2026-10-31",
     "verification": "Original repository: 325 records, 303 hard questions across 295 tasks and 30 soft tasks, 29 scenarios; task SHA-256 matches release 0.5.17 manifest. Two soft views per task are documented by author, not independently replayed. Data license MIT; code/docs have separate terms."
+  },
+  "GDGraph 347-case guideline evaluation": {
+    "url": "https://arxiv.org/abs/2610.40327",
+    "type": "paper",
+    "checked": "2026-11-01",
+    "verification": "Original paper verifies 347 curated text cases derived from PMC-Patients-V2 and PMC reports. This is a derived evaluation set, not the entire upstream dataset; no separate public release URL is given. Paper fallback retained."
   }
 }

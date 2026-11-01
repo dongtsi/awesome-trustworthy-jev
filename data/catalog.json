@@ -8702,11 +8702,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
-    "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness.",
+    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。",
+    "limitation": "Illustrative prompts and replies, not a representative safety benchmark; thresholds require validation on deployment traffic. Vendor immunity claims are not independently established.",
+    "evidence": "Original official cookbook Markdown inspected",
+    "review": "Source and demonstrated model versions verified 2026-11-01; source publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -8716,8 +8716,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness.",
+    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -9976,11 +9976,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
-    "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "summary": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12.",
+    "summary_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。",
+    "limitation": "One authored worked example and a separate historical internal sweep; judge-based quality is not independently verified ground truth, and the Jev 1.12 frontier does not measure Jev 1.14.0.",
+    "evidence": "Original official cookbook Markdown inspected",
+    "review": "Source and demonstrated model versions verified 2026-11-01; source publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12.",
+    "brief_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -18994,17 +18994,19 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases.",
-    "brief_zh": "将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。",
-    "summary": "Compiles clinical guidelines into an executable decision graph, separates local Jev judgments from deterministic traversal, and reports higher accuracy than direct or retrieval-augmented inference on 347 cases.",
-    "summary_zh": "将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。",
+    "brief_en": "Compiles three radiology guidelines into executable graphs; Jev 1.13.0 answers local predicates while deterministic traversal applies rules. On 347 curated text cases, the authors report 90.8% accuracy versus 57.3% for direct Jev; online costs exclude graph construction.",
+    "brief_zh": "将三份放射学指南编译为可执行图，由Jev 1.13.0判断局部条件、确定性遍历执行规则。作者在347个整理后的文本病例上报告90.8%准确率，直接Jev为57.3%；在线成本未计图构建。",
+    "summary": "Compiles three radiology guidelines into executable graphs; Jev 1.13.0 answers local predicates while deterministic traversal applies rules. On 347 curated text cases, the authors report 90.8% accuracy versus 57.3% for direct Jev; online costs exclude graph construction.",
+    "summary_zh": "将三份放射学指南编译为可执行图，由Jev 1.13.0判断局部条件、确定性遍历执行规则。作者在347个整理后的文本病例上报告90.8%准确率，直接Jev为57.3%；在线成本未计图构建。",
     "theme": "Foundations",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
-    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
-    "datasets": []
+    "evidence": "Original full paper, methods, Tables 1–3 and error analysis",
+    "review": "Full-text methods/results audit completed 2026-11-01; no independent replication",
+    "limitation": "Curated retrospective text cases; graph-versus-direct comparisons change available guideline evidence and decomposition together. Graph precision does not measure rule completeness. Online cost excludes offline compilation and review; no prospective clinical validation.",
+    "datasets": [
+      "GDGraph 347-case guideline evaluation"
+    ]
   },
   {
     "id": "2610.40318",
@@ -19081,5 +19083,269 @@
     "evidence": "Author README, reproduction notes, manifest, task data, scoring source and published leaderboard",
     "review": "Static original-source review; task SHA-256 and counts independently checked. Candidate code was not executed and historical predictions were not replayed.",
     "limitation": "Public authored task families with model-informed development and no independent hidden test set. Finite-world reference distributions are not production calibration. Published model scores were measured at different times; no end-to-end agent execution or independent reproduction performed."
+  },
+  {
+    "id": "2610.14631",
+    "title": "The Company a Question Keeps: Auditing Open Jev-Style Models for Retrieval",
+    "short": "The Company a Question Keeps",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.14631",
+    "pdf": "https://arxiv.org/pdf/2610.14631v1",
+    "doi": "10.48550/arXiv.2610.14631",
+    "date": "2026-10-10",
+    "updated": "2026-10-10",
+    "version": "2610.14631v1",
+    "added": "2026-11-01",
+    "authors": [
+      "Jianbo Chen"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits seven open Jev-style checkpoints with paired changes to requested questions, evidence and candidate eligibility on TREC-derived states. Schema fields explain Nimble request-set flips; numerical precision removes Laya-typed probability movement at reported resolution.",
+    "brief_zh": "在TREC派生状态上，通过配对改变问题集合、证据及候选资格审计七个开放Jev类模型。模式字段解释Nimble的问题集合翻转；提高数值精度后，Laya-typed的概率变化在所报精度下消失。",
+    "summary": "Audits seven open Jev-style checkpoints with paired changes to requested questions, evidence and candidate eligibility on TREC-derived states. Schema fields explain Nimble request-set flips; numerical precision removes Laya-typed probability movement at reported resolution.",
+    "summary_zh": "在TREC派生状态上，通过配对改变问题集合、证据及候选资格审计七个开放Jev类模型。模式字段解释Nimble的问题集合翻转；提高数值精度后，Laya-typed的概率变化在所报精度下消失。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "2610.37676",
+    "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
+    "short": "Structural Shortcuts in Auto-Interpretability",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.37676",
+    "pdf": "https://arxiv.org/pdf/2610.37676v1",
+    "doi": "10.48550/arXiv.2610.37676",
+    "date": "2026-10-10",
+    "updated": "2026-10-10",
+    "version": "2610.37676v1",
+    "added": "2026-11-01",
+    "authors": [
+      "Xupeng Chen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/interpretability",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Finds explanation-free position and marking shortcuts in automated-interpretability evaluations. On random-offset natural-text windows, Jev and an open simulator respond to explanations; the study recommends reporting explanation-free baselines on identical items.",
+    "brief_zh": "发现自动可解释性评测中的位置与标记捷径，无需读取解释也能得高分。在随机偏移的自然文本窗口中，Jev与开放模拟器会利用解释；研究要求在相同样本上同时报告不读解释的基线。",
+    "summary": "Finds explanation-free position and marking shortcuts in automated-interpretability evaluations. On random-offset natural-text windows, Jev and an open simulator respond to explanations; the study recommends reporting explanation-free baselines on identical items.",
+    "summary_zh": "发现自动可解释性评测中的位置与标记捷径，无需读取解释也能得高分。在随机偏移的自然文本窗口中，Jev与开放模拟器会利用解释；研究要求在相同样本上同时报告不读解释的基线。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "2610.14112",
+    "title": "Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for Indonesian Regional Languages",
+    "short": "System One Transfer to Regional Languages",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.14112",
+    "pdf": "https://arxiv.org/pdf/2610.14112v1",
+    "doi": "10.48550/arXiv.2610.14112",
+    "date": "2026-10-09",
+    "updated": "2026-10-09",
+    "version": "2610.14112v1",
+    "added": "2026-11-01",
+    "authors": [
+      "Romi Fadli",
+      "Rusdah",
+      "Wahyu Ramadani Putri Utami",
+      "Zulfa Malika Amana"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates Jev and Laya-multilingual across Indonesian regional-language sentiment and emotion tasks. Translation improves accuracy while stable ECE masks degraded error ranking; confidence-gated cascades trade local labels and API cost against accuracy.",
+    "brief_zh": "在印尼区域语言的情感与情绪任务上评估Jev和Laya-multilingual。翻译提高准确率，但稳定的ECE掩盖了错误排序能力下降；置信门控级联在本地标签、API成本与准确率之间取舍。",
+    "summary": "Evaluates Jev and Laya-multilingual across Indonesian regional-language sentiment and emotion tasks. Translation improves accuracy while stable ECE masks degraded error ranking; confidence-gated cascades trade local labels and API cost against accuracy.",
+    "summary_zh": "在印尼区域语言的情感与情绪任务上评估Jev和Laya-multilingual。翻译提高准确率，但稳定的ECE掩盖了错误排序能力下降；置信门控级联在本地标签、API成本与准确率之间取舍。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "2610.22401",
+    "title": "Audio System One Model: Typed Probabilistic Perception of Emotion in Speech",
+    "short": "Audio System One Model",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.22401",
+    "pdf": "https://arxiv.org/pdf/2610.22401v1",
+    "doi": "10.48550/arXiv.2610.22401",
+    "date": "2026-10-14",
+    "updated": "2026-10-14",
+    "version": "2610.22401v1",
+    "added": "2026-11-01",
+    "authors": [
+      "Jaime Bellver-Soler",
+      "Iván Martín-Fernández",
+      "Anmol Guragain",
+      "Luis Fernando D'Haro"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces ASOM, a 6.2M-parameter reader over frozen speech and text encoders that answers typed questions in one non-generative pass. Trained on listener-vote distributions, it evaluates new label sets and transfer across speech corpora; reported results await detailed full-text audit.",
+    "brief_zh": "提出ASOM：在冻结语音和文本编码器上训练620万参数读出器，以一次非生成前向计算回答类型化问题。模型按听众投票分布训练，评测新标签集合及跨语料迁移；详细全文审核待完成。",
+    "summary": "Introduces ASOM, a 6.2M-parameter reader over frozen speech and text encoders that answers typed questions in one non-generative pass. Trained on listener-vote distributions, it evaluates new label sets and transfer across speech corpora; reported results await detailed full-text audit.",
+    "summary_zh": "提出ASOM：在冻结语音和文本编码器上训练620万参数读出器，以一次非生成前向计算回答类型化问题。模型按听众投票分布训练，评测新标签集合及跨语料迁移；详细全文审核待完成。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "2610.03935",
+    "title": "General Decision Models: Benchmarking and Insights Beyond Jev",
+    "short": "JEVal and SII-Decision",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.03935",
+    "pdf": "https://arxiv.org/pdf/2610.03935v2",
+    "doi": "10.48550/arXiv.2610.03935",
+    "date": "2026-10-02",
+    "updated": "2026-10-12",
+    "version": "2610.03935v2",
+    "added": "2026-11-01",
+    "authors": [
+      "Feiyu Duan",
+      "Jiayu Lin",
+      "Jia Wang",
+      "Jun Xiang",
+      "Jialiang Wu",
+      "Xinnong Zhang",
+      "Hanqi Yan",
+      "Siyuan Wang",
+      "Zhongyu Wei"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces the bilingual JEVal benchmark and reasoning-to-readout self-distillation for SII-Decision models. Local decision efficiency does not ensure calibrated uncertainty or reliable multi-step behavior; the original abstract reports failures on long trajectories and aggregate social estimates.",
+    "brief_zh": "提出双语JEVal基准及SII-Decision的推理到读出自蒸馏。局部决策效率不保证不确定性校准或多步可靠性；原始摘要报告长轨迹及群体汇总估计中的失效。",
+    "summary": "Introduces the bilingual JEVal benchmark and reasoning-to-readout self-distillation for SII-Decision models. Local decision efficiency does not ensure calibrated uncertainty or reliable multi-step behavior; the original abstract reports failures on long trajectories and aggregate social estimates.",
+    "summary_zh": "提出双语JEVal基准及SII-Decision的推理到读出自蒸馏。局部决策效率不保证不确定性校准或多步可靠性；原始摘要报告长轨迹及群体汇总估计中的失效。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "2610.14404",
+    "title": "DICE: Tilting the Odds through Interface Attacks on System One Model",
+    "short": "DICE",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.14404",
+    "pdf": "https://arxiv.org/pdf/2610.14404v2",
+    "doi": "10.48550/arXiv.2610.14404",
+    "date": "2026-10-09",
+    "updated": "2026-10-19",
+    "version": "2610.14404v2",
+    "added": "2026-11-01",
+    "authors": [
+      "Ben Dong",
+      "Tianyi Lu",
+      "Zhonghao Guo",
+      "Qian Wang"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies bounded substitutions at state extraction, question generation and response interpretation in a Jev pipeline. Three small synthetic studies show decision changes without modifying the model or its authentic responses; relationship checks stop the tested interventions with some clean rejections.",
+    "brief_zh": "研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。",
+    "summary": "Studies bounded substitutions at state extraction, question generation and response interpretation in a Jev pipeline. Three small synthetic studies show decision changes without modifying the model or its authentic responses; relationship checks stop the tested interventions with some clean rejections.",
+    "summary_zh": "研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。",
+    "theme": "Robustness",
+    "scope": "Jev",
+    "schema_version": 2,
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
+    "datasets": []
+  },
+  {
+    "id": "r-4bb63a5e67",
+    "title": "george-amir/Custos",
+    "short": "Custos",
+    "kind": "Project",
+    "url": "https://github.com/george-amir/Custos",
+    "date": "2026-10-29",
+    "updated": "2026-10-31",
+    "version": "2026-10-31T12:22:34Z",
+    "authors": [
+      "george-amir"
+    ],
+    "target": "hosted",
+    "categories": [
+      "applications/intrusion"
+    ],
+    "contributions": [
+      "tool"
+    ],
+    "brief_en": "Combines bounded HTTP evidence windows, typed Jev ban/classification questions and local evidence gates for intrusion prevention. Static source review confirms batched inference, redaction and expiring retries; phrase matching and mock simulations do not establish adversarial robustness.",
+    "brief_zh": "结合有界HTTP证据窗口、Jev封禁与分类问题及本地证据条件进行入侵防护。静态源码核验了批量推理、脱敏和过期重试；短语匹配与模拟测试不等于已验证对抗鲁棒性。",
+    "summary": "Combines bounded HTTP evidence windows, typed Jev ban/classification questions and local evidence gates for intrusion prevention. Static source review confirms batched inference, redaction and expiring retries; phrase matching and mock simulations do not establish adversarial robustness.",
+    "summary_zh": "结合有界HTTP证据窗口、Jev封禁与分类问题及本地证据条件进行入侵防护。静态源码核验了批量推理、脱敏和过期重试；短语匹配与模拟测试不等于已验证对抗鲁棒性。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "added": "2026-11-01",
+    "datasets": [],
+    "evidence": "Original repository README and selected Rust source files",
+    "review": "Static review of src/jev.rs, src/analysis.rs, src/sanitizer.rs and security policy; candidate code not executed.",
+    "limitation": "No independent traffic benchmark or live deployment evaluation. Deterministic mock probabilities are simulated; finite phrase matching and redaction rules do not guarantee prompt-injection resistance or complete privacy protection."
   }
 ]

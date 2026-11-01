@@ -1718,5 +1718,26 @@
     },
     "source_section": "Sections 3–8, Tables 1–4 and Appendices A–B",
     "source": "https://arxiv.org/pdf/2610.38090v1"
+  },
+  {
+    "id": "2610.40327",
+    "category": "foundations/frameworks",
+    "datasets": [
+      "GDGraph 347-case guideline evaluation"
+    ],
+    "data_role": {
+      "en": "Retrospective text-case evaluation of guideline compilation and local typed decisions",
+      "zh": "回顾性文本病例上的指南编译与局部类型化决策评估"
+    },
+    "design": {
+      "en": "GPT-6-Luna compiles three guidelines with global definition memory and TF-IDF retrieval; Jev 1.13.0 evaluates atomic conditions before Boolean traversal. The 347 cases comprise 127 CUA 2023, 117 O-RADS US v2022 and 103 K-TIRADS 2021 cases drawn from PMC-Patients-V2 and case reports. Labels are explicit in reports or derived from guidelines; GPT-6.1-sol rewrites descriptions to remove explicit diagnoses. Direct Jev and GPT-4o retrieval/CoT baselines are compared, including the same graph with a GPT-4o backend.",
+      "zh": "GPT-6-Luna结合全局定义记忆与TF-IDF检索编译三份指南；Jev 1.13.0判断原子条件，再由布尔遍历执行规则。347例来自PMC-Patients-V2及病例报告，包括CUA 2023的127例、O-RADS US v2022的117例和K-TIRADS 2021的103例。标签来自报告明确标注或指南推导，GPT-6.1-sol改写描述并移除明确诊断。比较直接Jev、GPT-4o检索/CoT，以及相同图上的GPT-4o后端。"
+    },
+    "reading": {
+      "en": "Graph Jev reaches 90.8% overall accuracy versus 57.3% direct Jev, 80.1% RAG GPT-4o CoT and 82.7% graph GPT-4o CoT. Node/rule precision is 489/490 and 266/276; recall and completeness are not measured. Reported online latency is 0.79–1.62 seconds and cost $0.00056–0.00107 per case, excluding offline construction/review. No confidence intervals or prospective validation are reported. Traceable traversal does not establish faithful model explanations; graph-versus-direct gains conflate guideline access and decomposition.",
+      "zh": "图上Jev总体准确率90.8%，直接Jev为57.3%、RAG GPT-4o CoT为80.1%、图上GPT-4o CoT为82.7%。节点/规则精确率为489/490和266/276，未测召回率及完整性。报告在线延迟0.79–1.62秒、每例成本0.00056–0.00107美元，不含离线构建与审查。未报告置信区间或前瞻验证。可追踪遍历不等于模型解释忠实；相对直接推断的收益同时包含指南可用性与分解方式变化。"
+    },
+    "source_section": "Methods, Tables 1–3 and error analysis",
+    "source": "https://arxiv.org/pdf/2610.40327v1"
   }
 ]

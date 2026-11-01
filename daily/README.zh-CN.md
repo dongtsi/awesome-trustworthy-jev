@@ -4,7 +4,7 @@
 
 ## 2026-10-29
 
-- [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327) — 将临床指南编译为可执行决策图，把Jev局部判断与确定性遍历分开；在347个病例中报告高于直接预测或检索增强推理的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.40327v1)
+- [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327) — 将三份放射学指南编译为可执行图，由Jev 1.13.0判断局部条件、确定性遍历执行规则。作者在347个整理后的文本病例上报告90.8%准确率，直接Jev为57.3%；在线成本未计图构建。 `评测` · [PDF](https://arxiv.org/pdf/2610.40327v1)
 - [When the Top Answer Decides: Gender Bias in Decision Models](https://arxiv.org/abs/2610.39747) — 审计Jev与五个开放决策模型的性别交换决策、刻板印象及置信门控。概率偏好与最高概率答案变化并不等价；置信筛选可能提高保留的模糊答案中刻板印象的占比。 `评测` · [PDF](https://arxiv.org/pdf/2610.39747v1)
 
 ## 2026-10-28
@@ -111,6 +111,7 @@
 
 ## 2026-10-14
 
+- [Audio System One Model: Typed Probabilistic Perception of Emotion in Speech](https://arxiv.org/abs/2610.22401) — 提出ASOM：在冻结语音和文本编码器上训练620万参数读出器，以一次非生成前向计算回答类型化问题。模型按听众投票分布训练，评测新标签集合及跨语料迁移；详细全文审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2610.22401v1)
 - [Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents](https://arxiv.org/abs/2610.20927) — 用 Jev 删除缺少环境输出或前序摘要支持的压缩条目；报告在 AppWorld 和 OfficeBench 上提高跨运行可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2610.20927v1)
 - [From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection](https://arxiv.org/abs/2610.20907) — 在 47,611 条留出样本上评测检测、校准和放行—阻断—转交策略；Jev 原生概率并非一致优于校准分类器，低漏报运行需要大量转交。 `评测` · [PDF](https://arxiv.org/pdf/2610.20907v1) · [代码](https://github.com/lanqianlong/calibrated-decision-models)
 - [Verdict: Encode Once, Decide Many](https://arxiv.org/abs/2610.20778) — 以问题无关的共享状态编码回答多个类型化问题并保持选项不变性；提高与软标签的一致性，同时揭示取消问题感知状态编码的准确率—时延代价。 `评测` · [PDF](https://arxiv.org/pdf/2610.20778v1)
@@ -161,10 +162,14 @@
 ## 2026-10-10
 
 - [Jev: Twenty Times Faster, Seven Points Behind: Does Jev know when it is wrong? A pre-registered test of a decision model's calibration and accuracy beside two general-purpose models](https://zenodo.org/records/23287930) — 在 799 道编程 Agent 与命令安全题上，Jev 配对准确率低于两个通用模型；其校准误差区间跨越研究设定的 ECE 阈值。 `评测` · [PDF](https://zenodo.org/api/records/23287930/files/SILT-RP-009-v1.0-Jev-Twenty-Times-Faster-Seven-Points-Behind.pdf/content)
+- [Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data](https://arxiv.org/abs/2610.37676) — 发现自动可解释性评测中的位置与标记捷径，无需读取解释也能得高分。在随机偏移的自然文本窗口中，Jev与开放模拟器会利用解释；研究要求在相同样本上同时报告不读解释的基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.37676v1)
+- [The Company a Question Keeps: Auditing Open Jev-Style Models for Retrieval](https://arxiv.org/abs/2610.14631) — 在TREC派生状态上，通过配对改变问题集合、证据及候选资格审计七个开放Jev类模型。模式字段解释Nimble的问题集合翻转；提高数值精度后，Laya-typed的概率变化在所报精度下消失。 `评测` · [PDF](https://arxiv.org/pdf/2610.14631v1)
 
 ## 2026-10-09
 
 - [A Thermometer, Not an Analyst: Lawful Uses of a Text Judge in a Live Trading Lab](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589261) — 研究固定版本Jev新闻标题裁判的六项检查，包括重复性、时间上下文与简单基线；报告微弱或消失的信号及失败后的基础设施修正，未检验交易收益提升。 `评测` · [PDF](https://papers.ssrn.com/sol3/Delivery.cfm/7589261.pdf?abstractid=7589261&mirid=1)
+- [DICE: Tilting the Odds through Interface Attacks on System One Model](https://arxiv.org/abs/2610.14404) — 研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。 `评测` · [PDF](https://arxiv.org/pdf/2610.14404v2)
+- [Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for Indonesian Regional Languages](https://arxiv.org/abs/2610.14112) — 在印尼区域语言的情感与情绪任务上评估Jev和Laya-multilingual。翻译提高准确率，但稳定的ECE掩盖了错误排序能力下降；置信门控级联在本地标签、API成本与准确率之间取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.14112v1)
 - [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — 4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [代码](https://anonymous.4open.science/r/jev-emp-5BF4/)
 
 ## 2026-10-08
@@ -216,6 +221,7 @@
 
 ## 2026-10-02
 
+- [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) — 提出双语JEVal基准及SII-Decision的推理到读出自蒸馏。局部决策效率不保证不确定性校准或多步可靠性；原始摘要报告长轨迹及群体汇总估计中的失效。 `评测` · [PDF](https://arxiv.org/pdf/2610.03935v2)
 - [Benchmarking Candidate Coverage in Typed Decision Models](https://arxiv.org/abs/2610.03387) — 固定候选数量并配对保留／移除参考标签，发现 Jev 与 Laya 的缺失检测和错误拒答权衡随任务变化。 `评测` · [PDF](https://arxiv.org/pdf/2610.03387v1)
 - [To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation](https://arxiv.org/abs/2610.03324) — 比较六种决策模型配置的仇恨言论审核表现；补充定义与问题分解并未稳定提高与数据标签的一致性。 `评测` · [PDF](https://arxiv.org/pdf/2610.03324v1)
 - [SecJev: Bringing Security Expertise to System One Decision Models](https://arxiv.org/abs/2610.03073) — 用安全 LoRA 适配共享候选评分器；域内提升明显，但相对单 token 生成的延迟收益有限，跨来源仍有误报。 `评测` · [PDF](https://arxiv.org/pdf/2610.03073v1) · [代码](https://github.com/UESTC1010/SecJev)
