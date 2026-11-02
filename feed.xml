@@ -6,6 +6,20 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Flide: Accelerating Decision Inference with Exact State Forking</title>
+      <link>https://arxiv.org/abs/2610.42148</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.42148#publication</guid>
+      <description>Introduces exact state forking across attention and recurrent Gated DeltaNet layers, separating logical decision branches from flattened execution. The authors report up to 9.5× faster queries than vLLM/SGLang; exact-arithmetic equivalence and measured floating-point deviations are distinct claims.</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models</title>
+      <link>https://arxiv.org/abs/2610.41199</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.41199#publication</guid>
+      <description>Studies two-reference-per-class Jev/Clef-Flash image decisions, agentic text-description refinement and probability calibration across five manufacturing cases. The abstract reports lower Brier scores in 13/15 configurations; calibration partitions and generalization require full-text review.</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support</title>
       <link>https://arxiv.org/abs/2610.40327</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.40327#publication</guid>
@@ -100,7 +114,7 @@
       <title>Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation</title>
       <link>https://arxiv.org/abs/2610.35654</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.35654#publication</guid>
-      <description>Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.</description>
+      <description>Combines mean-span option readouts with selective attention and Gated DeltaNet adapters for cross-request entailment reranking. On MC11, the authors report gains for NeoHorse-1-4B while more than halving trainable parameters; direct-decision transfer is not established by the current abstract.</description>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -389,6 +403,13 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2610.23170#publication</guid>
       <description>Trains Chinese single-pass decision models using candidate-letter logits and distribution targets; the completed 0.8B model reports 1.07% calibration error, while partial 2B training does not isolate a scale effect.</description>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV</title>
+      <link>https://arxiv.org/abs/2610.22588</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.22588#publication</guid>
+      <description>Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms</title>
@@ -737,7 +758,7 @@
       <title>DICE: Tilting the Odds through Interface Attacks on System One Model</title>
       <link>https://arxiv.org/abs/2610.14404</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.14404#publication</guid>
-      <description>Studies bounded substitutions at state extraction, question generation and response interpretation in a Jev pipeline. Three small synthetic studies show decision changes without modifying the model or its authentic responses; relationship checks stop the tested interventions with some clean rejections.</description>
+      <description>Separates source fidelity, question-to-action meaning and response relevance in a Jev 1.13.0 pipeline. Bounded substitutions produce wrong final decisions from locally correct answers in 6/6 selected state targets, 11/12 question cases and 12/12 stale-response cases; matched checks stop the tested interventions, with clean rejections for source verification.</description>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1382,27 +1403,6 @@
       <link>https://zenodo.org/records/22921974</link>
       <guid isPermaLink="false">https://zenodo.org/records/22921974#publication</guid>
       <description>Provides composable tooling, calibration utilities and recorded API experiments.</description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Decision Hijacking: Prompt Injection Attacks on Jev's Typed Probabilistic Decisions</title>
-      <link>https://arxiv.org/abs/2609.28613</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.28613#publication</guid>
-      <description>Measures injection-driven probability shifts and validated targeted decisions.</description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>NumericJev: Jev-like LLM Numerical Decoding with Multiway Decision Trees</title>
-      <link>https://arxiv.org/abs/2609.28587</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.28587#publication</guid>
-      <description>Uses multiway decision trees for numerical readout.</description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Same Scores, Different Decisions: Evaluating JEV and Language Models for Legal Document Understanding</title>
-      <link>https://arxiv.org/abs/2609.27678</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.27678#publication</guid>
-      <description>Shows that aggregate accuracy and repeated agreement hide item-level failures.</description>
       <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

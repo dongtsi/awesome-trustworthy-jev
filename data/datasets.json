@@ -511,5 +511,11 @@
     "type": "paper",
     "checked": "2026-11-01",
     "verification": "Original paper verifies 347 curated text cases derived from PMC-Patients-V2 and PMC reports. This is a derived evaluation set, not the entire upstream dataset; no separate public release URL is given. Paper fallback retained."
+  },
+  "DICE synthetic adapter-boundary studies": {
+    "url": "https://arxiv.org/abs/2610.14404",
+    "type": "paper",
+    "checked": "2026-11-02",
+    "verification": "Original v2 full text specifies three non-pooled authored studies and a 36-action transfer set. No standalone dataset release URL verified; paper fallback. Related representations and repeated calls are not independent task samples."
   }
 }

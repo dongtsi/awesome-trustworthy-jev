@@ -1739,5 +1739,26 @@
     },
     "source_section": "Methods, Tables 1–3 and error analysis",
     "source": "https://arxiv.org/pdf/2610.40327v1"
+  },
+  {
+    "id": "2610.14404",
+    "category": "trustworthiness/security",
+    "datasets": [
+      "DICE synthetic adapter-boundary studies"
+    ],
+    "data_role": {
+      "en": "Paired synthetic interface-integrity tests, separate transfer and repeated-request checks",
+      "zh": "合成配对接口完整性测试，迁移与重复请求检查分别报告"
+    },
+    "design": {
+      "en": "Jev 1.13.0 with a 0.5 action threshold; one adapter output is substituted while source, policy, selector and authentic API record stay protected. State: six denial targets among 12 originals, expiry advance at most five days/five proposals per target, 36 related clean representations. Question: 12 failed-prerequisite domains with denial-form questions. Output: 12 updated records using authentic earlier answers. A separate 36-action/six-rule transfer set receives all three interventions; five exact-request rounds reuse original cases and fixed attacks.",
+      "zh": "使用Jev 1.13.0及0.5行动阈值，每次仅替换一个适配器输出，来源、策略、选择器和真实API日志保持受保护。状态实验从12个原始记录选定6个拒绝目标，每目标最多推进5天、尝试5次，正常输入含36个相关表述。问题实验为12个前提不满足的领域案例，改成否定形式问题。输出实验为12个已更新记录，选用早期真实回答。另有36个动作/六类规则的迁移集分别接受三类干预；五轮精确重复请求复用原案例及固定攻击。"
+    },
+    "reading": {
+      "en": "Wrong final decisions from locally correct answers: state 6/6, question 11/12 (one locally wrong answer retained in denominator), output 12/12. Source checks allow 0/6 attacks but accept only 33/36 clean representations; explicit answer-polarity and current-request binding allow 0/12 with 12/12 clean acceptance. Semantic question checking allows 11/12 primary attacks yet rejects different transfer wording. Transfer checks allow 0/36 attacks per pillar but omit clean utility; AI-reviewed labels and post-defect control revisions limit independent confirmation. No pooled attack-success rate or deployment prevalence follows.",
+      "zh": "局部回答正确却产生错误最终决策的计数为状态6/6、问题11/12（一个局部回答错误仍计入分母）、输出12/12。来源检查放行0/6次攻击，但正常表述仅接受33/36；显式回答极性检查和当前请求绑定均放行0/12、接受12/12正常案例。语义问题检查放行11/12个主实验攻击，却拒绝另一种迁移措辞。迁移检查每类放行0/36攻击但未测正常效用；标签由AI审查，部分正常对照在发现缺陷后修订，独立确认有限。不能合并为总体攻击成功率或推断部署发生率。"
+    },
+    "source_section": "Sections III–VIII; Tables I, III–VI",
+    "source": "https://arxiv.org/pdf/2610.14404v2"
   }
 ]

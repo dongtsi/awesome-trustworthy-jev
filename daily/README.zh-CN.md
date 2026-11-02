@@ -2,6 +2,11 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-10-30
+
+- [Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148) — 通过注意力及循环Gated DeltaNet层的精确状态分叉，将逻辑决策分支与展平执行分离。作者报告相对vLLM/SGLang最高9.5倍查询加速；精确算术下等价与实际浮点偏差是不同结论。 `评测` · [PDF](https://arxiv.org/pdf/2610.42148v1)
+- [Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models](https://arxiv.org/abs/2610.41199) — 在五个制造业案例中研究每类两张参考图的Jev/Clef-Flash决策、代理式描述优化及概率校准。摘要报告15个配置中13个Brier分数下降；校准划分和泛化性仍需全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2610.41199v1)
+
 ## 2026-10-29
 
 - [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327) — 将三份放射学指南编译为可执行图，由Jev 1.13.0判断局部条件、确定性遍历执行规则。作者在347个整理后的文本病例上报告90.8%准确率，直接Jev为57.3%；在线成本未计图构建。 `评测` · [PDF](https://arxiv.org/pdf/2610.40327v1)
@@ -25,8 +30,8 @@
 
 - [Confidence Is Not a Promise: A Reference Audit of Typed Decision Models](https://arxiv.org/abs/2610.36311) — 审计Laya与Jev 1.13的选择性决策、校准迁移、噪声、漂移和解释。点估计阈值常无法达到承诺准确率；下界资格检验在可交换测试中有效，但语言与输入偏移破坏迁移。 `评测` · [PDF](https://arxiv.org/pdf/2610.36311v1)
 - [MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine](https://arxiv.org/abs/2610.36006) — 在医学知识及患者级任务评测开放System One模型。知识基准上的良好校准未迁移到所有患者预测；用50–200个标签拟合双参数局部再校准可降低报告的校准误差。 `评测` · [PDF](https://arxiv.org/pdf/2610.36006v1)
-- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v2)
-- [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — 结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。 `评测` · [PDF](https://arxiv.org/pdf/2610.35654v1)
+- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v3)
+- [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — 结合选项跨度均值读出与注意力/Gated DeltaNet选择性适配，开展跨请求蕴含重排。作者报告在MC11上改善NeoHorse-1-4B且可训练参数减少逾半；当前摘要未建立向直接决策任务的迁移收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.35654v2)
 - [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875) — 用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。 `评测` · [PDF](https://arxiv.org/pdf/2610.34875v1)
 
 ## 2026-10-25
@@ -37,7 +42,7 @@
 ## 2026-10-24
 
 - [Decoupling Calibration, Cross-Sectional Ranking, and Execution in Financial News Models](https://zenodo.org/records/23601427) — 在Jev及三个语言模型的金融新闻评测中区分概率校准、方向判别与组合排序。低ECE可伴随弱判别力；样本差异与执行窗口限制对预测和经济效用的比较。 `评测` · [PDF](https://zenodo.org/api/records/23601427/files/V11_arxiv_server.pdf/content)
-- [The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS](https://arxiv.org/abs/2610.33775) — 综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。 `综述` · [PDF](https://arxiv.org/pdf/2610.33775v1)
+- [The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS](https://arxiv.org/abs/2610.33775) — 综述五类System 1模型及其训练部署取舍、校准和快慢级联，以分类体系与生态概览整理既有证据，未建立新的受控比较。 `综述` · [PDF](https://arxiv.org/pdf/2610.33775v2)
 - [RoboJev: An Open Vision-Language Judge for Robot Success Detection](https://arxiv.org/abs/2610.33718) — 研究JEV-27B-VL的机器人专用适配与校准迁移，采用按来源施加的KL锚定。同输入比较改善同机器人准确率，但未证实未见域提升；前沿API比较使用更少帧。 `评测` · [PDF](https://arxiv.org/pdf/2610.33718v1)
 - [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) — 通过可复用选项编码将类型化决策扩展到视觉候选。请求条件化的独立分支保留候选顺序不变性并改善独立编码准确率，缓存降低重复候选推理成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.33702v1)
 - [Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev](https://arxiv.org/abs/2610.33410) — 在时序分类及离散化预测中评测Jev 1.13.0。对部分显式时间模式的表现优于多种数值序列；一些数据集判别接近随机，评分排序与最终决策存在差距。 `评测` · [PDF](https://arxiv.org/pdf/2610.33410v1)
@@ -101,6 +106,7 @@
 
 ## 2026-10-15
 
+- [SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV](https://arxiv.org/abs/2610.22588) — 结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.22588v1)
 - [Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms](https://arxiv.org/abs/2610.22526) — 用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。 `评测` · [PDF](https://arxiv.org/pdf/2610.22526v1)
 - [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)
 - [Prism-1: Position- and Rival-Independent Scoring for System One Models](https://arxiv.org/abs/2610.22066) — 以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.22066v1)
@@ -168,7 +174,7 @@
 ## 2026-10-09
 
 - [A Thermometer, Not an Analyst: Lawful Uses of a Text Judge in a Live Trading Lab](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589261) — 研究固定版本Jev新闻标题裁判的六项检查，包括重复性、时间上下文与简单基线；报告微弱或消失的信号及失败后的基础设施修正，未检验交易收益提升。 `评测` · [PDF](https://papers.ssrn.com/sol3/Delivery.cfm/7589261.pdf?abstractid=7589261&mirid=1)
-- [DICE: Tilting the Odds through Interface Attacks on System One Model](https://arxiv.org/abs/2610.14404) — 研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。 `评测` · [PDF](https://arxiv.org/pdf/2610.14404v2)
+- [DICE: Tilting the Odds through Interface Attacks on System One Model](https://arxiv.org/abs/2610.14404) — 在Jev 1.13.0流水线中分别检验来源忠实性、问题与动作含义及响应相关性。有界替换使6/6个选定状态目标、11/12个问题案例和12/12个过期响应案例在局部回答正确时产生错误决策；对应检查阻止已测干预，但来源核验也拒绝了部分正常输入。 `评测` · [PDF](https://arxiv.org/pdf/2610.14404v2)
 - [Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for Indonesian Regional Languages](https://arxiv.org/abs/2610.14112) — 在印尼区域语言的情感与情绪任务上评估Jev和Laya-multilingual。翻译提高准确率，但稳定的ECE掩盖了错误排序能力下降；置信门控级联在本地标签、API成本与准确率之间取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.14112v1)
 - [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) — 4,500 次 Agent 执行显示，Jev 降低单次决策成本与时延，但移动任务成功率下降及恢复开销会抵消成功交付层面的收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.13092v1) · [代码](https://anonymous.4open.science/r/jev-emp-5BF4/)
 

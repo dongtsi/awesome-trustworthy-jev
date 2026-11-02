@@ -18170,11 +18170,11 @@
     "short": "Selection Bias in System One",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.35826",
-    "pdf": "https://arxiv.org/pdf/2610.35826v2",
+    "pdf": "https://arxiv.org/pdf/2610.35826v3",
     "doi": "10.48550/arXiv.2610.35826",
     "date": "2026-10-26",
-    "updated": "2026-10-27",
-    "version": "2610.35826v2",
+    "updated": "2026-10-29",
+    "version": "2610.35826v3",
     "added": "2026-10-27",
     "authors": [
       "Mingyang Song",
@@ -18197,8 +18197,8 @@
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original arXiv v2 metadata and abstract verified; detailed full-text audit pending",
+    "evidence": "Original arXiv current-version metadata and abstract",
+    "review": "Current version metadata and abstract verified 2026-11-02; detailed revision/full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
   },
@@ -18401,11 +18401,11 @@
     "short": "System 1 Models Guide",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.33775",
-    "pdf": "https://arxiv.org/pdf/2610.33775v1",
+    "pdf": "https://arxiv.org/pdf/2610.33775v2",
     "doi": "10.48550/arXiv.2610.33775",
     "date": "2026-10-24",
-    "updated": "2026-10-24",
-    "version": "2610.33775v1",
+    "updated": "2026-10-29",
+    "version": "2610.33775v2",
     "added": "2026-10-27",
     "authors": [
       "Haggai Roitman"
@@ -18425,8 +18425,8 @@
     "theme": "Foundations",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "evidence": "Original arXiv current-version metadata and abstract",
+    "review": "Current version metadata and abstract verified 2026-11-02; detailed revision/full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
   },
@@ -18436,11 +18436,11 @@
     "short": "Span Readouts for Reranking",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.35654",
-    "pdf": "https://arxiv.org/pdf/2610.35654v1",
+    "pdf": "https://arxiv.org/pdf/2610.35654v2",
     "doi": "10.48550/arXiv.2610.35654",
     "date": "2026-10-26",
-    "updated": "2026-10-26",
-    "version": "2610.35654v1",
+    "updated": "2026-10-28",
+    "version": "2610.35654v2",
     "added": "2026-10-27",
     "authors": [
       "Haocheng Mei",
@@ -18461,15 +18461,15 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.",
-    "brief_zh": "结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。",
-    "summary": "Combines mean-span option readouts with selective backbone adapters for entailment reranking. It improves NeoHorse-1-4B reranking with fewer trainable parameters, while gains do not uniformly transfer to direct-decision suites.",
-    "summary_zh": "结合选项跨度均值读出与选择性骨干适配，以更少可训练参数改善NeoHorse-1-4B蕴含重排；收益未一致迁移到直接决策基准。",
+    "brief_en": "Combines mean-span option readouts with selective attention and Gated DeltaNet adapters for cross-request entailment reranking. On MC11, the authors report gains for NeoHorse-1-4B while more than halving trainable parameters; direct-decision transfer is not established by the current abstract.",
+    "brief_zh": "结合选项跨度均值读出与注意力/Gated DeltaNet选择性适配，开展跨请求蕴含重排。作者报告在MC11上改善NeoHorse-1-4B且可训练参数减少逾半；当前摘要未建立向直接决策任务的迁移收益。",
+    "summary": "Combines mean-span option readouts with selective attention and Gated DeltaNet adapters for cross-request entailment reranking. On MC11, the authors report gains for NeoHorse-1-4B while more than halving trainable parameters; direct-decision transfer is not established by the current abstract.",
+    "summary_zh": "结合选项跨度均值读出与注意力/Gated DeltaNet选择性适配，开展跨请求蕴含重排。作者报告在MC11上改善NeoHorse-1-4B且可训练参数减少逾半；当前摘要未建立向直接决策任务的迁移收益。",
     "theme": "Foundations",
     "scope": "related-model",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "evidence": "Original arXiv current-version metadata and abstract",
+    "review": "Current version metadata and abstract verified 2026-11-02; detailed revision/full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
   },
@@ -19304,17 +19304,19 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Studies bounded substitutions at state extraction, question generation and response interpretation in a Jev pipeline. Three small synthetic studies show decision changes without modifying the model or its authentic responses; relationship checks stop the tested interventions with some clean rejections.",
-    "brief_zh": "研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。",
-    "summary": "Studies bounded substitutions at state extraction, question generation and response interpretation in a Jev pipeline. Three small synthetic studies show decision changes without modifying the model or its authentic responses; relationship checks stop the tested interventions with some clean rejections.",
-    "summary_zh": "研究Jev流水线中状态提取、问题生成与响应解释处的有界替换。三个小型合成实验在不修改模型及真实响应的情况下改变最终决策；关系约束阻止了已测干预，但也拒绝部分正常决策。",
+    "brief_en": "Separates source fidelity, question-to-action meaning and response relevance in a Jev 1.13.0 pipeline. Bounded substitutions produce wrong final decisions from locally correct answers in 6/6 selected state targets, 11/12 question cases and 12/12 stale-response cases; matched checks stop the tested interventions, with clean rejections for source verification.",
+    "brief_zh": "在Jev 1.13.0流水线中分别检验来源忠实性、问题与动作含义及响应相关性。有界替换使6/6个选定状态目标、11/12个问题案例和12/12个过期响应案例在局部回答正确时产生错误决策；对应检查阻止已测干预，但来源核验也拒绝了部分正常输入。",
+    "summary": "Separates source fidelity, question-to-action meaning and response relevance in a Jev 1.13.0 pipeline. Bounded substitutions produce wrong final decisions from locally correct answers in 6/6 selected state targets, 11/12 question cases and 12/12 stale-response cases; matched checks stop the tested interventions, with clean rejections for source verification.",
+    "summary_zh": "在Jev 1.13.0流水线中分别检验来源忠实性、问题与动作含义及响应相关性。有界替换使6/6个选定状态目标、11/12个问题案例和12/12个过期响应案例在局部回答正确时产生错误决策；对应检查阻止已测干预，但来源核验也拒绝了部分正常输入。",
     "theme": "Robustness",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original title, authors, first-publication date, current version and abstract verified; detailed full-text audit pending",
-    "limitation": "Author-reported findings; detailed methods, splits and results await full-text audit and have not been independently reproduced.",
-    "datasets": []
+    "evidence": "Original arXiv v2 full text, Sections III–VIII and Tables I, III–VI",
+    "review": "Full-text methods, denominators, controls and limits audited 2026-11-02; no independent reproduction",
+    "limitation": "Small authored, flip-capable studies assume one compromised adapter; not a demonstrated compromise exploit or deployment failure rate. Repeats and related representations are not independent tasks. Some clean controls were revised after defects; transfer clean acceptance was not measured.",
+    "datasets": [
+      "DICE synthetic adapter-boundary studies"
+    ]
   },
   {
     "id": "r-4bb63a5e67",
@@ -19347,5 +19349,117 @@
     "evidence": "Original repository README and selected Rust source files",
     "review": "Static review of src/jev.rs, src/analysis.rs, src/sanitizer.rs and security policy; candidate code not executed.",
     "limitation": "No independent traffic benchmark or live deployment evaluation. Deterministic mock probabilities are simulated; finite phrase matching and redaction rules do not guarantee prompt-injection resistance or complete privacy protection."
+  },
+  {
+    "id": "2610.42148",
+    "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+    "short": "Flide",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.42148",
+    "pdf": "https://arxiv.org/pdf/2610.42148v1",
+    "doi": "10.48550/arXiv.2610.42148",
+    "date": "2026-10-30",
+    "updated": "2026-10-30",
+    "version": "2610.42148v1",
+    "added": "2026-11-02",
+    "authors": [
+      "Bobo Li",
+      "Jiajia Song",
+      "Hao Fei",
+      "Wynne Hsu",
+      "Mong Li Lee"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces exact state forking across attention and recurrent Gated DeltaNet layers, separating logical decision branches from flattened execution. The authors report up to 9.5× faster queries than vLLM/SGLang; exact-arithmetic equivalence and measured floating-point deviations are distinct claims.",
+    "summary": "Introduces exact state forking across attention and recurrent Gated DeltaNet layers, separating logical decision branches from flattened execution. The authors report up to 9.5× faster queries than vLLM/SGLang; exact-arithmetic equivalence and measured floating-point deviations are distinct claims.",
+    "brief_zh": "通过注意力及循环Gated DeltaNet层的精确状态分叉，将逻辑决策分支与展平执行分离。作者报告相对vLLM/SGLang最高9.5倍查询加速；精确算术下等价与实际浮点偏差是不同结论。",
+    "summary_zh": "通过注意力及循环Gated DeltaNet层的精确状态分叉，将逻辑决策分支与展平执行分离。作者报告相对vLLM/SGLang最高9.5倍查询加速；精确算术下等价与实际浮点偏差是不同结论。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-02; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2610.41199",
+    "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
+    "short": "Few-Shot Defect Decision Calibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.41199",
+    "pdf": "https://arxiv.org/pdf/2610.41199v1",
+    "doi": "10.48550/arXiv.2610.41199",
+    "date": "2026-10-30",
+    "updated": "2026-10-30",
+    "version": "2610.41199v1",
+    "added": "2026-11-02",
+    "authors": [
+      "Fadel M. Megahed",
+      "Ying-Ju Chen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies two-reference-per-class Jev/Clef-Flash image decisions, agentic text-description refinement and probability calibration across five manufacturing cases. The abstract reports lower Brier scores in 13/15 configurations; calibration partitions and generalization require full-text review.",
+    "summary": "Studies two-reference-per-class Jev/Clef-Flash image decisions, agentic text-description refinement and probability calibration across five manufacturing cases. The abstract reports lower Brier scores in 13/15 configurations; calibration partitions and generalization require full-text review.",
+    "brief_zh": "在五个制造业案例中研究每类两张参考图的Jev/Clef-Flash决策、代理式描述优化及概率校准。摘要报告15个配置中13个Brier分数下降；校准划分和泛化性仍需全文核查。",
+    "summary_zh": "在五个制造业案例中研究每类两张参考图的Jev/Clef-Flash决策、代理式描述优化及概率校准。摘要报告15个配置中13个Brier分数下降；校准划分和泛化性仍需全文核查。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-02; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2610.22588",
+    "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+    "short": "SAG2",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.22588",
+    "pdf": "https://arxiv.org/pdf/2610.22588v1",
+    "doi": "10.48550/arXiv.2610.22588",
+    "date": "2026-10-15",
+    "updated": "2026-10-15",
+    "version": "2610.22588v1",
+    "added": "2026-11-02",
+    "authors": [
+      "Yuchao Wu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.",
+    "summary": "Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.",
+    "brief_zh": "结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。",
+    "summary_zh": "结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-02; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
   }
 ]
