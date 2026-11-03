@@ -8702,11 +8702,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness.",
-    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。",
+    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised example passes serialized question definitions into the cached assessment function.",
+    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订示例将序列化问题定义作为缓存评估函数的显式输入。",
     "limitation": "Illustrative prompts and replies, not a representative safety benchmark; thresholds require validation on deployment traffic. Vendor immunity claims are not independently established.",
-    "evidence": "Original official cookbook Markdown inspected",
-    "review": "Source and demonstrated model versions verified 2026-11-01; source publication date unknown",
+    "evidence": "Original official documentation inspected 2026-11-03",
+    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -8716,8 +8716,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness.",
-    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。",
+    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised example passes serialized question definitions into the cached assessment function.",
+    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订示例将序列化问题定义作为缓存评估函数的显式输入。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -9976,11 +9976,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12.",
-    "summary_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。",
+    "summary": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12. The revised example includes the system prompt and serialized verification state/questions in cached function inputs.",
+    "summary_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。 修订示例将系统提示词和序列化核验状态/问题纳入缓存函数输入。",
     "limitation": "One authored worked example and a separate historical internal sweep; judge-based quality is not independently verified ground truth, and the Jev 1.12 frontier does not measure Jev 1.14.0.",
-    "evidence": "Original official cookbook Markdown inspected",
-    "review": "Source and demonstrated model versions verified 2026-11-01; source publication date unknown",
+    "evidence": "Original official documentation inspected 2026-11-03",
+    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12.",
-    "brief_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。",
+    "brief_en": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12. The revised example includes the system prompt and serialized verification state/questions in cached function inputs.",
+    "brief_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。 修订示例将系统提示词和序列化核验状态/问题纳入缓存函数输入。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -10594,23 +10594,23 @@
   },
   {
     "id": "r-30da591a9e",
-    "title": "jev-1.13",
-    "short": "jev-1.13",
+    "title": "TypeSafe · Model jaggedness",
+    "short": "Model jaggedness",
     "theme": "Official",
     "kind": "Official",
     "scope": "Jev",
     "date": "",
     "updated": "",
     "added": "2026-10-02",
-    "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+    "url": "https://docs.typesafe.ai/model-jaggedness.md",
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "TypeSafe's own list of nine failure modes: literal reading, counting, numeric and date comparison, indirection, distracting state, adversarial content, contradictory criteria, non-guaranteed invariants, generation. Qualitative, with one numeric example (a Noul and its negation summing to 1.19)",
-    "summary_zh": "",
-    "limitation": "作者报告，未独立复现实验。条目描述溯源至 CC0 的 Awesome Jev Robustness；见来源说明。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "summary": "Documents vendor-observed failure modes, including literal reading, unreliable arithmetic and dates, indirection, distracting context, adversarial content and Choice order sensitivity. Recommends deterministic computation in code and integration-specific testing; this qualitative guidance is not a measured robustness guarantee.",
+    "summary_zh": "记录官方观察到的局限，包括字面理解、算术和日期不可靠、间接推理、干扰上下文、对抗内容与Choice选项顺序敏感。建议确定性计算交给代码，并测试具体集成；这些定性建议不构成经过测量的鲁棒性保证。",
+    "limitation": "Vendor qualitative guidance; no representative evaluation denominator or independent reproduction.",
+    "evidence": "Original official documentation inspected 2026-11-03",
+    "review": "Current model-jaggedness page and migrated URL verified 2026-11-03; first publication date unknown.",
     "discovery": "https://github.com/Yifan-Lan/awesome-jev-robustness",
     "target": "hosted",
     "classification_basis": "Official source category",
@@ -10621,8 +10621,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "TypeSafe's own list of nine failure modes: literal reading, counting, numeric and date comparison, indirection, distracting state, adversarial content, contradictory criteria, non-guaranteed invariants, generation.",
-    "brief_zh": "",
+    "brief_en": "Documents vendor-observed failure modes, including literal reading, unreliable arithmetic and dates, indirection, distracting context, adversarial content and Choice order sensitivity. Recommends deterministic computation in code and integration-specific testing; this qualitative guidance is not a measured robustness guarantee.",
+    "brief_zh": "记录官方观察到的局限，包括字面理解、算术和日期不可靠、间接推理、干扰上下文、对抗内容与Choice选项顺序敏感。建议确定性计算交给代码，并测试具体集成；这些定性建议不构成经过测量的鲁棒性保证。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -19450,16 +19450,387 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.",
-    "summary": "Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.",
-    "brief_zh": "结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。",
-    "summary_zh": "结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。",
+    "brief_en": "Combines SQLite/BM25 retrieval with hosted Jev evidence scoring and two adaptive lexical expansions. On the 1,000-question MuSiQue subset, R@10 is 86.62% versus 69.82% for a nearly matched passage-judgment budget; this is evidence retrieval, with different token costs and no measured answer quality or online latency.",
+    "summary": "Combines SQLite/BM25 retrieval with hosted Jev evidence scoring and two adaptive lexical expansions. On the 1,000-question MuSiQue subset, R@10 is 86.62% versus 69.82% for a nearly matched passage-judgment budget; this is evidence retrieval, with different token costs and no measured answer quality or online latency.",
+    "brief_zh": "结合SQLite/BM25检索、托管Jev证据评分与两轮自适应词法扩展。在1000题MuSiQue子集上R@10为86.62%，近似匹配段落判断次数的单轮对照为69.82%；实验测量证据检索，令牌成本不同，未测答案质量或在线延迟。",
+    "summary_zh": "结合SQLite/BM25检索、托管Jev证据评分与两轮自适应词法扩展。在1000题MuSiQue子集上R@10为86.62%，近似匹配段落判断次数的单轮对照为69.82%；实验测量证据检索，令牌成本不同，未测答案质量或在线延迟。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [
+      "SAG2 retrieval evaluation corpora"
+    ],
+    "evidence": "Original arXiv v1 full text, controlled experiments and cost accounting; author repository README",
+    "review": "Full-text methods, controls, denominators and costs audited 2026-11-03; repository extensions kept separate; no independent reproduction",
+    "limitation": "Development uses MuSiQue; question bootstrap does not measure repeated-model variation. Main dense baselines are inherited and use different backends. Passage-judgment matching does not match tokens or cost; no answer-generation evaluation or online latency. Hosted question/passage scoring remains external.",
+    "code": "https://github.com/Zleap-AI/SAG-Benchmark"
+  },
+  {
+    "id": "2611.03371",
+    "title": "EO-Jev: Decision Model for Earth Observation",
+    "short": "EO-Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.03371",
+    "pdf": "https://arxiv.org/pdf/2611.03371v1",
+    "doi": "10.48550/arXiv.2611.03371",
+    "date": "2026-11-02",
+    "updated": "2026-11-02",
+    "version": "2611.03371v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Mohamed Atef Abouelhadid",
+      "Diaa Addeen Abuhani",
+      "Muhammad Akhtar Munir",
+      "Fahad Shahbaz Khan",
+      "Salman Khan"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates d3-flash accuracy, calibration and transfer across 30 Earth-observation settings and adapts it with low-rank fine-tuning. The abstract reports calibration gains alongside persistent quantitative-perception, option-order and distribution-shift weaknesses; detailed split and uncertainty checks remain pending.",
+    "summary": "Evaluates d3-flash accuracy, calibration and transfer across 30 Earth-observation settings and adapts it with low-rank fine-tuning. The abstract reports calibration gains alongside persistent quantitative-perception, option-order and distribution-shift weaknesses; detailed split and uncertainty checks remain pending.",
+    "brief_zh": "评估d3-flash在30个地球观测设置中的准确性、校准与迁移，并进行低秩微调。摘要报告校准改善，同时指出定量感知、选项顺序和分布偏移问题；数据划分及不确定性仍待全文核查。",
+    "summary_zh": "评估d3-flash在30个地球观测设置中的准确性、校准与迁移，并进行低秩微调。摘要报告校准改善，同时指出定量感知、选项顺序和分布偏移问题；数据划分及不确定性仍待全文核查。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.02957",
+    "title": "Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage",
+    "short": "Cyber-JEV",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.02957",
+    "pdf": "https://arxiv.org/pdf/2611.02957v1",
+    "doi": "10.48550/arXiv.2611.02957",
+    "date": "2026-11-02",
+    "updated": "2026-11-02",
+    "version": "2611.02957v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Zhuyi Zhao",
+      "Shengjie Yuan",
+      "Shengyu Wang",
+      "Kang Wei",
+      "Wang Yang",
+      "Wenchao Xu",
+      "Fushuo Huo"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/code"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses vulnerable, patched and unchanged functions from fix commits for matched contrastive fine-tuning. The authors report AUROC 0.814 for a five-model ensemble versus 0.743 for Jev 1.13, and fewer missed vulnerabilities at a matched alert budget; data separation and ensemble costs await full-text audit.",
+    "summary": "Uses vulnerable, patched and unchanged functions from fix commits for matched contrastive fine-tuning. The authors report AUROC 0.814 for a five-model ensemble versus 0.743 for Jev 1.13, and fewer missed vulnerabilities at a matched alert budget; data separation and ensemble costs await full-text audit.",
+    "brief_zh": "利用修复提交中的漏洞、补丁及未修改函数进行匹配对比微调。作者报告五模型集成AUROC为0.814，对照Jev 1.13为0.743，且相同告警预算下漏报更少；数据隔离与集成成本待全文核查。",
+    "summary_zh": "利用修复提交中的漏洞、补丁及未修改函数进行匹配对比微调。作者报告五模型集成AUROC为0.814，对照Jev 1.13为0.743，且相同告警预算下漏报更少；数据隔离与集成成本待全文核查。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.02522",
+    "title": "Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities",
+    "short": "Ranked but Not Stopped",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.02522",
+    "pdf": "https://arxiv.org/pdf/2611.02522v1",
+    "doi": "10.48550/arXiv.2611.02522",
+    "date": "2026-11-02",
+    "updated": "2026-11-02",
+    "version": "2611.02522v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Junwei Yao",
+      "Jianan Liu",
+      "Yongxi Zhou",
+      "Zike Yang"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests confidence-based prompt-injection alarms on AG News across five systems. Strong pooled AUROC does not imply useful detection at a 5% clean calibration alarm rate: certainty-claiming injected notes evade 99–100% of hijack alarms on three hosted systems in the reported main run.",
+    "summary": "Tests confidence-based prompt-injection alarms on AG News across five systems. Strong pooled AUROC does not imply useful detection at a 5% clean calibration alarm rate: certainty-claiming injected notes evade 99–100% of hijack alarms on three hosted systems in the reported main run.",
+    "brief_zh": "在AG News上测试五个系统的置信度提示注入告警。较高汇总AUROC不等于在5%正常校准告警率下有效：主实验报告，宣称确定性的注入便条使三个托管系统中99–100%的劫持逃过告警。",
+    "summary_zh": "在AG News上测试五个系统的置信度提示注入告警。较高汇总AUROC不等于在5%正常校准告警率下有效：主实验报告，宣称确定性的注入便条使三个托管系统中99–100%的劫持逃过告警。",
+    "theme": "Robustness",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.02155",
+    "title": "Decision Models as Policy Gates for Coding Agents: Explicit Policy Boundaries Improve Detection and Reduce False Alarms",
+    "short": "Decision Models as Policy Gates",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.02155",
+    "pdf": "https://arxiv.org/pdf/2611.02155v1",
+    "doi": "10.48550/arXiv.2611.02155",
+    "date": "2026-11-01",
+    "updated": "2026-11-01",
+    "version": "2611.02155v1",
+    "added": "2026-11-03",
+    "authors": [
+      "James P. Beno"
+    ],
+    "target": "hosted",
+    "categories": [
+      "applications/agents",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates decision models as coding-agent policy gates on 2,643 synthetic tool calls and 28 rules. Explicit examples and counterexamples improve recall across available models and reduce most false alarms; reported Jev 1.14 latency and costs remain workload-specific, with full split/harness audit pending.",
+    "summary": "Evaluates decision models as coding-agent policy gates on 2,643 synthetic tool calls and 28 rules. Explicit examples and counterexamples improve recall across available models and reduce most false alarms; reported Jev 1.14 latency and costs remain workload-specific, with full split/harness audit pending.",
+    "brief_zh": "在2643个合成工具调用和28条规则上评估编码Agent策略门控。显式正反例提高可用模型召回率并减少多数误报；Jev 1.14的延迟与费用取决于该工作负载，数据划分和测试框架仍待全文核查。",
+    "summary_zh": "在2643个合成工具调用和28条规则上评估编码Agent策略门控。显式正反例提高可用模型召回率并减少多数误报；Jev 1.14的延迟与费用取决于该工作负载，数据划分和测试框架仍待全文核查。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.01370",
+    "title": "XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages",
+    "short": "XDecideBench",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.01370",
+    "pdf": "https://arxiv.org/pdf/2611.01370v1",
+    "doi": "10.48550/arXiv.2611.01370",
+    "date": "2026-11-01",
+    "updated": "2026-11-01",
+    "version": "2611.01370v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Marek Šuppa",
+      "Jaroslav Kopčan"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Introduces nine suites in 122 languages with 88,425 texts and 153,875 typed questions. Rankings vary by suite and language; an English-calibrated 5% error policy exceeds that rate on XNLI in German and French. Abstract-level evidence distinguishes accuracy gains from the fraction of base-model errors repaired.",
+    "summary": "Introduces nine suites in 122 languages with 88,425 texts and 153,875 typed questions. Rankings vary by suite and language; an English-calibrated 5% error policy exceeds that rate on XNLI in German and French. Abstract-level evidence distinguishes accuracy gains from the fraction of base-model errors repaired.",
+    "brief_zh": "提出覆盖122种语言、88425段文本和153875个类型化问题的九组评测。排名随任务与语言变化；英语上校准的5%错误策略在德语、法语XNLI中超标。摘要区分准确率增益与基础模型错误被修正的比例。",
+    "summary_zh": "提出覆盖122种语言、88425段文本和153875个类型化问题的九组评测。排名随任务与语言变化；英语上校准的5%错误策略在德语、法语XNLI中超标。摘要区分准确率增益与基础模型错误被修正的比例。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.00911",
+    "title": "S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments",
+    "short": "S1CogBench",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.00911",
+    "pdf": "https://arxiv.org/pdf/2611.00911v1",
+    "doi": "10.48550/arXiv.2611.00911",
+    "date": "2026-10-31",
+    "updated": "2026-10-31",
+    "version": "2611.00911v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Dengzhe Hou",
+      "Kazunori D Yamada"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates five open models and Jev on 24 cognitive tasks, separating task conditions, scoring and disclosed adaptations. It studies whether decisions respond to evidence, feedback, memory demand and future opportunities; aggregate accuracy and human-behavior prediction are distinct outcomes.",
+    "summary": "Evaluates five open models and Jev on 24 cognitive tasks, separating task conditions, scoring and disclosed adaptations. It studies whether decisions respond to evidence, feedback, memory demand and future opportunities; aggregate accuracy and human-behavior prediction are distinct outcomes.",
+    "brief_zh": "在24个认知任务上评估五个开放模型及Jev，区分任务条件、评分与已披露适配。研究决策是否响应证据、反馈、记忆需求及未来机会；总体准确性与预测人类行为是不同指标。",
+    "summary_zh": "在24个认知任务上评估五个开放模型及Jev，区分任务条件、评分与已披露适配。研究决策是否响应证据、反馈、记忆需求及未来机会；总体准确性与预测人类行为是不同指标。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.00737",
+    "title": "Can Jev Improve Demonstration Retrieval for In-Context Learning?",
+    "short": "Jev Demonstration Retrieval",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.00737",
+    "pdf": "https://arxiv.org/pdf/2611.00737v1",
+    "doi": "10.48550/arXiv.2611.00737",
+    "date": "2026-10-31",
+    "updated": "2026-10-31",
+    "version": "2611.00737v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Rui Song",
+      "Yingji Li",
+      "Hao Xu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Uses Jev probabilistic utility judgments to select in-context demonstrations, then distills those judgments into a lightweight MLP to reduce candidate-scoring overhead. Full-text review is needed to establish datasets, teacher costs and held-out transfer.",
+    "summary": "Uses Jev probabilistic utility judgments to select in-context demonstrations, then distills those judgments into a lightweight MLP to reduce candidate-scoring overhead. Full-text review is needed to establish datasets, teacher costs and held-out transfer.",
+    "brief_zh": "利用Jev概率效用判断选择上下文示例，再将判断蒸馏到轻量MLP以减少候选评分开销。数据集、教师推理成本及留出迁移效果待全文核查。",
+    "summary_zh": "利用Jev概率效用判断选择上下文示例，再将判断蒸馏到轻量MLP以减少候选评分开销。数据集、教师推理成本及留出迁移效果待全文核查。",
     "theme": "Foundations",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
     "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-02; detailed full-text audit pending",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
     "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.00505",
+    "title": "To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?",
+    "short": "To Jev or Not to Jev",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.00505",
+    "pdf": "https://arxiv.org/pdf/2611.00505v1",
+    "doi": "10.48550/arXiv.2611.00505",
+    "date": "2026-10-31",
+    "updated": "2026-10-31",
+    "version": "2611.00505v1",
+    "added": "2026-11-03",
+    "authors": [
+      "Shreyas Subramanian"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares 14 decision models and four generative judge configurations across eleven judge benchmarks, including reference-guided evaluation, confidence cascades and injected instructions. Some models approach generative judges on tested settings, but injection susceptibility varies sharply by model; reference-generation costs and statistical comparisons need full-text audit.",
+    "summary": "Compares 14 decision models and four generative judge configurations across eleven judge benchmarks, including reference-guided evaluation, confidence cascades and injected instructions. Some models approach generative judges on tested settings, but injection susceptibility varies sharply by model; reference-generation costs and statistical comparisons need full-text audit.",
+    "brief_zh": "比较14个决策模型和四种生成式裁判配置，覆盖11个裁判基准、参考答案辅助评判、置信度级联与注入指令。部分模型在已测设置中接近生成式裁判，但注入敏感性差异显著；参考答案生成成本及统计比较待全文核查。",
+    "summary_zh": "比较14个决策模型和四种生成式裁判配置，覆盖11个裁判基准、参考答案辅助评判、置信度级联与注入指令。部分模型在已测设置中接近生成式裁判，但注入敏感性差异显著；参考答案生成成本及统计比较待全文核查。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-03; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "typesafe-model-changelog",
+    "title": "TypeSafe · Model changelog",
+    "short": "Model changelog",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/changelog.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-03",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Official per-release change log. Its Jev 1.14 entry is dated October 14, 2026 and identifies model jev-1.14.0, multilingual improvements and Box questions; image inputs and 262k long context are also available for Jev 1.13. The entry date is a model-release date, not the verified creation date of this page.",
+    "summary": "Official per-release change log. Its Jev 1.14 entry is dated October 14, 2026 and identifies model jev-1.14.0, multilingual improvements and Box questions; image inputs and 262k long context are also available for Jev 1.13. The entry date is a model-release date, not the verified creation date of this page.",
+    "brief_zh": "官方逐版本变更日志。Jev 1.14条目标注2026年10月14日，列出jev-1.14.0、多语言改善及Box问题；图像输入与262k长上下文也适用于Jev 1.13。条目日期指模型发布，不作为该页面已核实的创建日期。",
+    "summary_zh": "官方逐版本变更日志。Jev 1.14条目标注2026年10月14日，列出jev-1.14.0、多语言改善及Box问题；图像输入与262k长上下文也适用于Jev 1.13。条目日期指模型发布，不作为该页面已核实的创建日期。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official changelog Markdown",
+    "review": "Original text verified 2026-11-03; page publication date unknown",
+    "limitation": "Vendor release notes, not independent benchmark evidence."
+  },
+  {
+    "id": "gh-derriktrace-mailsec",
+    "title": "Mailsec",
+    "short": "Mailsec",
+    "kind": "Project",
+    "url": "https://github.com/derriktrace/mailsec",
+    "date": "2026-11-01",
+    "updated": "2026-11-02",
+    "version": "2026-11-02T14:42:32Z",
+    "added": "2026-11-03",
+    "authors": [
+      "Derrik Trace"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/phishing",
+      "trustworthiness/privacy"
+    ],
+    "contributions": [
+      "system",
+      "tool"
+    ],
+    "brief_en": "Self-hosted Gmail security project combining local attachment inspection with hosted Jev or compatible model assessments, policy-controlled actions and an evidence ledger. The author describes reversible quarantine and explicit provider consent; hosted Jev receives selected mail evidence, and real-world detection performance has not been independently established.",
+    "summary": "Self-hosted Gmail security project combining local attachment inspection with hosted Jev or compatible model assessments, policy-controlled actions and an evidence ledger. The author describes reversible quarantine and explicit provider consent; hosted Jev receives selected mail evidence, and real-world detection performance has not been independently established.",
+    "brief_zh": "面向Gmail的自托管邮件安全项目，将本地附件检查与托管Jev或兼容模型评估、策略控制动作及证据日志结合。作者描述可撤销隔离与显式服务商同意机制；使用托管Jev会发送选定邮件证据，实际检测性能尚未独立确认。",
+    "summary_zh": "面向Gmail的自托管邮件安全项目，将本地附件检查与托管Jev或兼容模型评估、策略控制动作及证据日志结合。作者描述可撤销隔离与显式服务商同意机制；使用托管Jev会发送选定邮件证据，实际检测性能尚未独立确认。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original repository metadata and README",
+    "review": "README and non-fork repository creation metadata verified 2026-11-03; code not executed",
+    "limitation": "Early alpha; static documentation review only. Self-hosting the application does not make hosted model processing local; synthetic screenshots and mocked tests are not measured real-world accuracy."
   }
 ]

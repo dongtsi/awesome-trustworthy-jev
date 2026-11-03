@@ -1760,5 +1760,26 @@
     },
     "source_section": "Sections III–VIII; Tables I, III–VI",
     "source": "https://arxiv.org/pdf/2610.14404v2"
+  },
+  {
+    "id": "2610.22588",
+    "category": "foundations/frameworks",
+    "datasets": [
+      "SAG2 retrieval evaluation corpora"
+    ],
+    "data_role": {
+      "en": "Pooled development-subset passages for three multi-hop benchmarks; full synthetic enterprise corpus with document labels",
+      "zh": "三项多跳基准开发子集的汇总段落；具有文档标签的完整合成企业语料"
+    },
+    "design": {
+      "en": "1,000 questions each from MuSiQue, 2WikiMultiHopQA and HotpotQA, over 11,656/6,119/9,811 passages; EnterpriseRAG uses 470 labeled questions of 500 and 511,962 documents. BM25 starts with 100 candidates; hosted typesafe/jev-1.13-20260917 scores passages in up to three rounds, at most 340 judgments per question. Macro recall and all-evidence recall measure retrieval only. MuSiQue controls use 2,000 paired question bootstraps; near-matched one-shot budgets and an exactly matched 984-question subset test adaptive expansion.",
+      "zh": "MuSiQue、2WikiMultiHopQA、HotpotQA各1000题，对应11656/6119/9811段落；EnterpriseRAG使用500题中有文档标签的470题及511962文档。BM25从100个候选开始，托管typesafe/jev-1.13-20260917最多评分三轮、每题最多340次段落判断。宏平均召回和全证据召回只测检索。MuSiQue对照进行2000次题目配对bootstrap，以近似匹配单轮预算及984题精确匹配子集检验自适应扩展。"
+    },
+    "reading": {
+      "en": "MuSiQue R@10: full 86.62%, one-shot 69.82% (difference 16.80 points; 95% CI 15.28–18.33); exactly matched subset difference 16.62 points. Removing shared context yields 76.25% but also changes later candidates. Overall AE@10 is 69.50%, four-hop AE@10 only 28.31%. The 1,000-question run used 331,325 judgments in 3,000 requests and $4.326379 in recorded successful-response charges, excluding machine rental, answer generation and unknown failed-attempt usage. Index construction took 2.36 seconds; this is not query latency. Historical baselines and unequal model/budget settings prevent a clean model-only superiority claim.",
+      "zh": "MuSiQue R@10：完整系统86.62%，单轮69.82%，差16.80个百分点，95%CI 15.28–18.33；精确匹配子集差16.62个百分点。移除共享上下文降至76.25%，但也改变后续候选。总体AE@10为69.50%，四跳仅28.31%。1000题共331325次段落判断、3000个请求，已记录成功响应费用4.326379美元，不含机器租用、答案生成及未知失败尝试用量。2.36秒是建索引时间，不是查询延迟。历史基线、模型与预算差异不支持干净的模型单因素优越性结论。"
+    },
+    "source_section": "Full v1: retrieval evaluation, controlled experiments, cost accounting and appendices",
+    "source": "https://arxiv.org/pdf/2610.22588v1"
   }
 ]

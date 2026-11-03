@@ -1300,5 +1300,12 @@
     "date": "2026-10-29",
     "basis": "repository-created",
     "source": "https://api.github.com/repos/george-amir/Custos"
+  },
+  {
+    "id": "gh-derriktrace-mailsec",
+    "kind": "Project",
+    "date": "2026-11-01",
+    "basis": "repository-created",
+    "source": "https://github.com/derriktrace/mailsec"
   }
 ]

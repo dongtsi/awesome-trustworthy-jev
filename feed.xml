@@ -6,6 +6,62 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>EO-Jev: Decision Model for Earth Observation</title>
+      <link>https://arxiv.org/abs/2611.03371</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.03371#publication</guid>
+      <description>Evaluates d3-flash accuracy, calibration and transfer across 30 Earth-observation settings and adapts it with low-rank fine-tuning. The abstract reports calibration gains alongside persistent quantitative-perception, option-order and distribution-shift weaknesses; detailed split and uncertainty checks remain pending.</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage</title>
+      <link>https://arxiv.org/abs/2611.02957</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.02957#publication</guid>
+      <description>Uses vulnerable, patched and unchanged functions from fix commits for matched contrastive fine-tuning. The authors report AUROC 0.814 for a five-model ensemble versus 0.743 for Jev 1.13, and fewer missed vulnerabilities at a matched alert budget; data separation and ensemble costs await full-text audit.</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities</title>
+      <link>https://arxiv.org/abs/2611.02522</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.02522#publication</guid>
+      <description>Tests confidence-based prompt-injection alarms on AG News across five systems. Strong pooled AUROC does not imply useful detection at a 5% clean calibration alarm rate: certainty-claiming injected notes evade 99–100% of hijack alarms on three hosted systems in the reported main run.</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Decision Models as Policy Gates for Coding Agents: Explicit Policy Boundaries Improve Detection and Reduce False Alarms</title>
+      <link>https://arxiv.org/abs/2611.02155</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.02155#publication</guid>
+      <description>Evaluates decision models as coding-agent policy gates on 2,643 synthetic tool calls and 28 rules. Explicit examples and counterexamples improve recall across available models and reduce most false alarms; reported Jev 1.14 latency and costs remain workload-specific, with full split/harness audit pending.</description>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages</title>
+      <link>https://arxiv.org/abs/2611.01370</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.01370#publication</guid>
+      <description>Introduces nine suites in 122 languages with 88,425 texts and 153,875 typed questions. Rankings vary by suite and language; an English-calibrated 5% error policy exceeds that rate on XNLI in German and French. Abstract-level evidence distinguishes accuracy gains from the fraction of base-model errors repaired.</description>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments</title>
+      <link>https://arxiv.org/abs/2611.00911</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00911#publication</guid>
+      <description>Evaluates five open models and Jev on 24 cognitive tasks, separating task conditions, scoring and disclosed adaptations. It studies whether decisions respond to evidence, feedback, memory demand and future opportunities; aggregate accuracy and human-behavior prediction are distinct outcomes.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can Jev Improve Demonstration Retrieval for In-Context Learning?</title>
+      <link>https://arxiv.org/abs/2611.00737</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00737#publication</guid>
+      <description>Uses Jev probabilistic utility judgments to select in-context demonstrations, then distills those judgments into a lightweight MLP to reduce candidate-scoring overhead. Full-text review is needed to establish datasets, teacher costs and held-out transfer.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?</title>
+      <link>https://arxiv.org/abs/2611.00505</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00505#publication</guid>
+      <description>Compares 14 decision models and four generative judge configurations across eleven judge benchmarks, including reference-guided evaluation, confidence cascades and injected instructions. Some models approach generative judges on tested settings, but injection susceptibility varies sharply by model; reference-generation costs and statistical comparisons need full-text audit.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Flide: Accelerating Decision Inference with Exact State Forking</title>
       <link>https://arxiv.org/abs/2610.42148</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.42148#publication</guid>
@@ -408,7 +464,7 @@
       <title>SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV</title>
       <link>https://arxiv.org/abs/2610.22588</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.22588#publication</guid>
-      <description>Combines SQLite/BM25 with query-time Jev evidence decisions for embedding-free multi-hop retrieval. Selected passages drive further lexical retrieval; reported recall and low indexing cost describe retrieval infrastructure, not answer correctness or total online inference cost.</description>
+      <description>Combines SQLite/BM25 retrieval with hosted Jev evidence scoring and two adaptive lexical expansions. On the 1,000-question MuSiQue subset, R@10 is 86.62% versus 69.82% for a nearly matched passage-judgment budget; this is evidence retrieval, with different token costs and no measured answer quality or online latency.</description>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1348,62 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.30243#publication</guid>
       <description>Optimizes ordinary-looking context to redirect initially correct decisions.</description>
       <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem</title>
-      <link>https://arxiv.org/abs/2609.30216</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.30216#publication</guid>
-      <description>Maps decision interfaces and adoption across 2,170 public projects.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev-Mobile: Jev as an Executor for Mobile GUI Agents</title>
-      <link>https://arxiv.org/abs/2609.30186</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.30186#publication</guid>
-      <description>Separates VLM planning from typed GUI execution.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JEV vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places</title>
-      <link>https://arxiv.org/abs/2609.29769</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.29769#publication</guid>
-      <description>Correlated errors limit the accuracy benefit of judge cascades.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures</title>
-      <link>https://arxiv.org/abs/2609.29429</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.29429#publication</guid>
-      <description>Evaluates zero-shot detection of ten alignment-failure families.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>From Text Decisions to Pixels: An Study of Jev-Style Visual Choice Model</title>
-      <link>https://arxiv.org/abs/2609.29283</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.29283#publication</guid>
-      <description>Studies visual choice readouts with matched generation baselines.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents</title>
-      <link>https://arxiv.org/abs/2609.28940</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.28940#publication</guid>
-      <description>Explores typed decision layers for pentest finding validation and triage.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Harness Tokenomics: A Router for the Enterprise Agentic Control Plane</title>
-      <link>https://arxiv.org/abs/2609.28919</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.28919#publication</guid>
-      <description>Models routing economics with session-level cache effects.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev in Practice: A Composable Python Toolkit for TypeSafe’s System One Decision Model</title>
-      <link>https://zenodo.org/records/22921974</link>
-      <guid isPermaLink="false">https://zenodo.org/records/22921974#publication</guid>
-      <description>Provides composable tooling, calibration utilities and recorded API experiments.</description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

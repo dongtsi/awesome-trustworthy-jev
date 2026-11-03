@@ -2,6 +2,23 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-02
+
+- [EO-Jev: Decision Model for Earth Observation](https://arxiv.org/abs/2611.03371) — 评估d3-flash在30个地球观测设置中的准确性、校准与迁移，并进行低秩微调。摘要报告校准改善，同时指出定量感知、选项顺序和分布偏移问题；数据划分及不确定性仍待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.03371v1)
+- [Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage](https://arxiv.org/abs/2611.02957) — 利用修复提交中的漏洞、补丁及未修改函数进行匹配对比微调。作者报告五模型集成AUROC为0.814，对照Jev 1.13为0.743，且相同告警预算下漏报更少；数据隔离与集成成本待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.02957v1)
+- [Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities](https://arxiv.org/abs/2611.02522) — 在AG News上测试五个系统的置信度提示注入告警。较高汇总AUROC不等于在5%正常校准告警率下有效：主实验报告，宣称确定性的注入便条使三个托管系统中99–100%的劫持逃过告警。 `评测` · [PDF](https://arxiv.org/pdf/2611.02522v1)
+
+## 2026-11-01
+
+- [Decision Models as Policy Gates for Coding Agents: Explicit Policy Boundaries Improve Detection and Reduce False Alarms](https://arxiv.org/abs/2611.02155) — 在2643个合成工具调用和28条规则上评估编码Agent策略门控。显式正反例提高可用模型召回率并减少多数误报；Jev 1.14的延迟与费用取决于该工作负载，数据划分和测试框架仍待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.02155v1)
+- [XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages](https://arxiv.org/abs/2611.01370) — 提出覆盖122种语言、88425段文本和153875个类型化问题的九组评测。排名随任务与语言变化；英语上校准的5%错误策略在德语、法语XNLI中超标。摘要区分准确率增益与基础模型错误被修正的比例。 `评测` · [PDF](https://arxiv.org/pdf/2611.01370v1)
+
+## 2026-10-31
+
+- [S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments](https://arxiv.org/abs/2611.00911) — 在24个认知任务上评估五个开放模型及Jev，区分任务条件、评分与已披露适配。研究决策是否响应证据、反馈、记忆需求及未来机会；总体准确性与预测人类行为是不同指标。 `评测` · [PDF](https://arxiv.org/pdf/2611.00911v1)
+- [Can Jev Improve Demonstration Retrieval for In-Context Learning?](https://arxiv.org/abs/2611.00737) — 利用Jev概率效用判断选择上下文示例，再将判断蒸馏到轻量MLP以减少候选评分开销。数据集、教师推理成本及留出迁移效果待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.00737v1)
+- [To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?](https://arxiv.org/abs/2611.00505) — 比较14个决策模型和四种生成式裁判配置，覆盖11个裁判基准、参考答案辅助评判、置信度级联与注入指令。部分模型在已测设置中接近生成式裁判，但注入敏感性差异显著；参考答案生成成本及统计比较待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.00505v1)
+
 ## 2026-10-30
 
 - [Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148) — 通过注意力及循环Gated DeltaNet层的精确状态分叉，将逻辑决策分支与展平执行分离。作者报告相对vLLM/SGLang最高9.5倍查询加速；精确算术下等价与实际浮点偏差是不同结论。 `评测` · [PDF](https://arxiv.org/pdf/2610.42148v1)
@@ -106,7 +123,7 @@
 
 ## 2026-10-15
 
-- [SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV](https://arxiv.org/abs/2610.22588) — 结合SQLite/BM25与查询时Jev证据决策实现无嵌入多跳检索，选中段落驱动后续词法检索。报告的召回率及低索引成本描述检索基础设施，不代表答案正确率或完整在线推理成本。 `评测` · [PDF](https://arxiv.org/pdf/2610.22588v1)
+- [SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV](https://arxiv.org/abs/2610.22588) — 结合SQLite/BM25检索、托管Jev证据评分与两轮自适应词法扩展。在1000题MuSiQue子集上R@10为86.62%，近似匹配段落判断次数的单轮对照为69.82%；实验测量证据检索，令牌成本不同，未测答案质量或在线延迟。 `评测` · [PDF](https://arxiv.org/pdf/2610.22588v1) · [代码](https://github.com/Zleap-AI/SAG-Benchmark)
 - [Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms](https://arxiv.org/abs/2610.22526) — 用孟加拉语习语题及配对英文释义比较Laya、Lod-lille与Jev。字面干扰项主导孟加拉语错误，校准变差，两个开放模型的置信度甚至反向指示正确性。 `评测` · [PDF](https://arxiv.org/pdf/2610.22526v1)
 - [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) — 在 JSON 骨架中使用掩码决策位实现单次前向多模态选择；报告小模型准确率、时延及小规模校准和委托试验。 `评测` · [PDF](https://arxiv.org/pdf/2610.22131v1)
 - [Prism-1: Position- and Rival-Independent Scoring for System One Models](https://arxiv.org/abs/2610.22066) — 以共享位置的独立注意力块为选项评分，从结构上保证顺序与竞争选项独立；在测试的选项变化下保持选择稳定，准确率接近基线。 `评测` · [PDF](https://arxiv.org/pdf/2610.22066v1)

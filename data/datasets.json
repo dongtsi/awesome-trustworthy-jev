@@ -517,5 +517,11 @@
     "type": "paper",
     "checked": "2026-11-02",
     "verification": "Original v2 full text specifies three non-pooled authored studies and a 36-action transfer set. No standalone dataset release URL verified; paper fallback. Related representations and repeated calls are not independent task samples."
+  },
+  "SAG2 retrieval evaluation corpora": {
+    "url": "https://github.com/Zleap-AI/SAG-Benchmark",
+    "type": "benchmark",
+    "checked": "2026-11-03",
+    "verification": "Author benchmark README and original paper identify three HippoRAG 2 development-subset corpora and the separate EnterpriseRAG corpus. This entry names the evaluated collection, not a new underlying dataset. Original paper numbers kept separate from later Agentic/local-backend repository results."
   }
 }
