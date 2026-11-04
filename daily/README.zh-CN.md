@@ -2,10 +2,17 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-03
+
+- [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510) — 使用反事实简历审计Jev招聘决策，将人口属性及隐含线索影响与姓名替换、拼写扰动噪声比较。摘要覆盖分数、排名、候选名单、输出有效性、延迟与成本，未给出公平性结果数值，需全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.04510v1)
+- [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480) — 使用冻结音频语言模型进行Jev式概率扫描，对20秒窗口排序，并从排名最高的一分钟音频回答。作者报告证据覆盖与音频处理效率改善；这是决策扫描框架，并非TypeSafe Jev本身的发布或评测。 `评测` · [PDF](https://arxiv.org/pdf/2611.04480v1)
+- [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — 在30个合成临床案例、120个Jev问题上测试结构化记忆。准确率从90.0%变为93.3%（纠正5题、退化1题；精确McNemar p=0.219），Choice对数损失与二元Brier分数下降；理想化记忆及单作者标签使结论限于合成接口先导试验。 `评测` · [PDF](https://arxiv.org/pdf/2611.04101v1)
+
 ## 2026-11-02
 
+- [JevBreak: Your Model, Their Decision](https://arxiv.org/abs/2611.03759) — 研究仅利用返回概率的黑盒Slot Attack，覆盖七模型、16任务及240样例，逐一攻击错误选项。摘要报告在初始正确决策上成功率32–99%，每次成功攻击的查询次数中位数17–72；置信度阈值不能可靠拒绝成功操纵。 `评测` · [PDF](https://arxiv.org/pdf/2611.03759v1)
 - [EO-Jev: Decision Model for Earth Observation](https://arxiv.org/abs/2611.03371) — 评估d3-flash在30个地球观测设置中的准确性、校准与迁移，并进行低秩微调。摘要报告校准改善，同时指出定量感知、选项顺序和分布偏移问题；数据划分及不确定性仍待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.03371v1)
-- [Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage](https://arxiv.org/abs/2611.02957) — 利用修复提交中的漏洞、补丁及未修改函数进行匹配对比微调。作者报告五模型集成AUROC为0.814，对照Jev 1.13为0.743，且相同告警预算下漏报更少；数据隔离与集成成本待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.02957v1)
+- [Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage](https://arxiv.org/abs/2611.02957) — 在Qwen3.5-4B上结合自然先验二分类训练与漏洞/修补/上下文匹配排序。在7270个留出函数、固定4031条告警预算下，五种子集成漏检16个漏洞，Jev 1.13漏检39个；补丁排序比较依赖并列计分口径，论文未测吞吐量。 `评测` · [PDF](https://arxiv.org/pdf/2611.02957v2)
 - [Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities](https://arxiv.org/abs/2611.02522) — 在AG News上测试五个系统的置信度提示注入告警。较高汇总AUROC不等于在5%正常校准告警率下有效：主实验报告，宣称确定性的注入便条使三个托管系统中99–100%的劫持逃过告警。 `评测` · [PDF](https://arxiv.org/pdf/2611.02522v1)
 
 ## 2026-11-01
@@ -33,6 +40,7 @@
 
 - [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318) — 比较决策模型在考试题与诊断病例中的表现。Jev高置信答案准确率由考试题的98.5%降至所选病例的84.6%，说明置信可靠性不会自动跨任务迁移。 `评测` · [PDF](https://arxiv.org/pdf/2610.40318v1)
 - [FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models](https://arxiv.org/abs/2610.38895) — 评测针对固定Jev 1.13快照的自适应后缀攻击。各数据集通用后缀翻转114/264个留出高置信正例；跨任务迁移平均18%，其中一个后缀在五项任务达到90–100%。 `评测` · [PDF](https://arxiv.org/pdf/2610.38895v1) · [代码](https://github.com/SaFo-Lab/FlipJev)
+- [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623) — 提出PrimaCons跨问题类型一致性基准，以及冻结JevK5骨干上的残差校准器。摘要报告留一域评估下不一致性减少58.57%、准确率变化+2.97%；仓库表格也包含部分轴上的退化，所评骨干并非TypeSafe托管Jev。 `基准` · [PDF](https://arxiv.org/pdf/2610.38623v1) · [代码](https://github.com/67L1/PrimaCons-CRPR)
 - [Predict the Reward, Not the World: World Reward Models for ML Agents](https://arxiv.org/abs/2610.38439) — 从执行结果学习直接选择程序对，无需预测执行轨迹。ForeCritic适配开放9B类型化决策模型；留出程序对及Agent实验报告更好的选择与更短运行时间，结论依赖所测任务和搜索协议。 `评测` · [PDF](https://arxiv.org/pdf/2610.38439v1)
 - [Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval](https://arxiv.org/abs/2610.38090) — 在受控检索下比较托管与开放决策模型、重排器及蒸馏学生。联合与逐段评分解释了学生和Jev的大部分差距；差异不显著并不证明等效。 `评测` · [PDF](https://arxiv.org/pdf/2610.38090v1)
 

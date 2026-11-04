@@ -6,6 +6,34 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Fast, Cheap, and Fair? Evaluating Decision Models</title>
+      <link>https://arxiv.org/abs/2611.04510</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.04510#publication</guid>
+      <description>Audits Jev recruitment decisions using counterfactual CVs, comparing demographic and implicit cues with noise from name substitutions and typographical changes. The abstract covers scores, rankings, shortlists, validity, latency and cost; it does not quantify fairness outcomes, which require full-text review.</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models</title>
+      <link>https://arxiv.org/abs/2611.04480</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.04480#publication</guid>
+      <description>Applies a Jev-style probability scan with a frozen audio language model to rank 20-second windows and answer from the highest-ranked minute. The authors report improved evidence coverage and audio efficiency; this is a decision-scanning framework, not a release or evaluation of TypeSafe Jev itself.</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev</title>
+      <link>https://arxiv.org/abs/2611.04101</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.04101#publication</guid>
+      <description>Tests structured memory on 30 synthetic clinical cases and 120 Jev questions. Accuracy changes from 90.0% to 93.3% (five corrections, one regression; exact McNemar p=0.219), with lower choice log loss and binary Brier score; oracle memory and single-author labels limit the result to a synthetic interface pilot.</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JevBreak: Your Model, Their Decision</title>
+      <link>https://arxiv.org/abs/2611.03759</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.03759#publication</guid>
+      <description>Studies black-box Slot Attack using returned probabilities across seven models, 16 tasks and 240 examples, targeting every wrong option. The abstract reports 32–99% success on initially correct decisions and 17–72 median queries per successful attack; confidence thresholds do not reliably reject successful manipulations.</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>EO-Jev: Decision Model for Earth Observation</title>
       <link>https://arxiv.org/abs/2611.03371</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.03371#publication</guid>
@@ -16,7 +44,7 @@
       <title>Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage</title>
       <link>https://arxiv.org/abs/2611.02957</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.02957#publication</guid>
-      <description>Uses vulnerable, patched and unchanged functions from fix commits for matched contrastive fine-tuning. The authors report AUROC 0.814 for a five-model ensemble versus 0.743 for Jev 1.13, and fewer missed vulnerabilities at a matched alert budget; data separation and ensemble costs await full-text audit.</description>
+      <description>Combines natural-prior binary training with matched vulnerable/patched/context ranking on Qwen3.5-4B. On 7,270 held-out functions at a fixed 4,031-alert budget, its five-seed ensemble misses 16 vulnerabilities versus 39 for Jev 1.13; patch-ranking comparisons depend on tie scoring, and throughput was not measured.</description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -101,6 +129,13 @@
       <link>https://arxiv.org/abs/2610.38895</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.38895#publication</guid>
       <description>Evaluates adaptive suffix attacks against a fixed Jev 1.13 snapshot. Dataset-specific universal suffixes flip 114/264 held-out confident positive decisions; cross-task transfer averages 18%, while a selected suffix reaches 90–100% on five tasks.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cross-Primitive Consistency in Jev</title>
+      <link>https://arxiv.org/abs/2610.38623</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.38623#publication</guid>
+      <description>Introduces PrimaCons to test cross-primitive consistency and a residual calibrator on frozen JevK5 backbones. The abstract reports a 58.57% inconsistency reduction and a reported +2.97% accuracy change under leave-one-domain-out evaluation; repository tables include regressions on some axes, and hosted TypeSafe Jev is not the evaluated backbone.</description>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1369,41 +1404,6 @@
       <guid isPermaLink="false">https://zenodo.org/records/22952571#publication</guid>
       <description>Evaluates allow, hold and deny against authored policy specifications.</description>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models</title>
-      <link>https://arxiv.org/abs/2609.31142</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.31142#publication</guid>
-      <description>Introduces an adversarial benchmark that compares single-field perturbations with repeated clean requests, separating attack effects from output noise.</description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JevSoup: System-One Routing for Training-Free LoRA Composition</title>
-      <link>https://arxiv.org/abs/2609.30922</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.30922#publication</guid>
-      <description>Routes and combines LoRA experts using typed choices.</description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information</title>
-      <link>https://arxiv.org/abs/2609.30706</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.30706#publication</guid>
-      <description>Learns which missing information is worth asking for.</description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How far can a commercial decision model’s probabilities be trusted? A calibration audit of Jev against open and general-purpose classifiers</title>
-      <link>https://escholarship.org/uc/item/4t4449jv</link>
-      <guid isPermaLink="false">https://escholarship.org/uc/item/4t4449jv#publication</guid>
-      <description>Audits task-specific calibration and label-wording sensitivity.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JevOut: Natural Context Can Flip Decision Models</title>
-      <link>https://arxiv.org/abs/2609.30243</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.30243#publication</guid>
-      <description>Optimizes ordinary-looking context to redirect initially correct decisions.</description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

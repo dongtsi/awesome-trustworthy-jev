@@ -1781,5 +1781,26 @@
     },
     "source_section": "Full v1: retrieval evaluation, controlled experiments, cost accounting and appendices",
     "source": "https://arxiv.org/pdf/2610.22588v1"
+  },
+  {
+    "id": "2611.02957",
+    "category": "applications/code",
+    "datasets": [
+      "Cyber-JEV curated vulnerability and patch suites"
+    ],
+    "data_role": {
+      "en": "Leakage-filtered function-level vulnerability labels, matched patch/context groups and held-out pair suites",
+      "zh": "经泄漏过滤的函数级漏洞标签、匹配补丁/上下文组及留出配对集"
+    },
+    "design": {
+      "en": "Reference data: 5,223 functions (197 positive); external sources: 3,357 positives. Hybrid training uses 2,829 matched groups and 2,874 distinct positives; full CE baselines retain 3,554 positives. The main test has 7,270 functions from 57 projects (322 vulnerable, 6,948 non-vulnerable); paired suites are T271, TitanVul-A72 and P309. Qwen3.5-4B is frozen with rank-16 LoRA; reference-label CE is combined with within-group contrastive ranking. Five-seed margin averaging, 2,000 project-cluster bootstrap samples and paired McNemar tests are reported.",
+      "zh": "参考数据5223函数，其中197个正例；外部来源3357正例。混合训练使用2829个匹配组、2874个不同正例；全量CE基线保留3554正例。主测试含57项目7270函数，322漏洞、6948非漏洞；配对集为T271、TitanVul-A72及P309。冻结Qwen3.5-4B并使用rank-16 LoRA，将参考标签CE与组内对比排序结合。报告五种子分差平均、2000次项目簇bootstrap与配对McNemar检验。"
+    },
+    "reading": {
+      "en": "Ensemble AUROC is 0.814 versus Jev 1.13 at 0.743, while a source-adjusted baseline reaches 0.825. At 4,031 alerts, TP/FN/FP/TN are 306/16/3725/3223 versus 283/39/3748/3200. T271 half-tie-credit accuracy is 47.6% versus 50.7%; Jev has 51 ties and only 41.3% strict wins, so the ordering changes with tie handling. A calibration-locked threshold yields 52.1% test FPR; a separate validation-recall-matched setting cuts FP 34.2% but test recall falls from 87.9% to 81.7%. Test-label-defined low-FPR curves are retrospective. No measured latency or throughput supports a speed claim.",
+      "zh": "集成AUROC为0.814，Jev 1.13为0.743，但来源校正基线达到0.825。固定4031条告警时TP/FN/FP/TN为306/16/3725/3223，对照283/39/3748/3200。T271半分计并列准确率47.6%对50.7%；Jev有51次并列、严格胜出仅41.3%，排序随并列处理改变。校准集锁定阈值后测试FPR为52.1%；另一验证集召回匹配设置使FP减少34.2%，测试召回却从87.9%降至81.7%。按测试标签定义的低FPR曲线属于回顾性分析。论文未测延迟或吞吐量，不能据此作速度结论。"
+    },
+    "source_section": "Full v2: matched-group construction, leakage checks, main/paired evaluations, fixed alert budgets and calibration operating points",
+    "source": "https://arxiv.org/pdf/2611.02957v2"
   }
 ]

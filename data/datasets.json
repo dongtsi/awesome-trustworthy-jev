@@ -523,5 +523,11 @@
     "type": "benchmark",
     "checked": "2026-11-03",
     "verification": "Author benchmark README and original paper identify three HippoRAG 2 development-subset corpora and the separate EnterpriseRAG corpus. This entry names the evaluated collection, not a new underlying dataset. Original paper numbers kept separate from later Agentic/local-backend repository results."
+  },
+  "Cyber-JEV curated vulnerability and patch suites": {
+    "url": "https://arxiv.org/abs/2611.02957",
+    "type": "benchmark",
+    "checked": "2026-11-04",
+    "verification": "Original paper identifies curated subsets of PrimeVul, DiverseVul, CVEfixes and TitanVul with matched patches. Paper-only fallback: no standalone release page verified. This names the evaluated collection, not a new independent upstream dataset."
   }
 }
