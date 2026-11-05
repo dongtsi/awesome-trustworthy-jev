@@ -2,11 +2,16 @@
 
 Grouped by first public publication date.
 
+## 2026-11-04
+
+- [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384) — Audits Jev, Clef Flash and Perplexity Decider with 702,000 judgments over 9,000 multiply annotated items from six datasets. Position, endorsement and framing changes alter preferences despite unchanged texts, distinguishing repeatability, presentation robustness and human alignment; detailed full-text audit remains pending. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.06384v1)
+- [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238) — Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.06238v1)
+
 ## 2026-11-03
 
 - [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510) — Audits Jev recruitment decisions using counterfactual CVs, comparing demographic and implicit cues with noise from name substitutions and typographical changes. The abstract covers scores, rankings, shortlists, validity, latency and cost; it does not quantify fairness outcomes, which require full-text review. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.04510v1)
 - [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480) — Applies a Jev-style probability scan with a frozen audio language model to rank 20-second windows and answer from the highest-ranked minute. The authors report improved evidence coverage and audio efficiency; this is a decision-scanning framework, not a release or evaluation of TypeSafe Jev itself. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.04480v1)
-- [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — Tests structured memory on 30 synthetic clinical cases and 120 Jev questions. Accuracy changes from 90.0% to 93.3% (five corrections, one regression; exact McNemar p=0.219), with lower choice log loss and binary Brier score; oracle memory and single-author labels limit the result to a synthetic interface pilot. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.04101v1)
+- [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — Adds oracle structured memory to the same 30 synthetic vignettes in a paired 120-question Jev pilot. Correct answers rise from 108 to 112 (five gains, one loss; exact McNemar p=0.219), while probability scores improve; case clustering, unreviewed labels and an unrecorded model revision limit inference. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.04101v1)
 
 ## 2026-11-02
 

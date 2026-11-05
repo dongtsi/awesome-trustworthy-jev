@@ -529,5 +529,11 @@
     "type": "benchmark",
     "checked": "2026-11-04",
     "verification": "Original paper identifies curated subsets of PrimeVul, DiverseVul, CVEfixes and TitanVul with matched patches. Paper-only fallback: no standalone release page verified. This names the evaluated collection, not a new independent upstream dataset."
+  },
+  "Structured Clinical Memory synthetic pilot v1.1": {
+    "url": "https://arxiv.org/abs/2611.04101",
+    "type": "benchmark",
+    "checked": "2026-11-05",
+    "verification": "Paper-only fallback. Original appendix specifies synthetic benchmark v1.1 generated October 12, 2026; no standalone public data release verified. Generation/run date is not the paper publication date."
   }
 }

@@ -2,11 +2,16 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-04
+
+- [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384) — 在六数据集9000个多标注样本上收集702000次判断，审计Jev、Clef Flash和Perplexity Decider。文本不变时，位置、背书和决策框架变化仍改变偏好，区分了重复性、呈现鲁棒性与人类一致性；详细全文审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.06384v1)
+- [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238) — 研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。 `评测` · [PDF](https://arxiv.org/pdf/2611.06238v1)
+
 ## 2026-11-03
 
 - [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510) — 使用反事实简历审计Jev招聘决策，将人口属性及隐含线索影响与姓名替换、拼写扰动噪声比较。摘要覆盖分数、排名、候选名单、输出有效性、延迟与成本，未给出公平性结果数值，需全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.04510v1)
 - [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480) — 使用冻结音频语言模型进行Jev式概率扫描，对20秒窗口排序，并从排名最高的一分钟音频回答。作者报告证据覆盖与音频处理效率改善；这是决策扫描框架，并非TypeSafe Jev本身的发布或评测。 `评测` · [PDF](https://arxiv.org/pdf/2611.04480v1)
-- [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — 在30个合成临床案例、120个Jev问题上测试结构化记忆。准确率从90.0%变为93.3%（纠正5题、退化1题；精确McNemar p=0.219），Choice对数损失与二元Brier分数下降；理想化记忆及单作者标签使结论限于合成接口先导试验。 `评测` · [PDF](https://arxiv.org/pdf/2611.04101v1)
+- [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — 在30个相同合成案例的120题配对Jev试验中加入理想化结构记忆。正确答案从108增至112（纠正5题、退化1题；精确McNemar p=0.219），概率评分改善；案例内聚类、未经独立审核的标签及未记录模型版本限制推断。 `评测` · [PDF](https://arxiv.org/pdf/2611.04101v1)
 
 ## 2026-11-02
 

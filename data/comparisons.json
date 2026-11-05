@@ -1802,5 +1802,26 @@
     },
     "source_section": "Full v2: matched-group construction, leakage checks, main/paired evaluations, fixed alert budgets and calibration operating points",
     "source": "https://arxiv.org/pdf/2611.02957v2"
+  },
+  {
+    "id": "2611.04101",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Structured Clinical Memory synthetic pilot v1.1"
+    ],
+    "data_role": {
+      "en": "Author-created synthetic vignettes, oracle memories and single-author answer keys; no patient data",
+      "zh": "作者构造的合成案例、理想化记忆及单作者答案标签，无真实患者数据"
+    },
+    "design": {
+      "en": "30 cases across 12 domains, four questions per case: 56 Choice, 36 binary and 28 ordinal questions. The same vignette/questions are evaluated with or without appended structured memory in 60 calls. Correctness is exact Choice, binary p≥0.5 or ordinal expected score within one level. Benchmark v1.1 and the sole run are dated October 12, 2026; the Jev early-access model revision was not recorded.",
+      "zh": "12领域30案例，每例四题，共56个Choice、36个二元题和28个序数题。同一案例及问题分别有/无附加结构记忆，共60次调用。正确性定义为Choice严格相符、二元p≥0.5、序数期望分值距标签不超过一级。基准v1.1及唯一运行日期为2026-10-12，未记录Jev早期访问模型的具体版本。"
+    },
+    "reading": {
+      "en": "Accuracy is 108/120 versus 112/120; five paired corrections and one regression give exact McNemar p=0.219. Choice log loss is 0.258→0.175, binary Brier 0.054→0.022 and ordinal MAE 0.521→0.469. Input tokens rise 553.9→863.9 per call; observed latency 0.51→0.50 s is not a powered latency result. Question-level intervals ignore case clustering; no interval for the accuracy difference is reported. Sparse confidence bins with missing outputs do not establish calibration.",
+      "zh": "准确率108/120对112/120；五题纠正、一题退化，精确McNemar p=0.219。Choice对数损失0.258→0.175，二元Brier 0.054→0.022，序数MAE 0.521→0.469。每次输入令牌553.9→863.9；观察延迟0.51→0.50秒不足以支持延迟推断。题级区间忽略案例内聚类，未报告准确率差的区间。存在缺失输出的稀疏置信度分箱不能证明校准。"
+    },
+    "source_section": "Full v1: paired benchmark, output-specific metrics, results, limitations and reproducibility appendix",
+    "source": "https://arxiv.org/pdf/2611.04101v1"
   }
 ]

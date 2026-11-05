@@ -7452,11 +7452,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
+    "summary": "Noul returns the probability of a yes/no proposition, with optional true/false criteria and no separate confidence field. A value near 0.5 signals uncertainty, not a middle level of the property; thresholded actions and review bands must be selected for the task.",
+    "summary_zh": "Noul返回是非命题的概率，可附true/false判据，无单独confidence字段。接近0.5表示不确定，而非属性处于中间程度；动作阈值和复核区间需按任务选择。",
     "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "evidence": "Original official documentation inspected 2026-11-05",
+    "review": "Original official text and interface semantics verified 2026-11-05; page first-publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -7466,8 +7466,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Noul returns the probability of a yes/no proposition, with optional true/false criteria and no separate confidence field. A value near 0.5 signals uncertainty, not a middle level of the property; thresholded actions and review bands must be selected for the task.",
+    "brief_zh": "Noul返回是非命题的概率，可附true/false判据，无单独confidence字段。接近0.5表示不确定，而非属性处于中间程度；动作阈值和复核区间需按任务选择。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -9676,11 +9676,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
+    "summary": "Defines Choice, Score, Noul and Box question/answer shapes and parallel evaluation over a shared state. Question IDs are response keys, not model input; forced Choice/Box outputs need a separate applicability or presence check. A later request is needed when an earlier answer determines new state or options.",
+    "summary_zh": "定义Choice、Score、Noul、Box问题与答案结构，以及共享状态上的并行求值。问题ID用于响应映射，不作为模型输入；强制返回的Choice/Box需要独立的适用性或存在性检查。只有前一答案决定新状态或选项时，才需要后续请求。",
     "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "evidence": "Original official documentation inspected 2026-11-05",
+    "review": "Original official text and interface semantics verified 2026-11-05; page first-publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9690,8 +9690,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Defines Choice, Score, Noul and Box question/answer shapes and parallel evaluation over a shared state. Question IDs are response keys, not model input; forced Choice/Box outputs need a separate applicability or presence check. A later request is needed when an earlier answer determines new state or options.",
+    "brief_zh": "定义Choice、Score、Noul、Box问题与答案结构，以及共享状态上的并行求值。问题ID用于响应映射，不作为模型输入；强制返回的Choice/Box需要独立的适用性或存在性检查。只有前一答案决定新状态或选项时，才需要后续请求。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -10386,11 +10386,11 @@
     "pdf": "",
     "code": "",
     "version": "checked-2026-10-24",
-    "summary": "Lists jev-latest and jev-preview both pointing to Jev 1.14.0 at this check, alongside version-pinned IDs and opt-in extended context. Aliases can change independently of pinned versions.",
-    "summary_zh": "本次核验时，jev-latest与jev-preview均指向Jev 1.14.0；另列固定版本ID及可选扩展上下文。动态别名可能变化，应与固定版本区分。",
+    "summary": "Lists Jev 1.14.0 and 1.13.0 with text/PNG/JPEG inputs; Box questions require 1.14. Both use 64k request/32k question default context, with opt-in 262k for both limits. jev-latest and jev-preview currently alias 1.14.0; model IDs should be logged because aliases can move.",
+    "summary_zh": "列出Jev 1.14.0与1.13.0均支持文本及PNG/JPEG图像，Box问题要求1.14。默认每请求64k、每问题32k，可显式开启两者262k长上下文。jev-latest与jev-preview当前指向1.14.0；别名会变，应记录版本ID。",
     "limitation": "Aliases checked on 2026-10-24; transition date not established. Experimental images require opt-in; no account-level model call or independent performance validation.",
-    "evidence": "Vendor",
-    "review": "Official page compared with prior saved version; alias/example change verified, actual transition date unknown",
+    "evidence": "Original official documentation inspected 2026-11-05",
+    "review": "Original official text and interface semantics verified 2026-11-05; page first-publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -10400,8 +10400,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Lists jev-latest and jev-preview both pointing to Jev 1.14.0 at this check, alongside version-pinned IDs and opt-in extended context. Aliases can change independently of pinned versions.",
-    "brief_zh": "本次核验时，jev-latest与jev-preview均指向Jev 1.14.0；另列固定版本ID及可选扩展上下文。动态别名可能变化，应与固定版本区分。",
+    "brief_en": "Lists Jev 1.14.0 and 1.13.0 with text/PNG/JPEG inputs; Box questions require 1.14. Both use 64k request/32k question default context, with opt-in 262k for both limits. jev-latest and jev-preview currently alias 1.14.0; model IDs should be logged because aliases can move.",
+    "brief_zh": "列出Jev 1.14.0与1.13.0均支持文本及PNG/JPEG图像，Box问题要求1.14。默认每请求64k、每问题32k，可显式开启两者262k长上下文。jev-latest与jev-preview当前指向1.14.0；别名会变，应记录版本ID。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -11063,11 +11063,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Official interface documentation and deployment guidance.",
-    "summary_zh": "",
+    "summary": "Describes workflows that keep control flow, deterministic computation and side effects in code while using Jev for narrow judgments. Structured state and criteria, independent batched questions, explicit composition and uncertainty routing support inspection; vendor speed and calibration claims are not independent validation.",
+    "summary_zh": "描述由代码控制流程、确定性计算与副作用，Jev仅负责狭窄判断的工作流。结构化状态与判据、独立批量问题、显式组合及不确定性路由便于检查；官方速度和校准主张不等于独立验证。",
     "limitation": "官方材料说明接口契约；不能替代独立安全评测。",
-    "evidence": "Vendor",
-    "review": "Source archived",
+    "evidence": "Original official documentation inspected 2026-11-05",
+    "review": "Original official text and interface semantics verified 2026-11-05; page first-publication date unknown",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -11077,8 +11077,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Official interface documentation and deployment guidance.",
-    "brief_zh": "",
+    "brief_en": "Describes workflows that keep control flow, deterministic computation and side effects in code while using Jev for narrow judgments. Structured state and criteria, independent batched questions, explicit composition and uncertainty routing support inspection; vendor speed and calibration claims are not independent validation.",
+    "brief_zh": "描述由代码控制流程、确定性计算与副作用，Jev仅负责狭窄判断的工作流。结构化状态与判据、独立批量问题、显式组合及不确定性路由便于检查；官方速度和校准主张不等于独立验证。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -19941,17 +19941,19 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Tests structured memory on 30 synthetic clinical cases and 120 Jev questions. Accuracy changes from 90.0% to 93.3% (five corrections, one regression; exact McNemar p=0.219), with lower choice log loss and binary Brier score; oracle memory and single-author labels limit the result to a synthetic interface pilot.",
-    "summary": "Tests structured memory on 30 synthetic clinical cases and 120 Jev questions. Accuracy changes from 90.0% to 93.3% (five corrections, one regression; exact McNemar p=0.219), with lower choice log loss and binary Brier score; oracle memory and single-author labels limit the result to a synthetic interface pilot.",
-    "brief_zh": "在30个合成临床案例、120个Jev问题上测试结构化记忆。准确率从90.0%变为93.3%（纠正5题、退化1题；精确McNemar p=0.219），Choice对数损失与二元Brier分数下降；理想化记忆及单作者标签使结论限于合成接口先导试验。",
-    "summary_zh": "在30个合成临床案例、120个Jev问题上测试结构化记忆。准确率从90.0%变为93.3%（纠正5题、退化1题；精确McNemar p=0.219），Choice对数损失与二元Brier分数下降；理想化记忆及单作者标签使结论限于合成接口先导试验。",
+    "brief_en": "Adds oracle structured memory to the same 30 synthetic vignettes in a paired 120-question Jev pilot. Correct answers rise from 108 to 112 (five gains, one loss; exact McNemar p=0.219), while probability scores improve; case clustering, unreviewed labels and an unrecorded model revision limit inference.",
+    "summary": "Adds oracle structured memory to the same 30 synthetic vignettes in a paired 120-question Jev pilot. Correct answers rise from 108 to 112 (five gains, one loss; exact McNemar p=0.219), while probability scores improve; case clustering, unreviewed labels and an unrecorded model revision limit inference.",
+    "brief_zh": "在30个相同合成案例的120题配对Jev试验中加入理想化结构记忆。正确答案从108增至112（纠正5题、退化1题；精确McNemar p=0.219），概率评分改善；案例内聚类、未经独立审核的标签及未记录模型版本限制推断。",
+    "summary_zh": "在30个相同合成案例的120题配对Jev试验中加入理想化结构记忆。正确答案从108增至112（纠正5题、退化1题；精确McNemar p=0.219），概率评分改善；案例内聚类、未经独立审核的标签及未记录模型版本限制推断。",
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-04; detailed full-text audit pending",
-    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+    "datasets": [
+      "Structured Clinical Memory synthetic pilot v1.1"
+    ],
+    "evidence": "Original arXiv v1 full text, tables and reproducibility appendix",
+    "review": "Full-text methods, metrics, denominators and limitations audited 2026-11-05; no independent reproduction",
+    "limitation": "30 synthetic cases with four dependent questions each, single-author labels, oracle memory, one run and no model revision recorded. Memory structure is confounded with authored normalization; no extraction, clinical safety or subgroup outcome evaluation. Confidence bins are not a formal calibration test."
   },
   {
     "id": "2611.03759",
@@ -20125,5 +20127,172 @@
     "evidence": "Original arXiv metadata/abstract and author README",
     "review": "Original metadata, first date, abstract and JevK5 identity verified 2026-11-04; detailed full-text audit pending",
     "limitation": "Author-reported aggregate results; detailed full-text audit pending. HF dataset/model card requests failed; artifact files and licenses not verified."
+  },
+  {
+    "id": "2611.06384",
+    "title": "Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation",
+    "short": "Presentation sensitivity",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.06384",
+    "pdf": "https://arxiv.org/pdf/2611.06384v1",
+    "doi": "10.48550/arXiv.2611.06384",
+    "date": "2026-11-04",
+    "updated": "2026-11-04",
+    "version": "2611.06384v1",
+    "added": "2026-11-05",
+    "authors": [
+      "Jatin Agrawal",
+      "Radhika Mamidi"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/fairness"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits Jev, Clef Flash and Perplexity Decider with 702,000 judgments over 9,000 multiply annotated items from six datasets. Position, endorsement and framing changes alter preferences despite unchanged texts, distinguishing repeatability, presentation robustness and human alignment; detailed full-text audit remains pending.",
+    "summary": "Audits Jev, Clef Flash and Perplexity Decider with 702,000 judgments over 9,000 multiply annotated items from six datasets. Position, endorsement and framing changes alter preferences despite unchanged texts, distinguishing repeatability, presentation robustness and human alignment; detailed full-text audit remains pending.",
+    "brief_zh": "在六数据集9000个多标注样本上收集702000次判断，审计Jev、Clef Flash和Perplexity Decider。文本不变时，位置、背书和决策框架变化仍改变偏好，区分了重复性、呈现鲁棒性与人类一致性；详细全文审核待完成。",
+    "summary_zh": "在六数据集9000个多标注样本上收集702000次判断，审计Jev、Clef Flash和Perplexity Decider。文本不变时，位置、背书和决策框架变化仍改变偏好，区分了重复性、呈现鲁棒性与人类一致性；详细全文审核待完成。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-05; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending."
+  },
+  {
+    "id": "2611.06238",
+    "title": "Zuse: A Decision Model for European Languages",
+    "short": "Zuse",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.06238",
+    "pdf": "https://arxiv.org/pdf/2611.06238v1",
+    "doi": "10.48550/arXiv.2611.06238",
+    "date": "2026-11-04",
+    "updated": "2026-11-04",
+    "version": "2611.06238v1",
+    "added": "2026-11-05",
+    "authors": [
+      "Umair Mehmood Imam"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.",
+    "summary": "Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.",
+    "brief_zh": "研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。",
+    "summary_zh": "研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。",
+    "theme": "Calibration",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-05; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending. Zuse model artifacts were not verified."
+  },
+  {
+    "id": "typesafe-judgments-code-decisions",
+    "title": "Don’t Call It a Decision Model",
+    "short": "Judgments and decisions",
+    "kind": "Article",
+    "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
+    "date": "2026-11-03",
+    "updated": "",
+    "added": "2026-11-05",
+    "authors": [
+      "Allie Laabs"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Explains an architecture in which Jev returns atomic judgments while code combines them with deterministic rules into actions. A customer-support example separates model signals, business facts and decision traces; the article argues for observability and extensibility without reporting a controlled performance evaluation.",
+    "summary": "Explains an architecture in which Jev returns atomic judgments while code combines them with deterministic rules into actions. A customer-support example separates model signals, business facts and decision traces; the article argues for observability and extensibility without reporting a controlled performance evaluation.",
+    "brief_zh": "解释由Jev返回原子判断、代码结合确定性规则决定动作的架构。客服示例区分模型信号、业务事实与决策轨迹；文章讨论可观察性与可扩展性，未提供受控性能评测。",
+    "summary_zh": "解释由Jev返回原子判断、代码结合确定性规则决定动作的架构。客服示例区分模型信号、业务事实与决策轨迹；文章讨论可观察性与可扩展性，未提供受控性能评测。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original TypeSafe blog; visible author and publication date",
+    "review": "Full article, author and first publication date verified 2026-11-05",
+    "limitation": "Vendor architecture guidance and illustrative traces; no controlled accuracy, speed or robustness experiment."
+  },
+  {
+    "id": "typesafe-cookbook-function-calling",
+    "title": "TypeSafe · Typed function dispatch",
+    "short": "Typed function dispatch",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/function_calling.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-05",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Maps Literal, list-of-Literal and boolean parameters into Choice/Noul questions and batches function selection with all candidate arguments. Optional-argument presence checks preserve defaults; reported confidence is the minimum component confidence, not a calibrated probability that the whole call is correct.",
+    "summary": "Maps Literal, list-of-Literal and boolean parameters into Choice/Noul questions and batches function selection with all candidate arguments. Optional-argument presence checks preserve defaults; reported confidence is the minimum component confidence, not a calibrated probability that the whole call is correct.",
+    "brief_zh": "将Literal、Literal列表及布尔参数映射为Choice/Noul问题，把函数选择与全部候选参数批量询问。可选参数存在性检查保留默认值；汇总置信度取各部分最小值，不是整次调用正确的已校准概率。",
+    "summary_zh": "将Literal、Literal列表及布尔参数映射为Choice/Noul问题，把函数选择与全部候选参数批量询问。可选参数存在性检查保留默认值；汇总置信度取各部分最小值，不是整次调用正确的已校准概率。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial text and displayed examples",
+    "review": "Original tutorial design and example scope inspected 2026-11-05; publication date unknown; code not executed",
+    "limitation": "Illustrative examples, not a representative benchmark or independently reproduced result."
+  },
+  {
+    "id": "typesafe-cookbook-hierarchical-classification",
+    "title": "TypeSafe · Hierarchical Choice search",
+    "short": "Hierarchical Choice search",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-05",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Uses Choice probabilities at hierarchy nodes and parallel beam search ranked by the geometric mean of edge probabilities. In three labeled examples, beam width 3 finds all expected leaves versus two for greedy search; path scores are ranking heuristics, not calibrated leaf probabilities.",
+    "summary": "Uses Choice probabilities at hierarchy nodes and parallel beam search ranked by the geometric mean of edge probabilities. In three labeled examples, beam width 3 finds all expected leaves versus two for greedy search; path scores are ranking heuristics, not calibrated leaf probabilities.",
+    "brief_zh": "在层级节点使用Choice概率，以边概率几何均值排序并行束搜索。三个标注示例中束宽3找到全部预期叶节点，贪心找到两个；路径分数是排序启发式，不是已校准的叶节点概率。",
+    "summary_zh": "在层级节点使用Choice概率，以边概率几何均值排序并行束搜索。三个标注示例中束宽3找到全部预期叶节点，贪心找到两个；路径分数是排序启发式，不是已校准的叶节点概率。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial text and displayed examples",
+    "review": "Original tutorial design and example scope inspected 2026-11-05; publication date unknown; code not executed",
+    "limitation": "Illustrative examples, not a representative benchmark or independently reproduced result."
   }
 ]

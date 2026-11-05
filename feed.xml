@@ -6,6 +6,20 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation</title>
+      <link>https://arxiv.org/abs/2611.06384</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.06384#publication</guid>
+      <description>Audits Jev, Clef Flash and Perplexity Decider with 702,000 judgments over 9,000 multiply annotated items from six datasets. Position, endorsement and framing changes alter preferences despite unchanged texts, distinguishing repeatability, presentation robustness and human alignment; detailed full-text audit remains pending.</description>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Zuse: A Decision Model for European Languages</title>
+      <link>https://arxiv.org/abs/2611.06238</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.06238#publication</guid>
+      <description>Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.</description>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Fast, Cheap, and Fair? Evaluating Decision Models</title>
       <link>https://arxiv.org/abs/2611.04510</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.04510#publication</guid>
@@ -23,7 +37,7 @@
       <title>Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev</title>
       <link>https://arxiv.org/abs/2611.04101</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.04101#publication</guid>
-      <description>Tests structured memory on 30 synthetic clinical cases and 120 Jev questions. Accuracy changes from 90.0% to 93.3% (five corrections, one regression; exact McNemar p=0.219), with lower choice log loss and binary Brier score; oracle memory and single-author labels limit the result to a synthetic interface pilot.</description>
+      <description>Adds oracle structured memory to the same 30 synthetic vignettes in a paired 120-question Jev pilot. Correct answers rise from 108 to 112 (five gains, one loss; exact McNemar p=0.219), while probability scores improve; case clustering, unreviewed labels and an unrecorded model revision limit inference.</description>
       <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1390,20 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.35865#publication</guid>
       <description>Uses paired evidence and permutation constraints to improve typed-readout robustness.</description>
       <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Typed Decision Models: An Early Evidence Audit and Evaluation Checklist</title>
-      <link>https://arxiv.org/abs/2609.32160</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.32160#publication</guid>
-      <description>Audits the first research wave and its evaluation practices.</description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev at the Agent Authorization Boundary: Evaluating TypeSafe’s Decision Model on Allow, Hold, and Deny</title>
-      <link>https://zenodo.org/records/22952571</link>
-      <guid isPermaLink="false">https://zenodo.org/records/22952571#publication</guid>
-      <description>Evaluates allow, hold and deny against authored policy specifications.</description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
