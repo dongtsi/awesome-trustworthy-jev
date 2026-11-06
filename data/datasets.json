@@ -535,5 +535,17 @@
     "type": "benchmark",
     "checked": "2026-11-05",
     "verification": "Paper-only fallback. Original appendix specifies synthetic benchmark v1.1 generated October 12, 2026; no standalone public data release verified. Generation/run date is not the paper publication date."
+  },
+  "Zuse European development suite": {
+    "url": "https://arxiv.org/abs/2611.06238",
+    "type": "benchmark",
+    "checked": "2026-11-06",
+    "verification": "Original paper fallback; composite evaluation sources and splits verified in full text. Sampled European rows are not released; no standalone suite release verified."
+  },
+  "Zuse world-language evaluation": {
+    "url": "https://arxiv.org/abs/2611.06238",
+    "type": "benchmark",
+    "checked": "2026-11-06",
+    "verification": "Original paper fallback; composite evaluation sources and splits verified in full text. Sampled European rows are not released; no standalone suite release verified."
   }
 }

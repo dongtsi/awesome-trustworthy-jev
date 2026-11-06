@@ -1823,5 +1823,27 @@
     },
     "source_section": "Full v1: paired benchmark, output-specific metrics, results, limitations and reproducibility appendix",
     "source": "https://arxiv.org/pdf/2611.04101v1"
+  },
+  {
+    "id": "2611.06238",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Zuse European development suite",
+      "Zuse world-language evaluation"
+    ],
+    "data_role": {
+      "en": "Public-source European development suite reused for selection; post-freeze world-language evaluation with overlapping European sources",
+      "zh": "公开来源欧洲开发集被重复用于选型；冻结后世界语言评测与欧洲集存在来源重叠"
+    },
+    "design": {
+      "en": "Three frozen-base LoRA/pointer models (4B/9B/27B). European suite: 20,044 rows, 11 sources, nine task groups, 27 languages; used for selection and error-driven design. World suite: 32,700 rows from Belebele/SIB-200 in 210 languages. A 1,500-row sample measures planted-instruction following and 1,223 Choice rows measure option-order flips. Most results are single-seed, 16-bit; breadth and When2Call use deployed 4-bit endpoints.",
+      "zh": "三个冻结骨干LoRA/指针模型（4B/9B/27B）。欧洲集20044行、11来源、9任务组、27语言，用于选型及错误驱动设计；世界语言集含Belebele/SIB-200的32700行、210语言。1500行样本测植入指令跟随，1223个Choice测选项顺序翻转。多数结果单种子、16位；广度评测与When2Call用部署的4位端点。"
+    },
+    "reading": {
+      "en": "27B European accuracy 87.5%, pooled ECE 0.016 versus source-weighted 0.035. Auto@5 is an in-sample upper bound: a test-selected threshold yields 8.9% error on development; reverse transfer yields 2.4% error at 61% coverage. Planted-instruction following is 8.1% versus 5.8% clean baseline and accuracy 87.1→85.6 on the sample. Earlier wrong-only augmentation created a shortcut; the corrected run also changed order augmentation, so its effect is confounded. No European head-to-head Jev/Kev/Clef comparison.",
+      "zh": "27B欧洲准确率87.5%，汇总ECE 0.016、来源加权0.035。auto@5是样本内上界：测试集选出的阈值在开发集产生8.9%错误；反向迁移为61%覆盖、2.4%错误。植入指令跟随率8.1%，干净基线5.8%，同一样本准确率87.1→85.6。早期仅指向错误答案的增强形成捷径；修正训练还改变了顺序增强，效应有混杂。未在欧洲集上与Jev/Kev/Clef直接对比。"
+    },
+    "source_section": "v1 §§3–8, Tables 2–7 and Availability",
+    "source": "https://arxiv.org/pdf/2611.06238v1"
   }
 ]

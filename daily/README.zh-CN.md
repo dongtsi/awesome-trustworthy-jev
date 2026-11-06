@@ -2,10 +2,18 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-05
+
+- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev)
+- [Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage](https://arxiv.org/abs/2611.08229) — 将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。 `评测` · [PDF](https://arxiv.org/pdf/2611.08229v1)
+- [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014) — 在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。 `评测` · [PDF](https://arxiv.org/pdf/2611.08014v1)
+- [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — 提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)
+- [Extending Reasoning in Typed Decision Models via Looping](https://arxiv.org/abs/2611.07736) — RELOAD将中间层阻尼循环与类型化决策模型联合训练，并用控制器按输入选择循环次数。六个0.4B至4B模型上，作者报告准确率与校准改善，尤其在超出训练推理深度的问题上；控制器以约四分之三计算量保留大部分增益。 `评测` · [PDF](https://arxiv.org/pdf/2611.07736v1)
+
 ## 2026-11-04
 
 - [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384) — 在六数据集9000个多标注样本上收集702000次判断，审计Jev、Clef Flash和Perplexity Decider。文本不变时，位置、背书和决策框架变化仍改变偏好，区分了重复性、呈现鲁棒性与人类一致性；详细全文审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.06384v1)
-- [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238) — 研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。 `评测` · [PDF](https://arxiv.org/pdf/2611.06238v1)
+- [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238) — 评测商用Zuse适配器在20044条欧洲语言开发样本及32700条多语言样本上的表现。27B报告开发准确率87.5%，汇总ECE 0.016、来源加权0.035，并观察到阈值迁移失败；权重未开放，选型复用限制泛化结论。 `评测` · [PDF](https://arxiv.org/pdf/2611.06238v1) · [代码](https://github.com/binericai/models/tree/main/zuse)
 
 ## 2026-11-03
 

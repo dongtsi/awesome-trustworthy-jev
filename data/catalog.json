@@ -20180,26 +20180,31 @@
     "authors": [
       "Umair Mehmood Imam"
     ],
-    "target": "open",
+    "target": "mixed",
     "categories": [
       "foundations/architecture",
-      "trustworthiness/reliability"
+      "trustworthiness/reliability",
+      "trustworthiness/security"
     ],
     "contributions": [
       "research",
       "evaluation"
     ],
-    "brief_en": "Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.",
-    "summary": "Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.",
-    "brief_zh": "研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。",
-    "summary_zh": "研究面向27种欧洲语言的4B/9B/27B决策模型，在冻结开放权重骨干上训练适配器与指针头。27B在同时用于模型选择的开发集上报告87.5%准确率、汇总ECE 0.016；单种子分析发现校准误差主要随任务变化，跨语言覆盖受骨干限制。",
+    "brief_en": "Evaluates commercial Zuse adapters on 20,044 European development rows and 32,700 multilingual rows. Zuse-27B reports 87.5% development accuracy, pooled ECE 0.016 versus source-weighted 0.035, and threshold-transfer failures; weights are not openly released, and selection reuse limits generalization claims.",
+    "summary": "Evaluates commercial Zuse adapters on 20,044 European development rows and 32,700 multilingual rows. Zuse-27B reports 87.5% development accuracy, pooled ECE 0.016 versus source-weighted 0.035, and threshold-transfer failures; weights are not openly released, and selection reuse limits generalization claims.",
+    "brief_zh": "评测商用Zuse适配器在20044条欧洲语言开发样本及32700条多语言样本上的表现。27B报告开发准确率87.5%，汇总ECE 0.016、来源加权0.035，并观察到阈值迁移失败；权重未开放，选型复用限制泛化结论。",
+    "summary_zh": "评测商用Zuse适配器在20044条欧洲语言开发样本及32700条多语言样本上的表现。27B报告开发准确率87.5%，汇总ECE 0.016、来源加权0.035，并观察到阈值迁移失败；权重未开放，选型复用限制泛化结论。",
     "theme": "Calibration",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, first date, authors, abstract and scope verified 2026-11-05; detailed full-text audit pending",
-    "limitation": "Author-reported findings; detailed methods/results audit and independent reproduction pending. Zuse model artifacts were not verified."
+    "datasets": [
+      "Zuse European development suite",
+      "Zuse world-language evaluation"
+    ],
+    "evidence": "Original arXiv v1 full text, tables, limitations and availability statement",
+    "review": "Full v1 methods, metrics, training confounds and availability audited 2026-11-06; no independent reproduction",
+    "limitation": "European suite used for model selection and repeated test observation; mostly single-seed comparisons, source-clustered rows and undisclosed training data. Zuse weights and training code are not open; the paper also compares TypeSafe Jev and Kev. Auto@5 thresholds are chosen in-sample, not a deployment guarantee.",
+    "code": "https://github.com/binericai/models/tree/main/zuse"
   },
   {
     "id": "typesafe-judgments-code-decisions",
@@ -20294,5 +20299,331 @@
     "evidence": "Original official tutorial text and displayed examples",
     "review": "Original tutorial design and example scope inspected 2026-11-05; publication date unknown; code not executed",
     "limitation": "Illustrative examples, not a representative benchmark or independently reproduced result."
+  },
+  {
+    "id": "2611.08439",
+    "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+    "short": "Ru-Jev label wording",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08439",
+    "pdf": "https://arxiv.org/pdf/2611.08439v1",
+    "doi": "10.48550/arXiv.2611.08439",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.08439v1",
+    "added": "2026-11-06",
+    "authors": [
+      "Vladimir Beskorovainyi"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.",
+    "summary": "Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.",
+    "brief_zh": "固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。",
+    "summary_zh": "固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending.",
+    "code": "https://github.com/beskvladimir-create/ru-jev"
+  },
+  {
+    "id": "2611.08229",
+    "title": "Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage",
+    "short": "Held-out web attack triage",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08229",
+    "pdf": "https://arxiv.org/pdf/2611.08229v1",
+    "doi": "10.48550/arXiv.2611.08229",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.08229v1",
+    "added": "2026-11-06",
+    "authors": [
+      "Maciej Kisielewicz",
+      "Michał Kędziora",
+      "Ngoc Thanh Nguyen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/intrusion",
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates two-tier web triage with seven attack families held out of training, recalibration and threshold selection. Jev and Clef escalate at least 97.6% of each family within a 5% benign budget, but undisclosed pretraining, benign-twin false alarms and probability-guided evasion limit the security conclusion.",
+    "summary": "Evaluates two-tier web triage with seven attack families held out of training, recalibration and threshold selection. Jev and Clef escalate at least 97.6% of each family within a 5% benign budget, but undisclosed pretraining, benign-twin false alarms and probability-guided evasion limit the security conclusion.",
+    "brief_zh": "将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。",
+    "summary_zh": "将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending."
+  },
+  {
+    "id": "2611.08014",
+    "title": "Probabilistic Relevance Decisions for Semantic Retrieval",
+    "short": "Probabilistic relevance",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08014",
+    "pdf": "https://arxiv.org/pdf/2611.08014v1",
+    "doi": "10.48550/arXiv.2611.08014",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.08014v1",
+    "added": "2026-11-06",
+    "authors": [
+      "Bahadır Tatar",
+      "Cevat Şener"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares BGE-M3 retrieval with Jev Noul and OpenAI Predicate reranking on 300 SciFact test queries. At full-corpus depth 50, nDCG@10 is 0.6413/0.7805/0.7545; depth-100 changes are uncertain, and score ties, cached latency and enriched-pool design constrain interpretation.",
+    "summary": "Compares BGE-M3 retrieval with Jev Noul and OpenAI Predicate reranking on 300 SciFact test queries. At full-corpus depth 50, nDCG@10 is 0.6413/0.7805/0.7545; depth-100 changes are uncertain, and score ties, cached latency and enriched-pool design constrain interpretation.",
+    "brief_zh": "在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。",
+    "summary_zh": "在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending."
+  },
+  {
+    "id": "2611.07854",
+    "title": "Towards Foundation Decision Models: Drex",
+    "short": "Drex decision models",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.07854",
+    "pdf": "https://arxiv.org/pdf/2611.07854v1",
+    "doi": "10.48550/arXiv.2611.07854",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.07854v1",
+    "added": "2026-11-06",
+    "authors": [
+      "Nischay Dhankhar",
+      "Alisher Amantay",
+      "Zhanibek Datbayev",
+      "Darkhan Akhmetov",
+      "Yash Shah",
+      "Nurmukhamed Ubaidullayev",
+      "Raman Saparkhan",
+      "Dos Baha",
+      "Abulhair Saparov"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Presents four Drex typed decision models with supervised training, adjusted-feedback reinforcement learning and option-consistency losses. Authors report Max scoring 67.52 versus Jev 1.14.0 at 60.70 on Decision Index 0.4.1; model artifacts and detailed benchmark comparability remain to be audited.",
+    "summary": "Presents four Drex typed decision models with supervised training, adjusted-feedback reinforcement learning and option-consistency losses. Authors report Max scoring 67.52 versus Jev 1.14.0 at 60.70 on Decision Index 0.4.1; model artifacts and detailed benchmark comparability remain to be audited.",
+    "brief_zh": "提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。",
+    "summary_zh": "提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending.",
+    "code": "https://github.com/nace-ai/drex-decision-models"
+  },
+  {
+    "id": "2611.07736",
+    "title": "Extending Reasoning in Typed Decision Models via Looping",
+    "short": "RELOAD looping",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.07736",
+    "pdf": "https://arxiv.org/pdf/2611.07736v1",
+    "doi": "10.48550/arXiv.2611.07736",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.07736v1",
+    "added": "2026-11-06",
+    "authors": [
+      "David Berghaus",
+      "Arber Zela",
+      "Behzad Shomali",
+      "Markus Frey",
+      "Mehdi Ali",
+      "Rafet Sifa",
+      "Volkan Cevher"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "RELOAD jointly trains damped middle-layer loops with a typed decision model and learns an input-adaptive pass controller. Across six 0.4B–4B models, authors report improved accuracy and calibration, especially beyond training reasoning depth; the controller retains most gains at roughly three quarters of the compute.",
+    "summary": "RELOAD jointly trains damped middle-layer loops with a typed decision model and learns an input-adaptive pass controller. Across six 0.4B–4B models, authors report improved accuracy and calibration, especially beyond training reasoning depth; the controller retains most gains at roughly three quarters of the compute.",
+    "brief_zh": "RELOAD将中间层阻尼循环与类型化决策模型联合训练，并用控制器按输入选择循环次数。六个0.4B至4B模型上，作者报告准确率与校准改善，尤其在超出训练推理深度的问题上；控制器以约四分之三计算量保留大部分增益。",
+    "summary_zh": "RELOAD将中间层阻尼循环与类型化决策模型联合训练，并用控制器按输入选择循环次数。六个0.4B至4B模型上，作者报告准确率与校准改善，尤其在超出训练推理深度的问题上；控制器以约四分之三计算量保留大部分增益。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
+    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending."
+  },
+  {
+    "id": "typesafe-cookbook-date-extraction-cookbook",
+    "title": "TypeSafe · Date extraction with code-side resolution",
+    "short": "Date extraction with code-side resolution",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-06",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Uses seven parallel Choice questions to read date parts, then deterministic code resolves calendar rules and flags incomplete or low-confidence answers. The minimum component confidence routes review but is not a calibrated probability of a correct complete date.",
+    "summary": "Uses seven parallel Choice questions to read date parts, then deterministic code resolves calendar rules and flags incomplete or low-confidence answers. The minimum component confidence routes review but is not a calibrated probability of a correct complete date.",
+    "brief_zh": "以七个并行Choice问题读取日期组成，再由确定性代码处理日历规则，并标记缺失或低置信答案。各部分最小置信度用于复核路由，不代表完整日期正确的已校准概率。",
+    "summary_zh": "以七个并行Choice问题读取日期组成，再由确定性代码处理日历规则，并标记缺失或低置信答案。各部分最小置信度用于复核路由，不代表完整日期正确的已校准概率。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial prose, design and displayed results",
+    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
+  },
+  {
+    "id": "typesafe-cookbook-pre-parsed-value-extraction-cookbook",
+    "title": "TypeSafe · Pre-parsed value selection",
+    "short": "Pre-parsed value selection",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-06",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Regexes propose candidate spans, Choice selects the requested email, phone or amount, and code copies and normalizes the selected string. Constrained copying prevents invented spans; candidate recall, semantic selection and locale-aware normalization remain separate error sources.",
+    "summary": "Regexes propose candidate spans, Choice selects the requested email, phone or amount, and code copies and normalizes the selected string. Constrained copying prevents invented spans; candidate recall, semantic selection and locale-aware normalization remain separate error sources.",
+    "brief_zh": "正则先提出候选片段，Choice选择所需邮箱、电话或金额，再由代码复制并规范化字符串。受约束复制避免编造片段；候选召回、语义选择和地区格式解析仍是独立误差来源。",
+    "summary_zh": "正则先提出候选片段，Choice选择所需邮箱、电话或金额，再由代码复制并规范化字符串。受约束复制避免编造片段；候选召回、语义选择和地区格式解析仍是独立误差来源。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial prose, design and displayed results",
+    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
+  },
+  {
+    "id": "typesafe-cookbook-rerank-typesafe",
+    "title": "TypeSafe · Noul reranking walkthrough",
+    "short": "Noul reranking walkthrough",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-06",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Uses Noul scores to rerank 30 BM25 candidates per query on a 40-query, 3,565-passage CLERC demonstration. Reported top-1 accuracy rises from 5% to 18% and top-10 from 38% to 62%; the selected small example neither establishes calibration nor measures retrieval beyond its shortlist.",
+    "summary": "Uses Noul scores to rerank 30 BM25 candidates per query on a 40-query, 3,565-passage CLERC demonstration. Reported top-1 accuracy rises from 5% to 18% and top-10 from 38% to 62%; the selected small example neither establishes calibration nor measures retrieval beyond its shortlist.",
+    "brief_zh": "在40查询、3565段落的CLERC演示中，以Noul对每个查询的30个BM25候选重排序。报告top-1准确率5%升至18%、top-10为38%升至62%；小规模选定示例不证明概率校准，也不评测候选列表外的检索。",
+    "summary_zh": "在40查询、3565段落的CLERC演示中，以Noul对每个查询的30个BM25候选重排序。报告top-1准确率5%升至18%、top-10为38%升至62%；小规模选定示例不证明概率校准，也不评测候选列表外的检索。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial prose, design and displayed results",
+    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
+  },
+  {
+    "id": "typesafe-cookbook-autoresearch-feature-discovery",
+    "title": "TypeSafe · Autoresearch question features",
+    "short": "Autoresearch question features",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-06",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "An LLM proposes Score/Noul questions whose outputs become CatBoost features; development-fold errors guide five refinement rounds. On one 800-review holdout, RMSE falls 1.87→1.77 from the first to fifth round, with a row-bootstrap difference interval of −0.147 to −0.050; this is a single-run demonstration.",
+    "summary": "An LLM proposes Score/Noul questions whose outputs become CatBoost features; development-fold errors guide five refinement rounds. On one 800-review holdout, RMSE falls 1.87→1.77 from the first to fifth round, with a row-bootstrap difference interval of −0.147 to −0.050; this is a single-run demonstration.",
+    "brief_zh": "LLM提出Score/Noul问题，输出作为CatBoost特征，开发集交叉验证误差引导五轮改进。单次800条留出集上，第一至第五轮RMSE由1.87降至1.77，逐行bootstrap差值区间为−0.147至−0.050；结果来自单数据集单次演示。",
+    "summary_zh": "LLM提出Score/Noul问题，输出作为CatBoost特征，开发集交叉验证误差引导五轮改进。单次800条留出集上，第一至第五轮RMSE由1.87降至1.77，逐行bootstrap差值区间为−0.147至−0.050；结果来自单数据集单次演示。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original official tutorial prose, design and displayed results",
+    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
   }
 ]

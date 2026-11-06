@@ -6,6 +6,41 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes</title>
+      <link>https://arxiv.org/abs/2611.08439</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08439#publication</guid>
+      <description>Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage</title>
+      <link>https://arxiv.org/abs/2611.08229</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08229#publication</guid>
+      <description>Evaluates two-tier web triage with seven attack families held out of training, recalibration and threshold selection. Jev and Clef escalate at least 97.6% of each family within a 5% benign budget, but undisclosed pretraining, benign-twin false alarms and probability-guided evasion limit the security conclusion.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Probabilistic Relevance Decisions for Semantic Retrieval</title>
+      <link>https://arxiv.org/abs/2611.08014</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08014#publication</guid>
+      <description>Compares BGE-M3 retrieval with Jev Noul and OpenAI Predicate reranking on 300 SciFact test queries. At full-corpus depth 50, nDCG@10 is 0.6413/0.7805/0.7545; depth-100 changes are uncertain, and score ties, cached latency and enriched-pool design constrain interpretation.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Towards Foundation Decision Models: Drex</title>
+      <link>https://arxiv.org/abs/2611.07854</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.07854#publication</guid>
+      <description>Presents four Drex typed decision models with supervised training, adjusted-feedback reinforcement learning and option-consistency losses. Authors report Max scoring 67.52 versus Jev 1.14.0 at 60.70 on Decision Index 0.4.1; model artifacts and detailed benchmark comparability remain to be audited.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Extending Reasoning in Typed Decision Models via Looping</title>
+      <link>https://arxiv.org/abs/2611.07736</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.07736#publication</guid>
+      <description>RELOAD jointly trains damped middle-layer loops with a typed decision model and learns an input-adaptive pass controller. Across six 0.4B–4B models, authors report improved accuracy and calibration, especially beyond training reasoning depth; the controller retains most gains at roughly three quarters of the compute.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation</title>
       <link>https://arxiv.org/abs/2611.06384</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.06384#publication</guid>
@@ -16,7 +51,7 @@
       <title>Zuse: A Decision Model for European Languages</title>
       <link>https://arxiv.org/abs/2611.06238</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.06238#publication</guid>
-      <description>Studies 4B/9B/27B decision models for 27 European languages using frozen open-weight bases, adapters and pointer heads. The 27B model reports 87.5% accuracy and pooled ECE 0.016 on a development suite also used for model selection; single-seed analyses find task-structured miscalibration and limits from base-model language coverage.</description>
+      <description>Evaluates commercial Zuse adapters on 20,044 European development rows and 32,700 multilingual rows. Zuse-27B reports 87.5% development accuracy, pooled ECE 0.016 versus source-weighted 0.035, and threshold-transfer failures; weights are not openly released, and selection reuse limits generalization claims.</description>
       <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1369,41 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.33671#publication</guid>
       <description>Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer.</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>You Only Edit Once: Incentivizing In-Context Capability of LLMs via Local Demonstration Refinement</title>
-      <link>https://arxiv.org/abs/2609.33609</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33609#publication</guid>
-      <description>Uses typed decisions in local demonstration refinement.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Evaluating System One Models for Agent Security Decisions: Reliability, Calibration, and Selective Automation</title>
-      <link>https://arxiv.org/abs/2609.33401</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33401#publication</guid>
-      <description>Compares security judgments across attack groups and tests confidence-based escalation. Aggregate calibration can hide groups with more missed attacks.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Beyond Calibration: Do a Typed-Decision Model's Probabilities Obey the Probability Axioms?</title>
-      <link>https://arxiv.org/abs/2609.33209</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33209#publication</guid>
-      <description>Tests logical probability coherence without needing class labels.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Knows Its Slips, Reads the Page: A Pre-registered Study of Confidence and Abstention in Jev, a Calibrated Decision Model</title>
-      <link>https://zenodo.org/records/23288651</link>
-      <guid isPermaLink="false">https://zenodo.org/records/23288651#publication</guid>
-      <description>Confidence predicts errors beyond input difficulty but shifts with presentation; explicit abstention works directionally, while payoff sensitivity and label invariance fail in generated tasks.</description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>PACT: Pairwise-Anchored Calibrated Tuning for Single-Token Typed Decisions</title>
-      <link>https://arxiv.org/abs/2609.35865</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.35865#publication</guid>
-      <description>Uses paired evidence and permutation constraints to improve typed-readout robustness.</description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
