@@ -9976,11 +9976,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12. The revised example includes the system prompt and serialized verification state/questions in cached function inputs.",
-    "summary_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。 修订示例将系统提示词和序列化核验状态/问题纳入缓存函数输入。",
-    "limitation": "One authored worked example and a separate historical internal sweep; judge-based quality is not independently verified ground truth, and the Jev 1.12 frontier does not measure Jev 1.14.0.",
-    "evidence": "Original official documentation inspected 2026-11-03",
-    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.",
+    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee.",
+    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。",
+    "limitation": "Single dataset and model run; threshold sweep and reported frontier share evaluation rows, expanded answer key not independently audited; no latency or deployed-risk guarantee.",
+    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07",
+    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates field-level Noul verification for structured extraction: escalate from GPT-5.4-mini to GPT-5.5-reasoning when any predicted field error exceeds 0.7. The Jev 1.14.0 worked example is distinct from the historical 100-prompt internal frontier using Jev 1.12. The revised example includes the system prompt and serialized verification state/questions in cached function inputs.",
-    "brief_zh": "对结构化抽取逐字段做Noul核验，任一字段错误概率超过0.7便从GPT-5.4-mini升级到GPT-5.5-reasoning。Jev 1.14.0的单例演示与使用Jev 1.12的历史100提示词内部成本/质量曲线分开理解。 修订示例将系统提示词和序列化核验状态/问题纳入缓存函数输入。",
+    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee.",
+    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -20324,18 +20324,22 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.",
-    "summary": "Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.",
-    "brief_zh": "固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。",
-    "summary_zh": "固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。",
+    "brief_en": "Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect.",
+    "summary": "Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect.",
+    "brief_zh": "在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。",
+    "summary_zh": "在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。",
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-06; detailed full-text audit pending",
-    "limitation": "Author-reported findings; detailed methods, artifact verification and independent reproduction pending.",
-    "code": "https://github.com/beskvladimir-create/ru-jev"
+    "datasets": [
+      "Ru-Jev label-wording probes",
+      "Ru-Jev common validation intersection",
+      "Ru-Jev unseen news and emotion evaluation"
+    ],
+    "evidence": "arXiv v1 full text and versioned Zenodo code/results archive",
+    "review": "Full v1 methods, tables and confounds reviewed 2026-11-07; archive checksum and 117 listed file hashes verified; no model execution",
+    "limitation": "Release comparison confounds augmentation with partition and training-schedule changes. MASSIVE probe rows informed epoch selection and temperature fitting; one vocabulary per style and no valid second v1.3 seed. HF model card/weight retrieval failed; archive contains code/results, not weights.",
+    "code": "https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0"
   },
   {
     "id": "2611.08229",
@@ -20583,16 +20587,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Uses Noul scores to rerank 30 BM25 candidates per query on a 40-query, 3,565-passage CLERC demonstration. Reported top-1 accuracy rises from 5% to 18% and top-10 from 38% to 62%; the selected small example neither establishes calibration nor measures retrieval beyond its shortlist.",
-    "summary": "Uses Noul scores to rerank 30 BM25 candidates per query on a 40-query, 3,565-passage CLERC demonstration. Reported top-1 accuracy rises from 5% to 18% and top-10 from 38% to 62%; the selected small example neither establishes calibration nor measures retrieval beyond its shortlist.",
-    "brief_zh": "在40查询、3565段落的CLERC演示中，以Noul对每个查询的30个BM25候选重排序。报告top-1准确率5%升至18%、top-10为38%升至62%；小规模选定示例不证明概率校准，也不评测候选列表外的检索。",
-    "summary_zh": "在40查询、3565段落的CLERC演示中，以Noul对每个查询的30个BM25候选重排序。报告top-1准确率5%升至18%、top-10为38%升至62%；小规模选定示例不证明概率校准，也不评测候选列表外的检索。",
+    "brief_en": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration.",
+    "summary": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration.",
+    "brief_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。",
+    "summary_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
     "evidence": "Original official tutorial prose, design and displayed results",
-    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "review": "Original revised tutorial reviewed 2026-11-07; publication date unknown; code not executed",
     "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
   },
   {
@@ -20614,16 +20618,231 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "An LLM proposes Score/Noul questions whose outputs become CatBoost features; development-fold errors guide five refinement rounds. On one 800-review holdout, RMSE falls 1.87→1.77 from the first to fifth round, with a row-bootstrap difference interval of −0.147 to −0.050; this is a single-run demonstration.",
-    "summary": "An LLM proposes Score/Noul questions whose outputs become CatBoost features; development-fold errors guide five refinement rounds. On one 800-review holdout, RMSE falls 1.87→1.77 from the first to fifth round, with a row-bootstrap difference interval of −0.147 to −0.050; this is a single-run demonstration.",
-    "brief_zh": "LLM提出Score/Noul问题，输出作为CatBoost特征，开发集交叉验证误差引导五轮改进。单次800条留出集上，第一至第五轮RMSE由1.87降至1.77，逐行bootstrap差值区间为−0.147至−0.050；结果来自单数据集单次演示。",
-    "summary_zh": "LLM提出Score/Noul问题，输出作为CatBoost特征，开发集交叉验证误差引导五轮改进。单次800条留出集上，第一至第五轮RMSE由1.87降至1.77，逐行bootstrap差值区间为−0.147至−0.050；结果来自单数据集单次演示。",
+    "brief_en": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches.",
+    "summary": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches.",
+    "brief_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。",
+    "summary_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
     "evidence": "Original official tutorial prose, design and displayed results",
-    "review": "Original tutorial reviewed 2026-11-06; publication date unknown; code not executed",
+    "review": "Revised methods and results reviewed 2026-11-07; publication date unknown; code not executed",
     "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
+  },
+  {
+    "id": "2610.02267",
+    "title": "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+    "short": "System-1 harness audit",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.02267",
+    "pdf": "https://arxiv.org/pdf/2610.02267v1",
+    "doi": "10.48550/arXiv.2610.02267",
+    "date": "2026-10-01",
+    "updated": "2026-10-01",
+    "version": "2610.02267v1",
+    "added": "2026-11-07",
+    "authors": [
+      "Jiawei Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "A paired Jev–Laya audit covers 7,283 agent-harness cases and 6,640 robustness variants. Jev leads on nine of eleven decisions, while neither beats chance on zero-shot model routing; corrected cost accounting, held-out thresholds and content controls substantially narrow deployment claims.",
+    "summary": "A paired Jev–Laya audit covers 7,283 agent-harness cases and 6,640 robustness variants. Jev leads on nine of eleven decisions, while neither beats chance on zero-shot model routing; corrected cost accounting, held-out thresholds and content controls substantially narrow deployment claims.",
+    "brief_zh": "配对审计Jev与Laya的7283个Agent框架案例及6640个稳健性变体。Jev在11类决策中领先9类，但两者零样本模型路由均未超过随机；补计成本、留出阈值及内容对照显著收窄部署结论。",
+    "summary_zh": "配对审计Jev与Laya的7283个Agent框架案例及6640个稳健性变体。Jev在11类决策中领先9类，但两者零样本模型路由均未超过随机；补计成本、留出阈值及内容对照显著收窄部署结论。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-07; detailed full-text audit pending",
+    "limitation": "Author-reported findings; full methods and independent reproduction pending."
+  },
+  {
+    "id": "2609.30454",
+    "title": "Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model",
+    "short": "System-1 selective prediction audit",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2609.30454",
+    "pdf": "https://arxiv.org/pdf/2609.30454v1",
+    "doi": "10.48550/arXiv.2609.30454",
+    "date": "2026-09-24",
+    "updated": "2026-09-24",
+    "version": "2609.30454v1",
+    "added": "2026-11-07",
+    "authors": [
+      "Kimon Antonios Provatas",
+      "Ilias Georgakopoulos-Soares"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits calibration, selective prediction and option-order stability on 6,020 WMDP/LAB-Bench questions. Pooled ECE is 0.034 and error-detection AUROC 0.820, but task variation is substantial; cyclic option rotations change 37.4% of WMDP-Cyber answers, mostly beyond identical-call variation.",
+    "summary": "Audits calibration, selective prediction and option-order stability on 6,020 WMDP/LAB-Bench questions. Pooled ECE is 0.034 and error-detection AUROC 0.820, but task variation is substantial; cyclic option rotations change 37.4% of WMDP-Cyber answers, mostly beyond identical-call variation.",
+    "brief_zh": "在6020道WMDP/LAB-Bench题目上审计校准、选择性预测与选项顺序稳定性。汇总ECE为0.034、错误识别AUROC为0.820，但任务间差异显著；循环轮换选项改变37.4%的WMDP-Cyber答案，多数不能由相同调用的波动解释。",
+    "summary_zh": "在6020道WMDP/LAB-Bench题目上审计校准、选择性预测与选项顺序稳定性。汇总ECE为0.034、错误识别AUROC为0.820，但任务间差异显著；循环轮换选项改变37.4%的WMDP-Cyber答案，多数不能由相同调用的波动解释。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-07; detailed full-text audit pending",
+    "limitation": "Author-reported findings; full methods and independent reproduction pending."
+  },
+  {
+    "id": "2610.02586",
+    "title": "Labels Override Definitions in Jev-Style Typed Decision Models",
+    "short": "Option-label bias",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2610.02586",
+    "pdf": "https://arxiv.org/pdf/2610.02586v1",
+    "doi": "10.48550/arXiv.2610.02586",
+    "date": "2026-10-01",
+    "updated": "2026-10-01",
+    "version": "2610.02586v1",
+    "added": "2026-11-07",
+    "authors": [
+      "Seyedarmin Azizi",
+      "Erfan Baghaei Potraghloo",
+      "Massoud Pedram"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests whether open typed decision models follow option labels or their definitions across eleven tasks and PolicyBench. A reciprocal prompt-rendering edit induces or removes label bias without changing weights, locating the tested failure in interface rendering rather than necessarily in the decision head.",
+    "summary": "Tests whether open typed decision models follow option labels or their definitions across eleven tasks and PolicyBench. A reciprocal prompt-rendering edit induces or removes label bias without changing weights, locating the tested failure in interface rendering rather than necessarily in the decision head.",
+    "brief_zh": "在11项任务及PolicyBench上检验开放决策模型遵循选项标签还是定义。双向修改提示渲染即可在不改权重时引入或消除标签偏差，把所测失效定位到接口渲染，而非必然归因于决策头。",
+    "summary_zh": "在11项任务及PolicyBench上检验开放决策模型遵循选项标签还是定义。双向修改提示渲染即可在不改权重时引入或消除标签偏差，把所测失效定位到接口渲染，而非必然归因于决策头。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-07; detailed full-text audit pending",
+    "limitation": "Author-reported findings; full methods and independent reproduction pending."
+  },
+  {
+    "id": "2611.00496",
+    "title": "Swap, Replicate, Read the Mass: A Protocol for Auditing Demographic Bias in System One Decision Models",
+    "short": "Demographic bias audit protocol",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.00496",
+    "pdf": "https://arxiv.org/pdf/2611.00496v1",
+    "doi": "10.48550/arXiv.2611.00496",
+    "date": "2026-10-31",
+    "updated": "2026-10-31",
+    "version": "2611.00496v1",
+    "added": "2026-11-07",
+    "authors": [
+      "Alejandro Mozo Quesada",
+      "Sergio Gálvez Rojas",
+      "Francisco López Valverde"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits demographic bias with 1,638,000 decisions on BBQ, CrowS-Pairs and SilverSpoon across twelve models and an ablation. Option swaps reveal substantial instability, while abstention can hide stereotype-aligned probability mass; confidence tracks instability more readily than bias.",
+    "summary": "Audits demographic bias with 1,638,000 decisions on BBQ, CrowS-Pairs and SilverSpoon across twelve models and an ablation. Option swaps reveal substantial instability, while abstention can hide stereotype-aligned probability mass; confidence tracks instability more readily than bias.",
+    "brief_zh": "在BBQ、CrowS-Pairs与SilverSpoon上，对12个模型及消融配置完成1638000次决策的人口属性偏差审计。交换选项揭示明显不稳定性，弃答可能掩盖与刻板印象一致的概率质量；置信度更易反映不稳定性而非偏差。",
+    "summary_zh": "在BBQ、CrowS-Pairs与SilverSpoon上，对12个模型及消融配置完成1638000次决策的人口属性偏差审计。交换选项揭示明显不稳定性，弃答可能掩盖与刻板印象一致的概率质量；置信度更易反映不稳定性而非偏差。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-07; detailed full-text audit pending",
+    "limitation": "Author-reported findings; full methods and independent reproduction pending."
+  },
+  {
+    "id": "2611.00428",
+    "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
+    "short": "Equivalent spectra consistency",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.00428",
+    "pdf": "https://arxiv.org/pdf/2611.00428v1",
+    "doi": "10.48550/arXiv.2611.00428",
+    "date": "2026-10-30",
+    "updated": "2026-10-30",
+    "version": "2611.00428v1",
+    "added": "2026-11-07",
+    "authors": [
+      "Ziyuan Wang",
+      "Genliang Zhu",
+      "Xiaobo Chen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Tests equivalent tables/plots and missing evidence on measured optical spectra. Representation alone shifts within-model accuracy by up to 41 points; answerable truncation controls show that some apparent abstention gains arise from a truncation shortcut, with limited transfer to a second spectrum domain.",
+    "summary": "Tests equivalent tables/plots and missing evidence on measured optical spectra. Representation alone shifts within-model accuracy by up to 41 points; answerable truncation controls show that some apparent abstention gains arise from a truncation shortcut, with limited transfer to a second spectrum domain.",
+    "brief_zh": "用实测光谱的等价表格、图像及缺失证据检验模型一致性。仅改变表示便使同一模型准确率相差至多41个百分点；可回答的截断对照表明部分弃答收益来自截断捷径，向第二光谱领域的迁移有限。",
+    "summary_zh": "用实测光谱的等价表格、图像及缺失证据检验模型一致性。仅改变表示便使同一模型准确率相差至多41个百分点；可回答的截断对照表明部分弃答收益来自截断捷径，向第二光谱领域的迁移有限。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first date, abstract and scope verified 2026-11-07; detailed full-text audit pending",
+    "limitation": "Author-reported findings; full methods and independent reproduction pending."
+  },
+  {
+    "id": "typesafe-cookbook-parallel-questions",
+    "title": "TypeSafe · Parallel questions",
+    "short": "Parallel questions",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-07",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls.",
+    "summary": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls.",
+    "brief_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。",
+    "summary_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original tutorial methods and displayed results",
+    "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed",
+    "limitation": "Single pinned Wikipedia document, five repeats; serial latency baseline and reduced answer metrics."
   }
 ]

@@ -547,5 +547,23 @@
     "type": "benchmark",
     "checked": "2026-11-06",
     "verification": "Original paper fallback; composite evaluation sources and splits verified in full text. Sampled European rows are not released; no standalone suite release verified."
+  },
+  "Ru-Jev label-wording probes": {
+    "url": "https://zenodo.org/records/23986847",
+    "type": "benchmark",
+    "checked": "2026-11-07",
+    "verification": "Versioned code/results archive downloaded; MD5 and 117 SHA-256 entries verified, per-row outputs and split/seed caveats inspected. No weight files in archive; source datasets retain their stated licenses."
+  },
+  "Ru-Jev common validation intersection": {
+    "url": "https://zenodo.org/records/23986847",
+    "type": "benchmark",
+    "checked": "2026-11-07",
+    "verification": "Versioned code/results archive downloaded; MD5 and 117 SHA-256 entries verified, per-row outputs and split/seed caveats inspected. No weight files in archive; source datasets retain their stated licenses."
+  },
+  "Ru-Jev unseen news and emotion evaluation": {
+    "url": "https://zenodo.org/records/23986847",
+    "type": "benchmark",
+    "checked": "2026-11-07",
+    "verification": "Versioned code/results archive downloaded; MD5 and 117 SHA-256 entries verified, per-row outputs and split/seed caveats inspected. No weight files in archive; source datasets retain their stated licenses."
   }
 }

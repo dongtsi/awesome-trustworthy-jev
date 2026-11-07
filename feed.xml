@@ -9,7 +9,7 @@
       <title>Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes</title>
       <link>https://arxiv.org/abs/2611.08439</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.08439#publication</guid>
-      <description>Compares two Ru-Jev cross-encoder releases across ten label vocabularies while holding questions fixed. Wording augmentation improves unfamiliar ordinary words by up to 24 percentage points but not abbreviations or opaque codes; confident errors can increase with larger option sets.</description>
+      <description>Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect.</description>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -137,6 +137,20 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2611.00505#publication</guid>
       <description>Compares 14 decision models and four generative judge configurations across eleven judge benchmarks, including reference-guided evaluation, confidence cascades and injected instructions. Some models approach generative judges on tested settings, but injection susceptibility varies sharply by model; reference-generation costs and statistical comparisons need full-text audit.</description>
       <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Swap, Replicate, Read the Mass: A Protocol for Auditing Demographic Bias in System One Decision Models</title>
+      <link>https://arxiv.org/abs/2611.00496</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00496#publication</guid>
+      <description>Audits demographic bias with 1,638,000 decisions on BBQ, CrowS-Pairs and SilverSpoon across twelve models and an ablation. Option swaps reveal substantial instability, while abstention can hide stereotype-aligned probability mass; confidence tracks instability more readily than bias.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?</title>
+      <link>https://arxiv.org/abs/2611.00428</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00428#publication</guid>
+      <description>Tests equivalent tables/plots and missing evidence on measured optical spectra. Representation alone shifts within-model accuracy by up to 41 points; answerable truncation controls show that some apparent abstention gains arise from a truncation shortcut, with limited transfer to a second spectrum domain.</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Flide: Accelerating Decision Inference with Exact State Forking</title>
@@ -1147,6 +1161,20 @@
       <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Labels Override Definitions in Jev-Style Typed Decision Models</title>
+      <link>https://arxiv.org/abs/2610.02586</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.02586#publication</guid>
+      <description>Tests whether open typed decision models follow option labels or their definitions across eleven tasks and PolicyBench. A reciprocal prompt-rendering edit induces or removes label bias without changing weights, locating the tested failure in interface rendering rather than necessarily in the decision head.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses</title>
+      <link>https://arxiv.org/abs/2610.02267</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.02267#publication</guid>
+      <description>A paired Jev–Laya audit covers 7,283 agent-harness cases and 6,640 robustness variants. Jev leads on nine of eleven decisions, while neither beats chance on zero-shot model routing; corrected cost accounting, held-out thresholds and content controls substantially narrow deployment claims.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>LLM2Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them</title>
       <link>https://arxiv.org/abs/2610.02076</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.02076#publication</guid>
@@ -1375,34 +1403,6 @@
       <link>https://arxiv.org/abs/2609.33971</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2609.33971#publication</guid>
       <description>Compares direct and hierarchical decisions on matched items.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JET: Justification Evaluation in Transformer</title>
-      <link>https://arxiv.org/abs/2609.33874</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33874#publication</guid>
-      <description>Tests local candidate-likelihood inference with shared computation.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Laya as a Typed Probabilistic Assessor: An Independent Reproduction and a Preregistered Study of Calibration and Selective Escalation</title>
-      <link>https://arxiv.org/abs/2609.33843</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33843#publication</guid>
-      <description>Audits calibration and selective escalation in an open decision model.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Type-Safe Decision Frameworks for Agentic 5G Control: A Theory-Driven Testbed Characterization of Where They Can Be Applied</title>
-      <link>https://arxiv.org/abs/2609.33689</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33689#publication</guid>
-      <description>Maps when typed decision gates are applicable to network control.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints</title>
-      <link>https://arxiv.org/abs/2609.33671</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33671#publication</guid>
-      <description>Combines a calibrated CPU gate with a Laya CPU-NPU cascade for prompt safety, measuring false positives, latency and out-of-domain transfer.</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

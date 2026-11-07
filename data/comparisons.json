@@ -1845,5 +1845,28 @@
     },
     "source_section": "v1 §§3–8, Tables 2–7 and Availability",
     "source": "https://arxiv.org/pdf/2611.06238v1"
+  },
+  {
+    "id": "2611.08439",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Ru-Jev label-wording probes",
+      "Ru-Jev common validation intersection",
+      "Ru-Jev unseen news and emotion evaluation"
+    ],
+    "data_role": {
+      "en": "Wording probes reused for epoch/temperature selection; exact common-input validation intersection; separate news/emotion rows unseen by Ru-Jev",
+      "zh": "措辞探针复用于轮次/温度选择；完全相同输入的验证交集；Ru-Jev未训练的新闻/情绪样本"
+    },
+    "design": {
+      "en": "307M mmBERT pointwise cross-encoder; 1,000 MASSIVE questions, ten label vocabularies, five versus eighteen options. Paired McNemar tests with Holm correction across 23 cells; label-then-question bootstrap intervals. Compare 10,157 identical-input rows across six Russian SuperGLUE tasks, plus 1,000 news and 1,000 emotion rows.",
+      "zh": "307M mmBERT逐选项交叉编码器；1000个MASSIVE问题、十种词表、5或18选项。配对McNemar检验对23个单元做Holm校正，按标签再按问题bootstrap。另比较六个Russian SuperGLUE任务中10157条完全相同输入，以及各1000条新闻、情绪样本。"
+    },
+    "reading": {
+      "en": "Strict jargon with five options rises .550→.786, but the eighteen-option label-cluster interval for its gain crosses zero. Strict slang at eighteen options rises .369→.419 without surviving Holm correction, and confident errors rise 151→191 per 1,000. Common validation accuracy is identical (.7994); lower released temperature does not yield lower residual ECE. No valid v1.3 replication, and wording probes are not untouched tests.",
+      "zh": "严格陌生词切片在5选项下从.550升至.786，但18选项收益的标签聚类区间跨零。严格俚语18选项从.369升至.419未通过Holm校正，每千高置信错误151增至191。共同验证准确率同为.7994；发布温度降低不等于残余ECE改善。无有效v1.3复现实验，措辞探针也不是未触碰测试集。"
+    },
+    "source_section": "v1 full text, Tables 1–7; archived results/validation and results/seeds notes",
+    "source": "https://arxiv.org/pdf/2611.08439v1"
   }
 ]

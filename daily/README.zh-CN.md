@@ -4,7 +4,7 @@
 
 ## 2026-11-05
 
-- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 固定问题、改变十种标签词表，比较Ru-Jev交叉编码器的两个版本。措辞增强对陌生普通词最高改善24个百分点，对缩写和不透明代码无实用增益；增加选项后高置信错误可能上升。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev)
+- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
 - [Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage](https://arxiv.org/abs/2611.08229) — 将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。 `评测` · [PDF](https://arxiv.org/pdf/2611.08229v1)
 - [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014) — 在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。 `评测` · [PDF](https://arxiv.org/pdf/2611.08014v1)
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — 提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)
@@ -38,9 +38,11 @@
 - [S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments](https://arxiv.org/abs/2611.00911) — 在24个认知任务上评估五个开放模型及Jev，区分任务条件、评分与已披露适配。研究决策是否响应证据、反馈、记忆需求及未来机会；总体准确性与预测人类行为是不同指标。 `评测` · [PDF](https://arxiv.org/pdf/2611.00911v1)
 - [Can Jev Improve Demonstration Retrieval for In-Context Learning?](https://arxiv.org/abs/2611.00737) — 利用Jev概率效用判断选择上下文示例，再将判断蒸馏到轻量MLP以减少候选评分开销。数据集、教师推理成本及留出迁移效果待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.00737v1)
 - [To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?](https://arxiv.org/abs/2611.00505) — 比较14个决策模型和四种生成式裁判配置，覆盖11个裁判基准、参考答案辅助评判、置信度级联与注入指令。部分模型在已测设置中接近生成式裁判，但注入敏感性差异显著；参考答案生成成本及统计比较待全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2611.00505v1)
+- [Swap, Replicate, Read the Mass: A Protocol for Auditing Demographic Bias in System One Decision Models](https://arxiv.org/abs/2611.00496) — 在BBQ、CrowS-Pairs与SilverSpoon上，对12个模型及消融配置完成1638000次决策的人口属性偏差审计。交换选项揭示明显不稳定性，弃答可能掩盖与刻板印象一致的概率质量；置信度更易反映不稳定性而非偏差。 `评测` · [PDF](https://arxiv.org/pdf/2611.00496v1)
 
 ## 2026-10-30
 
+- [Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?](https://arxiv.org/abs/2611.00428) — 用实测光谱的等价表格、图像及缺失证据检验模型一致性。仅改变表示便使同一模型准确率相差至多41个百分点；可回答的截断对照表明部分弃答收益来自截断捷径，向第二光谱领域的迁移有限。 `评测` · [PDF](https://arxiv.org/pdf/2611.00428v1)
 - [Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148) — 通过注意力及循环Gated DeltaNet层的精确状态分叉，将逻辑决策分支与展平执行分离。作者报告相对vLLM/SGLang最高9.5倍查询加速；精确算术下等价与实际浮点偏差是不同结论。 `评测` · [PDF](https://arxiv.org/pdf/2610.42148v1)
 - [Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models](https://arxiv.org/abs/2610.41199) — 在五个制造业案例中研究每类两张参考图的Jev/Clef-Flash决策、代理式描述优化及概率校准。摘要报告15个配置中13个Brier分数下降；校准划分和泛化性仍需全文核查。 `评测` · [PDF](https://arxiv.org/pdf/2610.41199v1)
 
@@ -272,6 +274,8 @@
 
 ## 2026-10-01
 
+- [Labels Override Definitions in Jev-Style Typed Decision Models](https://arxiv.org/abs/2610.02586) — 在11项任务及PolicyBench上检验开放决策模型遵循选项标签还是定义。双向修改提示渲染即可在不改权重时引入或消除标签偏差，把所测失效定位到接口渲染，而非必然归因于决策头。 `评测` · [PDF](https://arxiv.org/pdf/2610.02586v1)
+- [Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267) — 配对审计Jev与Laya的7283个Agent框架案例及6640个稳健性变体。Jev在11类决策中领先9类，但两者零样本模型路由均未超过随机；补计成本、留出阈值及内容对照显著收窄部署结论。 `评测` · [PDF](https://arxiv.org/pdf/2610.02267v1)
 - [LLM2Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them](https://arxiv.org/abs/2610.02076) — 保留架构直接读候选概率，比较无需训练与针对性微调。 `评测` · [PDF](https://arxiv.org/pdf/2610.02076v1)
 - [HydroJEV: A one-second, training-free screen for cyber-attack and fault attribution in water distribution networks](https://arxiv.org/abs/2610.02048) — 水系统异常归因中，规则确认的良性分流可减少 LLM 复核负载。 `系统` · [PDF](https://arxiv.org/pdf/2610.02048v1)
 - [Code Owns the Simulation, Jev Owns the Evaluation](https://arxiv.org/abs/2610.01834) — 能直接判断的选项与需要内部模拟的选项呈现能力分界。 `评测` · [PDF](https://arxiv.org/pdf/2610.01834v1)
@@ -341,6 +345,7 @@
 ## 2026-09-24
 
 - [How far can a commercial decision model’s probabilities be trusted? A calibration audit of Jev against open and general-purpose classifiers](https://escholarship.org/uc/item/4t4449jv) — 提问形式、标签定义与对照训练暴露均影响校准和模型排名。 `评测` · [PDF](https://escholarship.org/content/qt4t4449jv/qt4t4449jv.pdf)
+- [Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model](https://arxiv.org/abs/2609.30454) — 在6020道WMDP/LAB-Bench题目上审计校准、选择性预测与选项顺序稳定性。汇总ECE为0.034、错误识别AUROC为0.820，但任务间差异显著；循环轮换选项改变37.4%的WMDP-Cyber答案，多数不能由相同调用的波动解释。 `评测` · [PDF](https://arxiv.org/pdf/2609.30454v1)
 - [JevOut: Natural Context Can Flip Decision Models](https://arxiv.org/abs/2609.30243) — 自然上下文增补经反馈搜索可诱导高置信目标错选。 `攻击 · 评测` · [PDF](https://arxiv.org/pdf/2609.30243v1)
 - [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](https://arxiv.org/abs/2609.30216) — 分析公开项目中 Jev 的接口用途、集成方式与采用情况。 `综述` · [PDF](https://arxiv.org/pdf/2609.30216v1)
 - [Jev-Mobile: Jev as an Executor for Mobile GUI Agents](https://arxiv.org/abs/2609.30186) — 低频规划与高频有限动作执行分离，降低代理调用成本。 `系统` · [PDF](https://arxiv.org/pdf/2609.30186v1)
