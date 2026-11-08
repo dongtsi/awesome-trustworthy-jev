@@ -16993,10 +16993,10 @@
     "short": "TimesJev",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.26002",
-    "pdf": "https://arxiv.org/pdf/2610.26002v1",
+    "pdf": "https://arxiv.org/pdf/2610.26002v2",
     "date": "2026-10-19",
-    "updated": "2026-10-19",
-    "version": "2610.26002v1",
+    "updated": "2026-10-31",
+    "version": "2610.26002v2",
     "added": "2026-10-20",
     "authors": [
       "Chenghao Liu",
@@ -17022,8 +17022,8 @@
     "brief_zh": "依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。",
     "summary": "Learns gated time-series compression and embedding alignment from sufficiency and realizability objectives, enabling single-pass decisions; reports improved performance and lower latency across 13 datasets.",
     "summary_zh": "依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。",
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract verified; detailed full-text review pending",
+    "evidence": "Original arXiv v2 metadata and abstract",
+    "review": "Current v2 metadata and abstract verified 2026-11-08; PDF downloaded; detailed revision/full-text audit pending",
     "limitation": "Abstract-level review; no independent replication.",
     "datasets": []
   },
@@ -18135,16 +18135,16 @@
     "short": "Measure Before You Train",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.32955",
-    "pdf": "https://arxiv.org/pdf/2610.32955v1",
+    "pdf": "https://arxiv.org/pdf/2610.32955v2",
     "doi": "10.48550/arXiv.2610.32955",
     "date": "2026-10-23",
-    "updated": "2026-10-23",
-    "version": "2610.32955v1",
+    "updated": "2026-11-02",
+    "version": "2610.32955v2",
     "added": "2026-10-27",
     "authors": [
       "Federico Lucca"
     ],
-    "target": "open",
+    "target": "mixed",
     "categories": [
       "trustworthiness/reliability"
     ],
@@ -18159,8 +18159,8 @@
     "theme": "Reliability",
     "scope": "related-model",
     "schema_version": 2,
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract and scope verified; detailed full-text audit pending",
+    "evidence": "Original arXiv v2 metadata and abstract",
+    "review": "Current v2 metadata and abstract verified 2026-11-08; PDF downloaded; detailed revision/full-text audit pending",
     "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
     "datasets": []
   },
@@ -18190,17 +18190,23 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.",
-    "brief_zh": "追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。",
-    "summary": "Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.",
-    "summary_zh": "追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。",
+    "brief_en": "Across 1,700 questions and eight presentations, Jev 1.13/1.14 loses 27.0–27.8% of initially correct answers under reordering versus 8.8–9.2% under fixed-order repeats. Voting adds about one point; unanimous answers remain frequently wrong. Mixed system configurations and task composition prevent an architectural causal claim.",
+    "brief_zh": "在1700题、八次呈现中，Jev 1.13/1.14重排选项后损失27.0–27.8%的初始正确答案，固定顺序重测为8.8–9.2%。投票约增益一个百分点，一致答案仍常出错；系统配置与任务构成不同，不能据此作架构因果归因。",
+    "summary": "Across 1,700 questions and eight presentations, Jev 1.13/1.14 loses 27.0–27.8% of initially correct answers under reordering versus 8.8–9.2% under fixed-order repeats. Voting adds about one point; unanimous answers remain frequently wrong. Mixed system configurations and task composition prevent an architectural causal claim.",
+    "summary_zh": "在1700题、八次呈现中，Jev 1.13/1.14重排选项后损失27.0–27.8%的初始正确答案，固定顺序重测为8.8–9.2%。投票约增益一个百分点，一致答案仍常出错；系统配置与任务构成不同，不能据此作架构因果归因。",
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv current-version metadata and abstract",
-    "review": "Current version metadata and abstract verified 2026-11-02; detailed revision/full-text audit pending",
-    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
-    "datasets": []
+    "evidence": "arXiv v3 main empirical text, Sections 1–9, pp. 1–25, and author repository README",
+    "review": "Main empirical methods, results and limits and author repository README reviewed 2026-11-08; supplementary survey and code/results audit pending; no independent reproduction",
+    "limitation": "Eight observed presentations and exploratory pointwise intervals; model training/inference/interfaces differ. Identifiers move with content; order, identifier and context mechanisms are not separated. Appendix survey and code/results artifacts remain pending.",
+    "datasets": [
+      "SuperGPQA",
+      "LEXam",
+      "MMLU-Pro",
+      "GPQA Diamond"
+    ],
+    "code": "https://github.com/nick7nlp/Jev-Selection-Bias"
   },
   {
     "id": "2610.33410",
@@ -20844,5 +20850,38 @@
     "evidence": "Original tutorial methods and displayed results",
     "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed",
     "limitation": "Single pinned Wikipedia document, five repeats; serial latency baseline and reduced answer metrics."
+  },
+  {
+    "id": "typesafe-cookbook-verify-llm-outputs",
+    "title": "TypeSafe · Verifying LLM answers against their source",
+    "short": "Verify LLM answers",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/verify_llm_outputs.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-08",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "documentation"
+    ],
+    "brief_en": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration.",
+    "summary": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration.",
+    "brief_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。",
+    "summary_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。",
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [
+      "MuSiQue"
+    ],
+    "evidence": "Original tutorial methods and displayed results, MuSiQue author README and static sample-count checks",
+    "review": "Tutorial fully read and 1,000-row source sample counts checked 2026-11-08; publication date unknown; displayed run date is not publication date; candidate code not executed",
+    "limitation": "One 1,000-row development-set sample, 473 answerable; Jev reference matching and GPT-6.1 Sol adjudication supply labels. Three question sets were selected on 100 rows included in the evaluation; no independent held-out or human-label risk guarantee."
   }
 ]

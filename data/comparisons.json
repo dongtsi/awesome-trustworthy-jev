@@ -1868,5 +1868,29 @@
     },
     "source_section": "v1 full text, Tables 1–7; archived results/validation and results/seeds notes",
     "source": "https://arxiv.org/pdf/2611.08439v1"
+  },
+  {
+    "id": "2610.35826",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "SuperGPQA",
+      "LEXam",
+      "MMLU-Pro",
+      "GPQA Diamond"
+    ],
+    "data_role": {
+      "en": "Primary stratified subset: 1,200 SuperGPQA plus 500 LEXam questions; supplementary 300 MMLU-Pro and 198 GPQA Diamond. Fixed collections, not population-weighted estimates.",
+      "zh": "主实验分层子集：1200道SuperGPQA与500道LEXam；补充300道MMLU-Pro、198道GPQA Diamond。固定题集，不是总体加权估计。"
+    },
+    "design": {
+      "en": "Two hosted Jev versions, twelve reproductions and six LLMs; original, reversed and six shuffled menus versus eight identical-order calls, sharing the original call. Track cumulative lost initial successes, failed questions and distinct wrong question–candidate pairs separately. Paired source-group bootstrap with 2,000 replicates and exploratory pointwise 95% intervals.",
+      "zh": "两个托管Jev版本、12个复现模型和6个LLM；原序、逆序及六次重排，对照八次同序请求，共用首次请求。分别追踪初始成功的累积损失、失败题目并集、错误题目—选项对并集。按来源组配对bootstrap 2000次，使用探索性的逐点95%区间。"
+    },
+    "reading": {
+      "en": "Aggregate Jev accuracy ranges only 1.47–1.53 points, but failed-question unions grow 845→1,076 and 840→1,079. These are 27.3–28.5% increases relative to original failures, not accuracy drops. Reordering unanimity covers 57.7–59.1% at 62.1–63.3% accuracy. MMLU-Pro and four-option GPQA preserve the repeatability/robustness distinction, with different magnitudes; no uniform model-family ranking or causal head comparison.",
+      "zh": "Jev汇总准确率波动仅1.47–1.53个百分点，失败题目并集却从845增至1076、840增至1079；27.3–28.5%是相对原始失败数的增幅，不是准确率降幅。重排一致答案覆盖57.7–59.1%，准确率62.1–63.3%。MMLU-Pro和四选项GPQA仍区分可重复性与稳健性，但幅度不同；不支持统一模型家族排名或决策头因果比较。"
+    },
+    "source_section": "v3 main empirical text, Sections 1–9, pp. 1–25; appendix survey not fully reviewed",
+    "source": "https://arxiv.org/pdf/2610.35826v3"
   }
 ]

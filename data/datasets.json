@@ -565,5 +565,35 @@
     "type": "benchmark",
     "checked": "2026-11-07",
     "verification": "Versioned code/results archive downloaded; MD5 and 117 SHA-256 entries verified, per-row outputs and split/seed caveats inspected. No weight files in archive; source datasets retain their stated licenses."
+  },
+  "SuperGPQA": {
+    "url": "https://huggingface.co/datasets/m-a-p/SuperGPQA",
+    "type": "benchmark",
+    "checked": "2026-11-08",
+    "verification": "Official dataset link confirmed from arXiv 2610.35826v3 p. 3 PDF hyperlink; Hugging Face card access failed; card contents/license not independently verified."
+  },
+  "LEXam": {
+    "url": "https://huggingface.co/datasets/LEXam-Benchmark/LEXam",
+    "type": "benchmark",
+    "checked": "2026-11-08",
+    "verification": "Official dataset link confirmed from arXiv 2610.35826v3 p. 3 PDF hyperlink; Hugging Face card access failed; card contents/license not independently verified."
+  },
+  "MMLU-Pro": {
+    "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro",
+    "type": "benchmark",
+    "checked": "2026-11-08",
+    "verification": "Official dataset link confirmed from arXiv 2610.35826v3 p. 3 PDF hyperlink; Hugging Face card access failed; card contents/license not independently verified."
+  },
+  "GPQA Diamond": {
+    "url": "https://huggingface.co/datasets/Idavidrein/gpqa",
+    "type": "benchmark",
+    "checked": "2026-11-08",
+    "verification": "Official dataset link confirmed from arXiv 2610.35826v3 p. 3 PDF hyperlink; Hugging Face card access failed; card contents/license not independently verified."
+  },
+  "MuSiQue": {
+    "url": "https://github.com/StonyBrookNLP/musique",
+    "type": "dataset",
+    "checked": "2026-11-08",
+    "verification": "Author repository README confirms CC BY 4.0 and warns of seed-question leakage across source training sets. Tutorial sample statically checked: 1,000 unique questions, 473 answerable; paragraph counts {20: 992, 19: 7, 17: 1}. Original labels differ from the tutorial model-adjudicated scoring labels."
   }
 }

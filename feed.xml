@@ -261,7 +261,7 @@
       <title>Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?</title>
       <link>https://arxiv.org/abs/2610.35826</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.35826#publication</guid>
-      <description>Tracks answers across shuffled options and fixed-order repeats. Nearly stable aggregate Jev accuracy masks an expanding set of failed questions, and repeated agreement does not ensure correctness.</description>
+      <description>Across 1,700 questions and eight presentations, Jev 1.13/1.14 loses 27.0–27.8% of initially correct answers under reordering versus 8.8–9.2% under fixed-order repeats. Voting adds about one point; unanimous answers remain frequently wrong. Mixed system configurations and task composition prevent an architectural causal claim.</description>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

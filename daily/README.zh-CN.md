@@ -70,7 +70,7 @@
 
 - [Confidence Is Not a Promise: A Reference Audit of Typed Decision Models](https://arxiv.org/abs/2610.36311) — 审计Laya与Jev 1.13的选择性决策、校准迁移、噪声、漂移和解释。点估计阈值常无法达到承诺准确率；下界资格检验在可交换测试中有效，但语言与输入偏移破坏迁移。 `评测` · [PDF](https://arxiv.org/pdf/2610.36311v1)
 - [MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine](https://arxiv.org/abs/2610.36006) — 在医学知识及患者级任务评测开放System One模型。知识基准上的良好校准未迁移到所有患者预测；用50–200个标签拟合双参数局部再校准可降低报告的校准误差。 `评测` · [PDF](https://arxiv.org/pdf/2610.36006v1)
-- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 追踪选项重排及固定顺序重测下的答案。Jev汇总准确率近乎稳定，却掩盖不断扩大的失败题目集合；重复一致不保证正确。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v3)
+- [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826) — 在1700题、八次呈现中，Jev 1.13/1.14重排选项后损失27.0–27.8%的初始正确答案，固定顺序重测为8.8–9.2%。投票约增益一个百分点，一致答案仍常出错；系统配置与任务构成不同，不能据此作架构因果归因。 `评测` · [PDF](https://arxiv.org/pdf/2610.35826v3) · [代码](https://github.com/nick7nlp/Jev-Selection-Bias)
 - [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654) — 结合选项跨度均值读出与注意力/Gated DeltaNet选择性适配，开展跨请求蕴含重排。作者报告在MC11上改善NeoHorse-1-4B且可训练参数减少逾半；当前摘要未建立向直接决策任务的迁移收益。 `评测` · [PDF](https://arxiv.org/pdf/2610.35654v2)
 - [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875) — 用独立编码及缓存量表等级嵌入完成非生成式裁判。留出量表准确率提高，长等级描述下延迟近乎不变；在人类标注基准和排序上对Jev的优势并不一致。 `评测` · [PDF](https://arxiv.org/pdf/2610.34875v1)
 
@@ -89,7 +89,7 @@
 
 ## 2026-10-23
 
-- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — 以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.32955v1)
+- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — 以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.32955v2)
 - [System One models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — 匹配六个Qwen骨干，在十个检索集合比较决策微调与重排微调。9B及以下重排微调更优，27B持平；决策模型校准优势依赖提问措辞，不能抵消较弱排序。 `评测` · [PDF](https://arxiv.org/pdf/2610.32318v1)
 
 ## 2026-10-22
@@ -119,7 +119,7 @@
 - [Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models](https://arxiv.org/abs/2610.26797) — 在高斯替代模型中推导教师目标、冻结表征与校准的精确风险；实验表明更好的校准和更多学生数据不能消除继承的教师偏差。 `评测` · [PDF](https://arxiv.org/pdf/2610.26797v1)
 - [SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models](https://arxiv.org/abs/2610.26793) — 以共享决策模型持续监测推理并逐步干预；无需训练，报告推理token最多减少36%，且不可回答问题上的弃答率提高。 `评测` · [PDF](https://arxiv.org/pdf/2610.26793v1)
 - [Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors](https://arxiv.org/abs/2610.26325) — 区分决策训练与骨干读出，在五个数据集上测试标签分布偏移；收益依任务而变，已有失准比特有的分布偏移脆弱性更突出。 `评测` · [PDF](https://arxiv.org/pdf/2610.26325v1)
-- [TimesJev: Thinking Fast on Time Series with System 1 Sufficiency](https://arxiv.org/abs/2610.26002) — 依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。 `评测` · [PDF](https://arxiv.org/pdf/2610.26002v1)
+- [TimesJev: Thinking Fast on Time Series with System 1 Sufficiency](https://arxiv.org/abs/2610.26002) — 依据充分性与可实现性目标学习门控时间序列压缩及嵌入对齐，实现单次前向决策；在13个数据集上报告性能提升与延迟降低。 `评测` · [PDF](https://arxiv.org/pdf/2610.26002v2)
 - [Claim Laundering: When Agent Decision Models Trust Records Over Reality](https://arxiv.org/abs/2610.25947) — 发现托管Jev与开放决策模型在Agent决策中常优先相信成功记录，而非矛盾观察。中间状态证据门控改善开放模型的在线任务成功率，但离线门控校准迁移不佳。 `评测 · 方法` · [PDF](https://arxiv.org/pdf/2610.25947v1)
 - [A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers](https://arxiv.org/abs/2610.25843) — 以使选择概率持平的价格溢价衡量卖家线索影响；113,472次受控试验显示Jev抵抗多种线索，但仍受强社会认同声明影响。 `评测` · [PDF](https://arxiv.org/pdf/2610.25843v1)
 - [UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models](https://arxiv.org/abs/2610.25784) — 在文本、图像和视频决策模型中区分监督学习的准确率收益与校准；置信—结果对齐无需强化学习，在2B和9B上降低视觉ECE并保持准确率。 `评测` · [PDF](https://arxiv.org/pdf/2610.25784v1)
