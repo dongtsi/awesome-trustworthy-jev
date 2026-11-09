@@ -6,6 +6,27 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?</title>
+      <link>https://arxiv.org/abs/2611.09264</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.09264#publication</guid>
+      <description>Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions</title>
+      <link>https://arxiv.org/abs/2611.08995</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08995#publication</guid>
+      <description>Audits complaint rewrites intended to preserve facts with Jev and two LLMs. Group monetary-remedy gaps remain within 0.5 points, while paired style variants change individual monetary decisions in 2.6–6.3% of cases. Standardization reduces some group gaps without stabilizing individual decisions; auditors flag factual changes in some rewrites.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal</title>
+      <link>https://arxiv.org/abs/2611.08845</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08845#publication</guid>
+      <description>Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes</title>
       <link>https://arxiv.org/abs/2611.08439</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.08439#publication</guid>
@@ -331,7 +352,7 @@
       <title>Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox</title>
       <link>https://arxiv.org/abs/2610.32955</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.32955#publication</guid>
-      <description>Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.</description>
+      <description>On 231 personal emails, a thread-cross-validated linear classifier leads in field accuracy yet ignores 12/68 action-needed emails versus 3/68 for Jev. Cost-selected noise thresholds reduce its misses to 4/68. Single-owner labels, weak reply-label agreement and an adversarial 722-email extension limit generalization.</description>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1383,27 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.34180#publication</guid>
       <description>Compares anomaly decision readouts under fixed video-derived evidence.</description>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Probability Contracts: Accuracy, Coherence, and Decisions Across LLM Interfaces</title>
-      <link>https://arxiv.org/abs/2609.37470</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.37470#publication</guid>
-      <description>Links exact posteriors, equivalent requests and action-sensitive loss.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev in Medicine: A Benchmark Evaluation</title>
-      <link>https://arxiv.org/abs/2609.34024</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.34024#publication</guid>
-      <description>Audits Jev 1.13 accuracy, calibration, selective prediction and unanswerable-question handling across four medical benchmarks.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Do System One Decisions Add Up? A Study of Probabilistic Coherence</title>
-      <link>https://arxiv.org/abs/2609.33971</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.33971#publication</guid>
-      <description>Compares direct and hierarchical decisions on matched items.</description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -595,5 +595,23 @@
     "type": "dataset",
     "checked": "2026-11-08",
     "verification": "Author repository README confirms CC BY 4.0 and warns of seed-question leakage across source training sets. Tutorial sample statically checked: 1,000 unique questions, 473 answerable; paragraph counts {20: 992, 19: 7, 17: 1}. Original labels differ from the tutorial model-adjudicated scoring labels."
+  },
+  "Foyer private inbox v2": {
+    "url": "https://arxiv.org/abs/2610.32955v2",
+    "type": "dataset",
+    "checked": "2026-11-09",
+    "verification": "Private study data described in v2; raw emails, labels, project descriptions and per-row outputs are not released. Public harness is linked from the paper; this entry does not imply an open dataset."
+  },
+  "Foyer adversarial inbox v3": {
+    "url": "https://arxiv.org/abs/2610.32955v2",
+    "type": "dataset",
+    "checked": "2026-11-09",
+    "verification": "Private study data described in v2; raw emails, labels, project descriptions and per-row outputs are not released. Public harness is linked from the paper; this entry does not imply an open dataset."
+  },
+  "Foyer blind-annotation subset": {
+    "url": "https://arxiv.org/abs/2610.32955v2",
+    "type": "dataset",
+    "checked": "2026-11-09",
+    "verification": "Private study data described in v2; raw emails, labels, project descriptions and per-row outputs are not released. Public harness is linked from the paper; this entry does not imply an open dataset."
   }
 }

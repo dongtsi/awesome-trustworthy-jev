@@ -18152,17 +18152,22 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.",
-    "brief_zh": "以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。",
-    "summary": "Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off.",
-    "summary_zh": "以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。",
+    "brief_en": "On 231 personal emails, a thread-cross-validated linear classifier leads in field accuracy yet ignores 12/68 action-needed emails versus 3/68 for Jev. Cost-selected noise thresholds reduce its misses to 4/68. Single-owner labels, weak reply-label agreement and an adversarial 722-email extension limit generalization.",
+    "brief_zh": "在231封个人邮件上，按线程交叉验证的线性分类器字段准确率领先，却忽略68封需动作邮件中的12封，Jev为3封。按代价选噪声阈值将分类器漏检降至4封。单用户标签、弱回复标签一致性及722封对抗抽样扩展限制了推广。",
+    "summary": "On 231 personal emails, a thread-cross-validated linear classifier leads in field accuracy yet ignores 12/68 action-needed emails versus 3/68 for Jev. Cost-selected noise thresholds reduce its misses to 4/68. Single-owner labels, weak reply-label agreement and an adversarial 722-email extension limit generalization.",
+    "summary_zh": "在231封个人邮件上，按线程交叉验证的线性分类器字段准确率领先，却忽略68封需动作邮件中的12封，Jev为3封。按代价选噪声阈值将分类器漏检降至4封。单用户标签、弱回复标签一致性及722封对抗抽样扩展限制了推广。",
     "theme": "Reliability",
-    "scope": "related-model",
+    "scope": "Jev",
     "schema_version": 2,
-    "evidence": "Original arXiv v2 metadata and abstract",
-    "review": "Current v2 metadata and abstract verified 2026-11-08; PDF downloaded; detailed revision/full-text audit pending",
-    "limitation": "Author-reported preprint findings; detailed methods/results audit and independent replication pending.",
-    "datasets": []
+    "evidence": "arXiv v2 complete text, Tables 1–10 and appendices; static inspection of linked README and threshold code",
+    "review": "Full 10-page v2 read 2026-11-09; threshold source statically inspected, not executed; private emails/results unavailable; linked README includes later v2.1 material",
+    "limitation": "One Italian/English inbox; model-assisted owner labels and prediction-stratified sampling. Row-bootstrap intervals do not resample threads; nonsignificance does not establish equivalence. Noul versus choice also changes option definitions. Threshold source differs in features from the main paper; exact run correspondence and v2.1 remain pending.",
+    "datasets": [
+      "Foyer private inbox v2",
+      "Foyer adversarial inbox v3",
+      "Foyer blind-annotation subset"
+    ],
+    "code": "https://gitlab.com/federicolucca/foyer-measure/-/tree/v2"
   },
   {
     "id": "2610.35826",
@@ -20883,5 +20888,115 @@
     "evidence": "Original tutorial methods and displayed results, MuSiQue author README and static sample-count checks",
     "review": "Tutorial fully read and 1,000-row source sample counts checked 2026-11-08; publication date unknown; displayed run date is not publication date; candidate code not executed",
     "limitation": "One 1,000-row development-set sample, 473 answerable; Jev reference matching and GPT-6.1 Sol adjudication supply labels. Three question sets were selected on 100 rows included in the evaluation; no independent held-out or human-label risk guarantee."
+  },
+  {
+    "id": "2611.09264",
+    "title": "Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?",
+    "short": "Digital nudges in decision models",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.09264",
+    "pdf": "https://arxiv.org/pdf/2611.09264v1",
+    "doi": "10.48550/arXiv.2611.09264",
+    "date": "2026-11-06",
+    "updated": "2026-11-06",
+    "version": "2611.09264v1",
+    "added": "2026-11-09",
+    "authors": [
+      "Sascha Kaltenpoth",
+      "Haya Halimeh",
+      "Kevin Bösch",
+      "Oliver Müller"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism.",
+    "summary": "Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism.",
+    "brief_zh": "每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。",
+    "summary_zh": "每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.08995",
+    "title": "Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions",
+    "short": "Linguistic profiling versus instability",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08995",
+    "pdf": "https://arxiv.org/pdf/2611.08995v1",
+    "doi": "10.48550/arXiv.2611.08995",
+    "date": "2026-11-06",
+    "updated": "2026-11-06",
+    "version": "2611.08995v1",
+    "added": "2026-11-09",
+    "authors": [
+      "Colin Priest"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits complaint rewrites intended to preserve facts with Jev and two LLMs. Group monetary-remedy gaps remain within 0.5 points, while paired style variants change individual monetary decisions in 2.6–6.3% of cases. Standardization reduces some group gaps without stabilizing individual decisions; auditors flag factual changes in some rewrites.",
+    "summary": "Audits complaint rewrites intended to preserve facts with Jev and two LLMs. Group monetary-remedy gaps remain within 0.5 points, while paired style variants change individual monetary decisions in 2.6–6.3% of cases. Standardization reduces some group gaps without stabilizing individual decisions; auditors flag factual changes in some rewrites.",
+    "brief_zh": "用旨在保留事实的投诉改写审计Jev和两个LLM。群体金钱补偿差距均在0.5个百分点内，但同一投诉的不同文风使2.6–6.3%的个体补偿决定改变。文风统一缩小部分群体差距，却未提高个体稳定性；审计模型指出部分改写仍改变事实。",
+    "summary_zh": "用旨在保留事实的投诉改写审计Jev和两个LLM。群体金钱补偿差距均在0.5个百分点内，但同一投诉的不同文风使2.6–6.3%的个体补偿决定改变。文风统一缩小部分群体差距，却未提高个体稳定性；审计模型指出部分改写仍改变事实。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.08845",
+    "title": "Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal",
+    "short": "Safety filtering and over-refusal",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08845",
+    "pdf": "https://arxiv.org/pdf/2611.08845v1",
+    "doi": "10.48550/arXiv.2611.08845",
+    "date": "2026-11-06",
+    "updated": "2026-11-06",
+    "version": "2611.08845v1",
+    "added": "2026-11-09",
+    "authors": [
+      "Olivia Cognetti",
+      "Bhaskar Krishnamachari"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/security",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.",
+    "summary": "Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.",
+    "brief_zh": "在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。",
+    "summary_zh": "在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
   }
 ]

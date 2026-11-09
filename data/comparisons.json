@@ -1892,5 +1892,28 @@
     },
     "source_section": "v3 main empirical text, Sections 1–9, pp. 1–25; appendix survey not fully reviewed",
     "source": "https://arxiv.org/pdf/2610.35826v3"
+  },
+  {
+    "id": "2610.32955",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Foyer private inbox v2",
+      "Foyer adversarial inbox v3",
+      "Foyer blind-annotation subset"
+    ],
+    "data_role": {
+      "en": "231 emails/207 threads sampled by production predictions; 722-email/698-thread cumulative stress corpus includes 491 new adversarially selected rows. Two blind annotators relabel 60 original emails. Raw mail, labels and per-email outputs remain private.",
+      "zh": "按生产预测分层抽取231封邮件/207线程；累计722封/698线程的压力语料包含491封新对抗抽样邮件。两位盲法标注者复标原样本中的60封。原始邮件、标签及逐条输出不公开。"
+    },
+    "design": {
+      "en": "Ten systems on shared Italian prompts; trained TF-IDF logistic regression uses five-fold thread-grouped CV, zero-shot models use all 231 rows. Noise takes precedence when composing reply/task/noise decisions. Threshold code uses inner grouped CV for baseline scores and outer training folds for threshold selection, under a 10:1 missed-action/unnecessary-handling loss.",
+      "zh": "十个系统使用相同意大利语提示；TF-IDF逻辑回归采用五折线程分组CV，零样本系统评估全部231条。回复/任务/噪声组合时噪声优先。阈值代码对基线使用内层分组CV获得分数，再在外层训练折按10:1漏动作/无谓处理损失选阈值。"
+    },
+    "reading": {
+      "en": "Main type accuracy .788 for the baseline versus .727 for Jev; macro-F1 .474 versus .513. Jev noise accuracy changes .783→.675 between choice with definitions and Noul without them, so format is confounded with information. Thresholded baseline misses 4/68 versus 12/68, with reported action cost 125.5→46.5 at c=10. Reply-label kappa is only .15/.05 against the owner; changed reference labels alter rankings. Stress-sample and single-run results do not establish population or architecture-wide superiority.",
+      "zh": "主实验类型准确率基线.788、Jev .727，宏F1为.474与.513。Jev噪声准确率在带定义choice与不带选项定义Noul之间由.783变为.675，格式与信息量混杂。基线阈值化后漏动作12/68降至4/68，c=10时报告动作代价125.5降至46.5。回复标签相对用户的kappa仅.15/.05，换参考标签会改变排名。压力抽样与单次运行不建立总体或架构普遍优势。"
+    },
+    "source_section": "v2 pp. 1–10, Tables 1–10, appendices A–C; linked cost_threshold.py statically inspected",
+    "source": "https://arxiv.org/pdf/2610.32955v2"
   }
 ]

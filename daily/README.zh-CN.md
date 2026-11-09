@@ -2,6 +2,12 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-06
+
+- [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264) — 每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。 `评测` · [PDF](https://arxiv.org/pdf/2611.09264v1)
+- [Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions](https://arxiv.org/abs/2611.08995) — 用旨在保留事实的投诉改写审计Jev和两个LLM。群体金钱补偿差距均在0.5个百分点内，但同一投诉的不同文风使2.6–6.3%的个体补偿决定改变。文风统一缩小部分群体差距，却未提高个体稳定性；审计模型指出部分改写仍改变事实。 `评测` · [PDF](https://arxiv.org/pdf/2611.08995v1)
+- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1)
+
 ## 2026-11-05
 
 - [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
@@ -89,7 +95,7 @@
 
 ## 2026-10-23
 
-- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — 以人工标注的多语收件箱决策比较类型化模型、生成LLM及传统基线。更高字段准确率仍可能遗漏更多应执行动作，按代价选阈值改变下游取舍。 `评测` · [PDF](https://arxiv.org/pdf/2610.32955v2)
+- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — 在231封个人邮件上，按线程交叉验证的线性分类器字段准确率领先，却忽略68封需动作邮件中的12封，Jev为3封。按代价选噪声阈值将分类器漏检降至4封。单用户标签、弱回复标签一致性及722封对抗抽样扩展限制了推广。 `评测` · [PDF](https://arxiv.org/pdf/2610.32955v2) · [代码](https://gitlab.com/federicolucca/foyer-measure/-/tree/v2)
 - [System One models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — 匹配六个Qwen骨干，在十个检索集合比较决策微调与重排微调。9B及以下重排微调更优，27B持平；决策模型校准优势依赖提问措辞，不能抵消较弱排序。 `评测` · [PDF](https://arxiv.org/pdf/2610.32318v1)
 
 ## 2026-10-22

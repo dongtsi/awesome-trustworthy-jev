@@ -2,6 +2,12 @@
 
 Grouped by first public publication date.
 
+## 2026-11-06
+
+- [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264) — Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.09264v1)
+- [Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions](https://arxiv.org/abs/2611.08995) — Audits complaint rewrites intended to preserve facts with Jev and two LLMs. Group monetary-remedy gaps remain within 0.5 points, while paired style variants change individual monetary decisions in 2.6–6.3% of cases. Standardization reduces some group gaps without stabilizing individual decisions; auditors flag factual changes in some rewrites. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.08995v1)
+- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.08845v1)
+
 ## 2026-11-05
 
 - [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [Code](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
@@ -89,7 +95,7 @@ Grouped by first public publication date.
 
 ## 2026-10-23
 
-- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — Compares typed decision models, generative LLMs and classical baselines using human-labelled multilingual inbox decisions. Higher field accuracy can produce more missed required actions; cost-aware threshold selection changes the downstream trade-off. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.32955v2)
+- [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](https://arxiv.org/abs/2610.32955) — On 231 personal emails, a thread-cross-validated linear classifier leads in field accuracy yet ignores 12/68 action-needed emails versus 3/68 for Jev. Cost-selected noise thresholds reduce its misses to 4/68. Single-owner labels, weak reply-label agreement and an adversarial 722-email extension limit generalization. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.32955v2) · [Code](https://gitlab.com/federicolucca/foyer-measure/-/tree/v2)
 - [System One models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — Matches six Qwen backbones to compare decision and reranker fine-tuning across ten retrieval collections. Reranker tuning wins through 9B and ties at 27B; decision-model calibration advantages depend on question wording and do not compensate for weaker ranking. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.32318v1)
 
 ## 2026-10-22
