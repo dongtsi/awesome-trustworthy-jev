@@ -2,9 +2,24 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-09
+
+- [Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models](https://arxiv.org/abs/2611.12521) — 审计五个开放决策模型的校准、跨问题干扰与归因忠实性。提供方confidence是概率分布离散程度的统计量，并非经验正确率；小模型与较大模型对问题打包的敏感性明显不同。鲁棒性和归因收益限于所测任务与基线。 `评测` · [PDF](https://arxiv.org/pdf/2611.12521v1)
+
+## 2026-11-08
+
+- [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480) — 在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。 `评测` · [PDF](https://arxiv.org/pdf/2611.11480v1)
+
+## 2026-11-07
+
+- [Evaluating Jev on Arabic: Comparing Decision Models and LLMs Across Arabic Tasks and Dialects](https://arxiv.org/abs/2611.10802) — 在43项阿拉伯语任务上比较67个系统。Jev 1.14平均指标为69.24，1.13为68.77，Gemma-4-31B为71.81；四个数据集的内容匹配方言相对标准语准确率差为−7.94至−0.35个百分点。总分排序不能建立通用方言鲁棒性排名或解释差距成因。 `评测` · [PDF](https://arxiv.org/pdf/2611.10802v1)
+- [AbductionBench: Benchmarking Abductive Reasoning in Large Language Models](https://arxiv.org/abs/2611.10705) — 以27个数据集、十个领域组织溯因推理评测，区分最终答案、可观察证据使用及假设修订。Jev在紧凑证据上达到或超过小型LLM，但在长案例上落后；书面推理轨迹作为模型输出分析，不视为内部计算的忠实记录。 `评测` · [PDF](https://arxiv.org/pdf/2611.10705v1)
+- [Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market](https://arxiv.org/abs/2611.10414) — 评估具有代码强制影响上界和决策溯源的类型化多Agent新闻阅读器。确认性LLM阅读器的事件窗口关联在新闻发表后明显减弱，且未增加相对纯代码特征的周尺度排序信息；托管Jev结果为描述性。决策卡将88%的成功攻击追溯至来源条目。 `评测` · [PDF](https://arxiv.org/pdf/2611.10414v1)
+- [Reproducible LoRA Inference Through Deterministic Split-K Reduction](https://arxiv.org/abs/2611.10334) — 用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。 `评测` · [PDF](https://arxiv.org/pdf/2611.10334v1)
+
 ## 2026-11-06
 
-- [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264) — 每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。 `评测` · [PDF](https://arxiv.org/pdf/2611.09264v1)
+- [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264) — 每模型600次购物运行中，Jev 1.13在默认项条件下选择目标商品的估计概率为99.9%，社会影响条件为82%。实验平衡商品身份和顺序，用贝叶斯模型处理同轮选择相关性。三模型研究未在相同条件下直接比较LLM Agent，也不构成认知机制证据。 `评测` · [PDF](https://arxiv.org/pdf/2611.09264v1) · [代码](https://anonymous.4open.science/r/nudging_decision_models-76C7/)
 - [Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions](https://arxiv.org/abs/2611.08995) — 用旨在保留事实的投诉改写审计Jev和两个LLM。群体金钱补偿差距均在0.5个百分点内，但同一投诉的不同文风使2.6–6.3%的个体补偿决定改变。文风统一缩小部分群体差距，却未提高个体稳定性；审计模型指出部分改写仍改变事实。 `评测` · [PDF](https://arxiv.org/pdf/2611.08995v1)
 - [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1)
 

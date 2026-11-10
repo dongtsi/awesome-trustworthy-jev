@@ -1915,5 +1915,26 @@
     },
     "source_section": "v2 pp. 1–10, Tables 1–10, appendices A–C; linked cost_threshold.py statically inspected",
     "source": "https://arxiv.org/pdf/2610.32955v2"
+  },
+  {
+    "id": "2611.09264",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Digital nudging simulated grocery-store experiment"
+    ],
+    "data_role": {
+      "en": "1,800 runs across Jev 1.13, Decision-1 and d1; six binary product choices per run (10,800 observations). Each model has 200 runs per condition, split equally across target-product sets A/B.",
+      "zh": "Jev 1.13、Decision-1和d1共1,800轮；每轮六次二选一购物，共10,800个选择观察值。各模型每条件200轮，目标商品A/B两组各100轮。"
+    },
+    "design": {
+      "en": "Neutral, preselected-default and social-influence conditions; randomized product/category order and run order. Modified Browser Use sends visible text, action history and clickable options; the highest-probability action executes. Bayesian logistic models use condition effects and run random intercepts; Table 1 reports log-odds, not odds ratios.",
+      "zh": "中性、预选默认项、社会影响三个条件，随机化商品/类别顺序及运行次序。修改版Browser Use输入可见文本、动作历史和可点击选项，并执行最高概率动作。贝叶斯逻辑回归设条件效应与运行随机截距；表1报告对数优势而非优势比。"
+    },
+    "reading": {
+      "en": "Estimated default selection is 97.5%/99.4%/99.9% for Decision-1/d1/Jev; social influence is 75%/96%/82%, versus 47–49% control. Default exceeds social influence in each model. Completed runs average 5.8 s and USD 0.0012 at list prices; these are not a matched LLM efficiency experiment. One manipulation per nudge type cannot identify general System-1 cognition. Restart/attrition effects and repository-only checks remain unaudited (HTTP 401).",
+      "zh": "Decision-1/d1/Jev的默认项选择估计概率为97.5%/99.4%/99.9%，社会影响条件为75%/96%/82%，对照47–49%。各模型默认项效应均更强。完成运行均值5.8秒、标价成本0.0012美元，并非同条件LLM效率实验。每类仅一种操纵，不能识别普遍System-1认知机制。重启/流失影响及仅在仓库提供的检验未审，仓库HTTP 401。"
+    },
+    "source_section": "v1 pp. 1–7; methods §3.2, results §4, Table 1 and limitations §5",
+    "source": "https://arxiv.org/pdf/2611.09264v1"
   }
 ]

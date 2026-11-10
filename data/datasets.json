@@ -613,5 +613,11 @@
     "type": "dataset",
     "checked": "2026-11-09",
     "verification": "Private study data described in v2; raw emails, labels, project descriptions and per-row outputs are not released. Public harness is linked from the paper; this entry does not imply an open dataset."
+  },
+  "Digital nudging simulated grocery-store experiment": {
+    "url": "https://arxiv.org/abs/2611.09264",
+    "type": "dataset",
+    "checked": "2026-11-10",
+    "verification": "Study-defined simulated store described in the paper. Linked anonymous artifact endpoint returned HTTP 401 on 2026-11-10; availability, license and raw run data not independently verified."
   }
 }

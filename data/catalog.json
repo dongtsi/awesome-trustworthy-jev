@@ -20915,17 +20915,20 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism.",
-    "summary": "Across 600 runs per model, Jev, Decision-1 and d1 choose preselected defaults in 97.5–99.9% and socially endorsed products in 75–96% of choices, versus 47–49% in controls. The shopping-task study reports stronger automatic than reflective nudge effects; this does not establish a cognitive mechanism.",
-    "brief_zh": "每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。",
-    "summary_zh": "每模型600次购物实验中，Jev、Decision-1和d1选择预选默认项的比例为97.5–99.9%，选择有社会影响信息商品的比例为75–96%，对照为47–49%。自动式助推效应强于反思式；该行为结果不构成认知机制证据。",
+    "brief_en": "In 600 shopping runs per model, Jev 1.13 has an estimated target-selection probability of 99.9% under defaults and 82% under social influence. Product identities and order are counterbalanced; Bayesian models account for within-run clustering. The three-model study does not directly compare LLM agents under identical conditions or establish a cognitive mechanism.",
+    "summary": "In 600 shopping runs per model, Jev 1.13 has an estimated target-selection probability of 99.9% under defaults and 82% under social influence. Product identities and order are counterbalanced; Bayesian models account for within-run clustering. The three-model study does not directly compare LLM agents under identical conditions or establish a cognitive mechanism.",
+    "brief_zh": "每模型600次购物运行中，Jev 1.13在默认项条件下选择目标商品的估计概率为99.9%，社会影响条件为82%。实验平衡商品身份和顺序，用贝叶斯模型处理同轮选择相关性。三模型研究未在相同条件下直接比较LLM Agent，也不构成认知机制证据。",
+    "summary_zh": "每模型600次购物运行中，Jev 1.13在默认项条件下选择目标商品的估计概率为99.9%，社会影响条件为82%。实验平衡商品身份和顺序，用贝叶斯模型处理同轮选择相关性。三模型研究未在相同条件下直接比较LLM Agent，也不构成认知机制证据。",
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
-    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+    "datasets": [
+      "Digital nudging simulated grocery-store experiment"
+    ],
+    "evidence": "Complete arXiv v1 text, pages 1–7, Table 1 and Figures 1–2 captions",
+    "review": "Full 7-page v1 read 2026-11-10; linked artifact endpoint returned HTTP 401, so code/results and robustness checks were not independently inspected",
+    "limitation": "Three closed-source models; one default and one social-influence manipulation in one store. Runs exceeding 60 actions were restarted, up to three attempts; attrition accounting and repository-only robustness results remain unverified. LLM speed/cost and behavior comparisons use a different prior implementation. Behavioral effects do not identify a cognitive mechanism.",
+    "code": "https://anonymous.4open.science/r/nudging_decision_models-76C7/"
   },
   {
     "id": "2611.08995",
@@ -20997,6 +21000,244 @@
     "datasets": [],
     "evidence": "Original arXiv metadata and abstract",
     "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.12521",
+    "title": "Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models",
+    "short": "Confidence and attribution audit",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.12521",
+    "pdf": "https://arxiv.org/pdf/2611.12521v1",
+    "doi": "10.48550/arXiv.2611.12521",
+    "date": "2026-11-09",
+    "updated": "2026-11-09",
+    "version": "2611.12521v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Julien Delaunay"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/interpretability",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Audits five open decision models for calibration, cross-question interference and attribution faithfulness. Provider confidence is a distribution-dispersion statistic rather than empirical accuracy; small and larger models show markedly different question-bundling sensitivity. Reported robustness and attribution gains are specific to the tested tasks and baselines.",
+    "summary": "Audits five open decision models for calibration, cross-question interference and attribution faithfulness. Provider confidence is a distribution-dispersion statistic rather than empirical accuracy; small and larger models show markedly different question-bundling sensitivity. Reported robustness and attribution gains are specific to the tested tasks and baselines.",
+    "brief_zh": "审计五个开放决策模型的校准、跨问题干扰与归因忠实性。提供方confidence是概率分布离散程度的统计量，并非经验正确率；小模型与较大模型对问题打包的敏感性明显不同。鲁棒性和归因收益限于所测任务与基线。",
+    "summary_zh": "审计五个开放决策模型的校准、跨问题干扰与归因忠实性。提供方confidence是概率分布离散程度的统计量，并非经验正确率；小模型与较大模型对问题打包的敏感性明显不同。鲁棒性和归因收益限于所测任务与基线。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.11480",
+    "title": "Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?",
+    "short": "Relevance ranking versus calibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.11480",
+    "pdf": "https://arxiv.org/pdf/2611.11480v1",
+    "doi": "10.48550/arXiv.2611.11480",
+    "date": "2026-11-08",
+    "updated": "2026-11-08",
+    "version": "2611.11480v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Shengyao Zhuang",
+      "Xueguang Ma",
+      "Matthias Petri",
+      "Jimmy Lin"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1.",
+    "summary": "Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1.",
+    "brief_zh": "在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。",
+    "summary_zh": "在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.10802",
+    "title": "Evaluating Jev on Arabic: Comparing Decision Models and LLMs Across Arabic Tasks and Dialects",
+    "short": "Arabic task and dialect evaluation",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.10802",
+    "pdf": "https://arxiv.org/pdf/2611.10802v1",
+    "doi": "10.48550/arXiv.2611.10802",
+    "date": "2026-11-07",
+    "updated": "2026-11-07",
+    "version": "2611.10802v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Hossam Elsafty",
+      "Tobias Deußer",
+      "Lorenz Sparrenberg",
+      "Rajkumar Ramamurthy",
+      "Rafet Sifa"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Compares 67 systems on 43 Arabic tasks. Jev 1.14 averages 69.24 versus 68.77 for 1.13 and 71.81 for Gemma-4-31B; matched dialect-minus-MSA gaps vary from -7.94 to -0.35 points across four datasets. Aggregate ordering does not establish general dialect-robustness rankings or explain the gaps.",
+    "summary": "Compares 67 systems on 43 Arabic tasks. Jev 1.14 averages 69.24 versus 68.77 for 1.13 and 71.81 for Gemma-4-31B; matched dialect-minus-MSA gaps vary from -7.94 to -0.35 points across four datasets. Aggregate ordering does not establish general dialect-robustness rankings or explain the gaps.",
+    "brief_zh": "在43项阿拉伯语任务上比较67个系统。Jev 1.14平均指标为69.24，1.13为68.77，Gemma-4-31B为71.81；四个数据集的内容匹配方言相对标准语准确率差为−7.94至−0.35个百分点。总分排序不能建立通用方言鲁棒性排名或解释差距成因。",
+    "summary_zh": "在43项阿拉伯语任务上比较67个系统。Jev 1.14平均指标为69.24，1.13为68.77，Gemma-4-31B为71.81；四个数据集的内容匹配方言相对标准语准确率差为−7.94至−0.35个百分点。总分排序不能建立通用方言鲁棒性排名或解释差距成因。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.10705",
+    "title": "AbductionBench: Benchmarking Abductive Reasoning in Large Language Models",
+    "short": "Abductive reasoning across tasks",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.10705",
+    "pdf": "https://arxiv.org/pdf/2611.10705v1",
+    "doi": "10.48550/arXiv.2611.10705",
+    "date": "2026-11-07",
+    "updated": "2026-11-07",
+    "version": "2611.10705v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Moein Salimi",
+      "Amir Qeysarbeigi",
+      "Babak Hosseini Mohtasham",
+      "Faraz Doagoye Tehrani",
+      "Mahdi Naieni",
+      "Hanieh Sartipi",
+      "Ali Nouri",
+      "Amin Aghakasiri",
+      "Reyhane Khayatzade Mahani",
+      "Mahdi Jafari Siavoshani",
+      "Mohammad Hossein Rohban"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Organizes abductive reasoning across 27 datasets and ten domains, separating final answers from observable evidence use and hypothesis revision. Jev matches or exceeds small LLMs on compact evidence but falls behind on longer cases; written traces are treated as outputs, not faithful access to internal reasoning.",
+    "summary": "Organizes abductive reasoning across 27 datasets and ten domains, separating final answers from observable evidence use and hypothesis revision. Jev matches or exceeds small LLMs on compact evidence but falls behind on longer cases; written traces are treated as outputs, not faithful access to internal reasoning.",
+    "brief_zh": "以27个数据集、十个领域组织溯因推理评测，区分最终答案、可观察证据使用及假设修订。Jev在紧凑证据上达到或超过小型LLM，但在长案例上落后；书面推理轨迹作为模型输出分析，不视为内部计算的忠实记录。",
+    "summary_zh": "以27个数据集、十个领域组织溯因推理评测，区分最终答案、可观察证据使用及假设修订。Jev在紧凑证据上达到或超过小型LLM，但在长案例上落后；书面推理轨迹作为模型输出分析，不视为内部计算的忠实记录。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.10414",
+    "title": "Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market",
+    "short": "Temporal validity and bounded agent decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.10414",
+    "pdf": "https://arxiv.org/pdf/2611.10414v1",
+    "doi": "10.48550/arXiv.2611.10414",
+    "date": "2026-11-07",
+    "updated": "2026-11-07",
+    "version": "2611.10414v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Yebo Feng",
+      "Guangyan Gan",
+      "Liangrui Pan",
+      "Ruichao Liang",
+      "Cong Wu",
+      "Jiahua Xu",
+      "Yang Liu"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Evaluates a typed multi-agent news reader with code-enforced influence bounds and decision provenance. The confirmatory LLM-based reader shows event-window association that drops sharply after publication, with no incremental weekly rank information over code-only features; hosted Jev results are descriptive. Decision cards trace 88% of successful attacks to their source item.",
+    "summary": "Evaluates a typed multi-agent news reader with code-enforced influence bounds and decision provenance. The confirmatory LLM-based reader shows event-window association that drops sharply after publication, with no incremental weekly rank information over code-only features; hosted Jev results are descriptive. Decision cards trace 88% of successful attacks to their source item.",
+    "brief_zh": "评估具有代码强制影响上界和决策溯源的类型化多Agent新闻阅读器。确认性LLM阅读器的事件窗口关联在新闻发表后明显减弱，且未增加相对纯代码特征的周尺度排序信息；托管Jev结果为描述性。决策卡将88%的成功攻击追溯至来源条目。",
+    "summary_zh": "评估具有代码强制影响上界和决策溯源的类型化多Agent新闻阅读器。确认性LLM阅读器的事件窗口关联在新闻发表后明显减弱，且未增加相对纯代码特征的周尺度排序信息；托管Jev结果为描述性。决策卡将88%的成功攻击追溯至来源条目。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; introduction additionally checked for 2611.10414 scope",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.10334",
+    "title": "Reproducible LoRA Inference Through Deterministic Split-K Reduction",
+    "short": "Deterministic LoRA reductions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.10334",
+    "pdf": "https://arxiv.org/pdf/2611.10334v1",
+    "doi": "10.48550/arXiv.2611.10334",
+    "date": "2026-11-07",
+    "updated": "2026-11-07",
+    "version": "2611.10334v1",
+    "added": "2026-11-10",
+    "authors": [
+      "Dhayaneshwar Balusamy",
+      "Ankur Mohan"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Replaces atomic Split-K accumulation with deterministic reduction for LoRA inference. Identical-input tests find no observed shrink-output variation versus 97.61% with atomic Split-K=8; structured toxicity probabilities vary in 81.47% of atomic comparisons. The implementation reports 16.8–21.1% speedup over unsplit reduction at 1.02–2.62% overhead over the atomic version.",
+    "summary": "Replaces atomic Split-K accumulation with deterministic reduction for LoRA inference. Identical-input tests find no observed shrink-output variation versus 97.61% with atomic Split-K=8; structured toxicity probabilities vary in 81.47% of atomic comparisons. The implementation reports 16.8–21.1% speedup over unsplit reduction at 1.02–2.62% overhead over the atomic version.",
+    "brief_zh": "用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。",
+    "summary_zh": "用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
     "limitation": "Abstract-level review of author-reported findings; no independent replication."
   }
 ]
