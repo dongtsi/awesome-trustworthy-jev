@@ -2,13 +2,17 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-10
+
+- [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115) — 提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。 `评测` · [PDF](https://arxiv.org/pdf/2611.14115v1)
+
 ## 2026-11-09
 
 - [Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models](https://arxiv.org/abs/2611.12521) — 审计五个开放决策模型的校准、跨问题干扰与归因忠实性。提供方confidence是概率分布离散程度的统计量，并非经验正确率；小模型与较大模型对问题打包的敏感性明显不同。鲁棒性和归因收益限于所测任务与基线。 `评测` · [PDF](https://arxiv.org/pdf/2611.12521v1)
 
 ## 2026-11-08
 
-- [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480) — 在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。 `评测` · [PDF](https://arxiv.org/pdf/2611.11480v1)
+- [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480) — 用DL19拟合的Platt映射将Jev的DL21 Brier分数从0.213降至0.147，期望F1截断得到0.638，对比固定前十项0.506。但在四个BEIR领域上，平均Brier从0.197恶化至0.214。排序能力与同类任务校准迁移不能推出新领域概率可靠。 `评测` · [PDF](https://arxiv.org/pdf/2611.11480v1)
 
 ## 2026-11-07
 
@@ -122,7 +126,7 @@
 
 ## 2026-10-21
 
-- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift](https://arxiv.org/abs/2610.30090) — 研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。 `评测` · [PDF](https://arxiv.org/pdf/2610.30090v1)
+- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage](https://arxiv.org/abs/2610.30090) — 在入侵与恶意软件数据集上评估校准类型化决策头。时间划分下的检测收益与较弱多类归因、严重校准漂移并存，报告ECE从0.04升至0.40。重建流与带载荷流量的签名级联覆盖不同；修订摘要将第二阶段恢复范围限定于所覆盖攻击类别。 `评测` · [PDF](https://arxiv.org/pdf/2610.30090v2)
 - [Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models](https://arxiv.org/abs/2610.30045) — 以可执行规则、交叉状态与受控改写研究迁移和联合正确性。Jev在等价措辞间的答案变化多于相同文本重测；联合可靠性的解释依赖校准参照保留哪些关联。 `评测` · [PDF](https://arxiv.org/pdf/2610.30045v1)
 - [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961) — 移除正确法律依据，在标准CaseHOLD准确率之外检验弃答。决策模型以较低报告推理成本达到接近强LLM的准确率，但无有效依据时仍常作选择；一致性门控减少错误。 `评测` · [PDF](https://arxiv.org/pdf/2610.29961v1)
 - [When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models](https://arxiv.org/abs/2610.29217) — 检验多个正确选项下的概率分配：即使排序完全正确，也可能有正确项低于均匀阈值；相同选项仍获不同概率。概率阈值不能可靠恢复正确选项集合。 `评测` · [PDF](https://arxiv.org/pdf/2610.29217v1)
@@ -359,7 +363,7 @@
 ## 2026-09-25
 
 - [Jev at the Agent Authorization Boundary: Evaluating TypeSafe’s Decision Model on Allow, Hold, and Deny](https://zenodo.org/records/22952571) — 以明确策略比较放行、暂缓和拒绝，避免仅用总准确率评价授权。 `评测` · [PDF](https://zenodo.org/api/records/22952571/files/arxiv-preprint.pdf/content)
-- [JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models](https://arxiv.org/abs/2609.31142) — 单字段扰动对照重复噪声，量化翻转、概率变化和复核负载。 `评测 · 基准` · [PDF](https://arxiv.org/pdf/2609.31142v1)
+- [JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models](https://arxiv.org/abs/2609.31142) — 修订基准包含862个具有审核答案的问题及5,586个保持答案的变体，对初始正确决策进行评估并设重复请求噪声基线。摘要报告置信度过滤后仍有明显决策错误；有效输出格式和高置信度不能建立执行安全性。 `评测 · 基准` · [PDF](https://arxiv.org/pdf/2609.31142v2)
 - [JevSoup: System-One Routing for Training-Free LoRA Composition](https://arxiv.org/abs/2609.30922) — 用 Jev 选择 LoRA 专家并进行无需训练的组合。 `系统` · [PDF](https://arxiv.org/pdf/2609.30922v1) · [代码](https://github.com/Leowang980/JevSoup.)
 - [LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information](https://arxiv.org/abs/2609.30706) — 训练模型判断何时值得追问信息，而不只在现有选项中猜测。 `方法` · [PDF](https://arxiv.org/pdf/2609.30706v1)
 

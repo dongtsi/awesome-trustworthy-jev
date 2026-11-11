@@ -97,18 +97,18 @@
       "JevAdvBench"
     ],
     "data_role": {
-      "en": "Introduces typed-request adversarial scenarios",
-      "zh": "提出类型化请求的对抗场景基准"
+      "en": "Historical v1 only: Introduces typed-request adversarial scenarios",
+      "zh": "仅v1历史内容：提出类型化请求的对抗场景基准"
     },
     "design": {
-      "en": "Compares single-field edits against the clean decision and an identical-request noise baseline.",
-      "zh": "将单字段编辑与干净决策、完全相同请求的重复噪声对比。"
+      "en": "Historical v1 only: Compares single-field edits against the clean decision and an identical-request noise baseline.",
+      "zh": "仅v1历史内容：将单字段编辑与干净决策、完全相同请求的重复噪声对比。"
     },
     "reading": {
-      "en": "Measures decision changes under perturbation; flips are not automatically errors against independent labels.",
-      "zh": "衡量扰动下的决策变化；翻转不自动等于独立真值上的错误。"
+      "en": "Historical v1 reading only: decision flips are not automatically errors against independent labels. The v2 abstract now reports audited answers and answer-preserving variants; those changes have not yet received full-text audit.",
+      "zh": "仅保留v1历史阅读：决策翻转不能自动视为独立真值错误。v2摘要现报告审核答案及保持答案的变体，其修订仍待全文审核。"
     },
-    "source_section": "Benchmark construction and evaluation protocol",
+    "source_section": "Historical v1: benchmark construction and evaluation protocol; v2 full-text comparison pending",
     "source": "https://arxiv.org/pdf/2609.31142v1"
   },
   {
@@ -1936,5 +1936,27 @@
     },
     "source_section": "v1 pp. 1–7; methods §3.2, results §4, Table 1 and limitations §5",
     "source": "https://arxiv.org/pdf/2611.09264v1"
+  },
+  {
+    "id": "2611.11480",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "BEIR",
+      "TREC Deep Learning 2019–2021"
+    ],
+    "data_role": {
+      "en": "Eight BEIR collections for ranking. Calibration fit: DL19, 2,257 judged pairs/43 queries; development: DL20, 2,859/54; held-out new corpus/year: DL21, 2,786/53. Relevance is grade ≥2 for TREC, ≥1 for four cross-domain BEIR collections.",
+      "zh": "八个BEIR集合评估排序。校准拟合DL19：2,257个人工判断样本对/43查询；开发DL20：2,859/54；跨年份及语料留出DL21：2,786/53。TREC相关性定义为等级≥2，四个跨领域BEIR集合为≥1。"
+    },
+    "design": {
+      "en": "Shared BM25 top-100 candidates and FLAN-UL2 256-token document truncation; seven scorers including hosted Jev 1.13-20260917, FLAN-UL2, three cross-encoders and two open decision models. Positive-slope two-parameter Platt calibration fits DL19 only and preserves ordering. Paired 10,000-query bootstraps; truncation compares fixed depths, a DL19-tuned threshold, expected-F1 and an oracle.",
+      "zh": "共享BM25前100候选与FLAN-UL2前256 token文档裁剪；七个评分器包括托管Jev 1.13-20260917、FLAN-UL2、三个交叉编码器及两个开放决策模型。正斜率双参数Platt仅在DL19拟合，保持排序；以查询为单位进行10,000次配对bootstrap。截断比较固定深度、DL19调参阈值、期望F1及oracle。"
+    },
+    "reading": {
+      "en": "Jev’s native DL21 outputs above 0.9 are relevant only 66% of the time. Calibration changes Brier/log loss/ECE from 0.213/1.315/0.211 to 0.147/0.478/0.100; pplx-decider calibrated Brier is 0.144. Jev expected-F1 achieves 0.638 versus 0.630 tuned threshold, 0.506 fixed top-10 and 0.778 oracle. Four-domain mean Brier worsens 0.197→0.214 despite lower log loss. Ranking gains, rounding ties and label granularity are distinct from calibrated probability quality. Condensed judged lists and one hosted model run limit deployment inference.",
+      "zh": "Jev在DL21上原始概率>0.9的样本仅66%相关。校准使Brier/对数损失/ECE从0.213/1.315/0.211变为0.147/0.478/0.100；pplx-decider校准Brier为0.144。Jev期望F1为0.638，调参阈值0.630、固定前十0.506、oracle 0.778。四领域平均Brier从0.197恶化至0.214，尽管对数损失下降。排序收益、舍入并列和标签粒度须与概率校准区分；仅人工判断的压缩列表及单次托管运行限制部署外推。"
+    },
+    "source_section": "v1 pp. 1–16; Tables 1–5; Sections 3–7",
+    "source": "https://arxiv.org/pdf/2611.11480v1"
   }
 ]

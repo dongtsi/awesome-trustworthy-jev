@@ -2512,17 +2512,17 @@
     "kind": "Paper",
     "scope": "Jev",
     "date": "2026-09-25",
-    "updated": "2026-09-25",
+    "updated": "2026-10-26",
     "added": "2026-10-02",
     "url": "https://arxiv.org/abs/2609.31142",
-    "pdf": "https://arxiv.org/pdf/2609.31142v1",
+    "pdf": "https://arxiv.org/pdf/2609.31142v2",
     "code": "",
-    "version": "2609.31142v1",
-    "summary": "Benchmarks typed decision perturbations against an identical-request noise floor.",
-    "summary_zh": "单字段扰动对照重复噪声，量化翻转、概率变化和复核负载。",
-    "limitation": "82.4% 标签来自模型共识；翻转不是独立真值错误。",
-    "evidence": "Preprint",
-    "review": "Annotated",
+    "version": "2609.31142v2",
+    "summary": "The revised benchmark uses 862 questions with audited answers and 5,586 answer-preserving variants, evaluating initially correct decisions against a repeat-request noise baseline. It reports substantial residual decision error even after confidence filtering; valid output format and high confidence do not establish safe execution.",
+    "summary_zh": "修订基准包含862个具有审核答案的问题及5,586个保持答案的变体，对初始正确决策进行评估并设重复请求噪声基线。摘要报告置信度过滤后仍有明显决策错误；有效输出格式和高置信度不能建立执行安全性。",
+    "limitation": "Author-reported v2 abstract findings; full revision and artifact audit pending; no independent replication.",
+    "evidence": "Original arXiv v2 metadata and abstract",
+    "review": "v2 metadata and abstract verified 2026-11-11; detailed v2 audit pending; any retained v1 comparison is explicitly historical",
     "authors": [
       "Jianyi Hu",
       "Hangtao Zhang",
@@ -2545,8 +2545,8 @@
       "benchmark"
     ],
     "schema_version": 2,
-    "brief_en": "Introduces an adversarial benchmark that compares single-field perturbations with repeated clean requests, separating attack effects from output noise.",
-    "brief_zh": "单字段扰动对照重复噪声，量化翻转、概率变化和复核负载。",
+    "brief_en": "The revised benchmark uses 862 questions with audited answers and 5,586 answer-preserving variants, evaluating initially correct decisions against a repeat-request noise baseline. It reports substantial residual decision error even after confidence filtering; valid output format and high confidence do not establish safe execution.",
+    "brief_zh": "修订基准包含862个具有审核答案的问题及5,586个保持答案的变体，对初始正确决策进行评估并设重复请求噪声基线。摘要报告置信度过滤后仍有明显决策错误；有效输出格式和高置信度不能建立执行安全性。",
     "datasets": [
       "JevAdvBench"
     ]
@@ -8702,11 +8702,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised example passes serialized question definitions into the cached assessment function.",
-    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订示例将序列化问题定义作为缓存评估函数的显式输入。",
+    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "limitation": "Illustrative prompts and replies, not a representative safety benchmark; thresholds require validation on deployment traffic. Vendor immunity claims are not independently established.",
-    "evidence": "Original official documentation inspected 2026-11-03",
-    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.",
+    "evidence": "Original official documentation inspected 2026-11-03; complete official source diff inspected 2026-11-11",
+    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -8716,8 +8716,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised example passes serialized question definitions into the cached assessment function.",
-    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订示例将序列化问题定义作为缓存评估函数的显式输入。",
+    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -9976,11 +9976,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee.",
-    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。",
+    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "limitation": "Single dataset and model run; threshold sweep and reported frontier share evaluation rows, expanded answer key not independently audited; no latency or deployed-risk guarantee.",
-    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07",
-    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed",
+    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07; complete official source diff inspected 2026-11-11",
+    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee.",
-    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。",
+    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -17739,14 +17739,14 @@
   },
   {
     "id": "2610.30090",
-    "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
+    "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage",
     "short": "VX-One",
     "kind": "Paper",
     "url": "https://arxiv.org/abs/2610.30090",
-    "pdf": "https://arxiv.org/pdf/2610.30090v1",
+    "pdf": "https://arxiv.org/pdf/2610.30090v2",
     "date": "2026-10-21",
-    "updated": "2026-10-21",
-    "version": "2610.30090v1",
+    "updated": "2026-10-24",
+    "version": "2610.30090v2",
     "added": "2026-10-23",
     "authors": [
       "Juan S. Santillana"
@@ -17763,13 +17763,13 @@
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "brief_en": "Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.",
-    "brief_zh": "研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。",
-    "summary": "Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.",
-    "summary_zh": "研究边界流量分流的小型类型化决策头、未知攻击族及签名级联。检测收益与较弱归因、严重校准漂移并存；缺失载荷的流量重建限制级联结果解释。",
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original abstract verified; detailed full-text review pending",
-    "limitation": "Abstract-level review; no independent replication.",
+    "brief_en": "Evaluates calibrated typed heads on intrusion and malware datasets. Temporal detection gains coexist with weaker multi-class attribution and severe calibration drift (reported ECE 0.04→0.40). Signature cascades on reconstructed flows and payload-bearing traffic have different coverage; the revised abstract limits second-stage recovery to in-scope attack classes.",
+    "brief_zh": "在入侵与恶意软件数据集上评估校准类型化决策头。时间划分下的检测收益与较弱多类归因、严重校准漂移并存，报告ECE从0.04升至0.40。重建流与带载荷流量的签名级联覆盖不同；修订摘要将第二阶段恢复范围限定于所覆盖攻击类别。",
+    "summary": "Evaluates calibrated typed heads on intrusion and malware datasets. Temporal detection gains coexist with weaker multi-class attribution and severe calibration drift (reported ECE 0.04→0.40). Signature cascades on reconstructed flows and payload-bearing traffic have different coverage; the revised abstract limits second-stage recovery to in-scope attack classes.",
+    "summary_zh": "在入侵与恶意软件数据集上评估校准类型化决策头。时间划分下的检测收益与较弱多类归因、严重校准漂移并存，报告ECE从0.04升至0.40。重建流与带载荷流量的签名级联覆盖不同；修订摘要将第二阶段恢复范围限定于所覆盖攻击类别。",
+    "evidence": "Original arXiv v2 metadata and abstract",
+    "review": "v2 metadata and abstract verified 2026-11-11; detailed v2 audit pending; any retained v1 comparison is explicitly historical",
+    "limitation": "Author-reported v2 abstract findings; full revision and artifact audit pending; no independent replication.",
     "datasets": []
   },
   {
@@ -20598,16 +20598,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration.",
-    "summary": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration.",
-    "brief_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。",
-    "summary_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。",
+    "brief_en": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary": "Uses Noul scores to rerank thirty BM25 candidates for each of forty CLERC queries. Revised displayed top-1 accuracy is 5%→30% and top-10 is 38%→65%; all selected shortlists contain the gold passage, so this small example does not measure retrieval failures or probability calibration. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary_zh": "以Noul重排40个CLERC查询各自的30个BM25候选。修订后展示top-1准确率5%→30%、top-10为38%→65%；选定查询的候选列表均包含正确段落，故小规模示例不评测检索漏召或概率校准。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
-    "evidence": "Original official tutorial prose, design and displayed results",
-    "review": "Original revised tutorial reviewed 2026-11-07; publication date unknown; code not executed",
+    "evidence": "Original official tutorial prose, design and displayed results; complete official source diff inspected 2026-11-11",
+    "review": "Original revised tutorial reviewed 2026-11-07; publication date unknown; code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
   },
   {
@@ -20629,16 +20629,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches.",
-    "summary": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches.",
-    "brief_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。",
-    "summary_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。",
+    "brief_en": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary": "An LLM proposes Jev question features for CatBoost on 2,000 politeness-rated requests, split into 800 proposer-read, 400 selection-check and 800 held-out rows. Five steps expand sixteen questions to twenty and lower held-out RMSE 0.471→0.456 (row-bootstrap difference CI −0.026 to −0.003); this is one run, not variability across searches. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary_zh": "LLM为CatBoost提出Jev问题特征，2000条礼貌性标注请求分为800条提案可读、400条选择检查及800条留出。五步将16个问题增至20个，留出RMSE从0.471降至0.456（逐行bootstrap差值区间−0.026至−0.003）；这是一轮搜索，不涵盖搜索运行间变异。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
-    "evidence": "Original official tutorial prose, design and displayed results",
-    "review": "Revised methods and results reviewed 2026-11-07; publication date unknown; code not executed",
+    "evidence": "Original official tutorial prose, design and displayed results; complete official source diff inspected 2026-11-11",
+    "review": "Revised methods and results reviewed 2026-11-07; publication date unknown; code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "limitation": "Vendor tutorial examples; no independent reproduction or representative multi-task validation."
   },
   {
@@ -20844,16 +20844,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls.",
-    "summary": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls.",
-    "brief_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。",
-    "summary_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。",
+    "brief_en": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
-    "evidence": "Original tutorial methods and displayed results",
-    "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed",
+    "evidence": "Original tutorial methods and displayed results; complete official source diff inspected 2026-11-11",
+    "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "limitation": "Single pinned Wikipedia document, five repeats; serial latency baseline and reduced answer metrics."
   },
   {
@@ -20875,18 +20875,18 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration.",
-    "summary": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration.",
-    "brief_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。",
-    "summary_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。",
+    "brief_en": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "summary": "Checks 1,000 MuSiQue answers with three Noul questions: answerability, refusal and source support. At risk <0.2, 727 answers pass at 95.7% judged accuracy, withholding 84/115 errors but also 189 correct answers. Model-derived labels and prompt selection on 100 included rows limit this demonstration. The revised tutorial defaults to published cached answers and keys model calls by model name.",
+    "brief_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary_zh": "以可回答性、拒答及来源支持三个Noul问题检查1000条MuSiQue答案。风险<0.2时放行727条，模型判定准确率95.7%；拦下115个错误中的84个，也拦下189个正确答案。标签来自模型，且100条评测样本参与问题选择，限制了示例结论。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [
       "MuSiQue"
     ],
-    "evidence": "Original tutorial methods and displayed results, MuSiQue author README and static sample-count checks",
-    "review": "Tutorial fully read and 1,000-row source sample counts checked 2026-11-08; publication date unknown; displayed run date is not publication date; candidate code not executed",
+    "evidence": "Original tutorial methods and displayed results, MuSiQue author README and static sample-count checks; complete official source diff inspected 2026-11-11",
+    "review": "Tutorial fully read and 1,000-row source sample counts checked 2026-11-08; publication date unknown; displayed run date is not publication date; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
     "limitation": "One 1,000-row development-set sample, 473 answerable; Jev reference matching and GPT-6.1 Sol adjudication supply labels. Three question sets were selected on 100 rows included in the evaluation; no independent held-out or human-label risk guarantee."
   },
   {
@@ -21065,17 +21065,20 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1.",
-    "summary": "Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1.",
-    "brief_zh": "在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。",
-    "summary_zh": "在八个BEIR集合上，Jev和27B决策模型重排表现较好，但Jev过度自信：DL21中评分超过0.9的样本对仅66%相关。用2,257个DL19样本对拟合的双参数校准可迁移至DL21，并支持按期望F1选择各查询截断点。",
+    "brief_en": "A DL19-fitted Platt map lowers Jev’s DL21 Brier score from 0.213 to 0.147 and supports expected-F1 truncation at 0.638 versus fixed top-10 at 0.506. Across four BEIR domains, however, mean Brier worsens from 0.197 to 0.214. Ranking strength and within-task calibration transfer do not imply reliable probabilities in new domains.",
+    "summary": "A DL19-fitted Platt map lowers Jev’s DL21 Brier score from 0.213 to 0.147 and supports expected-F1 truncation at 0.638 versus fixed top-10 at 0.506. Across four BEIR domains, however, mean Brier worsens from 0.197 to 0.214. Ranking strength and within-task calibration transfer do not imply reliable probabilities in new domains.",
+    "brief_zh": "用DL19拟合的Platt映射将Jev的DL21 Brier分数从0.213降至0.147，期望F1截断得到0.638，对比固定前十项0.506。但在四个BEIR领域上，平均Brier从0.197恶化至0.214。排序能力与同类任务校准迁移不能推出新领域概率可靠。",
+    "summary_zh": "用DL19拟合的Platt映射将Jev的DL21 Brier分数从0.213降至0.147，期望F1截断得到0.638，对比固定前十项0.506。但在四个BEIR领域上，平均Brier从0.197恶化至0.214。排序能力与同类任务校准迁移不能推出新领域概率可靠。",
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
-    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+    "datasets": [
+      "BEIR",
+      "TREC Deep Learning 2019–2021"
+    ],
+    "evidence": "Complete arXiv v1 text, 16 pages; Tables 1–5 and Sections 3–7",
+    "review": "Full 16-page v1 read 2026-11-11; original metadata still v1; no independent replication",
+    "limitation": "Calibration and truncation use explicitly judged pairs with unjudged candidates removed. One hosted Jev draw with a 300-pair repeat check; some cross-encoders were added after initial DL21 results were known. Cross-domain calibration can worsen Brier; expected-F1 is a plug-in rule and still uses labeled calibration data."
   },
   {
     "id": "2611.10802",
@@ -21239,5 +21242,48 @@
     "evidence": "Original arXiv metadata and abstract",
     "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
     "limitation": "Abstract-level review of author-reported findings; no independent replication."
+  },
+  {
+    "id": "2611.14115",
+    "title": "LEASH: Stay Safe in Agentic Robotics",
+    "short": "LEASH robot safety gates",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.14115",
+    "pdf": "https://arxiv.org/pdf/2611.14115v1",
+    "doi": "10.48550/arXiv.2611.14115",
+    "date": "2026-11-10",
+    "updated": "2026-11-10",
+    "version": "2611.14115v1",
+    "added": "2026-11-11",
+    "authors": [
+      "Qinfeng Zhu",
+      "Weiguang Zhao",
+      "Ke Sun",
+      "Xihao Guo",
+      "Yunxi Jiang",
+      "Rui Zhang",
+      "Lei Fan",
+      "Kaizhu Huang"
+    ],
+    "target": "mixed",
+    "categories": [
+      "applications/agents",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract",
+    "review": "Original authors, first-publication date and abstract verified 2026-11-11; detailed full-text audit pending",
+    "limitation": "Abstract-level review of author-reported results; no independent replication.",
+    "brief_en": "Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.",
+    "summary": "Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.",
+    "brief_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。",
+    "summary_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。"
   }
 ]

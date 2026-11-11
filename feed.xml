@@ -6,6 +6,13 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>LEASH: Stay Safe in Agentic Robotics</title>
+      <link>https://arxiv.org/abs/2611.14115</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.14115#publication</guid>
+      <description>Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.</description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models</title>
       <link>https://arxiv.org/abs/2611.12521</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.12521#publication</guid>
@@ -16,7 +23,7 @@
       <title>Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?</title>
       <link>https://arxiv.org/abs/2611.11480</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.11480#publication</guid>
-      <description>Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1.</description>
+      <description>A DL19-fitted Platt map lowers Jev’s DL21 Brier score from 0.213 to 0.147 and supports expected-F1 truncation at 0.638 versus fixed top-10 at 0.506. Across four BEIR domains, however, mean Brier worsens from 0.197 to 0.214. Ranking strength and within-task calibration transfer do not imply reliable probabilities in new domains.</description>
       <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -433,10 +440,10 @@
       <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift</title>
+      <title>VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage</title>
       <link>https://arxiv.org/abs/2610.30090</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.30090#publication</guid>
-      <description>Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation.</description>
+      <description>Evaluates calibrated typed heads on intrusion and malware datasets. Temporal detection gains coexist with weaker multi-class attribution and severe calibration drift (reported ECE 0.04→0.40). Signature cascades on reconstructed flows and payload-bearing traffic have different coverage; the revised abstract limits second-stage recovery to in-scope attack classes.</description>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1396,13 +1403,6 @@
       <link>https://arxiv.org/abs/2609.36059</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2609.36059#publication</guid>
       <description>Combines raw records with fast judgments and slower reasoning.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev thinks "I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration</title>
-      <link>https://arxiv.org/abs/2609.35342</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.35342#publication</guid>
-      <description>Introduces Sys1Cal-v1 with probabilities known by construction, exposing differences between Choice, Noul and Score outputs.</description>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

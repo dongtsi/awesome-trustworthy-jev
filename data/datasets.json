@@ -619,5 +619,17 @@
     "type": "dataset",
     "checked": "2026-11-10",
     "verification": "Study-defined simulated store described in the paper. Linked anonymous artifact endpoint returned HTTP 401 on 2026-11-10; availability, license and raw run data not independently verified."
+  },
+  "BEIR": {
+    "url": "https://github.com/beir-cellar/beir",
+    "type": "dataset",
+    "checked": "2026-11-11",
+    "verification": "Original benchmark entry and paper protocol inspected; exact scorer outputs were not independently reproduced."
+  },
+  "TREC Deep Learning 2019–2021": {
+    "url": "https://trec.nist.gov/data/deep.html",
+    "type": "dataset",
+    "checked": "2026-11-11",
+    "verification": "Original benchmark entry and paper protocol inspected; exact scorer outputs were not independently reproduced."
   }
 }

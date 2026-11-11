@@ -2,13 +2,17 @@
 
 Grouped by first public publication date.
 
+## 2026-11-10
+
+- [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115) — Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.14115v1)
+
 ## 2026-11-09
 
 - [Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models](https://arxiv.org/abs/2611.12521) — Audits five open decision models for calibration, cross-question interference and attribution faithfulness. Provider confidence is a distribution-dispersion statistic rather than empirical accuracy; small and larger models show markedly different question-bundling sensitivity. Reported robustness and attribution gains are specific to the tested tasks and baselines. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.12521v1)
 
 ## 2026-11-08
 
-- [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480) — Across eight BEIR collections, Jev and a 27B decision model rerank well, but Jev is overconfident: only 66% of DL21 pairs scored above 0.9 are relevant. A two-parameter calibration fitted on 2,257 DL19 pairs transfers to DL21 and supports per-query cutoffs chosen by expected F1. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.11480v1)
+- [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480) — A DL19-fitted Platt map lowers Jev’s DL21 Brier score from 0.213 to 0.147 and supports expected-F1 truncation at 0.638 versus fixed top-10 at 0.506. Across four BEIR domains, however, mean Brier worsens from 0.197 to 0.214. Ranking strength and within-task calibration transfer do not imply reliable probabilities in new domains. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.11480v1)
 
 ## 2026-11-07
 
@@ -122,7 +126,7 @@ Grouped by first public publication date.
 
 ## 2026-10-21
 
-- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift](https://arxiv.org/abs/2610.30090) — Studies small typed decision heads for perimeter triage, unknown families and signature cascades. Detection gains coexist with weaker attribution and severe calibration drift; payload-less traffic reconstruction limits cascade interpretation. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.30090v1)
+- [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage](https://arxiv.org/abs/2610.30090) — Evaluates calibrated typed heads on intrusion and malware datasets. Temporal detection gains coexist with weaker multi-class attribution and severe calibration drift (reported ECE 0.04→0.40). Signature cascades on reconstructed flows and payload-bearing traffic have different coverage; the revised abstract limits second-stage recovery to in-scope attack classes. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.30090v2)
 - [Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models](https://arxiv.org/abs/2610.30045) — Uses executable rules, crossed states and controlled rewrites to study transfer and joint correctness. Jev changes answers more across equivalent wordings than identical repeats; conclusions about joint reliability depend on what the calibration reference preserves. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.30045v1)
 - [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961) — Removes correct legal authorities to test abstention alongside standard CaseHOLD accuracy. Decision models can match strong LLM accuracy at lower reported inference cost, yet often still select an authority when none is valid; an agreement gate reduces errors. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.29961v1)
 - [When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models](https://arxiv.org/abs/2610.29217) — Tests probability allocation when several choices are correct: even perfect ranking can place a correct choice below the uniform threshold, and identical choices receive unequal probabilities. Thresholding does not reliably recover the correct set. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.29217v1)
@@ -359,7 +363,7 @@ Grouped by first public publication date.
 ## 2026-09-25
 
 - [Jev at the Agent Authorization Boundary: Evaluating TypeSafe’s Decision Model on Allow, Hold, and Deny](https://zenodo.org/records/22952571) — Evaluates allow, hold and deny against authored policy specifications. `Evaluation` · [PDF](https://zenodo.org/api/records/22952571/files/arxiv-preprint.pdf/content)
-- [JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models](https://arxiv.org/abs/2609.31142) — Introduces an adversarial benchmark that compares single-field perturbations with repeated clean requests, separating attack effects from output noise. `Evaluation · Benchmark` · [PDF](https://arxiv.org/pdf/2609.31142v1)
+- [JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models](https://arxiv.org/abs/2609.31142) — The revised benchmark uses 862 questions with audited answers and 5,586 answer-preserving variants, evaluating initially correct decisions against a repeat-request noise baseline. It reports substantial residual decision error even after confidence filtering; valid output format and high confidence do not establish safe execution. `Evaluation · Benchmark` · [PDF](https://arxiv.org/pdf/2609.31142v2)
 - [JevSoup: System-One Routing for Training-Free LoRA Composition](https://arxiv.org/abs/2609.30922) — Routes and combines LoRA experts using typed choices. `System` · [PDF](https://arxiv.org/pdf/2609.30922v1) · [Code](https://github.com/Leowang980/JevSoup.)
 - [LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information](https://arxiv.org/abs/2609.30706) — Learns which missing information is worth asking for. `Method` · [PDF](https://arxiv.org/pdf/2609.30706v1)
 
