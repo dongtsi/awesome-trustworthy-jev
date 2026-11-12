@@ -9976,11 +9976,11 @@
     "pdf": "",
     "code": "",
     "version": "",
-    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys.",
+    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。",
     "limitation": "Single dataset and model run; threshold sweep and reported frontier share evaluation rows, expanded answer key not independently audited; no latency or deployed-risk guarantee.",
-    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07; complete official source diff inspected 2026-11-11",
-    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
+    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07; complete official source diff inspected 2026-11-11; complete source diff inspected 2026-11-12",
+    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown. 2026-11-12: API-key-free cache replay; generator cache now includes full model/effort configuration. Displayed results unchanged; no code execution.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys.",
+    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -20844,16 +20844,16 @@
     "contributions": [
       "documentation"
     ],
-    "brief_en": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "summary": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "brief_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
-    "summary_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "brief_en": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name. Cached replay can now initialize without an API key.",
+    "summary": "Compares batching thirteen GDPR questions against thirteen sequential calls over five repeats. The displayed run costs 12.2 times less and takes 0.24 versus 2.81 seconds; answer means differ by at most 0.004. This one-document example does not establish invariance or the same latency gain against concurrent calls. The revised tutorial defaults to published cached answers and keys model calls by model name. Cached replay can now initialize without an API key.",
+    "brief_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 缓存重放现可在没有API密钥时初始化。",
+    "summary_zh": "在同一GDPR文档上重复五次，比较13个问题合并调用与逐一串行调用。演示成本降低12.2倍，耗时0.24对2.81秒，答案均值最多相差0.004；单文档示例不证明普遍不变性，也不代表相对并发调用具有同等延迟收益。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 缓存重放现可在没有API密钥时初始化。",
     "theme": "Official",
     "scope": "Jev",
     "schema_version": 2,
     "datasets": [],
-    "evidence": "Original tutorial methods and displayed results; complete official source diff inspected 2026-11-11",
-    "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
+    "evidence": "Original tutorial methods and displayed results; complete official source diff inspected 2026-11-11; complete source diff inspected 2026-11-12",
+    "review": "Original tutorial reviewed 2026-11-07; publication date unknown; code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown. 2026-11-12: API-key-free initialization for published-cache replay. Displayed results unchanged; no code execution.",
     "limitation": "Single pinned Wikipedia document, five repeats; serial latency baseline and reduced answer metrics."
   },
   {
@@ -21231,17 +21231,21 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Replaces atomic Split-K accumulation with deterministic reduction for LoRA inference. Identical-input tests find no observed shrink-output variation versus 97.61% with atomic Split-K=8; structured toxicity probabilities vary in 81.47% of atomic comparisons. The implementation reports 16.8–21.1% speedup over unsplit reduction at 1.02–2.62% overhead over the atomic version.",
-    "summary": "Replaces atomic Split-K accumulation with deterministic reduction for LoRA inference. Identical-input tests find no observed shrink-output variation versus 97.61% with atomic Split-K=8; structured toxicity probabilities vary in 81.47% of atomic comparisons. The implementation reports 16.8–21.1% speedup over unsplit reduction at 1.02–2.62% overhead over the atomic version.",
-    "brief_zh": "用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。",
-    "summary_zh": "用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。",
+    "brief_en": "Deterministic Split-K removes observed within-configuration LoRA variation. On Qwen3 toxicity decisions, atomic probabilities change in 81.47% of comparisons but decisions flip in only 7/9,000; deterministic generation still changes in 39.06% of cross-batch comparisons. Kernel repeatability does not establish batch invariance or hosted Jev reliability.",
+    "summary": "Deterministic Split-K removes observed within-configuration LoRA variation. On Qwen3 toxicity decisions, atomic probabilities change in 81.47% of comparisons but decisions flip in only 7/9,000; deterministic generation still changes in 39.06% of cross-batch comparisons. Kernel repeatability does not establish batch invariance or hosted Jev reliability.",
+    "brief_zh": "确定性Split-K消除了所测固定配置内的LoRA变化。Qwen3毒性决策中，原子实现概率在81.47%的比较中变化，但决策仅翻转7/9,000次；确定性实现的跨批次生成仍有39.06%的比较不同。内核可重复性不能推出批次不变性或托管Jev的可靠性。",
+    "summary_zh": "确定性Split-K消除了所测固定配置内的LoRA变化。Qwen3毒性决策中，原子实现概率在81.47%的比较中变化，但决策仅翻转7/9,000次；确定性实现的跨批次生成仍有39.06%的比较不同。内核可重复性不能推出批次不变性或托管Jev的可靠性。",
     "theme": "Reliability",
     "scope": "related-model",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-10; detailed full-text audit pending",
-    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+    "datasets": [
+      "GSM8K",
+      "MBPP",
+      "Civil Comments"
+    ],
+    "evidence": "Complete arXiv v1 text, 12 pages; kernel, generation, structured-decision and batch-size experiments",
+    "review": "Full 12-page v1 reviewed 2026-11-12; original metadata rechecked; no independent reproduction",
+    "limitation": "Structured toxicity uses a Jev-style vLLM interface on Qwen3-0.6B plus rank-16 LoRA, not hosted TypeSafe Jev. Repeated comparisons share prompts; timings mainly use one GPU platform. Fixed-input kernel determinism does not guarantee cross-batch invariance or task accuracy."
   },
   {
     "id": "2611.14115",
@@ -21285,5 +21289,40 @@
     "summary": "Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.",
     "brief_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。",
     "summary_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。"
+  },
+  {
+    "id": "typesafe-cookbook-infinite-cardinality-choice",
+    "title": "TypeSafe · Infinite cardinality choice",
+    "short": "Large-catalog Noul–Choice cascade",
+    "kind": "Official",
+    "url": "https://docs.typesafe.ai/cookbooks/infinite_cardinality_choice.md",
+    "date": "",
+    "updated": "",
+    "added": "2026-11-12",
+    "authors": [
+      "TypeSafe"
+    ],
+    "target": "hosted",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "documentation",
+      "evaluation"
+    ],
+    "theme": "Official",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [
+      "TypeSafe tip-of-the-tongue film retrieval sample"
+    ],
+    "evidence": "Complete official tutorial prose, static code and displayed results; official data file listing",
+    "review": "Reviewed 2026-11-12; source publication date unknown; static inspection only, no candidate code or model calls executed",
+    "limitation": "Vendor example with 100 sampled queries and gold films guaranteed in the 5,000-film catalog. Embedding baseline sees short plots; the three-stage cascade also uses long plots. No independent rerun or held-out threshold selection; 48/48 high-confidence successes do not establish general calibration.",
+    "brief_en": "Composes short-plot Noul filtering, long-plot reranking and a 20-way Choice over 5,000 films. On 100 requests the reported top-1 rate is 78%, versus 33% for an embedding shortlist followed by Choice; shortlist recall is 88% versus 35%. All 48 answers at confidence ≥0.8 are correct in this sample, without establishing general probability calibration.",
+    "summary": "Composes short-plot Noul filtering, long-plot reranking and a 20-way Choice over 5,000 films. On 100 requests the reported top-1 rate is 78%, versus 33% for an embedding shortlist followed by Choice; shortlist recall is 88% versus 35%. All 48 answers at confidence ≥0.8 are correct in this sample, without establishing general probability calibration.",
+    "brief_zh": "在5,000部电影上组合短剧情Noul筛选、长剧情重排与20选项Choice。100个请求的展示top-1为78%，对比嵌入候选加Choice的33%；候选召回分别88%与35%。样本中置信度≥0.8的48个答案全部正确，但不能据此建立普遍概率校准。",
+    "summary_zh": "在5,000部电影上组合短剧情Noul筛选、长剧情重排与20选项Choice。100个请求的展示top-1为78%，对比嵌入候选加Choice的33%；候选召回分别88%与35%。样本中置信度≥0.8的48个答案全部正确，但不能据此建立普遍概率校准。"
   }
 ]

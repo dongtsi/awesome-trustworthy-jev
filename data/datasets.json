@@ -631,5 +631,29 @@
     "type": "dataset",
     "checked": "2026-11-11",
     "verification": "Original benchmark entry and paper protocol inspected; exact scorer outputs were not independently reproduced."
+  },
+  "GSM8K": {
+    "url": "https://github.com/openai/grade-school-math",
+    "type": "dataset",
+    "checked": "2026-11-12",
+    "verification": "Original OpenAI dataset README retrieved and inspected."
+  },
+  "MBPP": {
+    "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+    "type": "dataset",
+    "checked": "2026-11-12",
+    "verification": "Original Google Research dataset README and splits inspected."
+  },
+  "Civil Comments": {
+    "url": "https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/text/civil_comments.py",
+    "type": "dataset",
+    "checked": "2026-11-12",
+    "verification": "Official TFDS dataset description inspected; labels are annotator fractions, dataset CC0; web catalog timed out."
+  },
+  "TypeSafe tip-of-the-tongue film retrieval sample": {
+    "url": "https://github.com/typesafe-ai/typesafe-public-examples/tree/main/cookbooks/infinite_cardinality_choice",
+    "type": "dataset",
+    "checked": "2026-11-12",
+    "verification": "Official directory lists requests.jsonl, films.jsonl, published response cache and DATA_LICENSE.md; a tutorial subset, not an independent benchmark."
   }
 }

@@ -19,7 +19,7 @@
 - [Evaluating Jev on Arabic: Comparing Decision Models and LLMs Across Arabic Tasks and Dialects](https://arxiv.org/abs/2611.10802) — 在43项阿拉伯语任务上比较67个系统。Jev 1.14平均指标为69.24，1.13为68.77，Gemma-4-31B为71.81；四个数据集的内容匹配方言相对标准语准确率差为−7.94至−0.35个百分点。总分排序不能建立通用方言鲁棒性排名或解释差距成因。 `评测` · [PDF](https://arxiv.org/pdf/2611.10802v1)
 - [AbductionBench: Benchmarking Abductive Reasoning in Large Language Models](https://arxiv.org/abs/2611.10705) — 以27个数据集、十个领域组织溯因推理评测，区分最终答案、可观察证据使用及假设修订。Jev在紧凑证据上达到或超过小型LLM，但在长案例上落后；书面推理轨迹作为模型输出分析，不视为内部计算的忠实记录。 `评测` · [PDF](https://arxiv.org/pdf/2611.10705v1)
 - [Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market](https://arxiv.org/abs/2611.10414) — 评估具有代码强制影响上界和决策溯源的类型化多Agent新闻阅读器。确认性LLM阅读器的事件窗口关联在新闻发表后明显减弱，且未增加相对纯代码特征的周尺度排序信息；托管Jev结果为描述性。决策卡将88%的成功攻击追溯至来源条目。 `评测` · [PDF](https://arxiv.org/pdf/2611.10414v1)
-- [Reproducible LoRA Inference Through Deterministic Split-K Reduction](https://arxiv.org/abs/2611.10334) — 用确定性归约替换LoRA推理的原子Split-K累加。同输入测试中，收缩输出未观察到变化，原子Split-K=8则有97.61%的比较不同；原子实现的结构化毒性概率在81.47%的比较中变化。实现报告相对未分拆归约加速16.8–21.1%，相对原子版增加1.02–2.62%延迟。 `评测` · [PDF](https://arxiv.org/pdf/2611.10334v1)
+- [Reproducible LoRA Inference Through Deterministic Split-K Reduction](https://arxiv.org/abs/2611.10334) — 确定性Split-K消除了所测固定配置内的LoRA变化。Qwen3毒性决策中，原子实现概率在81.47%的比较中变化，但决策仅翻转7/9,000次；确定性实现的跨批次生成仍有39.06%的比较不同。内核可重复性不能推出批次不变性或托管Jev的可靠性。 `评测` · [PDF](https://arxiv.org/pdf/2611.10334v1)
 
 ## 2026-11-06
 

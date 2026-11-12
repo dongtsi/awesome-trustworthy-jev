@@ -1958,5 +1958,49 @@
     },
     "source_section": "v1 pp. 1–16; Tables 1–5; Sections 3–7",
     "source": "https://arxiv.org/pdf/2611.11480v1"
+  },
+  {
+    "id": "2611.10334",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "GSM8K",
+      "MBPP",
+      "Civil Comments"
+    ],
+    "data_role": {
+      "en": "GSM8K: 7,099/374 training/validation from 7,473 training examples; 1,319 test. MBPP: 374/90/500 train/validation/test. Civil Comments: deduplicated, stratified 20,000/2,000/1,000; toxicity threshold 0.5, test includes 80 toxic and 920 non-toxic comments.",
+      "zh": "GSM8K由7,473训练样本划分7,099/374训练/验证，测试1,319；MBPP训练/验证/测试374/90/500。Civil Comments去重并分层取20,000/2,000/1,000，毒性标签阈值0.5，测试80条有毒、920条无毒。"
+    },
+    "design": {
+      "en": "Atomic Split-K=8, unsplit=1 and fixed-order FP32 deterministic Split-K=8 under BF16, tensor parallelism 1 and pinned serving settings. Three generation models, two LoRA ranks and 50 prompts per dataset each repeated ten times yield 2,700 comparisons per dataset/method. Qwen3-0.6B rank-16 LoRA supplies normalized yes/no probabilities through vLLM noul; 1,000 comments × nine repeats against the first give 9,000 comparisons. Separate fixed-batch and cross-batch tests, captured-kernel replay and selected divergent-pair interventions.",
+      "zh": "比较原子Split-K=8、未分拆=1与固定顺序FP32确定性Split-K=8，采用BF16、张量并行1及固定服务配置。生成任务含三个模型、两个LoRA秩、每数据集50提示各重复十次，每数据集/方法得到2,700次比较。Qwen3-0.6B加rank-16 LoRA通过vLLM noul归一化yes/no概率；1,000评论的九次重复与首轮比较共9,000次。另做固定批次、跨批次、捕获内核重放和选定分歧样本干预。"
+    },
+    "reading": {
+      "en": "Atomic kernel outputs differ in 97.61% of 109,760 comparisons; deterministic and unsplit show zero observed differences. Atomic generation varies in 17.30% of GSM8K and 14.96% of MBPP comparisons. Civil Comments probabilities vary 7,332/9,000 times, but binary decisions flip only 7/9,000 (two comments); accuracy stays about 94.2–94.3%. Deterministic cross-batch generation still varies 150/384 times (39.06%). Latency improves 16.8–21.1% versus unsplit with 1.02–2.62% overhead versus atomic. Causal interventions on ten selected divergent pairs establish sufficiency, not prevalence; neither accuracy gains nor hosted Jev determinism follow.",
+      "zh": "原子内核在109,760次比较的97.61%中不同，确定性与未分拆实现均未观察到差异。原子生成在GSM8K的17.30%、MBPP的14.96%比较中变化。Civil Comments概率变化7,332/9,000次，但二元决策仅翻转7/9,000次、涉及两条评论，准确率约94.2–94.3%。确定性实现跨批次仍变化150/384次（39.06%）。相对未分拆延迟加速16.8–21.1%，相对原子增加1.02–2.62%。十个选定分歧对的干预支持因果充分性，不能估计总体发生率；结果不推出准确率收益或托管Jev确定性。"
+    },
+    "source_section": "v1, complete 12 pages; experimental protocol and kernel/generation/structured-decision/batch-size results",
+    "source": "https://arxiv.org/pdf/2611.10334v1"
+  },
+  {
+    "id": "typesafe-cookbook-infinite-cardinality-choice",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "TypeSafe tip-of-the-tongue film retrieval sample"
+    ],
+    "data_role": {
+      "en": "100 requests sampled from 709 tip-of-the-tongue requests with Wikipedia plots; 5,000 films include every gold film plus multilingual-popularity distractors. Wikipedia snapshot 2026-11-07.",
+      "zh": "从具有维基百科剧情的709个模糊记忆请求中抽取100个；5,000电影包含全部正确电影，其余按多语言页面覆盖选择。维基百科快照2026-11-07。"
+    },
+    "design": {
+      "en": "Jev 1.14.0: Noul over ~100-word plots for all films, top-80 Noul over ~600-word plots, then top-20 Choice. Compare embedding-3-small short-plot top-20 plus the same Choice, and the Noul pipeline without rereading. Published cached outputs; no live rerun.",
+      "zh": "Jev 1.14.0先对全部电影约100词剧情做Noul，再对前80项约600词剧情做Noul，最后前20项做Choice。对照为embedding-3-small短剧情前20加相同Choice，以及去掉长剧情重读的Noul流程。展示已发布缓存输出，未实时复跑。"
+    },
+    "reading": {
+      "en": "Shortlist recall/top-1/top-3: embeddings 35/33/34%, no reread 82/73/76%, all stages 88/78/82%. Choice confidence ≥0.8 covers 48/100 queries with 48/48 correct; below it, 34/52 have the gold film in top three. These are selected-catalog and empirical confidence bands, not out-of-catalog performance, calibrated risk guarantees or equal-information baselines.",
+      "zh": "候选召回/top-1/top-3：嵌入35/33/34%，无重读82/73/76%，完整流程88/78/82%。Choice置信度≥0.8覆盖48/100且48/48正确；阈值以下52项中34项的正确电影位于前三。结论限于所选目录与经验置信分组，不代表目录外性能、校准风险保证或同等信息预算对照。"
+    },
+    "source_section": "Official tutorial: catalog and requests; three stages; ablation table; confidence bands",
+    "source": "https://docs.typesafe.ai/cookbooks/infinite_cardinality_choice.md"
   }
 ]

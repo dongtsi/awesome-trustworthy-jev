@@ -51,7 +51,7 @@
       <title>Reproducible LoRA Inference Through Deterministic Split-K Reduction</title>
       <link>https://arxiv.org/abs/2611.10334</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.10334#publication</guid>
-      <description>Replaces atomic Split-K accumulation with deterministic reduction for LoRA inference. Identical-input tests find no observed shrink-output variation versus 97.61% with atomic Split-K=8; structured toxicity probabilities vary in 81.47% of atomic comparisons. The implementation reports 16.8–21.1% speedup over unsplit reduction at 1.02–2.62% overhead over the atomic version.</description>
+      <description>Deterministic Split-K removes observed within-configuration LoRA variation. On Qwen3 toxicity decisions, atomic probabilities change in 81.47% of comparisons but decisions flip in only 7/9,000; deterministic generation still changes in 39.06% of cross-batch comparisons. Kernel repeatability does not establish batch invariance or hosted Jev reliability.</description>
       <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
