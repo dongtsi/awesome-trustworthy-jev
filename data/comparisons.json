@@ -2002,5 +2002,26 @@
     },
     "source_section": "Official tutorial: catalog and requests; three stages; ablation table; confidence bands",
     "source": "https://docs.typesafe.ai/cookbooks/infinite_cardinality_choice.md"
+  },
+  {
+    "id": "2611.14115",
+    "category": "applications/agents",
+    "datasets": [
+      "RoboRisk"
+    ],
+    "data_role": {
+      "en": "RoboRisk-S: 92 tasks derived from 19 families across five categories; three seeds, 276 trials per configuration, 3,312 across 12 configurations. RoboRisk-R: 13 tasks with one run each per configuration, 143 across 11 configurations. Six unique planners across the two suites, not six in each. Physical hazards use safe props.",
+      "zh": "RoboRisk-S含五类、19个任务族衍生的92项任务；三个种子，每配置276次，12配置共3,312次。RoboRisk-R每配置13项各运行一次，11配置共143次。两套合计六种规划模型，并非每套各六种；实体危险物使用安全道具。"
+    },
+    "design": {
+      "en": "Compare baseline agents without the shared safety policy against policy plus three decision-model gates. Four simulated and five physical planners, with separate reviewer comparisons; no component ablation. Human reviewers label harm, safe success or safe incomplete, with harm taking precedence; harm includes potential harm. Commit gates cover release/pouring skills only. Simulated grasp assistance and 332 pre-grasped restarts (299 with Luna), plus selected physical pre-grasped tasks, limit generalization.",
+      "zh": "对比不含共享安全策略的基线与策略加三个决策模型门控；仿真四种、实体五种规划模型，另有评审模型对照，没有组件消融。人工判定伤害、安全成功或安全未完成，伤害优先且包含潜在伤害。提交门仅覆盖释放/倾倒技能。仿真使用抓取辅助及332次预抓取重启（299次涉及Luna），部分实体任务也预抓取，影响外推。"
+    },
+    "reading": {
+      "en": "Astra simulation harm 11.23→0%, safe success 78.99→80.80%; Sol 18.48→1.45% and 72.10→78.62%. Four physical planners achieve 0/13 harm and 11/13 safe success, while Grok retains 38.46% harm. Some sequential-task completion rates fall. Action/commit label statistics exclude blocked, unexecuted candidates and cannot measure general gate recall. Reported mean overhead for Astra/Sol is 1.66% time and 0.66% estimated cost; API prices estimate costs of subscription-CLI runs. Policy and gate effects are inseparable; zero harm on 13 trials does not certify safety.",
+      "zh": "Astra仿真伤害11.23→0%、安全成功78.99→80.80%；Sol分别18.48→1.45%、72.10→78.62%。四个实体规划模型达到0/13伤害与11/13安全成功，但Grok仍有38.46%伤害。部分顺序任务完成率下降。动作/提交标签不含被阻止且未执行的候选，不能估计一般门控召回率。Astra/Sol平均时间开销1.66%、估算费用0.66%；费用以API价格估算订阅CLI运行。策略与门控作用无法分离，13次零伤害不构成安全认证。"
+    },
+    "source_section": "Complete v1, 18 pages; Sections 3–5 and supplementary task setup, outcome tables, reviewer metrics and overhead",
+    "source": "https://arxiv.org/pdf/2611.14115v1"
   }
 ]

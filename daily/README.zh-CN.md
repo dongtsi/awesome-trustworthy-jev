@@ -2,9 +2,25 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-12
+
+- [Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://arxiv.org/abs/2611.17167) — 比较决策模型的行动与事后评判能力，再用Jev指导Qwen2.5-1.5B策略学习。摘要报告相对GRPO，ALFWorld成功率由72.8%升至82.9%、WebShop由56.8%升至71.4%，说明行动能力较弱未必意味着教学信号无效。 `评测` · [PDF](https://arxiv.org/pdf/2611.17167v1) · [代码](https://github.com/ZJU-REAL/decision-agents)
+- [The Value of Thinking: Learning When to Reason in Hybrid Decision Models](https://arxiv.org/abs/2611.16961) — HDM以预测效用增益和请求级计算价格，在同一冻结骨干的零token决策与完整推理之间选择。摘要报告JevBench准确率0.857，对比Jev的0.851且中位延迟更低；MiniWoB节省token伴随任务奖励折损。 `评测` · [PDF](https://arxiv.org/pdf/2611.16961v1)
+- [S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models](https://arxiv.org/abs/2611.16937) — 研究不可信上下文如何改变System One类型化决策并传导为智能体策略违规。摘要在四个基准、三个模型上报告Jev 1.14平均攻击成功率71.99%、高置信度成功率57.47%，端到端违规率最高24%。 `评测` · [PDF](https://arxiv.org/pdf/2611.16937v1)
+- [Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores](https://arxiv.org/abs/2611.16499) — 在1,065条合成样本上区分Laya的整体与分桶校准。摘要报告交叉拟合分桶校准将宏平均ECE由0.143降至0.073；标称10%错误门限实际错误10.5%，原生分桶阈值可获得近似覆盖率。 `评测` · [PDF](https://arxiv.org/pdf/2611.16499v1)
+- [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321) — NESTONE通过共享末层、共享决策头和自蒸馏，联合训练Qwen3.5-4B完整决策模型及前缀子模型，再以轻量退出门按输入分配深度。摘要报告七个决策基准上更好的准确率与计算量权衡。 `评测` · [PDF](https://arxiv.org/pdf/2611.16321v1)
+
+## 2026-11-11
+
+- [SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](https://arxiv.org/abs/2611.15777) — 提出覆盖11个领域、含人工参考答案和沙箱交互任务的基准，评测21个开放及托管模型。将选项顺序稳定性、缺失正确答案识别与准确率分开考察；得分最高的System One模型在可靠性指标中仅列第七。 `评测 · 基准` · [PDF](https://arxiv.org/pdf/2611.15777v1)
+- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen骨干、数据和决策头学习率扫描下比较五种类型化读出。摘要报告0.6B规模准确率为81.3–82.0%；所测配置中，50万参数余弦头以约一半推理时间达到2,700万参数schema头的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
+- [Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation](https://arxiv.org/abs/2611.15576) — 在五轮调查的20个二元问题上检验Jev答案概率能否保持总体特征。条件预测改善并不稳定保持联合分布，顺序模拟还受问题次序影响，揭示预测准确率与总体有效性的区别。 `评测` · [PDF](https://arxiv.org/pdf/2611.15576v1)
+- [JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning](https://arxiv.org/abs/2611.15362) — 将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。 `评测` · [PDF](https://arxiv.org/pdf/2611.15362v1)
+- [Is Jev a Good Multilingual Judge?](https://arxiv.org/abs/2611.14861) — 在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。 `评测` · [PDF](https://arxiv.org/pdf/2611.14861v1)
+
 ## 2026-11-10
 
-- [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115) — 提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。 `评测` · [PDF](https://arxiv.org/pdf/2611.14115v1)
+- [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115) — LEASH组合共享策略与任务、动作和提交门控。在RoboRisk上，Astra仿真伤害率由11.23%降至0%；四个实体规划模型均为0/13伤害、11/13安全成功。基线未使用该策略、缺少门控组件消融，部分类别的完成率仍下降。 `评测` · [PDF](https://arxiv.org/pdf/2611.14115v1) · [代码](https://github.com/zhuqinfeng1999/LEASH)
 
 ## 2026-11-09
 

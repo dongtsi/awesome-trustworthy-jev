@@ -21272,7 +21272,7 @@
     "target": "mixed",
     "categories": [
       "applications/agents",
-      "trustworthiness/security"
+      "trustworthiness/safety"
     ],
     "contributions": [
       "research",
@@ -21281,14 +21281,17 @@
     "theme": "Reliability",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original authors, first-publication date and abstract verified 2026-11-11; detailed full-text audit pending",
-    "limitation": "Abstract-level review of author-reported results; no independent replication.",
-    "brief_en": "Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.",
-    "summary": "Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.",
-    "brief_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。",
-    "summary_zh": "提出RoboRisk，包含五类安全问题的92项仿真与13项实体机器人任务。LEASH以决策模型构建共享策略下的任务、动作及提交门控。摘要报告六类规划模型的伤害率降低、任务完成大体保持；门控模型对照和实验分母仍待全文审核。"
+    "datasets": [
+      "RoboRisk"
+    ],
+    "evidence": "Complete arXiv v1, 18 pages including appendices; original project and repository metadata; 3,312 original simulation outcome rows and settings rows independently aggregated",
+    "review": "Full 18-page v1 reviewed 2026-11-13; task families, denominators, policy confound and approval-only labels audited; no independent reproduction",
+    "limitation": "Baseline omits the shared safety policy; treatment combines policy and three gates without component ablations. Physical evaluation has 13 tasks per configuration with safe props; simulated tasks share 19 families. Action/commit labels cover approved executed candidates only, and some runs start with a pre-grasped object. Zero observed harm is not a general safety guarantee.",
+    "brief_en": "LEASH combines a shared policy with task, action and commit gates. On RoboRisk, Astra’s simulated harm falls from 11.23% to 0%; four physical planners record 0/13 harm with 11/13 safe success. The baseline lacks the policy, gate components are not ablated, and some category-level completion rates worsen.",
+    "summary": "LEASH combines a shared policy with task, action and commit gates. On RoboRisk, Astra’s simulated harm falls from 11.23% to 0%; four physical planners record 0/13 harm with 11/13 safe success. The baseline lacks the policy, gate components are not ablated, and some category-level completion rates worsen.",
+    "brief_zh": "LEASH组合共享策略与任务、动作和提交门控。在RoboRisk上，Astra仿真伤害率由11.23%降至0%；四个实体规划模型均为0/13伤害、11/13安全成功。基线未使用该策略、缺少门控组件消融，部分类别的完成率仍下降。",
+    "summary_zh": "LEASH组合共享策略与任务、动作和提交门控。在RoboRisk上，Astra仿真伤害率由11.23%降至0%；四个实体规划模型均为0/13伤害、11/13安全成功。基线未使用该策略、缺少门控组件消融，部分类别的完成率仍下降。",
+    "code": "https://github.com/zhuqinfeng1999/LEASH"
   },
   {
     "id": "typesafe-cookbook-infinite-cardinality-choice",
@@ -21324,5 +21327,394 @@
     "summary": "Composes short-plot Noul filtering, long-plot reranking and a 20-way Choice over 5,000 films. On 100 requests the reported top-1 rate is 78%, versus 33% for an embedding shortlist followed by Choice; shortlist recall is 88% versus 35%. All 48 answers at confidence ≥0.8 are correct in this sample, without establishing general probability calibration.",
     "brief_zh": "在5,000部电影上组合短剧情Noul筛选、长剧情重排与20选项Choice。100个请求的展示top-1为78%，对比嵌入候选加Choice的33%；候选召回分别88%与35%。样本中置信度≥0.8的48个答案全部正确，但不能据此建立普遍概率校准。",
     "summary_zh": "在5,000部电影上组合短剧情Noul筛选、长剧情重排与20选项Choice。100个请求的展示top-1为78%，对比嵌入候选加Choice的33%；候选召回分别88%与35%。样本中置信度≥0.8的48个答案全部正确，但不能据此建立普遍概率校准。"
+  },
+  {
+    "id": "2611.17167",
+    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "short": "Decision models as actors, judges and teachers",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.17167",
+    "pdf": "https://arxiv.org/pdf/2611.17167v1",
+    "doi": "10.48550/arXiv.2611.17167",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.17167v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Haochen Liu",
+      "Qianhao Zhu",
+      "Zixuan Wang",
+      "Dingming Li",
+      "Tongbo Chen",
+      "Peng Qiu",
+      "Yingqi Qu",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yongliang Shen"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/architecture",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract-level evidence; trajectory visibility differs between acting and retrospective judging. Detailed splits, controls and uncertainty remain to be audited.",
+    "code": "https://github.com/ZJU-REAL/decision-agents",
+    "brief_en": "Compares decision models as actors and retrospective judges, then uses Jev to teach a Qwen2.5-1.5B policy. The abstract reports success rising from 72.8% to 82.9% on ALFWorld and 56.8% to 71.4% on WebShop over GRPO, suggesting that weak acting need not imply weak teaching.",
+    "summary": "Compares decision models as actors and retrospective judges, then uses Jev to teach a Qwen2.5-1.5B policy. The abstract reports success rising from 72.8% to 82.9% on ALFWorld and 56.8% to 71.4% on WebShop over GRPO, suggesting that weak acting need not imply weak teaching.",
+    "brief_zh": "比较决策模型的行动与事后评判能力，再用Jev指导Qwen2.5-1.5B策略学习。摘要报告相对GRPO，ALFWorld成功率由72.8%升至82.9%、WebShop由56.8%升至71.4%，说明行动能力较弱未必意味着教学信号无效。",
+    "summary_zh": "比较决策模型的行动与事后评判能力，再用Jev指导Qwen2.5-1.5B策略学习。摘要报告相对GRPO，ALFWorld成功率由72.8%升至82.9%、WebShop由56.8%升至71.4%，说明行动能力较弱未必意味着教学信号无效。"
+  },
+  {
+    "id": "2611.16961",
+    "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "short": "Learning the value of thinking",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.16961",
+    "pdf": "https://arxiv.org/pdf/2611.16961v1",
+    "doi": "10.48550/arXiv.2611.16961",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.16961v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Zhengxu Yu",
+      "Ke Xu",
+      "Meng Fang",
+      "Haitham Ammar",
+      "Weilin Luo",
+      "Jun Wang"
+    ],
+    "target": "mixed",
+    "categories": [
+      "foundations/inference",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract and selected original HTML passages inspected, not a full audit. Qwen-based experiments and hosted API latency are setup-dependent; lower token usage does not imply equal task reward.",
+    "brief_en": "HDM routes a frozen backbone between zero-token decisions and full reasoning using predicted utility gain and a request-level computation price. The abstract reports JevBench accuracy 0.857 versus Jev’s 0.851 at lower median latency; its MiniWoB token savings trade off task reward.",
+    "summary": "HDM routes a frozen backbone between zero-token decisions and full reasoning using predicted utility gain and a request-level computation price. The abstract reports JevBench accuracy 0.857 versus Jev’s 0.851 at lower median latency; its MiniWoB token savings trade off task reward.",
+    "brief_zh": "HDM以预测效用增益和请求级计算价格，在同一冻结骨干的零token决策与完整推理之间选择。摘要报告JevBench准确率0.857，对比Jev的0.851且中位延迟更低；MiniWoB节省token伴随任务奖励折损。",
+    "summary_zh": "HDM以预测效用增益和请求级计算价格，在同一冻结骨干的零token决策与完整推理之间选择。摘要报告JevBench准确率0.857，对比Jev的0.851且中位延迟更低；MiniWoB节省token伴随任务奖励折损。"
+  },
+  {
+    "id": "2611.16937",
+    "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+    "short": "S1-Evo typed-decision robustness",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.16937",
+    "pdf": "https://arxiv.org/pdf/2611.16937v1",
+    "doi": "10.48550/arXiv.2611.16937",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.16937v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Kaixiang Wang",
+      "Junjie Li",
+      "Zhaojiacheng Zhou",
+      "Jiong Lou",
+      "Jie Li"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/security",
+      "applications/agents"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Original abstract and introduction inspected; success denominators, perturbation validity and transfer controls await full-text audit. Author-reported research results, not an independently reproduced deployment risk rate.",
+    "brief_en": "Studies how untrusted context can change typed System One decisions and propagate into agent policy violations. Across four benchmarks and three models, the abstract reports 71.99% mean attack success and 57.47% high-confidence success on Jev 1.14, with up to 24% end-to-end violations.",
+    "summary": "Studies how untrusted context can change typed System One decisions and propagate into agent policy violations. Across four benchmarks and three models, the abstract reports 71.99% mean attack success and 57.47% high-confidence success on Jev 1.14, with up to 24% end-to-end violations.",
+    "brief_zh": "研究不可信上下文如何改变System One类型化决策并传导为智能体策略违规。摘要在四个基准、三个模型上报告Jev 1.14平均攻击成功率71.99%、高置信度成功率57.47%，端到端违规率最高24%。",
+    "summary_zh": "研究不可信上下文如何改变System One类型化决策并传导为智能体策略违规。摘要在四个基准、三个模型上报告Jev 1.14平均攻击成功率71.99%、高置信度成功率57.47%，端到端违规率最高24%。"
+  },
+  {
+    "id": "2611.16499",
+    "title": "Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores",
+    "short": "Laya confidence recalibration",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.16499",
+    "pdf": "https://arxiv.org/pdf/2611.16499v1",
+    "doi": "10.48550/arXiv.2611.16499",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.16499v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Mohammed Nayeem Khan",
+      "Aliyas Ahmad Misri"
+    ],
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract-level review. Synthetic model-generated labels, bucket structure and cross-fitting do not establish prospective error guarantees; independent labels and deployment shifts remain to be assessed.",
+    "brief_en": "A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.",
+    "summary": "A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.",
+    "brief_zh": "在1,065条合成样本上区分Laya的整体与分桶校准。摘要报告交叉拟合分桶校准将宏平均ECE由0.143降至0.073；标称10%错误门限实际错误10.5%，原生分桶阈值可获得近似覆盖率。",
+    "summary_zh": "在1,065条合成样本上区分Laya的整体与分桶校准。摘要报告交叉拟合分桶校准将宏平均ECE由0.143降至0.073；标称10%错误门限实际错误10.5%，原生分桶阈值可获得近似覆盖率。"
+  },
+  {
+    "id": "2611.16321",
+    "title": "From Large Language Models to Efficient System One Models via Adaptive Computation",
+    "short": "Adaptive-depth System One decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.16321",
+    "pdf": "https://arxiv.org/pdf/2611.16321v1",
+    "doi": "10.48550/arXiv.2611.16321",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.16321v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Minh-Anh Nguyen"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/inference",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Original metadata, abstract and opening PDF pages inspected; model name and Qwen backbone verified in PDF because the abstract contains an unresolved method macro. Full benchmark, gate-training and hardware audit pending; this paper entry does not certify a released checkpoint.",
+    "brief_en": "NESTONE jointly trains a full Qwen3.5-4B decision model and prefix submodels with shared final layers, a shared head and self-distillation. A lightweight exit gate allocates depth per input; the abstract reports better accuracy–computation trade-offs across seven decision benchmarks.",
+    "summary": "NESTONE jointly trains a full Qwen3.5-4B decision model and prefix submodels with shared final layers, a shared head and self-distillation. A lightweight exit gate allocates depth per input; the abstract reports better accuracy–computation trade-offs across seven decision benchmarks.",
+    "brief_zh": "NESTONE通过共享末层、共享决策头和自蒸馏，联合训练Qwen3.5-4B完整决策模型及前缀子模型，再以轻量退出门按输入分配深度。摘要报告七个决策基准上更好的准确率与计算量权衡。",
+    "summary_zh": "NESTONE通过共享末层、共享决策头和自蒸馏，联合训练Qwen3.5-4B完整决策模型及前缀子模型，再以轻量退出门按输入分配深度。摘要报告七个决策基准上更好的准确率与计算量权衡。"
+  },
+  {
+    "id": "2611.15777",
+    "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+    "short": "SO-Arena capability and reliability",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.15777",
+    "pdf": "https://arxiv.org/pdf/2611.15777v1",
+    "doi": "10.48550/arXiv.2611.15777",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.15777v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Lichen Li",
+      "Ziping Dong",
+      "Sicheng Feng",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation",
+      "benchmark"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract and original model roster inspected. Human-reference construction, task sampling and reliability aggregation await full-text audit; model accuracy and reliability ranks measure different properties.",
+    "brief_en": "Introduces an 11-domain benchmark with human reference answers and sandboxed interactive tasks, evaluating 21 open and hosted models. It tests option-order stability and missing-answer recognition separately from accuracy; the highest-scoring System One model ranks seventh on reliability.",
+    "summary": "Introduces an 11-domain benchmark with human reference answers and sandboxed interactive tasks, evaluating 21 open and hosted models. It tests option-order stability and missing-answer recognition separately from accuracy; the highest-scoring System One model ranks seventh on reliability.",
+    "brief_zh": "提出覆盖11个领域、含人工参考答案和沙箱交互任务的基准，评测21个开放及托管模型。将选项顺序稳定性、缺失正确答案识别与准确率分开考察；得分最高的System One模型在可靠性指标中仅列第七。",
+    "summary_zh": "提出覆盖11个领域、含人工参考答案和沙箱交互任务的基准，评测21个开放及托管模型。将选项顺序稳定性、缺失正确答案识别与准确率分开考察；得分最高的System One模型在可靠性指标中仅列第七。"
+  },
+  {
+    "id": "2611.15592",
+    "title": "Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models",
+    "short": "Controlled typed-decision readouts",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.15592",
+    "pdf": "https://arxiv.org/pdf/2611.15592v1",
+    "doi": "10.48550/arXiv.2611.15592",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.15592v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Ritvik Rastogi"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract-level review of a controlled single-seed protocol over 15 English data sources. Head equivalence and speed ratios are conditional on backbone, tuning and hardware; broader replication remains pending.",
+    "brief_en": "Compares five typed-decision readouts on a shared Qwen backbone with matched data and a head learning-rate sweep. The abstract reports 81.3–82.0% accuracy at 0.6B; a 0.5M-parameter cosine head matches a 27M schema head at roughly half its inference time in the tested setup.",
+    "summary": "Compares five typed-decision readouts on a shared Qwen backbone with matched data and a head learning-rate sweep. The abstract reports 81.3–82.0% accuracy at 0.6B; a 0.5M-parameter cosine head matches a 27M schema head at roughly half its inference time in the tested setup.",
+    "brief_zh": "在相同Qwen骨干、数据和决策头学习率扫描下比较五种类型化读出。摘要报告0.6B规模准确率为81.3–82.0%；所测配置中，50万参数余弦头以约一半推理时间达到2,700万参数schema头的准确率。",
+    "summary_zh": "在相同Qwen骨干、数据和决策头学习率扫描下比较五种类型化读出。摘要报告0.6B规模准确率为81.3–82.0%；所测配置中，50万参数余弦头以约一半推理时间达到2,700万参数schema头的准确率。"
+  },
+  {
+    "id": "2611.15576",
+    "title": "Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation",
+    "short": "Jev survey joint-distribution validity",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.15576",
+    "pdf": "https://arxiv.org/pdf/2611.15576v1",
+    "doi": "10.48550/arXiv.2611.15576",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.15576v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Zengqing Wu",
+      "Chuan Xiao"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Original abstract reviewed; detailed survey sampling, conditioning and joint-distribution metrics remain pending. Included for probability reliability, not as an endorsement of replacing respondents with model outputs.",
+    "brief_en": "Tests whether Jev answer probabilities preserve survey populations across 20 binary items and five waves. Conditional prediction gains do not consistently preserve joint distributions; sequential simulation also depends on question order, separating predictive accuracy from population validity.",
+    "summary": "Tests whether Jev answer probabilities preserve survey populations across 20 binary items and five waves. Conditional prediction gains do not consistently preserve joint distributions; sequential simulation also depends on question order, separating predictive accuracy from population validity.",
+    "brief_zh": "在五轮调查的20个二元问题上检验Jev答案概率能否保持总体特征。条件预测改善并不稳定保持联合分布，顺序模拟还受问题次序影响，揭示预测准确率与总体有效性的区别。",
+    "summary_zh": "在五轮调查的20个二元问题上检验Jev答案概率能否保持总体特征。条件预测改善并不稳定保持联合分布，顺序模拟还受问题次序影响，揭示预测准确率与总体有效性的区别。"
+  },
+  {
+    "id": "2611.15362",
+    "title": "JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning",
+    "short": "JEV-VAD semantic endpointing",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.15362",
+    "pdf": "https://arxiv.org/pdf/2611.15362v1",
+    "doi": "10.48550/arXiv.2611.15362",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.15362v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Jintao Liang",
+      "Nan Li",
+      "Longbiao Wang",
+      "Tubin Huang",
+      "Min Xu"
+    ],
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract-level review; detailed latency measurements, language splits and pruning controls await full text. Open-backbone research classification does not certify release of the proposed weights.",
+    "brief_en": "Adapts Qwen3-ASR-0.6B into a scalar endpoint decision model using task-first conditioning, decoder-prefix pruning and matched head refitting. The abstract reports cross-language transfer from English endpoint supervision after supervised fine-tuning followed by RLCD.",
+    "summary": "Adapts Qwen3-ASR-0.6B into a scalar endpoint decision model using task-first conditioning, decoder-prefix pruning and matched head refitting. The abstract reports cross-language transfer from English endpoint supervision after supervised fine-tuning followed by RLCD.",
+    "brief_zh": "将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。",
+    "summary_zh": "将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。"
+  },
+  {
+    "id": "2611.14861",
+    "title": "Is Jev a Good Multilingual Judge?",
+    "short": "Jev multilingual judging",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.14861",
+    "pdf": "https://arxiv.org/pdf/2611.14861v1",
+    "doi": "10.48550/arXiv.2611.14861",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.14861v1",
+    "added": "2026-11-13",
+    "authors": [
+      "Wei Liu",
+      "Yi Fan",
+      "Xiyan Fu"
+    ],
+    "target": "hosted",
+    "categories": [
+      "trustworthiness/reliability",
+      "trustworthiness/fairness"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
+    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
+    "limitation": "Abstract-level review; language coverage, human-label agreement and cost accounting await detailed audit. Aggregate performance does not establish equal reliability across languages.",
+    "brief_en": "Evaluates Jev as a binary, pairwise and graded judge on four human-labeled benchmarks spanning up to 47 language varieties. The abstract reports competitive performance and lower cost on most tasks, with weaker knowledge verification and more incorrect acceptance in low-resource languages.",
+    "summary": "Evaluates Jev as a binary, pairwise and graded judge on four human-labeled benchmarks spanning up to 47 language varieties. The abstract reports competitive performance and lower cost on most tasks, with weaker knowledge verification and more incorrect acceptance in low-resource languages.",
+    "brief_zh": "在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。",
+    "summary_zh": "在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。"
   }
 ]

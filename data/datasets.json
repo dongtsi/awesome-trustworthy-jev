@@ -655,5 +655,11 @@
     "type": "dataset",
     "checked": "2026-11-12",
     "verification": "Official directory lists requests.jsonl, films.jsonl, published response cache and DATA_LICENSE.md; a tutorial subset, not an independent benchmark."
+  },
+  "RoboRisk": {
+    "url": "https://github.com/zhuqinfeng1999/LEASH/tree/main/benchmark",
+    "type": "benchmark",
+    "checked": "2026-11-13",
+    "verification": "Original paper, project and repository README inspected. GitHub API supplied 3,312 simulation outcome rows and 3,312 settings rows; unique trial keys, one-to-one joins, rates and preheld counts checked with own aggregation. Hugging Face endpoint failed; no model rerun."
   }
 }

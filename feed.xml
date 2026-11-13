@@ -6,10 +6,80 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
+      <link>https://arxiv.org/abs/2611.17167</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17167#publication</guid>
+      <description>Compares decision models as actors and retrospective judges, then uses Jev to teach a Qwen2.5-1.5B policy. The abstract reports success rising from 72.8% to 82.9% on ALFWorld and 56.8% to 71.4% on WebShop over GRPO, suggesting that weak acting need not imply weak teaching.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The Value of Thinking: Learning When to Reason in Hybrid Decision Models</title>
+      <link>https://arxiv.org/abs/2611.16961</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.16961#publication</guid>
+      <description>HDM routes a frozen backbone between zero-token decisions and full reasoning using predicted utility gain and a request-level computation price. The abstract reports JevBench accuracy 0.857 versus Jev’s 0.851 at lower median latency; its MiniWoB token savings trade off task reward.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models</title>
+      <link>https://arxiv.org/abs/2611.16937</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.16937#publication</guid>
+      <description>Studies how untrusted context can change typed System One decisions and propagate into agent policy violations. Across four benchmarks and three models, the abstract reports 71.99% mean attack success and 57.47% high-confidence success on Jev 1.14, with up to 24% end-to-end violations.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores</title>
+      <link>https://arxiv.org/abs/2611.16499</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.16499#publication</guid>
+      <description>A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>From Large Language Models to Efficient System One Models via Adaptive Computation</title>
+      <link>https://arxiv.org/abs/2611.16321</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.16321#publication</guid>
+      <description>NESTONE jointly trains a full Qwen3.5-4B decision model and prefix submodels with shared final layers, a shared head and self-distillation. A lightweight exit gate allocates depth per input; the abstract reports better accuracy–computation trade-offs across seven decision benchmarks.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</title>
+      <link>https://arxiv.org/abs/2611.15777</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.15777#publication</guid>
+      <description>Introduces an 11-domain benchmark with human reference answers and sandboxed interactive tasks, evaluating 21 open and hosted models. It tests option-order stability and missing-answer recognition separately from accuracy; the highest-scoring System One model ranks seventh on reliability.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models</title>
+      <link>https://arxiv.org/abs/2611.15592</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.15592#publication</guid>
+      <description>Compares five typed-decision readouts on a shared Qwen backbone with matched data and a head learning-rate sweep. The abstract reports 81.3–82.0% accuracy at 0.6B; a 0.5M-parameter cosine head matches a 27M schema head at roughly half its inference time in the tested setup.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation</title>
+      <link>https://arxiv.org/abs/2611.15576</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.15576#publication</guid>
+      <description>Tests whether Jev answer probabilities preserve survey populations across 20 binary items and five waves. Conditional prediction gains do not consistently preserve joint distributions; sequential simulation also depends on question order, separating predictive accuracy from population validity.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning</title>
+      <link>https://arxiv.org/abs/2611.15362</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.15362#publication</guid>
+      <description>Adapts Qwen3-ASR-0.6B into a scalar endpoint decision model using task-first conditioning, decoder-prefix pruning and matched head refitting. The abstract reports cross-language transfer from English endpoint supervision after supervised fine-tuning followed by RLCD.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Is Jev a Good Multilingual Judge?</title>
+      <link>https://arxiv.org/abs/2611.14861</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.14861#publication</guid>
+      <description>Evaluates Jev as a binary, pairwise and graded judge on four human-labeled benchmarks spanning up to 47 language varieties. The abstract reports competitive performance and lower cost on most tasks, with weaker knowledge verification and more incorrect acceptance in low-resource languages.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>LEASH: Stay Safe in Agentic Robotics</title>
       <link>https://arxiv.org/abs/2611.14115</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.14115#publication</guid>
-      <description>Introduces RoboRisk with 92 simulated and 13 physical-robot tasks across five safety categories. LEASH uses decision-model task, action and commit gates under a shared policy. The abstract reports reduced harm with largely preserved completion across six planners; detailed gate-model comparisons and experimental denominators remain to be audited.</description>
+      <description>LEASH combines a shared policy with task, action and commit gates. On RoboRisk, Astra’s simulated harm falls from 11.23% to 0%; four physical planners record 0/13 harm with 11/13 safe success. The baseline lacks the policy, gate components are not ablated, and some category-level completion rates worsen.</description>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1334,76 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2609.38850#publication</guid>
       <description>Implements a third-party calibrated-decision reinforcement objective.</description>
       <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>More Choices, Fewer Decisions: Ordinal-Scale Bias in JEV-like Direct-Decision Models</title>
-      <link>https://arxiv.org/abs/2609.38827</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.38827#publication</guid>
-      <description>Measures ordinal scale compression as candidate counts grow.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Confident Where People Disagree: A preregistered, bias-corrected test of whether TypeSafe AI’s Jev lowers its confidence when humans disagree, on ChaosNLI</title>
-      <link>https://zenodo.org/records/23032384</link>
-      <guid isPermaLink="false">https://zenodo.org/records/23032384#publication</guid>
-      <description>Tests confidence under human disagreement with bias-corrected calibration.</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Benchmarking System One decision models against trained classifiers and language models for automated decision gates</title>
-      <link>https://arxiv.org/abs/2610.00346</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.00346#publication</guid>
-      <description>Compares typed models, trained classifiers and LLM readouts under matched requests.</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Evaluating and Benchmarking the System One Model Jev</title>
-      <link>https://arxiv.org/abs/2609.37647</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.37647#publication</guid>
-      <description>Evaluates Jev across public classification, routing and reasoning datasets. Calibration and selective prediction vary with the task and decision interface.</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Chinese-Jev: Bringing System One Model to Chinese-Language Tasks</title>
-      <link>https://arxiv.org/abs/2609.36965</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.36965#publication</guid>
-      <description>Develops a System One model for Chinese-language tasks.</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>A Noul Log Does Not Identify the Policy</title>
-      <link>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7525901</link>
-      <guid isPermaLink="false">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7525901#publication</guid>
-      <description>Shows why marginal Noul probabilities do not identify a conjunction policy.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Calibrated to Whom? Persona and Language Effects on Cultural Values in JEV</title>
-      <link>https://arxiv.org/abs/2609.36399</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.36399#publication</guid>
-      <description>Audits persona and language effects despite highly repeatable answers.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Dyad: Extending Large Language Models with Native Typed Decision-Making</title>
-      <link>https://arxiv.org/abs/2609.36116</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.36116#publication</guid>
-      <description>Adds an action-description encoder to an LLM and evaluates frozen-backbone and joint reinforcement learning for typed decisions.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Koa-action: Fast and Consistent Structured Decision Making with Generative LLMs</title>
-      <link>https://arxiv.org/abs/2609.36115</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.36115#publication</guid>
-      <description>Uses atomic output tokens for fast structured decisions.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Mnemon: Raw Records, Fast Judgments, Slow Thoughts</title>
-      <link>https://arxiv.org/abs/2609.36059</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.36059#publication</guid>
-      <description>Combines raw records with fast judgments and slower reasoning.</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
