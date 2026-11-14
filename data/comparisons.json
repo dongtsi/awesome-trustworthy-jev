@@ -1852,21 +1852,22 @@
     "datasets": [
       "Ru-Jev label-wording probes",
       "Ru-Jev common validation intersection",
-      "Ru-Jev unseen news and emotion evaluation"
+      "Ru-Jev unseen news and emotion evaluation",
+      "RuCoLA"
     ],
     "data_role": {
-      "en": "Wording probes reused for epoch/temperature selection; exact common-input validation intersection; separate news/emotion rows unseen by Ru-Jev",
-      "zh": "措辞探针复用于轮次/温度选择；完全相同输入的验证交集；Ru-Jev未训练的新闻/情绪样本"
+      "en": "Wording probes reused for epoch/temperature selection; exact common-input validation intersection; separate news/emotion rows unseen by Ru-Jev Later RuCoLA follow-up is reported separately; not part of the six-task intersection.",
+      "zh": "措辞探针复用于轮次/温度选择；完全相同输入的验证交集；Ru-Jev未训练的新闻/情绪样本 后续RuCoLA单独报告，不属于六任务交集。"
     },
     "design": {
       "en": "307M mmBERT pointwise cross-encoder; 1,000 MASSIVE questions, ten label vocabularies, five versus eighteen options. Paired McNemar tests with Holm correction across 23 cells; label-then-question bootstrap intervals. Compare 10,157 identical-input rows across six Russian SuperGLUE tasks, plus 1,000 news and 1,000 emotion rows.",
       "zh": "307M mmBERT逐选项交叉编码器；1000个MASSIVE问题、十种词表、5或18选项。配对McNemar检验对23个单元做Holm校正，按标签再按问题bootstrap。另比较六个Russian SuperGLUE任务中10157条完全相同输入，以及各1000条新闻、情绪样本。"
     },
     "reading": {
-      "en": "Strict jargon with five options rises .550→.786, but the eighteen-option label-cluster interval for its gain crosses zero. Strict slang at eighteen options rises .369→.419 without surviving Holm correction, and confident errors rise 151→191 per 1,000. Common validation accuracy is identical (.7994); lower released temperature does not yield lower residual ECE. No valid v1.3 replication, and wording probes are not untouched tests.",
-      "zh": "严格陌生词切片在5选项下从.550升至.786，但18选项收益的标签聚类区间跨零。严格俚语18选项从.369升至.419未通过Holm校正，每千高置信错误151增至191。共同验证准确率同为.7994；发布温度降低不等于残余ECE改善。无有效v1.3复现实验，措辞探针也不是未触碰测试集。"
+      "en": "Strict jargon with five options rises .550→.786, but the eighteen-option label-cluster interval for its gain crosses zero. Strict slang at eighteen options rises .369→.419 without surviving Holm correction, and confident errors rise 151→191 per 1,000. Common validation accuracy is identical (.7994); lower released temperature does not yield lower residual ECE. The original v1 study had no valid v1.3 replication, and wording probes are not untouched tests. Later author correction (2026-11-14): 252/1,344 RuCoLA validation rows had invented labels; clean-row v1.3 accuracy 0.6886 is below majority 0.7372. The six Russian SuperGLUE tasks exclude RuCoLA, so their 0.7994 remains unchanged. Follow-up aggregates are author-reported; row-level audit pending.",
+      "zh": "严格陌生词切片在5选项下从.550升至.786，但18选项收益的标签聚类区间跨零。严格俚语18选项从.369升至.419未通过Holm校正，每千高置信错误151增至191。共同验证准确率同为.7994；发布温度降低不等于残余ECE改善。原始v1研究无有效v1.3复现实验，措辞探针也不是未触碰测试集。 作者2026-11-14纠正：RuCoLA验证集252/1,344行含虚构标签，清理后v1.3为0.6886，低于多数类0.7372。六个Russian SuperGLUE任务不含RuCoLA，其0.7994不变。后续聚合数值来自作者报告，逐行审核待完成。"
     },
-    "source_section": "v1 full text, Tables 1–7; archived results/validation and results/seeds notes",
+    "source_section": "v1 full text, Tables 1–7; archived results/validation and results/seeds notes; author follow-up results/rucola_test/README.md and results/v131/README.md (2026-11-14)",
     "source": "https://arxiv.org/pdf/2611.08439v1"
   },
   {
@@ -2023,5 +2024,45 @@
     },
     "source_section": "Complete v1, 18 pages; Sections 3–5 and supplementary task setup, outcome tables, reviewer metrics and overhead",
     "source": "https://arxiv.org/pdf/2611.14115v1"
+  },
+  {
+    "id": "2611.15592",
+    "category": "foundations/architecture",
+    "datasets": [
+      "BoolQ",
+      "SST-5",
+      "Emotion",
+      "SNLI",
+      "MNLI",
+      "MASSIVE",
+      "Banking77",
+      "CLINC150",
+      "TyDi QA",
+      "Cosmos QA",
+      "SQuAD 2.0",
+      "HelpSteer2",
+      "OASST1",
+      "LocalLLaMA typed-decisions",
+      "procedural-typed-decisions",
+      "AG News",
+      "DBpedia-14",
+      "QASC",
+      "Belebele",
+      "Kev transfer"
+    ],
+    "data_role": {
+      "en": "15 English training sources, 220,264 distinct rows over two epochs, with up to 10,000 rows per source per epoch; 129,539 in-domain evaluation questions. Five untrained sources: AG News 7,600, DBpedia-14 70,000, QASC 926, Belebele 900 and Kev transfer 1,046 questions. QASC supplies both supporting facts; its 926-example split is development according to the original dataset. Source averages are equally weighted.",
+      "zh": "15个英语训练来源，两轮共220,264条不同训练行，每轮每来源至多10,000行；域内评测129,539个问题。五个未训练来源分别为AG News 7,600、DBpedia-14 70,000、QASC 926、Belebele 900、Kev transfer 1,046题。QASC提供两条支持事实，926项对应原始数据的开发集；汇总对来源等权。"
+    },
+    "design": {
+      "en": "Five readouts on Qwen3-0.6B share joint prompts, rank-32 LoRA, soft cross-entropy and a seed-1 protocol; head learning rates are swept on a smaller run. Every fifth validation row supplies calibration, including the calibrated-NLL head selection pool. Global and type temperatures leave argmax unchanged. Paired 2,000-bootstrap intervals resample whole rows within sources; one-point equivalence margin, uncorrected per-source McNemar tests. A separate cosine per-question model tests prompt organization. Cost tables instead charge three readouts in native per-question form; H100 inference keeps batches filled to 32k tokens.",
+      "zh": "五种读出在Qwen3-0.6B上共享联合提示、rank-32 LoRA、软标签交叉熵和seed=1配置，小规模运行扫描头学习率。每五条验证行抽一条做校准，也用于校准NLL的头选择；全局及类型温度不改变argmax。2,000次配对bootstrap在各来源内整行重采样，采用1个百分点等价界限，逐来源McNemar未做多重校正。另训练余弦逐问题模型考察提示组织；成本表却按三种读出的原生逐问题形式计费。H100推理以至多32k token的饱和批次计时。"
+    },
+    "reading": {
+      "en": "Cosine/joint-head in-domain accuracy 82.0/81.9%, held-out 78.0/76.1%; the LM-letter readout reaches 79.4% held-out, driven by answer-code sensitivity on Belebele. Cosine/joint-head throughput times 6.4/13.6 ms per row and training 6.9/8.7 GPU-hours. All five are within the in-domain one-point margin; this does not make heads universally equivalent. Qwen 0.6B→4B adds 3.9/10.9 points in-domain/held-out. Bidirectional adaptation worsens accuracy under this recipe, without proving an intrinsic limitation. Same-backbone variants, changed learning rates, prompt differences and one seed bound the conclusions.",
+      "zh": "余弦/联合头域内准确率82.0/81.9%，留出来源78.0/76.1%；LM字母读出留出达到79.4%，优势主要来自Belebele的答案代码敏感性。余弦/联合头吞吐时间6.4/13.6毫秒每行，训练6.9/8.7 GPU小时。五种读出的域内差异落在1个百分点界限内，不能推出普遍等价。Qwen 0.6B→4B在域内/留出增加3.9/10.9个百分点。当前适配配方下双向注意力变差，不证明其固有局限；单种子、提示差异和部分学习率变化限制结论。"
+    },
+    "source_section": "v1, all 24 pages; Sections 3–6, Tables 2–15 and Appendices A–E",
+    "source": "https://arxiv.org/pdf/2611.15592v1"
   }
 ]

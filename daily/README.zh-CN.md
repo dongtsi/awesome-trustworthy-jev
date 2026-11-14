@@ -13,7 +13,7 @@
 ## 2026-11-11
 
 - [SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](https://arxiv.org/abs/2611.15777) — 提出覆盖11个领域、含人工参考答案和沙箱交互任务的基准，评测21个开放及托管模型。将选项顺序稳定性、缺失正确答案识别与准确率分开考察；得分最高的System One模型在可靠性指标中仅列第七。 `评测 · 基准` · [PDF](https://arxiv.org/pdf/2611.15777v1)
-- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen骨干、数据和决策头学习率扫描下比较五种类型化读出。摘要报告0.6B规模准确率为81.3–82.0%；所测配置中，50万参数余弦头以约一半推理时间达到2,700万参数schema头的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
+- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen3-0.6B、数据混合与种子下，五种读出域内准确率为81.3–82.0%；53万参数余弦头在域内匹配2,730万参数联合头，但留出来源上仍有差异。6.4对13.6毫秒每行来自H100饱和批处理，其他成本对比还改变了提示组织方式。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
 - [Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation](https://arxiv.org/abs/2611.15576) — 在五轮调查的20个二元问题上检验Jev答案概率能否保持总体特征。条件预测改善并不稳定保持联合分布，顺序模拟还受问题次序影响，揭示预测准确率与总体有效性的区别。 `评测` · [PDF](https://arxiv.org/pdf/2611.15576v1)
 - [JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning](https://arxiv.org/abs/2611.15362) — 将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。 `评测` · [PDF](https://arxiv.org/pdf/2611.15362v1)
 - [Is Jev a Good Multilingual Judge?](https://arxiv.org/abs/2611.14861) — 在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。 `评测` · [PDF](https://arxiv.org/pdf/2611.14861v1)
@@ -45,7 +45,7 @@
 
 ## 2026-11-05
 
-- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
+- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 两个307M Ru-Jev版本在陌生词决策上改善，却未推广到缩写或代码，且存在划分与训练计划混杂。作者后续审计发现无标签RuCoLA行被赋予虚构标签：清理后的发布验证切片上，v1.3准确率0.6886低于多数类基线0.7372；六任务共同验证结果不受该问题影响。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
 - [Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage](https://arxiv.org/abs/2611.08229) — 将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。 `评测` · [PDF](https://arxiv.org/pdf/2611.08229v1)
 - [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014) — 在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。 `评测` · [PDF](https://arxiv.org/pdf/2611.08014v1)
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — 提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)

@@ -51,7 +51,7 @@
       <title>Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models</title>
       <link>https://arxiv.org/abs/2611.15592</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.15592#publication</guid>
-      <description>Compares five typed-decision readouts on a shared Qwen backbone with matched data and a head learning-rate sweep. The abstract reports 81.3–82.0% accuracy at 0.6B; a 0.5M-parameter cosine head matches a 27M schema head at roughly half its inference time in the tested setup.</description>
+      <description>Under one Qwen3-0.6B, data mix and seed, five readouts reach 81.3–82.0% in-domain accuracy; a 0.53M cosine head matches the 27.3M joint head there but readouts differ on held-out sources. Reported 6.4 versus 13.6 ms per row measures saturated H100 batching, while other cost comparisons also change the prompt regime.</description>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -149,7 +149,7 @@
       <title>Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes</title>
       <link>https://arxiv.org/abs/2611.08439</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.08439#publication</guid>
-      <description>Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect.</description>
+      <description>Two 307M Ru-Jev releases improve unfamiliar-word decisions but not abbreviations/codes, with split and schedule confounds. A later author audit finds fabricated labels on unlabelled RuCoLA rows: on clean release-validation rows v1.3 scores 0.6886 versus a 0.7372 majority baseline; the six-task common-validation result is unaffected.</description>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

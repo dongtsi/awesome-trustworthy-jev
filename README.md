@@ -100,7 +100,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — Presents four Drex typed decision models with supervised training, adjusted-feedback reinforcement learning and option-consistency losses. Authors report Max scoring 67.52 versus Jev 1.14.0 at 60.70 on Decision Index 0.4.1; model artifacts and detailed benchmark comparability remain to be audited. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [Code](https://github.com/nace-ai/drex-decision-models)
 - [Extending Reasoning in Typed Decision Models via Looping](https://arxiv.org/abs/2611.07736) — RELOAD jointly trains damped middle-layer loops with a typed decision model and learns an input-adaptive pass controller. Across six 0.4B–4B models, authors report improved accuracy and calibration, especially beyond training reasoning depth; the controller retains most gains at roughly three quarters of the compute. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.07736v1)
 - [Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://arxiv.org/abs/2611.17167) — Compares decision models as actors and retrospective judges, then uses Jev to teach a Qwen2.5-1.5B policy. The abstract reports success rising from 72.8% to 82.9% on ALFWorld and 56.8% to 71.4% on WebShop over GRPO, suggesting that weak acting need not imply weak teaching. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.17167v1) · [Code](https://github.com/ZJU-REAL/decision-agents)
-- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — Compares five typed-decision readouts on a shared Qwen backbone with matched data and a head learning-rate sweep. The abstract reports 81.3–82.0% accuracy at 0.6B; a 0.5M-parameter cosine head matches a 27M schema head at roughly half its inference time in the tested setup. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.15592v1)
+- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — Under one Qwen3-0.6B, data mix and seed, five readouts reach 81.3–82.0% in-domain accuracy; a 0.53M cosine head matches the 27.3M joint head there but readouts differ on held-out sources. Reported 6.4 versus 13.6 ms per row measures saturated H100 batching, while other cost comparisons also change the prompt regime. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.15592v1)
 - [JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning](https://arxiv.org/abs/2611.15362) — Adapts Qwen3-ASR-0.6B into a scalar endpoint decision model using task-first conditioning, decoder-prefix pruning and matched head refitting. The abstract reports cross-language transfer from English endpoint supervision after supervised fine-tuning followed by RLCD. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.15362v1)
 
 **Projects and resources**
@@ -437,7 +437,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 - [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — Adds oracle structured memory to the same 30 synthetic vignettes in a paired 120-question Jev pilot. Correct answers rise from 108 to 112 (five gains, one loss; exact McNemar p=0.219), while probability scores improve; case clustering, unreviewed labels and an unrecorded model revision limit inference. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.04101v1)
 - [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623) — Introduces PrimaCons to test cross-primitive consistency and a residual calibrator on frozen JevK5 backbones. The abstract reports a 58.57% inconsistency reduction and a reported +2.97% accuracy change under leave-one-domain-out evaluation; repository tables include regressions on some axes, and hosted TypeSafe Jev is not the evaluated backbone. `Benchmark` · [PDF](https://arxiv.org/pdf/2610.38623v1) · [Code](https://github.com/67L1/PrimaCons-CRPR)
 - [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384) — Audits Jev, Clef Flash and Perplexity Decider with 702,000 judgments over 9,000 multiply annotated items from six datasets. Position, endorsement and framing changes alter preferences despite unchanged texts, distinguishing repeatability, presentation robustness and human alignment; detailed full-text audit remains pending. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.06384v1)
-- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — Compares two 307M Ru-Jev releases on 1,000 MASSIVE questions with ten label vocabularies and five/eighteen options. Gains on unfamiliar word labels do not extend to abbreviations or opaque codes, and some confident-error counts rise. Split and schedule changes plus single-seed releases prevent isolating an augmentation effect. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [Code](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
+- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — Two 307M Ru-Jev releases improve unfamiliar-word decisions but not abbreviations/codes, with split and schedule confounds. A later author audit finds fabricated labels on unlabelled RuCoLA rows: on clean release-validation rows v1.3 scores 0.6886 versus a 0.7372 majority baseline; the six-task common-validation result is unaffected. `Evaluation` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [Code](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
 - [Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267) — A paired Jev–Laya audit covers 7,283 agent-harness cases and 6,640 robustness variants. Jev leads on nine of eleven decisions, while neither beats chance on zero-shot model routing; corrected cost accounting, held-out thresholds and content controls substantially narrow deployment claims. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.02267v1)
 - [Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model](https://arxiv.org/abs/2609.30454) — Audits calibration, selective prediction and option-order stability on 6,020 WMDP/LAB-Bench questions. Pooled ECE is 0.034 and error-detection AUROC 0.820, but task variation is substantial; cyclic option rotations change 37.4% of WMDP-Cyber answers, mostly beyond identical-call variation. `Evaluation` · [PDF](https://arxiv.org/pdf/2609.30454v1)
 - [Labels Override Definitions in Jev-Style Typed Decision Models](https://arxiv.org/abs/2610.02586) — Tests whether open typed decision models follow option labels or their definitions across eleven tasks and PolicyBench. A reciprocal prompt-rendering edit induces or removes label bias without changing weights, locating the tested failure in interface rendering rather than necessarily in the decision head. `Evaluation` · [PDF](https://arxiv.org/pdf/2610.02586v1)
@@ -845,24 +845,27 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | Dataset / benchmark | Link type | Studies using it |
 |---|---|---|
 | [A-OKVQA](https://arxiv.org/abs/2609.29283) | Paper description | [PixelJev](https://arxiv.org/abs/2609.29283) |
-| [AG News](https://arxiv.org/abs/2610.16655) | Paper description | [Option-set dependence](https://arxiv.org/abs/2610.16655) |
+| [AG News](https://github.com/zhangxiangxiao/Crepe) | Dataset | [Option-set dependence](https://arxiv.org/abs/2610.16655) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [ALFWorld](https://github.com/alfworld/alfworld) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2610.38895) | Paper description | [Trace Security](https://arxiv.org/abs/2609.34862) · [FlipJev](https://arxiv.org/abs/2610.38895) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | Dataset | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
 | [AndroidWorld](https://github.com/google-research/android_world) | Benchmark | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BEIR](https://github.com/beir-cellar/beir) | Dataset | [Relevance ranking versus calibration](https://arxiv.org/abs/2611.11480) |
 | [BOTTLED](https://github.com/aktsonthalia/bottled) | Research artifact | [BOTTLED](https://arxiv.org/abs/2610.08775) |
-| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [DFIP](https://arxiv.org/abs/2610.36804) |
-| [BoolQ](https://github.com/google-research-datasets/boolean-questions) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [DFIP](https://arxiv.org/abs/2610.36804) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [Belebele](https://github.com/facebookresearch/belebele) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [BoolQ](https://github.com/google-research-datasets/boolean-questions) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [CASQO synthetic workloads](https://arxiv.org/abs/2610.08089) | Paper description | [Cost–accuracy semantic query plans](https://arxiv.org/abs/2610.08089) |
-| [CLINC150](https://github.com/clinc/oos-eval) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) |
+| [CLINC150](https://github.com/clinc/oos-eval) | Dataset | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [CSS annotation suite (Ziems et al.)](https://github.com/hazemibrahim97/decision-models-css) | Research artifact | [Decision Models for CSS](https://arxiv.org/abs/2609.24574) |
 | [Candidate-coverage frozen cases (Lu and Wu)](https://arxiv.org/abs/2610.03387) | Paper description | [Candidate coverage](https://arxiv.org/abs/2610.03387) |
 | [ChaosNLI](https://github.com/easonnie/ChaosNLI) | Dataset | [ChaosNLI Audit](https://zenodo.org/records/23032384) · [Exact-target calibration audit](https://zenodo.org/records/23179064) |
 | [Civil Comments](https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/text/civil_comments.py) | Dataset | [Deterministic LoRA reductions](https://arxiv.org/abs/2611.10334) |
 | [CommonsenseQA](https://arxiv.org/abs/2609.37647) | Paper description | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [Cosmos QA](https://github.com/wilburOne/cosmosqa) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Cyber-JEV curated vulnerability and patch suites](https://arxiv.org/abs/2611.02957) | Benchmark | [Cyber-JEV](https://arxiv.org/abs/2611.02957) |
 | [CyberSecEval Instruct](https://arxiv.org/abs/2609.34963) | Paper description | [JevVibe](https://arxiv.org/abs/2609.34963) |
+| [DBpedia-14](https://github.com/zhangxiangxiao/Crepe) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [DFIP synthetic resident and arrival traces](https://github.com/superagent-ai/dfip) | Benchmark | [DFIP](https://arxiv.org/abs/2610.36804) |
 | [DICE synthetic adapter-boundary studies](https://arxiv.org/abs/2610.14404) | Paper description | [DICE](https://arxiv.org/abs/2610.14404) |
 | [DICES-350](https://github.com/google-research-datasets/dices-dataset) | Dataset | [Exact-target calibration audit](https://zenodo.org/records/23179064) |
@@ -875,6 +878,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [EPANET C-Town](https://arxiv.org/abs/2610.02048) | Paper description | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net1](https://arxiv.org/abs/2610.02048) | Paper description | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net3](https://arxiv.org/abs/2610.02048) | Paper description | [HydroJEV](https://arxiv.org/abs/2610.02048) |
+| [Emotion](https://github.com/dair-ai/emotion_dataset) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [FastJEV six-set evaluation](https://arxiv.org/abs/2610.11379) | Paper description | [FastJEV](https://arxiv.org/abs/2610.11379) |
 | [FinQA citation-swap audit](https://arxiv.org/abs/2610.08675) | Paper description | [Same-number citation swaps](https://arxiv.org/abs/2610.08675) |
 | [FlipJev email comprehension](https://github.com/SaFo-Lab/FlipJev) | Benchmark | [FlipJev](https://arxiv.org/abs/2610.38895) |
@@ -896,6 +900,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [HaluEval](https://github.com/RUCAIBox/HaluEval) | Benchmark | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [HarnessJevBench V0.5](https://github.com/agentscope-ai/HarnessJevBench) | Benchmark | [HarnessJevBench](https://github.com/agentscope-ai/HarnessJevBench) |
 | [HellaSwag](https://rowanzellers.com/hellaswag/) | Dataset | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [HelpSteer2](https://arxiv.org/abs/2611.15592) | Paper description | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Hidden Risks task suite](https://github.com/shihe98/Security_Privacy_Jev) | Research artifact | [Hidden Risks of Jev](https://arxiv.org/abs/2610.04985) |
 | [HotpotQA](https://hotpotqa.github.io/) | Benchmark | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | Benchmark | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
@@ -913,22 +918,27 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [JevProbeBench](https://github.com/xiaoxiaohg8d/JevProbe-/tree/main/benchmarks/JevProbeBench) | Benchmark | [JevProbe](https://arxiv.org/abs/2610.18612) |
 | [JudgeBench](https://github.com/ScalerLab/JudgeBench) | Benchmark | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [Judgment-layer audit battery](https://doi.org/10.5281/zenodo.22901248) | Research artifact | [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) |
+| [Kev transfer](https://github.com/jaredpalmer/kev/tree/85ccf56a0afb952323c621055b02876e8498d60c) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [LEXam](https://huggingface.co/datasets/LEXam-Benchmark/LEXam) | Benchmark | [Selection Bias in System One](https://arxiv.org/abs/2610.35826) |
-| [LocalLLaMA typed-decisions](https://arxiv.org/abs/2610.36804) | Paper description | [DFIP](https://arxiv.org/abs/2610.36804) |
+| [LocalLLaMA typed-decisions](https://arxiv.org/abs/2610.36804) | Paper description | [DFIP](https://arxiv.org/abs/2610.36804) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [MASSIVE](https://github.com/alexa/massive) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [MBPP](https://github.com/google-research/google-research/tree/master/mbpp) | Dataset | [Deterministic LoRA reductions](https://arxiv.org/abs/2611.10334) |
 | [MCPHunt](https://arxiv.org/abs/2609.34862) | Paper description | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [MMEB-V2](https://github.com/TIGER-AI-Lab/VLM2Vec) | Benchmark | [Multimodal Reranking](https://arxiv.org/abs/2610.28435) |
 | [MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | Benchmark | [Selection Bias in System One](https://arxiv.org/abs/2610.35826) |
+| [MNLI](https://cims.nyu.edu/~sbowman/multinli/) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [MetaEncoder 190-task evaluation](https://arxiv.org/abs/2610.11316) | Paper description | [MetaEncoder](https://arxiv.org/abs/2610.11316) |
 | [MetaTool](https://github.com/HowieHwong/MetaTool) | Benchmark | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [MiniGrid and Atari Jev RL evaluation](https://arxiv.org/abs/2610.11692) | Paper description | [Frozen Jev in RL training](https://arxiv.org/abs/2610.11692) |
 | [MuSiQue](https://github.com/StonyBrookNLP/musique) | Dataset | [Verify LLM answers](https://docs.typesafe.ai/cookbooks/verify_llm_outputs.md) |
 | [NSL-KDD](https://www.unb.ca/cic/datasets/nsl.html) | Dataset | [Jev-IDS](https://arxiv.org/abs/2610.01079) |
+| [OASST1](https://github.com/LAION-AI/Open-Assistant) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) | Dataset | [PixelJev](https://arxiv.org/abs/2609.29283) |
 | [Paired Fallback Robustness suite](https://arxiv.org/abs/2610.19856) | Paper description | [Paired Fallback Robustness](https://arxiv.org/abs/2610.19856) |
 | [Polymarket historical sample (crowd-calibration)](https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md) | Benchmark | [crowd-calibration](https://github.com/sbayer2/crowd-calibration) |
 | [Prism-1 five-set decision suite](https://arxiv.org/abs/2610.22066) | Paper description | [Prism-1](https://arxiv.org/abs/2610.22066) |
 | [Public JevBench](https://arxiv.org/abs/2610.02076) | Paper description | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [AnyJev](https://arxiv.org/abs/2610.00831) |
+| [QASC](https://github.com/allenai/qasc) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [R-Judge](https://github.com/Lordog/R-Judge) | Dataset | [Trace Security](https://arxiv.org/abs/2609.34862) · [Agent Security Decisions](https://arxiv.org/abs/2609.33401) · [FlipJev](https://arxiv.org/abs/2610.38895) |
 | [RM-Bench](https://github.com/THU-KEG/RM-Bench) | Benchmark | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [Readout-stability intervention suite](https://github.com/rlisml/jev-cascade) | Research artifact | [Readout stability and compute allocation](https://arxiv.org/abs/2610.07716) |
@@ -941,12 +951,16 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [Ru-Jev common validation intersection](https://zenodo.org/records/23986847) | Benchmark | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [Ru-Jev label-wording probes](https://zenodo.org/records/23986847) | Benchmark | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [Ru-Jev unseen news and emotion evaluation](https://zenodo.org/records/23986847) | Benchmark | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
+| [RuCoLA](https://github.com/RussianNLP/RuCoLA) | Dataset | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [S1-MAS evaluation suite](https://arxiv.org/abs/2610.08155) | Paper description | [S1-MAS](https://arxiv.org/abs/2610.08155) |
 | [SAG2 retrieval evaluation corpora](https://github.com/Zleap-AI/SAG-Benchmark) | Benchmark | [SAG2](https://arxiv.org/abs/2610.22588) |
 | [SILT coding-agent and destructive-command decisions](https://sentientindexlabs.com/publications/silt-rp-009) | Paper description | [SILT-RP-009](https://zenodo.org/records/23287930) · [SILT-RP-010](https://zenodo.org/records/23293732) |
+| [SNLI](https://arxiv.org/abs/2611.15592) | Paper description | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SNLI-VE](https://github.com/necla-ml/SNLI-VE) | Dataset | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [SOM moderation benchmark suite](https://github.com/FedericoMz/som-moderation-benchmark) | Research artifact | [System One online moderation](https://arxiv.org/abs/2610.07953) |
+| [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SST-2](https://arxiv.org/abs/2609.37647) | Paper description | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [SST-5](https://arxiv.org/abs/2611.15592) | Paper description | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SafetyBench-ZH](https://github.com/thu-coai/SafetyBench) | Benchmark | [COGNIT-Guard](https://arxiv.org/abs/2609.33671) |
 | [Same Attack phishing sample](https://arxiv.org/abs/2610.17820) | Paper description | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [SanSi decision suite](https://arxiv.org/abs/2610.07730) | Paper description | [SanSi](https://arxiv.org/abs/2610.07730) |
@@ -969,6 +983,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [Text decision benchmark (1,136 questions)](https://github.com/etsabary/jev-1.14-comparison-benchmark) | Benchmark | [Text decision service comparison](https://github.com/etsabary/jev-1.14-comparison-benchmark) |
 | [TextVQA](https://textvqa.org/) | Dataset | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [TraceSafe subset](https://arxiv.org/abs/2609.34862) | Paper description | [Trace Security](https://arxiv.org/abs/2609.34862) |
+| [TyDi QA](https://github.com/google-research-datasets/tydiqa) | Dataset | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [TypeSafe tip-of-the-tongue film retrieval sample](https://github.com/typesafe-ai/typesafe-public-examples/tree/main/cookbooks/infinite_cardinality_choice) | Dataset | [Large-catalog Noul–Choice cascade](https://docs.typesafe.ai/cookbooks/infinite_cardinality_choice.md) |
 | [Typed-workflow context poisoning tasks](https://github.com/WuXixiong/jev-poisoning-bench) | Paper description | [Poisoned into Action](https://arxiv.org/abs/2610.15537) |
 | [TypedBench](https://arxiv.org/abs/2610.11392) | Paper description | [TypedBench](https://arxiv.org/abs/2610.11392) |
@@ -981,6 +996,7 @@ Papers, models, projects and documentation on Jev foundations, trustworthiness, 
 | [Zuse European development suite](https://arxiv.org/abs/2611.06238) | Benchmark | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [Zuse world-language evaluation](https://arxiv.org/abs/2611.06238) | Benchmark | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [jev-as-a-guardrails](https://huggingface.co/datasets/raxITLabs/jev-as-a-guardrails) | Dataset | [Jev guardrail benchmark](https://github.com/raxITlabs/jev-as-a-guardrails) |
+| [procedural-typed-decisions](https://arxiv.org/abs/2611.15592) | Paper description | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 <a id="activity"></a>
 
 ## Daily updates and activity

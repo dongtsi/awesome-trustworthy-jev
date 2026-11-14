@@ -100,7 +100,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — 提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)
 - [Extending Reasoning in Typed Decision Models via Looping](https://arxiv.org/abs/2611.07736) — RELOAD将中间层阻尼循环与类型化决策模型联合训练，并用控制器按输入选择循环次数。六个0.4B至4B模型上，作者报告准确率与校准改善，尤其在超出训练推理深度的问题上；控制器以约四分之三计算量保留大部分增益。 `评测` · [PDF](https://arxiv.org/pdf/2611.07736v1)
 - [Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://arxiv.org/abs/2611.17167) — 比较决策模型的行动与事后评判能力，再用Jev指导Qwen2.5-1.5B策略学习。摘要报告相对GRPO，ALFWorld成功率由72.8%升至82.9%、WebShop由56.8%升至71.4%，说明行动能力较弱未必意味着教学信号无效。 `评测` · [PDF](https://arxiv.org/pdf/2611.17167v1) · [代码](https://github.com/ZJU-REAL/decision-agents)
-- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen骨干、数据和决策头学习率扫描下比较五种类型化读出。摘要报告0.6B规模准确率为81.3–82.0%；所测配置中，50万参数余弦头以约一半推理时间达到2,700万参数schema头的准确率。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
+- [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen3-0.6B、数据混合与种子下，五种读出域内准确率为81.3–82.0%；53万参数余弦头在域内匹配2,730万参数联合头，但留出来源上仍有差异。6.4对13.6毫秒每行来自H100饱和批处理，其他成本对比还改变了提示组织方式。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
 - [JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning](https://arxiv.org/abs/2611.15362) — 将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。 `评测` · [PDF](https://arxiv.org/pdf/2611.15362v1)
 
 **项目与技术资料**
@@ -437,7 +437,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101) — 在30个相同合成案例的120题配对Jev试验中加入理想化结构记忆。正确答案从108增至112（纠正5题、退化1题；精确McNemar p=0.219），概率评分改善；案例内聚类、未经独立审核的标签及未记录模型版本限制推断。 `评测` · [PDF](https://arxiv.org/pdf/2611.04101v1)
 - [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623) — 提出PrimaCons跨问题类型一致性基准，以及冻结JevK5骨干上的残差校准器。摘要报告留一域评估下不一致性减少58.57%、准确率变化+2.97%；仓库表格也包含部分轴上的退化，所评骨干并非TypeSafe托管Jev。 `基准` · [PDF](https://arxiv.org/pdf/2610.38623v1) · [代码](https://github.com/67L1/PrimaCons-CRPR)
 - [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384) — 在六数据集9000个多标注样本上收集702000次判断，审计Jev、Clef Flash和Perplexity Decider。文本不变时，位置、背书和决策框架变化仍改变偏好，区分了重复性、呈现鲁棒性与人类一致性；详细全文审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.06384v1)
-- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 在1000个MASSIVE问题、十种标签词表和5/18选项下比较两个307M Ru-Jev版本。陌生词标签改善未推广到缩写或不透明代码，部分高置信错误反而增加；划分与训练计划变化、单种子版本使增强效应无法单独识别。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
+- [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 两个307M Ru-Jev版本在陌生词决策上改善，却未推广到缩写或代码，且存在划分与训练计划混杂。作者后续审计发现无标签RuCoLA行被赋予虚构标签：清理后的发布验证切片上，v1.3准确率0.6886低于多数类基线0.7372；六任务共同验证结果不受该问题影响。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
 - [Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267) — 配对审计Jev与Laya的7283个Agent框架案例及6640个稳健性变体。Jev在11类决策中领先9类，但两者零样本模型路由均未超过随机；补计成本、留出阈值及内容对照显著收窄部署结论。 `评测` · [PDF](https://arxiv.org/pdf/2610.02267v1)
 - [Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model](https://arxiv.org/abs/2609.30454) — 在6020道WMDP/LAB-Bench题目上审计校准、选择性预测与选项顺序稳定性。汇总ECE为0.034、错误识别AUROC为0.820，但任务间差异显著；循环轮换选项改变37.4%的WMDP-Cyber答案，多数不能由相同调用的波动解释。 `评测` · [PDF](https://arxiv.org/pdf/2609.30454v1)
 - [Labels Override Definitions in Jev-Style Typed Decision Models](https://arxiv.org/abs/2610.02586) — 在11项任务及PolicyBench上检验开放决策模型遵循选项标签还是定义。双向修改提示渲染即可在不改权重时引入或消除标签偏差，把所测失效定位到接口渲染，而非必然归因于决策头。 `评测` · [PDF](https://arxiv.org/pdf/2610.02586v1)
@@ -845,24 +845,27 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | 数据集／基准 | 入口类型 | 使用它的研究 |
 |---|---|---|
 | [A-OKVQA](https://arxiv.org/abs/2609.29283) | 论文说明 | [PixelJev](https://arxiv.org/abs/2609.29283) |
-| [AG News](https://arxiv.org/abs/2610.16655) | 论文说明 | [Option-set dependence](https://arxiv.org/abs/2610.16655) |
+| [AG News](https://github.com/zhangxiangxiao/Crepe) | 数据集 | [Option-set dependence](https://arxiv.org/abs/2610.16655) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [ALFWorld](https://github.com/alfworld/alfworld) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2610.38895) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) · [FlipJev](https://arxiv.org/abs/2610.38895) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 数据集 | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
 | [AndroidWorld](https://github.com/google-research/android_world) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BEIR](https://github.com/beir-cellar/beir) | 数据集 | [Relevance ranking versus calibration](https://arxiv.org/abs/2611.11480) |
 | [BOTTLED](https://github.com/aktsonthalia/bottled) | 研究材料 | [BOTTLED](https://arxiv.org/abs/2610.08775) |
-| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | 数据集 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [DFIP](https://arxiv.org/abs/2610.36804) |
-| [BoolQ](https://github.com/google-research-datasets/boolean-questions) | 数据集 | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [Banking77](https://github.com/PolyAI-LDN/task-specific-datasets) | 数据集 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) · [AnyJev](https://arxiv.org/abs/2610.00831) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [DFIP](https://arxiv.org/abs/2610.36804) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [Belebele](https://github.com/facebookresearch/belebele) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [BoolQ](https://github.com/google-research-datasets/boolean-questions) | 数据集 | [Jev-37](https://arxiv.org/abs/2609.37647) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [CASQO synthetic workloads](https://arxiv.org/abs/2610.08089) | 论文说明 | [Cost–accuracy semantic query plans](https://arxiv.org/abs/2610.08089) |
-| [CLINC150](https://github.com/clinc/oos-eval) | 数据集 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) |
+| [CLINC150](https://github.com/clinc/oos-eval) | 数据集 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [Tron-1B](https://zenodo.org/records/23066522) · [Option-set dependence](https://arxiv.org/abs/2610.16655) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [CSS annotation suite (Ziems et al.)](https://github.com/hazemibrahim97/decision-models-css) | 研究材料 | [Decision Models for CSS](https://arxiv.org/abs/2609.24574) |
 | [Candidate-coverage frozen cases (Lu and Wu)](https://arxiv.org/abs/2610.03387) | 论文说明 | [Candidate coverage](https://arxiv.org/abs/2610.03387) |
 | [ChaosNLI](https://github.com/easonnie/ChaosNLI) | 数据集 | [ChaosNLI Audit](https://zenodo.org/records/23032384) · [Exact-target calibration audit](https://zenodo.org/records/23179064) |
 | [Civil Comments](https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/text/civil_comments.py) | 数据集 | [Deterministic LoRA reductions](https://arxiv.org/abs/2611.10334) |
 | [CommonsenseQA](https://arxiv.org/abs/2609.37647) | 论文说明 | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [Cosmos QA](https://github.com/wilburOne/cosmosqa) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Cyber-JEV curated vulnerability and patch suites](https://arxiv.org/abs/2611.02957) | 基准 | [Cyber-JEV](https://arxiv.org/abs/2611.02957) |
 | [CyberSecEval Instruct](https://arxiv.org/abs/2609.34963) | 论文说明 | [JevVibe](https://arxiv.org/abs/2609.34963) |
+| [DBpedia-14](https://github.com/zhangxiangxiao/Crepe) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [DFIP synthetic resident and arrival traces](https://github.com/superagent-ai/dfip) | 基准 | [DFIP](https://arxiv.org/abs/2610.36804) |
 | [DICE synthetic adapter-boundary studies](https://arxiv.org/abs/2610.14404) | 论文说明 | [DICE](https://arxiv.org/abs/2610.14404) |
 | [DICES-350](https://github.com/google-research-datasets/dices-dataset) | 数据集 | [Exact-target calibration audit](https://zenodo.org/records/23179064) |
@@ -875,6 +878,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [EPANET C-Town](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net1](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
 | [EPANET Net3](https://arxiv.org/abs/2610.02048) | 论文说明 | [HydroJEV](https://arxiv.org/abs/2610.02048) |
+| [Emotion](https://github.com/dair-ai/emotion_dataset) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [FastJEV six-set evaluation](https://arxiv.org/abs/2610.11379) | 论文说明 | [FastJEV](https://arxiv.org/abs/2610.11379) |
 | [FinQA citation-swap audit](https://arxiv.org/abs/2610.08675) | 论文说明 | [Same-number citation swaps](https://arxiv.org/abs/2610.08675) |
 | [FlipJev email comprehension](https://github.com/SaFo-Lab/FlipJev) | 基准 | [FlipJev](https://arxiv.org/abs/2610.38895) |
@@ -896,6 +900,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [HaluEval](https://github.com/RUCAIBox/HaluEval) | 基准 | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [HarnessJevBench V0.5](https://github.com/agentscope-ai/HarnessJevBench) | 基准 | [HarnessJevBench](https://github.com/agentscope-ai/HarnessJevBench) |
 | [HellaSwag](https://rowanzellers.com/hellaswag/) | 数据集 | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [HelpSteer2](https://arxiv.org/abs/2611.15592) | 论文说明 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Hidden Risks task suite](https://github.com/shihe98/Security_Privacy_Jev) | 研究材料 | [Hidden Risks of Jev](https://arxiv.org/abs/2610.04985) |
 | [HotpotQA](https://hotpotqa.github.io/) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 基准 | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
@@ -913,22 +918,27 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [JevProbeBench](https://github.com/xiaoxiaohg8d/JevProbe-/tree/main/benchmarks/JevProbeBench) | 基准 | [JevProbe](https://arxiv.org/abs/2610.18612) |
 | [JudgeBench](https://github.com/ScalerLab/JudgeBench) | 基准 | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [Judgment-layer audit battery](https://doi.org/10.5281/zenodo.22901248) | 研究材料 | [Judgment Layers](https://doi.org/10.5281/zenodo.22901853) |
+| [Kev transfer](https://github.com/jaredpalmer/kev/tree/85ccf56a0afb952323c621055b02876e8498d60c) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [LEXam](https://huggingface.co/datasets/LEXam-Benchmark/LEXam) | 基准 | [Selection Bias in System One](https://arxiv.org/abs/2610.35826) |
-| [LocalLLaMA typed-decisions](https://arxiv.org/abs/2610.36804) | 论文说明 | [DFIP](https://arxiv.org/abs/2610.36804) |
+| [LocalLLaMA typed-decisions](https://arxiv.org/abs/2610.36804) | 论文说明 | [DFIP](https://arxiv.org/abs/2610.36804) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
+| [MASSIVE](https://github.com/alexa/massive) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [MBPP](https://github.com/google-research/google-research/tree/master/mbpp) | 数据集 | [Deterministic LoRA reductions](https://arxiv.org/abs/2611.10334) |
 | [MCPHunt](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |
 | [MMEB-V2](https://github.com/TIGER-AI-Lab/VLM2Vec) | 基准 | [Multimodal Reranking](https://arxiv.org/abs/2610.28435) |
 | [MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | 基准 | [Selection Bias in System One](https://arxiv.org/abs/2610.35826) |
+| [MNLI](https://cims.nyu.edu/~sbowman/multinli/) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [MetaEncoder 190-task evaluation](https://arxiv.org/abs/2610.11316) | 论文说明 | [MetaEncoder](https://arxiv.org/abs/2610.11316) |
 | [MetaTool](https://github.com/HowieHwong/MetaTool) | 基准 | [Multiple Correct Choices](https://arxiv.org/abs/2610.29217) |
 | [MiniGrid and Atari Jev RL evaluation](https://arxiv.org/abs/2610.11692) | 论文说明 | [Frozen Jev in RL training](https://arxiv.org/abs/2610.11692) |
 | [MuSiQue](https://github.com/StonyBrookNLP/musique) | 数据集 | [Verify LLM answers](https://docs.typesafe.ai/cookbooks/verify_llm_outputs.md) |
 | [NSL-KDD](https://www.unb.ca/cic/datasets/nsl.html) | 数据集 | [Jev-IDS](https://arxiv.org/abs/2610.01079) |
+| [OASST1](https://github.com/LAION-AI/Open-Assistant) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) | 数据集 | [PixelJev](https://arxiv.org/abs/2609.29283) |
 | [Paired Fallback Robustness suite](https://arxiv.org/abs/2610.19856) | 论文说明 | [Paired Fallback Robustness](https://arxiv.org/abs/2610.19856) |
 | [Polymarket historical sample (crowd-calibration)](https://github.com/sbayer2/crowd-calibration/blob/main/tests/FINDINGS.md) | 基准 | [crowd-calibration](https://github.com/sbayer2/crowd-calibration) |
 | [Prism-1 five-set decision suite](https://arxiv.org/abs/2610.22066) | 论文说明 | [Prism-1](https://arxiv.org/abs/2610.22066) |
 | [Public JevBench](https://arxiv.org/abs/2610.02076) | 论文说明 | [LLM2Jev](https://arxiv.org/abs/2610.02076) · [AnyJev](https://arxiv.org/abs/2610.00831) |
+| [QASC](https://github.com/allenai/qasc) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [R-Judge](https://github.com/Lordog/R-Judge) | 数据集 | [Trace Security](https://arxiv.org/abs/2609.34862) · [Agent Security Decisions](https://arxiv.org/abs/2609.33401) · [FlipJev](https://arxiv.org/abs/2610.38895) |
 | [RM-Bench](https://github.com/THU-KEG/RM-Bench) | 基准 | [CLM-as-a-Judge](https://arxiv.org/abs/2610.07177) |
 | [Readout-stability intervention suite](https://github.com/rlisml/jev-cascade) | 研究材料 | [Readout stability and compute allocation](https://arxiv.org/abs/2610.07716) |
@@ -941,12 +951,16 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [Ru-Jev common validation intersection](https://zenodo.org/records/23986847) | 基准 | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [Ru-Jev label-wording probes](https://zenodo.org/records/23986847) | 基准 | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [Ru-Jev unseen news and emotion evaluation](https://zenodo.org/records/23986847) | 基准 | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
+| [RuCoLA](https://github.com/RussianNLP/RuCoLA) | 数据集 | [Ru-Jev label wording](https://arxiv.org/abs/2611.08439) |
 | [S1-MAS evaluation suite](https://arxiv.org/abs/2610.08155) | 论文说明 | [S1-MAS](https://arxiv.org/abs/2610.08155) |
 | [SAG2 retrieval evaluation corpora](https://github.com/Zleap-AI/SAG-Benchmark) | 基准 | [SAG2](https://arxiv.org/abs/2610.22588) |
 | [SILT coding-agent and destructive-command decisions](https://sentientindexlabs.com/publications/silt-rp-009) | 论文说明 | [SILT-RP-009](https://zenodo.org/records/23287930) · [SILT-RP-010](https://zenodo.org/records/23293732) |
+| [SNLI](https://arxiv.org/abs/2611.15592) | 论文说明 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SNLI-VE](https://github.com/necla-ml/SNLI-VE) | 数据集 | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [SOM moderation benchmark suite](https://github.com/FedericoMz/som-moderation-benchmark) | 研究材料 | [System One online moderation](https://arxiv.org/abs/2610.07953) |
+| [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SST-2](https://arxiv.org/abs/2609.37647) | 论文说明 | [Jev-37](https://arxiv.org/abs/2609.37647) |
+| [SST-5](https://arxiv.org/abs/2611.15592) | 论文说明 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [SafetyBench-ZH](https://github.com/thu-coai/SafetyBench) | 基准 | [COGNIT-Guard](https://arxiv.org/abs/2609.33671) |
 | [Same Attack phishing sample](https://arxiv.org/abs/2610.17820) | 论文说明 | [Same Attack, Different Judge](https://arxiv.org/abs/2610.17820) |
 | [SanSi decision suite](https://arxiv.org/abs/2610.07730) | 论文说明 | [SanSi](https://arxiv.org/abs/2610.07730) |
@@ -969,6 +983,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [Text decision benchmark (1,136 questions)](https://github.com/etsabary/jev-1.14-comparison-benchmark) | 基准 | [Text decision service comparison](https://github.com/etsabary/jev-1.14-comparison-benchmark) |
 | [TextVQA](https://textvqa.org/) | 数据集 | [Visual Jev](https://arxiv.org/abs/2609.25845) |
 | [TraceSafe subset](https://arxiv.org/abs/2609.34862) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) |
+| [TyDi QA](https://github.com/google-research-datasets/tydiqa) | 数据集 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [TypeSafe tip-of-the-tongue film retrieval sample](https://github.com/typesafe-ai/typesafe-public-examples/tree/main/cookbooks/infinite_cardinality_choice) | 数据集 | [Large-catalog Noul–Choice cascade](https://docs.typesafe.ai/cookbooks/infinite_cardinality_choice.md) |
 | [Typed-workflow context poisoning tasks](https://github.com/WuXixiong/jev-poisoning-bench) | 论文说明 | [Poisoned into Action](https://arxiv.org/abs/2610.15537) |
 | [TypedBench](https://arxiv.org/abs/2610.11392) | 论文说明 | [TypedBench](https://arxiv.org/abs/2610.11392) |
@@ -981,6 +996,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [Zuse European development suite](https://arxiv.org/abs/2611.06238) | 基准 | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [Zuse world-language evaluation](https://arxiv.org/abs/2611.06238) | 基准 | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [jev-as-a-guardrails](https://huggingface.co/datasets/raxITLabs/jev-as-a-guardrails) | 数据集 | [Jev guardrail benchmark](https://github.com/raxITlabs/jev-as-a-guardrails) |
+| [procedural-typed-decisions](https://arxiv.org/abs/2611.15592) | 论文说明 | [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 <a id="activity"></a>
 
 ## 每日更新与统计

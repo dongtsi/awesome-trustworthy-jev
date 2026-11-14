@@ -320,9 +320,10 @@
     "checked": "2026-10-14"
   },
   "AG News": {
-    "url": "https://arxiv.org/abs/2610.16655",
-    "type": "paper",
-    "checked": "2026-10-14"
+    "url": "https://github.com/zhangxiangxiao/Crepe",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
   },
   "Risk-budgeted six-dataset suite": {
     "url": "https://arxiv.org/abs/2610.19811",
@@ -661,5 +662,101 @@
     "type": "benchmark",
     "checked": "2026-11-13",
     "verification": "Original paper, project and repository README inspected. GitHub API supplied 3,312 simulation outcome rows and 3,312 settings rows; unique trial keys, one-to-one joins, rates and preheld counts checked with own aggregation. Hugging Face endpoint failed; no model rerun."
+  },
+  "SST-5": {
+    "url": "https://arxiv.org/abs/2611.15592",
+    "type": "paper",
+    "checked": "2026-11-14",
+    "verification": "Dataset and role verified in complete paper; primary dataset page/card retrieval failed. Paper fallback; source-card verification remains pending."
+  },
+  "Emotion": {
+    "url": "https://github.com/dair-ai/emotion_dataset",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "SNLI": {
+    "url": "https://arxiv.org/abs/2611.15592",
+    "type": "paper",
+    "checked": "2026-11-14",
+    "verification": "Dataset and role verified in complete paper; primary dataset page/card retrieval failed. Paper fallback; source-card verification remains pending."
+  },
+  "MNLI": {
+    "url": "https://cims.nyu.edu/~sbowman/multinli/",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "MASSIVE": {
+    "url": "https://github.com/alexa/massive",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "TyDi QA": {
+    "url": "https://github.com/google-research-datasets/tydiqa",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "Cosmos QA": {
+    "url": "https://github.com/wilburOne/cosmosqa",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "SQuAD 2.0": {
+    "url": "https://rajpurkar.github.io/SQuAD-explorer/",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "HelpSteer2": {
+    "url": "https://arxiv.org/abs/2611.15592",
+    "type": "paper",
+    "checked": "2026-11-14",
+    "verification": "Dataset and role verified in complete paper; primary dataset page/card retrieval failed. Paper fallback; source-card verification remains pending."
+  },
+  "OASST1": {
+    "url": "https://github.com/LAION-AI/Open-Assistant",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "procedural-typed-decisions": {
+    "url": "https://arxiv.org/abs/2611.15592",
+    "type": "paper",
+    "checked": "2026-11-14",
+    "verification": "Dataset and role verified in complete paper; primary dataset page/card retrieval failed. Paper fallback; source-card verification remains pending."
+  },
+  "DBpedia-14": {
+    "url": "https://github.com/zhangxiangxiao/Crepe",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "QASC": {
+    "url": "https://github.com/allenai/qasc",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. Original QASC README identifies 926 as development; test answers/facts are withheld."
+  },
+  "Belebele": {
+    "url": "https://github.com/facebookresearch/belebele",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "Kev transfer": {
+    "url": "https://github.com/jaredpalmer/kev/tree/85ccf56a0afb952323c621055b02876e8498d60c",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original dataset/project page retrieved and identity inspected; paper Table 2/13 defines the evaluated adaptation and split. "
+  },
+  "RuCoLA": {
+    "url": "https://github.com/RussianNLP/RuCoLA",
+    "type": "dataset",
+    "checked": "2026-11-14",
+    "verification": "Original README, dataset identity and license boundary inspected. Author follow-up reports unlabelled test rows wrongly included in Ru-Jev; per-row reconstruction pending."
   }
 }
