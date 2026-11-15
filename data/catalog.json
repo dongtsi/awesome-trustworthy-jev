@@ -21483,14 +21483,16 @@
     "theme": "Reliability",
     "scope": "related-model",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract; selected source passages where stated in limitation",
-    "review": "Authors, first-publication date, version, abstract and classification verified 2026-11-13; detailed full-text audit pending",
-    "limitation": "Abstract-level review. Synthetic model-generated labels, bucket structure and cross-fitting do not establish prospective error guarantees; independent labels and deployment shifts remain to be assessed.",
-    "brief_en": "A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.",
-    "summary": "A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.",
-    "brief_zh": "在1,065条合成样本上区分Laya的整体与分桶校准。摘要报告交叉拟合分桶校准将宏平均ECE由0.143降至0.073；标称10%错误门限实际错误10.5%，原生分桶阈值可获得近似覆盖率。",
-    "summary_zh": "在1,065条合成样本上区分Laya的整体与分桶校准。摘要报告交叉拟合分桶校准将宏平均ECE由0.143降至0.073；标称10%错误门限实际错误10.5%，原生分桶阈值可获得近似覆盖率。"
+    "datasets": [
+      "Laya synthetic calibration pool (seven sets)"
+    ],
+    "evidence": "Complete 25-page arXiv v1, including Appendices A–C; original arXiv metadata; independently calculated counterexample to cross-item rank invariance",
+    "review": "Full v1 reviewed 2026-11-15; bucket/pooled metrics, cross-fitting, thresholds, rounding and checkpoint dependence audited. Reported empirical aggregates not independently reproduced.",
+    "limitation": "All seven sets share synthetic generation and model labels; random folds and leave-one-set-out do not establish temporal or independent-domain transfer. Item-bootstrap intervals omit calibration-fit variance; 33 checkpoints are correlated variants. Rounded probabilities and zero floors affect fitted temperatures. Multiclass temperature can reorder top confidence across items, contrary to the paper’s general rank-invariance explanation. Threshold selection needs tie-group and nested-fit verification; frozen row-level artifacts and current model files remain unverified.",
+    "brief_en": "On 1,065 synthetic, LLM-labelled items, bucket temperatures lower macro-ECE from 0.143 to 0.073 on random folds and 0.099 with a set held out. A 10%-error gate covers 46.3% at 10.5% error; native bucket thresholds nearly match it, and neither reliably meets the target. Temperature preserves each answer’s argmax, not necessarily confidence ranking across items.",
+    "summary": "On 1,065 synthetic, LLM-labelled items, bucket temperatures lower macro-ECE from 0.143 to 0.073 on random folds and 0.099 with a set held out. A 10%-error gate covers 46.3% at 10.5% error; native bucket thresholds nearly match it, and neither reliably meets the target. Temperature preserves each answer’s argmax, not necessarily confidence ranking across items.",
+    "brief_zh": "在1,065条LLM标注的合成样本上，分桶温度把宏平均ECE从0.143降至随机折的0.073、整集合留出的0.099。10%错误门限覆盖46.3%，实测错误10.5%；原生分桶阈值效果接近，两者均未稳定达标。温度保持单题argmax，但不必保持不同样本的置信度排序。",
+    "summary_zh": "在1,065条LLM标注的合成样本上，分桶温度把宏平均ECE从0.143降至随机折的0.073、整集合留出的0.099。10%错误门限覆盖46.3%，实测错误10.5%；原生分桶阈值效果接近，两者均未稳定达标。温度保持单题argmax，但不必保持不同样本的置信度排序。"
   },
   {
     "id": "2611.16321",

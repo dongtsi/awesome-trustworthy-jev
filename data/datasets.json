@@ -758,5 +758,11 @@
     "type": "dataset",
     "checked": "2026-11-14",
     "verification": "Original README, dataset identity and license boundary inspected. Author follow-up reports unlabelled test rows wrongly included in Ru-Jev; per-row reconstruction pending."
+  },
+  "Laya synthetic calibration pool (seven sets)": {
+    "url": "https://arxiv.org/abs/2611.16499",
+    "type": "paper",
+    "checked": "2026-11-15",
+    "verification": "Seven synthetic sets and roles verified in full text. No independently verified frozen dataset/results download; paper fallback. Related model repository is not substituted for the dataset."
   }
 }

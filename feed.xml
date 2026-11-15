@@ -30,7 +30,7 @@
       <title>Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores</title>
       <link>https://arxiv.org/abs/2611.16499</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.16499#publication</guid>
-      <description>A 1,065-example synthetic study distinguishes pooled from bucket-level calibration of Laya. The abstract reports cross-fitted bucket calibration reducing macro ECE from 0.143 to 0.073, while a nominal 10% error gate achieves 10.5% error; native bucket thresholds provide nearly the same coverage.</description>
+      <description>On 1,065 synthetic, LLM-labelled items, bucket temperatures lower macro-ECE from 0.143 to 0.073 on random folds and 0.099 with a set held out. A 10%-error gate covers 46.3% at 10.5% error; native bucket thresholds nearly match it, and neither reliably meets the target. Temperature preserves each answer’s argmax, not necessarily confidence ranking across items.</description>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

@@ -2064,5 +2064,26 @@
     },
     "source_section": "v1, all 24 pages; Sections 3–6, Tables 2–15 and Appendices A–E",
     "source": "https://arxiv.org/pdf/2611.15592v1"
+  },
+  {
+    "id": "2611.16499",
+    "category": "trustworthiness/reliability",
+    "datasets": [
+      "Laya synthetic calibration pool (seven sets)"
+    ],
+    "data_role": {
+      "en": "Seven synthetic sets: probe 224, sentiment 106, JSON tickets 58, hardware triage 82, 12-way support 195, multilingual 322, urgency 78; total 1,065 single-question items. Bucket sizes 681/270/89/25. Qwen3.8-27B generates and blind-relabels; disagreements are filtered; a second model agrees on 1,028 items. Evaluation is deduplicated against 2,818 training rows, with near-duplicates still possible.",
+      "zh": "七个合成集合：probe 224、情感106、JSON工单58、硬件分诊82、12类支持195、多语322、紧急度78，共1,065条单题样本；四桶规模681/270/89/25。Qwen3.8-27B生成并盲重标，过滤分歧；另一模型在1,028条上同意。对2,818条训练行去重，仍可能有近重复。"
+    },
+    "design": {
+      "en": "Five-fold cross-fitting; 10 fold assignments for method comparisons; leave one of seven sets out. NLL-selected temperature multiplier grid 0.2–20; Platt, histogram and isotonic baselines; 10 equal-width confidence bins plus alternative binning. 300 item bootstrap resamples, without refitting maps. Gate thresholds are selected on four folds and tested on the fifth, over 10 assignments; nested fitting and tied-score acceptance are not fully established by the printed driver. Thirty retrained variants plus three released checkpoints share one pool.",
+      "zh": "五折交叉拟合，方法比较重复10种分折，另留出七集合之一。按NLL选择0.2–20温度乘子，比较Platt、直方图、保序；主要使用10等宽置信区间并改变分箱规则。300次逐样本bootstrap不重拟合校准器。门限在四折选择、一折测试，重复10种分折；打印的驱动未完整证明嵌套拟合与并列分数接纳处理。30个重训变体及3个发布模型共享一个样本池。"
+    },
+    "reading": {
+      "en": "Published pooled/macro-ECE 0.073/0.143; one global temperature worsens them to 0.173/0.210. Bucket temperature macro-ECE is 0.073 in the selected split, 0.078 over 10 assignments and 0.099 with a set held out; Platt averages 0.046. The 10%-error gate covers 46.3% at 10.5% error versus native bucket thresholds 45.4% at 10.3%; target met in 0/10 versus 4/10 assignments. Refit improves 31/33 checkpoints in one random split, 21/33 with set holdout. Temperature multiplier 4.20 for the 12-option bucket falls to 2.25 with another zero floor. Independent calculation: vectors (0.60,0.20,0.20) and (0.59,0.40,0.01) reverse top-confidence order at T=2 (0.4641<0.5119). Thus near-equal coverage is empirical, not a general equivalence theorem. No independent aggregate reproduction.",
+      "zh": "原生整体/宏ECE为0.073/0.143，单一全局温度恶化至0.173/0.210。分桶温度宏ECE在所选折为0.073、十种分折均值0.078、整集合留出0.099；Platt十折配置均值0.046。10%门限覆盖46.3%且错误10.5%，原生分桶门限45.4%且错误10.3%；分别0/10与4/10次达标。重校准在一次随机折改善31/33模型，整集合留出仅21/33。12选项桶的温度乘子4.20随零概率下限改变可降到2.25。独立计算表明(0.60,0.20,0.20)和(0.59,0.40,0.01)在T=2后顶端置信度次序反转为0.4641<0.5119，因此覆盖率接近是实测结果，不是普遍等价定理；未独立复现聚合数值。"
+    },
+    "source_section": "v1, complete 25 pages, Tables 2–15, Sections 7–13 and Appendices A–C; independent elementary counterexample for rank claim",
+    "source": "https://arxiv.org/pdf/2611.16499v1"
   }
 ]
