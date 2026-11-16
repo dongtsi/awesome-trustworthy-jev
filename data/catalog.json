@@ -20991,17 +20991,21 @@
       "research",
       "evaluation"
     ],
-    "brief_en": "Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.",
-    "summary": "Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.",
-    "brief_zh": "在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。",
-    "summary_zh": "在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。",
+    "brief_en": "On 970 cached Qwen2.5-1.5B responses, input filtering reduces answers to harmful-labelled prompts from 73.2% to 2.4%, with benign non-answer/refusal rising from 1.2% to 10.8%. Tiered output review trades these to 5.6% and 4.0%; a single held-out split shows no benefit over input-only filtering. Cached-score arithmetic was independently checked; non-refusal is not verified harmful compliance.",
+    "summary": "On 970 cached Qwen2.5-1.5B responses, input filtering reduces answers to harmful-labelled prompts from 73.2% to 2.4%, with benign non-answer/refusal rising from 1.2% to 10.8%. Tiered output review trades these to 5.6% and 4.0%; a single held-out split shows no benefit over input-only filtering. Cached-score arithmetic was independently checked; non-refusal is not verified harmful compliance.",
+    "brief_zh": "在970条缓存的Qwen2.5-1.5B回答上，输入过滤将有害标签提示的回答率从73.2%降至2.4%，良性不回答/拒答率从1.2%升至10.8%；分层输出审核对应5.6%与4.0%，单次留出评估未优于仅输入过滤。已独立核对缓存分数的策略计数；非拒答不等于确认产生有害内容。",
+    "summary_zh": "在970条缓存的Qwen2.5-1.5B回答上，输入过滤将有害标签提示的回答率从73.2%降至2.4%，良性不回答/拒答率从1.2%升至10.8%；分层输出审核对应5.6%与4.0%，单次留出评估未优于仅输入过滤。已独立核对缓存分数的策略计数；非拒答不等于确认产生有害内容。",
     "theme": "Cybersecurity",
     "scope": "Jev",
     "schema_version": 2,
-    "datasets": [],
-    "evidence": "Original arXiv metadata and abstract",
-    "review": "Original metadata, authors, first publication date and abstract verified 2026-11-09; detailed full-text audit pending",
-    "limitation": "Abstract-level review of author-reported findings; no independent replication."
+    "datasets": [
+      "AdvBench",
+      "XSTest"
+    ],
+    "evidence": "Complete nine-page arXiv v1 and original author repository; independent arithmetic on 970 redacted cached-score rows, Git blob 43ab592bca7bbe20d2750bf077f5f91bb6ada9d5",
+    "review": "Full v1 and author protocol reviewed 2026-11-16; C2/C3 decisions, ablation and fixed matched-budget C3 counts independently recomputed with no row mismatches. No model rerun, semantic relabelling, threshold-search or held-out split reproduction.",
+    "limitation": "One base Qwen model and public benchmarks; substring refusal proxy is not semantic harmfulness. Historical model/dataset revisions and resolved jev-latest build were not saved. Policies reuse cached responses and scores, so review counts are not measured end-to-end latency. Single held-out evaluation exceeds its 10% benign-refusal target at 14%. Redacted data omit original text and row-level audit labels; current paper and historical repository audit table use different judgments.",
+    "code": "https://github.com/anrgusc/llm-safe-jev"
   },
   {
     "id": "2611.12521",

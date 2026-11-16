@@ -297,7 +297,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 - [DICE: Tilting the Odds through Interface Attacks on System One Model](https://arxiv.org/abs/2610.14404) — 在Jev 1.13.0流水线中分别检验来源忠实性、问题与动作含义及响应相关性。有界替换使6/6个选定状态目标、11/12个问题案例和12/12个过期响应案例在局部回答正确时产生错误决策；对应检查阻止已测干预，但来源核验也拒绝了部分正常输入。 `评测` · [PDF](https://arxiv.org/pdf/2610.14404v2)
 - [Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities](https://arxiv.org/abs/2611.02522) — 在AG News上测试五个系统的置信度提示注入告警。较高汇总AUROC不等于在5%正常校准告警率下有效：主实验报告，宣称确定性的注入便条使三个托管系统中99–100%的劫持逃过告警。 `评测` · [PDF](https://arxiv.org/pdf/2611.02522v1)
 - [JevBreak: Your Model, Their Decision](https://arxiv.org/abs/2611.03759) — 研究仅利用返回概率的黑盒Slot Attack，覆盖七模型、16任务及240样例，逐一攻击错误选项。摘要报告在初始正确决策上成功率32–99%，每次成功攻击的查询次数中位数17–72；置信度阈值不能可靠拒绝成功操纵。 `评测` · [PDF](https://arxiv.org/pdf/2611.03759v1)
-- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1)
+- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条缓存的Qwen2.5-1.5B回答上，输入过滤将有害标签提示的回答率从73.2%降至2.4%，良性不回答/拒答率从1.2%升至10.8%；分层输出审核对应5.6%与4.0%，单次留出评估未优于仅输入过滤。已独立核对缓存分数的策略计数；非拒答不等于确认产生有害内容。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1) · [代码](https://github.com/anrgusc/llm-safe-jev)
 - [S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models](https://arxiv.org/abs/2611.16937) — 研究不可信上下文如何改变System One类型化决策并传导为智能体策略违规。摘要在四个基准、三个模型上报告Jev 1.14平均攻击成功率71.99%、高置信度成功率57.47%，端到端违规率最高24%。 `评测` · [PDF](https://arxiv.org/pdf/2611.16937v1)
 
 **项目与技术资料**
@@ -848,6 +848,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [AG News](https://github.com/zhangxiangxiao/Crepe) | 数据集 | [Option-set dependence](https://arxiv.org/abs/2610.16655) · [Controlled typed-decision readouts](https://arxiv.org/abs/2611.15592) |
 | [ALFWorld](https://github.com/alfworld/alfworld) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [ATBench500](https://arxiv.org/abs/2610.38895) | 论文说明 | [Trace Security](https://arxiv.org/abs/2609.34862) · [FlipJev](https://arxiv.org/abs/2610.38895) |
+| [AdvBench](https://github.com/llm-attacks/llm-attacks) | 基准 | [Safety filtering and over-refusal](https://arxiv.org/abs/2611.08845) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 数据集 | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
 | [AndroidWorld](https://github.com/google-research/android_world) | 基准 | [Jev in agent workflows](https://arxiv.org/abs/2610.13092) |
 | [BEIR](https://github.com/beir-cellar/beir) | 数据集 | [Relevance ranking versus calibration](https://arxiv.org/abs/2611.11480) |
@@ -994,6 +995,7 @@ Jev 模型基础、自身可信性，以及网络与系统安全应用的论文�
 | [WAInjectBench](https://arxiv.org/abs/2609.33401) | 论文说明 | [Agent Security Decisions](https://arxiv.org/abs/2609.33401) |
 | [WinoGrande](https://arxiv.org/abs/2609.37647) | 论文说明 | [Jev-37](https://arxiv.org/abs/2609.37647) |
 | [Wireless decision case studies](https://arxiv.org/abs/2610.04345) | 论文说明 | [Wireless typed decisions](https://arxiv.org/abs/2610.04345) |
+| [XSTest](https://github.com/paul-rottger/exaggerated-safety) | 基准 | [Safety filtering and over-refusal](https://arxiv.org/abs/2611.08845) |
 | [Zuse European development suite](https://arxiv.org/abs/2611.06238) | 基准 | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [Zuse world-language evaluation](https://arxiv.org/abs/2611.06238) | 基准 | [Zuse](https://arxiv.org/abs/2611.06238) |
 | [jev-as-a-guardrails](https://huggingface.co/datasets/raxITLabs/jev-as-a-guardrails) | 数据集 | [Jev guardrail benchmark](https://github.com/raxITlabs/jev-as-a-guardrails) |

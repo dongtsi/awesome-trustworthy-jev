@@ -41,7 +41,7 @@
 
 - [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264) — 每模型600次购物运行中，Jev 1.13在默认项条件下选择目标商品的估计概率为99.9%，社会影响条件为82%。实验平衡商品身份和顺序，用贝叶斯模型处理同轮选择相关性。三模型研究未在相同条件下直接比较LLM Agent，也不构成认知机制证据。 `评测` · [PDF](https://arxiv.org/pdf/2611.09264v1) · [代码](https://anonymous.4open.science/r/nudging_decision_models-76C7/)
 - [Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions](https://arxiv.org/abs/2611.08995) — 用旨在保留事实的投诉改写审计Jev和两个LLM。群体金钱补偿差距均在0.5个百分点内，但同一投诉的不同文风使2.6–6.3%的个体补偿决定改变。文风统一缩小部分群体差距，却未提高个体稳定性；审计模型指出部分改写仍改变事实。 `评测` · [PDF](https://arxiv.org/pdf/2611.08995v1)
-- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条提示上评估Qwen2.5-1.5B外层Jev过滤。输入过滤将有害标签提示的记录回答率从73.2%降至2.4%，但良性不回答/拒答率从1.2%升至10.8%；分层配置对应5.6%与4.0%。重新调参的同预算增益未在留出划分上稳定出现。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1)
+- [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845) — 在970条缓存的Qwen2.5-1.5B回答上，输入过滤将有害标签提示的回答率从73.2%降至2.4%，良性不回答/拒答率从1.2%升至10.8%；分层输出审核对应5.6%与4.0%，单次留出评估未优于仅输入过滤。已独立核对缓存分数的策略计数；非拒答不等于确认产生有害内容。 `评测` · [PDF](https://arxiv.org/pdf/2611.08845v1) · [代码](https://github.com/anrgusc/llm-safe-jev)
 
 ## 2026-11-05
 

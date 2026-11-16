@@ -764,5 +764,17 @@
     "type": "paper",
     "checked": "2026-11-15",
     "verification": "Seven synthetic sets and roles verified in full text. No independently verified frozen dataset/results download; paper fallback. Related model repository is not substituted for the dataset."
+  },
+  "AdvBench": {
+    "url": "https://github.com/llm-attacks/llm-attacks",
+    "type": "benchmark",
+    "checked": "2026-11-16",
+    "verification": "Original benchmark repository verified; this study uses walledai mirrors with unrecorded historical dataset revisions. XSTest prompt license CC-BY-4.0; upstream terms apply separately from the guardrail code."
+  },
+  "XSTest": {
+    "url": "https://github.com/paul-rottger/exaggerated-safety",
+    "type": "benchmark",
+    "checked": "2026-11-16",
+    "verification": "Original benchmark repository verified; this study uses walledai mirrors with unrecorded historical dataset revisions. XSTest prompt license CC-BY-4.0; upstream terms apply separately from the guardrail code."
   }
 }

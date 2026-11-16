@@ -142,7 +142,7 @@
       <title>Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal</title>
       <link>https://arxiv.org/abs/2611.08845</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.08845#publication</guid>
-      <description>Evaluates Jev filtering around Qwen2.5-1.5B on 970 prompts. Input filtering lowers recorded answers on harmful-labelled prompts from 73.2% to 2.4% while benign non-answer/refusal rises from 1.2% to 10.8%; a tiered configuration trades these to 5.6% and 4.0%. Retuned matched-budget gains are not consistent on a held-out split.</description>
+      <description>On 970 cached Qwen2.5-1.5B responses, input filtering reduces answers to harmful-labelled prompts from 73.2% to 2.4%, with benign non-answer/refusal rising from 1.2% to 10.8%. Tiered output review trades these to 5.6% and 4.0%; a single held-out split shows no benefit over input-only filtering. Cached-score arithmetic was independently checked; non-refusal is not verified harmful compliance.</description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
