@@ -6,6 +6,69 @@
     <description>Jev research papers, ordered by first public publication date.</description>
     <language>en</language>
     <item>
+      <title>FaceJev: Direct Visual Decisions for Face Forgery Detection</title>
+      <link>https://arxiv.org/abs/2611.21604</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.21604#publication</guid>
+      <description>FaceJev shares one image encoding across eight facial-part anomaly decisions and trains them with part-level labels and FS-GRPO. The authors report a 7.25-point gain over the strongest baseline on unseen manipulations; detailed split and attribution checks remain pending.</description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility</title>
+      <link>https://arxiv.org/abs/2611.21478</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.21478#publication</guid>
+      <description>Jetriever ranks the complete memory pool by Jev's predicted usefulness rather than embedding similarity. It reports 84.8% top-one retrieval on 125 InMind queries and 55.4% on a 60-question MemoryAgentBench sample, versus 44.3% for the matched ReFind control; these results concern the evaluated samples and full-pool costs.</description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels</title>
+      <link>https://arxiv.org/abs/2611.21393</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.21393#publication</guid>
+      <description>A preregistered email study fine-tunes Tev1-0.8B/4B on 50–587 labels with a fixed 135-message test set. The 4B model misses its three-point message-type margin at 400 labels and reaches it only with all labels; logistic regression stays better on action switches. Small test counts and seed variation limit the accuracy differences.</description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2611.20955</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.20955#publication</guid>
+      <description>Validates probabilistic safety judges before and during reinforcement learning, separating the share and absolute amount of confidently passed harm. Across 11 Jev probability-reward runs, passed harm decreases but becomes concentrated in the confidence-gate blind spot; binarized rewards and reference-judge changes can produce escape signals.</description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>An independent calibration check of three decision-model APIs: Gemini Decision 1, OpenAI Decisions (gpt-6-luna) and TypeSafe Jev 1.14</title>
+      <link>https://zenodo.org/records/24243017</link>
+      <guid isPermaLink="false">https://zenodo.org/records/24243017#publication</guid>
+      <description>A registered comparison of Jev 1.14, Gemini Decision 1 and OpenAI Decisions reports Jev Brier score 0.174 on audited MATH-derived items, versus 0.216 and 0.295. Defect-judgment rankings change with proposition wording. Labels were audited by language models without item-level human review, and publicly available texts may overlap training data.</description>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers</title>
+      <link>https://arxiv.org/abs/2611.20191</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.20191#publication</guid>
+      <description>TDM-Gauntlet retains the splits, labels and metrics of 24 ACL-venue papers across 46 English test sets. Zero-shot Jev matches the paper's predictor on 12 sets; with 500 labels, calibration and prompt search close a median 72% of the gap, while reported LoRA tuning closes 97%. Annotation conventions constrain direct replacement.</description>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces</title>
+      <link>https://arxiv.org/abs/2611.19005</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.19005#publication</guid>
+      <description>AdaMenu retrieves labelled examples to form a query-specific option menu for one decision-model call. Across label spaces up to 1,016 classes, it improves accuracy by 16.6–34.3 points over the tested beam-search baseline and uses 3.2–22.9 times fewer input tokens than full menus on smaller sets; full-menu accuracy changes range from −0.5 to +7.2 points.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Marimba: A System One Model for Speech</title>
+      <link>https://arxiv.org/abs/2611.18330</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.18330#publication</guid>
+      <description>Marimba combines frozen Qwen3-ASR features, transcript scoring and specialised readouts for typed speech decisions. Reported turn-end AUROC trails Smart Turn on its own test set (0.930 versus 0.982), while their ICSI difference is statistically unresolved; PII results depend on a private transcript-processing pipeline.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>UltraBERT-JEV: Encoder models for System One Applications</title>
+      <link>https://arxiv.org/abs/2611.17867</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17867#publication</guid>
+      <description>UltraBERT-JEV evaluates one-mask-per-option encoder recipes against an LLM-as-Jev decoder trained on the same data. Yes-minus-no scoring improves external accuracy from 57.8% to 59.6%; single-request A100 latency is 29 ms versus 68 ms, with higher peak memory. A separate auxiliary head predicts supporting sentences.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
       <link>https://arxiv.org/abs/2611.17167</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.17167#publication</guid>
@@ -24,6 +87,13 @@
       <link>https://arxiv.org/abs/2611.16937</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.16937#publication</guid>
       <description>Studies how untrusted context can change typed System One decisions and propagate into agent policy violations. Across four benchmarks and three models, the abstract reports 71.99% mean attack success and 57.47% high-confidence success on Jev 1.14, with up to 24% end-to-end violations.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs</title>
+      <link>https://arxiv.org/abs/2611.16565</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.16565#publication</guid>
+      <description>A harness uses Intern-Decision-4B to prioritize functions proposed by deterministic vulnerability localizers, followed by agent and human verification. On 75 external public CVEs, top-25 recall is 21%, about 1.4 times random queue order; the larger 7.5-fold lift on campaign findings is selection-biased and is not the model's standalone detection rate.</description>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -66,6 +136,13 @@
       <link>https://arxiv.org/abs/2611.15362</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.15362#publication</guid>
       <description>Adapts Qwen3-ASR-0.6B into a scalar endpoint decision model using task-first conditioning, decoder-prefix pruning and matched head refitting. The abstract reports cross-language transfer from English endpoint supervision after supervised fine-tuning followed by RLCD.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Browser Immune System (BIS): Innate and Adaptive Threat Detection in the Browser with a Cybersecurity Transformer</title>
+      <link>https://arxiv.org/abs/2611.15302</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.15302#publication</guid>
+      <description>BIS runs alias-web's typed security decisions through WebGPU and generates explanations on demand. It reports seven correct page verdicts on eight synthetic sites and class-level micro-F1 0.71; probes on 11 real pages expose overly broad positives, so this small benchmark does not establish real-web detection specificity.</description>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -150,6 +227,13 @@
       <link>https://arxiv.org/abs/2611.08439</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.08439#publication</guid>
       <description>Two 307M Ru-Jev releases improve unfamiliar-word decisions but not abbreviations/codes, with split and schedule confounds. A later author audit finds fabricated labels on unlabelled RuCoLA rows: on clean release-validation rows v1.3 scores 0.6886 versus a 0.7372 majority baseline; the six-task common-validation result is unaffected.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Decision Models as Retrieval Gates Against Injection and Pollution</title>
+      <link>https://arxiv.org/abs/2611.08325</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08325#publication</guid>
+      <description>A Kev-4B gate on raw HTML, added to sanitisation and citation prompting, reduces injection success from 13.6% to 5.7% on 986 retrieved attack queries, with 2.2% false positives on templated benign instructions. In a separate pollution test, filtering before ranking preserves answer accuracy far better than deleting top-ten results without refill. The HTML comparison also changes context coverage.</description>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -1320,90 +1404,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2610.02076#publication</guid>
       <description>Studies when existing LLMs already support Jev-style decisions.</description>
       <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>HydroJEV: A one-second, training-free screen for cyber-attack and fault attribution in water distribution networks</title>
-      <link>https://arxiv.org/abs/2610.02048</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.02048#publication</guid>
-      <description>Uses Jev and a rule gate to triage simulated water-network alarms, reducing the workload passed to an LLM reviewer.</description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Code Owns the Simulation, Jev Owns the Evaluation</title>
-      <link>https://arxiv.org/abs/2610.01834</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.01834#publication</guid>
-      <description>Separates evaluating supplied consequences from simulating missing ones.</description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Jev-IDS: System One Models for Network Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2610.01079</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.01079#publication</guid>
-      <description>Evaluates typed intrusion decisions with limited labels on an NSL-KDD pilot; the study does not establish performance on live network traffic.</description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Beyond Answer Confidence: A Controlled Audit of Self-Knowledge in a Black-Box Decision Model</title>
-      <link>https://arxiv.org/abs/2610.01006</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.01006#publication</guid>
-      <description>Audits missing knowledge with paired evidence interventions.</description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Tron-1B: Fast, Calibrated Typed Decisions with a Set-Attention Option Head</title>
-      <link>https://zenodo.org/records/23066522</link>
-      <guid isPermaLink="false">https://zenodo.org/records/23066522#publication</guid>
-      <description>Introduces a bidirectional encoder with a set-attention option head; benchmark-trained results are compared with a zero-shot hosted service.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>AnyJev Technical Report</title>
-      <link>https://arxiv.org/abs/2610.00831</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.00831#publication</guid>
-      <description>Reads option probabilities from pretrained LLMs and corrects label and position bias with prior normalization and cyclic option rotations.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces</title>
-      <link>https://arxiv.org/abs/2610.00437</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.00437#publication</guid>
-      <description>Explores compositional action spaces for fast agent inference.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One</title>
-      <link>https://arxiv.org/abs/2610.00381</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.00381#publication</guid>
-      <description>Studies candidate-conditioned multimodal decisions against a matched generative baseline, reporting improved calibration with task-dependent accuracy trade-offs.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>A First Glance at Jev for Network Traffic Classification: Accuracy, Processing Time, and Cost</title>
-      <link>https://arxiv.org/abs/2610.00376</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.00376#publication</guid>
-      <description>Jev is faster than the tested LLM but trails trained trees on traffic classification.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>When the Right Answer Is Missing: An Arithmetic-Dependent Rejection Bottleneck in Jev</title>
-      <link>https://arxiv.org/abs/2609.39496</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.39496#publication</guid>
-      <description>Finds an arithmetic rejection bottleneck despite an explicit fallback option.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bongard: Training Machine Intuition</title>
-      <link>https://arxiv.org/abs/2609.39111</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.39111#publication</guid>
-      <description>Trains an open System One model with outcome feedback.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>OpenJev-RLCD: A Working RLCD Implementation</title>
-      <link>https://arxiv.org/abs/2609.38850</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.38850#publication</guid>
-      <description>Implements a third-party calibrated-decision reinforcement objective.</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

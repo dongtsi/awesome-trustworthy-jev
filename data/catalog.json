@@ -8700,13 +8700,13 @@
     "added": "2026-10-02",
     "url": "https://docs.typesafe.ai/cookbooks/llm_guardrails.md",
     "pdf": "",
-    "code": "",
+    "code": "https://github.com/typesafe-ai/typesafe-public-examples/blob/main/cookbooks/llm_guardrails/llm_guardrails.py",
     "version": "",
-    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "summary": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name. Published answers can be replayed without API keys; new Colab and Python entry points distinguish replay from changed live requests.",
+    "summary_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 已发布答案可免密钥重放；新增Colab与Python入口明确区分缓存重放和修改后的在线请求。",
     "limitation": "Illustrative prompts and replies, not a representative safety benchmark; thresholds require validation on deployment traffic. Vendor immunity claims are not independently established.",
-    "evidence": "Original official documentation inspected 2026-11-03; complete official source diff inspected 2026-11-11",
-    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown.",
+    "evidence": "Original official documentation inspected 2026-11-03; complete official source diff inspected 2026-11-11; complete official source diff inspected 2026-11-17",
+    "review": "Official source diff reviewed 2026-11-03: cache-input plumbing changed; reported example results unchanged; source publication date unknown.; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown. 2026-11-17: adds Colab/Python/playground links, explicit keyless saved-answer replay and optional Colab Secrets loading for changed live requests; examples and numerical results unchanged; code not executed; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -8716,8 +8716,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name.",
-    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。",
+    "brief_en": "Demonstrates input/output guardrails using five Noul hazard probabilities and a severity Score, with separate review/action thresholds and strict versus permissive policies. Cached examples use Jev 1.14.0 on October 31; they illustrate routing rather than establish attack robustness. The revised tutorial defaults to published cached answers and keys model calls by model name. Published answers can be replayed without API keys; new Colab and Python entry points distinguish replay from changed live requests.",
+    "brief_zh": "用五个Noul风险概率和一个严重程度Score构建输入/输出护栏，分别设置人工复核与行动阈值，比较严格与宽松策略。缓存示例使用10月31日的Jev 1.14.0，展示路由机制，未建立攻击鲁棒性。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 已发布答案可免密钥重放；新增Colab与Python入口明确区分缓存重放和修改后的在线请求。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -9974,13 +9974,13 @@
     "added": "2026-10-02",
     "url": "https://docs.typesafe.ai/cookbooks/sde_cascade.md",
     "pdf": "",
-    "code": "",
+    "code": "https://github.com/typesafe-ai/typesafe-public-examples/blob/main/cookbooks/sde_cascade/cascade_cookbook.py",
     "version": "",
-    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys.",
-    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。",
+    "summary": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys. Published answers can be replayed without API keys; new Colab and Python entry points distinguish replay from changed live requests.",
+    "summary_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。 已发布答案可免密钥重放；新增Colab与Python入口明确区分缓存重放和修改后的在线请求。",
     "limitation": "Single dataset and model run; threshold sweep and reported frontier share evaluation rows, expanded answer key not independently audited; no latency or deployed-risk guarantee.",
-    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07; complete official source diff inspected 2026-11-11; complete source diff inspected 2026-11-12",
-    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown. 2026-11-12: API-key-free cache replay; generator cache now includes full model/effort configuration. Displayed results unchanged; no code execution.",
+    "evidence": "Original revised official documentation and released CSV inspected 2026-11-07; complete official source diff inspected 2026-11-11; complete source diff inspected 2026-11-12; complete official source diff inspected 2026-11-17",
+    "review": "Revised tutorial and 1,000-row released CSV audited 2026-11-07; own aggregate calculations match displayed rows; candidate code not executed; 2026-11-11 diff: named published replay cache, explicit model-name input and cooksafe 0.3 dependency; displayed results unchanged; no live API or candidate code execution; source publication date unknown. 2026-11-12: API-key-free cache replay; generator cache now includes full model/effort configuration. Displayed results unchanged; no code execution. 2026-11-17: adds Colab/Python/playground links, explicit keyless saved-answer replay and optional Colab Secrets loading for changed live requests; examples and numerical results unchanged; code not executed; source publication date unknown.",
     "target": "hosted",
     "classification_basis": "Official source category",
     "categories": [
@@ -9990,8 +9990,8 @@
       "documentation"
     ],
     "schema_version": 2,
-    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys.",
-    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。",
+    "brief_en": "Demonstrates six Noul rule checks for cascading from GPT-6 Luna to GPT-6.1 Sol-high on 1,000 NATURAL PLAN calendar tasks. A threshold swept on these same rows reaches 98.1% accuracy at $1.307 per 1,000 tasks versus $1.890 for Sol alone; the reported frontier uses an expanded answer key and is not a held-out policy guarantee. The revised tutorial defaults to published cached answers and keys model calls by model name. The generator cache now includes the complete model and effort configuration, and cached replay can initialize without API keys. Published answers can be replayed without API keys; new Colab and Python entry points distinguish replay from changed live requests.",
+    "brief_zh": "在1000个NATURAL PLAN日程任务上，用六个Noul规则检查驱动GPT-6 Luna到GPT-6.1 Sol-high的级联。同批数据扫阈值可达98.1%准确率、每千任务1.307美元，对比Sol单独调用1.890美元；前沿采用扩展答案键，不是留出策略保证。 修订教程默认使用已发布缓存答案，并将模型名称纳入调用缓存输入。 生成器缓存现纳入完整模型及推理强度配置，缓存重放可在没有API密钥时初始化。 已发布答案可免密钥重放；新增Colab与Python入口明确区分缓存重放和修改后的在线请求。",
     "datasets": [],
     "authors": [
       "TypeSafe"
@@ -21744,5 +21744,474 @@
     "summary": "Evaluates Jev as a binary, pairwise and graded judge on four human-labeled benchmarks spanning up to 47 language varieties. The abstract reports competitive performance and lower cost on most tasks, with weaker knowledge verification and more incorrect acceptance in low-resource languages.",
     "brief_zh": "在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。",
     "summary_zh": "在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。"
+  },
+  {
+    "id": "2611.21604",
+    "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",
+    "date": "2026-11-16",
+    "updated": "2026-11-16",
+    "version": "2611.21604v1",
+    "authors": [
+      "Siran Peng",
+      "Tianshuo Zhang",
+      "Yibo Xue",
+      "Ajian Liu",
+      "Haoyuan Zhang",
+      "Weisong Zhao",
+      "Shuhuan Chen",
+      "Xiangyu Zhu",
+      "Zhen Lei"
+    ],
+    "short": "Part-based forgery decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.21604",
+    "pdf": "https://arxiv.org/pdf/2611.21604v1",
+    "doi": "10.48550/arXiv.2611.21604",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "applications/phishing",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "method",
+      "dataset"
+    ],
+    "brief_en": "FaceJev shares one image encoding across eight facial-part anomaly decisions and trains them with part-level labels and FS-GRPO. The authors report a 7.25-point gain over the strongest baseline on unseen manipulations; detailed split and attribution checks remain pending.",
+    "summary": "FaceJev shares one image encoding across eight facial-part anomaly decisions and trains them with part-level labels and FS-GRPO. The authors report a 7.25-point gain over the strongest baseline on unseen manipulations; detailed split and attribution checks remain pending.",
+    "brief_zh": "FaceJev共享一次图像编码，输出八个面部区域的异常判断，并以区域标签和FS-GRPO训练。作者报告在未见伪造方式上比最强基线高7.25个百分点；具体划分与增益归因待全文审核。",
+    "summary_zh": "FaceJev共享一次图像编码，输出八个面部区域的异常判断，并以区域标签和FS-GRPO训练。作者报告在未见伪造方式上比最强基线高7.25个百分点；具体划分与增益归因待全文审核。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.21478",
+    "title": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+    "date": "2026-11-16",
+    "updated": "2026-11-16",
+    "version": "2611.21478v1",
+    "authors": [
+      "Ruizhe Li",
+      "Licheng Zhang",
+      "Mingxuan Du",
+      "Zhendong Mao"
+    ],
+    "short": "Utility-based memory ranking",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.21478",
+    "pdf": "https://arxiv.org/pdf/2611.21478v1",
+    "doi": "10.48550/arXiv.2611.21478",
+    "added": "2026-11-17",
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "Jetriever ranks the complete memory pool by Jev's predicted usefulness rather than embedding similarity. It reports 84.8% top-one retrieval on 125 InMind queries and 55.4% on a 60-question MemoryAgentBench sample, versus 44.3% for the matched ReFind control; these results concern the evaluated samples and full-pool costs.",
+    "summary": "Jetriever ranks the complete memory pool by Jev's predicted usefulness rather than embedding similarity. It reports 84.8% top-one retrieval on 125 InMind queries and 55.4% on a 60-question MemoryAgentBench sample, versus 44.3% for the matched ReFind control; these results concern the evaluated samples and full-pool costs.",
+    "brief_zh": "Jetriever按Jev预测的用途对整个记忆池排序，而非按嵌入相似度检索。在125条InMind查询上报告84.8%的首位命中率；60题MemoryAgentBench样本得分55.4%，同题ReFind为44.3%。结论限定于这些样本及全池评分成本。",
+    "summary_zh": "Jetriever按Jev预测的用途对整个记忆池排序，而非按嵌入相似度检索。在125条InMind查询上报告84.8%的首位命中率；60题MemoryAgentBench样本得分55.4%，同题ReFind为44.3%。结论限定于这些样本及全池评分成本。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.21393",
+    "title": "Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels",
+    "date": "2026-11-16",
+    "updated": "2026-11-16",
+    "version": "2611.21393v1",
+    "authors": [
+      "Federico Lucca"
+    ],
+    "short": "Personal-label learning curves",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.21393",
+    "pdf": "https://arxiv.org/pdf/2611.21393v1",
+    "doi": "10.48550/arXiv.2611.21393",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/architecture"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "A preregistered email study fine-tunes Tev1-0.8B/4B on 50–587 labels with a fixed 135-message test set. The 4B model misses its three-point message-type margin at 400 labels and reaches it only with all labels; logistic regression stays better on action switches. Small test counts and seed variation limit the accuracy differences.",
+    "summary": "A preregistered email study fine-tunes Tev1-0.8B/4B on 50–587 labels with a fixed 135-message test set. The 4B model misses its three-point message-type margin at 400 labels and reaches it only with all labels; logistic regression stays better on action switches. Small test counts and seed variation limit the accuracy differences.",
+    "brief_zh": "预注册邮件实验用50–587条标签微调Tev1-0.8B/4B，固定135封测试邮件。4B模型在400标签时未达到预设的类型准确率三点优势，全部标签时才达到；逻辑回归在动作开关上始终更好。测试量小、种子波动限制了准确率差异的解释。",
+    "summary_zh": "预注册邮件实验用50–587条标签微调Tev1-0.8B/4B，固定135封测试邮件。4B模型在400标签时未达到预设的类型准确率三点优势，全部标签时才达到；逻辑回归在动作开关上始终更好。测试量小、种子波动限制了准确率差异的解释。",
+    "theme": "Reliability",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.20955",
+    "title": "Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning",
+    "date": "2026-11-16",
+    "updated": "2026-11-16",
+    "version": "2611.20955v1",
+    "authors": [
+      "Eunkyeong Lee",
+      "Junhyung Moon",
+      "Seunggwan Hong",
+      "Dongsuk Oh"
+    ],
+    "short": "Safety-judge reward blind spots",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.20955",
+    "pdf": "https://arxiv.org/pdf/2611.20955v1",
+    "doi": "10.48550/arXiv.2611.20955",
+    "added": "2026-11-17",
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/safety",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation",
+      "method"
+    ],
+    "brief_en": "Validates probabilistic safety judges before and during reinforcement learning, separating the share and absolute amount of confidently passed harm. Across 11 Jev probability-reward runs, passed harm decreases but becomes concentrated in the confidence-gate blind spot; binarized rewards and reference-judge changes can produce escape signals.",
+    "summary": "Validates probabilistic safety judges before and during reinforcement learning, separating the share and absolute amount of confidently passed harm. Across 11 Jev probability-reward runs, passed harm decreases but becomes concentrated in the confidence-gate blind spot; binarized rewards and reference-judge changes can produce escape signals.",
+    "brief_zh": "在强化学习前后验证概率安全裁判，区分高置信放行危害的占比与绝对量。11次Jev概率奖励实验中，漏放危害减少但更集中于置信门控盲区；二值化奖励及参照裁判变化可出现逃逸信号。",
+    "summary_zh": "在强化学习前后验证概率安全裁判，区分高置信放行危害的占比与绝对量。11次Jev概率奖励实验中，漏放危害减少但更集中于置信门控盲区；二值化奖励及参照裁判变化可出现逃逸信号。",
+    "theme": "Cybersecurity",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.20191",
+    "title": "Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers",
+    "date": "2026-11-15",
+    "updated": "2026-11-15",
+    "version": "2611.20191v1",
+    "authors": [
+      "Marek Šuppa",
+      "Jaroslav Kopčan"
+    ],
+    "short": "Typed classifier replacement benchmark",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.20191",
+    "pdf": "https://arxiv.org/pdf/2611.20191v1",
+    "doi": "10.48550/arXiv.2611.20191",
+    "added": "2026-11-17",
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability",
+      "foundations/frameworks"
+    ],
+    "contributions": [
+      "research",
+      "benchmark",
+      "evaluation"
+    ],
+    "brief_en": "TDM-Gauntlet retains the splits, labels and metrics of 24 ACL-venue papers across 46 English test sets. Zero-shot Jev matches the paper's predictor on 12 sets; with 500 labels, calibration and prompt search close a median 72% of the gap, while reported LoRA tuning closes 97%. Annotation conventions constrain direct replacement.",
+    "summary": "TDM-Gauntlet retains the splits, labels and metrics of 24 ACL-venue papers across 46 English test sets. Zero-shot Jev matches the paper's predictor on 12 sets; with 500 labels, calibration and prompt search close a median 72% of the gap, while reported LoRA tuning closes 97%. Annotation conventions constrain direct replacement.",
+    "brief_zh": "TDM-Gauntlet沿用24篇ACL系列论文的划分、标签与指标，覆盖46个英文测试集。零样本Jev在12个集合达到原预测器水平；使用500条标签后，校准与提示搜索弥合差距的中位数为72%，报告的LoRA微调为97%。标注约定限制直接替换。",
+    "summary_zh": "TDM-Gauntlet沿用24篇ACL系列论文的划分、标签与指标，覆盖46个英文测试集。零样本Jev在12个集合达到原预测器水平；使用500条标签后，校准与提示搜索弥合差距的中位数为72%，报告的LoRA微调为97%。标注约定限制直接替换。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.19005",
+    "title": "AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces",
+    "date": "2026-11-13",
+    "updated": "2026-11-13",
+    "version": "2611.19005v1",
+    "authors": [
+      "Jiangze Yan",
+      "Yi Shen",
+      "Jieyun Huang",
+      "Wenjing Zhang",
+      "Zhaoxiang Liu",
+      "Ning Wang",
+      "Kai Wang",
+      "Shiguo Lian"
+    ],
+    "short": "Adaptive candidate menus",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.19005",
+    "pdf": "https://arxiv.org/pdf/2611.19005v1",
+    "doi": "10.48550/arXiv.2611.19005",
+    "added": "2026-11-17",
+    "target": "mixed",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "method"
+    ],
+    "brief_en": "AdaMenu retrieves labelled examples to form a query-specific option menu for one decision-model call. Across label spaces up to 1,016 classes, it improves accuracy by 16.6–34.3 points over the tested beam-search baseline and uses 3.2–22.9 times fewer input tokens than full menus on smaller sets; full-menu accuracy changes range from −0.5 to +7.2 points.",
+    "summary": "AdaMenu retrieves labelled examples to form a query-specific option menu for one decision-model call. Across label spaces up to 1,016 classes, it improves accuracy by 16.6–34.3 points over the tested beam-search baseline and uses 3.2–22.9 times fewer input tokens than full menus on smaller sets; full-menu accuracy changes range from −0.5 to +7.2 points.",
+    "brief_zh": "AdaMenu从带标签示例检索候选，为单次决策调用生成随查询变化的选项菜单。标签数最高1,016时，比所测束搜索基线高16.6–34.3个百分点；较小集合的输入token比全菜单少3.2–22.9倍，准确率相对全菜单变化为−0.5至+7.2个百分点。",
+    "summary_zh": "AdaMenu从带标签示例检索候选，为单次决策调用生成随查询变化的选项菜单。标签数最高1,016时，比所测束搜索基线高16.6–34.3个百分点；较小集合的输入token比全菜单少3.2–22.9倍，准确率相对全菜单变化为−0.5至+7.2个百分点。",
+    "theme": "Foundations",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.18330",
+    "title": "Marimba: A System One Model for Speech",
+    "date": "2026-11-13",
+    "updated": "2026-11-13",
+    "version": "2611.18330v1",
+    "authors": [
+      "Solano Amadori"
+    ],
+    "short": "Typed speech decisions",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.18330",
+    "pdf": "https://arxiv.org/pdf/2611.18330v1",
+    "doi": "10.48550/arXiv.2611.18330",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "foundations/interfaces",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "method",
+      "evaluation"
+    ],
+    "brief_en": "Marimba combines frozen Qwen3-ASR features, transcript scoring and specialised readouts for typed speech decisions. Reported turn-end AUROC trails Smart Turn on its own test set (0.930 versus 0.982), while their ICSI difference is statistically unresolved; PII results depend on a private transcript-processing pipeline.",
+    "summary": "Marimba combines frozen Qwen3-ASR features, transcript scoring and specialised readouts for typed speech decisions. Reported turn-end AUROC trails Smart Turn on its own test set (0.930 versus 0.982), while their ICSI difference is statistically unresolved; PII results depend on a private transcript-processing pipeline.",
+    "brief_zh": "Marimba结合冻结Qwen3-ASR特征、转写评分与专用读出实现类型化语音判断。话轮结束AUROC在Smart Turn自身测试集落后（0.930对0.982），ICSI上的差异未获统计支持；PII结果依赖私有转写处理流程。",
+    "summary_zh": "Marimba结合冻结Qwen3-ASR特征、转写评分与专用读出实现类型化语音判断。话轮结束AUROC在Smart Turn自身测试集落后（0.930对0.982），ICSI上的差异未获统计支持；PII结果依赖私有转写处理流程。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.17867",
+    "title": "UltraBERT-JEV: Encoder models for System One Applications",
+    "date": "2026-11-13",
+    "updated": "2026-11-13",
+    "version": "2611.17867v1",
+    "authors": [
+      "Astarag Mohapatra"
+    ],
+    "short": "Encoder decision scoring recipes",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.17867",
+    "pdf": "https://arxiv.org/pdf/2611.17867v1",
+    "doi": "10.48550/arXiv.2611.17867",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "foundations/architecture",
+      "foundations/inference",
+      "trustworthiness/interpretability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "UltraBERT-JEV evaluates one-mask-per-option encoder recipes against an LLM-as-Jev decoder trained on the same data. Yes-minus-no scoring improves external accuracy from 57.8% to 59.6%; single-request A100 latency is 29 ms versus 68 ms, with higher peak memory. A separate auxiliary head predicts supporting sentences.",
+    "summary": "UltraBERT-JEV evaluates one-mask-per-option encoder recipes against an LLM-as-Jev decoder trained on the same data. Yes-minus-no scoring improves external accuracy from 57.8% to 59.6%; single-request A100 latency is 29 ms versus 68 ms, with higher peak memory. A separate auxiliary head predicts supporting sentences.",
+    "brief_zh": "UltraBERT-JEV比较每选项一个掩码的编码器方案与同数据训练的LLM-as-Jev解码器。yes减no评分将外部准确率从57.8%提高到59.6%；A100单请求延迟29 ms对68 ms，但峰值显存更高。另用辅助头预测支持句。",
+    "summary_zh": "UltraBERT-JEV比较每选项一个掩码的编码器方案与同数据训练的LLM-as-Jev解码器。yes减no评分将外部准确率从57.8%提高到59.6%；A100单请求延迟29 ms对68 ms，但峰值显存更高。另用辅助头预测支持句。",
+    "theme": "Foundations",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.08325",
+    "title": "Decision Models as Retrieval Gates Against Injection and Pollution",
+    "date": "2026-11-05",
+    "updated": "2026-11-05",
+    "version": "2611.08325v1",
+    "authors": [
+      "Mahdi Ghadamyari",
+      "Reza Habibi"
+    ],
+    "short": "Retrieval gates against injection",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.08325",
+    "pdf": "https://arxiv.org/pdf/2611.08325v1",
+    "doi": "10.48550/arXiv.2611.08325",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "applications/agents",
+      "trustworthiness/security"
+    ],
+    "contributions": [
+      "research",
+      "defense",
+      "evaluation"
+    ],
+    "brief_en": "A Kev-4B gate on raw HTML, added to sanitisation and citation prompting, reduces injection success from 13.6% to 5.7% on 986 retrieved attack queries, with 2.2% false positives on templated benign instructions. In a separate pollution test, filtering before ranking preserves answer accuracy far better than deleting top-ten results without refill. The HTML comparison also changes context coverage.",
+    "summary": "A Kev-4B gate on raw HTML, added to sanitisation and citation prompting, reduces injection success from 13.6% to 5.7% on 986 retrieved attack queries, with 2.2% false positives on templated benign instructions. In a separate pollution test, filtering before ranking preserves answer accuracy far better than deleting top-ten results without refill. The HTML comparison also changes context coverage.",
+    "brief_zh": "在清洗与引用提示上增加读取原始HTML的Kev-4B门控，将986条已检索攻击查询的成功率从13.6%降至5.7%，模板化良性指令误报2.2%。另一污染实验中，排序前筛选比删除前十结果且不补位更能保留回答准确率；HTML比较同时改变了上下文覆盖。",
+    "summary_zh": "在清洗与引用提示上增加读取原始HTML的Kev-4B门控，将986条已检索攻击查询的成功率从13.6%降至5.7%，模板化良性指令误报2.2%。另一污染实验中，排序前筛选比删除前十结果且不补位更能保留回答准确率；HTML比较同时改变了上下文覆盖。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [
+      "Retrieval Gates Corpus A (Reddit-derived injection)",
+      "Retrieval Gates Corpus B (MS MARCO-derived pollution)"
+    ],
+    "evidence": "Complete arXiv v1 HTML, including Appendix A and Tables 1–7; original Atom metadata",
+    "review": "Full v1 HTML reviewed 2026-11-17. Checked conditional ASR denominator, FPR templates, metric distinctions, threshold selection and candidate refill. Row-level results not independently reproduced.",
+    "limitation": "Synthetic forum and clickbait corpora, 8-template hard negatives, unequal model subsets and weak TF-IDF/perplexity controls. ASR is a string/language proxy; responsiveness is not correctness. HTML versus text changes context coverage. Missing-score passages pass; reported bootstrap omits threshold-selection and label noise. Adaptive attacker has a limited query budget. Manuscript has placeholder ACM DOI/ISBN; conference acceptance is not verified."
+  },
+  {
+    "id": "2611.16565",
+    "title": "Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "version": "2611.16565v1",
+    "authors": [
+      "Tim De Wachter",
+      "Kyryl Volkov",
+      "Myrto Eleftheria Gkogkou",
+      "Mathieu Huysman"
+    ],
+    "short": "Decision-model vulnerability prioritization",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.16565",
+    "pdf": "https://arxiv.org/pdf/2611.16565v1",
+    "doi": "10.48550/arXiv.2611.16565",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "applications/code",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "system",
+      "evaluation"
+    ],
+    "brief_en": "A harness uses Intern-Decision-4B to prioritize functions proposed by deterministic vulnerability localizers, followed by agent and human verification. On 75 external public CVEs, top-25 recall is 21%, about 1.4 times random queue order; the larger 7.5-fold lift on campaign findings is selection-biased and is not the model's standalone detection rate.",
+    "summary": "A harness uses Intern-Decision-4B to prioritize functions proposed by deterministic vulnerability localizers, followed by agent and human verification. On 75 external public CVEs, top-25 recall is 21%, about 1.4 times random queue order; the larger 7.5-fold lift on campaign findings is selection-biased and is not the model's standalone detection rate.",
+    "brief_zh": "系统用Intern-Decision-4B给确定性定位器提出的候选函数排序，再交Agent与人工验证。在75个外部公开CVE上，前25位召回率21%，约为随机队列的1.4倍；自有发现上的7.5倍增益带有选择偏差，并非模型独立检出率。",
+    "summary_zh": "系统用Intern-Decision-4B给确定性定位器提出的候选函数排序，再交Agent与人工验证。在75个外部公开CVE上，前25位召回率21%，约为随机队列的1.4倍；自有发现上的7.5倍增益带有选择偏差，并非模型独立检出率。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "2611.15302",
+    "title": "Browser Immune System (BIS): Innate and Adaptive Threat Detection in the Browser with a Cybersecurity Transformer",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "version": "2611.15302v1",
+    "authors": [
+      "Víctor Mayoral-Vilches",
+      "Eduardo Worrel"
+    ],
+    "short": "Browser-local typed threat screening",
+    "kind": "Paper",
+    "url": "https://arxiv.org/abs/2611.15302",
+    "pdf": "https://arxiv.org/pdf/2611.15302v1",
+    "doi": "10.48550/arXiv.2611.15302",
+    "added": "2026-11-17",
+    "target": "open",
+    "categories": [
+      "applications/intrusion",
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "system",
+      "evaluation"
+    ],
+    "brief_en": "BIS runs alias-web's typed security decisions through WebGPU and generates explanations on demand. It reports seven correct page verdicts on eight synthetic sites and class-level micro-F1 0.71; probes on 11 real pages expose overly broad positives, so this small benchmark does not establish real-web detection specificity.",
+    "summary": "BIS runs alias-web's typed security decisions through WebGPU and generates explanations on demand. It reports seven correct page verdicts on eight synthetic sites and class-level micro-F1 0.71; probes on 11 real pages expose overly broad positives, so this small benchmark does not establish real-web detection specificity.",
+    "brief_zh": "BIS通过WebGPU运行alias-web类型化安全判断，按需生成解释。在八个合成站点上报告七个正确页面判断、类别级micro-F1 0.71；对11个真实页面的探查发现泛化误报，小规模基准尚不足以证明真实网页上的检测特异性。",
+    "summary_zh": "BIS通过WebGPU运行alias-web类型化安全判断，按需生成解释。在八个合成站点上报告七个正确页面判断、类别级micro-F1 0.71；对11个真实页面的探查发现泛化误报，小规模基准尚不足以证明真实网页上的检测特异性。",
+    "theme": "Cybersecurity",
+    "scope": "related-model",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original arXiv metadata and abstract; original model-scope sections additionally inspected for the three carried candidates",
+    "review": "Original authors, first date, version and abstract reviewed 2026-11-17; detailed full-text audit pending.",
+    "limitation": "Author-reported findings from metadata/abstract review; no independent reproduction or complete full-text audit."
+  },
+  {
+    "id": "zenodo-24243016",
+    "title": "An independent calibration check of three decision-model APIs: Gemini Decision 1, OpenAI Decisions (gpt-6-luna) and TypeSafe Jev 1.14",
+    "short": "Three-API calibration check",
+    "kind": "Paper",
+    "url": "https://zenodo.org/records/24243017",
+    "pdf": "https://zenodo.org/api/records/24243017/files/report.pdf/content",
+    "doi": "10.5281/zenodo.24243017",
+    "date": "2026-11-15",
+    "updated": "2026-11-15",
+    "version": "1.0",
+    "added": "2026-11-17",
+    "authors": [
+      "Tyler Satchel Orden"
+    ],
+    "target": "mixed",
+    "categories": [
+      "trustworthiness/reliability"
+    ],
+    "contributions": [
+      "research",
+      "evaluation"
+    ],
+    "brief_en": "A registered comparison of Jev 1.14, Gemini Decision 1 and OpenAI Decisions reports Jev Brier score 0.174 on audited MATH-derived items, versus 0.216 and 0.295. Defect-judgment rankings change with proposition wording. Labels were audited by language models without item-level human review, and publicly available texts may overlap training data.",
+    "summary": "A registered comparison of Jev 1.14, Gemini Decision 1 and OpenAI Decisions reports Jev Brier score 0.174 on audited MATH-derived items, versus 0.216 and 0.295. Defect-judgment rankings change with proposition wording. Labels were audited by language models without item-level human review, and publicly available texts may overlap training data.",
+    "brief_zh": "预注册比较Jev 1.14、Gemini Decision 1与OpenAI Decisions：在经审计的MATH派生题目上，报告Jev Brier分数0.174，另两者为0.216与0.295。缺陷判断的模型排序随命题措辞改变。标签由语言模型审核，未经逐项人工复核，公开文本也可能与训练数据重叠。",
+    "summary_zh": "预注册比较Jev 1.14、Gemini Decision 1与OpenAI Decisions：在经审计的MATH派生题目上，报告Jev Brier分数0.174，另两者为0.216与0.295。缺陷判断的模型排序随命题措辞改变。标签由语言模型审核，未经逐项人工复核，公开文本也可能与训练数据重叠。",
+    "theme": "Reliability",
+    "scope": "Jev",
+    "schema_version": 2,
+    "datasets": [],
+    "evidence": "Original Zenodo report metadata, description and file inventory",
+    "review": "Original Zenodo report version 1.0 and concept-record relationship checked 2026-11-17; full-text and row-level audit pending.",
+    "limitation": "Source-description review; published recomputation is an author-provided artifact, not our independent reproduction. Labels lack item-level human audit; possible training exposure and proposition dependence affect comparisons."
   }
 ]

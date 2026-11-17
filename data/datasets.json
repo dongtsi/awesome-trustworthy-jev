@@ -776,5 +776,17 @@
     "type": "benchmark",
     "checked": "2026-11-16",
     "verification": "Original benchmark repository verified; this study uses walledai mirrors with unrecorded historical dataset revisions. XSTest prompt license CC-BY-4.0; upstream terms apply separately from the guardrail code."
+  },
+  "Retrieval Gates Corpus A (Reddit-derived injection)": {
+    "url": "https://arxiv.org/abs/2611.08325",
+    "type": "paper",
+    "checked": "2026-11-17",
+    "verification": "Author-built derivative corpus described in full v1. Frozen dataset artifact not independently verified; paper fallback, not an upstream dataset substitution."
+  },
+  "Retrieval Gates Corpus B (MS MARCO-derived pollution)": {
+    "url": "https://arxiv.org/abs/2611.08325",
+    "type": "paper",
+    "checked": "2026-11-17",
+    "verification": "Author-built derivative corpus described in full v1. Frozen dataset artifact not independently verified; paper fallback, not an upstream dataset substitution."
   }
 }

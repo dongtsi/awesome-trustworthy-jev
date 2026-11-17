@@ -2,11 +2,30 @@
 
 按论文首次公开发表日期排列。
 
+## 2026-11-16
+
+- [FaceJev: Direct Visual Decisions for Face Forgery Detection](https://arxiv.org/abs/2611.21604) — FaceJev共享一次图像编码，输出八个面部区域的异常判断，并以区域标签和FS-GRPO训练。作者报告在未见伪造方式上比最强基线高7.25个百分点；具体划分与增益归因待全文审核。 `方法 · 数据集` · [PDF](https://arxiv.org/pdf/2611.21604v1)
+- [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](https://arxiv.org/abs/2611.21478) — Jetriever按Jev预测的用途对整个记忆池排序，而非按嵌入相似度检索。在125条InMind查询上报告84.8%的首位命中率；60题MemoryAgentBench样本得分55.4%，同题ReFind为44.3%。结论限定于这些样本及全池评分成本。 `评测` · [PDF](https://arxiv.org/pdf/2611.21478v1)
+- [Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels](https://arxiv.org/abs/2611.21393) — 预注册邮件实验用50–587条标签微调Tev1-0.8B/4B，固定135封测试邮件。4B模型在400标签时未达到预设的类型准确率三点优势，全部标签时才达到；逻辑回归在动作开关上始终更好。测试量小、种子波动限制了准确率差异的解释。 `评测` · [PDF](https://arxiv.org/pdf/2611.21393v1)
+- [Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning](https://arxiv.org/abs/2611.20955) — 在强化学习前后验证概率安全裁判，区分高置信放行危害的占比与绝对量。11次Jev概率奖励实验中，漏放危害减少但更集中于置信门控盲区；二值化奖励及参照裁判变化可出现逃逸信号。 `评测 · 方法` · [PDF](https://arxiv.org/pdf/2611.20955v1)
+
+## 2026-11-15
+
+- [An independent calibration check of three decision-model APIs: Gemini Decision 1, OpenAI Decisions (gpt-6-luna) and TypeSafe Jev 1.14](https://zenodo.org/records/24243017) — 预注册比较Jev 1.14、Gemini Decision 1与OpenAI Decisions：在经审计的MATH派生题目上，报告Jev Brier分数0.174，另两者为0.216与0.295。缺陷判断的模型排序随命题措辞改变。标签由语言模型审核，未经逐项人工复核，公开文本也可能与训练数据重叠。 `评测` · [PDF](https://zenodo.org/api/records/24243017/files/report.pdf/content)
+- [Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers](https://arxiv.org/abs/2611.20191) — TDM-Gauntlet沿用24篇ACL系列论文的划分、标签与指标，覆盖46个英文测试集。零样本Jev在12个集合达到原预测器水平；使用500条标签后，校准与提示搜索弥合差距的中位数为72%，报告的LoRA微调为97%。标注约定限制直接替换。 `基准 · 评测` · [PDF](https://arxiv.org/pdf/2611.20191v1)
+
+## 2026-11-13
+
+- [AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces](https://arxiv.org/abs/2611.19005) — AdaMenu从带标签示例检索候选，为单次决策调用生成随查询变化的选项菜单。标签数最高1,016时，比所测束搜索基线高16.6–34.3个百分点；较小集合的输入token比全菜单少3.2–22.9倍，准确率相对全菜单变化为−0.5至+7.2个百分点。 `方法` · [PDF](https://arxiv.org/pdf/2611.19005v1)
+- [Marimba: A System One Model for Speech](https://arxiv.org/abs/2611.18330) — Marimba结合冻结Qwen3-ASR特征、转写评分与专用读出实现类型化语音判断。话轮结束AUROC在Smart Turn自身测试集落后（0.930对0.982），ICSI上的差异未获统计支持；PII结果依赖私有转写处理流程。 `方法 · 评测` · [PDF](https://arxiv.org/pdf/2611.18330v1)
+- [UltraBERT-JEV: Encoder models for System One Applications](https://arxiv.org/abs/2611.17867) — UltraBERT-JEV比较每选项一个掩码的编码器方案与同数据训练的LLM-as-Jev解码器。yes减no评分将外部准确率从57.8%提高到59.6%；A100单请求延迟29 ms对68 ms，但峰值显存更高。另用辅助头预测支持句。 `评测` · [PDF](https://arxiv.org/pdf/2611.17867v1)
+
 ## 2026-11-12
 
 - [Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://arxiv.org/abs/2611.17167) — 比较决策模型的行动与事后评判能力，再用Jev指导Qwen2.5-1.5B策略学习。摘要报告相对GRPO，ALFWorld成功率由72.8%升至82.9%、WebShop由56.8%升至71.4%，说明行动能力较弱未必意味着教学信号无效。 `评测` · [PDF](https://arxiv.org/pdf/2611.17167v1) · [代码](https://github.com/ZJU-REAL/decision-agents)
 - [The Value of Thinking: Learning When to Reason in Hybrid Decision Models](https://arxiv.org/abs/2611.16961) — HDM以预测效用增益和请求级计算价格，在同一冻结骨干的零token决策与完整推理之间选择。摘要报告JevBench准确率0.857，对比Jev的0.851且中位延迟更低；MiniWoB节省token伴随任务奖励折损。 `评测` · [PDF](https://arxiv.org/pdf/2611.16961v1)
 - [S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models](https://arxiv.org/abs/2611.16937) — 研究不可信上下文如何改变System One类型化决策并传导为智能体策略违规。摘要在四个基准、三个模型上报告Jev 1.14平均攻击成功率71.99%、高置信度成功率57.47%，端到端违规率最高24%。 `评测` · [PDF](https://arxiv.org/pdf/2611.16937v1)
+- [Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs](https://arxiv.org/abs/2611.16565) — 系统用Intern-Decision-4B给确定性定位器提出的候选函数排序，再交Agent与人工验证。在75个外部公开CVE上，前25位召回率21%，约为随机队列的1.4倍；自有发现上的7.5倍增益带有选择偏差，并非模型独立检出率。 `系统 · 评测` · [PDF](https://arxiv.org/pdf/2611.16565v1)
 - [Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores](https://arxiv.org/abs/2611.16499) — 在1,065条LLM标注的合成样本上，分桶温度把宏平均ECE从0.143降至随机折的0.073、整集合留出的0.099。10%错误门限覆盖46.3%，实测错误10.5%；原生分桶阈值效果接近，两者均未稳定达标。温度保持单题argmax，但不必保持不同样本的置信度排序。 `评测` · [PDF](https://arxiv.org/pdf/2611.16499v1)
 - [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321) — NESTONE通过共享末层、共享决策头和自蒸馏，联合训练Qwen3.5-4B完整决策模型及前缀子模型，再以轻量退出门按输入分配深度。摘要报告七个决策基准上更好的准确率与计算量权衡。 `评测` · [PDF](https://arxiv.org/pdf/2611.16321v1)
 
@@ -16,6 +35,7 @@
 - [Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models](https://arxiv.org/abs/2611.15592) — 在相同Qwen3-0.6B、数据混合与种子下，五种读出域内准确率为81.3–82.0%；53万参数余弦头在域内匹配2,730万参数联合头，但留出来源上仍有差异。6.4对13.6毫秒每行来自H100饱和批处理，其他成本对比还改变了提示组织方式。 `评测` · [PDF](https://arxiv.org/pdf/2611.15592v1)
 - [Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation](https://arxiv.org/abs/2611.15576) — 在五轮调查的20个二元问题上检验Jev答案概率能否保持总体特征。条件预测改善并不稳定保持联合分布，顺序模拟还受问题次序影响，揭示预测准确率与总体有效性的区别。 `评测` · [PDF](https://arxiv.org/pdf/2611.15576v1)
 - [JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning](https://arxiv.org/abs/2611.15362) — 将Qwen3-ASR-0.6B改造为标量语义终点决策模型，采用任务优先条件化、解码器前缀裁剪及匹配的决策头重拟合。摘要报告经SFT及后续RLCD适配后，英语终点监督可产生跨语言迁移。 `评测` · [PDF](https://arxiv.org/pdf/2611.15362v1)
+- [Browser Immune System (BIS): Innate and Adaptive Threat Detection in the Browser with a Cybersecurity Transformer](https://arxiv.org/abs/2611.15302) — BIS通过WebGPU运行alias-web类型化安全判断，按需生成解释。在八个合成站点上报告七个正确页面判断、类别级micro-F1 0.71；对11个真实页面的探查发现泛化误报，小规模基准尚不足以证明真实网页上的检测特异性。 `系统 · 评测` · [PDF](https://arxiv.org/pdf/2611.15302v1)
 - [Is Jev a Good Multilingual Judge?](https://arxiv.org/abs/2611.14861) — 在四个具有人工标签、最多覆盖47种语言变体的基准上，评测Jev的二元、成对与分级评判能力。摘要报告多数任务性能有竞争力且成本更低，但知识核验较弱，低资源语言中错误接受更多。 `评测` · [PDF](https://arxiv.org/pdf/2611.14861v1)
 
 ## 2026-11-10
@@ -46,6 +66,7 @@
 ## 2026-11-05
 
 - [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439) — 两个307M Ru-Jev版本在陌生词决策上改善，却未推广到缩写或代码，且存在划分与训练计划混杂。作者后续审计发现无标签RuCoLA行被赋予虚构标签：清理后的发布验证切片上，v1.3准确率0.6886低于多数类基线0.7372；六任务共同验证结果不受该问题影响。 `评测` · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev/tree/v1.3.0)
+- [Decision Models as Retrieval Gates Against Injection and Pollution](https://arxiv.org/abs/2611.08325) — 在清洗与引用提示上增加读取原始HTML的Kev-4B门控，将986条已检索攻击查询的成功率从13.6%降至5.7%，模板化良性指令误报2.2%。另一污染实验中，排序前筛选比删除前十结果且不补位更能保留回答准确率；HTML比较同时改变了上下文覆盖。 `防御 · 评测` · [PDF](https://arxiv.org/pdf/2611.08325v1)
 - [Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage](https://arxiv.org/abs/2611.08229) — 将七类Web攻击分别从训练、再校准和阈值选择中留出，评测两级分流。Jev与Clef在5%良性升级预算内升级各类至少97.6%的攻击，但未披露预训练、良性孪生请求误报及概率引导规避限制安全结论。 `评测` · [PDF](https://arxiv.org/pdf/2611.08229v1)
 - [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014) — 在SciFact的300个测试查询上比较BGE-M3检索与Jev Noul、OpenAI Predicate重排序。全库候选深度50时nDCG@10分别为0.6413/0.7805/0.7545；增至100的变化不确定，分数并列、缓存延迟及富集候选池影响解释。 `评测` · [PDF](https://arxiv.org/pdf/2611.08014v1)
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — 提出四个Drex类型化决策模型，结合监督训练、调整反馈强化学习及选项一致性损失。作者报告Max在Decision Index 0.4.1得67.52，Jev 1.14.0为60.70；模型工件和基准可比性的详细审核待完成。 `评测` · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)

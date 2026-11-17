@@ -2107,5 +2107,27 @@
     },
     "source_section": "Complete v1, nine pages, Tables 1–6 and threshold analysis; author protocol/data dictionary/audit provenance; independent arithmetic on results_public.csv blob 43ab592bca7bbe20d2750bf077f5f91bb6ada9d5",
     "source": "https://arxiv.org/pdf/2611.08845v1"
+  },
+  {
+    "id": "2611.08325",
+    "category": "applications/agents",
+    "datasets": [
+      "Retrieval Gates Corpus A (Reddit-derived injection)",
+      "Retrieval Gates Corpus B (MS MARCO-derived pollution)"
+    ],
+    "data_role": {
+      "en": "Corpus A: 1,000 Reddit-derived queries with attack/control pairs, 4,000 irrelevant pages, 300 benign-instruction templates and 1,000 poison pages; 986 queries retrieve the attack. Corpus B: 200 MS MARCO queries, ten original passages and twenty generated clickbait pages each. These are author-built derivatives, not the unchanged upstream benchmarks.",
+      "zh": "A语料含1,000条Reddit派生查询及攻击/对照页、4,000条无关页、300条良性指令模板页、1,000条污染页；986条查询检索到攻击。B语料含200条MS MARCO查询，每条十个原始段落及二十个生成诱导页。两者是作者构建的派生集合，并非原样上游基准。"
+    },
+    "design": {
+      "en": "BM25 top five over 512-word chunks with 128-word overlap for A; raw HTML or indexed text truncated to 8,000 characters. Released Kev/Tev1/Von/Laya gates; Llama-3.1-8B generator plus selected 70B runs. Pre-registered drop threshold 0.5; citation threshold 0.35 selected on reported queries. B compares removal from top ten without refill against filtering the 30-candidate pool before ranking. Automatic ASR; LLM compliance audit, responsiveness and answer-reference agreement; query bootstrap.",
+      "zh": "A采用512词分块、128词重叠的BM25前五检索，原始HTML或索引文本截断至8,000字符；使用发布的Kev/Tev1/Von/Laya，主要生成器Llama-3.1-8B并补部分70B实验。预注册丢弃门限0.5，引用门限0.35在报告查询上选择。B比较前十结果删除且不补位，与排序前过滤三十候选。自动ASR另配LLM服从审计、主题响应和参照答案一致性，按查询bootstrap。"
+    },
+    "reading": {
+      "en": "Combined mitigations 134/986 successes (13.6%); adding Kev gives 56/986 (5.7%), with 4/186 false positives (2.2%). Paired changes remove 86 successes and add 8. Lowering the drop threshold to 0.35 reaches 2.9% ASR but 27.4% FPR. At two-thirds pollution, no filter yields 28% accuracy; top-ten deletion yields 23%, whereas pre-ranking filtering at 0.5 yields 83%, 0.5% exposure and 0.9% citation contamination. Larger 70B judging lowers ASR to 0.4% but increases FPR to 18.3%. HTML coverage, repeated negatives and distinct metric denominators limit comparison. No raw-result reproduction or deployed-security guarantee.",
+      "zh": "组合缓解为134/986次成功（13.6%），加入Kev后56/986（5.7%），良性指令误报4/186（2.2%）；配对变化为消除86次、增加8次。门限降到0.35时ASR为2.9%，但误报升至27.4%。候选池三分之二污染时，无过滤准确率28%，删除前十而不补位为23%，排序前0.5门限过滤为83%，暴露污染0.5%、引用污染0.9%。70B裁判可达0.4%ASR，但误报18.3%。HTML可见内容、重复良性模板及不同指标分母限制比较；未复算原始结果，也不构成部署安全保证。"
+    },
+    "source_section": "Complete v1 HTML, Sections 1–6, Tables 1–7 and Appendix A",
+    "source": "https://arxiv.org/html/2611.08325v1"
   }
 ]
